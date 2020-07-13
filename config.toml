@@ -1,0 +1,56 @@
+baseURL = "https://www.neilgrogan.com/"
+ignoreFiles = [ "node_modules" ]
+relativeURLs = true
+languageCode = "en-us"
+title = "Neil Grogan"
+theme="herring-cove"
+googleAnalytics = ""
+
+[permalinks]
+  post = "/:slug/"
+  page = "/:slug/"
+  static = "/img/"
+
+[author]
+  name = "Neil Grogan"
+
+[Social]
+  twitter = "dueyfinster"
+  github = "dueyfinster"
+  linkedin = "neil-grogan"
+
+[params]
+  description="My home on the internet"
+
+  [[menu.main]]
+     name = "About"
+     weight = 1
+     identifier = "about"
+     url = "/about"
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact"
+    weight = 3
+
+  [[menu.main]]
+    name = "Presentations"
+    weight = 2
+  	identifier = "presentations"
+    url = "/presentations/"
+
+[outputFormats]
+  [outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "feed"
+
+
+[markup.goldmark.renderer]
+  unsafe = true
