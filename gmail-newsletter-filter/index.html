@@ -1,0 +1,63 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Automatic Newsletter Cleanup in Gmail</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=generator content="Hugo 0.69.0"><link href rel=alternate type=application/rss+xml title="Neil Grogan"><link href=https://www.neilgrogan.com//css/bootstrap.min.css rel=stylesheet><link href=https://www.neilgrogan.com//css/hc.css rel=stylesheet><link href=//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css rel=stylesheet></head><body><div class=nav-toggle><i class="fa fa-bars fa-2x"></i>Herring Cove</div><div id=wrapper><div class="navbar navbar-default" role=navigation><div class=container><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a href=https://www.neilgrogan.com//><p class=navbar-brand>Neil Grogan</p></a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"></ul></div></div></div><div id=sidebar-wrapper><ul class=sidebar-nav><img src><li class=sidebar-brand><a href=https://www.neilgrogan.com//><h1 class=brand>Neil Grogan</h1></a><h3>My home on the internet</h3></li><hr><hr><div id=social-wrapper></div></ul></div><div class=container><div id=article><div class=article-title>Automatic Newsletter Cleanup in Gmail</div><p class=meta><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-08-19</small></p><hr><div class=post><p>If you haven&rsquo;t tried <a href=https://developers.google.com/apps-script/>Google Apps Script</a>, I found a really nifty use for it: <em>smart filtering</em> for email. Wait, shouldn&rsquo;t I just use Gmails&rsquo; built-in filters? As it turns out you can&rsquo;t - my filter needs to act on email that matched that filter <em>in the past</em>. So in other words: a filter can only act on email it actually &ldquo;filters&rdquo;, which kinda makes sense! I&rsquo;m a big fan of automation (and email is ripe for automation), as you can see from <a href=../outlook>my post on meetings in Outlook</a>.</p><p>The source is below, all you need to do is replace the mailing list identifiers at
+the start (see the comments). You can find these easily enough in Gmail by using
+the dropdown menu on the email and selecting &ldquo;Filter mails like this&rdquo;:</p><p><img src=../img/16/gmail-menu-filter.png alt="Selecting a newsletter mail&rsquo;s menu to filter" title="Selecting a newsletter mail to filter"></p><p>This will prefill the search with the mailing list id you need:</p><p><img src=../img/16/gmail-filter-search.png alt="Gmail Filter Search" title="Gmail Filter Search in Action"></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>processInbox</span>() {
+  <span style=color:#a6e22e>Logger</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#34;Starting&#34;</span>);
+   <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>mailingLists</span> <span style=color:#f92672>=</span> [ <span style=color:#75715e>// replace the strings in this array with your own!
+</span><span style=color:#75715e></span>     <span style=color:#e6db74>&#34;list:&#39;faa8eb4ef3a111cef92c4f3d4mc list &lt;faa8eb4ef3a111cef92c4f3d4.583821.list-id.mcsv.net&gt;&#39;&#34;</span>, 
+     <span style=color:#e6db74>&#34;list:&#39;e2e180baf855ac797ef407fc7mc list &lt;e2e180baf855ac797ef407fc7.654029.list-id.mcsv.net&gt;&#39;&#34;</span>,
+     <span style=color:#e6db74>&#34;list:&#39;9f4b80a35728f7271fe3ea6ffmc list &lt;9f4b80a35728f7271fe3ea6ff.511493.list-id.mcsv.net&gt;&#39;&#34;</span>
+   ];
+  
+  <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>mailingLists</span>.<span style=color:#a6e22e>length</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>){
+    <span style=color:#75715e>// process all threads in the Inbox
+</span><span style=color:#75715e></span>    <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>threads</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>searchMessages</span>(<span style=color:#a6e22e>mailingLists</span>[<span style=color:#a6e22e>i</span>]);
+    
+    <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>threads</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>1</span>){
+      <span style=color:#a6e22e>Logger</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#34;Found: &#34;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>threads</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; messages to process, for &#34;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>mailingLists</span>[<span style=color:#a6e22e>i</span>]);
+      <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>msgToSort</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>getMessagesFromThreads</span>(<span style=color:#a6e22e>threads</span>);
+      
+      <span style=color:#a6e22e>msgToSort</span>.<span style=color:#a6e22e>sort</span>(<span style=color:#66d9ef>function</span>(<span style=color:#a6e22e>a</span>,<span style=color:#a6e22e>b</span>) { 
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>new</span> Date(<span style=color:#a6e22e>b</span>.<span style=color:#a6e22e>date</span>).<span style=color:#a6e22e>getTime</span>() <span style=color:#f92672>-</span> <span style=color:#66d9ef>new</span> Date(<span style=color:#a6e22e>a</span>.<span style=color:#a6e22e>date</span>).<span style=color:#a6e22e>getTime</span>();
+      });
+      
+      <span style=color:#a6e22e>msgToSort</span>.<span style=color:#a6e22e>splice</span>(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>); <span style=color:#75715e>// Remove latest mail
+</span><span style=color:#75715e></span>      
+      <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>msgToSort</span>.<span style=color:#a6e22e>length</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>) {
+        <span style=color:#a6e22e>Logger</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#34;Moving message: &#34;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>msgToSort</span>[<span style=color:#a6e22e>i</span>].<span style=color:#a6e22e>subject</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; to trash&#34;</span>);
+        <span style=color:#a6e22e>msgToSort</span>[<span style=color:#a6e22e>i</span>].<span style=color:#a6e22e>message</span>.<span style=color:#a6e22e>moveToTrash</span>();
+      }
+      
+      
+      <span style=color:#a6e22e>Logger</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>msgToSort</span>);
+    }
+  }
+}
+
+<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>searchMessages</span>(<span style=color:#a6e22e>filter</span>){
+  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>GmailApp</span>.<span style=color:#a6e22e>search</span>(<span style=color:#a6e22e>filter</span>);
+}
+
+<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>getMessagesFromThreads</span>(<span style=color:#a6e22e>threads</span>){
+ <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>msgsToSort</span><span style=color:#f92672>=</span>[];
+    <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>threads</span>.<span style=color:#a6e22e>length</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span>) {
+      <span style=color:#75715e>// get all messages in a given thread
+</span><span style=color:#75715e></span>      <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>messages</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>threads</span>[<span style=color:#a6e22e>i</span>].<span style=color:#a6e22e>getMessages</span>();
+      <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>j</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>j</span> <span style=color:#f92672>&lt;</span> <span style=color:#a6e22e>messages</span>.<span style=color:#a6e22e>length</span>; <span style=color:#a6e22e>j</span><span style=color:#f92672>++</span>) {
+        <span style=color:#a6e22e>msgsToSort</span>.<span style=color:#a6e22e>push</span>(<span style=color:#a6e22e>processMessage</span>(<span style=color:#a6e22e>messages</span>[<span style=color:#a6e22e>j</span>]));
+      }
+    }
+  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>msgsToSort</span>;
+}
+
+<span style=color:#66d9ef>function</span> <span style=color:#a6e22e>processMessage</span>(<span style=color:#a6e22e>message</span>) {
+  <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>subject</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>message</span>.<span style=color:#a6e22e>getSubject</span>();
+  <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>date</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>message</span>.<span style=color:#a6e22e>getDate</span>();
+  <span style=color:#a6e22e>Logger</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>date</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; &#34;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>subject</span>);
+  <span style=color:#66d9ef>return</span> {<span style=color:#e6db74>&#34;subject&#34;</span><span style=color:#f92672>:</span><span style=color:#a6e22e>subject</span>, <span style=color:#e6db74>&#34;message&#34;</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>message</span>, <span style=color:#e6db74>&#34;date&#34;</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>date</span> }
+}
+
+</code></pre></div><p>Also available as an easily cloneable (with git) <a href=https://gist.github.com/dueyfinster/a66238c3f99c883ffd8d264b539dc2d8>Gist on Github</a>.</p></div></div><a href=https://twitter.com/share class=twitter-share-button data-size=small data-count=none>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script><ul class=pager>&nbsp;<li class=previous><a href=https://www.neilgrogan.com/ipadpro/>iPad Pro Review</a></li>&nbsp;<li class=next><a href=https://www.neilgrogan.com/newsfast/>Newsfast MSc Project in UCD</a></li></ul></ul></div><footer><p class="text-muted credit">&copy; 2020. All rights reserved.</p></footer><script src=https://www.neilgrogan.com//js/jquery-1.10.2.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.js></script><script type=text/javascript src=https://www.neilgrogan.com//js/hc.js></script></body></html>

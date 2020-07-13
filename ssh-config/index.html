@@ -1,0 +1,26 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>SSH Config Aliases</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=generator content="Hugo 0.69.0"><link href rel=alternate type=application/rss+xml title="Neil Grogan"><link href=https://www.neilgrogan.com//css/bootstrap.min.css rel=stylesheet><link href=https://www.neilgrogan.com//css/hc.css rel=stylesheet><link href=//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css rel=stylesheet></head><body><div class=nav-toggle><i class="fa fa-bars fa-2x"></i>Herring Cove</div><div id=wrapper><div class="navbar navbar-default" role=navigation><div class=container><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a href=https://www.neilgrogan.com//><p class=navbar-brand>Neil Grogan</p></a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"></ul></div></div></div><div id=sidebar-wrapper><ul class=sidebar-nav><img src><li class=sidebar-brand><a href=https://www.neilgrogan.com//><h1 class=brand>Neil Grogan</h1></a><h3>My home on the internet</h3></li><hr><hr><div id=social-wrapper></div></ul></div><div class=container><div id=article><div class=article-title>SSH Config Aliases</div><p class=meta><small>&nbsp;<i class="fa fa-calendar-o"></i> 2013-06-20</small></p><hr><div class=post><p>If your like me and you deal with a lot of servers for development or test and do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern matching.</p><p>Say I&rsquo;ve got a SSH config file like this (at <code>~/.ssh/config</code> ):</p><pre><code>host s*
+    HostName atrcu%h.example.com
+    User example1
+    Port 22
+host b*
+    HostName atrcx%h.example.com
+    User example2
+    Port 22
+host ??*
+    HostName atvts%h.example.com
+    User example5
+    Port 2205
+</code></pre><p>The ssh man page explains this really well:</p><blockquote><p>A pattern consists of zero or more non-whitespace characters, &lsquo;*&rsquo; (a
+wildcard that matches zero or more characters), or &lsquo;?&rsquo; (a wildcard that
+matches exactly one character). For example, to specify a set of decla-
+rations for any host in the .co.uk set of domains, the following pat-
+tern could be used:</p></blockquote><blockquote><p>Host *.co.uk</p></blockquote><blockquote><p>The following pattern would match any host in the 192.168.0.[0-9] network
+range:</p></blockquote><blockquote><p>Host 192.168.0.?</p></blockquote><blockquote><p>A pattern-list is a comma-separated list of patterns. Patterns within
+pattern-lists may be negated by preceding them with an exclamation mark
+('!'). For example, to allow a key to be used from anywhere within an
+organisation except from the ``dialup&rsquo;&rsquo; pool, the following entry (in
+authorized_keys) could be used:</p></blockquote><blockquote><p>from=&rdquo;!<em>.dialup.example.com,</em>.example.com&rdquo;</p></blockquote><p>So there you have it!</p></div></div><a href=https://twitter.com/share class=twitter-share-button data-size=small data-count=none>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script><ul class=pager>&nbsp;<li class=previous><a href=https://www.neilgrogan.com/colour-bash/>Custom Colourful Bash Prompt</a></li>&nbsp;<li class=next><a href=https://www.neilgrogan.com/cern/>Visit to CERN</a></li></ul></ul></div><footer><p class="text-muted credit">&copy; 2020. All rights reserved.</p></footer><script src=https://www.neilgrogan.com//js/jquery-1.10.2.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.js></script><script type=text/javascript src=https://www.neilgrogan.com//js/hc.js></script></body></html>

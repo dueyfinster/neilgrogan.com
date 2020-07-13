@@ -1,0 +1,40 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Ubiquiti Home Network</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=generator content="Hugo 0.69.0"><link href rel=alternate type=application/rss+xml title="Neil Grogan"><link href=https://www.neilgrogan.com//css/bootstrap.min.css rel=stylesheet><link href=https://www.neilgrogan.com//css/hc.css rel=stylesheet><link href=//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css rel=stylesheet></head><body><div class=nav-toggle><i class="fa fa-bars fa-2x"></i>Herring Cove</div><div id=wrapper><div class="navbar navbar-default" role=navigation><div class=container><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a href=https://www.neilgrogan.com//><p class=navbar-brand>Neil Grogan</p></a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"></ul></div></div></div><div id=sidebar-wrapper><ul class=sidebar-nav><img src><li class=sidebar-brand><a href=https://www.neilgrogan.com//><h1 class=brand>Neil Grogan</h1></a><h3>My home on the internet</h3></li><hr><hr><div id=social-wrapper></div></ul></div><div class=container><div id=article><div class=article-title>Ubiquiti Home Network</div><p class=meta><small>&nbsp;<i class="fa fa-calendar-o"></i> 2019-11-10</small></p><hr><div class=post><p>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do business Wifi,
+all the way up to covering stadiums. I first heard about them from <a href=https://www.troyhunt.com/ubiquiti-all-the-things-how-i-finally-fixed-my-dodgy-wifi/>Troy Hunt</a> and
+then again from <a href=https://marco.org>Marco Arment</a> on <a href=https://atp.fm>Accidental Tech Podcast</a>. Ubiquiti are popular in
+prosumer space - for people serious about good <a href=https://en.wikipedia.org/wiki/Wi-Fi>Wifi</a>.</p><p>So far it&rsquo;s been an excellent experience and I&rsquo;d highly recommend it. After setting it up (there is
+a few moving pieces) it has been running without any intervention from me. Being a professional
+product, it&rsquo;s not just a home router (with inbuilt wifi), there is a few more pieces you need to buy:</p><ol><li><a href=https://www.ui.com/unifi-routing/usg/>Gateway</a> - this connects to your home router, and serves as an access point (approx. €120)</li><li><a href=https://www.ui.com/unifi-switching/unifi-switch-8-150w/>Switch</a> - this is to distribute the internet from the gateway to all other devices (approx. €105) [plugs in to Gateway]</li><li><a href=https://www.ui.com/unifi/unifi-cloud-key/>Cloud Key</a> - this is the management &lsquo;computer&rsquo; that gives you a web control panel to control
+all the Ubiquiti gear (approx. €85) [plugs in to Switch]</li><li><a href=https://www.ui.com/unifi/unifi-ap-ac-pro/>Wireless Access point</a> - this is the &lsquo;Antenna&rsquo; which actually gives you wifi (approx. €90) [plugs in to Switch]</li></ol><p>Basic connection diagram would be like this:</p><pre><code>Your ISP Modem
+∧
+|
+∨
+Gateway
+∧
+|
+∨
+Switch &lt;-&gt; Cloud Key
+∧  |
+|  |-&gt; Any other Wired Devices
+∨
+Access Point
+∧
+|
+∨
+Your Wifi Devices
+</code></pre><p>This is the basic Ubiquiti setup, you need to purchase at least 4 devices to give you Wifi.
+So at this point, you may think it&rsquo;s all expensive and you&rsquo;d be right. For the 4 devices, you
+are looking at at least €400 outlay - which is much more expensive then even the high-end Wifi
+routers from Netgear etc.</p><p>The big advantage is: expandability and ease of control. The Ubiquiti dashboard is highly
+configurable, you can search for Wifi channels which the neighbours aren&rsquo;t using. Also, if
+you have dead spots in your house, no problem, just buy another Wireless Access Point and
+plug it in: job done!</p><p>Another big advantage for me, if I change internet service provider, I just plug a new modem
+in to my gateway. Nothing changes (like IP addresses) for my local devices. Also, you could
+configure Ubiquiti gateway to have two connections (like cable modem and 4G modem connected)
+and load balance or fail-over between them - but I haven&rsquo;t gone that crazy (yet!). Also, if
+a new standard of Wifi comes? Just pop on another access point.</p><p>Overall I&rsquo;m very happy with the setup. It feels like an investment that you get payback over
+time on, so I&rsquo;m looking forward to being able to manage my network much easier and incrementally
+upgrade over time with much less hassle.</p></div></div><a href=https://twitter.com/share class=twitter-share-button data-size=small data-count=none>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script><ul class=pager>&nbsp;<li class=previous><a href=https://www.neilgrogan.com/kbc-tx-js/>Scraping Transaction Data from KBC Bank</a></li>&nbsp;<li class=next><a href=https://www.neilgrogan.com/vagrant-ubuntu-fossa/>Ubuntu 20.04 Vagrant with Packer</a></li></ul></ul></div><footer><p class="text-muted credit">&copy; 2020. All rights reserved.</p></footer><script src=https://www.neilgrogan.com//js/jquery-1.10.2.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.js></script><script type=text/javascript src=https://www.neilgrogan.com//js/hc.js></script></body></html>

@@ -1,0 +1,123 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>Scraping Data from your Bank in Python</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=generator content="Hugo 0.69.0"><link href rel=alternate type=application/rss+xml title="Neil Grogan"><link href=https://www.neilgrogan.com//css/bootstrap.min.css rel=stylesheet><link href=https://www.neilgrogan.com//css/hc.css rel=stylesheet><link href=//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css rel=stylesheet></head><body><div class=nav-toggle><i class="fa fa-bars fa-2x"></i>Herring Cove</div><div id=wrapper><div class="navbar navbar-default" role=navigation><div class=container><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a href=https://www.neilgrogan.com//><p class=navbar-brand>Neil Grogan</p></a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"></ul></div></div></div><div id=sidebar-wrapper><ul class=sidebar-nav><img src><li class=sidebar-brand><a href=https://www.neilgrogan.com//><h1 class=brand>Neil Grogan</h1></a><h3>My home on the internet</h3></li><hr><hr><div id=social-wrapper></div></ul></div><div class=container><div id=article><div class=article-title>Scraping Data from your Bank in Python</div><p class=meta><small>&nbsp;<i class="fa fa-calendar-o"></i> 2017-07-12</small></p><hr><div class=post><p>As part of my previous posts, I talked about <a href=../ledger>ledger</a> and plain text accounting. The only part missing is that you need a method to import transactions from your bank. For this I have been doing this by hand, bi-weekly. I would have to do the following:</p><ol><li>Log in to online banking</li><li>Go to the transactions page</li><li>Select the date range for transactions I needed (double check last date of transaction in ledger at this point)</li><li>Download the <a href=https://en.wikipedia.org/wiki/Microsoft_Excel>Microsoft Excel</a> format file that wasn&rsquo;t in the proper format</li><li>Convert this Excel file into a CSV file that matched my import format (watch the dates, is it YYYY-MM-DD or DD/MM/YYYY?)</li><li>Finally import the CSV file into ledger</li><li>Check the balance matches between my online banking and ledger</li></ol><p><em>Sounds like a lot of work right?</em></p><p>That&rsquo;s when I decided to write a script to do this (well, some of it)
+automatically. I decided to use <a href=https://www.python.org>Python</a> to refresh my skills and then decided I&rsquo;d try to use only my <a href=../ipadpro>iPad Pro</a> to write the code. This made it harder, due to the limited selection of inbuilt modules in <a href=http://omz-software.com/pythonista/>Pythonista</a> app. I researched using modules that I could install via <a href=https://pypi.python.org/pypi>pip</a>, but a lot of these just simply won&rsquo;t work on iOS, as they expect Google Chrome or Mozilla Firefox (ie. they are <a href=http://www.seleniumhq.org/>Selenium</a> based). I decided to use the excellent <a href=http://docs.python-requests.org/en/master/>requests</a> library and <a href=https://www.crummy.com/software/BeautifulSoup/>Beautiful Soup</a> python modules.</p><p>This creates a bit of extra work, since we can&rsquo;t execute any <a href=https://en.wikipedia.org/wiki/JavaScript>Javascript</a> on any of the pages. So I first got the contents of my banks login page, and dumped the html to see the:</p><ul><li>names on the form fields</li><li>the endpoint (submit action on form) where data is sent</li></ul><p>I then created a payload myself, with the data as the browser would send it. Then I got requests to post this data to the correct endpoint (just like a browser does). At first this didn&rsquo;t work, and then I remembered that it could have a <a href=https://en.wikipedia.org/wiki/Cross-site_request_forgery>CSRF</a> token. When I checked the HTML source, sure enough it did, so I created a function to strip this out and I also sent this with the data. Success! I got to the second login page&mldr;</p><p>After this was my pin code, but the bank only asks for digits. I simply put my pin in an array and scraped the digits needed, all minused by 1 (since arrays are 0-indexed). I posted this data the exact same way as before. Next I was in! I could display all my balance info.</p><p>The last step was to get the transactions. This proved a bit tricky also since my bank has a download button that&rsquo;s in flash for the Excel file. I was a bit stumped until I noticed they used an open source program called <a href=https://datatables.net/>data tables</a>. In data tables all the fields are nicely marked with what data they contain (be it date, description, money in, money out, etc. etc). I used Beautiful Soup to grab this data, and then finally write it to a CSV file. I was quite happy with the script, and how fast I could pull it together in python!</p><p><strong>Warning</strong>: The code below is just to show how it could be done, and was written in a hurry to get a job done. It should be used for ideas, not as a stylistic guide to how you should write nicely named variables with good documentation!</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e>#!/usr/bin/python2</span>
+<span style=color:#f92672>import</span> requests
+<span style=color:#f92672>from</span> datetime <span style=color:#f92672>import</span> datetime
+<span style=color:#f92672>import</span> urlparse
+<span style=color:#f92672>import</span> urllib
+<span style=color:#f92672>import</span> dropbox
+<span style=color:#f92672>import</span> csv
+<span style=color:#f92672>from</span> bs4 <span style=color:#f92672>import</span> BeautifulSoup
+
+USERNAME <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+PASSWORD <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>
+pin <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>,<span style=color:#ae81ff>4</span>]
+FILENAME<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bank.csv&#34;</span>
+start_date <span style=color:#f92672>=</span> urllib<span style=color:#f92672>.</span>quote_plus(datetime(<span style=color:#ae81ff>2017</span>, <span style=color:#ae81ff>05</span>, <span style=color:#ae81ff>15</span>)<span style=color:#f92672>.</span>strftime(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>%d</span><span style=color:#e6db74>/%m/%Y&#34;</span>))
+end_date <span style=color:#f92672>=</span> urllib<span style=color:#f92672>.</span>quote_plus(datetime<span style=color:#f92672>.</span>today()<span style=color:#f92672>.</span>strftime(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>%d</span><span style=color:#e6db74>/%m/%Y&#34;</span>))
+
+ROOT_URL <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://www.open24.ie/online&#34;</span>
+LOGIN_URL <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://www.open24.ie/online/Login/&#34;</span>
+FORM_ENDPOINT_URL <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://www.open24.ie/online/&#34;</span>
+FORM2_ENDPOINT_URL <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://www.open24.ie/online/Login/Step2&#34;</span>
+TX_ENDPOINT <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://www.open24.ie/online/Accounts/Details/RecentTransactions&#34;</span>
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_data</span>(session, url):
+    result <span style=color:#f92672>=</span> session<span style=color:#f92672>.</span>get(url)
+    <span style=color:#66d9ef>return</span> BeautifulSoup(result<span style=color:#f92672>.</span>content,<span style=color:#e6db74>&#34;html.parser&#34;</span>)
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>post_data</span>(session, url, data):
+    result <span style=color:#f92672>=</span> session<span style=color:#f92672>.</span>post(url, data<span style=color:#f92672>=</span>data, headers<span style=color:#f92672>=</span>dict(referer <span style=color:#f92672>=</span> LOGIN_URL))
+    <span style=color:#66d9ef>return</span> BeautifulSoup(result<span style=color:#f92672>.</span>content,<span style=color:#e6db74>&#34;html.parser&#34;</span>)
+
+<span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74> Finds out which digits are requested from PIN
+</span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_pin_digits</span>(soup):
+    t1 <span style=color:#f92672>=</span> int(soup<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;label&#34;</span>, {<span style=color:#e6db74>&#39;for&#39;</span>: <span style=color:#e6db74>&#39;login-digit-1&#39;</span>})<span style=color:#f92672>.</span>string<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;Digit &#34;</span>,<span style=color:#e6db74>&#34;&#34;</span>))<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
+    t2 <span style=color:#f92672>=</span> int(soup<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;label&#34;</span>, {<span style=color:#e6db74>&#39;for&#39;</span>: <span style=color:#e6db74>&#39;login-digit-2&#39;</span>})<span style=color:#f92672>.</span>string<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;Digit &#34;</span>,<span style=color:#e6db74>&#34;&#34;</span>))<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
+    t3 <span style=color:#f92672>=</span> int(soup<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;label&#34;</span>, {<span style=color:#e6db74>&#39;for&#39;</span>: <span style=color:#e6db74>&#39;login-digit-3&#39;</span>})<span style=color:#f92672>.</span>string<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;Digit &#34;</span>,<span style=color:#e6db74>&#34;&#34;</span>))<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>
+    <span style=color:#66d9ef>return</span> t1, t2, t3
+
+<span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74> Gets the Verification token used to submit forms
+</span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_verif_token</span>(soup):
+    <span style=color:#66d9ef>return</span> soup<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;input&#34;</span>, {<span style=color:#e6db74>&#39;name&#39;</span>: <span style=color:#e6db74>&#39;__RequestVerificationToken&#39;</span>})<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#39;value&#39;</span>)
+
+<span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74> Gets the account UUID generated on login
+</span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>get_acct_id</span>(soup):
+    acct_id_url <span style=color:#f92672>=</span> soup<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;h2&#34;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>: <span style=color:#e6db74>&#39;heading-general&#39;</span>})<span style=color:#f92672>.</span>contents[<span style=color:#ae81ff>0</span>][<span style=color:#e6db74>&#39;href&#39;</span>]
+    url_data <span style=color:#f92672>=</span> urlparse<span style=color:#f92672>.</span>urlparse(acct_id_url)
+    query <span style=color:#f92672>=</span> urlparse<span style=color:#f92672>.</span>parse_qs(url_data<span style=color:#f92672>.</span>query)
+    acct_id <span style=color:#f92672>=</span> query[<span style=color:#e6db74>&#34;accountId&#34;</span>][<span style=color:#ae81ff>0</span>]
+    <span style=color:#66d9ef>return</span> acct_id
+
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>():
+    session_requests <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>session()
+
+    <span style=color:#75715e># Get login csrf token</span>
+    soup <span style=color:#f92672>=</span> get_data(session_requests, LOGIN_URL)
+    authenticity_token <span style=color:#f92672>=</span> get_verif_token(soup)
+    
+    <span style=color:#75715e># Create payload</span>
+    payload <span style=color:#f92672>=</span> {
+        <span style=color:#e6db74>&#34;__RequestVerificationToken&#34;</span>: authenticity_token,
+        <span style=color:#e6db74>&#34;section&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+        <span style=color:#e6db74>&#34;login-number&#34;</span>: USERNAME, 
+        <span style=color:#e6db74>&#34;login-password&#34;</span>: PASSWORD,   
+    }
+
+    <span style=color:#75715e># Perform initial login</span>
+    soup <span style=color:#f92672>=</span> post_data(session_requests, LOGIN_URL, payload)
+    authenticity_token <span style=color:#f92672>=</span> get_verif_token(soup)
+    t1, t2, t3 <span style=color:#f92672>=</span> get_pin_digits(soup)
+    
+    <span style=color:#75715e># Create payload</span>
+    payload <span style=color:#f92672>=</span> {
+        <span style=color:#e6db74>&#34;__RequestVerificationToken&#34;</span>: authenticity_token,
+        <span style=color:#e6db74>&#34;login-digit-1&#34;</span>: pin[t1],
+        <span style=color:#e6db74>&#34;login-digit-2&#34;</span>: pin[t2], 
+        <span style=color:#e6db74>&#34;login-digit-3&#34;</span>: pin[t3]  
+    }
+
+    <span style=color:#75715e># Perform 2nd login</span>
+    soup <span style=color:#f92672>=</span> post_data(session_requests, FORM2_ENDPOINT_URL, payload)
+
+    avail_funds <span style=color:#f92672>=</span> soup<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;span&#34;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>: <span style=color:#e6db74>&#39;fund-1&#39;</span>})<span style=color:#f92672>.</span>string<span style=color:#f92672>.</span>encode(<span style=color:#e6db74>&#39;ascii&#39;</span>, <span style=color:#e6db74>&#39;ignore&#39;</span>)
+    cur_bal <span style=color:#f92672>=</span> soup<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;span&#34;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>: <span style=color:#e6db74>&#39;fund-2&#39;</span>})<span style=color:#f92672>.</span>string<span style=color:#f92672>.</span>encode(<span style=color:#e6db74>&#39;ascii&#39;</span>, <span style=color:#e6db74>&#39;ignore&#39;</span>)
+
+    acct_id <span style=color:#f92672>=</span> get_acct_id(soup)
+    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Available Funds: &#34;</span>, avail_funds)
+    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Current Balance: &#34;</span>, cur_bal)
+    <span style=color:#66d9ef>print</span>(<span style=color:#e6db74>&#34;Account ID: &#34;</span>, acct_id)
+
+    url <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;https://www.open24.ie/online/Accounts/Details/RecentTransactions?accountId=&#39;</span><span style=color:#f92672>+</span>acct_id<span style=color:#f92672>+</span><span style=color:#e6db74>&#39;&amp;from-date=&#39;</span><span style=color:#f92672>+</span>start_date<span style=color:#f92672>+</span><span style=color:#e6db74>&#39;&amp;to-date=&#39;</span><span style=color:#f92672>+</span>end_date
+    soup <span style=color:#f92672>=</span> get_data(session_requests, url)
+    valid_trs <span style=color:#f92672>=</span> [item <span style=color:#66d9ef>for</span> item <span style=color:#f92672>in</span> soup<span style=color:#f92672>.</span>find_all(<span style=color:#e6db74>&#39;tr&#39;</span>) <span style=color:#66d9ef>if</span> <span style=color:#e6db74>&#34;data-uid&#34;</span> <span style=color:#f92672>in</span> item<span style=color:#f92672>.</span>attrs]
+
+    outputFile <span style=color:#f92672>=</span> open(FILENAME, <span style=color:#e6db74>&#39;w&#39;</span>)
+    outputWriter <span style=color:#f92672>=</span> csv<span style=color:#f92672>.</span>writer(outputFile, lineterminator <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#39;</span>)
+    outputWriter<span style=color:#f92672>.</span>writerow([<span style=color:#e6db74>&#39;Date&#39;</span>,<span style=color:#e6db74>&#39;Desc&#39;</span>,<span style=color:#e6db74>&#39;In&#39;</span>,<span style=color:#e6db74>&#39;Out&#39;</span>,<span style=color:#e6db74>&#39;Total&#39;</span>])
+    
+    <span style=color:#66d9ef>for</span> tr <span style=color:#f92672>in</span> valid_trs:
+        date <span style=color:#f92672>=</span> datetime<span style=color:#f92672>.</span>strptime(tr<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;td&#34;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>: <span style=color:#e6db74>&#39;date&#39;</span>})<span style=color:#f92672>.</span>string, <span style=color:#e6db74>&#39;</span><span style=color:#e6db74>%d</span><span style=color:#e6db74> %b %y&#39;</span>)<span style=color:#f92672>.</span>strftime(<span style=color:#e6db74>&#39;</span><span style=color:#e6db74>%d</span><span style=color:#e6db74>-%b-%y&#39;</span>)
+        desc <span style=color:#f92672>=</span> tr<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;td&#34;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>: <span style=color:#e6db74>&#39;desc&#39;</span>})<span style=color:#f92672>.</span>string
+        <span style=color:#66d9ef>if</span> desc <span style=color:#f92672>is</span> None:
+            desc <span style=color:#f92672>=</span> tr<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#34;td&#34;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>: <span style=color:#e6db74>&#39;desc&#39;</span>})<span style=color:#f92672>.</span>find(<span style=color:#e6db74>&#39;a&#39;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>:<span style=color:#e6db74>&#39;underline&#39;</span>})<span style=color:#f92672>.</span>string
+        desc <span style=color:#f92672>=</span> str(desc)<span style=color:#f92672>.</span>strip()
+        tds <span style=color:#f92672>=</span> tr<span style=color:#f92672>.</span>findAll(<span style=color:#e6db74>&#34;td&#34;</span>, {<span style=color:#e6db74>&#39;class&#39;</span>: <span style=color:#e6db74>&#39;currency&#39;</span>})
+        monin <span style=color:#f92672>=</span> tds[<span style=color:#ae81ff>0</span>]<span style=color:#f92672>.</span>string
+        monout <span style=color:#f92672>=</span> tds[<span style=color:#ae81ff>1</span>]<span style=color:#f92672>.</span>string
+        total <span style=color:#f92672>=</span> tds[<span style=color:#ae81ff>2</span>]<span style=color:#f92672>.</span>string
+        outputWriter<span style=color:#f92672>.</span>writerow([date, desc, monin, monout, total])
+    outputFile<span style=color:#f92672>.</span>close()
+
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
+    main()
+</code></pre></div></div></div><a href=https://twitter.com/share class=twitter-share-button data-size=small data-count=none>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script><ul class=pager>&nbsp;<li class=previous><a href=https://www.neilgrogan.com/slack-bot/>Slack Bots for Work</a></li>&nbsp;<li class=next><a href=https://www.neilgrogan.com/self-host/>The year of self hosting</a></li></ul></ul></div><footer><p class="text-muted credit">&copy; 2020. All rights reserved.</p></footer><script src=https://www.neilgrogan.com//js/jquery-1.10.2.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.min.js></script><script src=https://www.neilgrogan.com//js/bootstrap.js></script><script type=text/javascript src=https://www.neilgrogan.com//js/hc.js></script></body></html>

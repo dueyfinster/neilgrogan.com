@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>secure-shell terminal on Neil Grogan</title><link>https://www.neilgrogan.com/tags/secure-shell-terminal/</link><description>Recent content in secure-shell terminal on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 17 Nov 2008 00:00:00 +0000</lastBuildDate><atom:link href="https://www.neilgrogan.com/tags/secure-shell-terminal/feed.xml" rel="self" type="application/rss+xml"/><item><title>SSH Guide</title><link>https://www.neilgrogan.com/ssh-guide/</link><pubDate>Mon, 17 Nov 2008 00:00:00 +0000</pubDate><guid>https://www.neilgrogan.com/ssh-guide/</guid><description>**Note: This Guide was written for use by my Computer Science class on Linux (and Mac OS X where noted). I haven&amp;rsquo;t used SSH on Windows; but hopefully someone can make sure this guide works also on Windows by noting differences). SSH comes with nearly all Linux distros and all Mac OS X releases.
+**
+OS Specific Colours: Linux - Mac OS X - Windows
+**
+**
+**Download SSH For Windows</description></item></channel></rss>
