@@ -1,7 +1,9 @@
 ---
 date: "2008-02-14T00:00:00Z"
 slug: why-i-think-amarock-rocks
-tags: review software
+tags:
+- review
+- software
 title: Why I think Amarok rocks....
 ---
 

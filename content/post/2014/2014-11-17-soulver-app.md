@@ -1,7 +1,9 @@
 ---
 date: "2014-11-17T00:00:00Z"
 slug: soulver-app
-tags: ios review
+tags:
+- ios
+- review
 title: Soulver App
 ---
 

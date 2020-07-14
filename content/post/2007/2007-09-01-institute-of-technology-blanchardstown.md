@@ -1,7 +1,8 @@
 ---
 date: "2007-09-01T00:00:00Z"
 slug: institute-of-technology-blanchardstown
-tags: education
+tags:
+- education
 title: Institute of Technology, Blanchardstown
 ---
 

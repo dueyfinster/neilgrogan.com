@@ -2,7 +2,8 @@
 date: "2012-08-30T00:00:00Z"
 description: ""
 slug: the-linux-desktop-has-place
-tags: linux
+tags:
+- linux
 title: The Linux Desktop has a place
 ---
 

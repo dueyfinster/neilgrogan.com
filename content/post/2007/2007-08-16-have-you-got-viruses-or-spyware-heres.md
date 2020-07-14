@@ -1,7 +1,8 @@
 ---
 date: "2007-08-16T00:00:00Z"
 slug: have-you-got-viruses-or-spyware-heres
-tags: security
+tags:
+- security
 title: Have you got viruses or spyware? Here's my tips!
 ---
 

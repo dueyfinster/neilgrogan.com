@@ -1,7 +1,8 @@
 ---
 date: "2007-10-09T00:00:00Z"
 slug: planning-computer-build
-tags: hardware
+tags:
+- hardware
 title: Planning the Computer Build
 ---
 

@@ -1,7 +1,10 @@
 ---
 date: "2010-05-30T00:00:00Z"
 slug: webm-promises-open-web-video
-tags: google video audio
+tags:
+- google
+- video
+- audio
 title: WebM promises Open Web Video
 ---
 

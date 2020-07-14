@@ -1,7 +1,9 @@
 ---
 date: "2015-12-01T00:00:00Z"
 slug: deliveries-app
-tags: ios review
+tags:
+- ios
+- review
 title: Deliveries App
 ---
 

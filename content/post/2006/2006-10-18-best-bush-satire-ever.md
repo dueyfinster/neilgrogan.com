@@ -1,7 +1,8 @@
 ---
 date: "2006-10-18T00:00:00Z"
 slug: best-bush-satire-ever
-tags: politics
+tags:
+- politics
 title: Best Bush Satire, Ever.
 ---
 

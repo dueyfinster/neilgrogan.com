@@ -1,7 +1,9 @@
 ---
 date: "2010-06-06T00:00:00Z"
 slug: haiku-open-source-beos-clone
-tags: podcast apple
+tags:
+- podcast
+- apple
 title: 'Haiku: Open Source BeOS clone'
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: "2008-10-19T00:00:00Z"
 slug: hurling-four-in-row
-tags: sport
+tags:
+- sport
 title: Hurling - Four in a row?
 ---
 

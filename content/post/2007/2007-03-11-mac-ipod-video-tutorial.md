@@ -1,7 +1,10 @@
 ---
 date: "2007-03-11T00:00:00Z"
 slug: mac-ipod-video-tutorial
-tags: apple hardware audio
+tags:
+- apple
+- hardware
+- audio
 title: Mac iPod Video Tutorial
 ---
 

@@ -1,7 +1,9 @@
 ---
 date: "2016-04-01T00:00:00Z"
 slug: ulysses-app
-tags: ios review
+tags:
+- ios
+- review
 title: Ulysses App
 ---
 

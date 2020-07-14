@@ -1,7 +1,9 @@
 ---
 date: "2015-09-10T00:00:00Z"
 slug: editorial-app
-tags: ios review
+tags:
+- ios
+- review
 title: Editorial App
 ---
 

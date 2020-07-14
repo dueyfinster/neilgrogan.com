@@ -1,7 +1,9 @@
 ---
 date: "2008-01-13T00:00:00Z"
 slug: few-days-with-nokia-n810
-tags: hardware review
+tags:
+- hardware
+- review
 title: A few days with A Nokia N810
 ---
 

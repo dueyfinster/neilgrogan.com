@@ -1,7 +1,9 @@
 ---
 date: "2010-11-22T00:00:00Z"
 slug: my-top-chrome-extensions
-tags: google review
+tags:
+- google
+- review
 title: My Top Chrome Extensions
 ---
 

@@ -1,7 +1,9 @@
 ---
 date: "2008-09-17T00:00:00Z"
 slug: yamaha-yq-aerox-best-moped-ever
-tags: hardware review
+tags:
+- hardware
+- review
 title: Yamaha YQ Aerox - best moped ever?
 ---
 

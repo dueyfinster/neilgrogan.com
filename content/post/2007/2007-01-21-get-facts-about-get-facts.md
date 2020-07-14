@@ -1,7 +1,9 @@
 ---
 date: "2007-01-21T00:00:00Z"
 slug: get-facts-about-get-facts
-tags: microsoft legal
+tags:
+- microsoft
+- legal
 title: Get the facts, about "Get the Facts"
 ---
 

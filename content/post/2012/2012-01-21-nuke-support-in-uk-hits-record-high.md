@@ -2,7 +2,9 @@
 date: "2012-01-21T00:00:00Z"
 link: http://go.theregister.com/feed/www.theregister.co.uk/2012/01/19/uk_nuclear_yesplease/
 slug: nuke-support-in-uk-hits-record-high
-tags: politics security
+tags:
+- politics
+- security
 title: Nuke support in UK hits record high
 ---
 

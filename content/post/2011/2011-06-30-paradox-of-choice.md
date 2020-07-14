@@ -1,7 +1,8 @@
 ---
 date: "2011-06-30T00:00:00Z"
 slug: paradox-of-choice
-tags: video
+tags:
+- video
 title: The Paradox of Choice
 ---
 

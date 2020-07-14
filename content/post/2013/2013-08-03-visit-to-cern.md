@@ -1,7 +1,9 @@
 ---
 date: "2013-08-03T00:00:00Z"
 slug: cern
-tags: internet travel
+tags:
+- internet
+- travel
 title: Visit to CERN
 ---
 

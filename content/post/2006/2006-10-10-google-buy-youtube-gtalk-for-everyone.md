@@ -1,7 +1,8 @@
 ---
 date: "2006-10-10T00:00:00Z"
 slug: google-buy-youtube-gtalk-for-everyone
-tags: google
+tags:
+- google
 title: Google buy YouTube, GTalk for everyone and Blogger Bliss
 ---
 

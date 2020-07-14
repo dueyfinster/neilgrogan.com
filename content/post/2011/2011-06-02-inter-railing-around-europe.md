@@ -1,7 +1,8 @@
 ---
 date: "2011-06-02T00:00:00Z"
 slug: inter-railing-around-europe
-tags: travel
+tags:
+- travel
 title: Inter-railing around Europe
 ---
 

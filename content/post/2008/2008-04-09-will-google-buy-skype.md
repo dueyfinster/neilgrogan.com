@@ -1,7 +1,9 @@
 ---
 date: "2008-04-09T00:00:00Z"
 slug: will-google-buy-skype
-tags: google business
+tags:
+- google
+- business
 title: Will Google Buy Skype?
 ---
 

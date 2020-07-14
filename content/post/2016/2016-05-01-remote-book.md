@@ -1,7 +1,9 @@
 ---
 date: "2016-05-01T00:00:00Z"
 slug: remote-book
-tags: book review
+tags:
+- book
+- review
 title: 'Remote: Office Not Required'
 ---
 

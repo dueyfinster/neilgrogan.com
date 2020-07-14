@@ -1,7 +1,11 @@
 ---
 date: "2016-08-19T00:00:00Z"
 slug: gmail-newsletter-filter
-tags: automation javascript programming code
+tags:
+- automation
+- javascript
+- programming
+- code
 title: Automatic Newsletter Cleanup in Gmail
 ---
 

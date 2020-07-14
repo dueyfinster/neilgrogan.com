@@ -1,7 +1,8 @@
 ---
 date: "2009-03-07T00:00:00Z"
 slug: this-post-is-censored-by-irma
-tags: legal
+tags:
+- legal
 title: This post is censored by IRMA
 ---
 

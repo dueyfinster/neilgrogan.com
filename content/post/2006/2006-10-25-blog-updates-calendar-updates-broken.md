@@ -1,7 +1,9 @@
 ---
 date: "2006-10-25T00:00:00Z"
 slug: blog-updates-calendar-updates-broken
-tags: apple software
+tags:
+- apple
+- software
 title: Blog Updates, Calendar Updates, broken Macbook
 ---
 

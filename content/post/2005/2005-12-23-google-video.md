@@ -1,7 +1,9 @@
 ---
 date: "2005-12-23T00:00:00Z"
 slug: google-video
-tags: google video
+tags:
+- google
+- video
 title: Google Video
 ---
 

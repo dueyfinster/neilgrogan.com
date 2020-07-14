@@ -1,7 +1,8 @@
 ---
 date: "2011-02-09T00:00:00Z"
 slug: thoughts-on-ipv6
-tags: networking
+tags:
+- networking
 title: Thoughts on IPv6
 ---
 

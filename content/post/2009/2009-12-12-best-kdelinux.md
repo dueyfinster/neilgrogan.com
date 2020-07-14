@@ -1,7 +1,8 @@
 ---
 date: "2009-12-12T00:00:00Z"
 slug: best-kdelinux
-tags: linux
+tags:
+- linux
 title: Best KDE/Linux?
 ---
 

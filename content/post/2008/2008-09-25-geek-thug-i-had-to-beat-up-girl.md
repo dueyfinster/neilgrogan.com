@@ -1,7 +1,8 @@
 ---
 date: "2008-09-25T00:00:00Z"
 slug: geek-thug-i-had-to-beat-up-girl
-tags: internet
+tags:
+- internet
 title: Geek Thug - "I Had to Beat Up a Girl"
 ---
 

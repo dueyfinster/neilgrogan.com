@@ -1,7 +1,9 @@
 ---
 date: "2006-03-10T00:00:00Z"
 slug: virtual-ubuntu
-tags: linux virtual-machines
+tags:
+- linux
+- virtual-machines
 title: Virtual Ubuntu
 ---
 

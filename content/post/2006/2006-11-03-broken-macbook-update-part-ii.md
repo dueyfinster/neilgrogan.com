@@ -1,7 +1,10 @@
 ---
 date: "2006-11-03T00:00:00Z"
 slug: broken-macbook-update-part-ii
-tags: apple mac hardware
+tags:
+- apple
+- mac
+- hardware
 title: Broken Macbook Update Part II
 ---
 

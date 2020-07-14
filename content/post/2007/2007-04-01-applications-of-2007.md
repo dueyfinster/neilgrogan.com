@@ -1,7 +1,9 @@
 ---
 date: "2007-04-01T00:00:00Z"
 slug: applications-of-2007
-tags: software review
+tags:
+- software
+- review
 title: My Top 10 Applications of 2007
 ---
 

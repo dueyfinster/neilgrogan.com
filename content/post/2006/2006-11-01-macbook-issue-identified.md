@@ -1,7 +1,10 @@
 ---
 date: "2006-11-01T00:00:00Z"
 slug: macbook-issue-identified
-tags: apple hardware mac
+tags:
+- apple
+- hardware
+- mac
 title: Macbook Issue Identified
 ---
 

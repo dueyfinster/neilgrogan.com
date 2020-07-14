@@ -1,7 +1,8 @@
 ---
 date: "2007-05-06T00:00:00Z"
 slug: irish-elections-creative-commons
-tags: politics
+tags:
+- politics
 title: Irish Elections and Creative Commons
 ---
 

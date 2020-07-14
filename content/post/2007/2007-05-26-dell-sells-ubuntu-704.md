@@ -1,7 +1,9 @@
 ---
 date: "2007-05-26T00:00:00Z"
 slug: dell-sells-ubuntu-704
-tags: linux business
+tags:
+- linux
+- business
 title: Dell Sells Ubuntu 7.04
 ---
 

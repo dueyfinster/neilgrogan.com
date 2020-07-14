@@ -1,7 +1,9 @@
 ---
 date: "2006-04-09T00:00:00Z"
 slug: europes-new-voice
-tags: politics europe
+tags:
+- politics
+- europe
 title: Europe's New Voice
 ---
 

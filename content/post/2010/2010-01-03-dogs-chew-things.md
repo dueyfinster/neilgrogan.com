@@ -1,7 +1,8 @@
 ---
 date: "2010-01-03T00:00:00Z"
 slug: dogs-chew-things
-tags: hardware
+tags:
+- hardware
 title: Dogs chew things?
 ---
 

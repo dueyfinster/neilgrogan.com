@@ -1,7 +1,8 @@
 ---
 date: "2006-03-02T00:00:00Z"
 slug: gallery-riots-and-policy-change
-tags: politics
+tags:
+- politics
 title: Gallery, Riots and Policy Change
 ---
 

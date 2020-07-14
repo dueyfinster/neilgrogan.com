@@ -1,7 +1,9 @@
 ---
 date: "2005-12-23T00:00:00Z"
 slug: click-online
-tags: podcast video
+tags:
+- podcast
+- video
 title: Click Online
 ---
 

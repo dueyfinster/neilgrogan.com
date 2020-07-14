@@ -2,7 +2,8 @@
 date: "2009-12-04T00:00:00Z"
 link: null
 slug: pulp-fiction-theme
-tags: video
+tags:
+- video
 title: Pulp Fiction theme
 ---
 

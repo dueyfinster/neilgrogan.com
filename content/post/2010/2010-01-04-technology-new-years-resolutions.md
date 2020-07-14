@@ -1,7 +1,9 @@
 ---
 date: "2010-01-04T00:00:00Z"
 slug: technology-new-years-resolutions
-tags: programming education
+tags:
+- programming
+- education
 title: Technology New Years Resolutions
 ---
 

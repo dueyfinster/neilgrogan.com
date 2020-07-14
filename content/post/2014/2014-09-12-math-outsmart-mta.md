@@ -3,7 +3,8 @@ date: "2014-09-12T00:00:00Z"
 description: Math can help you outsmart the MTA
 link: http://iquantny.tumblr.com/post/96700509489/how-memorizing-19-05-can-help-you-outsmart-the-mta
 slug: math-mta
-tags: business
+tags:
+- business
 title: Math can help you outsmart the MTA
 ---
 

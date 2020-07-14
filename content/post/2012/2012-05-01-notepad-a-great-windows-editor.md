@@ -2,7 +2,10 @@
 date: "2012-05-01T00:00:00Z"
 description: Why I think Notepad++ is one of the best windows text editors
 slug: notepad-a-great-windows-editor
-tags: windows software review
+tags:
+- windows
+- software
+- review
 title: 'Notepad++: A Great Windows Editor'
 ---
 

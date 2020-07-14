@@ -1,7 +1,9 @@
 ---
 date: "2006-12-10T00:00:00Z"
 slug: video-test
-tags: hardware review
+tags:
+- hardware
+- review
 title: Nokia 6234 Video Test
 ---
 

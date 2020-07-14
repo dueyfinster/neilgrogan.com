@@ -1,7 +1,8 @@
 ---
 date: "2011-11-19T00:00:00Z"
 slug: faster-with-arch
-tags: linux
+tags:
+- linux
 title: Faster with Arch
 ---
 

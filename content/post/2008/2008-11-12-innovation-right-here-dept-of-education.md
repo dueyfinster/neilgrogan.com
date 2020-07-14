@@ -1,7 +1,8 @@
 ---
 date: "2008-11-12T00:00:00Z"
 slug: innovation-right-here-dept-of-education
-tags: business
+tags:
+- business
 title: Innovation Right Here - Dept. of Education is Wrong
 ---
 

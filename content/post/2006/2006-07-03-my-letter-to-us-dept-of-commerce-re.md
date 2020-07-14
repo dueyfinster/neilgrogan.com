@@ -1,7 +1,8 @@
 ---
 date: "2006-07-03T00:00:00Z"
 slug: my-letter-to-us-dept-of-commerce-re
-tags: politics
+tags:
+- politics
 title: 'My Letter to U.S. Dept of Commerce, RE: The Future of the Internet'
 ---
 

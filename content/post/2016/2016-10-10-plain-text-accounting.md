@@ -1,7 +1,9 @@
 ---
 date: "2016-10-10T00:00:00Z"
 slug: ledger
-tags: software review
+tags:
+- software
+- review
 title: Plain Text Accounting
 ---
 

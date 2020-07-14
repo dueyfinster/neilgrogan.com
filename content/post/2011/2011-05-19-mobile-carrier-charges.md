@@ -1,7 +1,8 @@
 ---
 date: "2011-05-19T00:00:00Z"
 slug: mobile-carrier-charges
-tags: business
+tags:
+- business
 title: Mobile Carrier Charges
 ---
 

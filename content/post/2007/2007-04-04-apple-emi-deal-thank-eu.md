@@ -1,7 +1,8 @@
 ---
 date: "2007-04-04T00:00:00Z"
 slug: apple-emi-deal-thank-eu
-tags: apple
+tags:
+- apple
 title: Apple / EMI Deal - Thank the EU?
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: "2010-06-20T00:00:00Z"
 slug: bsc-in-computing
-tags: education
+tags:
+- education
 title: BSc in Computing
 ---
 

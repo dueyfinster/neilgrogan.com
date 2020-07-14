@@ -1,7 +1,9 @@
 ---
 date: "2006-08-02T00:00:00Z"
 slug: law-and-interweb
-tags: politics legal
+tags:
+- politics
+- legal
 title: Law and the Interweb
 ---
 

@@ -1,7 +1,10 @@
 ---
 date: "2011-07-13T00:00:00Z"
 slug: tech-video-podcasts-worth-watching
-tags: video review podcast
+tags:
+- video
+- review
+- podcast
 title: Tech Video Podcasts Worth Watching
 ---
 

@@ -2,7 +2,9 @@
 date: "2013-01-22T00:00:00Z"
 description: Review of Podcatcher called Stitcher
 slug: stitcher
-tags: podcast review
+tags:
+- podcast
+- review
 title: Stitcher is (audio) podcasts done right
 ---
 

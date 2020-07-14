@@ -1,7 +1,8 @@
 ---
 date: "2009-11-30T00:00:00Z"
 slug: sony-subsidises-supercomputers-for-us
-tags: hardware
+tags:
+- hardware
 title: Sony Subsidises Supercomputers for the US Military?
 ---
 

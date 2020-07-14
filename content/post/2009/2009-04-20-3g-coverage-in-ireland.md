@@ -1,7 +1,9 @@
 ---
 date: "2009-04-20T00:00:00Z"
 slug: 3g-coverage-in-ireland
-tags: hardware apple
+tags:
+- hardware
+- apple
 title: 3G Coverage in Ireland
 ---
 

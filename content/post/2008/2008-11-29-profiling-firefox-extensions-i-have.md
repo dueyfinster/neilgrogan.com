@@ -1,7 +1,9 @@
 ---
 date: "2008-11-29T00:00:00Z"
 slug: profiling-firefox-extensions-i-have
-tags: mozilla review
+tags:
+- mozilla
+- review
 title: Profiling Firefox Extensions I have installed
 ---
 

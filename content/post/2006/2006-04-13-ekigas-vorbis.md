@@ -1,7 +1,10 @@
 ---
 date: "2006-04-13T00:00:00Z"
 slug: ekigas-vorbis
-tags: google apple foss
+tags:
+- google
+- apple
+- foss
 title: Ekiga's Vorbis
 ---
 

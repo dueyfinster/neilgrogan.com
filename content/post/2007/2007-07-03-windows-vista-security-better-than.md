@@ -1,7 +1,9 @@
 ---
 date: "2007-07-03T00:00:00Z"
 slug: windows-vista-security-better-than
-tags: windows linux
+tags:
+- windows
+- linux
 title: Windows Vista Security - Better than Linux?
 ---
 

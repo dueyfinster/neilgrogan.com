@@ -1,7 +1,9 @@
 ---
 date: "2005-12-23T00:00:00Z"
 slug: internet-tablet
-tags: hardware review
+tags:
+- hardware
+- review
 title: Nokia 770 Internet Tablet
 ---
 

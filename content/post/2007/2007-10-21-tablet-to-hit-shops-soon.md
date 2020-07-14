@@ -1,7 +1,10 @@
 ---
 date: "2007-10-21T00:00:00Z"
 slug: tablet-to-hit-shops-soon
-tags: internet hardware review
+tags:
+- internet
+- hardware
+- review
 title: Nokia N810 Tablet to hit the shops soon...
 ---
 

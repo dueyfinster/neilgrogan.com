@@ -1,7 +1,8 @@
 ---
 date: "2007-01-30T00:00:00Z"
 slug: my-plan-to-digitise-my-past-for-future
-tags: internet
+tags:
+- internet
 title: My Plan to Digitise my past, for the future
 ---
 

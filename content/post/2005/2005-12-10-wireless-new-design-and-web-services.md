@@ -1,7 +1,8 @@
 ---
 date: "2005-12-10T00:00:00Z"
 slug: wireless-new-design-and-web-services
-tags: security
+tags:
+- security
 title: Wireless, New Design and Web Services
 ---
 

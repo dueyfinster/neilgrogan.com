@@ -1,7 +1,8 @@
 ---
 date: "2011-05-11T00:00:00Z"
 slug: cleaning-your-ps3s-fans
-tags: hardware
+tags:
+- hardware
 title: Cleaning your PS3's fans?
 ---
 

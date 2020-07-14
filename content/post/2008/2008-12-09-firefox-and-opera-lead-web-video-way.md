@@ -1,7 +1,9 @@
 ---
 date: "2008-12-09T00:00:00Z"
 slug: firefox-and-opera-lead-web-video-way
-tags: video mozilla
+tags:
+- video
+- mozilla
 title: Firefox and Opera lead the web video way
 ---
 

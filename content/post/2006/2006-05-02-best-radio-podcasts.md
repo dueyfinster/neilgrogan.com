@@ -1,7 +1,10 @@
 ---
 date: "2006-05-02T00:00:00Z"
 slug: best-radio-podcasts
-tags: audio podcast review
+tags:
+- audio
+- podcast
+- review
 title: Best Radio Podcasts
 ---
 

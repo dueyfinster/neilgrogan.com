@@ -1,7 +1,9 @@
 ---
 date: "2015-10-22T00:00:00Z"
 slug: react
-tags: javascript programming
+tags:
+- javascript
+- programming
 title: Adventures with React
 ---
 

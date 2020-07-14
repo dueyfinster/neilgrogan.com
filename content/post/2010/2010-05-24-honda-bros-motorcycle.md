@@ -1,7 +1,9 @@
 ---
 date: "2010-05-24T00:00:00Z"
 slug: honda-bros-motorcycle
-tags: hardware review
+tags:
+- hardware
+- review
 title: Honda Bros Motorcycle
 ---
 

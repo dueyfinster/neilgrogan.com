@@ -1,7 +1,8 @@
 ---
 date: "2006-12-13T00:00:00Z"
 slug: irish-blog-awards
-tags: business
+tags:
+- business
 title: Irish Blog Awards
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: "2007-05-17T00:00:00Z"
 slug: update-on-rte-and-creative-commons
-tags: legal
+tags:
+- legal
 title: Update on RTE and the Creative Commons
 ---
 

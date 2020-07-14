@@ -1,7 +1,10 @@
 ---
 date: "2012-10-30T00:00:00Z"
 slug: chrome-vs-internet-explorer-audience
-tags: mozilla microsoft google
+tags:
+- mozilla
+- microsoft
+- google
 title: Chrome vs. Internet Explorer Audience
 ---
 

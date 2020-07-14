@@ -1,7 +1,10 @@
 ---
 date: "2006-08-12T00:00:00Z"
 slug: feel-i-need-to-confess-why-i-am-buying
-tags: apple software linux
+tags:
+- apple
+- software
+- linux
 title: Why I am getting an Apple MacBook
 ---
 

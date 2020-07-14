@@ -1,7 +1,8 @@
 ---
 date: "2011-01-31T00:00:00Z"
 slug: blogging-like-h4x0r
-tags: ruby
+tags:
+- ruby
 title: Blogging like a H4x0r
 ---
 

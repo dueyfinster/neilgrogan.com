@@ -2,7 +2,8 @@
 date: "2014-10-09T00:00:00Z"
 link: http://www.181.fm
 slug: 181fm
-tags: radio
+tags:
+- radio
 title: All Music Radio
 ---
 

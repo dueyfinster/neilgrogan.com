@@ -1,7 +1,10 @@
 ---
 date: "2011-02-05T00:00:00Z"
 slug: output-percentage-of-file-bash-code
-tags: programming bash code
+tags:
+- programming
+- bash
+- code
 title: Output Percentage of File (Bash code)
 ---
 

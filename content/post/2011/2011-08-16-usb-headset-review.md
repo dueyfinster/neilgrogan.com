@@ -1,7 +1,9 @@
 ---
 date: "2011-08-16T00:00:00Z"
 slug: usb-headset-review
-tags: hardware review
+tags:
+- hardware
+- review
 title: Plantronics .655 USB Headset Review
 ---
 

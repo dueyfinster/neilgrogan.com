@@ -1,7 +1,9 @@
 ---
 date: "2009-01-26T00:00:00Z"
 slug: linux-desktop-environments
-tags: linux software
+tags:
+- linux
+- software
 title: Linux Desktop Environments?
 ---
 

@@ -2,7 +2,8 @@
 date: "2012-10-02T00:00:00Z"
 description: ""
 slug: grab-popcorn
-tags: business
+tags:
+- business
 title: Grab the Popcorn!
 ---
 

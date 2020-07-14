@@ -1,7 +1,8 @@
 ---
 date: "2006-02-13T00:00:00Z"
 slug: german-trip
-tags: travel
+tags:
+- travel
 title: German Trip
 ---
 

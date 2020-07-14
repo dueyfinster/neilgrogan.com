@@ -1,7 +1,10 @@
 ---
 date: "2006-03-25T00:00:00Z"
 slug: just-klik-it
-tags: software linux review
+tags:
+- software
+- linux
+- review
 title: Just Klik it!
 ---
 

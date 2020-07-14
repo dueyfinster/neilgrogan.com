@@ -1,7 +1,9 @@
 ---
 date: "2007-09-04T00:00:00Z"
 slug: review-of-official-ubuntu-book-second
-tags: book review
+tags:
+- book
+- review
 title: Review of the Official Ubuntu Book, Second Edition (2007)
 ---
 

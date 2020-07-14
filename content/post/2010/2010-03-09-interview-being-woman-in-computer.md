@@ -1,7 +1,8 @@
 ---
 date: "2010-03-09T00:00:00Z"
 slug: interview-being-woman-in-computer
-tags: software
+tags:
+- software
 title: Interview - Being a Woman in Computer Science
 ---
 

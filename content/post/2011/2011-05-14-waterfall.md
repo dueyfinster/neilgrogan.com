@@ -1,7 +1,8 @@
 ---
 date: "2011-05-14T00:00:00Z"
 slug: waterfall
-tags: photo
+tags:
+- photo
 title: Waterfall
 ---
 

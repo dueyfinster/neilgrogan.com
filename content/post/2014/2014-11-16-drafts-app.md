@@ -1,7 +1,9 @@
 ---
 date: "2014-11-16T00:00:00Z"
 slug: drafts-app
-tags: ios review
+tags:
+- ios
+- review
 title: Drafts App
 ---
 

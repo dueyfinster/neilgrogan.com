@@ -1,7 +1,8 @@
 ---
 date: "2010-03-17T00:00:00Z"
 slug: computer-graphics-bauhaus-chess-design
-tags: education
+tags:
+- education
 title: 'Computer Graphics: Bauhaus Chess Design'
 ---
 

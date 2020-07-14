@@ -1,7 +1,10 @@
 ---
 date: "2006-03-26T00:00:00Z"
 slug: mozillas-millions
-tags: mozilla software business
+tags:
+- mozilla
+- software
+- business
 title: Mozilla's Millions
 ---
 

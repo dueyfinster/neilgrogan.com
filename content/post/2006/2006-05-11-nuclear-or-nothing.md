@@ -1,7 +1,8 @@
 ---
 date: "2006-05-11T00:00:00Z"
 slug: nuclear-or-nothing
-tags: politics
+tags:
+- politics
 title: Nuclear or Nothing?
 ---
 

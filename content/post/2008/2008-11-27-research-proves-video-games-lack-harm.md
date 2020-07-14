@@ -1,7 +1,8 @@
 ---
 date: "2008-11-27T00:00:00Z"
 slug: research-proves-video-games-lack-harm
-tags: internet
+tags:
+- internet
 title: Research proves video games lack harm
 ---
 

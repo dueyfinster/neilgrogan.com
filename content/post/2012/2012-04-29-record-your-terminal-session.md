@@ -2,7 +2,10 @@
 date: "2012-04-29T00:00:00Z"
 description: ""
 slug: record-your-terminal-session
-tags: podcast video linux
+tags:
+- podcast
+- video
+- linux
 title: Record your terminal session
 ---
 

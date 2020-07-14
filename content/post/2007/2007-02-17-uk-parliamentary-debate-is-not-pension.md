@@ -1,7 +1,9 @@
 ---
 date: "2007-02-17T00:00:00Z"
 slug: uk-parliamentary-debate-is-not-pension
-tags: audio legal
+tags:
+- audio
+- legal
 title: UK Parliamentary debate "Copyright is not a pension fund"
 ---
 

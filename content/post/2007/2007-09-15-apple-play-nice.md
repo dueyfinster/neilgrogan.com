@@ -1,7 +1,9 @@
 ---
 date: "2007-09-15T00:00:00Z"
 slug: apple-play-nice
-tags: apple legal
+tags:
+- apple
+- legal
 title: Apple - Play Nice....
 ---
 

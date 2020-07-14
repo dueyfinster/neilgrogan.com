@@ -1,7 +1,8 @@
 ---
 date: "2011-06-29T00:00:00Z"
 slug: accidental-sea-when-humans-disappear
-tags: video
+tags:
+- video
 title: Accidental Sea - When Humans Disappear
 ---
 

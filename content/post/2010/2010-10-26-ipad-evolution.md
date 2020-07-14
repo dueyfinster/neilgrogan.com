@@ -1,7 +1,9 @@
 ---
 date: "2010-10-26T00:00:00Z"
 slug: ipad-evolution
-tags: apple hardware
+tags:
+- apple
+- hardware
 title: iPad Evolution?
 ---
 

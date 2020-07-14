@@ -1,7 +1,8 @@
 ---
 date: "2006-04-29T00:00:00Z"
 slug: spam-will-it-ever-stop
-tags: email
+tags:
+- email
 title: Spam, will it ever stop?
 ---
 

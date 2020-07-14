@@ -1,7 +1,9 @@
 ---
 date: "2009-12-01T00:00:00Z"
 slug: yamaha-majesty-400c-review
-tags: review hardware
+tags:
+- review
+- hardware
 title: Yamaha Majesty 400c Review
 ---
 

@@ -1,7 +1,9 @@
 ---
 date: "2008-11-13T00:00:00Z"
 slug: gmail-video-chat
-tags: google video
+tags:
+- google
+- video
 title: Gmail Video Chat
 ---
 

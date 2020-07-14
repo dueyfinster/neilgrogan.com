@@ -1,7 +1,8 @@
 ---
 date: "2008-05-14T00:00:00Z"
 slug: ive-decided-im-decidedly-middle-class
-tags: business
+tags:
+- business
 title: I've decided - I'm decidedly middle class
 ---
 

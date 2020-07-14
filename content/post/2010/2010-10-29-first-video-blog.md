@@ -1,7 +1,8 @@
 ---
 date: "2010-10-29T00:00:00Z"
 slug: first-video-blog
-tags: video
+tags:
+- video
 title: First Video Blog!
 ---
 

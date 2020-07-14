@@ -3,7 +3,9 @@ date: "2011-08-27T00:00:00Z"
 lat: 53.4238
 long: -7.94178
 slug: review-of-motorola-xoom-wifi
-tags: hardware review
+tags:
+- hardware
+- review
 title: Review of the Motorola Xoom Wifi
 ---
 

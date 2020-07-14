@@ -1,7 +1,10 @@
 ---
 date: "2011-11-26T00:00:00Z"
 slug: all-about-platforms
-tags: google hardware internet
+tags:
+- google
+- hardware
+- internet
 title: All About Platforms
 ---
 

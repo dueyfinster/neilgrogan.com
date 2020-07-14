@@ -1,7 +1,8 @@
 ---
 date: "2009-03-07T00:00:00Z"
 slug: love-letter-to-irmas-solicitor
-tags: legal
+tags:
+- legal
 title: Love letter to IRMA's Solicitor
 ---
 

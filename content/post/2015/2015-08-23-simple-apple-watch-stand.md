@@ -1,7 +1,9 @@
 ---
 date: "2015-08-23T00:00:00Z"
 slug: watch-stand
-tags: hardware apple
+tags:
+- hardware
+- apple
 title: Apple Watch Stand
 ---
 

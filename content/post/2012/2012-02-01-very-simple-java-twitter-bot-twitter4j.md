@@ -1,7 +1,10 @@
 ---
 date: "2012-02-01T00:00:00Z"
 slug: very-simple-java-twitter-bot-twitter4j
-tags: java programming code
+tags:
+- java
+- programming
+- code
 title: Very Simple Java Twitter Bot (Twitter4J)
 ---
 

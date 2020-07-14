@@ -1,7 +1,10 @@
 ---
 date: "2013-05-10T00:00:00Z"
 slug: colour-bash
-tags: bash linux terminal
+tags:
+- bash
+- linux
+- terminal
 title: Custom Colourful Bash Prompt
 ---
 

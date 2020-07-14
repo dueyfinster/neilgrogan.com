@@ -1,7 +1,9 @@
 ---
 date: "2007-10-21T00:00:00Z"
 slug: apple-mac-os-x-most-popular-desktop
-tags: apple mac
+tags:
+- apple
+- mac
 title: 'Apple Mac OS X: the most popular Desktop Unix?'
 ---
 

@@ -1,7 +1,10 @@
 ---
 date: "2013-06-20T00:00:00Z"
 slug: ssh-config
-tags: terminal linux secure-shell
+tags:
+- terminal
+- linux
+- secure-shell
 title: SSH Config Aliases
 ---
 

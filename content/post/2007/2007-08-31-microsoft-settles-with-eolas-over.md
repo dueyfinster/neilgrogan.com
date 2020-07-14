@@ -1,7 +1,9 @@
 ---
 date: "2007-08-31T00:00:00Z"
 slug: microsoft-settles-with-eolas-over
-tags: microsoft internet
+tags:
+- microsoft
+- internet
 title: Microsoft settles with Eolas over Internet Explorer
 ---
 

@@ -1,7 +1,10 @@
 ---
 date: "2007-01-25T00:00:00Z"
 slug: bbc-to-host-multi-os-debate-my-first
-tags: business internet linux
+tags:
+- business
+- internet
+- linux
 title: BBC to host Multi-OS Debate and My First Web Auction
 ---
 

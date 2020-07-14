@@ -1,7 +1,9 @@
 ---
 date: "2006-12-30T00:00:00Z"
 slug: video-ipod-and-freespire
-tags: apple linux
+tags:
+- apple
+- linux
 title: Video iPod and Freespire
 ---
 

@@ -1,7 +1,14 @@
 ---
 date: "2012-01-12T00:00:00Z"
 slug: acr884-tech-slot-002-tablets
-tags: radio android apple audio google hardware ios
+tags:
+- radio
+- android
+- apple
+- audio
+- google
+- hardware
+- ios
 title: '@ACR884 Tech Slot #002 - Tablets'
 ---
 

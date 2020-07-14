@@ -1,7 +1,9 @@
 ---
 date: "2016-03-01T00:00:00Z"
 slug: maintain-soft-book
-tags: review book
+tags:
+- review
+- book
 title: Maintainable Software Book
 ---
 

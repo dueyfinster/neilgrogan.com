@@ -1,7 +1,8 @@
 ---
 date: "2018-02-01T00:00:00Z"
 slug: fave-podcasts
-tags: podcast
+tags:
+- podcast
 title: Favourite Podcasts
 ---
 

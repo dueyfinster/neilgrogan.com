@@ -1,0 +1,266 @@
+---
+date: "2020-03-25T00:00:00Z"
+tags:
+- emacs
+- org-mode
+- blogging
+- github-pages
+- jekyll
+title: Test blog with Org-mode
+---
+<div id="outline-container-org80c7680" class="outline-2">
+<h2 id="org80c7680">Why blog with Org mode?</h2>
+<div class="outline-text-2" id="text-org80c7680">
+<blockquote>
+<p>
+Org is a mode for keeping notes, maintaining TODO lists, and project
+planning with a fast and effective plain-text system.
+</p>
+</blockquote>
+
+<p>
+Like most things in the Emacs world, this description of <a href="https://orgmode.org/">Org mode</a> belies the
+true depth of what it can do. Mostly I use Org mode only superficially as a way
+to track notes and projects, using it as a tree of tasks and the status of each.
+However, Org mode is good at many other tasks, not least of those is authoring
+content. I write most of the posts in this blog using markdown, but since I am
+in Emacs anyway and Org mode is a much richer authoring tool I decided to give
+it a go.
+</p>
+
+<p>
+Another thing that motivated the change was Sam Halliday's book <a href="https://leanpub.com/fpmortals">Functional Programming for Mortals</a> which is written entirely in Org mode. As well as
+as having no problem with code, images and text, the book even embeds <a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)">DOT (graph description language)</a> to
+define and render diagrams inline in the org manuscript.
+</p>
+
+<p>
+Just a heads up, I host the blog (at the time of writing) on Github Pages which
+uses <a href="https://jekyllrb.com">Jekyll</a>, a static site generator ideal for blogs and other content creation.
+Some of the information here is not relavent if you don't use Jekyll, but you
+can still use these steps to generate HTML and upload that to your site.
+</p>
+
+<p>
+I followed the steps in this post on <a href="https://orgmode.org/worg/org-tutorials/org-jekyll.html">Using org to Blog with Jekyll</a> with some
+modifications to get everything working.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc7626f0" class="outline-2">
+<h2 id="orgc7626f0">How to author content with Org mode</h2>
+<div class="outline-text-2" id="text-orgc7626f0">
+<p>
+In my blog repository I made a new folder <code>org/posts</code>. In the <code>org</code> folder I
+added an Emacs Lisp file <code>publish.el</code> which contains some code to set up the
+publishing parameters for later.
+</p>
+
+<p>
+Then you can create a blog post in the <code>org/posts</code> folder which must be named
+with the usual convention, but with an <code>.org</code> extension instead of <code>.md</code> or <code>.html</code>.
+</p>
+
+<p>
+For example:
+<code>org/posts/2020-03-15-beware-the-ides-of-march.org</code>
+</p>
+
+<p>
+You can structure your post just like an org file and the headlines will map to
+headings and sub-headings in your post. All of the formatting
+</p>
+
+<p>
+For example:
+</p>
+
+<pre class="example">
+#+BEGIN_QUOTE
+"You can format quotes using the quote directive."
+  ― Emacs User
+#+END_QUOTE
+</pre>
+
+<p>
+Would be rendered as:
+</p>
+
+<blockquote>
+<p>
+"You can format quotes using the quote directive."
+  ― Emacs User
+</p>
+</blockquote>
+
+<p>
+By preceding items with <code>1.</code> or <code>*</code> you can make lists, which can be nested:
+</p>
+
+<ol class="org-ol">
+<li>First item</li>
+<li>Another item
+<ul class="org-ul">
+<li>Nested first item</li>
+<li>Second nested item</li>
+</ul></li>
+<li>Behold, a third item</li>
+</ol>
+
+<p>
+You can have <i>italics by wrapping words</i> in forward slashes. You can <b>bold</b> a
+word with asterisks. <i><b>Both at once</b></i> is of course also allowed.
+</p>
+
+<p>
+Using equals will <code>emphasize things</code> and tildes can be used for inline code <code>val
+x = y + 1</code>.
+</p>
+
+<p>
+You can use special symbols like &pound;100 and <i>&copy;2020 Justin Heyes-Jones</i> and
+mathematical symbols like &lambda; and &pi;. See <a href="https://orgmode.org/worg/org-symbols.html">Symbols in Org mode</a> for the full list.
+</p>
+
+<p>
+Images can be included by using a file link (without a description if you want
+to inline the image), and you can modify the HTML attributes as follows:
+</p>
+
+<pre class="example">
+#+CAPTION: Photo by Rumman Amin on Unsplash
+#+ATTR_HTML: :alt A nice cup of coffee :width 400
+[[../../../images/rumman-amin-bJzJH85Kp7g-unsplash.jpg]]
+</pre>
+
+<p>
+Which renders the image inline:
+</p>
+
+
+<div class="figure">
+<p><img src="../../../images/rumman-amin-bJzJH85Kp7g-unsplash.jpg" alt="A nice cup of coffee" width="400" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Photo by Rumman Amin on Unsplash</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10f3c2a" class="outline-2">
+<h2 id="org10f3c2a">Source code</h2>
+<div class="outline-text-2" id="text-org10f3c2a">
+<p>
+Since you're reading my technical blog you may be the sort of person that likes
+to share code. Org mode supports source code (you can even run it and pass the
+variables around to other parts of the document). Just wrap your code in a
+<code>#+BEGIN_SRC</code> and <code>#+END_SRC</code> block. The code will be highlighted using whatever
+configuration you have already for that mode, you can optionally have line
+numbers using the <code>-n</code> option:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span style="font-weight: bold;">require</span> '<span style="font-weight: bold; text-decoration: underline;">company</span>)
+
+(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">custom-dictionary-company-backend</span> (command <span style="font-weight: bold; text-decoration: underline;">&amp;optional</span> arg <span style="font-weight: bold; text-decoration: underline;">&amp;rest</span> ignored)
+  <span style="font-style: italic;">"Company mode backend for a custom dictionary stored as a radix tree."</span>
+  (<span style="font-weight: bold;">case</span> command
+    ('init    
+     (<span style="font-weight: bold;">unless</span> (boundp 'custom-dictionary-company--words-tree)
+         (<span style="font-weight: bold;">setq</span> custom-dictionary-company--words-tree (tree-from-file <span style="font-style: italic;">"dictionary.el"</span>))))
+    ('prefix
+     (company-grab-word))
+    ('candidates
+     (radix-tree-keys custom-dictionary-company--words-tree (downcase arg)))
+    ('ignore-case
+     'keep-prefix)))
+</pre>
+</div>
+
+<p>
+And some Scala code with line numbers
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scala"><span class="linenr"> 1: </span>def main(args: Array[String]): Unit = {
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span>  // ISO 8601
+<span class="linenr"> 4: </span>  val lastNotifications = "Fri, 06 Mar 2020 22:13:45 GMT"
+<span class="linenr"> 5: </span>
+<span class="linenr"> 6: </span>  val program = (for(
+<span class="linenr"> 7: </span>      implicit0(backend: SttpBackend[Task,Nothing,WebSocketHandler])
+<span class="linenr"> 8: </span>	&lt;- AsyncHttpClientZioBackend();
+<span class="linenr"> 9: </span>      response &lt;- getGists().send();
+<span class="linenr">10: </span>      _ &lt;- putStrLn(s"We got the notifications");
+<span class="linenr">11: </span>      _ &lt;- putStrLn(s"Response: $response")
+<span class="linenr">12: </span>      ) yield ())
+<span class="linenr">13: </span>
+<span class="linenr">14: </span>  runtime.unsafeRun(program)
+<span class="linenr">15: </span>}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf9d6469" class="outline-2">
+<h2 id="orgf9d6469">Implementation notes</h2>
+<div class="outline-text-2" id="text-orgf9d6469">
+<p>
+I diverged from the guide I was following. Firstly I made a file <code>publish.el</code>
+which contains the code required to configure the publishing of the blog, and
+modified it so that instead of hard coded paths it just uses relative paths to
+make things easier. To publish a blog you need to just evaluate this file once
+in a session and run <code>org-publish-all</code> to publish all your Org projects, or
+<code>org-publish</code> to select just one.
+</p>
+
+<pre class="example">
+;; -*- flycheck-disabled-checkers: (emacs-lisp-checkdoc); byte-compile-warnings: (not free-vars) -*-
+;; Run this then M-x org-publish
+
+(setq project-root (locate-dominating-file "." "_config.yml"))
+
+(setq org-publish-project-alist
+  `(
+    ("org-justinhj"
+     ;; Path to your org files.
+     :base-directory ,(concat project-root "org/posts")
+     :base-extension "org"
+     ;; Path to your Jekyll project.
+     :publishing-directory ,(concat project-root "_posts")
+     :recursive t
+     :publishing-function org-html-publish-to-html
+     :section-numbers nil
+     :headline-levels 4
+     :html-extension "html"
+     :body-only t
+     )
+    ))
+</pre>
+
+<p>
+Publishing will create HTML versions of the posts in Jekyll's <code>_posts</code> folder
+and then you can build your site and view it locally before pushing to Github
+Pages.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbbb3f7e" class="outline-2">
+<h2 id="orgbbb3f7e">Summary</h2>
+<div class="outline-text-2" id="text-orgbbb3f7e">
+<p>
+One thing I'm not sure about is if I like using Emacs's code blocks instead of
+embedded Github gists. It's certainly possible to use either. Anyway I plan to
+do a few future blogs using this method and see how it works out.
+</p>
+
+<p>
+You can view the raw org file for this post in my github repository here:
+<a href="https://raw.githubusercontent.com/justinhj/justinhj.github.io/master/org/posts/2020-03-08-how-to-blog-with-org-mode.org">https://raw.githubusercontent.com/justinhj/justinhj.github.io/master/org/posts/2020-03-08-how-to-blog-with-org-mode.org</a>
+</p>
+
+<p>
+Thanks for reading!
+</p>
+</div>
+</div>

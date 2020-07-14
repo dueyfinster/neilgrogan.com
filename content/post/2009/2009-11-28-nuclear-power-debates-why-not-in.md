@@ -1,7 +1,8 @@
 ---
 date: "2009-11-28T00:00:00Z"
 slug: nuclear-power-debates-why-not-in
-tags: politics
+tags:
+- politics
 title: Nuclear Power Debates... why not in Ireland?
 ---
 

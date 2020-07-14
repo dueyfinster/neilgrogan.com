@@ -1,7 +1,9 @@
 ---
 date: "2016-11-30T00:00:00Z"
 slug: ssh-login-cmd
-tags: terminal secure-shell
+tags:
+- terminal
+- secure-shell
 title: Run Command on SSH Login
 ---
 

@@ -1,7 +1,9 @@
 ---
 date: "2005-12-17T00:00:00Z"
 slug: eurosceptics
-tags: politics europe
+tags:
+- politics
+- europe
 title: Eurosceptics
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: "2007-09-27T00:00:00Z"
 slug: computer-systems-dismantling-pcs-is-fun
-tags: hardware
+tags:
+- hardware
 title: Computer Systems - Dismantling PC's is fun!
 ---
 

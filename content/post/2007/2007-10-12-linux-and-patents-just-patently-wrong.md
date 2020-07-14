@@ -1,7 +1,9 @@
 ---
 date: "2007-10-12T00:00:00Z"
 slug: linux-and-patents-just-patently-wrong
-tags: linux legal
+tags:
+- linux
+- legal
 title: 'Linux and Patents: Just Patently Wrong'
 ---
 

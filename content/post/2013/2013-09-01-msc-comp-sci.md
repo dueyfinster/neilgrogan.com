@@ -1,7 +1,8 @@
 ---
 date: "2013-09-01T00:00:00Z"
 slug: ucd
-tags: education
+tags:
+- education
 title: MSc in Computer Science at UCD
 ---
 

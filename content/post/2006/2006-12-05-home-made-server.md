@@ -1,7 +1,8 @@
 ---
 date: "2006-12-05T00:00:00Z"
 slug: home-made-server
-tags: internet
+tags:
+- internet
 title: Home made server...
 ---
 

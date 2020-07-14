@@ -1,7 +1,9 @@
 ---
 date: "2007-08-06T00:00:00Z"
 slug: seven-financial-reasons-not-to-use
-tags: microsoft windows
+tags:
+- microsoft
+- windows
 title: Seven financial reasons not to use Windows
 ---
 

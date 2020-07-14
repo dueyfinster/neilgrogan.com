@@ -1,7 +1,8 @@
 ---
 date: "2006-03-28T00:00:00Z"
 slug: bebo-and-beyond
-tags: social-network
+tags:
+- social-network
 title: Bebo and Beyond..
 ---
 

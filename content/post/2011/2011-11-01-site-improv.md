@@ -1,7 +1,8 @@
 ---
 date: "2011-11-01T00:00:00Z"
 slug: site-improv
-tags: software
+tags:
+- software
 title: Website Improvements
 ---
 

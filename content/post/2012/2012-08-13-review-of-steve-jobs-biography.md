@@ -2,7 +2,9 @@
 date: "2012-08-13T00:00:00Z"
 description: ""
 slug: review-of-steve-jobs-biography
-tags: review book
+tags:
+- review
+- book
 title: Review of Steve Jobs Biography
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: "2011-11-22T00:00:00Z"
 slug: hollywood-tech
-tags: video
+tags:
+- video
 title: Hollywood Tech
 ---
 

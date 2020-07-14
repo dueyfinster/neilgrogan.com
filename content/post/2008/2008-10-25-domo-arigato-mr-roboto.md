@@ -1,7 +1,8 @@
 ---
 date: "2008-10-25T00:00:00Z"
 slug: domo-arigato-mr-roboto
-tags: audio
+tags:
+- audio
 title: Domo Arigato, Mr.Roboto
 ---
 

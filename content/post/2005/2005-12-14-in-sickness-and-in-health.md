@@ -1,7 +1,8 @@
 ---
 date: "2005-12-14T00:00:00Z"
 slug: in-sickness-and-in-health
-tags: linux
+tags:
+- linux
 title: In Sickness and in Health!
 ---
 

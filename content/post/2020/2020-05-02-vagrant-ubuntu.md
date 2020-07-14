@@ -1,9 +1,10 @@
 ---
-date: '2020-05-02'
-layout: post
-title: 'Ubuntu 20.04 Vagrant with Packer'
+date: "2020-05-02T00:00:00Z"
 slug: vagrant-ubuntu-fossa
-tags: networking, homenet
+tags:
+- networking,
+- homenet
+title: Ubuntu 20.04 Vagrant with Packer
 ---
 
 Ubuntu have recently released the new [20.04 LTS codenamed "Focal Fossa"][fossa].
@@ -69,6 +70,7 @@ Finally, we should set up our Packer configuration file
 for [vagrant options][packer-vagrant]):
 
 ```sh
+{% raw %}
 $ cat > ubuntu2004.json << 'EOF'
 {
     "builders": [
@@ -77,11 +79,11 @@ $ cat > ubuntu2004.json << 'EOF'
         "type": "virtualbox-iso",
         "guest_os_type": "ubuntu-64",
         "headless": false,
-
+  
         "iso_url": "http://releases.ubuntu.com/20.04/ubuntu-20.04-live-server-amd64.iso",
         "iso_checksum": "caf3fd69c77c439f162e2ba6040e9c320c4ff0d69aad1340a514319a9264df9f",
         "iso_checksum_type": "sha256",
-
+  
         "ssh_username": "vagrant",
         "ssh_password": "vagrant",
         "ssh_handshake_attempts": "20",
@@ -120,7 +122,12 @@ $ cat > ubuntu2004.json << 'EOF'
             "type": "shell",
             "script": "scripts/init.sh",
             "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'"
-        }
+        },
+        {
+            "type": "shell",
+            "script": "scripts/cleanup.sh",
+            "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'"
+        }    
     ],
     "post-processors": [{
       "type": "vagrant",
@@ -128,7 +135,9 @@ $ cat > ubuntu2004.json << 'EOF'
       "output": "output/ubuntu-20.04.box"
     }]
   }
+
 EOF
+{% endraw %} 
 ```
 
 Then we can build the image:

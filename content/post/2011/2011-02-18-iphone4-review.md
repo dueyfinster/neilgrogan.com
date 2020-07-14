@@ -1,7 +1,10 @@
 ---
 date: "2011-02-18T00:00:00Z"
 slug: iphone4-review
-tags: review apple hardware
+tags:
+- review
+- apple
+- hardware
 title: iPhone 4 Review
 ---
 

@@ -1,7 +1,11 @@
 ---
 date: "2006-08-16T00:00:00Z"
 slug: macbook-update-fonero-haven-commercial
-tags: apple education hardware mac
+tags:
+- apple
+- education
+- hardware
+- mac
 title: Macbook Update, Fonero Haven, Commercial Darknet and College!
 ---
 

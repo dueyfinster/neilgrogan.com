@@ -1,7 +1,8 @@
 ---
 date: "2007-07-08T00:00:00Z"
 slug: hp-to-follow-dell-into-open-source
-tags: linux
+tags:
+- linux
 title: HP to Follow Dell into Open Source? and Ubuntu Home Server
 ---
 

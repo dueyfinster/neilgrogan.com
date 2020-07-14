@@ -1,7 +1,8 @@
 ---
 date: "2011-05-25T00:00:00Z"
 slug: final-year-of-honours-degree-complete
-tags: education
+tags:
+- education
 title: Final Year of Honours Degree, Complete
 ---
 

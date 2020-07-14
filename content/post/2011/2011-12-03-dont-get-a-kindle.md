@@ -1,7 +1,8 @@
 ---
 date: "2011-12-03T00:00:00Z"
 slug: dont-get-a-kindle
-tags: amazon
+tags:
+- amazon
 title: Don't get a Kindle
 ---
 

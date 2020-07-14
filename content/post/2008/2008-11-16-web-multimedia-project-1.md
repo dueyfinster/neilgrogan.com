@@ -1,7 +1,9 @@
 ---
 date: "2008-11-16T00:00:00Z"
 slug: web-multimedia-project-1
-tags: education project
+tags:
+- education
+- project
 title: Web Multimedia Project 1
 ---
 

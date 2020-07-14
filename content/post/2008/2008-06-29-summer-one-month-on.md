@@ -1,7 +1,8 @@
 ---
 date: "2008-06-29T00:00:00Z"
 slug: summer-one-month-on
-tags: hardware
+tags:
+- hardware
 title: Summer - One Month On.....
 ---
 

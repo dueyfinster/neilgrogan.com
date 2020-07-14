@@ -1,7 +1,9 @@
 ---
 date: "2006-12-31T00:00:00Z"
 slug: new-widget-for-our-rss-feed
-tags: apple linux
+tags:
+- apple
+- linux
 title: New Widget for our RSS feed!
 ---
 

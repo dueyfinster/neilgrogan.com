@@ -1,7 +1,9 @@
 ---
 date: "2006-12-19T00:00:00Z"
 slug: free-domain-name-off-aol-too-good-to-be
-tags: internet google
+tags:
+- internet
+- google
 title: Free Domain name off AOL, too good to be true?
 ---
 

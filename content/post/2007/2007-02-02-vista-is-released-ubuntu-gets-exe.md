@@ -1,7 +1,9 @@
 ---
 date: "2007-02-02T00:00:00Z"
 slug: vista-is-released-ubuntu-gets-exe
-tags: linux windows
+tags:
+- linux
+- windows
 title: Vista is released; Ubuntu gets .exe!
 ---
 

@@ -2,7 +2,9 @@
 date: "2012-12-08T00:00:00Z"
 description: ""
 slug: first-experiences-with-arm-chromebook
-tags: google review
+tags:
+- google
+- review
 title: First Experiences with an ARM Chromebook
 ---
 

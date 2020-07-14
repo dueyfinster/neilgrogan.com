@@ -1,7 +1,8 @@
 ---
 date: "2009-12-07T00:00:00Z"
 slug: why-should-i-care-what-color-bikeshed
-tags: programming
+tags:
+- programming
 title: Why Should I Care What Color the Bikeshed Is?
 ---
 

@@ -1,7 +1,9 @@
 ---
 date: "2007-04-16T00:00:00Z"
 slug: ultimate-games-disc
-tags: project linux
+tags:
+- project
+- linux
 title: Ultimate Games Disc
 ---
 

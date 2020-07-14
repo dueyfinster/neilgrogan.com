@@ -1,7 +1,9 @@
 ---
 date: "2015-08-26T00:00:00Z"
 slug: services
-tags: apple amazon
+tags:
+- apple
+- amazon
 title: Services I pay for
 ---
 

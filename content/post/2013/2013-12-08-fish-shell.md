@@ -3,7 +3,9 @@ date: "2013-12-08T00:00:00Z"
 description: New shell with less baggage
 link: http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/
 slug: fish-shell
-tags: terminal linux
+tags:
+- terminal
+- linux
 title: Fish Shell for Ubuntu and OS X
 ---
 

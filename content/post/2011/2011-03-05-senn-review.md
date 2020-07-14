@@ -1,7 +1,9 @@
 ---
 date: "2011-03-05T00:00:00Z"
 slug: senn-review
-tags: hardware review
+tags:
+- hardware
+- review
 title: Sennheiser HD595 Review
 ---
 

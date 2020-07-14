@@ -2,7 +2,8 @@
 date: "2012-09-09T00:00:00Z"
 description: ""
 slug: tonsillectomy
-tags: health
+tags:
+- health
 title: Tonsillectomy
 ---
 

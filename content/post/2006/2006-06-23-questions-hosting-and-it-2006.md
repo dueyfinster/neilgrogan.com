@@ -1,7 +1,9 @@
 ---
 date: "2006-06-23T00:00:00Z"
 slug: questions-hosting-and-it-2006
-tags: video politics
+tags:
+- video
+- politics
 title: Questions, Hosting and IT 2006!
 ---
 

@@ -1,7 +1,10 @@
 ---
 date: "2009-04-09T00:00:00Z"
 slug: iphone-3g-review
-tags: review apple hardware
+tags:
+- review
+- apple
+- hardware
 title: iPhone 3G Review
 ---
 

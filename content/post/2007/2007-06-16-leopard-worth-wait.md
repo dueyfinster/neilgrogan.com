@@ -1,7 +1,9 @@
 ---
 date: "2007-06-16T00:00:00Z"
 slug: leopard-worth-wait
-tags: apple mac
+tags:
+- apple
+- mac
 title: Leopard - Worth the wait?
 ---
 

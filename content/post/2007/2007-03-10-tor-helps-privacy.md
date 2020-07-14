@@ -1,7 +1,9 @@
 ---
 date: "2007-03-10T00:00:00Z"
 slug: tor-helps-privacy
-tags: security privacy
+tags:
+- security
+- privacy
 title: Tor helps Privacy
 ---
 

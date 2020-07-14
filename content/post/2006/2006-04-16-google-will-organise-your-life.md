@@ -1,7 +1,8 @@
 ---
 date: "2006-04-16T00:00:00Z"
 slug: google-will-organise-your-life
-tags: google
+tags:
+- google
 title: Google will organise your life
 ---
 

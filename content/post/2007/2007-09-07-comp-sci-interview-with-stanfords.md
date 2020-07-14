@@ -1,7 +1,8 @@
 ---
 date: "2007-09-07T00:00:00Z"
 slug: comp-sci-interview-with-stanfords
-tags: programming
+tags:
+- programming
 title: Comp Sci - An Interview with Stanford's Undegraduate Professor
 ---
 

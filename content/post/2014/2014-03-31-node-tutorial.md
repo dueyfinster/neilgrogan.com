@@ -3,7 +3,9 @@ date: "2014-03-31T00:00:00Z"
 description: Develop a full Web Application with a NoSQL database
 link: http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/
 slug: web-app-nodejs-tutorial
-tags: javascript programming
+tags:
+- javascript
+- programming
 title: Full Stack Web Application with Node.js Tutorial
 ---
 

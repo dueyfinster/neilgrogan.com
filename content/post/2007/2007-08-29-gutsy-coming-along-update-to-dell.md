@@ -1,7 +1,10 @@
 ---
 date: "2007-08-29T00:00:00Z"
 slug: gutsy-coming-along-update-to-dell
-tags: hardware linux windows
+tags:
+- hardware
+- linux
+- windows
 title: Gutsy coming along, Update to Dell Windows Refund..
 ---
 

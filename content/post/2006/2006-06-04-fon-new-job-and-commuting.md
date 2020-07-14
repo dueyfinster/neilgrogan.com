@@ -1,7 +1,9 @@
 ---
 date: "2006-06-04T00:00:00Z"
 slug: fon-new-job-and-commuting
-tags: travel work
+tags:
+- travel
+- work
 title: FON, New Job and Commuting!
 ---
 

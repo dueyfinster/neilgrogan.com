@@ -1,7 +1,8 @@
 ---
 date: "2012-04-27T00:00:00Z"
 slug: ikea-in-the-tv-business
-tags: hardware
+tags:
+- hardware
 title: Ikea in the TV Business?
 ---
 

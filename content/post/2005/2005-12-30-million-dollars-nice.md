@@ -1,7 +1,8 @@
 ---
 date: "2005-12-30T00:00:00Z"
 slug: million-dollars-nice
-tags: business
+tags:
+- business
 title: Million Dollars, Nice!
 ---
 

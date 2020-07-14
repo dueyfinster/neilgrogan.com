@@ -1,7 +1,8 @@
 ---
 date: "2010-04-01T00:00:00Z"
 slug: donating-to-charity
-tags: business
+tags:
+- business
 title: Donating to Charity
 ---
 

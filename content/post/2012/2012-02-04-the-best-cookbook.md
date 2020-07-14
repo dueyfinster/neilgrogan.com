@@ -1,7 +1,8 @@
 ---
 date: "2012-02-04T00:00:00Z"
 slug: the-best-cookbook
-tags: food
+tags:
+- food
 title: The Best Cookbook
 ---
 

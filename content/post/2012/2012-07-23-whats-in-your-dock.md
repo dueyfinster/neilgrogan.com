@@ -2,7 +2,10 @@
 date: "2012-07-23T00:00:00Z"
 description: ""
 slug: whats-in-your-dock
-tags: apple software mac
+tags:
+- apple
+- software
+- mac
 title: What's in your dock?
 ---
 

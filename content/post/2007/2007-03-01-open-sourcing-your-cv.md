@@ -1,7 +1,9 @@
 ---
 date: "2007-03-01T00:00:00Z"
 slug: open-sourcing-your-cv
-tags: work business
+tags:
+- work
+- business
 title: Open Sourcing your CV
 ---
 

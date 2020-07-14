@@ -1,7 +1,8 @@
 ---
 date: "2007-06-26T00:00:00Z"
 slug: threats-to-democracy
-tags: politics
+tags:
+- politics
 title: Threats to Democracy
 ---
 

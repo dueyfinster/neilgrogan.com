@@ -1,7 +1,8 @@
 ---
 date: "2013-04-22T00:00:00Z"
 slug: doc-it-please
-tags: work
+tags:
+- work
 title: Document it Please
 ---
 

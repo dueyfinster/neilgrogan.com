@@ -1,7 +1,9 @@
 ---
 date: "2006-10-26T00:00:00Z"
 slug: internet-explorer-thanks-firefox
-tags: mozilla microsoft
+tags:
+- mozilla
+- microsoft
 title: Internet Explorer thanks Firefox, sincerely?
 ---
 

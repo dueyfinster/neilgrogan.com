@@ -1,7 +1,9 @@
 ---
 date: "2009-11-24T00:00:00Z"
 slug: is-mac-pro-overpriced
-tags: apple hardware
+tags:
+- apple
+- hardware
 title: Is a Mac Pro overpriced?
 ---
 

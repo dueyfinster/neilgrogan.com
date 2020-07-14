@@ -1,7 +1,8 @@
 ---
 date: "2010-10-01T00:00:00Z"
 slug: alternative-interpretation-of-prodigy
-tags: audio
+tags:
+- audio
 title: Alternative Interpretation of the Prodigy
 ---
 

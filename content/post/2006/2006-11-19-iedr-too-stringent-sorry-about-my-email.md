@@ -1,7 +1,8 @@
 ---
 date: "2006-11-19T00:00:00Z"
 slug: iedr-too-stringent-sorry-about-my-email
-tags: internet
+tags:
+- internet
 title: IEDR too stringent? Sorry about my email!
 ---
 

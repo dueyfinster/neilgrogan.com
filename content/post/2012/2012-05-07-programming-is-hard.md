@@ -1,7 +1,8 @@
 ---
 date: "2012-05-07T00:00:00Z"
 slug: programming-is-hard
-tags: programming
+tags:
+- programming
 title: Programming is hard
 ---
 

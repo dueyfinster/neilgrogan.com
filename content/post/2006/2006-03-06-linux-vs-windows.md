@@ -1,7 +1,9 @@
 ---
 date: "2006-03-06T00:00:00Z"
 slug: linux-vs-windows
-tags: linux windows
+tags:
+- linux
+- windows
 title: Linux VS. Windows
 ---
 

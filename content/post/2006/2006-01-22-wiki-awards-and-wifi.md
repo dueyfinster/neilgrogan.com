@@ -1,7 +1,8 @@
 ---
 date: "2006-01-22T00:00:00Z"
 slug: wiki-awards-and-wifi
-tags: internet
+tags:
+- internet
 title: Wiki, Awards and Wifi
 ---
 

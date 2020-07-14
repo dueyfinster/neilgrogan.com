@@ -1,7 +1,9 @@
 ---
 date: "2010-08-04T00:00:00Z"
 slug: motorcycle-gps
-tags: review hardware
+tags:
+- review
+- hardware
 title: Garmin Zumo 660 Motorcycle GPS
 ---
 

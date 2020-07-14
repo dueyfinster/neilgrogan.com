@@ -3,7 +3,8 @@ date: "2014-09-11T00:00:00Z"
 description: Bell Curve is Wrong
 link: http://www.hrma.ca/wp-content/uploads/2012/11/rb-the-best-and-the-rest.pdf
 slug: bell-curve
-tags: work
+tags:
+- work
 title: Bell Curve is Wrong
 ---
 

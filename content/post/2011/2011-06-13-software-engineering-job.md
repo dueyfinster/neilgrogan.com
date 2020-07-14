@@ -1,7 +1,8 @@
 ---
 date: "2011-06-13T00:00:00Z"
 slug: software-engineering-job
-tags: work
+tags:
+- work
 title: Software Engineering Job
 ---
 

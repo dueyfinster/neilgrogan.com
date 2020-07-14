@@ -1,7 +1,9 @@
 ---
 date: "2009-01-21T00:00:00Z"
 slug: ubuntu-in-four-years
-tags: linux software
+tags:
+- linux
+- software
 title: Ubuntu in four years
 ---
 

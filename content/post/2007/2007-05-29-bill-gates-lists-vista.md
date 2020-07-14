@@ -1,7 +1,9 @@
 ---
 date: "2007-05-29T00:00:00Z"
 slug: bill-gates-lists-vista
-tags: microsoft windows
+tags:
+- microsoft
+- windows
 title: Bill Gates lists Vista 'innovations'
 ---
 

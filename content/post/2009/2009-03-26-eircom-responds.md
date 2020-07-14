@@ -1,7 +1,8 @@
 ---
 date: "2009-03-26T00:00:00Z"
 slug: eircom-responds
-tags: legal
+tags:
+- legal
 title: Eircom Responds...
 ---
 

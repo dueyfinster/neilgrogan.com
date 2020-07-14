@@ -1,7 +1,9 @@
 ---
 date: "2011-05-09T00:00:00Z"
 slug: geocampus
-tags: project education
+tags:
+- project
+- education
 title: GeoCampus
 ---
 

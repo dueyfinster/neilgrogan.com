@@ -2,7 +2,9 @@
 date: "2014-09-10T00:00:00Z"
 description: iPhone 6 and Apple Watch
 slug: apple-annouces-iphone6-watch
-tags: apple hardware
+tags:
+- apple
+- hardware
 title: iPhone 6 and Apple Watch
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: "2006-01-06T00:00:00Z"
 slug: new-year-lets-review
-tags: politics
+tags:
+- politics
 title: New Year, Lets Review!
 ---
 

@@ -1,7 +1,9 @@
 ---
 date: "2006-07-12T00:00:00Z"
 slug: new-design-ranking-gmail-hosted-os-2006
-tags: google software
+tags:
+- google
+- software
 title: New Design, Ranking, Gmail Hosted, OS 2006 Finale and YouOS
 ---
 

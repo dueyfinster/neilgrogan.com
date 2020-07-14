@@ -1,7 +1,10 @@
 ---
 date: "2007-08-21T00:00:00Z"
 slug: dell-refunds-me-for-windows
-tags: windows linux microsoft
+tags:
+- windows
+- linux
+- microsoft
 title: Dell refunds me for Windows!
 ---
 

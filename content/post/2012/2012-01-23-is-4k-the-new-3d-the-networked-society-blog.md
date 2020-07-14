@@ -2,7 +2,8 @@
 date: "2012-01-23T00:00:00Z"
 link: http://www.ericsson.com/thinkingahead/the-networked-society-blog/2012/01/18/is-4k-the-new-3d/
 slug: is-4k-the-new-3d-the-networked-society-blog
-tags: work
+tags:
+- work
 title: Is 4K the new 3D? - The Networked Society Blog
 ---
 

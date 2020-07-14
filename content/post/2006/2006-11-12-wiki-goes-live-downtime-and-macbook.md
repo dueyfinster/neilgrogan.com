@@ -1,7 +1,8 @@
 ---
 date: "2006-11-12T00:00:00Z"
 slug: wiki-goes-live-downtime-and-macbook
-tags: apple
+tags:
+- apple
 title: Wiki goes live, downtime and Macbook Back!
 ---
 
