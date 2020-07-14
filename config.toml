@@ -2,7 +2,7 @@ ignoreFiles = [ "node_modules" ]
 relativeURLs = true
 languageCode = "en-us"
 title = "Neil Grogan"
-theme="herring-cove"
+theme="noteworthy"
 googleAnalytics = ""
 
 [permalinks]
