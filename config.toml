@@ -19,7 +19,6 @@ googleAnalytics = ""
   linkedin = "neil-grogan"
 
 [params]
-  description="My home on the internet"
 
   [[menu.main]]
      name = "About"
@@ -28,27 +27,40 @@ googleAnalytics = ""
      url = "/about"
 
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 2
+
+  [[menu.main]]
+    name = "Presentations"
+    weight = 3
+  	identifier = "presentations"
+    url = "/presentations/"
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
-    name = "Presentations"
-    weight = 2
-  	identifier = "presentations"
-    url = "/presentations/"
+    identifier = "archive"
+    name = "Archive"
+    url = "/posts/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 5
+
 
 [outputFormats]
   [outputFormats.RSS]
   mediatype = "application/rss"
-  baseName = "feed"
+  baseName = "index"
 
 
 [markup.goldmark.renderer]

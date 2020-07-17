@@ -1,7 +1,5 @@
 ---
-layout: page
 title: About
-menu: true
 ---
 
 Software Engineering Manager at [Ericsson][] in [Athlone, Ireland][Athlone], managing teams in JEE, UX, UI and [5G][] Topology. Before that, I was a Senior Software Engineer in [MediaKind][] and [Ericsson][] working across Java and C# projects.
