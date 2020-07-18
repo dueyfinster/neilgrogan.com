@@ -5,7 +5,7 @@
 #+TITLE: Learning Org Mode
 #+LANGUAGE: en
 
-Since hearing about [[https://orgmode.org][org-mode]] on the web many years ago, I always meant to give it a spin. I only ever found <del>one</del> two problems:
+Since hearing about [[https://orgmode.org][org-mode]] on the web many years ago, I always meant to give it a spin. I only ever found +one+ two problems:
 
 1. Time - Life eh?
 2. It's a mode of [[https://www.gnu.org/software/emacs/][Emacs]] for which I'd also have to learn (again time)
@@ -43,6 +43,6 @@ So this was the fun part: how can I combine learning Emacs and Org? It turns out
 
 #+END_EXAMPLE
 
-This is fully self documented code (some argue Lisp is this by nature also). This is nicely rendered on Github, see [[https://github.com/larstvei/dot-emacs/blob/master/init.org][these]] [[https://github.com/seth/my-emacs-dot-d/blob/master/emacs-init.org][two]] examples to see what I mean. The pertinent advice here is: start with a /minimal/ configuration and /only ever add things you understand/. I followed exactly this advice, and those two files were brilliant references. I would find an annoyance in Emacs, and one of those two org files would have something in Emacs to <del>fix</del> customise the issue I had.
+This is fully self documented code (some argue Lisp is this by nature also). This is nicely rendered on Github, see [[https://github.com/larstvei/dot-emacs/blob/master/init.org][these]] [[https://github.com/seth/my-emacs-dot-d/blob/master/emacs-init.org][two]] examples to see what I mean. The pertinent advice here is: start with a /minimal/ configuration and /only ever add things you understand/. I followed exactly this advice, and those two files were brilliant references. I would find an annoyance in Emacs, and one of those two org files would have something in Emacs to +fix+ customise the issue I had.
 
 If you would like to see more, my [[https://github.com/dueyfinster/dotfiles][dotfiles]] (with [[https://github.com/dueyfinster/dotfiles/blob/master/conf/emacs.d/emacs-init.org][my Emacs config]] are available also.
