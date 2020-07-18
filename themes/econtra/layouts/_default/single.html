@@ -4,7 +4,11 @@
     {{ if .Date }}
     <time>{{ .Date.Format "January 2, 2006" }}</time>
     {{ end }}
+
     <div>
+        <!--aside>
+            {{ .TableOfContents }}
+        </aside-->
         <p>
         {{ .Content }}
         </p>
