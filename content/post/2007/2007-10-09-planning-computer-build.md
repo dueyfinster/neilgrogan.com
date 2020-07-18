@@ -29,7 +29,7 @@ items. I coloured it real nice too; so its easy to read and understand.
 I hope it's useful to anyone out there, so I am making it available
 under CC-BY-NC-SA. Here is a screenshot of it:
 
-[![image](http://1.bp.blogspot.com/_4VvLQrhTX4I/Rwvt5cvqN1I/AAAAAAAABIY/L62kInnmE2E/s320/Picture+1.png)](http://1.bp.blogspot.com/_4VvLQrhTX4I/Rwvt5cvqN1I/AAAAAAAABIY/L62kInnmE2E/s1600-h/Picture+1.png)
+[![image](/img/07/Picture+1.png)](/img/07/Picture+1.png)
 -   Here is the [Microsoft Excel (97/2000/XP/2003) Template For Computer
     Parts](http://web.dueyfinster.com-a.googlepages.com/ComputerParts.xlt)
 -   Here is the [Open Document Template for Computer

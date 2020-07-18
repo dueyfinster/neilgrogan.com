@@ -14,7 +14,7 @@ suspect its called that because it is more of an incremental upgrade
 than a total visual refresh it was going from an Nokia 770 to N800. Here
 it is:  
   
-[![image](http://2.bp.blogspot.com/_4VvLQrhTX4I/RxtiosvqOFI/AAAAAAAABMc/vdtUwZ0FeFA/s320/n810gps.jpg)](http://2.bp.blogspot.com/_4VvLQrhTX4I/RxtiosvqOFI/AAAAAAAABMc/vdtUwZ0FeFA/s1600-h/n810gps.jpg)  
+[![image](/img/07/n810gps.jpg)](/img/07/n810gps.jpg)  
   
 (Picture Courtesy: [Internet Tablet
 Talk](http://www.internettablettalk.com/2007/10/17/the-nokia-n810-internet-tablet/))  

@@ -7,7 +7,7 @@ tags:
 title: Apple - Play Nice....
 ---
 
-[![image](http://2.bp.blogspot.com/_4VvLQrhTX4I/RuxkSFmzdLI/AAAAAAAABBs/wij7hmtcbd0/s320/AppleLogo.jpg)](http://2.bp.blogspot.com/_4VvLQrhTX4I/RuxkSFmzdLI/AAAAAAAABBs/wij7hmtcbd0/s1600-h/AppleLogo.jpg)  
+[![image](/img/07/AppleLogo.jpg)](/img/07/AppleLogo.jpg)  
 Is the much beloved Apple the new Microsoft? First there was IBM, the
 big all crushing corporate machine that was humbled by the next big
 giant in the form of Microsoft, so it seems Apple's turn is long

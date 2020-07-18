@@ -13,7 +13,7 @@ Scientology](http://uk.reuters.com/article/entertainmentNews/idUKL25388992007062
 I was a bit outraged at first, despite my abhorrence of their beliefs,
 which I think are crazy and nonsensical.  
   
-[![image](http://2.bp.blogspot.com/_4VvLQrhTX4I/RoDgYqFBZfI/AAAAAAAAAy4/WhYOunewTXY/s320/Scientology_warning_leaflet.jpg)](http://en.wikipedia.org/wiki/Image:Scientology_warning_leaflet.jpg)
+[![image](/img/07/Scientology_warning_leaflet.jpg)](/img/07/Image:Scientology_warning_leaflet.jpg)
 > Germany has barred the makers of a movie about a plot to kill Adolf
 > Hitler from filming at German military sites because its star Tom
 > Cruise is a Scientologist, the Defence Ministry said on Monday.

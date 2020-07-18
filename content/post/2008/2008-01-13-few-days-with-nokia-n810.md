@@ -7,16 +7,16 @@ tags:
 title: A few days with A Nokia N810
 ---
 
-[![image](http://3.bp.blogspot.com/_4VvLQrhTX4I/R4qHd3krvrI/AAAAAAAABTQ/EEVzzCX5IGs/s320/HPIM0193.JPG)](http://3.bp.blogspot.com/_4VvLQrhTX4I/R4qHd3krvrI/AAAAAAAABTQ/EEVzzCX5IGs/s1600-h/HPIM0193.JPG)  
+[![image](/img/08/HPIM0193.JPG)](/img/08/HPIM0193.JPG)  
   
   
   
 [I last discussed the Nokia N810 Internet Tablet in
-October](http://www.dueyfinster.com/2007/10/nokia-n810-tablet-to-hit-shops-soon.html);
+October](/tablet-to-hit-shops-soon);
 when details were only starting to filter out. It wasn't expected for
 Nokia to introduce an upgrade to the [N800 Internet Tablet (which I also
 reviewed
-here)](http://www.dueyfinster.com/2007/02/nokia-n800-review.html) so
+here)](/nokia-n800) so
 soon. I certainly don't envy the position of a small team getting the
 hardware and software for a mini-computer right in such a short space of
 time. But needless to say the N810 feels right; in fact it feels more
@@ -45,7 +45,7 @@ believe it could be. Why can't I set an auto screen lock when I flip the
 keyboard back in? That kind of commission is what I'd call a 'schoolboy
 error'.  
   
-[![image](http://4.bp.blogspot.com/_4VvLQrhTX4I/R4qIGHkrvsI/AAAAAAAABTY/W7lgUeEHphE/s320/HPIM0195.JPG)](http://4.bp.blogspot.com/_4VvLQrhTX4I/R4qIGHkrvsI/AAAAAAAABTY/W7lgUeEHphE/s1600-h/HPIM0195.JPG)  
+[![image](/img/08/HPIM0195.JPG)](/img/08/HPIM0195.JPG)  
   
 Apps make any device
 and the N810 has a few good ones; but nothing totally wow or killer just
@@ -71,7 +71,7 @@ seems longer; and it feels more responsive on OS 2008.
 So should I buy it?
 If you don't have a N800 I would say definitely go for it; as long as
 you
-think[![image](http://2.bp.blogspot.com/_4VvLQrhTX4I/R4qIVnkrvtI/AAAAAAAABTg/RxlmVSws4JY/s320/HPIM0194.JPG)](http://2.bp.blogspot.com/_4VvLQrhTX4I/R4qIVnkrvtI/AAAAAAAABTg/RxlmVSws4JY/s1600-h/HPIM0194.JPG)
+think[![image](/img/08/HPIM0194.JPG)](/img/08/HPIM0194.JPG)
 the price is right. As with any tech device; shop around for a bargain
 on the price over Nokia's retail listed price. Who is it aimed at?
 People in college like me who like to keep in touch with friends; read
