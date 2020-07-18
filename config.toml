@@ -2,7 +2,7 @@ ignoreFiles = [ "node_modules" ]
 relativeURLs = true
 languageCode = "en-us"
 title = "Neil Grogan"
-theme="noteworthy"
+theme="econtra"
 googleAnalytics = ""
 
 [permalinks]
@@ -45,16 +45,16 @@ googleAnalytics = ""
     weight = 4
 
   [[menu.main]]
-    identifier = "archive"
-    name = "Archive"
-    url = "/posts/"
-    weight = 5
+	  name = "Archives"
+	  identifier = "archives"
+	  url = "/archives/"
+	  weight = 5
 
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 5
+    weight = 6
 
 
 [outputFormats]
