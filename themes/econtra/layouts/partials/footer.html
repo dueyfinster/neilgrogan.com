@@ -3,4 +3,9 @@
 
 	{{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
 	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
+	
+	{{- if .Site.Params.enableLunrSearch -}}
+		{{ $search_script := resources.Get "js/lunr-search.js" -}}
+		<script src="{{ $search_script.Permalink }}" ></script>
+	{{- end }}
 </footer>

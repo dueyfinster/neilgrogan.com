@@ -10,4 +10,3 @@ function wrapTable() {
       tableWrapper.appendChild(table);
     });
   };
-

@@ -1,0 +1,4 @@
+---
+type: section
+layout: "search"
+---

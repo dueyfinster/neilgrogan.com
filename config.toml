@@ -19,6 +19,8 @@ googleAnalytics = ""
   linkedin = "neil-grogan"
 
 [params]
+  enableLunrSearch = true
+
 
   [[menu.main]]
      name = "About"
@@ -56,11 +58,17 @@ googleAnalytics = ""
     url = "/tags/"
     weight = 6
 
-
 [outputFormats]
   [outputFormats.RSS]
   mediatype = "application/rss"
   baseName = "index"
+
+  [outputFormats.SearchIndex]
+  mediatype = "application/json"
+  baseName = "search"
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
 
 
 [markup.goldmark.renderer]
