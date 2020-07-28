@@ -1,68 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>mozilla on Neil Grogan</title>
-    <link>/tags/mozilla/</link>
-    <description>Recent content in mozilla on Neil Grogan</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 30 Oct 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/mozilla/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Chrome vs. Internet Explorer Audience</title>
-      <link>/chrome-vs-internet-explorer-audience/</link>
-      <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/chrome-vs-internet-explorer-audience/</guid>
-      <description>Lately both Google and Microsoft have been advertising their respective browsers on British Television (received in Ireland by the vast majority of the population). It&amp;rsquo;s interesting the different approach each company is taking.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mozilla on Neil Grogan</title><link>/tags/mozilla/</link><description>Recent content in mozilla on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 30 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="/tags/mozilla/index.xml" rel="self" type="application/rss+xml"/><item><title>Chrome vs. Internet Explorer Audience</title><link>/chrome-vs-internet-explorer-audience/</link><pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate><guid>/chrome-vs-internet-explorer-audience/</guid><description>Lately both Google and Microsoft have been advertising their respective browsers on British Television (received in Ireland by the vast majority of the population). It&amp;rsquo;s interesting the different approach each company is taking.
 Chrome ad:
- To me the Chrome ad is very family oriented, stressing the utility of the web and the ease of reaching people and staying in touch. No surprise they didn&amp;rsquo;t feature Facebook, which is what the vast majority use to keep in touch.</description>
-    </item>
-    
-    <item>
-      <title>Firefox and Opera lead the web video way</title>
-      <link>/firefox-and-opera-lead-web-video-way/</link>
-      <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
-      
-      <guid>/firefox-and-opera-lead-web-video-way/</guid>
-      <description>I downloaded Firefox 3.1 beta 2 (after trialling other development snapshots over the last few months) to see Ogg Theora video support is coming on really well. Opera, as well as Mozilla has committed to including this royalty-free video codec for web use. This is really good news; as one Opera Developer said:
- Something however is still not quite there about web video. The video solutions mentioned above are proprietary closed solutions that rely on plugins to display in a web page - what we need to make video a first-class web citizen is an easy, open solution to integrate video into web pages, and native support for video in browsers.</description>
-    </item>
-    
-    <item>
-      <title>Profiling Firefox Extensions I have installed</title>
-      <link>/profiling-firefox-extensions-i-have/</link>
-      <pubDate>Sat, 29 Nov 2008 00:00:00 +0000</pubDate>
-      
-      <guid>/profiling-firefox-extensions-i-have/</guid>
-      <description>My Current Firefox Extensions: A-Z*
-Adblock Plus; because ads are for people that don&amp;rsquo;t know how to avoid them! Not only do they stop your banwidth from being wasted; they make a ton of websites more usuable. It takes care of Flash Ads as well as static ones; using a filter that is constantly updated. So even if some of the webs more devious and sneaky advertisers try to circumvent it; AdBlock can have a fix to everyone online within hours.</description>
-    </item>
-    
-    <item>
-      <title>Internet Explorer thanks Firefox, sincerely?</title>
-      <link>/internet-explorer-thanks-firefox/</link>
-      <pubDate>Thu, 26 Oct 2006 00:00:00 +0000</pubDate>
-      
-      <guid>/internet-explorer-thanks-firefox/</guid>
-      <description>Reading my favourite tech news site: Slashdot ( /.), I see the Internet Explorer team have sent the Firefox Team a nice cake:
+To me the Chrome ad is very family oriented, stressing the utility of the web and the ease of reaching people and staying in touch. No surprise they didn&amp;rsquo;t feature Facebook, which is what the vast majority use to keep in touch.</description></item><item><title>Firefox and Opera lead the web video way</title><link>/firefox-and-opera-lead-web-video-way/</link><pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate><guid>/firefox-and-opera-lead-web-video-way/</guid><description>I downloaded Firefox 3.1 beta 2 (after trialling other development snapshots over the last few months) to see Ogg Theora video support is coming on really well. Opera, as well as Mozilla has committed to including this royalty-free video codec for web use. This is really good news; as one Opera Developer said:
+Something however is still not quite there about web video. The video solutions mentioned above are proprietary closed solutions that rely on plugins to display in a web page - what we need to make video a first-class web citizen is an easy, open solution to integrate video into web pages, and native support for video in browsers.</description></item><item><title>Profiling Firefox Extensions I have installed</title><link>/profiling-firefox-extensions-i-have/</link><pubDate>Sat, 29 Nov 2008 00:00:00 +0000</pubDate><guid>/profiling-firefox-extensions-i-have/</guid><description>My Current Firefox Extensions: A-Z*
+Adblock Plus; because ads are for people that don&amp;rsquo;t know how to avoid them! Not only do they stop your banwidth from being wasted; they make a ton of websites more usuable. It takes care of Flash Ads as well as static ones; using a filter that is constantly updated. So even if some of the webs more devious and sneaky advertisers try to circumvent it; AdBlock can have a fix to everyone online within hours.</description></item><item><title>Internet Explorer thanks Firefox, sincerely?</title><link>/internet-explorer-thanks-firefox/</link><pubDate>Thu, 26 Oct 2006 00:00:00 +0000</pubDate><guid>/internet-explorer-thanks-firefox/</guid><description>Reading my favourite tech news site: Slashdot ( /.), I see the Internet Explorer team have sent the Firefox Team a nice cake:
 One comment I read said it all really:
- Seems even the IE team knows that IE is dead.
-As for the ex-lax, bugs, pubes in the cake of course none of that is true. Those things would only be possible if someone at Microsoft actually made the cake, and that&amp;rsquo;s not how MS does things.</description>
-    </item>
-    
-    <item>
-      <title>Mozilla&#39;s Millions</title>
-      <link>/mozillas-millions/</link>
-      <pubDate>Sun, 26 Mar 2006 00:00:00 +0000</pubDate>
-      
-      <guid>/mozillas-millions/</guid>
-      <description>Only now is it truly becoming clear, their is [serious money in Open Source][]/ With Mozilla reported to have made tens of millions of dollars. One blogger reported 70m was made by the corporation, with a Mozilla insider confirming thats a reasonable ballpark figure. Christopher Blizzard, board member of Mozilla, had this to say on his blog:
- Blizzard added that an earnings figure of $72m (£41m) quoted on some blogs was incorrect.</description>
-    </item>
-    
-  </channel>
-</rss>
+Seems even the IE team knows that IE is dead.
+As for the ex-lax, bugs, pubes in the cake of course none of that is true. Those things would only be possible if someone at Microsoft actually made the cake, and that&amp;rsquo;s not how MS does things.</description></item><item><title>Mozilla's Millions</title><link>/mozillas-millions/</link><pubDate>Sun, 26 Mar 2006 00:00:00 +0000</pubDate><guid>/mozillas-millions/</guid><description>Only now is it truly becoming clear, their is [serious money in Open Source][]/ With Mozilla reported to have made tens of millions of dollars. One blogger reported 70m was made by the corporation, with a Mozilla insider confirming thats a reasonable ballpark figure. Christopher Blizzard, board member of Mozilla, had this to say on his blog:
+Blizzard added that an earnings figure of $72m (£41m) quoted on some blogs was incorrect.</description></item></channel></rss>

@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>virtual-machines on Neil Grogan</title>
-    <link>/tags/virtual-machines/</link>
-    <description>Recent content in virtual-machines on Neil Grogan</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 10 Mar 2006 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/virtual-machines/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Virtual Ubuntu</title>
-      <link>/virtual-ubuntu/</link>
-      <pubDate>Fri, 10 Mar 2006 00:00:00 +0000</pubDate>
-      
-      <guid>/virtual-ubuntu/</guid>
-      <description>So you have heard of Ubuntu, maybe they have even shipped you a free disc or you have downloaded one? Like most users, even advanced PC users, they get nervous about installing Linux and afraid of what they might have to learn. Touted as the brighest star, Ubuntu really does outshine other Linuxes, with usability, features and great range of software. Now you can try Ubuntu on Windows.
-How can I try it, is what I always get asked, without risk to my computer?</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>virtual-machines on Neil Grogan</title><link>/tags/virtual-machines/</link><description>Recent content in virtual-machines on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 10 Mar 2006 00:00:00 +0000</lastBuildDate><atom:link href="/tags/virtual-machines/index.xml" rel="self" type="application/rss+xml"/><item><title>Virtual Ubuntu</title><link>/virtual-ubuntu/</link><pubDate>Fri, 10 Mar 2006 00:00:00 +0000</pubDate><guid>/virtual-ubuntu/</guid><description>So you have heard of Ubuntu, maybe they have even shipped you a free disc or you have downloaded one? Like most users, even advanced PC users, they get nervous about installing Linux and afraid of what they might have to learn. Touted as the brighest star, Ubuntu really does outshine other Linuxes, with usability, features and great range of software. Now you can try Ubuntu on Windows.
+How can I try it, is what I always get asked, without risk to my computer?</description></item></channel></rss>

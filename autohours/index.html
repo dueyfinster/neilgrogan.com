@@ -1,173 +1,39 @@
-<!DOCTYPE html>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>Fill hours worked in SAP Netweaver Automatically | Neil Grogan</title><link rel=apple-touch-icon sizes=180x180 href=../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../favicon-96x96.png><link rel=manifest href=../manifest.json><link rel=mask-icon href=../safari-pinned-tab.svg color=#ff3db4><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css><script src=https://unpkg.com/lunr/lunr.js></script></head><body><nav><header><div class=site-title><a href=../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../about>About</a>
+<a class="color-link nav-link" href=../projects>Projects</a>
+<a class="color-link nav-link" href=../presentations/>Presentations</a>
+<a class="color-link nav-link" href=../contact>Contact</a>
+<a class="color-link nav-link" href=../archives/>Archives</a>
+<a class="color-link nav-link" href=../tags/>Tags</a>
+<a class="color-link nav-link" href=../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script><script src=../js/lunr-search.js></script></footer></nav><div id=content class=content-container><h1 class=post-title>Fill hours worked in SAP Netweaver Automatically</h1><time>February 1, 2016</time><div><p><p>Continuing the theme of automation, one of the most repetitive tasks if you work for a big company is timesheets. So I set out to rectify this by scripting it!</p><p>Start with you configuration, I named mine <code>hours.ini</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>[DEFAULT]
+url <span style=color:#f92672>=</span> FILL_ME_IN
+username <span style=color:#f92672>=</span> FILL_ME_IN
+password <span style=color:#f92672>=</span> FILL_ME_IN
+</code></pre></div><p>then we need the magic of <a href=http://www.seleniumhq.org/>Selenium</a> to do the heavy lifting, so we install it:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ pip3 install selenium
+</code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#75715e>#!/usr/bin/env python3</span>
+<span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74>hours.py by Neil Grogan, 2015
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>A script to fill in hours automatically in SAP NetWeaver Portal
+</span><span style=color:#e6db74>&#34;&#34;&#34;</span>
+<span style=color:#f92672>from</span> selenium <span style=color:#f92672>import</span> webdriver
+<span style=color:#f92672>from</span> selenium.webdriver.common.by <span style=color:#f92672>import</span> By
+<span style=color:#f92672>from</span> selenium.webdriver.common.keys <span style=color:#f92672>import</span> Keys
+<span style=color:#f92672>from</span> selenium.webdriver.support.ui <span style=color:#f92672>import</span> WebDriverWait
+<span style=color:#f92672>from</span> selenium.webdriver.support <span style=color:#f92672>import</span> expected_conditions <span style=color:#66d9ef>as</span> EC
+<span style=color:#f92672>import</span> time
+<span style=color:#f92672>import</span> configparser
+<span style=color:#f92672>import</span> os
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+TIMEOUT <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>
 
-    <title>Fill hours worked in SAP Netweaver Automatically | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
-    <meta name="theme-color" content="#ffffff">
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>():
+    <span style=color:#75715e># Setup</span>
+    config <span style=color:#f92672>=</span> read_config()
+    driver <span style=color:#f92672>=</span> load_website(config[<span style=color:#e6db74>&#39;url&#39;</span>], <span style=color:#e6db74>&#34;SAP NetWeaver Portal&#34;</span>)
+    wait <span style=color:#f92672>=</span> WebDriverWait(driver, TIMEOUT)
 
-    
-    
-    
-    <link rel="stylesheet" href="../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css"/>
-
-    
-    
-    
-
-    
-    
-
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
- 
-    </head>
-
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../about">About</a>
-  
-    <a class="color-link nav-link" href="../projects">Projects</a>
-  
-    <a class="color-link nav-link" href="../presentations/">Presentations</a>
-  
-    <a class="color-link nav-link" href="../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
-</footer>
-</nav>
-
-        <div id="content" class="content-container">
-        
-
-<h1 class="post-title">Fill hours worked in SAP Netweaver Automatically</h1>
-    
-    <time>February 1, 2016</time>
-    
-
-    <div>
-        
-        <p>
-        <p>Continuing the theme of automation, one of the most repetitive tasks if you work for a big company is timesheets. So I set out to rectify this by scripting it!</p>
-<p>Start with you configuration, I named mine <code>hours.ini</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[DEFAULT]
-url <span style="color:#f92672">=</span> FILL_ME_IN
-username <span style="color:#f92672">=</span> FILL_ME_IN
-password <span style="color:#f92672">=</span> FILL_ME_IN
-</code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy lifting, so we install it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pip3 install selenium
-</code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python3</span>
-<span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">hours.py by Neil Grogan, 2015
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">A script to fill in hours automatically in SAP NetWeaver Portal
-</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-<span style="color:#f92672">from</span> selenium <span style="color:#f92672">import</span> webdriver
-<span style="color:#f92672">from</span> selenium.webdriver.common.by <span style="color:#f92672">import</span> By
-<span style="color:#f92672">from</span> selenium.webdriver.common.keys <span style="color:#f92672">import</span> Keys
-<span style="color:#f92672">from</span> selenium.webdriver.support.ui <span style="color:#f92672">import</span> WebDriverWait
-<span style="color:#f92672">from</span> selenium.webdriver.support <span style="color:#f92672">import</span> expected_conditions <span style="color:#66d9ef">as</span> EC
-<span style="color:#f92672">import</span> time
-<span style="color:#f92672">import</span> configparser
-<span style="color:#f92672">import</span> os
-
-TIMEOUT <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
-    <span style="color:#75715e"># Setup</span>
-    config <span style="color:#f92672">=</span> read_config()
-    driver <span style="color:#f92672">=</span> load_website(config[<span style="color:#e6db74">&#39;url&#39;</span>], <span style="color:#e6db74">&#34;SAP NetWeaver Portal&#34;</span>)
-    wait <span style="color:#f92672">=</span> WebDriverWait(driver, TIMEOUT)
-
-    <span style="color:#75715e"># Action</span>
-    login_to_website(driver, config[<span style="color:#e6db74">&#39;username&#39;</span>], config[<span style="color:#e6db74">&#39;password&#39;</span>])
+    <span style=color:#75715e># Action</span>
+    login_to_website(driver, config[<span style=color:#e6db74>&#39;username&#39;</span>], config[<span style=color:#e6db74>&#39;password&#39;</span>])
     wait_for_timesheet_table(driver, wait)
 
     fill_in_timesheet(driver)
@@ -175,160 +41,74 @@ TIMEOUT <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span
 
     logoff_and_close(driver, wait)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">read_config</span>():
-    config <span style="color:#f92672">=</span> configparser<span style="color:#f92672">.</span>ConfigParser()
-    path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>dirname(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>realpath(__file__))
-    config<span style="color:#f92672">.</span>read(path <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/hours.ini&#39;</span>)
-    <span style="color:#66d9ef">return</span> config[<span style="color:#e6db74">&#39;DEFAULT&#39;</span>]
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>read_config</span>():
+    config <span style=color:#f92672>=</span> configparser<span style=color:#f92672>.</span>ConfigParser()
+    path <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>dirname(os<span style=color:#f92672>.</span>path<span style=color:#f92672>.</span>realpath(__file__))
+    config<span style=color:#f92672>.</span>read(path <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;/hours.ini&#39;</span>)
+    <span style=color:#66d9ef>return</span> config[<span style=color:#e6db74>&#39;DEFAULT&#39;</span>]
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_website</span>(url, title):
-    driver <span style="color:#f92672">=</span> webdriver<span style="color:#f92672">.</span>Firefox()
-    driver<span style="color:#f92672">.</span>get(url)
-    <span style="color:#66d9ef">assert</span> title <span style="color:#f92672">in</span> driver<span style="color:#f92672">.</span>title
-    <span style="color:#66d9ef">return</span> driver
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>load_website</span>(url, title):
+    driver <span style=color:#f92672>=</span> webdriver<span style=color:#f92672>.</span>Firefox()
+    driver<span style=color:#f92672>.</span>get(url)
+    <span style=color:#66d9ef>assert</span> title <span style=color:#f92672>in</span> driver<span style=color:#f92672>.</span>title
+    <span style=color:#66d9ef>return</span> driver
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">login_to_website</span>(driver, username, password):
-    elem <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element_by_id(<span style="color:#e6db74">&#34;logonuidfield&#34;</span>)
-    elem<span style="color:#f92672">.</span>send_keys(username)
-    elem <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element_by_id(<span style="color:#e6db74">&#34;logonpassfield&#34;</span>)
-    elem<span style="color:#f92672">.</span>send_keys(password)
-    elem<span style="color:#f92672">.</span>send_keys(Keys<span style="color:#f92672">.</span>RETURN)
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>login_to_website</span>(driver, username, password):
+    elem <span style=color:#f92672>=</span> driver<span style=color:#f92672>.</span>find_element_by_id(<span style=color:#e6db74>&#34;logonuidfield&#34;</span>)
+    elem<span style=color:#f92672>.</span>send_keys(username)
+    elem <span style=color:#f92672>=</span> driver<span style=color:#f92672>.</span>find_element_by_id(<span style=color:#e6db74>&#34;logonpassfield&#34;</span>)
+    elem<span style=color:#f92672>.</span>send_keys(password)
+    elem<span style=color:#f92672>.</span>send_keys(Keys<span style=color:#f92672>.</span>RETURN)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wait_for_timesheet_table</span>(driver, wait):
-    <span style="color:#75715e"># wait for ajax items to load</span>
-    elem <span style="color:#f92672">=</span> wait<span style="color:#f92672">.</span>until(EC<span style="color:#f92672">.</span>element_to_be_clickable((By<span style="color:#f92672">.</span>ID, <span style="color:#e6db74">&#39;L2N2&#39;</span>)))
-    elem<span style="color:#f92672">.</span>click()
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>wait_for_timesheet_table</span>(driver, wait):
+    <span style=color:#75715e># wait for ajax items to load</span>
+    elem <span style=color:#f92672>=</span> wait<span style=color:#f92672>.</span>until(EC<span style=color:#f92672>.</span>element_to_be_clickable((By<span style=color:#f92672>.</span>ID, <span style=color:#e6db74>&#39;L2N2&#39;</span>)))
+    elem<span style=color:#f92672>.</span>click()
 
-    wait<span style="color:#f92672">.</span>until(EC<span style="color:#f92672">.</span>frame_to_be_available_and_switch_to_it(<span style="color:#e6db74">&#39;contentAreaFrame&#39;</span>))
-    wait<span style="color:#f92672">.</span>until(EC<span style="color:#f92672">.</span>frame_to_be_available_and_switch_to_it(<span style="color:#e6db74">&#39;isolatedWorkArea&#39;</span>))
+    wait<span style=color:#f92672>.</span>until(EC<span style=color:#f92672>.</span>frame_to_be_available_and_switch_to_it(<span style=color:#e6db74>&#39;contentAreaFrame&#39;</span>))
+    wait<span style=color:#f92672>.</span>until(EC<span style=color:#f92672>.</span>frame_to_be_available_and_switch_to_it(<span style=color:#e6db74>&#39;isolatedWorkArea&#39;</span>))
 
-    <span style="color:#75715e"># Wait until timesheet appears</span>
-    elem <span style="color:#f92672">=</span> wait<span style="color:#f92672">.</span>until(EC<span style="color:#f92672">.</span>presence_of_element_located(
-        (By<span style="color:#f92672">.</span>ID, <span style="color:#e6db74">&#34;aaaaKEBH.VcCatTableWeek.WORKDATE1_InputField.0&#34;</span>)))
+    <span style=color:#75715e># Wait until timesheet appears</span>
+    elem <span style=color:#f92672>=</span> wait<span style=color:#f92672>.</span>until(EC<span style=color:#f92672>.</span>presence_of_element_located(
+        (By<span style=color:#f92672>.</span>ID, <span style=color:#e6db74>&#34;aaaaKEBH.VcCatTableWeek.WORKDATE1_InputField.0&#34;</span>)))
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fill_in_timesheet</span>(driver):
-    <span style="color:#75715e"># Fill in days of the week with 8 hours each</span>
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">6</span>):
-        elem <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element_by_id(<span style="color:#e6db74">&#34;aaaaKEBH.VcCatTableWeek.WORKDATE&#34;</span><span style="color:#f92672">+</span>str(i)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;_InputField.0&#34;</span>)
-        elem<span style="color:#f92672">.</span>click()
-        elem<span style="color:#f92672">.</span>clear()
-        elem<span style="color:#f92672">.</span>send_keys(<span style="color:#e6db74">&#39;8&#39;</span>)
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>fill_in_timesheet</span>(driver):
+    <span style=color:#75715e># Fill in days of the week with 8 hours each</span>
+    <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>6</span>):
+        elem <span style=color:#f92672>=</span> driver<span style=color:#f92672>.</span>find_element_by_id(<span style=color:#e6db74>&#34;aaaaKEBH.VcCatTableWeek.WORKDATE&#34;</span><span style=color:#f92672>+</span>str(i)<span style=color:#f92672>+</span><span style=color:#e6db74>&#34;_InputField.0&#34;</span>)
+        elem<span style=color:#f92672>.</span>click()
+        elem<span style=color:#f92672>.</span>clear()
+        elem<span style=color:#f92672>.</span>send_keys(<span style=color:#e6db74>&#39;8&#39;</span>)
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">submit_and_confirm_timesheet</span>(driver, wait):
-    <span style="color:#75715e"># Wait for javascript to digest our fast hours entry :)</span>
-    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>submit_and_confirm_timesheet</span>(driver, wait):
+    <span style=color:#75715e># Wait for javascript to digest our fast hours entry :)</span>
+    time<span style=color:#f92672>.</span>sleep(<span style=color:#ae81ff>0.2</span>)
 
-    <span style="color:#75715e"># Start to Click Review Button</span>
-    elem <span style="color:#f92672">=</span> driver<span style="color:#f92672">.</span>find_element_by_id(<span style="color:#e6db74">&#34;aaaaKEBH.VcCatRecordEntryView.ButtonNext&#34;</span>)
-    elem<span style="color:#f92672">.</span>click()
+    <span style=color:#75715e># Start to Click Review Button</span>
+    elem <span style=color:#f92672>=</span> driver<span style=color:#f92672>.</span>find_element_by_id(<span style=color:#e6db74>&#34;aaaaKEBH.VcCatRecordEntryView.ButtonNext&#34;</span>)
+    elem<span style=color:#f92672>.</span>click()
 
-    <span style="color:#75715e"># Click Save/Confirm</span>
-    elem <span style="color:#f92672">=</span> wait<span style="color:#f92672">.</span>until(EC<span style="color:#f92672">.</span>presence_of_element_located(
-        (By<span style="color:#f92672">.</span>ID, <span style="color:#e6db74">&#34;aaaaLBOD.VcGenericButtonView.Save_com_sap_xss_hr_cat_record_vac_review_VcCatRecordReview&#34;</span>)))
-    elem<span style="color:#f92672">.</span>click()
+    <span style=color:#75715e># Click Save/Confirm</span>
+    elem <span style=color:#f92672>=</span> wait<span style=color:#f92672>.</span>until(EC<span style=color:#f92672>.</span>presence_of_element_located(
+        (By<span style=color:#f92672>.</span>ID, <span style=color:#e6db74>&#34;aaaaLBOD.VcGenericButtonView.Save_com_sap_xss_hr_cat_record_vac_review_VcCatRecordReview&#34;</span>)))
+    elem<span style=color:#f92672>.</span>click()
 
-    <span style="color:#75715e"># Wait until confirmation of save</span>
-    elem <span style="color:#f92672">=</span> wait<span style="color:#f92672">.</span>until(EC<span style="color:#f92672">.</span>presence_of_element_located(
-        (By<span style="color:#f92672">.</span>ID, <span style="color:#e6db74">&#34;aaaaLMJA.WDMsgBox.MessageArea-txt&#34;</span>)))
-    <span style="color:#66d9ef">assert</span> <span style="color:#e6db74">&#34;Your data has been saved&#34;</span> <span style="color:#f92672">or</span> <span style="color:#e6db74">&#34;No data was changed&#34;</span> <span style="color:#f92672">in</span> elem<span style="color:#f92672">.</span>text
+    <span style=color:#75715e># Wait until confirmation of save</span>
+    elem <span style=color:#f92672>=</span> wait<span style=color:#f92672>.</span>until(EC<span style=color:#f92672>.</span>presence_of_element_located(
+        (By<span style=color:#f92672>.</span>ID, <span style=color:#e6db74>&#34;aaaaLMJA.WDMsgBox.MessageArea-txt&#34;</span>)))
+    <span style=color:#66d9ef>assert</span> <span style=color:#e6db74>&#34;Your data has been saved&#34;</span> <span style=color:#f92672>or</span> <span style=color:#e6db74>&#34;No data was changed&#34;</span> <span style=color:#f92672>in</span> elem<span style=color:#f92672>.</span>text
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">logoff_and_close</span>(driver, wait):
-    <span style="color:#75715e"># Start logging off</span>
-    driver<span style="color:#f92672">.</span>switch_to<span style="color:#f92672">.</span>default_content() <span style="color:#75715e"># get back out of iframe</span>
-    driver<span style="color:#f92672">.</span>find_element_by_css_selector(<span style="color:#e6db74">&#34;#buttonlogoff &gt; span.button_inner&#34;</span>)<span style="color:#f92672">.</span>click() <span style="color:#75715e"># Click logoff</span>
-    driver<span style="color:#f92672">.</span>find_element_by_css_selector(<span style="color:#e6db74">&#34;div.button_middle&#34;</span>)<span style="color:#f92672">.</span>click() <span style="color:#75715e"># Click yes to logoff</span>
-    wait<span style="color:#f92672">.</span>until(<span style="color:#66d9ef">lambda</span> driver:driver<span style="color:#f92672">.</span>title<span style="color:#f92672">.</span>lower()<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#39;home&#39;</span>))
-    driver<span style="color:#f92672">.</span>close()
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>logoff_and_close</span>(driver, wait):
+    <span style=color:#75715e># Start logging off</span>
+    driver<span style=color:#f92672>.</span>switch_to<span style=color:#f92672>.</span>default_content() <span style=color:#75715e># get back out of iframe</span>
+    driver<span style=color:#f92672>.</span>find_element_by_css_selector(<span style=color:#e6db74>&#34;#buttonlogoff &gt; span.button_inner&#34;</span>)<span style=color:#f92672>.</span>click() <span style=color:#75715e># Click logoff</span>
+    driver<span style=color:#f92672>.</span>find_element_by_css_selector(<span style=color:#e6db74>&#34;div.button_middle&#34;</span>)<span style=color:#f92672>.</span>click() <span style=color:#75715e># Click yes to logoff</span>
+    wait<span style=color:#f92672>.</span>until(<span style=color:#66d9ef>lambda</span> driver:driver<span style=color:#f92672>.</span>title<span style=color:#f92672>.</span>lower()<span style=color:#f92672>.</span>startswith(<span style=color:#e6db74>&#39;home&#39;</span>))
+    driver<span style=color:#f92672>.</span>close()
     
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+<span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
     main()
-</code></pre></div>
-        </p>
-    </div>
-    
-
-    
-
-    <div class="page-footer">
-        
-        <hr class="footer-divider">
-        
-            <a class="tag" href="../tags/code">#code</a>
-        
-            <a class="tag" href="../tags/automation">#automation</a>
-        
-            <a class="tag" href="../tags/programming">#programming</a>
-        
-            <a class="tag" href="../tags/python">#python</a>
-        
-      
-    </div>
-
-
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script>
-</footer>
-    </body>
-</html>
+</code></pre></div></p></div><div class=page-footer><hr class=footer-divider><a class=tag href=../tags/code>#code</a>
+<a class=tag href=../tags/automation>#automation</a>
+<a class=tag href=../tags/programming>#programming</a>
+<a class=tag href=../tags/python>#python</a></div></div><footer class=footer-mobile><div class=social-icons></div><script src=../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script></footer></body></html>
