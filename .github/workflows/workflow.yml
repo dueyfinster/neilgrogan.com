@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -28,17 +28,17 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-    ftp:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2.1.0
-          with:
-            ref: 'gh-pages'
-            fetch-depth: 2
-        - name: Deploy-FTP
-          uses: SamKirkland/FTP-Deploy-Action@3.1.1
-          with:
-            ftp-server: ${{ secrets.FTP_SERVER }}
-            ftp-username: ${{ secrets.FTP_USERNAME }}
-            ftp-password: ${{ secrets.FTP_PASSWORD }}
-            local-dir: .
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.1.0
+        with:
+          ref: 'gh-pages'
+          fetch-depth: 2
+      - name: Deploy-FTP
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: .
