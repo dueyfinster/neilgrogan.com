@@ -1,10 +1,238 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>bash | Neil Grogan</title><link rel=apple-touch-icon sizes=180x180 href=../../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../../favicon-96x96.png><link rel=manifest href=../../manifest.json><link rel=mask-icon href=../../safari-pinned-tab.svg color=#ff3db4><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css><script src=https://unpkg.com/lunr/lunr.js></script><link rel=alternate type=application/rss+xml href=../../tags/bash/index.xml title="Neil Grogan"></head><body><nav><header><div class=site-title><a href=../../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../../about>About</a>
-<a class="color-link nav-link" href=../../projects>Projects</a>
-<a class="color-link nav-link" href=../../presentations/>Presentations</a>
-<a class="color-link nav-link" href=../../contact>Contact</a>
-<a class="color-link nav-link" href=../../archives/>Archives</a>
-<a class="color-link nav-link" href=../../tags/>Tags</a>
-<a class="color-link nav-link" href=../../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script><script src=../../js/lunr-search.js></script></footer></nav><div id=content class=content-container><h1>Tagged "bash"</h1><article><h2><a href=../../colour-bash/>Custom Colourful Bash Prompt</a></h2><div><p>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):
-[ngrogan@localhost:~]$ can be turned in to this:
-The thing about Bash is the colour codes to achieve this can look archaic:</p></div><div class=post-footer><time>May 10, 2013</time></div></article><article><h2><a href=../../output-percentage-of-file-bash-code/>Output Percentage of File (Bash code)</a></h2><div><p>I wrote this script recently for a friend in a job who needed to output a certain percentage of a log file, but no more and no less. This was in Linux using bash, so I had a go at writing a solution, which you see below. Posting this up in case it&rsquo;s useful to anyone else!
-# !/bin/sh # Public Domain, by Neil Grogan 2010 # Script to output last 30% of file by lines OLDFILE=&amp;quot;oldlog.</p></div><div class=post-footer><time>February 5, 2011</time></div></article></div><footer class=footer-mobile><div class=social-icons></div><script src=../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script></footer></body></html>
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>bash | Neil Grogan</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="../../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css"/>
+
+    
+    
+    
+
+    
+    
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+ 
+    
+    <link rel="alternate" type="application/rss+xml" href="../../tags/bash/index.xml" title="Neil Grogan" />
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../../">Neil Grogan</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="../../about">About</a>
+  
+    <a class="color-link nav-link" href="../../projects">Projects</a>
+  
+    <a class="color-link nav-link" href="../../presentations/">Presentations</a>
+  
+    <a class="color-link nav-link" href="../../contact">Contact</a>
+  
+    <a class="color-link nav-link" href="../../archives/">Archives</a>
+  
+    <a class="color-link nav-link" href="../../tags/">Tags</a>
+  
+  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+</footer>
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+  <h1>Tagged "bash"</h1>
+  
+  
+    
+    <article>
+            <h2>
+                <a href="../../colour-bash/">
+                    Custom Colourful Bash Prompt
+                </a>
+            </h2>
+            <div>
+                <p>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):
+[ngrogan@localhost:~]$  can be turned in to this:
+The thing about Bash is the colour codes to achieve this can look archaic:</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>May 10, 2013</time>
+            </div> 
+        </article>
+    
+  
+    
+    <article>
+            <h2>
+                <a href="../../output-percentage-of-file-bash-code/">
+                    Output Percentage of File (Bash code)
+                </a>
+            </h2>
+            <div>
+                <p>I wrote this script recently for a friend in a job who needed to output a certain percentage of a log file, but no more and no less. This was in Linux using bash, so I had a go at writing a solution, which you see below. Posting this up in case it&rsquo;s useful to anyone else!
+# !/bin/sh # Public Domain, by Neil Grogan 2010 # Script to output last 30% of file by lines OLDFILE=&amp;quot;oldlog.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>February 5, 2011</time>
+            </div> 
+        </article>
+    
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script>
+</footer>
+    </body>
+</html>

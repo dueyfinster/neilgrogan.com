@@ -1,77 +1,412 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>Ubiquiti Unifi with Sonos on a separate VLAN | Neil Grogan</title><link rel=apple-touch-icon sizes=180x180 href=../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../favicon-96x96.png><link rel=manifest href=../manifest.json><link rel=mask-icon href=../safari-pinned-tab.svg color=#ff3db4><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css><script src=https://unpkg.com/lunr/lunr.js></script></head><body><nav><header><div class=site-title><a href=../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../about>About</a>
-<a class="color-link nav-link" href=../projects>Projects</a>
-<a class="color-link nav-link" href=../presentations/>Presentations</a>
-<a class="color-link nav-link" href=../contact>Contact</a>
-<a class="color-link nav-link" href=../archives/>Archives</a>
-<a class="color-link nav-link" href=../tags/>Tags</a>
-<a class="color-link nav-link" href=../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script><script src=../js/lunr-search.js></script></footer></nav><div id=content class=content-container><h1 class=post-title>Ubiquiti Unifi with Sonos on a separate VLAN</h1><time>May 22, 2020</time><div><p><h3 id=headline-1>Change network settings on Unifi controller</h3><p>Further to getting my <a href=../ubnt>Unifi</a> gear last year, I've started to organise
-the virtual local area networks (VLANs) to increase security. I've created a
-separate guest wifi network and a separate internet of things (IoT) network.
-One issue you'll run in to is that a lot of modern devices work by broadcasting
-their presence on the network and that doesn't work well normally across VLANs.
-None more so than Sonos, the home wireless speaker solution. Fortunately through
-trial and error with the help of <a href=https://community.ui.com/questions/Configure-Sonos-across-subnets-on-USG/a758382b-72e4-446b-90cc-ea353482ff1a>Ubiquiti Forums</a> - I've found a way to make it
-work.</p><p>First we need to switch off optimise network in settings:</p><img src=../img/20/optimize.png alt="Optimize Network settings" title=/img/20/optimize.png><p>Then in our network settings turn on IGMP snooping:</p><img src=../img/20/igmpsnoop.png alt="IGMP Snooping Setting" title=/img/20/igmpsnoop.png width=660><h3 id=headline-2>Set the IGMP Proxy up</h3><p>Then we need to set up IGMP proxy on our Ubiquiti Security Gateway (USG).
-Log in (password you can check on Cloud Key, <code>192.168.1.1</code> should be your USG's IP
-address):</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ ssh admin@192.168.1.1</code></pre></div></div><p>Then on the USG console, we'll set upstream (our network with sonos controllers
-[for ex. iPhone, not on VLAN for me]) and downstream for the network with the Sonos hardware
-(for me VLAN <code>20</code> Play:1, Play:3 etc. etc.).</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ configure
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Ubiquiti Unifi with Sonos on a separate VLAN | Neil Grogan</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css"/>
+
+    
+    
+    
+
+    
+    
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+ 
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../">Neil Grogan</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="../about">About</a>
+  
+    <a class="color-link nav-link" href="../projects">Projects</a>
+  
+    <a class="color-link nav-link" href="../presentations/">Presentations</a>
+  
+    <a class="color-link nav-link" href="../contact">Contact</a>
+  
+    <a class="color-link nav-link" href="../archives/">Archives</a>
+  
+    <a class="color-link nav-link" href="../tags/">Tags</a>
+  
+  <a class="color-link nav-link" href="../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
+</footer>
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+<h1 class="post-title">Ubiquiti Unifi with Sonos on a separate VLAN</h1>
+    
+    <time>May 22, 2020</time>
+    
+
+    <div>
+        
+        <p>
+        
+<div id="outline-container-headline-1" class="outline-3">
+<h3 id="headline-1">
+Change network settings on Unifi controller 
+</h3>
+<div id="outline-text-headline-1" class="outline-text-3">
+<p>Further to getting my <a href="../ubnt">Unifi</a> gear last year, I&#39;ve started to organise 
+the virtual local area networks (VLANs) to increase security. I&#39;ve created a 
+separate guest wifi network and a separate internet of things (IoT) network. 
+One issue you&#39;ll run in to is that a lot of modern devices work by broadcasting 
+their presence on the network and that doesn&#39;t work well normally across VLANs. 
+None more so than Sonos, the home wireless speaker solution. Fortunately through 
+trial and error with the help of <a href="https://community.ui.com/questions/Configure-Sonos-across-subnets-on-USG/a758382b-72e4-446b-90cc-ea353482ff1a">Ubiquiti Forums</a> - I&#39;ve found a way to make it 
+work.</p>
+<p>
+First we need to switch off optimise network in settings:</p>
+<img src="../img/20/optimize.png" alt="Optimize Network settings" title="/img/20/optimize.png"/>
+<p>
+Then in our network settings turn on IGMP snooping:</p>
+<img src="../img/20/igmpsnoop.png" alt="IGMP Snooping Setting" title="/img/20/igmpsnoop.png" width="660"/>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">
+Set the IGMP Proxy up
+</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>
+Then we need to set up IGMP proxy on our Ubiquiti Security Gateway (USG). 
+Log in (password you can check on Cloud Key, <code>192.168.1.1</code> should be your USG&#39;s IP 
+address):</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh admin@192.168.1.1</code></pre></div>
+</div>
+<p>
+Then on the USG console, we&#39;ll set upstream (our network with sonos controllers 
+[for ex. iPhone, not on VLAN for me]) and downstream for the network with the Sonos hardware 
+(for me VLAN <code>20</code> Play:1, Play:3 etc. etc.).</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ configure
 $ edit protocols igmp-proxy
 $ set interface eth1 role upstream
-$ set interface eth1 threshold <span style=color:#ae81ff>1</span>
+$ set interface eth1 threshold <span style="color:#ae81ff">1</span>
 $ set interface eth1.20 role downstream
-$ set interface eth1.20 threshold <span style=color:#ae81ff>1</span></code></pre></div></div><p>The configuration can now be show with (also enter these commands on USG):</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ show</code></pre></div></div><p>and should look like this (obviously <code>20</code> VLAN should reflect which VLAN your speakers
-are in!):</p><div class="src src-js"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>eth1</span> {
-     <span style=color:#a6e22e>role</span> <span style=color:#a6e22e>upstream</span>
-     <span style=color:#a6e22e>threshold</span> <span style=color:#ae81ff>1</span>
+$ set interface eth1.20 threshold <span style="color:#ae81ff">1</span></code></pre></div>
+</div>
+<p>
+The configuration can now be show with (also enter these commands on USG):</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ show</code></pre></div>
+</div>
+<p>
+and should look like this (obviously <code>20</code> VLAN should reflect which VLAN your speakers 
+are in!):</p>
+<div class="src src-js">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span> {
+     <span style="color:#a6e22e">role</span> <span style="color:#a6e22e">upstream</span>
+     <span style="color:#a6e22e">threshold</span> <span style="color:#ae81ff">1</span>
  }
- <span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>eth1</span><span style=color:#ae81ff>.20</span> {
-     <span style=color:#a6e22e>role</span> <span style=color:#a6e22e>downstream</span>
-     <span style=color:#a6e22e>threshold</span> <span style=color:#ae81ff>1</span>
+ <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span><span style="color:#ae81ff">.20</span> {
+     <span style="color:#a6e22e">role</span> <span style="color:#a6e22e">downstream</span>
+     <span style="color:#a6e22e">threshold</span> <span style="color:#ae81ff">1</span>
  }
-</code></pre></div></div><p>If that's all OK we should save and commit (which will restart the IGMP proxy):</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ commit;save;exit</code></pre></div></div><h3 id=headline-3>Persist the IGMP Settings on Cloud Key</h3><p>Then we can test our controllers work and can contact the speakers. If that works
-great! But now we need to add the configuration to our Cloud Key, since the next
-time the Unifi Security Gateway is provisioned, our configuration will be erased.
-Also, there is currently no graphical options for IGMP proxy on the Cloud Key, so
-we'll need to use a custom <a href=https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json>config.gateway.json</a>. We can dump our current configuration
-on our USG:</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ mca-ctrl -t dump-cfg &gt; config.gateway.json</code></pre></div></div><p>then we need to edit it using vim to only contain our igmp section:</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ vim config.gateway.json
-$ <span style=color:#75715e># Remove all the config except our IGMP proxy</span></code></pre></div></div><p>it should look like this, after you've finished editing it:</p><div class="src src-js"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js>{
-        <span style=color:#e6db74>&#34;protocols&#34;</span><span style=color:#f92672>:</span> {
-                <span style=color:#e6db74>&#34;igmp-proxy&#34;</span><span style=color:#f92672>:</span> {
-                        <span style=color:#e6db74>&#34;interface&#34;</span><span style=color:#f92672>:</span> {
-                                <span style=color:#e6db74>&#34;eth1&#34;</span><span style=color:#f92672>:</span> {
-                                        <span style=color:#e6db74>&#34;role&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;upstream&#34;</span>,
-                                        <span style=color:#e6db74>&#34;threshold&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;1&#34;</span>
+</code></pre></div>
+</div>
+<p>
+If that&#39;s all OK we should save and commit (which will restart the IGMP proxy):</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ commit;save;exit</code></pre></div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Persist the IGMP Settings on Cloud Key
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>Then we can test our controllers work and can contact the speakers. If that works 
+great! But now we need to add the configuration to our Cloud Key, since the next 
+time the Unifi Security Gateway is provisioned, our configuration will be erased. 
+Also, there is currently no graphical options for IGMP proxy on the Cloud Key, so 
+we&#39;ll need to use a custom <a href="https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json">config.gateway.json</a>. We can dump our current configuration 
+on our USG:</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ mca-ctrl -t dump-cfg &gt; config.gateway.json</code></pre></div>
+</div>
+<p>
+then we need to edit it using vim to only contain our igmp section:</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ vim config.gateway.json
+$ <span style="color:#75715e"># Remove all the config except our IGMP proxy</span></code></pre></div>
+</div>
+<p>
+it should look like this, after you&#39;ve finished editing it:</p>
+<div class="src src-js">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+        <span style="color:#e6db74">&#34;protocols&#34;</span><span style="color:#f92672">:</span> {
+                <span style="color:#e6db74">&#34;igmp-proxy&#34;</span><span style="color:#f92672">:</span> {
+                        <span style="color:#e6db74">&#34;interface&#34;</span><span style="color:#f92672">:</span> {
+                                <span style="color:#e6db74">&#34;eth1&#34;</span><span style="color:#f92672">:</span> {
+                                        <span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;upstream&#34;</span>,
+                                        <span style="color:#e6db74">&#34;threshold&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;1&#34;</span>
                                 },
-                                <span style=color:#e6db74>&#34;eth1.20&#34;</span><span style=color:#f92672>:</span> {
-                                        <span style=color:#e6db74>&#34;role&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;downstream&#34;</span>,
-                                        <span style=color:#e6db74>&#34;threshold&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;1&#34;</span>
+                                <span style="color:#e6db74">&#34;eth1.20&#34;</span><span style="color:#f92672">:</span> {
+                                        <span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;downstream&#34;</span>,
+                                        <span style="color:#e6db74">&#34;threshold&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;1&#34;</span>
                                 }
                         }
                 }
         }
 }
-</code></pre></div></div><p>if unsure, use <a href=jsonlint.com><a href=https://jsonlint.com>https://jsonlint.com</a></a> to double check syntax:</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ cat  config.gateway.json
-$ <span style=color:#75715e># Copy nand paste in to JSONlint to check</span></code></pre></div></div><p>Once we are happy our configuration is valid, let's copy it to our Cloud Key
-(replace <code>192.168.1.2</code> with your Cloud Key's IP address, password is your unifi
-account password with root user, check the <a href=https://help.ui.com/hc/en-us/articles/115004872967>unifi config path</a>):</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ scp config.gateway.json root@192.168.1.2:/usr/lib/unifi/data/sites/default/config.gateway.json</code></pre></div></div><p>Then run a force provision on the USG from the Cloud Key web interface and then
-check the config remains intact (replace <code>192.168.1.1</code> with your USG's IP address):</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ ssh admin@192.168.1.1
+</code></pre></div>
+</div>
+<p>
+if unsure, use <a href="jsonlint.com"><a href="https://jsonlint.com">https://jsonlint.com</a></a> to double check syntax:</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ cat  config.gateway.json
+$ <span style="color:#75715e"># Copy nand paste in to JSONlint to check</span></code></pre></div>
+</div>
+<p>
+Once we are happy our configuration is valid, let&#39;s copy it to our Cloud Key 
+(replace <code>192.168.1.2</code> with your Cloud Key&#39;s IP address, password is your unifi 
+account password with root user, check the <a href="https://help.ui.com/hc/en-us/articles/115004872967">unifi config path</a>):</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ scp config.gateway.json root@192.168.1.2:/usr/lib/unifi/data/sites/default/config.gateway.json</code></pre></div>
+</div>
+<p>
+Then run a force provision on the USG from the Cloud Key web interface and then 
+check the config remains intact (replace <code>192.168.1.1</code> with your USG&#39;s IP address):</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh admin@192.168.1.1
 $ configure
 $ edit protocols igmp-proxy
-$ show</code></pre></div></div><p>and should again look like this:</p><div class="src src-js"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>eth1</span> {
-     <span style=color:#a6e22e>role</span> <span style=color:#a6e22e>upstream</span>
-     <span style=color:#a6e22e>threshold</span> <span style=color:#ae81ff>1</span>
+$ show</code></pre></div>
+</div>
+<p>
+and should again look like this:</p>
+<div class="src src-js">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span> {
+     <span style="color:#a6e22e">role</span> <span style="color:#a6e22e">upstream</span>
+     <span style="color:#a6e22e">threshold</span> <span style="color:#ae81ff">1</span>
  }
- <span style=color:#66d9ef>interface</span> <span style=color:#a6e22e>eth1</span><span style=color:#ae81ff>.20</span> {
-     <span style=color:#a6e22e>role</span> <span style=color:#a6e22e>downstream</span>
-     <span style=color:#a6e22e>threshold</span> <span style=color:#ae81ff>1</span>
+ <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span><span style="color:#ae81ff">.20</span> {
+     <span style="color:#a6e22e">role</span> <span style="color:#a6e22e">downstream</span>
+     <span style="color:#a6e22e">threshold</span> <span style="color:#ae81ff">1</span>
  }
-</code></pre></div></div><p>Congratulations! It works! Next step is to enable firewall rules to drop traffic you don't
-want crossing the VLANs to make them more secure. Check <a href="https://support.sonos.com/s/article/688?language=en_US">Sonos ports</a> for examples on
-what to allow.</p><h3 id=headline-4>What if it doesn't work?</h3><p>If it's not working, try these steps:</p><ol><li><p>Check IP addresses of Sonos products (have they taken IP addresses in new VLAN?)</p></li><li><p>Log on to the Cloud Key and try restart the IGMP proxy (forum reports of it</p></li></ol><p>crashing frequently on some people)</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ ssh admin@192.168.1.1
+</code></pre></div>
+</div>
+<p>
+Congratulations! It works! Next step is to enable firewall rules to drop traffic you don&#39;t 
+want crossing the VLANs to make them more secure. Check <a href="https://support.sonos.com/s/article/688?language=en_US">Sonos ports</a> for examples on 
+what to allow.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+What if it doesn&#39;t work?
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>
+If it&#39;s not working, try these steps:</p>
+<ol>
+<li>
+<p>Check IP addresses of Sonos products (have they taken IP addresses in new VLAN?)</p>
+</li>
+<li>
+<p>Log on to the Cloud Key and try restart the IGMP proxy (forum reports of it </p>
+</li>
+</ol>
+<p>crashing frequently on some people)</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh admin@192.168.1.1
 $ configure
 $ edit protocols igmp-proxy
-$ show</code></pre></div></div><ol><li><p>Try add a firewall rule (LAN IN) on the Cloud Key (which will provision to USG) to block all traffic from your VLAN</p></li></ol><p>to the other LAN/VLAN and turn logging on, can then check logs to see what traffic is
-allowed or denied on the USG:</p><div class="src src-shell"><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ ssh admin@192.168.1.1
-$ cat /var/log/meesages | grep LAN_IN-</code></pre></div></div><p>this gives an idea of what device is trying to talk to what on what port.</p></p></div><div class=page-footer><hr class=footer-divider><a class=tag href=../tags/networking>#networking</a>
-<a class=tag href=../tags/homenet>#homenet</a></div></div><footer class=footer-mobile><div class=social-icons></div><script src=../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script></footer></body></html>
+$ show</code></pre></div>
+</div>
+<ol>
+<li>
+<p>Try add a firewall rule (LAN IN) on the Cloud Key (which will provision to USG) to block all traffic from your VLAN </p>
+</li>
+</ol>
+<p>to the other LAN/VLAN and turn logging on, can then check logs to see what traffic is 
+allowed or denied on the USG:</p>
+<div class="src src-shell">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ ssh admin@192.168.1.1
+$ cat /var/log/meesages | grep LAN_IN-</code></pre></div>
+</div>
+<p>this gives an idea of what device is trying to talk to what on what port.</p>
+</div>
+</div>
+
+        </p>
+    </div>
+    
+
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="../tags/networking">#networking</a>
+        
+            <a class="tag" href="../tags/homenet">#homenet</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script>
+</footer>
+    </body>
+</html>

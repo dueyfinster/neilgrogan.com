@@ -1,2 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>social-network on Neil Grogan</title><link>/tags/social-network/</link><description>Recent content in social-network on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 28 Mar 2006 00:00:00 +0000</lastBuildDate><atom:link href="/tags/social-network/index.xml" rel="self" type="application/rss+xml"/><item><title>Bebo and Beyond..</title><link>/bebo-and-beyond/</link><pubDate>Tue, 28 Mar 2006 00:00:00 +0000</pubDate><guid>/bebo-and-beyond/</guid><description>Do you say Baybo or Beebo? Do you have a clue what I am on about? Apparently 22 million of you out there will, welcome to Bebo.com the social network growing faster than ever! What is a social network? Apparently (by Google Definitions):
-The personal or professional set of relationships between individuals. Social networks represent both a collection of ties between people and the strength of those ties. Often used as a measure of social “connectedness”, recognising social networks assists in determining how information moves throughout groups, and how trust can be established and fostered.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>social-network on Neil Grogan</title>
+    <link>/tags/social-network/</link>
+    <description>Recent content in social-network on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Mar 2006 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/social-network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bebo and Beyond..</title>
+      <link>/bebo-and-beyond/</link>
+      <pubDate>Tue, 28 Mar 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/bebo-and-beyond/</guid>
+      <description>Do you say Baybo or Beebo? Do you have a clue what I am on about? Apparently 22 million of you out there will, welcome to Bebo.com the social network growing faster than ever! What is a social network? Apparently (by Google Definitions):
+ The personal or professional set of relationships between individuals. Social networks represent both a collection of ties between people and the strength of those ties. Often used as a measure of social “connectedness”, recognising social networks assists in determining how information moves throughout groups, and how trust can be established and fostered.</description>
+    </item>
+    
+  </channel>
+</rss>

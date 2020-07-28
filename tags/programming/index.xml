@@ -1,16 +1,174 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>programming on Neil Grogan</title><link>/tags/programming/</link><description>Recent content in programming on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Scraping Transaction Data from KBC Bank</title><link>/kbc-tx-js/</link><pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate><guid>/kbc-tx-js/</guid><description>In a previous post, I mentioned importing transactions using ledger/hledger and plain text accounting. As my former bank PTSB recently raised their fees, I decided to move to KBC. I was excited to see, as part of the open payments directive, they have a nice developer portal. I reached out to KBC&amp;rsquo;s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!</description></item><item><title>Python 3 In-Memory Zip File</title><link>/py-bin-zip/</link><pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate><guid>/py-bin-zip/</guid><description>In Python, BytesIO is the way to store binary data in memory. Most examples you’ll see using zip files in memory is to store string data and indeed the most common example you’ll find online from the zipfile module is zipfile.writestr(file_name, &amp;#34;Text Data&amp;#34;). But what if you want to store binary data of a PDF or Excel Spreadsheet that’s also in memory? You could use zipfile.write() (designed to take binary data) but then you can’t specify a filename (since our in-memory file was never written to a location on disk).</description></item><item><title>Scraping Data from your Bank in Python</title><link>/bank-tx-py/</link><pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate><guid>/bank-tx-py/</guid><description>As part of my previous posts, I talked about ledger and plain text accounting. The only part missing is that you need a method to import transactions from your bank. For this I have been doing this by hand, bi-weekly. I would have to do the following:
-Log in to online banking Go to the transactions page Select the date range for transactions I needed (double check last date of transaction in ledger at this point) Download the Microsoft Excel format file that wasn&amp;rsquo;t in the proper format Convert this Excel file into a CSV file that matched my import format (watch the dates, is it YYYY-MM-DD or DD/MM/YYYY?</description></item><item><title>Slack Bots for Work</title><link>/slack-bot/</link><pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate><guid>/slack-bot/</guid><description>In a previous post, I mentioned how I get notified of the restaurant menu via a Ruby script. Recently I&amp;rsquo;ve moved to a totally different product area and the main communication channel we use is Slack. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.
-This also got me thinking of what other information would be handy to have.</description></item><item><title>Automatic Newsletter Cleanup in Gmail</title><link>/gmail-newsletter-filter/</link><pubDate>Fri, 19 Aug 2016 00:00:00 +0000</pubDate><guid>/gmail-newsletter-filter/</guid><description>If you haven&amp;rsquo;t tried Google Apps Script, I found a really nifty use for it: smart filtering for email. Wait, shouldn&amp;rsquo;t I just use Gmails&amp;rsquo; built-in filters? As it turns out you can&amp;rsquo;t - my filter needs to act on email that matched that filter in the past. So in other words: a filter can only act on email it actually &amp;ldquo;filters&amp;rdquo;, which kinda makes sense! I&amp;rsquo;m a big fan of automation (and email is ripe for automation), as you can see from my post on meetings in Outlook.</description></item><item><title>Fill hours worked in SAP Netweaver Automatically</title><link>/autohours/</link><pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate><guid>/autohours/</guid><description>Continuing the theme of automation, one of the most repetitive tasks if you work for a big company is timesheets. So I set out to rectify this by scripting it!
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Neil Grogan</title>
+    <link>/tags/programming/</link>
+    <description>Recent content in programming on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scraping Transaction Data from KBC Bank</title>
+      <link>/kbc-tx-js/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/kbc-tx-js/</guid>
+      <description>In a previous post, I mentioned importing transactions using ledger/hledger and plain text accounting. As my former bank PTSB recently raised their fees, I decided to move to KBC. I was excited to see, as part of the open payments directive, they have a nice developer portal. I reached out to KBC&amp;rsquo;s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!</description>
+    </item>
+    
+    <item>
+      <title>Python 3 In-Memory Zip File</title>
+      <link>/py-bin-zip/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/py-bin-zip/</guid>
+      <description>In Python, BytesIO is the way to store binary data in memory. Most examples you’ll see using zip files in memory is to store string data and indeed the most common example you’ll find online from the zipfile module is zipfile.writestr(file_name, &amp;#34;Text Data&amp;#34;). But what if you want to store binary data of a PDF or Excel Spreadsheet that’s also in memory? You could use zipfile.write() (designed to take binary data) but then you can’t specify a filename (since our in-memory file was never written to a location on disk).</description>
+    </item>
+    
+    <item>
+      <title>Scraping Data from your Bank in Python</title>
+      <link>/bank-tx-py/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/bank-tx-py/</guid>
+      <description>As part of my previous posts, I talked about ledger and plain text accounting. The only part missing is that you need a method to import transactions from your bank. For this I have been doing this by hand, bi-weekly. I would have to do the following:
+ Log in to online banking Go to the transactions page Select the date range for transactions I needed (double check last date of transaction in ledger at this point) Download the Microsoft Excel format file that wasn&amp;rsquo;t in the proper format Convert this Excel file into a CSV file that matched my import format (watch the dates, is it YYYY-MM-DD or DD/MM/YYYY?</description>
+    </item>
+    
+    <item>
+      <title>Slack Bots for Work</title>
+      <link>/slack-bot/</link>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/slack-bot/</guid>
+      <description>In a previous post, I mentioned how I get notified of the restaurant menu via a Ruby script. Recently I&amp;rsquo;ve moved to a totally different product area and the main communication channel we use is Slack. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.
+This also got me thinking of what other information would be handy to have.</description>
+    </item>
+    
+    <item>
+      <title>Automatic Newsletter Cleanup in Gmail</title>
+      <link>/gmail-newsletter-filter/</link>
+      <pubDate>Fri, 19 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/gmail-newsletter-filter/</guid>
+      <description>If you haven&amp;rsquo;t tried Google Apps Script, I found a really nifty use for it: smart filtering for email. Wait, shouldn&amp;rsquo;t I just use Gmails&amp;rsquo; built-in filters? As it turns out you can&amp;rsquo;t - my filter needs to act on email that matched that filter in the past. So in other words: a filter can only act on email it actually &amp;ldquo;filters&amp;rdquo;, which kinda makes sense! I&amp;rsquo;m a big fan of automation (and email is ripe for automation), as you can see from my post on meetings in Outlook.</description>
+    </item>
+    
+    <item>
+      <title>Fill hours worked in SAP Netweaver Automatically</title>
+      <link>/autohours/</link>
+      <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/autohours/</guid>
+      <description>Continuing the theme of automation, one of the most repetitive tasks if you work for a big company is timesheets. So I set out to rectify this by scripting it!
 Start with you configuration, I named mine hours.ini:
 [DEFAULT] url = FILL_ME_IN username = FILL_ME_IN password = FILL_ME_IN then we need the magic of Selenium to do the heavy lifting, so we install it:
-$ pip3 install selenium I called this script, unsurprisingly hours.</description></item><item><title>Automated 'Push' Restaurant menu</title><link>/rest-menu/</link><pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate><guid>/rest-menu/</guid><description>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces&amp;rsquo; restaurant menu come to me!
-I decided to write it in Ruby and use push notifications, rather than email or SMS.</description></item><item><title>Adventures with React</title><link>/react/</link><pubDate>Thu, 22 Oct 2015 00:00:00 +0000</pubDate><guid>/react/</guid><description>Recently I&amp;rsquo;d seen a post on Hacker News about a course for the React JavaScript Framework. I haven&amp;rsquo;t done much with JavaScript, apart from a course in work, which was focused on the language itself and jQuery. React is a front end framework, which allows you to build reusable components (and generate them with data.)
-The only real experience I have is writing an application (using Node.js) for my MSc course which was an AJAX application for interacting with Amazon SimpleDB.</description></item><item><title>Automatically Decline and Delete or Accept and Delete Outlook 2010 Meetings</title><link>/outlook/</link><pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate><guid>/outlook/</guid><description>You can follow the Microsoft TechNet guide to add VisualBasic code in Outlook rules.
+$ pip3 install selenium I called this script, unsurprisingly hours.</description>
+    </item>
+    
+    <item>
+      <title>Automated &#39;Push&#39; Restaurant menu</title>
+      <link>/rest-menu/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-menu/</guid>
+      <description>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces&amp;rsquo; restaurant menu come to me!
+I decided to write it in Ruby and use push notifications, rather than email or SMS.</description>
+    </item>
+    
+    <item>
+      <title>Adventures with React</title>
+      <link>/react/</link>
+      <pubDate>Thu, 22 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/react/</guid>
+      <description>Recently I&amp;rsquo;d seen a post on Hacker News about a course for the React JavaScript Framework. I haven&amp;rsquo;t done much with JavaScript, apart from a course in work, which was focused on the language itself and jQuery. React is a front end framework, which allows you to build reusable components (and generate them with data.)
+The only real experience I have is writing an application (using Node.js) for my MSc course which was an AJAX application for interacting with Amazon SimpleDB.</description>
+    </item>
+    
+    <item>
+      <title>Automatically Decline and Delete or Accept and Delete Outlook 2010 Meetings</title>
+      <link>/outlook/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/outlook/</guid>
+      <description>You can follow the Microsoft TechNet guide to add VisualBasic code in Outlook rules.
 You can just replace the code they give with this:
-Sub AutoDeclineMeetings(oRequest As MeetingItem) &amp;#39; If its not a meeting, we don&amp;#39;t process If oRequest.MessageClass &amp;lt;&amp;gt; &amp;#34;IPM.Schedule.Meeting.Request&amp;#34; Then Exit Sub End If &amp;#39; Get the appointment in the meeting Dim oAppt As AppointmentItem Set oAppt = oRequest.GetAssociatedAppointment(True) &amp;#39; Send a decline response Dim oResponse Set oResponse = oAppt.</description></item><item><title>Full Stack Web Application with Node.js Tutorial</title><link>/web-app-nodejs-tutorial/</link><pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate><guid>/web-app-nodejs-tutorial/</guid><description>I&amp;rsquo;ve followed this tutorial personally, not using Mongo as the database at first. It&amp;rsquo;s clear and to the point and provides just what you need to know to get started. Highly recommended.</description></item><item><title>Programming is hard</title><link>/programming-is-hard/</link><pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate><guid>/programming-is-hard/</guid><description>A great essay on why programming is hard:
-It&amp;rsquo;s harder than you think. Right now you&amp;rsquo;re probably underestimating the amount of frustration and discomfort you&amp;rsquo;re about to experience, without realizing that by doing so you&amp;rsquo;re creating all sorts of subtle barriers to obtaining a deep understanding of programming.
-Language does matter I find this part extremely true: my first language is Java. Every programming language I&amp;rsquo;ve tried since has been through comparing it to Java.</description></item><item><title>Very Simple Java Twitter Bot (Twitter4J)</title><link>/very-simple-java-twitter-bot-twitter4j/</link><pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate><guid>/very-simple-java-twitter-bot-twitter4j/</guid><description>Below is code for the start of a Twitter bot I am going to build in Java. It&amp;rsquo;s the most basic way of getting Oauth working (with any account, not just your developer account) and it shows your timeline and can update your status - that&amp;rsquo;s it for now. The neat thing is it uses Java&amp;rsquo;s awesome serialisation, so you only should have to authorise your twitter account once!
-What you will need: Twitter4j Libraries Oauth Consumer and Secret Key off twitter That is it!</description></item><item><title>Output Percentage of File (Bash code)</title><link>/output-percentage-of-file-bash-code/</link><pubDate>Sat, 05 Feb 2011 00:00:00 +0000</pubDate><guid>/output-percentage-of-file-bash-code/</guid><description>I wrote this script recently for a friend in a job who needed to output a certain percentage of a log file, but no more and no less. This was in Linux using bash, so I had a go at writing a solution, which you see below. Posting this up in case it&amp;rsquo;s useful to anyone else!
-# !/bin/sh # Public Domain, by Neil Grogan 2010 # Script to output last 30% of file by lines OLDFILE=&amp;amp;quot;oldlog.</description></item><item><title>Technology New Years Resolutions</title><link>/technology-new-years-resolutions/</link><pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate><guid>/technology-new-years-resolutions/</guid><description>Some people make new years resolutions about eating healthier, exercising more etc. I find that boring, who doesn&amp;rsquo;t want to be healthier? So I am making a list of technology resolutions:
-Learn C in XCode on a Mac Make an awesome CRM program for College degree (Python, Google App Engine) Learn Vim and Emacs bindings, using them for code Learn to use Git, possibly mercurial Learn some Obj-C with Cocoa Learn some C++ with Qt Learn Python +Tcl/tk Learn more about the design of Linux kernel and study some of it&amp;rsquo;s code Do Sysadmin stuff on my server on Linode; like setting upSendmail,IRCServers and other stuff If I have time, investigate CakePHP, Django, maybe Ruby (on Rails?</description></item><item><title>Why Should I Care What Color the Bikeshed Is?</title><link>/why-should-i-care-what-color-bikeshed/</link><pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate><guid>/why-should-i-care-what-color-bikeshed/</guid><description>&amp;ldquo;The really, really short answer is that you should not. The somewhat longer answer is that just because you are capable of building a bikeshed does not mean you should stop others from building one just because you do not like the color they plan to paint it. This is a metaphor indicating that you need not argue about every little feature just because you know enough to do so. Some people have commented that the amount of noise generated by a change is inversely proportional to the complexity of the change.</description></item><item><title>Comp Sci - An Interview with Stanford's Undegraduate Professor</title><link>/comp-sci-interview-with-stanfords/</link><pubDate>Fri, 07 Sep 2007 00:00:00 +0000</pubDate><guid>/comp-sci-interview-with-stanfords/</guid><description>This is the guy who runs Stanford University Undergraduate programme. He talks about the future of computer science:
-Computer Science will evolve more than most other subjects as it expands into other areas, especially Biology and other areas people don&amp;rsquo;t normally associate with it Industry ties with Colleges are going to be very important Computer Science with Law is the next big area Thanks to Robert Scoble for doing the interview.</description></item></channel></rss>
+Sub AutoDeclineMeetings(oRequest As MeetingItem) &amp;#39; If its not a meeting, we don&amp;#39;t process If oRequest.MessageClass &amp;lt;&amp;gt; &amp;#34;IPM.Schedule.Meeting.Request&amp;#34; Then Exit Sub End If &amp;#39; Get the appointment in the meeting Dim oAppt As AppointmentItem Set oAppt = oRequest.GetAssociatedAppointment(True) &amp;#39; Send a decline response Dim oResponse Set oResponse = oAppt.</description>
+    </item>
+    
+    <item>
+      <title>Full Stack Web Application with Node.js Tutorial</title>
+      <link>/web-app-nodejs-tutorial/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/web-app-nodejs-tutorial/</guid>
+      <description>I&amp;rsquo;ve followed this tutorial personally, not using Mongo as the database at first. It&amp;rsquo;s clear and to the point and provides just what you need to know to get started. Highly recommended.</description>
+    </item>
+    
+    <item>
+      <title>Programming is hard</title>
+      <link>/programming-is-hard/</link>
+      <pubDate>Mon, 07 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/programming-is-hard/</guid>
+      <description>A great essay on why programming is hard:
+ It&amp;rsquo;s harder than you think. Right now you&amp;rsquo;re probably underestimating the amount of frustration and discomfort you&amp;rsquo;re about to experience, without realizing that by doing so you&amp;rsquo;re creating all sorts of subtle barriers to obtaining a deep understanding of programming.
+ Language does matter I find this part extremely true: my first language is Java. Every programming language I&amp;rsquo;ve tried since has been through comparing it to Java.</description>
+    </item>
+    
+    <item>
+      <title>Very Simple Java Twitter Bot (Twitter4J)</title>
+      <link>/very-simple-java-twitter-bot-twitter4j/</link>
+      <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/very-simple-java-twitter-bot-twitter4j/</guid>
+      <description>Below is code for the start of a Twitter bot I am going to build in Java. It&amp;rsquo;s the most basic way of getting Oauth working (with any account, not just your developer account) and it shows your timeline and can update your status - that&amp;rsquo;s it for now. The neat thing is it uses Java&amp;rsquo;s awesome serialisation, so you only should have to authorise your twitter account once!
+What you will need:  Twitter4j Libraries Oauth Consumer and Secret Key off twitter That is it!</description>
+    </item>
+    
+    <item>
+      <title>Output Percentage of File (Bash code)</title>
+      <link>/output-percentage-of-file-bash-code/</link>
+      <pubDate>Sat, 05 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/output-percentage-of-file-bash-code/</guid>
+      <description>I wrote this script recently for a friend in a job who needed to output a certain percentage of a log file, but no more and no less. This was in Linux using bash, so I had a go at writing a solution, which you see below. Posting this up in case it&amp;rsquo;s useful to anyone else!
+# !/bin/sh # Public Domain, by Neil Grogan 2010 # Script to output last 30% of file by lines OLDFILE=&amp;amp;quot;oldlog.</description>
+    </item>
+    
+    <item>
+      <title>Technology New Years Resolutions</title>
+      <link>/technology-new-years-resolutions/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/technology-new-years-resolutions/</guid>
+      <description>Some people make new years resolutions about eating healthier, exercising more etc. I find that boring, who doesn&amp;rsquo;t want to be healthier? So I am making a list of technology resolutions:
+ Learn C in XCode on a Mac Make an awesome CRM program for College degree (Python, Google App Engine) Learn Vim and Emacs bindings, using them for code Learn to use Git, possibly mercurial Learn some Obj-C with Cocoa Learn some C++ with Qt Learn Python +Tcl/tk Learn more about the design of Linux kernel and study some of it&amp;rsquo;s code Do Sysadmin stuff on my server on Linode; like setting upSendmail,IRCServers and other stuff If I have time, investigate CakePHP, Django, maybe Ruby (on Rails?</description>
+    </item>
+    
+    <item>
+      <title>Why Should I Care What Color the Bikeshed Is?</title>
+      <link>/why-should-i-care-what-color-bikeshed/</link>
+      <pubDate>Mon, 07 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/why-should-i-care-what-color-bikeshed/</guid>
+      <description>&amp;ldquo;The really, really short answer is that you should not. The somewhat longer answer is that just because you are capable of building a bikeshed does not mean you should stop others from building one just because you do not like the color they plan to paint it. This is a metaphor indicating that you need not argue about every little feature just because you know enough to do so. Some people have commented that the amount of noise generated by a change is inversely proportional to the complexity of the change.</description>
+    </item>
+    
+    <item>
+      <title>Comp Sci - An Interview with Stanford&#39;s Undegraduate Professor</title>
+      <link>/comp-sci-interview-with-stanfords/</link>
+      <pubDate>Fri, 07 Sep 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/comp-sci-interview-with-stanfords/</guid>
+      <description>This is the guy who runs Stanford University Undergraduate programme. He talks about the future of computer science:
+ Computer Science will evolve more than most other subjects as it expands into other areas, especially Biology and other areas people don&amp;rsquo;t normally associate with it Industry ties with Colleges are going to be very important Computer Science with Law is the next big area  Thanks to Robert Scoble for doing the interview.</description>
+    </item>
+    
+  </channel>
+</rss>

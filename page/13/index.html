@@ -1,41 +1,495 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.69.0"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>Neil Grogan</title><link rel=apple-touch-icon sizes=180x180 href=../../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../../favicon-96x96.png><link rel=manifest href=../../manifest.json><link rel=mask-icon href=../../safari-pinned-tab.svg color=#ff3db4><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css><script src=https://unpkg.com/lunr/lunr.js></script><link rel=alternate type=application/rss+xml href=../../index.xml title="Neil Grogan"></head><body><nav><header><div class=site-title><a href=../../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../../about>About</a>
-<a class="color-link nav-link" href=../../projects>Projects</a>
-<a class="color-link nav-link" href=../../presentations/>Presentations</a>
-<a class="color-link nav-link" href=../../contact>Contact</a>
-<a class="color-link nav-link" href=../../archives/>Archives</a>
-<a class="color-link nav-link" href=../../tags/>Tags</a>
-<a class="color-link nav-link" href=../../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script><script src=../../js/lunr-search.js></script></footer></nav><div id=content class=content-container><div class=article-content><article><h2><a href=../../sony-subsidises-supercomputers-for-us/>Sony Subsidises Supercomputers for the US Military?</a></h2><div><p>Ars has a great article about how Sony through the Playstation 3&rsquo;s awesome power (can&rsquo;t you tell which of this generations consoles I own?) and subsidy (based on recoup of selling games and hardware - a model pioneered with the PS1)
-With respect to cell processors, a single 1U server configured with two 3.2GHz cell processors can cost up to $8K while two Sony PS3s cost approximately $600. Though a single 3.</p></div><div class=post-footer><time>November 30, 2009</time>
-<a class=tag href=../../tags/hardware>#hardware</a></div></article><article><h2><a href=../../nuclear-power-debates-why-not-in/>Nuclear Power Debates... why not in Ireland?</a></h2><div><p>Some really informative stuff on Slashdot regarding nuclear power:
-by david.given (6740)
-France generates pretty much all of its electricity from nuclear, with reprocessing, using pressurised water reactors. Not only do they have a number of handy engineering benefits such as isolating the water loop through the reactor from the water loop through the turbines, but they also have a particularly useful safety feature in that they&rsquo;re self-regulating &mdash; temperature goes up, power output goes down.</p></div><div class=post-footer><time>November 28, 2009</time>
-<a class=tag href=../../tags/politics>#politics</a></div></article><article><h2><a href=../../is-mac-pro-overpriced/>Is a Mac Pro overpriced?</a></h2><div><p>Gizmodo seem to think so:
-The $2,500 Mac Pro, desperately in need of a refresh, gives you a 2.66GHz Quad-Core Xeon (essentially an i7), 3GB of RAM (triple channel, but seriously?), 640GB hard drive (again, seriously?) and a nominal graphics card. Spend $800 more and you&rsquo;ll get a another processor and 3GB more RAM.
-The $2200, 27-inch iMac obviously includes a screen, plus you get a 2.8GHz Quad-Core (i7), 1TB drive, 4GB of RAM and a nominal graphics card.</p></div><div class=post-footer><time>November 24, 2009</time>
-<a class=tag href=../../tags/apple>#apple</a>
-<a class=tag href=../../tags/hardware>#hardware</a></div></article><article><h2><a href=../../3g-coverage-in-ireland/>3G Coverage in Ireland</a></h2><div><p>I recently used Twitter to post about my journey on public transport from Kilkenny to Dublin. For people outside of Ireland the total Journey distance was about 90 miles.
-I used only my iPhone on the O2 network and close to 50% of the time it seemed like I had 3G. This was on a train moving at speed, and YouTube played very well with little to no stutter. It did drop to Edge the other half of the time, with about 30% of time I still got speeds web browsing was acceptable on.</p></div><div class=post-footer><time>April 20, 2009</time>
-<a class=tag href=../../tags/hardware>#hardware</a>
-<a class=tag href=../../tags/apple>#apple</a></div></article><article><h2><a href=../../iphone-3g-review/>iPhone 3G Review</a></h2><div><p>I recently got an iPhone 3G and away from all that Apple mania; I thought I would give an honest review. This is framed in the mindset of all the past Nokia devices (which I have posted about here also) which I have owned.
-Okay so where to start? Well I think a good place would be what I could have bought instead. Strange place for a review; but its good to see what is out there and what I was looking at beforehand.</p></div><div class=post-footer><time>April 9, 2009</time>
-<a class=tag href=../../tags/review>#review</a>
-<a class=tag href=../../tags/apple>#apple</a>
-<a class=tag href=../../tags/hardware>#hardware</a></div></article><article><h2><a href=../../eircom-responds/>Eircom Responds...</a></h2><div><p>Dear,
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+	<meta name="generator" content="Hugo 0.74.3" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Neil Grogan</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="../../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css"/>
+
+    
+    
+    
+
+    
+    
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+ 
+    
+    <link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Neil Grogan" />
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../../">Neil Grogan</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="../../about">About</a>
+  
+    <a class="color-link nav-link" href="../../projects">Projects</a>
+  
+    <a class="color-link nav-link" href="../../presentations/">Presentations</a>
+  
+    <a class="color-link nav-link" href="../../contact">Contact</a>
+  
+    <a class="color-link nav-link" href="../../archives/">Archives</a>
+  
+    <a class="color-link nav-link" href="../../tags/">Tags</a>
+  
+  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+</footer>
+</nav>
+
+        <div id="content" class="content-container">
+        
+<div class = "article-content">
+        
+        
+        
+        
+        <article>
+            <h2>
+                <a href="../../sony-subsidises-supercomputers-for-us/">
+                    Sony Subsidises Supercomputers for the US Military?
+                </a>
+            </h2>
+            <div>
+                <p>Ars has a great article about how Sony through the Playstation 3&rsquo;s awesome power (can&rsquo;t you tell which of this generations consoles I own?) and subsidy (based on recoup of selling games and hardware - a model pioneered with the PS1)
+  With respect to cell processors, a single 1U server configured with two 3.2GHz cell processors can cost up to $8K while two Sony PS3s cost approximately $600. Though a single 3.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>November 30, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/hardware">#hardware</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../nuclear-power-debates-why-not-in/">
+                    Nuclear Power Debates... why not in Ireland?
+                </a>
+            </h2>
+            <div>
+                <p>Some really informative stuff on Slashdot regarding nuclear power:
+ by david.given (6740)
+France generates pretty much all of its electricity from nuclear, with reprocessing, using pressurised water reactors. Not only do they have a number of handy engineering benefits such as isolating the water loop through the reactor from the water loop through the turbines, but they also have a particularly useful safety feature in that they&rsquo;re self-regulating &mdash; temperature goes up, power output goes down.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>November 28, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/politics">#politics</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../is-mac-pro-overpriced/">
+                    Is a Mac Pro overpriced?
+                </a>
+            </h2>
+            <div>
+                <p>Gizmodo seem to think so:
+ The $2,500 Mac Pro, desperately in need of a refresh, gives you a 2.66GHz Quad-Core Xeon (essentially an i7), 3GB of RAM (triple channel, but seriously?), 640GB hard drive (again, seriously?) and a nominal graphics card. Spend $800 more and you&rsquo;ll get a another processor and 3GB more RAM.
+The $2200, 27-inch iMac obviously includes a screen, plus you get a 2.8GHz Quad-Core (i7), 1TB drive, 4GB of RAM and a nominal graphics card.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>November 24, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/apple">#apple</a>
+                
+                    <a class="tag" href="../../tags/hardware">#hardware</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../3g-coverage-in-ireland/">
+                    3G Coverage in Ireland
+                </a>
+            </h2>
+            <div>
+                <p>I recently used Twitter to post about my journey on public transport from Kilkenny to Dublin. For people outside of Ireland the total Journey distance was about 90 miles.
+I used only my iPhone on the O2 network and close to 50% of the time it seemed like I had 3G. This was on a train moving at speed, and YouTube played very well with little to no stutter. It did drop to Edge the other half of the time, with about 30% of time I still got speeds web browsing was acceptable on.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>April 20, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/hardware">#hardware</a>
+                
+                    <a class="tag" href="../../tags/apple">#apple</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../iphone-3g-review/">
+                    iPhone 3G Review
+                </a>
+            </h2>
+            <div>
+                <p>I recently got an iPhone 3G and away from all that Apple mania; I thought I would give an honest review. This is framed in the mindset of all the past Nokia devices (which I have posted about here also) which I have owned.
+Okay so where to start? Well I think a good place would be what I could have bought instead. Strange place for a review; but its good to see what is out there and what I was looking at beforehand.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>April 9, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/review">#review</a>
+                
+                    <a class="tag" href="../../tags/apple">#apple</a>
+                
+                    <a class="tag" href="../../tags/hardware">#hardware</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../eircom-responds/">
+                    Eircom Responds...
+                </a>
+            </h2>
+            <div>
+                <p>Dear,
 [My Name]
 eircom has not agreed to block any Internet sites from being accessed by
 end-users. As part of the settlement of the above proceedings, it was
 agreed that eircom would not oppose an application by the Plaintiffs to
 seek to have eircom block access to the Pirate Bay website. The Music
 Industry will still have to establish, in the normal way that there is
-an appropriate basis for the relief which they seek from the Court.</p></div><div class=post-footer><time>March 26, 2009</time>
-<a class=tag href=../../tags/legal>#legal</a></div></article><article><h2><a href=../../love-letter-to-irmas-solicitor/>Love letter to IRMA's Solicitor</a></h2><div><p>This post is a continuation on the previous one. IRMA is the Irish Music Rights Organisation which represents the big four record companies and their bottom line: never the artist. They have recently tried to regulate the Internet and have forced the biggest Irish ISP: Eircom; to use the three strikes rule and boot people off the Internet&mldr; No Judge, no Jury, no evidence of a crime.. Just an IP address and a sanction which you cannot contest.</p></div><div class=post-footer><time>March 7, 2009</time>
-<a class=tag href=../../tags/legal>#legal</a></div></article><article><h2><a href=../../this-post-is-censored-by-irma/>This post is censored by IRMA</a></h2><div><p>I always hoped for better for Ireland; but it seems the thieving hand of &ldquo;rights&rdquo; organizations which pretend to represent the artist have struck gold. Being able to cajole and bribe the largest Irish Internet Service Provider (ISP) - Eircom; has worked only too well. Although Eircom has said it will only obey by having a court order - it has agreed never to oppose these - which makes it complicit in the act of censorship.</p></div><div class=post-footer><time>March 7, 2009</time>
-<a class=tag href=../../tags/legal>#legal</a></div></article><article><h2><a href=../../linux-desktop-environments/>Linux Desktop Environments?</a></h2><div><p>What are Desktop Environments? Wikipedia defines it as:
-In graphical computing, a desktop environment (DE) commonly refers to a style of graphical user interface &mldr;&mldr; A desktop environment typically consists of icons, windows, toolbars, folders, wallpapers, and desktop widgets. (See WIMP.)
-I would add a file manager and browser to this list also! Let&rsquo;s look at the two most popular consumer Operating Systems (in three variants) and their Desktop Environments:</p></div><div class=post-footer><time>January 26, 2009</time>
-<a class=tag href=../../tags/linux>#linux</a>
-<a class=tag href=../../tags/software>#software</a></div></article><article><h2><a href=../../ubuntu-in-four-years/>Ubuntu in four years</a></h2><div><p>Last year was me celebrating four years of using the best operating system out there: Linux and the best distro Ubuntu. Ubuntu was my first foray in to Linux; and I haven&rsquo;t left it since; although I have tried all the other major distros. I started with the first version of Ubuntu; Warthy Warthog:
-Warthy had a text only installer and it took me quite a while to not only get used to the idea of this strange operating system; but the fear of leaving Windows-land where all that power usage knowledge would mean nothing.</p></div><div class=post-footer><time>January 21, 2009</time>
-<a class=tag href=../../tags/linux>#linux</a>
-<a class=tag href=../../tags/software>#software</a></div></article></div><div class=paginator><p>Page 13 of 24</p><div class=paginator-group><a class=color-link href=../../page/12/><svg width="13" height="9" viewBox="0 0 13 9" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g class="color-arrow" fill="#63bda2" fill-rule="nonzero"><polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"/><polygon id="Path" points="13 4 13 5 1 5 1 4"/></g></svg>Newer</a>
-<a class="color-link older" href=../../page/14/>Older<svg width="13" height="9" viewBox="0 0 13 9" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g class="color-arrow" fill="#63bda2" fill-rule="nonzero"><polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"/><polygon id="Path" points="0 5 0 4 12 4 12 5"/></g></svg></a></div></div></div><footer class=footer-mobile><div class=social-icons></div><script src=../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script></footer></body></html>
+an appropriate basis for the relief which they seek from the Court.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>March 26, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/legal">#legal</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../love-letter-to-irmas-solicitor/">
+                    Love letter to IRMA&#39;s Solicitor
+                </a>
+            </h2>
+            <div>
+                <p>This post is a continuation on the previous one. IRMA is the Irish Music Rights Organisation which represents the big four record companies and their bottom line: never the artist. They have recently tried to regulate the Internet and have forced the biggest Irish ISP: Eircom; to use the three strikes rule and boot people off the Internet&hellip; No Judge, no Jury, no evidence of a crime.. Just an IP address and a sanction which you cannot contest.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>March 7, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/legal">#legal</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../this-post-is-censored-by-irma/">
+                    This post is censored by IRMA
+                </a>
+            </h2>
+            <div>
+                <p>I always hoped for better for Ireland; but it seems the thieving hand of &ldquo;rights&rdquo; organizations which pretend to represent the artist have struck gold. Being able to cajole and bribe the largest Irish Internet Service Provider (ISP) - Eircom; has worked only too well. Although Eircom has said it will only obey by having a court order - it has agreed never to oppose these - which makes it complicit in the act of censorship.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>March 7, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/legal">#legal</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../linux-desktop-environments/">
+                    Linux Desktop Environments?
+                </a>
+            </h2>
+            <div>
+                <p>What are Desktop Environments? Wikipedia defines it as:
+ In graphical computing, a desktop environment (DE) commonly refers to a style of graphical user interface &hellip;&hellip; A desktop environment typically consists of icons, windows, toolbars, folders, wallpapers, and desktop widgets. (See WIMP.)
+ I would add a file manager and browser to this list also! Let&rsquo;s look at the two most popular consumer Operating Systems (in three variants) and their Desktop Environments:</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>January 26, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/linux">#linux</a>
+                
+                    <a class="tag" href="../../tags/software">#software</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../ubuntu-in-four-years/">
+                    Ubuntu in four years
+                </a>
+            </h2>
+            <div>
+                <p>Last year was me celebrating four years of using the best operating system out there: Linux and the best distro Ubuntu. Ubuntu was my first foray in to Linux; and I haven&rsquo;t left it since; although I have tried all the other major distros. I started with the first version of Ubuntu; Warthy Warthog:
+Warthy had a text only installer and it took me quite a while to not only get used to the idea of this strange operating system; but the fear of leaving Windows-land where all that power usage knowledge would mean nothing.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>January 21, 2009</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/linux">#linux</a>
+                
+                    <a class="tag" href="../../tags/software">#software</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+    </div>
+        
+        <div class="paginator">
+        
+        
+        <p>Page 13 of 24</p>
+        <div class="paginator-group">
+            
+            <a class="color-link" href="../../page/12/">
+                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
+                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
+                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
+                        </g>
+                </svg>  
+                Newer          
+            </a>
+            
+            
+                <a class="color-link older" href="../../page/14/">
+                    Older
+                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
+                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
+                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
+                            </g>
+                    </svg>
+                        
+                </a>
+            
+        </div>
+        
+    </div>
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script>
+</footer>
+    </body>
+</html>

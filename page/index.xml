@@ -1,8 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Neil Grogan</title><link>/page/</link><description>Recent content in Pages on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/page/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>Software Engineering Manager at Ericsson in Athlone, Ireland, managing teams in JEE, UX, UI and 5G Topology. Before that, I was a Senior Software Engineer in MediaKind and Ericsson working across Java and C# projects.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Neil Grogan</title>
+    <link>/page/</link>
+    <description>Recent content in Pages on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Software Engineering Manager at Ericsson in Athlone, Ireland, managing teams in JEE, UX, UI and 5G Topology. Before that, I was a Senior Software Engineer in MediaKind and Ericsson working across Java and C# projects.
 I originally graduated with a first class honours degree in computer science at
-Technological University, Dublin. I also graduated with a first class masters in computer science from University College Dublin. See the Colophon if you&amp;rsquo;re interested to know how I put this site together.</description></item><item><title>Colophon</title><link>/about/colophon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/colophon/</guid><description>This site is made with Hugo static website generator (using Noteworthy theme), posted to Github and hosted on FastMail. SSL is freely provided by LetsEncrypt.
-I author the site (usually) in the excellent Vim text editor, using Org mode/Markdown for posts and HTML/CSS/Javascript for the rest. An odd time I may write a post using Editorial on iOS.</description></item><item><title>Contact</title><link>/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/contact/</guid><description>My email is neil @ grogan dot ie. You can also send me encrypted mail using my pgp key. I also post a bit on Twitter.
-Linkedin Hackerrank PGP Info Key ID: 7FOF2D89 PGP Fingerpint: F12E 451D 87D9 4EE6 AFDF 7F14 B495 8827 7F0F 2D89 Length: 4096 Created: 2016-08-21</description></item><item><title>CV</title><link>/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/cv/</guid><description>View and Download You can get a PDF copy of my resume.</description></item><item><title>Presentations</title><link>/presentations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/presentations/</guid><description>Below is some of the presentations I have given:
-5G Overview - Maynooth University, October 2019 Newsfast M.Sc. Project Final (Speakerdeck Mirror) - University College Dublin, August 2015 Newsfast M.Sc. Project Midterm (Speakerdeck Mirror)- University College Dublin, June 2015</description></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/</guid><description>Some projects I&amp;rsquo;ve done are listed below, hopefully you can find some of them useful.
+Technological University, Dublin. I also graduated with a first class masters in computer science from University College Dublin. See the Colophon if you&amp;rsquo;re interested to know how I put this site together.</description>
+    </item>
+    
+    <item>
+      <title>Colophon</title>
+      <link>/about/colophon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/colophon/</guid>
+      <description>This site is made with Hugo static website generator (using Noteworthy theme), posted to Github and hosted on FastMail. SSL is freely provided by LetsEncrypt.
+I author the site (usually) in the excellent Vim text editor, using Org mode/Markdown for posts and HTML/CSS/Javascript for the rest. An odd time I may write a post using Editorial on iOS.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>My email is neil @ grogan dot ie. You can also send me encrypted mail using my pgp key. I also post a bit on Twitter.
+ Linkedin Hackerrank  PGP Info  Key ID: 7FOF2D89 PGP Fingerpint: F12E 451D 87D9 4EE6 AFDF 7F14 B495 8827 7F0F 2D89 Length: 4096 Created: 2016-08-21  </description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cv/</guid>
+      <description>View and Download You can get a PDF copy of my resume.</description>
+    </item>
+    
+    <item>
+      <title>Presentations</title>
+      <link>/presentations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/presentations/</guid>
+      <description>Below is some of the presentations I have given:
+ 5G Overview - Maynooth University, October 2019 Newsfast M.Sc. Project Final (Speakerdeck Mirror) - University College Dublin, August 2015 Newsfast M.Sc. Project Midterm (Speakerdeck Mirror)- University College Dublin, June 2015  </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>Some projects I&amp;rsquo;ve done are listed below, hopefully you can find some of them useful.
 AWS Lambda Web Scraper with Slack Notifications A function on Amazon Web Services Lambda platform to scrape useful information from a website and post the results to Slack. Can be used to get a restaurant menu, bus times, sports scores or anything you can think of in to Slack!
-AWS Lambda PDF to Text A function on Amazon Web Services Lambda platform to transform a PDF file in to the text it contains.</description></item></channel></rss>
+AWS Lambda PDF to Text A function on Amazon Web Services Lambda platform to transform a PDF file in to the text it contains.</description>
+    </item>
+    
+  </channel>
+</rss>

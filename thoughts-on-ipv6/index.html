@@ -1,15 +1,148 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>Thoughts on IPv6 | Neil Grogan</title><link rel=apple-touch-icon sizes=180x180 href=../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../favicon-96x96.png><link rel=manifest href=../manifest.json><link rel=mask-icon href=../safari-pinned-tab.svg color=#ff3db4><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css><script src=https://unpkg.com/lunr/lunr.js></script></head><body><nav><header><div class=site-title><a href=../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../about>About</a>
-<a class="color-link nav-link" href=../projects>Projects</a>
-<a class="color-link nav-link" href=../presentations/>Presentations</a>
-<a class="color-link nav-link" href=../contact>Contact</a>
-<a class="color-link nav-link" href=../archives/>Archives</a>
-<a class="color-link nav-link" href=../tags/>Tags</a>
-<a class="color-link nav-link" href=../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script><script src=../js/lunr-search.js></script></footer></nav><div id=content class=content-container><h1 class=post-title>Thoughts on IPv6</h1><time>February 9, 2011</time><div><p><p>A multitude of websites have been reporting the impending doom
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Thoughts on IPv6 | Neil Grogan</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="../css/main.min.15431d6c334f65809fe2bc329da3f2c81c6e3027ab1e25b56afb2bb85fa7fd64.css"/>
+
+    
+    
+    
+
+    
+    
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+ 
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../">Neil Grogan</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="../about">About</a>
+  
+    <a class="color-link nav-link" href="../projects">Projects</a>
+  
+    <a class="color-link nav-link" href="../presentations/">Presentations</a>
+  
+    <a class="color-link nav-link" href="../contact">Contact</a>
+  
+    <a class="color-link nav-link" href="../archives/">Archives</a>
+  
+    <a class="color-link nav-link" href="../tags/">Tags</a>
+  
+  <a class="color-link nav-link" href="../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
+</footer>
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+<h1 class="post-title">Thoughts on IPv6</h1>
+    
+    <time>February 9, 2011</time>
+    
+
+    <div>
+        
+        <p>
+        <p>A multitude of websites have been reporting the impending doom
 of ipv4 exhaustion, which is going to happen soon. All the top
 level address&rsquo; will be gone, but the regional registries will
 still have stocks of address&rsquo; in to 2011. As a user of ipv6, I
-thought I could share sone thoughts/insights on the events ahead&mldr;</p><p>Below is a very good video which one of my favourite tech shows,
-<a href=http://hak5.org/>Hak5</a> made with an IPv6 Consultant, Joe Klein.</p><iframe width=560 height=315 src=http://www.youtube.com/embed/cl4cEbPayek frameborder=0 allowfullscreen></iframe><p>My own experience has been straightforward on the set up side
+thought I could share sone thoughts/insights on the events ahead&hellip;</p>
+<p>Below is a very good video which one of my favourite tech shows,
+<a href="http://hak5.org/">Hak5</a> made with an IPv6 Consultant, Joe Klein.</p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/cl4cEbPayek" frameborder="0" allowfullscreen></iframe>
+<p>My own experience has been straightforward on the set up side
 of things. We had to purchase an Apple Airport Extreme router
 however, which is the biggest pain in the transition, the <strong>cost.</strong>
 Most home routers do not have proper IPv6 capability, a serious
@@ -17,7 +150,9 @@ problem. This will cost the Internet Service providers a lot of
 money in keeping these old routers <em>shielded</em> from the ever
 increasing IPv6 enabled websites and services - to the point at
 which a large scale upgrade may well be cheaper, but this is not
-likely to happen in the short term.</p><h2 id=setup-of-ipv6>Setup of IPv6</h2><p><a href=http://farm3.static.flickr.com/2072/2261404319_51bbec44ab.jpg title="Data centers will be one of the first to be all IPv6. (Photo credit: dbarsky)"><img src=../files/2011/02/datacenter.jpg class=right alt="Data Center LAN Cabling"></a>
+likely to happen in the short term.</p>
+<h2 id="setup-of-ipv6">Setup of IPv6</h2>
+<p><a href="http://farm3.static.flickr.com/2072/2261404319_51bbec44ab.jpg" title="Data centers will be one of the first to be all IPv6. (Photo credit: dbarsky)"><img src="../files/2011/02/datacenter.jpg" class="right" alt="Data Center LAN Cabling"/></a>
 The funny thing with IPv6 is that machines self issue address&rsquo; and
 can use them locally if you have an IPv6 capable router, defaulting
 to IPv4 when going through your NAT to the Internet. So it&rsquo;s the
@@ -26,7 +161,7 @@ small and has no IPv6 support. I emailed them about it, to get
 no response. It&rsquo;s probably worth trying again since most ISP&rsquo;s
 are running trials now, and you may get a router upgrade if you
 opt-in now. So I had to set up a tunnel, using the excellent
-<a href=http://he.net/>Hurricane Electric</a>. My ISP is slow though (average
+<a href="http://he.net/">Hurricane Electric</a>. My ISP is slow though (average
 1mbps rural wireless) and when the tunnel is set up <strong>all
 traffic defaults to IPv6</strong>, it makes it even slower.
 <em>Tunnels are not ideal</em> because the result will always depend
@@ -36,9 +171,101 @@ packets, your going to get a lot more IPv4 packets for the same
 volume of traffic, the major downside of tunneling. Tunnels are
 good to get some IPv6 experience, but not much else unless you
 have a very fast connection. The transition itself will probably
-look like this:</p><ul><li>Tunnels are set up, small contained IPv6 networks exist (<strong>already happend</strong>)</li><li>IPv6 islands merge, major ISP&rsquo;s peer and inter-network communication switches to IPv6 (<strong>happening now</strong>)</li><li>ISP&rsquo;s start to use 4to6 tunnels to get to the IPv6 part of the Internet</li><li>ISP&rsquo;s switch equipment and use 6to4 tunnels to get to ever decreasing IPv4 Internet</li><li>Like Usenet, ISPs state there is no demand for IPv4, and drop it to be fully native IPv6</li></ul><p>So I&rsquo;d advise anyone right now who has the patience and the interest to
+look like this:</p>
+<ul>
+<li>Tunnels are set up, small contained IPv6 networks exist (<strong>already happend</strong>)</li>
+<li>IPv6 islands merge, major ISP&rsquo;s peer and inter-network communication switches to IPv6 (<strong>happening now</strong>)</li>
+<li>ISP&rsquo;s start to use 4to6 tunnels to get to the IPv6 part of the Internet</li>
+<li>ISP&rsquo;s switch equipment and use 6to4 tunnels to get to ever decreasing IPv4 Internet</li>
+<li>Like Usenet, ISPs state there is no demand for IPv4, and drop it to be fully native IPv6</li>
+</ul>
+<p>So I&rsquo;d advise anyone right now who has the patience and the interest to
 invest time in IPv6, it&rsquo;s a game-changing technology, not necessarily
 better but a must to have knowledge of. As I mentioned earlier Hurricane
-Electric provide <a href=http://tunnelbroker.net/>free tunnels</a> (you can even set it up on a
-single computer if your router can&rsquo;t support IPv6) and <a href=http://ipv6.he.net/certification>free certification</a>
-to test these skills.</p></p></div><div class=page-footer><hr class=footer-divider><a class=tag href=../tags/networking>#networking</a></div></div><footer class=footer-mobile><div class=social-icons></div><script src=../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin=anonymous></script></footer></body></html>
+Electric provide <a href="http://tunnelbroker.net/">free tunnels</a> (you can even set it up on a
+single computer if your router can&rsquo;t support IPv6) and <a href="http://ipv6.he.net/certification">free certification</a>
+to test these skills.</p>
+
+        </p>
+    </div>
+    
+
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="../tags/networking">#networking</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww=" crossorigin="anonymous"></script>
+</footer>
+    </body>
+</html>

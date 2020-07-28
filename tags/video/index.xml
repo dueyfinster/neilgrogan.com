@@ -1,9 +1,150 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>video on Neil Grogan</title><link>/tags/video/</link><description>Recent content in video on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 29 Apr 2012 00:00:00 +0000</lastBuildDate><atom:link href="/tags/video/index.xml" rel="self" type="application/rss+xml"/><item><title>Record your terminal session</title><link>/record-your-terminal-session/</link><pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate><guid>/record-your-terminal-session/</guid><description>As I&amp;rsquo;ve mentioned before1, I regularly watch technology podcasts and I&amp;rsquo;ve had a subscription to sites like Lynda.com. Between those and Youtube, I&amp;rsquo;ve watched an awful lot of technology how-to videos and 90% of them are quite poor in terms of editing, sound and being coherent/properly scripted. Sometimes though it&amp;rsquo;s a joy to genuinely learn something new in a short, concise and to the point video.
-This haktip is right up there with being among the best: short, concise, to the point and about a utility that will be super-useful to me.</description></item><item><title>Hollywood Tech</title><link>/hollywood-tech/</link><pubDate>Tue, 22 Nov 2011 00:00:00 +0000</pubDate><guid>/hollywood-tech/</guid><description>I always enjoy watching shows like CSI for the over-the-top depiction of current technology. They obviously have people in know, it&amp;rsquo;s not like the script writers of major shows cannot get someone to consult them on technology (or maybe they don&amp;rsquo;t - sometimes I do wonder).
-The video below is about IRC (Internet Relay Chat). They are correct it&amp;rsquo;s primitive (it&amp;rsquo;s all text) and hackers do actually use it (groups like Anonymous), but you can&amp;rsquo;t track someone to their living room using just an IP address!</description></item><item><title>Tech Video Podcasts Worth Watching</title><link>/tech-video-podcasts-worth-watching/</link><pubDate>Wed, 13 Jul 2011 00:00:00 +0000</pubDate><guid>/tech-video-podcasts-worth-watching/</guid><description>I try to listen to as many podcasts (netcasts?) as I can. They fall in to two categories: Irish radio and technology. Luckily, there is so much competition in this space it&amp;rsquo;s hard to pick the best - so quality is high!
-Tech News Today (TNT) by the TWiT Network Regular and fills you right up to the minute with the latest tech news. Can replace RSS of many blogs (HUGE time saver) since lively debate of tech topics is the order of the day.</description></item><item><title>The Paradox of Choice</title><link>/paradox-of-choice/</link><pubDate>Thu, 30 Jun 2011 00:00:00 +0000</pubDate><guid>/paradox-of-choice/</guid><description>From one of the best TED talks I&amp;rsquo;ve seen:
-I love the story about the jeans. I feel like that every time I buy shoes. Scary.</description></item><item><title>Accidental Sea - When Humans Disappear</title><link>/accidental-sea-when-humans-disappear/</link><pubDate>Wed, 29 Jun 2011 00:00:00 +0000</pubDate><guid>/accidental-sea-when-humans-disappear/</guid><description>I&amp;rsquo;ve always wondered what would happen when we are gone - an inevitability judging by every known animal becoming extinct at some stage. Creepy but very interesting&amp;hellip;</description></item><item><title>First Video Blog!</title><link>/first-video-blog/</link><pubDate>Fri, 29 Oct 2010 00:00:00 +0000</pubDate><guid>/first-video-blog/</guid><description>Below is my first attempt at video blogging. If I get used to it it may be easier to explain my point of view or give reviews! I have liked hiding behind words up until this point, so this is a new venture with my iPhone 4.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video on Neil Grogan</title>
+    <link>/tags/video/</link>
+    <description>Recent content in video on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Apr 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Record your terminal session</title>
+      <link>/record-your-terminal-session/</link>
+      <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/record-your-terminal-session/</guid>
+      <description>As I&amp;rsquo;ve mentioned before1, I regularly watch technology podcasts and I&amp;rsquo;ve had a subscription to sites like Lynda.com. Between those and Youtube, I&amp;rsquo;ve watched an awful lot of technology how-to videos and 90% of them are quite poor in terms of editing, sound and being coherent/properly scripted. Sometimes though it&amp;rsquo;s a joy to genuinely learn something new in a short, concise and to the point video.
+ This haktip is right up there with being among the best: short, concise, to the point and about a utility that will be super-useful to me.</description>
+    </item>
+    
+    <item>
+      <title>Hollywood Tech</title>
+      <link>/hollywood-tech/</link>
+      <pubDate>Tue, 22 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/hollywood-tech/</guid>
+      <description>I always enjoy watching shows like CSI for the over-the-top depiction of current technology. They obviously have people in know, it&amp;rsquo;s not like the script writers of major shows cannot get someone to consult them on technology (or maybe they don&amp;rsquo;t - sometimes I do wonder).
+The video below is about IRC (Internet Relay Chat). They are correct it&amp;rsquo;s primitive (it&amp;rsquo;s all text) and hackers do actually use it (groups like Anonymous), but you can&amp;rsquo;t track someone to their living room using just an IP address!</description>
+    </item>
+    
+    <item>
+      <title>Tech Video Podcasts Worth Watching</title>
+      <link>/tech-video-podcasts-worth-watching/</link>
+      <pubDate>Wed, 13 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tech-video-podcasts-worth-watching/</guid>
+      <description>I try to listen to as many podcasts (netcasts?) as I can. They fall in to two categories: Irish radio and technology. Luckily, there is so much competition in this space it&amp;rsquo;s hard to pick the best - so quality is high!
+ Tech News Today (TNT) by the TWiT Network    Regular and fills you right up to the minute with the latest tech news. Can replace RSS of many blogs (HUGE time saver) since lively debate of tech topics is the order of the day.</description>
+    </item>
+    
+    <item>
+      <title>The Paradox of Choice</title>
+      <link>/paradox-of-choice/</link>
+      <pubDate>Thu, 30 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/paradox-of-choice/</guid>
+      <description>From one of the best TED talks I&amp;rsquo;ve seen:
+
+I love the story about the jeans. I feel like that every time I buy shoes. Scary.</description>
+    </item>
+    
+    <item>
+      <title>Accidental Sea - When Humans Disappear</title>
+      <link>/accidental-sea-when-humans-disappear/</link>
+      <pubDate>Wed, 29 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/accidental-sea-when-humans-disappear/</guid>
+      <description>I&amp;rsquo;ve always wondered what would happen when we are gone - an inevitability judging by every known animal becoming extinct at some stage. Creepy but very interesting&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>First Video Blog!</title>
+      <link>/first-video-blog/</link>
+      <pubDate>Fri, 29 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/first-video-blog/</guid>
+      <description>Below is my first attempt at video blogging. If I get used to it it may be easier to explain my point of view or give reviews! I have liked hiding behind words up until this point, so this is a new venture with my iPhone 4.
 YouTube Video
 Please don&amp;rsquo;t be too harsh on me!
-Location:Dublin, Ireland</description></item><item><title>WebM promises Open Web Video</title><link>/webm-promises-open-web-video/</link><pubDate>Sun, 30 May 2010 00:00:00 +0000</pubDate><guid>/webm-promises-open-web-video/</guid><description>I&amp;rsquo;ve written about my desire for open web video before, and now it looks as if it&amp;rsquo;s finally going to happen. Lead by Google&amp;rsquo;s acquisition of On2 technologies, the VP8 codec has been renamed as &amp;ldquo;WebM&amp;rdquo; and open sourced. Vorbis will be the audio. Matroska the container for the new format. An Open Source developer for x264 does a great teardown of the format vs. h.264 here. The patent minefield stateside is still not clear by any means, but with a strong backer like Google, it&amp;rsquo;s probably the best protection your going to get.</description></item><item><title>Pulp Fiction theme</title><link>/pulp-fiction-theme/</link><pubDate>Fri, 04 Dec 2009 00:00:00 +0000</pubDate><guid>/pulp-fiction-theme/</guid><description>When I found this, I had to share it:</description></item><item><title>Cheesy Intel Ad</title><link>/cheesy-intel-ad/</link><pubDate>Wed, 02 Dec 2009 00:00:00 +0000</pubDate><guid>/cheesy-intel-ad/</guid><description/></item><item><title>Firefox and Opera lead the web video way</title><link>/firefox-and-opera-lead-web-video-way/</link><pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate><guid>/firefox-and-opera-lead-web-video-way/</guid><description>I downloaded Firefox 3.1 beta 2 (after trialling other development snapshots over the last few months) to see Ogg Theora video support is coming on really well. Opera, as well as Mozilla has committed to including this royalty-free video codec for web use. This is really good news; as one Opera Developer said:
-Something however is still not quite there about web video. The video solutions mentioned above are proprietary closed solutions that rely on plugins to display in a web page - what we need to make video a first-class web citizen is an easy, open solution to integrate video into web pages, and native support for video in browsers.</description></item><item><title>Gmail Video Chat</title><link>/gmail-video-chat/</link><pubDate>Thu, 13 Nov 2008 00:00:00 +0000</pubDate><guid>/gmail-video-chat/</guid><description>I am an avid Gmail user through Google Apps. I use the calender, chat, code, sites, pages, docs the whole lot. One of my friends even jokes &amp;ldquo;You should just work at Google Marketing&amp;rdquo;. Yes I like most of Google&amp;rsquo;s products; but I am a products guy; I use whats good, cheap and fast (pick two). Google has the cheap down due to ad-revenue; for the moment anyways in the current financial turmoil.</description></item><item><title>Questions, Hosting and IT 2006!</title><link>/questions-hosting-and-it-2006/</link><pubDate>Fri, 23 Jun 2006 00:00:00 +0000</pubDate><guid>/questions-hosting-and-it-2006/</guid><description>I recently found a great documentary, about 9/11, entitled Loose Change 9/11][]. It is easily the most powerful about the event, much more so than Fahrenheit 9/11. In fact I would even argue, that if this documentary had of aired during the U.S. presedential election, I would have bet on a different result. Backed up by trusted resources such as the BBC which confirmed at least 8 of the 19 highjackers are alive and well.</description></item><item><title>Click Online</title><link>/click-online/</link><pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate><guid>/click-online/</guid><description>In case you have never looked at it, Click Online is the flagship technology program for the BBC. It broadcasts on the Internet and can be viewed even on a 56k modem. I have been watching click online for over a year and a half now, I first saw it on BBC World, while holidaying in Portugal. It also broadcasts on BBC News 24 at 7am on a Sunday morning (I have never seen it at this time!</description></item><item><title>Google Video</title><link>/google-video/</link><pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate><guid>/google-video/</guid><description>What a fantastic service Google now offer with their Google Video platform. There are a couple of reasons why I like it, mainly because it is available to upload your videos on all platforms (Windows, Linux and Mac) and is available on Mozilla-based browsers (Firefox, Netscape), Opera and Internet Explorer.This is important in creating a better all round user experience. If only Yahoo! would follow Googles example and open up Launch Cast to other browsers besides an outdated version of Netscape and Internet Explorer.</description></item></channel></rss>
+Location:Dublin, Ireland</description>
+    </item>
+    
+    <item>
+      <title>WebM promises Open Web Video</title>
+      <link>/webm-promises-open-web-video/</link>
+      <pubDate>Sun, 30 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/webm-promises-open-web-video/</guid>
+      <description>I&amp;rsquo;ve written about my desire for open web video before, and now it looks as if it&amp;rsquo;s finally going to happen. Lead by Google&amp;rsquo;s acquisition of On2 technologies, the VP8 codec has been renamed as &amp;ldquo;WebM&amp;rdquo; and open sourced. Vorbis will be the audio. Matroska the container for the new format. An Open Source developer for x264 does a great teardown of the format vs. h.264 here. The patent minefield stateside is still not clear by any means, but with a strong backer like Google, it&amp;rsquo;s probably the best protection your going to get.</description>
+    </item>
+    
+    <item>
+      <title>Pulp Fiction theme</title>
+      <link>/pulp-fiction-theme/</link>
+      <pubDate>Fri, 04 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/pulp-fiction-theme/</guid>
+      <description>When I found this, I had to share it:</description>
+    </item>
+    
+    <item>
+      <title>Cheesy Intel Ad</title>
+      <link>/cheesy-intel-ad/</link>
+      <pubDate>Wed, 02 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/cheesy-intel-ad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firefox and Opera lead the web video way</title>
+      <link>/firefox-and-opera-lead-web-video-way/</link>
+      <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/firefox-and-opera-lead-web-video-way/</guid>
+      <description>I downloaded Firefox 3.1 beta 2 (after trialling other development snapshots over the last few months) to see Ogg Theora video support is coming on really well. Opera, as well as Mozilla has committed to including this royalty-free video codec for web use. This is really good news; as one Opera Developer said:
+ Something however is still not quite there about web video. The video solutions mentioned above are proprietary closed solutions that rely on plugins to display in a web page - what we need to make video a first-class web citizen is an easy, open solution to integrate video into web pages, and native support for video in browsers.</description>
+    </item>
+    
+    <item>
+      <title>Gmail Video Chat</title>
+      <link>/gmail-video-chat/</link>
+      <pubDate>Thu, 13 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/gmail-video-chat/</guid>
+      <description>I am an avid Gmail user through Google Apps. I use the calender, chat, code, sites, pages, docs the whole lot. One of my friends even jokes &amp;ldquo;You should just work at Google Marketing&amp;rdquo;. Yes I like most of Google&amp;rsquo;s products; but I am a products guy; I use whats good, cheap and fast (pick two). Google has the cheap down due to ad-revenue; for the moment anyways in the current financial turmoil.</description>
+    </item>
+    
+    <item>
+      <title>Questions, Hosting and IT 2006!</title>
+      <link>/questions-hosting-and-it-2006/</link>
+      <pubDate>Fri, 23 Jun 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/questions-hosting-and-it-2006/</guid>
+      <description>I recently found a great documentary, about 9/11, entitled Loose Change 9/11][]. It is easily the most powerful about the event, much more so than Fahrenheit 9/11. In fact I would even argue, that if this documentary had of aired during the U.S. presedential election, I would have bet on a different result. Backed up by trusted resources such as the BBC which confirmed at least 8 of the 19 highjackers are alive and well.</description>
+    </item>
+    
+    <item>
+      <title>Click Online</title>
+      <link>/click-online/</link>
+      <pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate>
+      
+      <guid>/click-online/</guid>
+      <description>In case you have never looked at it, Click Online is the flagship technology program for the BBC. It broadcasts on the Internet and can be viewed even on a 56k modem. I have been watching click online for over a year and a half now, I first saw it on BBC World, while holidaying in Portugal. It also broadcasts on BBC News 24 at 7am on a Sunday morning (I have never seen it at this time!</description>
+    </item>
+    
+    <item>
+      <title>Google Video</title>
+      <link>/google-video/</link>
+      <pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate>
+      
+      <guid>/google-video/</guid>
+      <description>What a fantastic service Google now offer with their Google Video platform. There are a couple of reasons why I like it, mainly because it is available to upload your videos on all platforms (Windows, Linux and Mac) and is available on Mozilla-based browsers (Firefox, Netscape), Opera and Internet Explorer.This is important in creating a better all round user experience. If only Yahoo! would follow Googles example and open up Launch Cast to other browsers besides an outdated version of Netscape and Internet Explorer.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>europe on Neil Grogan</title><link>/tags/europe/</link><description>Recent content in europe on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Apr 2006 00:00:00 +0000</lastBuildDate><atom:link href="/tags/europe/index.xml" rel="self" type="application/rss+xml"/><item><title>Europe's New Voice</title><link>/europes-new-voice/</link><pubDate>Sun, 09 Apr 2006 00:00:00 +0000</pubDate><guid>/europes-new-voice/</guid><description>As tech savvy readers will be aware, dot EU is the latest domain to go into public use. What is a domain? A domain is the name used for internet site like &amp;ldquo;dueyfinster.eu&amp;rdquo;. It has already sold over 1.25 million names already, this entering the third day of the public sale. Their have been bitter critics of how it has dealt out, with heated arguments over some domains such as Polo.</description></item><item><title>Eurosceptics</title><link>/eurosceptics/</link><pubDate>Sat, 17 Dec 2005 00:00:00 +0000</pubDate><guid>/eurosceptics/</guid><description>The British Press annoys me so much, they way they constantly get it wrong across the board about the EU. I am a fond supporter of the EU for all its faults and cracks. But I love freedom of the press and like organisations who uphold basic journalistic standards, such as the BBC. This leads me onto the evil man behind it all, Rupert Murdoch owner of The Sun, BSkyB Television, The Times and other media outlets.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>europe on Neil Grogan</title>
+    <link>/tags/europe/</link>
+    <description>Recent content in europe on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Apr 2006 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/europe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Europe&#39;s New Voice</title>
+      <link>/europes-new-voice/</link>
+      <pubDate>Sun, 09 Apr 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/europes-new-voice/</guid>
+      <description>As tech savvy readers will be aware, dot EU is the latest domain to go into public use. What is a domain? A domain is the name used for internet site like &amp;ldquo;dueyfinster.eu&amp;rdquo;. It has already sold over 1.25 million names already, this entering the third day of the public sale. Their have been bitter critics of how it has dealt out, with heated arguments over some domains such as Polo.</description>
+    </item>
+    
+    <item>
+      <title>Eurosceptics</title>
+      <link>/eurosceptics/</link>
+      <pubDate>Sat, 17 Dec 2005 00:00:00 +0000</pubDate>
+      
+      <guid>/eurosceptics/</guid>
+      <description>The British Press annoys me so much, they way they constantly get it wrong across the board about the EU. I am a fond supporter of the EU for all its faults and cracks. But I love freedom of the press and like organisations who uphold basic journalistic standards, such as the BBC. This leads me onto the evil man behind it all, Rupert Murdoch owner of The Sun, BSkyB Television, The Times and other media outlets.</description>
+    </item>
+    
+  </channel>
+</rss>

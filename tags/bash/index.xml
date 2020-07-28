@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bash on Neil Grogan</title><link>/tags/bash/</link><description>Recent content in bash on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 10 May 2013 00:00:00 +0000</lastBuildDate><atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Custom Colourful Bash Prompt</title><link>/colour-bash/</link><pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate><guid>/colour-bash/</guid><description>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):
-[ngrogan@localhost:~]$ can be turned in to this:
-The thing about Bash is the colour codes to achieve this can look archaic:</description></item><item><title>Output Percentage of File (Bash code)</title><link>/output-percentage-of-file-bash-code/</link><pubDate>Sat, 05 Feb 2011 00:00:00 +0000</pubDate><guid>/output-percentage-of-file-bash-code/</guid><description>I wrote this script recently for a friend in a job who needed to output a certain percentage of a log file, but no more and no less. This was in Linux using bash, so I had a go at writing a solution, which you see below. Posting this up in case it&amp;rsquo;s useful to anyone else!
-# !/bin/sh # Public Domain, by Neil Grogan 2010 # Script to output last 30% of file by lines OLDFILE=&amp;amp;quot;oldlog.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on Neil Grogan</title>
+    <link>/tags/bash/</link>
+    <description>Recent content in bash on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 May 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Custom Colourful Bash Prompt</title>
+      <link>/colour-bash/</link>
+      <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/colour-bash/</guid>
+      <description>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):
+[ngrogan@localhost:~]$  can be turned in to this:
+The thing about Bash is the colour codes to achieve this can look archaic:</description>
+    </item>
+    
+    <item>
+      <title>Output Percentage of File (Bash code)</title>
+      <link>/output-percentage-of-file-bash-code/</link>
+      <pubDate>Sat, 05 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/output-percentage-of-file-bash-code/</guid>
+      <description>I wrote this script recently for a friend in a job who needed to output a certain percentage of a log file, but no more and no less. This was in Linux using bash, so I had a go at writing a solution, which you see below. Posting this up in case it&amp;rsquo;s useful to anyone else!
+# !/bin/sh # Public Domain, by Neil Grogan 2010 # Script to output last 30% of file by lines OLDFILE=&amp;amp;quot;oldlog.</description>
+    </item>
+    
+  </channel>
+</rss>
