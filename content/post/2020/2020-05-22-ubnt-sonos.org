@@ -163,6 +163,6 @@ to the other LAN/VLAN and turn logging on, can then check logs to see what traff
 allowed or denied on the USG:
 #+BEGIN_SRC shell
 $ ssh admin@192.168.1.1
-$ cat /var/log/meesages | grep LAN_IN-
+$ cat /var/log/messages | grep LAN_IN-
 #+END_SRC
 this gives an idea of what device is trying to talk to what on what port.
