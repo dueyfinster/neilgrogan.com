@@ -1,0 +1,15 @@
+# Compiled
+*.elc
+.emac*
+.org*
+.ash*
+public/
+
+# Packaging
+.cask
+
+# Backup files
+*~
+
+# Undo-tree save-files
+*.~undo-tree
