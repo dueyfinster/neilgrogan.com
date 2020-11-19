@@ -1,0 +1,83 @@
+#+TITLE: Learning Org Mode 
+#+DATE: [2018-05-20 Sat 14:40]
+#+AUTHOR: Neil Grogan
+
+
+Since hearing about [[https://orgmode.org][org-mode]] on the web many
+years ago, I always meant to give it a spin. I only ever found one two
+problems:
+
+1. Time - Life eh?
+2. It's a mode of [[https://www.gnu.org/software/emacs/][Emacs]] for
+   which I'd also have to learn (again time)
+
+So I recently set about solving both shortcomings, as painful as it was
+to dismiss all the effort I put in to my [[https://www.vim.org][vim]]
+[[https://en.wikipedia.org/wiki/Muscle_memory][muscle memory]] over the
+years. The tough part usually is finding good documentation that is both
+easy to read and follow.
+
+** So what is org-mode?
+   :PROPERTIES:
+   :CUSTOM_ID: so-what-is-org-mode
+   :END:
+
+To put it simply, Org-mode is an editing mode of Emacs, which allows you
+to write plain text TODO lists. But it is also a lot more. You can:
+
+- Use plain text tables
+- Run snippets of code (and edit them in their own file with proper
+  formatting)
+- Use plain text spreadsheets
+- Export to many, many formats (Latex, PDF, HTML) or a custom format
+- Agenda mode for many ways to look at your TODOs
+
+This all sounds complicated, but the beautiful thing about org-mode is
+that it gradually reveals the features it has. You can only ever write a
+simple list like this if you want:
+
+#+BEGIN_EXAMPLE
+    * My First org mode outline
+    ** TODO Must read the org manual
+#+END_EXAMPLE
+
+and that's it. Really. You don't need to use any of the other features
+if you don't want to. This is also a reason that it was a joy to learn:
+it never pushes unnecessary complication on the user. I wish I could say
+the same for Emacs! Although to be fair, Emacs is probably easier then
+Vim to get started in.
+
+** Combining Emacs + Org: Literate Programming
+   :PROPERTIES:
+   :CUSTOM_ID: combining-emacs-org-literate-programming
+   :END:
+
+So this was the fun part: how can I combine learning Emacs and Org? It
+turns out, I can create my whole Emacs configuration file in org-mode,
+and it will convert it Emacs Lisp. This is brilliant because in
+org-mode, we can annotate and explain /everything/. Take a look at this:
+
+#+BEGIN_EXAMPLE
+    * Packages
+      Let's fetch Emacs packages from the Melpa mirror:
+      
+       #+BEGIN_SRC emacs-lisp
+       (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+       #+END_SRC
+#+END_EXAMPLE
+
+This is fully self documented code (some argue Lisp is this by nature
+also). This is nicely rendered on Github, see
+[[https://github.com/larstvei/dot-emacs/blob/master/init.org][these]]
+[[https://github.com/seth/my-emacs-dot-d/blob/master/emacs-init.org][two]]
+examples to see what I mean. The pertinent advice here is: start with a
+/minimal/ configuration and /only ever add things you understand/. I
+followed exactly this advice, and those two files were brilliant
+references. I would find an annoyance in Emacs, and one of those two org
+files would have something in Emacs to fix customise the issue I had.
+
+If you would like to see more, my
+[[https://github.com/dueyfinster/dotfiles][dotfiles]] (with
+[[https://github.com/dueyfinster/dotfiles/blob/master/link/emacs.d/emacs-init.org][my
+Emacs config]]) are available also.
+

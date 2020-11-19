@@ -1,0 +1,22 @@
+#+TITLE: About Me
+
+Software Engineering Manager at [[http://www.ericsson.com][Ericsson]] in
+[[https://en.wikipedia.org/wiki/Athlone][Athlone, Ireland]], managing
+teams in JEE, UX, UI and [[https://en.wikipedia.org/wiki/5G][5G]]
+Topology. Before that, I was a Senior Software Engineer in
+[[https://www.mediakind.com][MediaKind]] and
+[[http://www.ericsson.com][Ericsson]] working across Java and C#
+projects.
+
+I originally graduated with a first class honours degree in computer
+science at the [[http://www.itb.ie][Institute of Technology,
+Blanchardstown]] in Dublin, Ireland. I also graduated with a first class
+masters in computer science from [[http://csi.ucd.ie][University College
+Dublin]]. See the [[/about/colophon][Colophon]] if you're interested to
+know how I put this site together. You might like some of
+[[https://huffduffer.com/dueyfinster/tags/mustlisten][my favourite
+podcasts]] or some of
+[[https://www.pinboard.in/u:dueyfinster/t:mustread/][my favourite
+articles]].
+
+[[/contact][Get in touch!]]
