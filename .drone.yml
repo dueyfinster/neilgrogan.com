@@ -1,0 +1,46 @@
+---
+kind: pipeline
+name: default
+
+steps:
+  - name: submodules
+    image: alpine/git
+    commands:
+      - git submodule update --init --recursive
+  - name: build
+    image: plugins/hugo
+    settings:
+      hugo_version: 0.78.2
+      validate: true
+      output: public_html/
+  # - name: deploy
+  #   image: cschlosser/drone-ftps
+  #   settings:
+  #     hostname: ftp.fastmail.com
+  #     clean_dir: false
+  #     chmod: false
+  #     verify: false
+  #     secure: false
+  #     dest_dir: /neil.grogan.org/files/neilgrogan.com
+  #     src_dir: /public_html
+  #   environment:
+  #     FTP_USERNAME:
+  #       from_secret: FTP_USER
+  #     FTP_PASSWORD:
+  #       from_secret: FTP_PASS
+
+  - name: Slack Notifications
+    image: plugins/slack
+    channel: dev
+    environment:
+      SLACK_WEBHOOK:
+        from_secret: slack_webhook
+    when:
+      status: failure
+    template: |
+      {{#failure build.status}}
+        {{build.author}} just broke the build of `{{repo.name}}:{{build.branch}}` with <${DRONE_COMMIT_LINK}|#{{truncate build.commit 8}}> @neil
+        :new: :zombie: {{build.message}}
+      {{/failure}}
+      :stopwatch: {{ since build.started}}
+      :gear: {{build.link}}
