@@ -1,0 +1,27 @@
+#+TITLE: Test with Emacs and Org-mode
+#+AUTHOR: Neil Grogan
+#+DATE: 2020
+#+STARTUP: showall
+#+OPTIONS: toc:nil
+#+CREATOR: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="http://orgmode.org">Org</a> mode 9.4)
+#+BEGIN_EXPORT html
+---
+layout: post
+title: Test blog with Org-mode
+date: '2020-03-25T00:00:00.000-08:00'
+tags: [emacs, org-mode, blogging, github-pages, jekyll]
+---
+#+END_EXPORT
+** Why blog with Org mode?
+#+BEGIN_QUOTE
+Org is a mode for keeping notes, maintaining TODO lists, and project
+planning with a fast and effective plain-text system.
+#+END_QUOTE
+
+Like most things in the Emacs world, this description of [[https://orgmode.org/][Org mode]] belies the
+true depth of what it can do. Mostly I use Org mode only superficially as a way
+to track notes and projects, using it as a tree of tasks and the status of each.
+However, Org mode is good at many other tasks, not least of those is authoring
+content. I write most of the posts in this blog using markdown, but since I am
+in Emacs anyway and Org mode is a much richer authoring tool I decided to give
+it a go.
