@@ -28,6 +28,18 @@ steps:
   #       from_secret: FTP_USER
   #     FTP_PASSWORD:
   #       from_secret: FTP_PASS
+  - name: Deploy via rsync
+    image: drillster/drone-rsync
+    settings:
+      hosts: [ "192.168.1.3" ]
+      source: ./public_html/
+      target: ~/Cloud/FMDav/neilgrogan.com
+      recursive: true
+      delete: true
+      key:
+        from_secret: RSYNC_KEY
+      user:
+        from_secret: RSYNC_USER
 
   - name: Slack Notifications
     image: plugins/slack
