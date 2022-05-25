@@ -41,18 +41,20 @@ steps:
       user:
         from_secret: RSYNC_USER
 
-  - name: Slack Notifications
-    image: plugins/slack
-    channel: dev
+  - name: Email Notification
+    image: drillster/drone-email
     environment:
-      SLACK_WEBHOOK:
-        from_secret: slack_webhook
+      EMAIL_HOST:
+        from_secret: EMAIL_SMTP_HOST
+      EMAIL_USERNAME:
+        from_secret: EMAIL_USER
+      EMAIL_PASSWORD:
+        from_secret: EMAIL_PASS
+    settings:
+      from:
+        from_secret: EMAIL_FROM
+      branch:
+        - develop
+        - master
     when:
-      status: failure
-    template: |
-      {{#failure build.status}}
-        {{build.author}} just broke the build of `{{repo.name}}:{{build.branch}}` with <${DRONE_COMMIT_LINK}|#{{truncate build.commit 8}}> @neil
-        :new: :zombie: {{build.message}}
-      {{/failure}}
-      :stopwatch: {{ since build.started}}
-      :gear: {{build.link}}
+      status: [ changed, failure ]
