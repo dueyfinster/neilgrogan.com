@@ -5,6 +5,8 @@
 #+TITLE: Ubiquiti Unifi with Sonos on a separate VLAN
 #+LANGUAGE: en
 
+*Note*: _these instructions are *out-of-date* for the latest Unifi controller software versions_. It's preserved here as written for those who still have older versions. 
+
 ** Change network settings on Unifi controller 
 #+TOC: headlines 2
 Further to getting my [[/ubnt][Unifi]] gear last year, I've started to organise 
