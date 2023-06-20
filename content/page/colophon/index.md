@@ -8,7 +8,7 @@ This site is made with [Hugo][] static website generator (using [Noteworthy them
 I author the site (usually) in the excellent [Vim][] text editor, using [Org mode][]/[Markdown][] for posts and HTML/CSS/Javascript for the rest. An odd time I may write a post using [Editorial][] on iOS.
 
 [Hugo]: https://gohugo.io
-[Noteworthy theme]: ]https://github.com/kimcc/hugo-theme-noteworthy
+[Noteworthy theme]: https://github.com/kimcc/hugo-theme-noteworthy
 [Ubuntu]: https://www.ubuntu.com
 [FastMail]: https://www.fastmail.com
 [OVH]: https://www.ovh.ie/
