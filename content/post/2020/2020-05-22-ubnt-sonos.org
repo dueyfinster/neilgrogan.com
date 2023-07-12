@@ -11,7 +11,7 @@
 This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.
 #+END_QUOTE
 
-So I take that to mean use of this file is depracated and it should be possible to do this via the administration webpage.
+So I take that to mean use of this file is deprecated and it should be possible to do this via the administration webpage.
 
 ** Change network settings on Unifi controller 
 #+TOC: headlines 2
