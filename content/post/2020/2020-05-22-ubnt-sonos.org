@@ -7,7 +7,7 @@
 
 *Update 2023*: _these instructions are *out-of-date* for the latest Unifi controller software versions_. It's preserved here as written for those who still have older versions. This post uses a file called `gateway.config.json` and [Unifi now say](https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json):
 
-     > This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.
+> This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.
 
 So I take that to mean use of this file is depracated and it should be possible to do this via the administration webpage.
 
