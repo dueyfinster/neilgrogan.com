@@ -7,7 +7,7 @@ For Editor I use [VS Code](https://code.visualstudio.com) and [Vim](https://www.
 
 For shell I use [ZSH](https://www.zsh.org/) with [OhMyZSH](https://ohmyz.sh) installed. For terminal I use [iTerm2](https://iterm2.com)/Terminal.app but I have also tried Alacritty/kitty on occasion.
 
-[My dotfiles are herei](https://github.com/dueyfinster/dotfiles)
+[My dotfiles are here](https://github.com/dueyfinster/dotfiles)
 
 ### Desktop Apps
 For web browser - I usually use Safari - unless the website doesn't work or I need better DevTools then I'll use Firefox or Chrome.
