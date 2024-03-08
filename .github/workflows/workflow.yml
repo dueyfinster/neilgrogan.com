@@ -48,7 +48,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --buildDrafts --verbose --gc
+        run: hugo -D -E -F
       - name: Deploy Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
