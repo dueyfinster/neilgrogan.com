@@ -6,13 +6,20 @@
     <description>Recent content in Tags on Neil Grogan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automation</title>
       <link>/tags/automation/</link>
-      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     <item>
@@ -27,13 +34,6 @@
       <link>/tags/programming/</link>
       <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
       <guid>/tags/programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>/tags/python/</link>
-      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>/tags/python/</guid>
       <description></description>
     </item>
     <item>
