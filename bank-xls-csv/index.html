@@ -1,47 +1,270 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>Convert Bank Transactions XLS to CSV in Python | Neil Grogan</title>
-<link rel=apple-touch-icon sizes=180x180 href=../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../favicon-96x96.png><link rel=manifest href=../manifest.json><link rel=mask-icon href=../safari-pinned-tab.svg color=#FF3DB4><link rel=me href=https://mastodon.ie/@dueyfinster><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../css/main.min.113b8750726301d2272b2fabf9695ed6bfe79dff4f4cd582cb3010010ebceea4.css><script src=https://unpkg.com/lunr/lunr.js></script></head><body><nav><header><div class=site-title><a href=../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../about>About</a>
-<a class="color-link nav-link" href=../uses>Uses</a>
-<a class="color-link nav-link" href=../contact>Contact</a>
-<a class="color-link nav-link" href=../archives/>Archives</a>
-<a class="color-link nav-link" href=../tags/>Tags</a>
-<a class="color-link nav-link" href=../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin=anonymous></script><script src=../js/lunr-search.js></script></footer></nav><div id=content class=content-container><h1 class=post-title>Convert Bank Transactions XLS to CSV in Python</h1><time>November 25, 2022</time><div><p><p>I&rsquo;ve written previously on importing transactions to hledger/<a href=../ledger>ledger</a> from <a href=../kbc-tx-js>KBC</a> bank in JavaScript and <a href=../bank-tx-py>PTSB</a> bank in Python. I took different approaches to each:</p><ul><li>For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV</li><li>For PTSB, the script automatted logging in, get the transaction table and save locally as CSV</li></ul><p>Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code. The KBC/JavaScript approach was a bit more robust in that it would just search for rows on a website and download as CSV.</p><p>With the EU payment services directive (PSD2) - banks have had to add two-factor authentication which hampers using an automated approach to log in and download. I&rsquo;ve updated my original PTSB script to handle 2FA - buit it&rsquo;s taken the magic out of it and made it feel very manual. So I&rsquo;ve decided to change the approach again - just download the Excel transaction file the provide and convert to CSV. It should be much easier to maintain - I just need to be careful of which row transactions start/end and which columns to ignore.</p><p>Here&rsquo;s my latest Python script to convert Permanent TSB Excel file to CSV:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env python3</span>
-</span></span><span style=display:flex><span><span style=color:#75715e># -*- coding: utf-8 -*-</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> glob
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> xlrd
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> csv
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>read_xls</span>(file, start_row):
-</span></span><span style=display:flex><span>    wb <span style=color:#f92672>=</span> xlrd<span style=color:#f92672>.</span>open_workbook(file)
-</span></span><span style=display:flex><span>    sh <span style=color:#f92672>=</span> wb<span style=color:#f92672>.</span>sheet_by_index(<span style=color:#ae81ff>0</span>)
-</span></span><span style=display:flex><span>    rows <span style=color:#f92672>=</span> []
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> rownum <span style=color:#f92672>in</span> range(start_row, sh<span style=color:#f92672>.</span>nrows):
-</span></span><span style=display:flex><span>        li <span style=color:#f92672>=</span> sh<span style=color:#f92672>.</span>row_values(rownum)
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>del</span> li[<span style=color:#ae81ff>1</span>]
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>del</span> li[<span style=color:#f92672>-</span><span style=color:#ae81ff>2</span>]
-</span></span><span style=display:flex><span>        rows<span style=color:#f92672>.</span>append(li)
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>del</span> rows[<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>]
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> rows
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>write_csv</span>(filename, header, rows):
-</span></span><span style=display:flex><span>    csv_file <span style=color:#f92672>=</span> open(filename, <span style=color:#e6db74>&#39;w&#39;</span>, encoding<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;utf8&#39;</span>)
-</span></span><span style=display:flex><span>    wr <span style=color:#f92672>=</span> csv<span style=color:#f92672>.</span>writer(csv_file)
-</span></span><span style=display:flex><span>    wr<span style=color:#f92672>.</span>writerow(header)
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> row <span style=color:#f92672>in</span> rows:
-</span></span><span style=display:flex><span>        wr<span style=color:#f92672>.</span>writerow(row)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>main</span>():
-</span></span><span style=display:flex><span>    path <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;*.xls&#34;</span>
-</span></span><span style=display:flex><span>    start_row<span style=color:#f92672>=</span><span style=color:#ae81ff>13</span>
-</span></span><span style=display:flex><span>    rows <span style=color:#f92672>=</span> read_xls(glob<span style=color:#f92672>.</span>glob(path)[<span style=color:#ae81ff>0</span>], start_row)
-</span></span><span style=display:flex><span>    header <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#39;Date&#39;</span>, <span style=color:#e6db74>&#39;Desc&#39;</span>, <span style=color:#e6db74>&#39;Amount In&#39;</span>, <span style=color:#e6db74>&#39;Amount Out&#39;</span>, <span style=color:#e6db74>&#39;Balance&#39;</span>]
-</span></span><span style=display:flex><span>    filename <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;ptsb.csv&#39;</span>
-</span></span><span style=display:flex><span>    write_csv(filename, header, rows)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;__main__&#39;</span>:
-</span></span><span style=display:flex><span>	main()
-</span></span></code></pre></div></p></div><div class=page-footer><hr class=footer-divider><a class=tag href=../tags/automation>#automation</a>
-<a class=tag href=../tags/python>#python</a>
-<a class=tag href=../tags/code>#code</a>
-<a class=tag href=../tags/programming>#programming</a></div></div><footer class=footer-mobile><div class=social-icons></div><script src=../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin=anonymous></script></footer></body></html>
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Convert Bank Transactions XLS to CSV in Python | Neil Grogan</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
+    <link rel="me" href="https://mastodon.ie/@dueyfinster">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="../css/main.min.113b8750726301d2272b2fabf9695ed6bfe79dff4f4cd582cb3010010ebceea4.css"/>
+
+    
+    
+    
+
+    
+    
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+ 
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../">Neil Grogan</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="../about">About</a>
+  
+    <a class="color-link nav-link" href="../uses">Uses</a>
+  
+    <a class="color-link nav-link" href="../contact">Contact</a>
+  
+    <a class="color-link nav-link" href="../archives/">Archives</a>
+  
+    <a class="color-link nav-link" href="../tags/">Tags</a>
+  
+  <a class="color-link nav-link" href="../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
+</footer>
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+<h1 class="post-title">Convert Bank Transactions XLS to CSV in Python</h1>
+    
+    <time>November 25, 2022</time>
+    
+
+    <div>
+        
+        <p>
+        <p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../ledger">ledger</a> from <a href="../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../bank-tx-py">PTSB</a> bank in Python. I took different approaches to each:</p>
+<ul>
+<li>For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV</li>
+<li>For PTSB, the script automatted logging in, get the transaction table and save locally as CSV</li>
+</ul>
+<p>Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code. The KBC/JavaScript approach was a bit more robust in that it would just search for rows on a website and download as CSV.</p>
+<p>With the EU payment services directive (PSD2) - banks have had to add two-factor authentication which hampers using an automated approach to log in and download. I&rsquo;ve updated my original PTSB script to handle 2FA - buit it&rsquo;s taken the magic out of it and made it feel very manual. So I&rsquo;ve decided to change the approach again - just download the Excel transaction file the provide and convert to CSV. It should be much easier to maintain - I just need to be careful of which row transactions start/end and which columns to ignore.</p>
+<p>Here&rsquo;s my latest Python script to convert Permanent TSB Excel file to CSV:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> glob
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> xlrd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">read_xls</span>(file, start_row):
+</span></span><span style="display:flex;"><span>    wb <span style="color:#f92672">=</span> xlrd<span style="color:#f92672">.</span>open_workbook(file)
+</span></span><span style="display:flex;"><span>    sh <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>sheet_by_index(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    rows <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> rownum <span style="color:#f92672">in</span> range(start_row, sh<span style="color:#f92672">.</span>nrows):
+</span></span><span style="display:flex;"><span>        li <span style="color:#f92672">=</span> sh<span style="color:#f92672">.</span>row_values(rownum)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">del</span> li[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">del</span> li[<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>        rows<span style="color:#f92672">.</span>append(li)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">del</span> rows[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> rows
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">write_csv</span>(filename, header, rows):
+</span></span><span style="display:flex;"><span>    csv_file <span style="color:#f92672">=</span> open(filename, <span style="color:#e6db74">&#39;w&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;utf8&#39;</span>)
+</span></span><span style="display:flex;"><span>    wr <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>writer(csv_file)
+</span></span><span style="display:flex;"><span>    wr<span style="color:#f92672">.</span>writerow(header)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> rows:
+</span></span><span style="display:flex;"><span>        wr<span style="color:#f92672">.</span>writerow(row)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;*.xls&#34;</span>
+</span></span><span style="display:flex;"><span>    start_row<span style="color:#f92672">=</span><span style="color:#ae81ff">13</span>
+</span></span><span style="display:flex;"><span>    rows <span style="color:#f92672">=</span> read_xls(glob<span style="color:#f92672">.</span>glob(path)[<span style="color:#ae81ff">0</span>], start_row)
+</span></span><span style="display:flex;"><span>    header <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Date&#39;</span>, <span style="color:#e6db74">&#39;Desc&#39;</span>, <span style="color:#e6db74">&#39;Amount In&#39;</span>, <span style="color:#e6db74">&#39;Amount Out&#39;</span>, <span style="color:#e6db74">&#39;Balance&#39;</span>]
+</span></span><span style="display:flex;"><span>    filename <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ptsb.csv&#39;</span>
+</span></span><span style="display:flex;"><span>    write_csv(filename, header, rows)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>	main()
+</span></span></code></pre></div>
+        </p>
+    </div>
+    
+
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="../tags/automation">#automation</a>
+        
+            <a class="tag" href="../tags/python">#python</a>
+        
+            <a class="tag" href="../tags/code">#code</a>
+        
+            <a class="tag" href="../tags/programming">#programming</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+</footer>
+    </body>
+</html>

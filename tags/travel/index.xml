@@ -1,5 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Travel on Neil Grogan</title><link>/tags/travel/</link><description>Recent content in Travel on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="/tags/travel/index.xml" rel="self" type="application/rss+xml"/><item><title>Go Bag(s)</title><link>/gobag/</link><pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate><guid>/gobag/</guid><description>I follow Casey Liss&amp;rsquo; blog and recently he had a great post about a technology &amp;ldquo;go pack&amp;rdquo;. Lifehacker has written about this over the years, and the Wirecutter has a great article I shared here on this very blog. Also Casey linked to a great post by Katie Floyd on Twitter:
-https://twitter.com/KatieFloyd/status/630707145999314946
-I finally took the hint / inspiration from all these posts, and I decided time was right to put together my own &amp;ldquo;go bag&amp;rdquo;.</description></item><item><title>Going on Holidays? Check these Gadgets</title><link>/holiday-gadgets/</link><pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate><guid>/holiday-gadgets/</guid><description>I&amp;rsquo;m a big Wirecutter fan and they don&amp;rsquo;t disappoint with this travel guide.</description></item><item><title>Visit to CERN</title><link>/cern/</link><pubDate>Sat, 03 Aug 2013 00:00:00 +0000</pubDate><guid>/cern/</guid><description>I am currently in Switzerland on a business trip. In between work, I managed to get some time over the Swiss national holiday to visit the CERN. CERN is world famous for the invention of WWW and of course most recently, the almost certainty that the Higgs Boson (aka. &amp;ldquo;The God Particle&amp;rdquo;) - the particle that gives energy mass - exists.
-The CERN tour is completely free and highly recommended. I visited the Atlas experiment with a colleague (who just so happened to have a Phd.</description></item><item><title>Inter-railing around Europe</title><link>/inter-railing-around-europe/</link><pubDate>Thu, 02 Jun 2011 00:00:00 +0000</pubDate><guid>/inter-railing-around-europe/</guid><description>As you read this, I have already embarked on an inter-railing trip around Europe. Some of the cities in the itinerary:
-Amsterdam Cologne Nürburgring (Rock Am Ring festival) Prague Bratislava I&amp;rsquo;ll definitely post up some pictures when I get back. I planned this trip with a few classmates to coincide with the completion of our four year honours degree in Computer Science.</description></item><item><title>FON, New Job and Commuting!</title><link>/fon-new-job-and-commuting/</link><pubDate>Sun, 04 Jun 2006 00:00:00 +0000</pubDate><guid>/fon-new-job-and-commuting/</guid><description>I regularly read other Irish blogs to see whats happening and whats the latest tech thing amongst others. It seems that may have come to fruition, with FON, a community wifi project, sending me out a free router!! I am exicted about this, as I hope to convince all my neighbours eventually to get it, and maybe who knows, I may even achieve the biggest fon hotspot, if I take my campaign estate wide, to neighbours all around!</description></item><item><title>German Trip</title><link>/german-trip/</link><pubDate>Mon, 13 Feb 2006 00:00:00 +0000</pubDate><guid>/german-trip/</guid><description>I recently travelled to Munich, Germany on a recent exchange (1st-9th Feb, 2006). Not knowing what to expect, I found a very different Germany from the text book one you read about (Bavarian Trad Dress, Beer-drinking, Pretzel Eating, Sausage loving etc!). Of course all of these elements were present, but I think a modern German society closely reflects American one, in a lot of ways. Germans are the largest group by ethnicity in United States, so maybe its just German culture prevalent in America?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travel on Neil Grogan</title>
+    <link>/tags/travel/</link>
+    <description>Recent content in Travel on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go Bag(s)</title>
+      <link>/gobag/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/gobag/</guid>
+      <description>I follow Casey Liss&amp;rsquo; blog and recently he had a great post about a technology &amp;ldquo;go pack&amp;rdquo;. Lifehacker has written about this over the years, and the Wirecutter has a great article I shared here on this very blog. Also Casey linked to a great post by Katie Floyd on Twitter:&#xA;https://twitter.com/KatieFloyd/status/630707145999314946&#xA;I finally took the hint / inspiration from all these posts, and I decided time was right to put together my own &amp;ldquo;go bag&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Going on Holidays? Check these Gadgets</title>
+      <link>/holiday-gadgets/</link>
+      <pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/holiday-gadgets/</guid>
+      <description>I&amp;rsquo;m a big Wirecutter fan and they don&amp;rsquo;t disappoint with this travel guide.</description>
+    </item>
+    <item>
+      <title>Visit to CERN</title>
+      <link>/cern/</link>
+      <pubDate>Sat, 03 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>/cern/</guid>
+      <description>I am currently in Switzerland on a business trip. In between work, I managed to get some time over the Swiss national holiday to visit the CERN. CERN is world famous for the invention of WWW and of course most recently, the almost certainty that the Higgs Boson (aka. &amp;ldquo;The God Particle&amp;rdquo;) - the particle that gives energy mass - exists.&#xA;The CERN tour is completely free and highly recommended. I visited the Atlas experiment with a colleague (who just so happened to have a Phd.</description>
+    </item>
+    <item>
+      <title>Inter-railing around Europe</title>
+      <link>/inter-railing-around-europe/</link>
+      <pubDate>Thu, 02 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>/inter-railing-around-europe/</guid>
+      <description>As you read this, I have already embarked on an inter-railing trip around Europe. Some of the cities in the itinerary:&#xA;Amsterdam Cologne Nürburgring (Rock Am Ring festival) Prague Bratislava I&amp;rsquo;ll definitely post up some pictures when I get back. I planned this trip with a few classmates to coincide with the completion of our four year honours degree in Computer Science.</description>
+    </item>
+    <item>
+      <title>FON, New Job and Commuting!</title>
+      <link>/fon-new-job-and-commuting/</link>
+      <pubDate>Sun, 04 Jun 2006 00:00:00 +0000</pubDate>
+      <guid>/fon-new-job-and-commuting/</guid>
+      <description>I regularly read other Irish blogs to see whats happening and whats the latest tech thing amongst others. It seems that may have come to fruition, with FON, a community wifi project, sending me out a free router!! I am exicted about this, as I hope to convince all my neighbours eventually to get it, and maybe who knows, I may even achieve the biggest fon hotspot, if I take my campaign estate wide, to neighbours all around!</description>
+    </item>
+    <item>
+      <title>German Trip</title>
+      <link>/german-trip/</link>
+      <pubDate>Mon, 13 Feb 2006 00:00:00 +0000</pubDate>
+      <guid>/german-trip/</guid>
+      <description>I recently travelled to Munich, Germany on a recent exchange (1st-9th Feb, 2006). Not knowing what to expect, I found a very different Germany from the text book one you read about (Bavarian Trad Dress, Beer-drinking, Pretzel Eating, Sausage loving etc!). Of course all of these elements were present, but I think a modern German society closely reflects American one, in a lot of ways. Germans are the largest group by ethnicity in United States, so maybe its just German culture prevalent in America?</description>
+    </item>
+  </channel>
+</rss>

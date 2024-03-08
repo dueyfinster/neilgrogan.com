@@ -1,12 +1,273 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>Ruby | Neil Grogan</title>
-<link rel=apple-touch-icon sizes=180x180 href=../../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../../favicon-96x96.png><link rel=manifest href=../../manifest.json><link rel=mask-icon href=../../safari-pinned-tab.svg color=#FF3DB4><link rel=me href=https://mastodon.ie/@dueyfinster><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../../css/main.min.113b8750726301d2272b2fabf9695ed6bfe79dff4f4cd582cb3010010ebceea4.css><script src=https://unpkg.com/lunr/lunr.js></script><link rel=alternate type=application/rss+xml href=../../tags/ruby/index.xml title="Neil Grogan"></head><body><nav><header><div class=site-title><a href=../../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../../about>About</a>
-<a class="color-link nav-link" href=../../uses>Uses</a>
-<a class="color-link nav-link" href=../../contact>Contact</a>
-<a class="color-link nav-link" href=../../archives/>Archives</a>
-<a class="color-link nav-link" href=../../tags/>Tags</a>
-<a class="color-link nav-link" href=../../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin=anonymous></script><script src=../../js/lunr-search.js></script></footer></nav><div id=content class=content-container><h1>Tagged "ruby"</h1><article><h2><a href=../../slack-bot/>Slack Bots for Work</a></h2><div><p>In a previous post, I mentioned how I get notified of the restaurant menu via a Ruby script. Recently I&rsquo;ve moved to a totally different product area and the main communication channel we use is Slack. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.
-This also got me thinking of what other information would be handy to have.</p></div><div class=post-footer><time>February 16, 2017</time></div></article><article><h2><a href=../../dashing/>Dashing Dashboards</a></h2><div><p>In the last year and a half, I set up a Ruby based Dashing dashboard for my team and others in our product area. Here&rsquo;s what a sample Dashing dashboard looks like:
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Ruby | Neil Grogan</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
+    <link rel="me" href="https://mastodon.ie/@dueyfinster">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="../../css/main.min.113b8750726301d2272b2fabf9695ed6bfe79dff4f4cd582cb3010010ebceea4.css"/>
+
+    
+    
+    
+
+    
+    
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+ 
+    
+    <link rel="alternate" type="application/rss+xml" href="../../tags/ruby/index.xml" title="Neil Grogan" />
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../../">Neil Grogan</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="../../about">About</a>
+  
+    <a class="color-link nav-link" href="../../uses">Uses</a>
+  
+    <a class="color-link nav-link" href="../../contact">Contact</a>
+  
+    <a class="color-link nav-link" href="../../archives/">Archives</a>
+  
+    <a class="color-link nav-link" href="../../tags/">Tags</a>
+  
+  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+</footer>
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+  <h1>Tagged "ruby"</h1>
+  
+  
+    
+    <article>
+            <h2>
+                <a href="../../slack-bot/">
+                    Slack Bots for Work
+                </a>
+            </h2>
+            <div>
+                <p>In a previous post, I mentioned how I get notified of the restaurant menu via a Ruby script. Recently I&rsquo;ve moved to a totally different product area and the main communication channel we use is Slack. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.
+This also got me thinking of what other information would be handy to have.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>February 16, 2017</time>
+            </div> 
+        </article>
+    
+  
+    
+    <article>
+            <h2>
+                <a href="../../dashing/">
+                    Dashing Dashboards
+                </a>
+            </h2>
+            <div>
+                <p>In the last year and a half, I set up a Ruby based Dashing dashboard for my team and others in our product area. Here&rsquo;s what a sample Dashing dashboard looks like:
 It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):
-Don&rsquo;t do dashboards for managers, do them for teams Use big text, have the minimum information as required Use colours (preferably like the traffic light system) to focus attention Link in all critical systems to daily work Make it a one stop shop and faster then all other methods of getting this information Reuse the work of others (steal with pride) Don&rsquo;t bother with graphs Below I outline the reasons for each point:</p></div><div class=post-footer><time>February 15, 2016</time></div></article><article><h2><a href=../../rest-menu/>Automated 'Push' Restaurant menu</a></h2><div><p>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces&rsquo; restaurant menu come to me!
-I decided to write it in Ruby and use push notifications, rather than email or SMS.</p></div><div class=post-footer><time>January 10, 2016</time></div></article><article><h2><a href=../../blogging-like-h4x0r/>Blogging like a H4x0r</a></h2><div><p>Apologies to those visiting my site recently because:
-It hasn&rsquo;t been updated recently I have been changing hosts with it Let me explain both of these! I have been searching for a good blogging engine ever since I have started blogging. I have yet to find the perfect one :) Some have come close in completeness (WordPress) or price and ease of use (blogger), but none has been all-encompassing. I messed around with a blogging engine called Jekyll about a year and a half ago, but I never ended up deploying it.</p></div><div class=post-footer><time>January 31, 2011</time></div></article></div><footer class=footer-mobile><div class=social-icons></div><script src=../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin=anonymous></script></footer></body></html>
+Don&rsquo;t do dashboards for managers, do them for teams Use big text, have the minimum information as required Use colours (preferably like the traffic light system) to focus attention Link in all critical systems to daily work Make it a one stop shop and faster then all other methods of getting this information Reuse the work of others (steal with pride) Don&rsquo;t bother with graphs Below I outline the reasons for each point:</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>February 15, 2016</time>
+            </div> 
+        </article>
+    
+  
+    
+    <article>
+            <h2>
+                <a href="../../rest-menu/">
+                    Automated &#39;Push&#39; Restaurant menu
+                </a>
+            </h2>
+            <div>
+                <p>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces&rsquo; restaurant menu come to me!
+I decided to write it in Ruby and use push notifications, rather than email or SMS.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>January 10, 2016</time>
+            </div> 
+        </article>
+    
+  
+    
+    <article>
+            <h2>
+                <a href="../../blogging-like-h4x0r/">
+                    Blogging like a H4x0r
+                </a>
+            </h2>
+            <div>
+                <p>Apologies to those visiting my site recently because:
+It hasn&rsquo;t been updated recently I have been changing hosts with it Let me explain both of these! I have been searching for a good blogging engine ever since I have started blogging. I have yet to find the perfect one :) Some have come close in completeness (WordPress) or price and ease of use (blogger), but none has been all-encompassing. I messed around with a blogging engine called Jekyll about a year and a half ago, but I never ended up deploying it.</p>
+                
+            </div>
+            <div class="post-footer">
+            <time>January 31, 2011</time>
+            </div> 
+        </article>
+    
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+</footer>
+    </body>
+</html>

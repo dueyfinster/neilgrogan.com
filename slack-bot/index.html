@@ -1,64 +1,283 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no"><title>Slack Bots for Work | Neil Grogan</title>
-<link rel=apple-touch-icon sizes=180x180 href=../apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=../favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=../favicon-16x16.png><link rel=icon type=image/png sizes=96x96 href=../favicon-96x96.png><link rel=manifest href=../manifest.json><link rel=mask-icon href=../safari-pinned-tab.svg color=#FF3DB4><link rel=me href=https://mastodon.ie/@dueyfinster><meta name=theme-color content="#ffffff"><link rel=stylesheet href=../css/main.min.113b8750726301d2272b2fabf9695ed6bfe79dff4f4cd582cb3010010ebceea4.css><script src=https://unpkg.com/lunr/lunr.js></script></head><body><nav><header><div class=site-title><a href=../>Neil Grogan</a></div></header><div class=nav-menu><a class="color-link nav-link" href=../about>About</a>
-<a class="color-link nav-link" href=../uses>Uses</a>
-<a class="color-link nav-link" href=../contact>Contact</a>
-<a class="color-link nav-link" href=../archives/>Archives</a>
-<a class="color-link nav-link" href=../tags/>Tags</a>
-<a class="color-link nav-link" href=../index.xml target=_blank rel=noopener type=application/rss+xml>RSS</a></div><footer class=footer><div class=social-icons></div><script src=../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin=anonymous></script><script src=../js/lunr-search.js></script></footer></nav><div id=content class=content-container><h1 class=post-title>Slack Bots for Work</h1><time>February 16, 2017</time><div><p><p>In a previous post, I mentioned how I get notified of the <a href=../rest-menu>restaurant menu</a> via a Ruby script. Recently I&rsquo;ve moved to a totally different product area and the main communication channel we use is <a href=https://www.slack.com>Slack</a>. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.</p><p>This also got me thinking of what other information would be handy to have. I scouted around for ideas and came up with an obvious one: reminder of the bus times to and from the office. So here&rsquo;s my bus times notification slack bot:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby><span style=display:flex><span><span style=color:#75715e>#!/usr/bin/env ruby</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#Encoding: UTF-8</span>
-</span></span><span style=display:flex><span>require <span style=color:#e6db74>&#39;nokogiri&#39;</span>
-</span></span><span style=display:flex><span>require <span style=color:#e6db74>&#39;json&#39;</span>
-</span></span><span style=display:flex><span>require <span style=color:#e6db74>&#39;net/http&#39;</span>
-</span></span><span style=display:flex><span>require <span style=color:#e6db74>&#39;open-uri&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>notify_slack</span>(text)
-</span></span><span style=display:flex><span>    webhook_url <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span> <span style=color:#75715e># TODO: Insert yours here</span>
-</span></span><span style=display:flex><span>    payload <span style=color:#f92672>=</span> {
-</span></span><span style=display:flex><span>        <span style=color:#75715e>#:channel =&gt; channel,</span>
-</span></span><span style=display:flex><span>        <span style=color:#75715e>#:username =&gt; username,</span>
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>:text</span> <span style=color:#f92672>=&gt;</span> text
-</span></span><span style=display:flex><span>        <span style=color:#75715e>#:icon_url =&gt; image</span>
-</span></span><span style=display:flex><span>    }<span style=color:#f92672>.</span>to_json
-</span></span><span style=display:flex><span>    cmd <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;curl -X POST --data-urlencode &#39;payload=</span><span style=color:#e6db74>#{</span>payload<span style=color:#e6db74>}</span><span style=color:#e6db74>&#39; </span><span style=color:#e6db74>#{</span>webhook_url<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>    system(cmd)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>make_bus_times</span>()
-</span></span><span style=display:flex><span>    today <span style=color:#f92672>=</span> <span style=color:#66d9ef>Date</span><span style=color:#f92672>.</span>today
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Sheraton&#34;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#f92672>[</span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>Time</span><span style=color:#f92672>.</span>local(today<span style=color:#f92672>.</span>year, today<span style=color:#f92672>.</span>month, today<span style=color:#f92672>.</span>day, <span style=color:#ae81ff>8</span>, <span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>0</span>),
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>Time</span><span style=color:#f92672>.</span>local(today<span style=color:#f92672>.</span>year, today<span style=color:#f92672>.</span>month, today<span style=color:#f92672>.</span>day, <span style=color:#ae81ff>8</span>, <span style=color:#ae81ff>35</span>, <span style=color:#ae81ff>0</span>),
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>Time</span><span style=color:#f92672>.</span>local(today<span style=color:#f92672>.</span>year, today<span style=color:#f92672>.</span>month, today<span style=color:#f92672>.</span>day, <span style=color:#ae81ff>9</span>, <span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>0</span>)
-</span></span><span style=display:flex><span>        <span style=color:#f92672>]</span>,
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Ericsson&#34;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#f92672>[</span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>Time</span><span style=color:#f92672>.</span>local(today<span style=color:#f92672>.</span>year, today<span style=color:#f92672>.</span>month, today<span style=color:#f92672>.</span>day, <span style=color:#ae81ff>16</span>, <span style=color:#ae81ff>30</span>, <span style=color:#ae81ff>0</span>),
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>Time</span><span style=color:#f92672>.</span>local(today<span style=color:#f92672>.</span>year, today<span style=color:#f92672>.</span>month, today<span style=color:#f92672>.</span>day, <span style=color:#ae81ff>17</span>, <span style=color:#ae81ff>25</span>, <span style=color:#ae81ff>0</span>),
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>Time</span><span style=color:#f92672>.</span>local(today<span style=color:#f92672>.</span>year, today<span style=color:#f92672>.</span>month, today<span style=color:#f92672>.</span>day, <span style=color:#ae81ff>18</span>, <span style=color:#ae81ff>00</span>, <span style=color:#ae81ff>0</span>)
-</span></span><span style=display:flex><span>        <span style=color:#f92672>]</span>
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> bus_times
-</span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>check_next_bus</span>()
-</span></span><span style=display:flex><span>    bus_times <span style=color:#f92672>=</span> make_bus_times()
-</span></span><span style=display:flex><span>    t <span style=color:#f92672>=</span> <span style=color:#66d9ef>Time</span><span style=color:#f92672>.</span>now
-</span></span><span style=display:flex><span>    t2 <span style=color:#f92672>=</span> t <span style=color:#f92672>+</span> <span style=color:#ae81ff>15</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>60</span> <span style=color:#75715e># 15mins in future</span>
-</span></span><span style=display:flex><span>    bus_times<span style=color:#f92672>.</span>each <span style=color:#66d9ef>do</span> <span style=color:#f92672>|</span>key, array<span style=color:#f92672>|</span>
-</span></span><span style=display:flex><span>        bus_times<span style=color:#f92672>[</span>key<span style=color:#f92672>].</span>each { <span style=color:#f92672>|</span>val<span style=color:#f92672>|</span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> val<span style=color:#f92672>.</span>between?(t, t2)
-</span></span><span style=display:flex><span>                text <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;@here Bus leaving from </span><span style=color:#e6db74>#{</span>key<span style=color:#e6db74>}</span><span style=color:#e6db74> in next 15mins at </span><span style=color:#e6db74>#{</span>val<span style=color:#f92672>.</span>strftime(<span style=color:#e6db74>&#39;%H:%M&#39;</span>)<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
-</span></span><span style=display:flex><span>                notify_slack(text)
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>end</span>
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>end</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>check_next_bus()
-</span></span></code></pre></div><p>I simply set this to run every 20 minutes, Monday to Friday, during working hours via cron:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>*/20 07-19 * * 1,2,3,4,5 bus-times.rb &gt; /dev/null 2&gt;&amp;<span style=color:#ae81ff>1</span>
-</span></span></code></pre></div><p>For convenience, I have the webhook set to post to a different channel so people can opt in for bus reminders.</p></p></div><div class=page-footer><hr class=footer-divider><a class=tag href=../tags/automation>#automation</a>
-<a class=tag href=../tags/ruby>#ruby</a>
-<a class=tag href=../tags/programming>#programming</a>
-<a class=tag href=../tags/code>#code</a></div></div><footer class=footer-mobile><div class=social-icons></div><script src=../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin=anonymous></script></footer></body></html>
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Slack Bots for Work | Neil Grogan</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
+    <link rel="me" href="https://mastodon.ie/@dueyfinster">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="../css/main.min.113b8750726301d2272b2fabf9695ed6bfe79dff4f4cd582cb3010010ebceea4.css"/>
+
+    
+    
+    
+
+    
+    
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+ 
+    </head>
+
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        <a href="../">Neil Grogan</a>
+    </div>  
+</header>
+
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="../about">About</a>
+  
+    <a class="color-link nav-link" href="../uses">Uses</a>
+  
+    <a class="color-link nav-link" href="../contact">Contact</a>
+  
+    <a class="color-link nav-link" href="../archives/">Archives</a>
+  
+    <a class="color-link nav-link" href="../tags/">Tags</a>
+  
+  <a class="color-link nav-link" href="../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
+</div>
+<footer class="footer">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
+</footer>
+</nav>
+
+        <div id="content" class="content-container">
+        
+
+<h1 class="post-title">Slack Bots for Work</h1>
+    
+    <time>February 16, 2017</time>
+    
+
+    <div>
+        
+        <p>
+        <p>In a previous post, I mentioned how I get notified of the <a href="../rest-menu">restaurant menu</a> via a Ruby script. Recently I&rsquo;ve moved to a totally different product area and the main communication channel we use is <a href="https://www.slack.com">Slack</a>. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.</p>
+<p>This also got me thinking of what other information would be handy to have. I scouted around for ideas and came up with an obvious one: reminder of the bus times to and from the office. So here&rsquo;s my bus times notification slack bot:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env ruby</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Encoding: UTF-8</span>
+</span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;nokogiri&#39;</span>
+</span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;json&#39;</span>
+</span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;net/http&#39;</span>
+</span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;open-uri&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">notify_slack</span>(text)
+</span></span><span style="display:flex;"><span>    webhook_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span> <span style="color:#75715e"># TODO: Insert yours here</span>
+</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#:channel =&gt; channel,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#:username =&gt; username,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">:text</span> <span style="color:#f92672">=&gt;</span> text
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#:icon_url =&gt; image</span>
+</span></span><span style="display:flex;"><span>    }<span style="color:#f92672">.</span>to_json
+</span></span><span style="display:flex;"><span>    cmd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;curl -X POST --data-urlencode &#39;payload=</span><span style="color:#e6db74">#{</span>payload<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39; </span><span style="color:#e6db74">#{</span>webhook_url<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    system(cmd)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_bus_times</span>()
+</span></span><span style="display:flex;"><span>    today <span style="color:#f92672">=</span> <span style="color:#66d9ef">Date</span><span style="color:#f92672">.</span>today
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Sheraton&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>local(today<span style="color:#f92672">.</span>year, today<span style="color:#f92672">.</span>month, today<span style="color:#f92672">.</span>day, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>local(today<span style="color:#f92672">.</span>year, today<span style="color:#f92672">.</span>month, today<span style="color:#f92672">.</span>day, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>local(today<span style="color:#f92672">.</span>year, today<span style="color:#f92672">.</span>month, today<span style="color:#f92672">.</span>day, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Ericsson&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#f92672">[</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>local(today<span style="color:#f92672">.</span>year, today<span style="color:#f92672">.</span>month, today<span style="color:#f92672">.</span>day, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>local(today<span style="color:#f92672">.</span>year, today<span style="color:#f92672">.</span>month, today<span style="color:#f92672">.</span>day, <span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>local(today<span style="color:#f92672">.</span>year, today<span style="color:#f92672">.</span>month, today<span style="color:#f92672">.</span>day, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">00</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> bus_times
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">check_next_bus</span>()
+</span></span><span style="display:flex;"><span>    bus_times <span style="color:#f92672">=</span> make_bus_times()
+</span></span><span style="display:flex;"><span>    t <span style="color:#f92672">=</span> <span style="color:#66d9ef">Time</span><span style="color:#f92672">.</span>now
+</span></span><span style="display:flex;"><span>    t2 <span style="color:#f92672">=</span> t <span style="color:#f92672">+</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">60</span> <span style="color:#75715e"># 15mins in future</span>
+</span></span><span style="display:flex;"><span>    bus_times<span style="color:#f92672">.</span>each <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>key, array<span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>        bus_times<span style="color:#f92672">[</span>key<span style="color:#f92672">].</span>each { <span style="color:#f92672">|</span>val<span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> val<span style="color:#f92672">.</span>between?(t, t2)
+</span></span><span style="display:flex;"><span>                text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;@here Bus leaving from </span><span style="color:#e6db74">#{</span>key<span style="color:#e6db74">}</span><span style="color:#e6db74"> in next 15mins at </span><span style="color:#e6db74">#{</span>val<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;%H:%M&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>                notify_slack(text)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>check_next_bus()
+</span></span></code></pre></div><p>I simply set this to run every 20 minutes, Monday to Friday, during working hours via cron:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*/20 07-19 * * 1,2,3,4,5 bus-times.rb &gt; /dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>For convenience, I have the webhook set to post to a different channel so people can opt in for bus reminders.</p>
+
+        </p>
+    </div>
+    
+
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="../tags/automation">#automation</a>
+        
+            <a class="tag" href="../tags/ruby">#ruby</a>
+        
+            <a class="tag" href="../tags/programming">#programming</a>
+        
+            <a class="tag" href="../tags/code">#code</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons">
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</div>
+
+
+
+
+	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+</footer>
+    </body>
+</html>

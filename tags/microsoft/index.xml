@@ -1,8 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Microsoft on Neil Grogan</title><link>/tags/microsoft/</link><description>Recent content in Microsoft on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 30 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="/tags/microsoft/index.xml" rel="self" type="application/rss+xml"/><item><title>Chrome vs. Internet Explorer Audience</title><link>/chrome-vs-internet-explorer-audience/</link><pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate><guid>/chrome-vs-internet-explorer-audience/</guid><description>Lately both Google and Microsoft have been advertising their respective browsers on British Television (received in Ireland by the vast majority of the population). It&amp;rsquo;s interesting the different approach each company is taking.
-Chrome ad:
-To me the Chrome ad is very family oriented, stressing the utility of the web and the ease of reaching people and staying in touch. No surprise they didn&amp;rsquo;t feature Facebook, which is what the vast majority use to keep in touch.</description></item><item><title>Microsoft settles with Eolas over Internet Explorer</title><link>/microsoft-settles-with-eolas-over/</link><pubDate>Fri, 31 Aug 2007 00:00:00 +0000</pubDate><guid>/microsoft-settles-with-eolas-over/</guid><description>Microsoft has settled with Eolas over a number of patents regarding browser plugins which chicago based Eolas filed patents for in 1998. A jury in Chicago then found Microsoft guilty of infringing on Eolas’ patents and was told to pay $521m US Dollars in &amp;lsquo;damages&amp;rsquo;. That ruling was overturned and a fresh trial ordered which was due to start very soon, but it seems Microsoft has decided to pay out:</description></item><item><title>Dell refunds me for Windows!</title><link>/dell-refunds-me-for-windows/</link><pubDate>Tue, 21 Aug 2007 00:00:00 +0000</pubDate><guid>/dell-refunds-me-for-windows/</guid><description>As many of you know I am a Linux and Mac aficionado. For my Linux machines, all of them are Dell. I have been always pleased with Dells prices, how their machines work with Linux, their customer service and the fact they are made in Limerick, Ireland (I am from Ireland). I politely emailed Dell (well got up on my high horse), heres my first mail:
-I would like a refund of Windows XP since I am installing Ubuntu Linux on the computer when I get it.</description></item><item><title>Seven financial reasons not to use Windows</title><link>/seven-financial-reasons-not-to-use/</link><pubDate>Mon, 06 Aug 2007 00:00:00 +0000</pubDate><guid>/seven-financial-reasons-not-to-use/</guid><description>I recently read a very insightful article on 7 factors every company should seriously consider about Microsoft Windows, here they are summarised:
-Licensing Costs Everyone in the IT industry today knows that proprietary operating systems and the applications that run on them will cost you a lot of money on licensing fees. According to a recent Forrester study, U.S. companies overall are expected to spend $100 billion on software maintenance in 2007.</description></item><item><title>Bill Gates lists Vista 'innovations'</title><link>/bill-gates-lists-vista/</link><pubDate>Tue, 29 May 2007 00:00:00 +0000</pubDate><guid>/bill-gates-lists-vista/</guid><description>Hard to believe really, Mr.Gates lists Windows Vista &amp;lsquo;innovations&amp;rsquo;. Now Apple has been shipping everything he mentions since 2005, and I have tried Vista, it doesn&amp;rsquo;t even surpass Apples&amp;rsquo; attempt at the software (which should be his aim). Some things have been around for years, but it&amp;rsquo;s how well your software can do it is the key. Personally I wouldn&amp;rsquo;t tout features that another competitor does better, but thats just me.</description></item><item><title>Get the facts, about "Get the Facts"</title><link>/get-facts-about-get-facts/</link><pubDate>Sun, 21 Jan 2007 00:00:00 +0000</pubDate><guid>/get-facts-about-get-facts/</guid><description>Just a quick blurb about some things Microsoft like to say: Don&amp;rsquo;t believe it, well at least not it all anyway. On the Irish &amp;ldquo;Get the Facts&amp;rdquo; page (on Windows Server vs. Linux), they make critical errors of judgement a person reasonably well versed in computing could deconstruct. First of all, Linux isn&amp;rsquo;t a server, its a kernel, like the Windows kernel. So comparing &amp;ldquo;Windows Server 2003&amp;rdquo; to &amp;ldquo;Linux&amp;rdquo; is misleading to say the least, and stupid to say the most.</description></item><item><title>Internet Explorer thanks Firefox, sincerely?</title><link>/internet-explorer-thanks-firefox/</link><pubDate>Thu, 26 Oct 2006 00:00:00 +0000</pubDate><guid>/internet-explorer-thanks-firefox/</guid><description>Reading my favourite tech news site: Slashdot ( /.), I see the Internet Explorer team have sent the Firefox Team a nice cake:
-One comment I read said it all really:
-Seems even the IE team knows that IE is dead.
-As for the ex-lax, bugs, pubes in the cake of course none of that is true. Those things would only be possible if someone at Microsoft actually made the cake, and that&amp;rsquo;s not how MS does things.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on Neil Grogan</title>
+    <link>/tags/microsoft/</link>
+    <description>Recent content in Microsoft on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chrome vs. Internet Explorer Audience</title>
+      <link>/chrome-vs-internet-explorer-audience/</link>
+      <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
+      <guid>/chrome-vs-internet-explorer-audience/</guid>
+      <description>Lately both Google and Microsoft have been advertising their respective browsers on British Television (received in Ireland by the vast majority of the population). It&amp;rsquo;s interesting the different approach each company is taking.&#xA;Chrome ad:&#xA;To me the Chrome ad is very family oriented, stressing the utility of the web and the ease of reaching people and staying in touch. No surprise they didn&amp;rsquo;t feature Facebook, which is what the vast majority use to keep in touch.</description>
+    </item>
+    <item>
+      <title>Microsoft settles with Eolas over Internet Explorer</title>
+      <link>/microsoft-settles-with-eolas-over/</link>
+      <pubDate>Fri, 31 Aug 2007 00:00:00 +0000</pubDate>
+      <guid>/microsoft-settles-with-eolas-over/</guid>
+      <description>Microsoft has settled with Eolas over a number of patents regarding browser plugins which chicago based Eolas filed patents for in 1998. A jury in Chicago then found Microsoft guilty of infringing on Eolas’ patents and was told to pay $521m US Dollars in &amp;lsquo;damages&amp;rsquo;. That ruling was overturned and a fresh trial ordered which was due to start very soon, but it seems Microsoft has decided to pay out:</description>
+    </item>
+    <item>
+      <title>Dell refunds me for Windows!</title>
+      <link>/dell-refunds-me-for-windows/</link>
+      <pubDate>Tue, 21 Aug 2007 00:00:00 +0000</pubDate>
+      <guid>/dell-refunds-me-for-windows/</guid>
+      <description>As many of you know I am a Linux and Mac aficionado. For my Linux machines, all of them are Dell. I have been always pleased with Dells prices, how their machines work with Linux, their customer service and the fact they are made in Limerick, Ireland (I am from Ireland). I politely emailed Dell (well got up on my high horse), heres my first mail:&#xA;I would like a refund of Windows XP since I am installing Ubuntu Linux on the computer when I get it.</description>
+    </item>
+    <item>
+      <title>Seven financial reasons not to use Windows</title>
+      <link>/seven-financial-reasons-not-to-use/</link>
+      <pubDate>Mon, 06 Aug 2007 00:00:00 +0000</pubDate>
+      <guid>/seven-financial-reasons-not-to-use/</guid>
+      <description>I recently read a very insightful article on 7 factors every company should seriously consider about Microsoft Windows, here they are summarised:&#xA;Licensing Costs Everyone in the IT industry today knows that proprietary operating systems and the applications that run on them will cost you a lot of money on licensing fees. According to a recent Forrester study, U.S. companies overall are expected to spend $100 billion on software maintenance in 2007.</description>
+    </item>
+    <item>
+      <title>Bill Gates lists Vista &#39;innovations&#39;</title>
+      <link>/bill-gates-lists-vista/</link>
+      <pubDate>Tue, 29 May 2007 00:00:00 +0000</pubDate>
+      <guid>/bill-gates-lists-vista/</guid>
+      <description>Hard to believe really, Mr.Gates lists Windows Vista &amp;lsquo;innovations&amp;rsquo;. Now Apple has been shipping everything he mentions since 2005, and I have tried Vista, it doesn&amp;rsquo;t even surpass Apples&amp;rsquo; attempt at the software (which should be his aim). Some things have been around for years, but it&amp;rsquo;s how well your software can do it is the key. Personally I wouldn&amp;rsquo;t tout features that another competitor does better, but thats just me.</description>
+    </item>
+    <item>
+      <title>Get the facts, about &#34;Get the Facts&#34;</title>
+      <link>/get-facts-about-get-facts/</link>
+      <pubDate>Sun, 21 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/get-facts-about-get-facts/</guid>
+      <description>Just a quick blurb about some things Microsoft like to say: Don&amp;rsquo;t believe it, well at least not it all anyway. On the Irish &amp;ldquo;Get the Facts&amp;rdquo; page (on Windows Server vs. Linux), they make critical errors of judgement a person reasonably well versed in computing could deconstruct. First of all, Linux isn&amp;rsquo;t a server, its a kernel, like the Windows kernel. So comparing &amp;ldquo;Windows Server 2003&amp;rdquo; to &amp;ldquo;Linux&amp;rdquo; is misleading to say the least, and stupid to say the most.</description>
+    </item>
+    <item>
+      <title>Internet Explorer thanks Firefox, sincerely?</title>
+      <link>/internet-explorer-thanks-firefox/</link>
+      <pubDate>Thu, 26 Oct 2006 00:00:00 +0000</pubDate>
+      <guid>/internet-explorer-thanks-firefox/</guid>
+      <description>Reading my favourite tech news site: Slashdot ( /.), I see the Internet Explorer team have sent the Firefox Team a nice cake:&#xA;One comment I read said it all really:&#xA;Seems even the IE team knows that IE is dead.&#xA;As for the ex-lax, bugs, pubes in the cake of course none of that is true. Those things would only be possible if someone at Microsoft actually made the cake, and that&amp;rsquo;s not how MS does things.</description>
+    </item>
+  </channel>
+</rss>

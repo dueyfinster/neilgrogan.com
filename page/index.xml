@@ -1,12 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Neil Grogan</title><link>/page/</link><description>Recent content in Pages on Neil Grogan</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/page/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>Software Engineering Manager at Ericsson in Athlone, Ireland, managing teams in Software Development Kits (SDKs) for Encsson Intelligent Automation Platform (EIAP). Before that, I was managing JEE Platform, User Interface SDK and 5G Topology teams in Ericsson Network Manager.
-I originally graduated with a first class honours degree in computer science at
-Technological University, Dublin. I also graduated with a first class masters in computer science from University College Dublin. See the Colophon if you&amp;rsquo;re interested to know how I put this site together.</description></item><item><title>Colophon</title><link>/about/colophon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/colophon/</guid><description>This site is made with Hugo static website generator (using Noteworthy theme), posted to Github - synced to a private Gitea instance - which kicks off a build of the site on a private Drone instance and will rsync the result to FastMail. SSL is freely provided by LetsEncrypt.
-I author the site (usually) in Vim, Emacs or online in Github, using Org mode for posts and Markdown/HTML/CSS/Javascript for the rest.</description></item><item><title>Contact</title><link>/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/contact/</guid><description>My preferred way of reaching out is on Mastodon/Twitter. Alternatively you can reach me by email by using my first name at my last name dot org.
-You can also send me encrypted mail using my pgp key.
-Linkedin Hackerrank PGP Info Key ID: 7FOF2D89 PGP Fingerpint: F12E 451D 87D9 4EE6 AFDF 7F14 B495 8827 7F0F 2D89 Length: 4096 Created: 2016-08-21</description></item><item><title>CV</title><link>/cv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/cv/</guid><description>View and Download You can get a PDF copy of my resume.</description></item><item><title>Presentations</title><link>/presentations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/presentations/</guid><description>Below is some of the presentations I have given:
-5G Overview - Maynooth University, October 2019 Newsfast M.Sc. Project Final (Speakerdeck Mirror) - University College Dublin, August 2015 Newsfast M.Sc. Project Midterm (Speakerdeck Mirror)- University College Dublin, June 2015</description></item><item><title>Projects</title><link>/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/projects/</guid><description>Some projects I&amp;rsquo;ve done are listed below, hopefully you can find some of them useful.
-AWS Lambda Web Scraper with Slack Notifications A function on Amazon Web Services Lambda platform to scrape useful information from a website and post the results to Slack. Can be used to get a restaurant menu, bus times, sports scores or anything you can think of in to Slack!
-AWS Lambda PDF to Text A function on Amazon Web Services Lambda platform to transform a PDF file in to the text it contains.</description></item><item><title>Uses</title><link>/uses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/uses/</guid><description>Editor + Terminal For Editor I use VS Code and Vim/Neovim. I also use Emacs for the excellent org-mode.
-For shell I use ZSH with OhMyZSH installed. For terminal I use iTerm2/Terminal.app but I have also tried Alacritty/kitty on occasion.
-My dotfiles are here
-Desktop Apps For web browser - I usually use Safari - unless the website doesn&amp;rsquo;t work or I need better DevTools then I&amp;rsquo;ll use Firefox or Chrome.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Neil Grogan</title>
+    <link>/page/</link>
+    <description>Recent content in Pages on Neil Grogan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>Software Engineering Manager at Ericsson in Athlone, Ireland, managing teams in Software Development Kits (SDKs) for Encsson Intelligent Automation Platform (EIAP). Before that, I was managing JEE Platform, User Interface SDK and 5G Topology teams in Ericsson Network Manager.&#xA;I originally graduated with a first class honours degree in computer science at&#xA;Technological University, Dublin. I also graduated with a first class masters in computer science from University College Dublin. See the Colophon if you&amp;rsquo;re interested to know how I put this site together.</description>
+    </item>
+    <item>
+      <title>Colophon</title>
+      <link>/about/colophon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/colophon/</guid>
+      <description>This site is made with Hugo static website generator (using Noteworthy theme), posted to Github - synced to a private Gitea instance - which kicks off a build of the site on a private Drone instance and will rsync the result to FastMail. SSL is freely provided by LetsEncrypt.&#xA;I author the site (usually) in Vim, Emacs or online in Github, using Org mode for posts and Markdown/HTML/CSS/Javascript for the rest.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/contact/</guid>
+      <description>My preferred way of reaching out is on Mastodon/Twitter. Alternatively you can reach me by email by using my first name at my last name dot org.&#xA;You can also send me encrypted mail using my pgp key.&#xA;Linkedin Hackerrank PGP Info Key ID: 7FOF2D89 PGP Fingerpint: F12E 451D 87D9 4EE6 AFDF 7F14 B495 8827 7F0F 2D89 Length: 4096 Created: 2016-08-21 </description>
+    </item>
+    <item>
+      <title>CV</title>
+      <link>/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/cv/</guid>
+      <description>View and Download You can get a PDF copy of my resume.</description>
+    </item>
+    <item>
+      <title>Presentations</title>
+      <link>/presentations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/presentations/</guid>
+      <description>Below is some of the presentations I have given:&#xA;5G Overview - Maynooth University, October 2019 Newsfast M.Sc. Project Final (Speakerdeck Mirror) - University College Dublin, August 2015 Newsfast M.Sc. Project Midterm (Speakerdeck Mirror)- University College Dublin, June 2015 </description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/projects/</guid>
+      <description>Some projects I&amp;rsquo;ve done are listed below, hopefully you can find some of them useful.&#xA;AWS Lambda Web Scraper with Slack Notifications A function on Amazon Web Services Lambda platform to scrape useful information from a website and post the results to Slack. Can be used to get a restaurant menu, bus times, sports scores or anything you can think of in to Slack!&#xA;AWS Lambda PDF to Text A function on Amazon Web Services Lambda platform to transform a PDF file in to the text it contains.</description>
+    </item>
+    <item>
+      <title>Uses</title>
+      <link>/uses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/uses/</guid>
+      <description>Editor + Terminal For Editor I use VS Code and Vim/Neovim. I also use Emacs for the excellent org-mode.&#xA;For shell I use ZSH with OhMyZSH installed. For terminal I use iTerm2/Terminal.app but I have also tried Alacritty/kitty on occasion.&#xA;My dotfiles are here&#xA;Desktop Apps For web browser - I usually use Safari - unless the website doesn&amp;rsquo;t work or I need better DevTools then I&amp;rsquo;ll use Firefox or Chrome.</description>
+    </item>
+  </channel>
+</rss>
