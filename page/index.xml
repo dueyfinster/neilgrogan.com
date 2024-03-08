@@ -8,5 +8,5 @@ Linkedin Hackerrank PGP Info Key ID: 7FOF2D89 PGP Fingerpint: F12E 451D 87D9 4EE
 AWS Lambda Web Scraper with Slack Notifications A function on Amazon Web Services Lambda platform to scrape useful information from a website and post the results to Slack. Can be used to get a restaurant menu, bus times, sports scores or anything you can think of in to Slack!
 AWS Lambda PDF to Text A function on Amazon Web Services Lambda platform to transform a PDF file in to the text it contains.</description></item><item><title>Uses</title><link>/uses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/uses/</guid><description>Editor + Terminal For Editor I use VS Code and Vim/Neovim. I also use Emacs for the excellent org-mode.
 For shell I use ZSH with OhMyZSH installed. For terminal I use iTerm2/Terminal.app but I have also tried Alacritty/kitty on occasion.
-My dotfiles are herei
+My dotfiles are here
 Desktop Apps For web browser - I usually use Safari - unless the website doesn&amp;rsquo;t work or I need better DevTools then I&amp;rsquo;ll use Firefox or Chrome.</description></item></channel></rss>
