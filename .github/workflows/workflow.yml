@@ -35,10 +35,18 @@ jobs:
         with:
           ref: 'gh-pages'
           fetch-depth: 2
-      - name: Deploy-FTP
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      #- name: Deploy-FTP
+        #uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        #with:
+          #ftp-server: ${{ secrets.FTP_SERVER }}
+          #ftp-username: ${{ secrets.FTP_USERNAME }}
+          #ftp-password: ${{ secrets.FTP_PASSWORD }}
+          #local-dir: .
+      - name: Deploy-WebDav
+        uses: bxb100/action-upload-webdav@v1
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: .
+          webdav_address: ${{secrets.WEBDAV_ADDRESS}}
+          webdav_username: ${{secrets.WEBDAV_USERNAME}}
+          webdav_password: ${{secrets.WEBDAV_PASSWORD}}
+          webdav_upload_path: ${{secrets.WEBDAV_PATH}}
+          files: "./public"
