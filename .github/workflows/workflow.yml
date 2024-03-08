@@ -36,4 +36,4 @@ jobs:
           webdav_username: ${{secrets.WEBDAV_USERNAME}}
           webdav_password: ${{secrets.WEBDAV_PASSWORD}}
           webdav_upload_path: ${{secrets.WEBDAV_PATH}}
-          files: "./public"
+          files: "./public/**"
