@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy Gituhyb Pages
+      - name: Deploy Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -37,3 +37,4 @@ jobs:
           webdav_password: ${{secrets.WEBDAV_PASSWORD}}
           webdav_upload_path: ${{secrets.WEBDAV_PATH}}
           files: "./public/**"
+          keep_structure: true
