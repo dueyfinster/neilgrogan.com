@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: '0'   # Fetch all history for .GitInfo and .Lastmod
@@ -23,25 +23,12 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
+      - name: Deploy Gituhyb Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-  upload:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2.1.0
-        with:
-          ref: 'gh-pages'
-          fetch-depth: 2
-      #- name: Deploy-FTP
-        #uses: SamKirkland/FTP-Deploy-Action@3.1.1
-        #with:
-          #ftp-server: ${{ secrets.FTP_SERVER }}
-          #ftp-username: ${{ secrets.FTP_USERNAME }}
-          #ftp-password: ${{ secrets.FTP_PASSWORD }}
-          #local-dir: .
+        
       - name: Deploy-WebDav
         uses: bxb100/action-upload-webdav@v1
         with:
