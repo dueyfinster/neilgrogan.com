@@ -1,47 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Networking on Neil Grogan</title>
+    <title>Networking, on Neil Grogan</title>
     <link>/tags/networking/</link>
-    <description>Recent content in Networking on Neil Grogan</description>
+    <description>Recent content in Networking, on Neil Grogan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Logging from Ubuntu to Synology</title>
-      <link>/synlog/</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>/synlog/</guid>
-      <description>I recently had a bug in the snap version of Docker.&#xA;How slow is LiveReload? Not as much as you think!</description>
+      <title>Ubuntu 20.04 Vagrant with Packer</title>
+      <link>/vagrant-ubuntu-fossa/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>/vagrant-ubuntu-fossa/</guid>
+      <description>Ubuntu have recently released the new 20.04 LTS codenamed &amp;ldquo;Focal Fossa&amp;rdquo;. I&amp;rsquo;d also recently seen a tool that piqued my interest, Hashicorp Packer. Packer builds machine images that can be deployed to a cloud or as a virtual machine, or just even a plain disk image. You can even generate many images at once, really simplfying deployment. Very handy if you wanted to create virtual machines for a cluster for example, with a similar but slightly different configuration.</description>
     </item>
     <item>
-      <title>Ubiquiti Unifi with Sonos on a separate VLAN</title>
-      <link>/ubnt-sonos/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>/ubnt-sonos/</guid>
-      <description>Update 2023: these instructions are out-of-date for the latest Unifi controller software versions. It&amp;#39;s preserved here as written for those who still have older versions. This post uses a file called gateway.config.json and Unifi now say:&#xA;This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.&#xA;So I take that to mean use of this file is deprecated and it should be possible to do this via the administration webpage.</description>
-    </item>
-    <item>
-      <title>Irish SOPA Law: An Overview</title>
-      <link>/irish-sopa-law-an-overview/</link>
-      <pubDate>Wed, 25 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/irish-sopa-law-an-overview/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reflection on 9-11</title>
-      <link>/nerf-war/</link>
-      <pubDate>Mon, 12 Sep 2011 00:00:00 +0000</pubDate>
-      <guid>/nerf-war/</guid>
-      <description>It&amp;rsquo;s been 10 years since the anniversary of 9/11 and much of the world has changed a lot in that period. We&amp;rsquo;ve had full body scanners at airports, marshalls on flights, bombs hidden in toner cartridges and two wars. I reflected on this and remembered two really good articles I&amp;rsquo;ll share here on the topic. Hopefully we&amp;rsquo;ve changed for the better.&#xA;Yesterday I finally wrote something that&amp;rsquo;s been bothering me for about ten years: The fact that Al Qaeda can&amp;rsquo;t be as big and bad as it&amp;rsquo;s made out to be, because its whole design violates every rule of guerrilla organisation.</description>
-    </item>
-    <item>
-      <title>Thoughts on IPv6</title>
-      <link>/thoughts-on-ipv6/</link>
-      <pubDate>Wed, 09 Feb 2011 00:00:00 +0000</pubDate>
-      <guid>/thoughts-on-ipv6/</guid>
-      <description>A multitude of websites have been reporting the impending doom of ipv4 exhaustion, which is going to happen soon. All the top level address&amp;rsquo; will be gone, but the regional registries will still have stocks of address&amp;rsquo; in to 2011. As a user of ipv6, I thought I could share sone thoughts/insights on the events ahead&amp;hellip;&#xA;Below is a very good video which one of my favourite tech shows, Hak5 made with an IPv6 Consultant, Joe Klein.</description>
+      <title>Ubiquiti Home Network</title>
+      <link>/ubnt/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/ubnt/</guid>
+      <description>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do business Wifi, all the way up to covering stadiums. I first heard about them from Troy Hunt and then again from Marco Arment on Accidental Tech Podcast. Ubiquiti are popular in prosumer space - for people serious about good Wifi.&#xA;So far it&amp;rsquo;s been an excellent experience and I&amp;rsquo;d highly recommend it. After setting it up (there is a few moving pieces) it has been running without any intervention from me.</description>
     </item>
   </channel>
 </rss>
