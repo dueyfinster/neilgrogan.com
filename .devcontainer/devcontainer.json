@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.209.6/containers/elixir-phoenix-postgres
+{
+  "name": "neilgrogan.com",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/hugo:1": {
+		"version":"latest",
+		"extended": "true"
+		},
+	}, 
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [1313],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "hugo -D -E -F",
+
+  // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "vscode"
+}
