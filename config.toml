@@ -17,6 +17,7 @@ googleAnalytics = ""
   twitter = "dueyfinster"
   github = "dueyfinster"
   linkedin = "neil-grogan"
+  mastodon = "@dueyfinster@mastodon.ie"
 
 [params]
   enableLunrSearch = true
