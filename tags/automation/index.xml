@@ -6,14 +6,14 @@
     <description>Recent content in Automation on Neil Grogan</description>
     <generator>Hugo 0.125.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HomeAssistant Yellow Review</title>
       <link>/ha-yellow-review/</link>
-      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate>
       <guid>/ha-yellow-review/</guid>
-      <description>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&amp;rsquo;re not familiar with HomeAssistant - it&amp;rsquo;s a one-stop-shop to control all your smart lights, plugs, sensors and anything else in your smart home. HomeAssistant is the software part and as it&amp;rsquo;s open source you can freely install it on any computer you have. In fact many people install HomeAssistant on a Raspberry Pi.&#xA;Yellow is their own custom hardware with a built in chip for Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out.</description>
+      <description>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&amp;rsquo;re not familiar with HomeAssistant - it&amp;rsquo;s a one-stop-shop to control all your smart lights, plugs, sensors and anything else in your smart home. HomeAssistant is the software part and as it&amp;rsquo;s open source you can freely install it on any computer you have. In fact many people install HomeAssistant on a Raspberry Pi.&#xA;HomeAssistant Yellow is their own custom hardware with a built in chip for Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out.</description>
     </item>
     <item>
       <title>Convert Bank Transactions XLS to CSV in Python</title>
