@@ -42,7 +42,7 @@ Work Desk
 - Unbranded Sit/Stand Desk
 - [Herman Miller Aeron Chair](https://usedaeronireland.ie/)
 - Dell 4K Web Cam
-- Blue Snowball Mic
+- [Blue Snowball Mic](https://www.amazon.co.uk/Blue-Microphones-Snowball-iCE-Microphone/dp/B014PYGTUQ/)
 
 ## On the go
 On my phone (iPhone 15 Pro) I use:
