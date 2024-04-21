@@ -36,11 +36,11 @@ Work Desk
 - Dell Dock
 - Macbook Air M2
 - [Logitech MX Master 3](https://www.amazon.co.uk/Logitech-Ultrafast-Scrolling-Ergonomic-Customisation/dp/B07W6JG6Z7/)
-- Logitech Laptop style keyboard (Mac edition)
-- Monitor and Laptop VESA mount arms
-- Elgato Streamdeck (I mostly automate Microsoft Teams/HomeAssistant)
+- [Logitech Laptop style keyboard (Mac edition)](https://www.amazon.co.uk/gp/product/B00B73BZJO/)
+- [Monitor and Laptop VESA mount arms](https://www.amazon.co.uk/gp/product/B08R3MBSKP/)
+- [Elgato Streamdeck](https://www.amazon.co.uk/Elgato-Stream-Deck-Controller-customizable/dp/B06W2KLM3S) (I mostly automate Microsoft Teams/HomeAssistant)
 - Unbranded Sit/Stand Desk
-- Herman Miller Aeron Chair
+- [Herman Miller Aeron Chair](https://usedaeronireland.ie/)
 - Dell 4K Web Cam
 - Blue Snowball Mic
 
