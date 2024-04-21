@@ -23,9 +23,9 @@ I host my files on a Synology NAS and back it up to Rsync.net - with mirrors to 
 I have separate work and personal desks in my office.
 
 Personal Desk:
-- 5K iMac Pro
-- Ikea Bekant Sit/Stand Desk
-- Logitech MX Master 3
+- [5K iMac Pro](https://support.apple.com/en-ie/111995)
+- [Ikea Bekant Sit/Stand Desk](https://www.ikea.com/ie/en/p/bekant-desk-sit-stand-white-stained-oak-veneer-white-s19282085/)
+- [Logitech MX Master 3](https://www.amazon.co.uk/Logitech-Ultrafast-Scrolling-Ergonomic-Customisation/dp/B07W6JG6Z7/)
 - Apple Full size keyboard in space grey
 - Apple Trackpad
 - Unbranded office chair
@@ -35,7 +35,7 @@ Work Desk
 - Dell Monitor
 - Dell Dock
 - Macbook Air M2
-- Logitech MX Master 3
+- [Logitech MX Master 3](https://www.amazon.co.uk/Logitech-Ultrafast-Scrolling-Ergonomic-Customisation/dp/B07W6JG6Z7/)
 - Logitech Laptop style keyboard (Mac edition)
 - Monitor and Laptop VESA mount arms
 - Elgato Streamdeck (I mostly automate Microsoft Teams/HomeAssistant)
