@@ -4,3 +4,4 @@ public/
 .hugo*
 resources/_gen
 themes/
+.direnv/
