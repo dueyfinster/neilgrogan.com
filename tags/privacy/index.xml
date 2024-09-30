@@ -4,7 +4,7 @@
     <title>Privacy on Neil Grogan</title>
     <link>/tags/privacy/</link>
     <description>Recent content in Privacy on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Mar 2013 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,21 @@
       <link>/tor/</link>
       <pubDate>Sat, 09 Mar 2013 00:00:00 +0000</pubDate>
       <guid>/tor/</guid>
-      <description>If you haven&amp;rsquo;t heard of Tor, it is alternative internet - one with privay in mind. I&amp;rsquo;ve recently started to watch a lot of technical talks online. The two main guys behind Tor are some of the best speakers I&amp;rsquo;ve seen. They describe in great detail how open source works and the myriad of open source projects around Tor in this talk:&#xA;and in an older talk they describe how countries have tried to censor Tor and how they have combatted some censorship (interesting for the technical measures deployed):</description>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t heard of Tor, it is alternative internet - one with&#xA;privay in mind. I&amp;rsquo;ve recently started to watch a lot of technical&#xA;talks online. The two main guys behind Tor are some of the best&#xA;speakers I&amp;rsquo;ve seen. They describe in great detail how open source&#xA;works and the myriad of open source projects around Tor in this talk:&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/bmj2w9HPPaE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;and in an older talk they describe how countries have tried to censor&#xA;Tor and how they have combatted some censorship (interesting for the&#xA;technical measures deployed):&lt;/p&gt;</description>
     </item>
     <item>
       <title>Irish SOPA Law: An Overview</title>
       <link>/irish-sopa-law-an-overview/</link>
       <pubDate>Wed, 25 Jan 2012 00:00:00 +0000</pubDate>
       <guid>/irish-sopa-law-an-overview/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;img src=&#34;../../files/2012/01/sopa.jpg&#34; alt=&#34;Irish SOPA Illustration&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tor helps Privacy</title>
       <link>/tor-helps-privacy/</link>
       <pubDate>Sat, 10 Mar 2007 00:00:00 +0000</pubDate>
       <guid>/tor-helps-privacy/</guid>
-      <description>Tor, (or The Onion Router) is a service which connects people all over the world with one aim: privacy. Tor protects from traffic analysis, basically where you have been. Benn to you Banks website? Feel like buying something off Amazon or Ebay? Your behaviour online is by no means private, you hand over your numerical address, browser details, country, city, versions of which plugins you use, where you came from, just to name a few.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://img89.imageshack.us/my.php?image=efftorlogo400x282kw9.jpg&#34; title=&#34;Tor Logo&#34;&gt;&lt;img src=&#34;http://img89.imageshack.us/img89/3386/efftorlogo400x282kw9.jpg&#34; alt=&#34;Tor&#xA;Logo&#34; title=&#34;Tor Logo&#34;&gt;&lt;/a&gt;Tor,&#xA;(or The Onion Router) is a service which connects people all over the&#xA;world with one aim: privacy. Tor protects from traffic analysis,&#xA;basically where you have been. Benn to you Banks website? Feel like&#xA;buying something off Amazon or Ebay? Your behaviour online is by no&#xA;means private, you hand over your numerical address, browser details,&#xA;country, city, versions of which plugins you use, where you came from,&#xA;just to name a few. You may have seen on sites something to the effect&#xA;of &amp;ldquo;Welcome Google user!&amp;rdquo;, that website knows exactly what you typed to&#xA;get to it. Tor routes your online activity through different computers,&#xA;for example mine went through an educational institution in the US and&#xA;an Internet Service Provider in the Netherlands.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Emacs on Neil Grogan</title>
     <link>/tags/emacs/</link>
     <description>Recent content in Emacs on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>/org-mode/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       <guid>/org-mode/</guid>
-      <description>Since hearing about org-mode on the web many years ago, I always meant to give it a spin. I only ever found one two problems:&#xA;Time - Life eh? It&amp;#39;s a mode of Emacs for which I&amp;#39;d also have to learn (again time) So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my vim muscle memory over the years.</description>
+      <description>&lt;p&gt;&#xA;Since hearing about &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; on the web many years ago, I always meant to give it a spin. I only ever found &lt;del&gt;one&lt;/del&gt; two problems:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Time - Life eh?&lt;/li&gt;&#xA;&lt;li&gt;It&amp;#39;s a mode of &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; for which I&amp;#39;d also have to learn (again time)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my &lt;a href=&#34;https://www.vim.org&#34;&gt;vim&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Muscle_memory&#34;&gt;muscle memory&lt;/a&gt; over the years. The tough part usually is finding good documentation that is both easy to read and follow.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

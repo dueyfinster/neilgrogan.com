@@ -4,7 +4,7 @@
     <title>Project on Neil Grogan</title>
     <link>/tags/project/</link>
     <description>Recent content in Project on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jan 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>/csthesis/</link>
       <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
       <guid>/csthesis/</guid>
-      <description>As part of my undergradute thesis, I found a template (for LyX) to ease the pain of formatting a thesis in LaTeX. Making it look just right to me was very important. If your are writing a thesis, perhaps you feel the same way? If so, read on&amp;hellip;&#xA;While doing my first undergraduate thesis in Computer Science, I found a template used for a Computer Science thesis in NUI Maynooth (a university in Ireland).</description>
+      <description>&lt;p&gt;As part of my undergradute thesis, I found a template (for LyX) to ease the pain of formatting a thesis in LaTeX. Making it look just right to me was very important. If your are writing a thesis, perhaps you feel the same way? If so, read on&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;While doing my first undergraduate thesis in Computer Science, I found a template used for a Computer Science thesis in NUI Maynooth (a university in Ireland). What attracted me was simple: it was battle tested and easily customisable. That was 2011 and since then I&amp;rsquo;d pretty much forgotten about it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GeoCampus</title>
       <link>/geocampus/</link>
       <pubDate>Mon, 09 May 2011 00:00:00 +0000</pubDate>
       <guid>/geocampus/</guid>
-      <description>For my final year project, I have done a web application on the concept of replacing traditional web applications. I picked an area I was deeply interested in, smart phones. I am an avid iPhone user and I have bought Android phones also, they are great devices I can&amp;rsquo;t imagine not having now that they are here. As part of my thesis I touched on the old way to develop apps, using Symbian C++ or J2ME and we&amp;rsquo;ve come a long, long way since then.</description>
+      <description>&lt;p&gt;For my final year project, I have done a web application on the&#xA;concept of replacing traditional web applications. I picked an area&#xA;I  was deeply interested in, smart phones. I am an avid iPhone user&#xA;and I  have bought Android phones also, they are great devices I can&amp;rsquo;t&#xA;imagine  not having now that they are here. As part of my thesis I&#xA;touched on the  old way to develop apps, using Symbian C++ or J2ME and&#xA;we&amp;rsquo;ve come a  long, long way since then.&lt;br /&gt;&lt;br /&gt;For those interested,&#xA;I will  publish copy of my thesis after November 2011. I won&amp;rsquo;t publish&#xA;it here  just yet, as the examiners have yet to pour over the contents&#xA;and grade it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Web Multimedia Project 1</title>
       <link>/web-multimedia-project-1/</link>
       <pubDate>Sun, 16 Nov 2008 00:00:00 +0000</pubDate>
       <guid>/web-multimedia-project-1/</guid>
-      <description>As part of Computer Science you do a couple of general modules which are general in nature about computing; but I think that just reflects the broad use of IT in every part of society today. As things go digital or are created digitally; understanding of this concept is vital; that is where Web Multimedia comes in. For my first project of this second year; I had to do a movie made of stills with custom sound effects.</description>
+      <description>&lt;p&gt;As part of Computer&#xA;Science you do a couple of general modules which are general in nature&#xA;about computing; but I think that just reflects the broad use of IT in&#xA;every part of society today. As things go digital or are created&#xA;digitally; understanding of this concept is vital; that is where Web&#xA;Multimedia comes in. For my first project of this second year; I had to&#xA;do a movie made of stills with custom sound effects. Restrictions on&#xA;sources of images and sounds (very high percentage had to be self made).&#xA;Here it is:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ultimate Games Disc</title>
       <link>/ultimate-games-disc/</link>
       <pubDate>Mon, 16 Apr 2007 00:00:00 +0000</pubDate>
       <guid>/ultimate-games-disc/</guid>
-      <description>I got inspiration over this past Easter holidays, being bored, I gave Linux Gaming a shot. I am not much of a gamer myself and most websites aren&amp;rsquo;t very helpful or have too small a focus (only shoot-em-ups, or only certain Linux distros etc.). Inspired by the fine folks at OpenSourceMac.org and OpenSourceWindows.org, I announce my own project: Ultimate Games Disc. UGD is a project I think I can make very successful.</description>
+      <description>&lt;p&gt;I got inspiration over this past Easter holidays, being bored, I gave&#xA;Linux Gaming a shot. I am not much of a gamer myself and most websites&#xA;aren&amp;rsquo;t very helpful or have too small a focus (only shoot-em-ups, or&#xA;only certain Linux distros etc.). Inspired by the fine folks at&#xA;OpenSourceMac.org and OpenSourceWindows.org, I announce my own project:&#xA;Ultimate Games Disc. UGD is a project I think I can make very&#xA;successful. My aims are as follows:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

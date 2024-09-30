@@ -4,7 +4,7 @@
     <title>Diy on Neil Grogan</title>
     <link>/tags/diy/</link>
     <description>Recent content in Diy on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Sep 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/diy/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>/linux-freesat-saorview/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
       <guid>/linux-freesat-saorview/</guid>
-      <description>I recently replaced a rusty satellite dish and faulty LNB (it has been in use in the house I moved in to for 10+ years I&amp;rsquo;d guess) and decided to try install one myself. Here in Ireland, the two main broadcast methods of receiving TV are satellite (Freesat / Sky) and terrestrial aerial (Saorview).&#xA;An issue I have one larger sitting room TV and one small living room TV. I couldn&amp;rsquo;t get both to be Samsung (out of stock on smallest sizes - which seem to be going out of fashion).</description>
+      <description>&lt;p&gt;I recently replaced a rusty satellite dish and faulty LNB (it has been in use in the house I moved in to for 10+ years I&amp;rsquo;d guess) and decided to try install one myself. Here in Ireland, the two main broadcast methods of receiving TV are satellite (&lt;a href=&#34;https://www.freesat.co.uk/&#34;&gt;Freesat&lt;/a&gt; / &lt;a href=&#34;https://www.sky.com/ie/&#34;&gt;Sky&lt;/a&gt;) and terrestrial aerial (&lt;a href=&#34;https://www.saorview.ie/&#34;&gt;Saorview&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;An issue I have one larger sitting room TV and one small living room TV. I couldn&amp;rsquo;t get both to be Samsung (out of stock on smallest sizes - which seem to be going out of fashion). So both TVs had very different methods of switching between satellite and aerial connections. I&amp;rsquo;m not sure if it is a hardware limitation (they make switching tuners slow to hide this), a licensing issue (broadcasters pay to be on the &lt;a href=&#34;https://www.freesat.co.uk/&#34;&gt;Freesat&lt;/a&gt; EPG for example) or a software issue (seems least likely). The fact multiple TV brands (in my case Phillips/Samsung) make it this clunky - makes me think it&amp;rsquo;s a licensing issue. I wanted to solve this by using an external box and having one mental model for navigating broadcast TV.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

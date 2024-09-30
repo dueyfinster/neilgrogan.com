@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.125.2">
+	<meta name="generator" content="Hugo 0.135.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,13 +32,10 @@
     
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
- 
+
     
     <link rel="alternate" type="application/rss+xml" href="./index.xml" title="Neil Grogan" />
-    
-  
-
-</head>
+    </head>
 
     <body>
         
@@ -142,8 +139,8 @@
                 </a>
             </h2>
             <div>
-                <p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart lights, plugs, sensors and anything else in your smart home. HomeAssistant is the software part and as it&rsquo;s open source you can freely install it on any computer you have. In fact many people install HomeAssistant on a Raspberry Pi.
-HomeAssistant Yellow is their own custom hardware with a built in chip for Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out.</p>
+                <p><p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart lights, plugs, sensors and anything else in your smart home. HomeAssistant is the software part and as it&rsquo;s open source you can freely install it on any computer you have. In fact many people install HomeAssistant on a Raspberry Pi.</p>
+<p>HomeAssistant Yellow is their own custom hardware with a built in chip for Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It takes a Raspberry Pi compute module 4 as its &ldquo;brains&rdquo;. This technically means it should - emphasis on <em>should</em> be upgradeable if a Raspberry Pi compute module 5 that is compatible with CM4 socket is produced.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -168,8 +165,12 @@ HomeAssistant Yellow is their own custom hardware with a built in chip for Zigbe
                 </a>
             </h2>
             <div>
-                <p>I&rsquo;ve written previously on importing transactions to hledger/ledger from KBC bank in JavaScript and PTSB bank in Python. I took different approaches to each:
-For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV For PTSB, the script automatted logging in, get the transaction table and save locally as CSV Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code.</p>
+                <p><p>I&rsquo;ve written previously on importing transactions to hledger/<a href="./ledger">ledger</a> from <a href="./kbc-tx-js">KBC</a> bank in JavaScript and <a href="./bank-tx-py">PTSB</a> bank in Python. I took different approaches to each:</p>
+<ul>
+<li>For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV</li>
+<li>For PTSB, the script automatted logging in, get the transaction table and save locally as CSV</li>
+</ul>
+<p>Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code. The KBC/JavaScript approach was a bit more robust in that it would just search for rows on a website and download as CSV.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -198,8 +199,8 @@ For KBC, you needed to log in and run Javascript which scrape the transaction ta
                 </a>
             </h2>
             <div>
-                <p>I recently replaced a rusty satellite dish and faulty LNB (it has been in use in the house I moved in to for 10+ years I&rsquo;d guess) and decided to try install one myself. Here in Ireland, the two main broadcast methods of receiving TV are satellite (Freesat / Sky) and terrestrial aerial (Saorview).
-An issue I have one larger sitting room TV and one small living room TV. I couldn&rsquo;t get both to be Samsung (out of stock on smallest sizes - which seem to be going out of fashion).</p>
+                <p><p>I recently replaced a rusty satellite dish and faulty LNB (it has been in use in the house I moved in to for 10+ years I&rsquo;d guess) and decided to try install one myself. Here in Ireland, the two main broadcast methods of receiving TV are satellite (<a href="https://www.freesat.co.uk/">Freesat</a> / <a href="https://www.sky.com/ie/">Sky</a>) and terrestrial aerial (<a href="https://www.saorview.ie/">Saorview</a>).</p>
+<p>An issue I have one larger sitting room TV and one small living room TV. I couldn&rsquo;t get both to be Samsung (out of stock on smallest sizes - which seem to be going out of fashion). So both TVs had very different methods of switching between satellite and aerial connections. I&rsquo;m not sure if it is a hardware limitation (they make switching tuners slow to hide this), a licensing issue (broadcasters pay to be on the <a href="https://www.freesat.co.uk/">Freesat</a> EPG for example) or a software issue (seems least likely). The fact multiple TV brands (in my case Phillips/Samsung) make it this clunky - makes me think it&rsquo;s a licensing issue. I wanted to solve this by using an external box and having one mental model for navigating broadcast TV.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -224,8 +225,8 @@ An issue I have one larger sitting room TV and one small living room TV. I could
                 </a>
             </h2>
             <div>
-                <p>I recently had a bug in the snap version of Docker.
-How slow is LiveReload? Not as much as you think!</p>
+                <p><p>I recently had a bug in the <a href="https://ubuntu.com">snap</a> version of <a href="https://getdocker.com">Docker</a>.</p>
+<p>How slow is LiveReload? Not as much as you think!</p></p>
                 
             </div>
             <div class="post-footer">
@@ -248,9 +249,13 @@ How slow is LiveReload? Not as much as you think!</p>
                 </a>
             </h2>
             <div>
-                <p>Update 2023: these instructions are out-of-date for the latest Unifi controller software versions. It&#39;s preserved here as written for those who still have older versions. This post uses a file called gateway.config.json and Unifi now say:
-This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.
-So I take that to mean use of this file is deprecated and it should be possible to do this via the administration webpage.</p>
+                <p><p>
+<strong>Update 2023</strong>: <span style="text-decoration: underline;">these instructions are <strong>out-of-date</strong> for the latest Unifi controller software versions</span>. It&#39;s preserved here as written for those who still have older versions. This post uses a file called <code class="verbatim">gateway.config.json</code> and <a href="https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json">Unifi now say</a>:</p>
+<blockquote>
+<p>This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.</p>
+</blockquote>
+<p>
+So I take that to mean use of this file is deprecated and it should be possible to do this via the administration webpage.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -275,7 +280,12 @@ So I take that to mean use of this file is deprecated and it should be possible 
                 </a>
             </h2>
             <div>
-                <p>Ubuntu have recently released the new 20.04 LTS codenamed &ldquo;Focal Fossa&rdquo;. I&rsquo;d also recently seen a tool that piqued my interest, Hashicorp Packer. Packer builds machine images that can be deployed to a cloud or as a virtual machine, or just even a plain disk image. You can even generate many images at once, really simplfying deployment. Very handy if you wanted to create virtual machines for a cluster for example, with a similar but slightly different configuration.</p>
+                <p><p>Ubuntu have recently released the new <a href="http://cdimage.ubuntu.com/ubuntu/releases/focal/release/">20.04 LTS codenamed &ldquo;Focal Fossa&rdquo;</a>.
+I&rsquo;d also recently seen a tool that piqued my interest, Hashicorp <a href="https://packer.io">Packer</a>. Packer
+builds machine images that can be deployed to a cloud or as a virtual machine, or
+just even a plain disk image. You can even generate many images at once, really
+simplfying deployment. Very handy if you wanted to create virtual machines for a
+cluster for example, with a similar but slightly different configuration.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -300,8 +310,13 @@ So I take that to mean use of this file is deprecated and it should be possible 
                 </a>
             </h2>
             <div>
-                <p>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do business Wifi, all the way up to covering stadiums. I first heard about them from Troy Hunt and then again from Marco Arment on Accidental Tech Podcast. Ubiquiti are popular in prosumer space - for people serious about good Wifi.
-So far it&rsquo;s been an excellent experience and I&rsquo;d highly recommend it. After setting it up (there is a few moving pieces) it has been running without any intervention from me.</p>
+                <p><p>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do business Wifi,
+all the way up to covering stadiums. I first heard about them from <a href="https://www.troyhunt.com/ubiquiti-all-the-things-how-i-finally-fixed-my-dodgy-wifi/">Troy Hunt</a> and
+then again from <a href="https://marco.org">Marco Arment</a> on <a href="https://atp.fm">Accidental Tech Podcast</a>. Ubiquiti are popular in
+prosumer space - for people serious about good <a href="https://en.wikipedia.org/wiki/Wi-Fi">Wifi</a>.</p>
+<p>So far it&rsquo;s been an excellent experience and I&rsquo;d highly recommend it. After setting it up (there is
+a few moving pieces) it has been running without any intervention from me. Being a professional
+product, it&rsquo;s not just a home router (with inbuilt wifi), there is a few more pieces you need to buy:</p></p>
                 
             </div>
             <div class="post-footer">
@@ -326,7 +341,7 @@ So far it&rsquo;s been an excellent experience and I&rsquo;d highly recommend it
                 </a>
             </h2>
             <div>
-                <p>In a previous post, I mentioned importing transactions using ledger/hledger and plain text accounting. As my former bank PTSB recently raised their fees, I decided to move to KBC. I was excited to see, as part of the open payments directive, they have a nice developer portal. I reached out to KBC&rsquo;s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!</p>
+                <p><p>In a previous post, I mentioned <a href="./bank-tx-py">importing transactions</a> using <a href="./ledger">ledger</a>/<a href="https://hledger.org/">hledger</a> and plain text accounting. As my former bank <a href="https://www.permanenttsb.ie/">PTSB</a> recently raised their fees, I decided to move to <a href="https://www.kbc.ie/">KBC</a>. I was excited to see, as part of the open payments directive, they have a nice <a href="https://www.kbc.ie/psd2-developer-portal/home">developer portal</a>. I reached out to KBC&rsquo;s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!</p></p>
                 
             </div>
             <div class="post-footer">
@@ -355,8 +370,14 @@ So far it&rsquo;s been an excellent experience and I&rsquo;d highly recommend it
                 </a>
             </h2>
             <div>
-                <p>I recently started using PiHole to block ads on my home network. As the name suggests, you install it on a raspberry pi. I left it in situ for about a month, until I decided I wanted to swap out the pi, but keep PiHole.
-The natural solution to this, is to use a docker container. Rather helpfully, there is a publicly available docker build of PiHole. Simple, right? Well my home network is also IPv6, thus the DNS on the raspberrypi should be also.</p>
+                <p><p>I recently started using <a href="https://pi-hole.net/">PiHole</a> to block ads on my home network. As the name
+suggests, you install it on a <a href="https://raspberrypi.org/">raspberry pi</a>. I left it in situ for about a
+month, until I decided I wanted to swap out the pi, but keep PiHole.</p>
+<p>The natural solution to this, is to use a docker container. Rather helpfully,
+there is a publicly available <a href="https://github.com/pi-hole/docker-pi-hole">docker build of PiHole</a>. Simple,
+right? Well my home network is also IPv6, thus the <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> on the raspberrypi
+should be also. The problem is, <a href="https://docs.docker.com/v17.09/engine/userguide/networking/default_network/ipv6/">Docker has support for IPv6</a>, but it&rsquo;s
+not very straightforward with <a href="https://docs.docker.com/compose/">Docker Compose</a>.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -379,8 +400,13 @@ The natural solution to this, is to use a docker container. Rather helpfully, th
                 </a>
             </h2>
             <div>
-                <p>Since hearing about org-mode on the web many years ago, I always meant to give it a spin. I only ever found one two problems:
-Time - Life eh? It&#39;s a mode of Emacs for which I&#39;d also have to learn (again time) So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my vim muscle memory over the years.</p>
+                <p><p>
+Since hearing about <a href="https://orgmode.org">org-mode</a> on the web many years ago, I always meant to give it a spin. I only ever found <del>one</del> two problems:</p>
+<ol>
+<li>Time - Life eh?</li>
+<li>It&#39;s a mode of <a href="https://www.gnu.org/software/emacs/">Emacs</a> for which I&#39;d also have to learn (again time)</li>
+</ol>
+<p>So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my <a href="https://www.vim.org">vim</a> <a href="https://en.wikipedia.org/wiki/Muscle_memory">muscle memory</a> over the years. The tough part usually is finding good documentation that is both easy to read and follow.</p></p>
                 
             </div>
             <div class="post-footer">

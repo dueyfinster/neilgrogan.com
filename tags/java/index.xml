@@ -4,7 +4,7 @@
     <title>Java on Neil Grogan</title>
     <link>/tags/java/</link>
     <description>Recent content in Java on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Feb 2012 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>/very-simple-java-twitter-bot-twitter4j/</link>
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       <guid>/very-simple-java-twitter-bot-twitter4j/</guid>
-      <description>Below is code for the start of a Twitter bot I am going to build in Java. It&amp;rsquo;s the most basic way of getting Oauth working (with any account, not just your developer account) and it shows your timeline and can update your status - that&amp;rsquo;s it for now. The neat thing is it uses Java&amp;rsquo;s awesome serialisation, so you only should have to authorise your twitter account once!&#xA;What you will need: Twitter4j Libraries Oauth Consumer and Secret Key off twitter That is it!</description>
+      <description>&lt;p&gt;Below is code for the start of a Twitter bot I am going to build in Java.&#xA;It&amp;rsquo;s the most basic way of getting Oauth working (with any account, not&#xA;just your developer account) and it shows your timeline and can update&#xA;your status - that&amp;rsquo;s it for now. The neat thing is it uses Java&amp;rsquo;s awesome&#xA;serialisation, so you only should have to authorise your twitter account once!&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-you-will-need&#34;&gt;What you will need:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Twitter4j Libraries&lt;/li&gt;&#xA;&lt;li&gt;Oauth Consumer and Secret Key off twitter&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;That is it!&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;script src=&#34;https://gist.github.com/2469810.js&#34;&gt; &lt;/script&gt;&#xA;&lt;h3 id=&#34;what-the-code-does&#34;&gt;What the code does:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Once only:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

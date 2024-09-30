@@ -4,7 +4,7 @@
     <title>Video on Neil Grogan</title>
     <link>/tags/video/</link>
     <description>Recent content in Video on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Apr 2012 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/video/index.xml" rel="self" type="application/rss+xml" />
@@ -13,56 +13,56 @@
       <link>/record-your-terminal-session/</link>
       <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
       <guid>/record-your-terminal-session/</guid>
-      <description>As I&amp;rsquo;ve mentioned before1, I regularly watch technology podcasts and I&amp;rsquo;ve had a subscription to sites like Lynda.com. Between those and Youtube, I&amp;rsquo;ve watched an awful lot of technology how-to videos and 90% of them are quite poor in terms of editing, sound and being coherent/properly scripted. Sometimes though it&amp;rsquo;s a joy to genuinely learn something new in a short, concise and to the point video.&#xA;This haktip is right up there with being among the best: short, concise, to the point and about a utility that will be super-useful to me.</description>
+      <description>&lt;p&gt;As I&amp;rsquo;ve mentioned before&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, I regularly watch technology podcasts and I&amp;rsquo;ve had a subscription to sites like &lt;a href=&#34;http://www.lynda.com&#34; title=&#34;Lynda Training Videos&#34;&gt;Lynda.com&lt;/a&gt;. Between those and Youtube, I&amp;rsquo;ve watched an awful lot of technology how-to videos and 90% of them are quite poor in terms of editing, sound and being coherent/properly scripted. Sometimes though it&amp;rsquo;s a joy to genuinely learn something new in a short, concise and to the point video.&lt;/p&gt;&#xA;&lt;iframe src=&#34;http://revision3.com/html5player-v12777?external=true&amp;width=555&amp;height=312&#34; width=&#34;555&#34; height=&#34;312&#34;  frameborder=&#34;0&#34; allowFullScreen=&#34;allowfullscreen&#34; &gt;&lt;/iframe&gt;&#xA;&lt;p&gt;This haktip is right up there with being among the best: short, concise, to the point and about a utility that will be super-useful to me. In work I&amp;rsquo;m in an agile software development team and I spend a lot of time on the command line. I &lt;strong&gt;like&lt;/strong&gt; the command line, but many don&amp;rsquo;t (personal preference I guess). As part of being agile, we produce a lot of video demos to stakeholders. Increasingly though the demos we produce are just as useful for the team - you can&amp;rsquo;t be every team member at once and this provides huge visibility to the team of progress. Our software is a Unix product, but we develop on Windows - so Camtasia is usually used - which is fine for GUI demos. This handy utility will be great to demo CLI stuff we do.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hollywood Tech</title>
       <link>/hollywood-tech/</link>
       <pubDate>Tue, 22 Nov 2011 00:00:00 +0000</pubDate>
       <guid>/hollywood-tech/</guid>
-      <description>I always enjoy watching shows like CSI for the over-the-top depiction of current technology. They obviously have people in know, it&amp;rsquo;s not like the script writers of major shows cannot get someone to consult them on technology (or maybe they don&amp;rsquo;t - sometimes I do wonder).&#xA;The video below is about IRC (Internet Relay Chat). They are correct it&amp;rsquo;s primitive (it&amp;rsquo;s all text) and hackers do actually use it (groups like Anonymous), but you can&amp;rsquo;t track someone to their living room using just an IP address!</description>
+      <description>&lt;p&gt;I always enjoy watching shows like CSI for the over-the-top depiction of current technology.&#xA;They obviously have people in know, it&amp;rsquo;s not like the script writers of major shows cannot&#xA;get someone to consult them on technology (or maybe they don&amp;rsquo;t - &lt;em&gt;sometimes I do wonder&lt;/em&gt;).&lt;/p&gt;&#xA;&lt;p&gt;The video below is about IRC (Internet Relay Chat). They are correct it&amp;rsquo;s primitive (it&amp;rsquo;s all text)&#xA;and hackers do actually use it (groups like Anonymous), but you can&amp;rsquo;t track someone to their&#xA;living room using just an IP address!! The montage about the boats trying to explain how&#xA;IRC works is off-the-wall insane crazy. &lt;strong&gt;WHY?!?&lt;/strong&gt;, alas:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tech Video Podcasts Worth Watching</title>
       <link>/tech-video-podcasts-worth-watching/</link>
       <pubDate>Wed, 13 Jul 2011 00:00:00 +0000</pubDate>
       <guid>/tech-video-podcasts-worth-watching/</guid>
-      <description>I try to listen to as many podcasts (netcasts?) as I can. They fall in to two categories: Irish radio and technology. Luckily, there is so much competition in this space it&amp;rsquo;s hard to pick the best - so quality is high!&#xA;Tech News Today (TNT) by the TWiT Network Regular and fills you right up to the minute with the latest tech news. Can replace RSS of many blogs (HUGE time saver) since lively debate of tech topics is the order of the day.</description>
+      <description>&lt;p&gt;I try to listen to as many &lt;strike&gt;podcasts&lt;/strike&gt; (&lt;em&gt;netcasts?&lt;/em&gt;) as I can.&#xA;They fall in to two categories: Irish radio and technology.  Luckily, there is&#xA;so much competition in this space it&amp;rsquo;s hard to pick the best - so quality is high!&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tech News Today (TNT)&lt;/strong&gt; by the TWiT Network&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/ZiOI7GbVhoY&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Regular and fills you right up to the minute with the latest tech news.&#xA;Can replace RSS of many blogs (HUGE time saver) since lively debate of&#xA;tech topics is the order of the day.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Paradox of Choice</title>
       <link>/paradox-of-choice/</link>
       <pubDate>Thu, 30 Jun 2011 00:00:00 +0000</pubDate>
       <guid>/paradox-of-choice/</guid>
-      <description>From one of the best TED talks I&amp;rsquo;ve seen:&#xA;I love the story about the jeans. I feel like that every time I buy shoes. Scary.</description>
+      <description>&lt;p&gt;From one of the best TED talks I&amp;rsquo;ve seen:&lt;/p&gt;&#xA;&lt;p&gt;&lt;object width=&#34;480&#34; height=&#34;390&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.youtube-nocookie.com/v/VO6XEQIsCoM?version=3&amp;amp;hl=en_US&amp;amp;rel=0&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowscriptaccess&#34; value=&#34;always&#34;&gt;&lt;/param&gt;&lt;embed src=&#34;http://www.youtube-nocookie.com/v/VO6XEQIsCoM?version=3&amp;amp;hl=en_US&amp;amp;rel=0&#34; type=&#34;application/x-shockwave-flash&#34; width=&#34;480&#34; height=&#34;390&#34; allowscriptaccess=&#34;always&#34; allowfullscreen=&#34;true&#34;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;&#xA;&lt;p&gt;I love the story about the jeans. I feel like that every time I buy shoes. Scary.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Accidental Sea - When Humans Disappear</title>
       <link>/accidental-sea-when-humans-disappear/</link>
       <pubDate>Wed, 29 Jun 2011 00:00:00 +0000</pubDate>
       <guid>/accidental-sea-when-humans-disappear/</guid>
-      <description>I&amp;rsquo;ve always wondered what would happen when we are gone - an inevitability judging by every known animal becoming extinct at some stage. Creepy but very interesting&amp;hellip;</description>
+      <description>&lt;p&gt;&lt;object width=&#34;640&#34; height=&#34;390&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.youtube-nocookie.com/v/otIU6Py4K_A?version=3&amp;amp;hl=en_US&amp;amp;rel=0&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowscriptaccess&#34; value=&#34;always&#34;&gt;&lt;/param&gt;&lt;embed src=&#34;http://www.youtube-nocookie.com/v/otIU6Py4K_A?version=3&amp;amp;hl=en_US&amp;amp;rel=0&#34; type=&#34;application/x-shockwave-flash&#34; width=&#34;500&#34; height=&#34;390&#34; allowscriptaccess=&#34;always&#34; allowfullscreen=&#34;true&#34;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve always wondered what would happen when we are gone - an inevitability&#xA;judging by every known animal becoming extinct at some stage.&#xA;Creepy but very interesting&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Video Blog!</title>
       <link>/first-video-blog/</link>
       <pubDate>Fri, 29 Oct 2010 00:00:00 +0000</pubDate>
       <guid>/first-video-blog/</guid>
-      <description>Below is my first attempt at video blogging. If I get used to it it may be easier to explain my point of view or give reviews! I have liked hiding behind words up until this point, so this is a new venture with my iPhone 4.&#xA;YouTube Video&#xA;Please don&amp;rsquo;t be too harsh on me!&#xA;Location:Dublin, Ireland</description>
+      <description>&lt;p&gt;Below is my first attempt at video&#xA;blogging. If I get used to it it may be easier to explain my point of&#xA;view or give reviews! I have liked hiding behind words up until this&#xA;point, so this is a new venture with my iPhone 4.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=PlC6hdErtkA&#34;&gt;&lt;img src=&#34;http://img.youtube.com/vi/PlC6hdErtkA/0.jpg&#34; alt=&#34;image&#34;&gt;YouTube&#xA;Video&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Please don&amp;rsquo;t be too harsh on me!&lt;br&gt;&#xA;Location:&lt;a href=&#34;http://maps.google.com/maps?q=Dublin,%20Ireland&amp;amp;z=10&#34;&gt;Dublin,&#xA;Ireland&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>WebM promises Open Web Video</title>
       <link>/webm-promises-open-web-video/</link>
       <pubDate>Sun, 30 May 2010 00:00:00 +0000</pubDate>
       <guid>/webm-promises-open-web-video/</guid>
-      <description>I&amp;rsquo;ve written about my desire for open web video before, and now it looks as if it&amp;rsquo;s finally going to happen. Lead by Google&amp;rsquo;s acquisition of On2 technologies, the VP8 codec has been renamed as &amp;ldquo;WebM&amp;rdquo; and open sourced. Vorbis will be the audio. Matroska the container for the new format. An Open Source developer for x264 does a great teardown of the format vs. h.264 here. The patent minefield stateside is still not clear by any means, but with a strong backer like Google, it&amp;rsquo;s probably the best protection your going to get.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve written &lt;a href=&#34;../../2008/12/firefox-and-opera-lead-web-video-way.html&#34;&gt;about my desire for open web video before&lt;/a&gt;,&#xA;and now it looks as if it&amp;rsquo;s finally going to happen. Lead by Google&amp;rsquo;s&#xA;acquisition of &lt;a href=&#34;http://www.on2.com/&#34;&gt;On2 technologies&lt;/a&gt;, the &lt;a href=&#34;http://en.wikipedia.org/wiki/VP8&#34;&gt;VP8&lt;/a&gt; codec has been&#xA;renamed as &amp;ldquo;&lt;a href=&#34;http://www.webmproject.org/&#34;&gt;WebM&lt;/a&gt;&amp;rdquo; and open sourced. &lt;a href=&#34;http://en.wikipedia.org/wiki/Vorbis&#34;&gt;Vorbis&lt;/a&gt; will be the audio.&#xA;&lt;a href=&#34;http://en.wikipedia.org/wiki/Matroska&#34;&gt;Matroska&lt;/a&gt; the container for the new format. An Open Source developer&#xA;for x264 does a &lt;a href=&#34;http://x264dev.multimedia.cx/?p=377&#34;&gt;great teardown of the format vs. h.264 here&lt;/a&gt;.&#xA;The patent minefield stateside is still not clear by any means, but with&#xA;a strong backer like Google, it&amp;rsquo;s probably the best protection your going&#xA;to get. Announcements, including links to nightlies, dev and beta channel&#xA;browsers with WebM support are below:&amp;lt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pulp Fiction theme</title>
       <link>/pulp-fiction-theme/</link>
       <pubDate>Fri, 04 Dec 2009 00:00:00 +0000</pubDate>
       <guid>/pulp-fiction-theme/</guid>
-      <description>When I found this, I had to share it:</description>
+      <description>&lt;p&gt;When I found this, I had to share it:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cheesy Intel Ad</title>
@@ -76,35 +76,35 @@
       <link>/firefox-and-opera-lead-web-video-way/</link>
       <pubDate>Tue, 09 Dec 2008 00:00:00 +0000</pubDate>
       <guid>/firefox-and-opera-lead-web-video-way/</guid>
-      <description>I downloaded Firefox 3.1 beta 2 (after trialling other development snapshots over the last few months) to see Ogg Theora video support is coming on really well. Opera, as well as Mozilla has committed to including this royalty-free video codec for web use. This is really good news; as one Opera Developer said:&#xA;Something however is still not quite there about web video. The video solutions mentioned above are proprietary closed solutions that rely on plugins to display in a web page - what we need to make video a first-class web citizen is an easy, open solution to integrate video into web pages, and native support for video in browsers.</description>
+      <description>&lt;p&gt;I downloaded &lt;a href=&#34;http://www.mozilla.com/en-US/firefox/all-beta.html&#34;&gt;Firefox 3.1 beta&#xA;2&lt;/a&gt; (after trialling&#xA;other development snapshots over the last few months) to see &lt;a href=&#34;http://en.wikipedia.org/wiki/Ogg_Theora&#34;&gt;Ogg&#xA;Theora&lt;/a&gt; video support is coming&#xA;on really well. &lt;a href=&#34;http://www.opera.com/&#34;&gt;Opera&lt;/a&gt;, as well as&#xA;&lt;a href=&#34;http://www.mozilla.org/&#34;&gt;Mozilla&lt;/a&gt; has committed to including this&#xA;royalty-free video codec for web use. This is really good news; &lt;a href=&#34;http://dev.opera.com/articles/view/a-call-for-video-on-the-web-opera-vid/&#34;&gt;as one&#xA;Opera Developer&#xA;said:&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Something however is still not quite there about web video. The video&#xA;solutions mentioned above are proprietary closed solutions that rely&#xA;on plugins to display in a web page - what we need to make video a&#xA;first-class web citizen is an easy, open solution to integrate video&#xA;into web pages, and native support for video in browsers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gmail Video Chat</title>
       <link>/gmail-video-chat/</link>
       <pubDate>Thu, 13 Nov 2008 00:00:00 +0000</pubDate>
       <guid>/gmail-video-chat/</guid>
-      <description>I am an avid Gmail user through Google Apps. I use the calender, chat, code, sites, pages, docs the whole lot. One of my friends even jokes &amp;ldquo;You should just work at Google Marketing&amp;rdquo;. Yes I like most of Google&amp;rsquo;s products; but I am a products guy; I use whats good, cheap and fast (pick two). Google has the cheap down due to ad-revenue; for the moment anyways in the current financial turmoil.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://3.bp.blogspot.com/_JE4qNpFW6Yk/SRkwSMYD_aI/AAAAAAAAAJ8/gsDJdA4WBgY/s1600/video_chat.png&#34;&gt;&lt;img src=&#34;http://3.bp.blogspot.com/_JE4qNpFW6Yk/SRkwSMYD_aI/AAAAAAAAAJ8/gsDJdA4WBgY/s200/video_chat.png&#34; alt=&#34;image&#34;&gt;&lt;/a&gt;&#xA;I am an avid &lt;a href=&#34;http://mail.google.com/&#34;&gt;Gmail&lt;/a&gt; user through Google Apps.&#xA;I use the calender, chat, code, sites, pages, docs the whole lot. One of&#xA;my friends even jokes &amp;ldquo;You should just work at Google Marketing&amp;rdquo;. Yes I&#xA;like most of Google&amp;rsquo;s products; but I am a products guy; I use whats&#xA;good, cheap and fast (pick two). Google has the cheap down due to&#xA;ad-revenue; for the moment anyways in the current financial turmoil.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Questions, Hosting and IT 2006!</title>
       <link>/questions-hosting-and-it-2006/</link>
       <pubDate>Fri, 23 Jun 2006 00:00:00 +0000</pubDate>
       <guid>/questions-hosting-and-it-2006/</guid>
-      <description>I recently found a great documentary, about 9/11, entitled Loose Change 9/11][]. It is easily the most powerful about the event, much more so than Fahrenheit 9/11. In fact I would even argue, that if this documentary had of aired during the U.S. presedential election, I would have bet on a different result. Backed up by trusted resources such as the BBC which confirmed at least 8 of the 19 highjackers are alive and well.</description>
+      <description>&lt;p&gt;I recently found a great documentary, about 9/11, entitled Loose Change&#xA;9/11][]. It is easily the most powerful about the event, much more so than&#xA;Fahrenheit 9/11. In fact I would even argue, that if this documentary had of&#xA;aired during the U.S. presedential election, I would have bet on a different&#xA;result. Backed up by trusted resources such as the &lt;a href=&#34;http://news.bbc.co.uk/2/hi/middle_east/1559151.stm&#34; title=&#34;BBC which confirmed at least 8 of the 19 highjackers are alive and well&#34;&gt;BBC which confirmed at&#xA;least 8 of the 19 highjackers are alive and well&lt;/a&gt;. Filled with outrageous&#xA;facts, it sets the scene for either a highly competent Bush regime that new&#xA;what it was doing, or the worst domestic tragedy that happend under&#xA;maladministration. Either way the American people have serious questions to&#xA;ask, which I hope in time will get the aired in time. Maybe George W. is&#xA;taking a leaf out of Charlie Haugheys book? That is that corruption can be a&#xA;force for the good of the public, and my rich friends?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Click Online</title>
       <link>/click-online/</link>
       <pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate>
       <guid>/click-online/</guid>
-      <description>In case you have never looked at it, Click Online is the flagship technology program for the BBC. It broadcasts on the Internet and can be viewed even on a 56k modem. I have been watching click online for over a year and a half now, I first saw it on BBC World, while holidaying in Portugal. It also broadcasts on BBC News 24 at 7am on a Sunday morning (I have never seen it at this time!</description>
+      <description>&lt;p&gt;In case you have never looked at it, Click Online is the flagship  technology&#xA;program for the BBC. It broadcasts on the Internet and can  be viewed even on&#xA;a 56k modem. I have been watching click online for  over a year and a half&#xA;now, I first saw it on BBC World, while holidaying  in Portugal. It also&#xA;broadcasts on BBC News 24 at 7am on a Sunday morning  (I have never seen it at&#xA;this time!). Although by its nature a technical  program, it is very much&#xA;aimed at the average PC user and so most things  are explained fully.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Google Video</title>
       <link>/google-video/</link>
       <pubDate>Fri, 23 Dec 2005 00:00:00 +0000</pubDate>
       <guid>/google-video/</guid>
-      <description>What a fantastic service Google now offer with their Google Video platform. There are a couple of reasons why I like it, mainly because it is available to upload your videos on all platforms (Windows, Linux and Mac) and is available on Mozilla-based browsers (Firefox, Netscape), Opera and Internet Explorer.This is important in creating a better all round user experience. If only Yahoo! would follow Googles example and open up Launch Cast to other browsers besides an outdated version of Netscape and Internet Explorer.</description>
+      <description>&lt;p&gt;What a fantastic service Google now offer with their Google Video platform.&#xA;There are a couple of reasons why I like it, mainly because it is available to&#xA;upload your videos on all platforms (Windows, Linux and Mac) and is available&#xA;on Mozilla-based browsers (Firefox, Netscape), Opera and Internet&#xA;Explorer.This is important in creating a better all round user experience. If&#xA;only Yahoo! would follow Googles example and open up Launch Cast to other&#xA;browsers besides an outdated version of Netscape and Internet Explorer.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

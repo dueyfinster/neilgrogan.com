@@ -31,13 +31,10 @@
     
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
- 
+
     
     <link rel="alternate" type="application/rss+xml" href="../../tags/ruby/index.xml" title="Neil Grogan" />
-    
-  
-
-</head>
+    </head>
 
     <body>
         
@@ -141,8 +138,8 @@
                 </a>
             </h2>
             <div>
-                <p>In a previous post, I mentioned how I get notified of the restaurant menu via a Ruby script. Recently I&rsquo;ve moved to a totally different product area and the main communication channel we use is Slack. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.
-This also got me thinking of what other information would be handy to have.</p>
+                <p><p>In a previous post, I mentioned how I get notified of the <a href="../../rest-menu">restaurant menu</a> via a Ruby script. Recently I&rsquo;ve moved to a totally different product area and the main communication channel we use is <a href="https://www.slack.com">Slack</a>. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.</p>
+<p>This also got me thinking of what other information would be handy to have. I scouted around for ideas and came up with an obvious one: reminder of the bus times to and from the office. So here&rsquo;s my bus times notification slack bot:</p></p>
                 
             </div>
             <div class="post-footer">
@@ -159,9 +156,20 @@ This also got me thinking of what other information would be handy to have.</p>
                 </a>
             </h2>
             <div>
-                <p>In the last year and a half, I set up a Ruby based Dashing dashboard for my team and others in our product area. Here&rsquo;s what a sample Dashing dashboard looks like:
-It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):
-Don&rsquo;t do dashboards for managers, do them for teams Use big text, have the minimum information as required Use colours (preferably like the traffic light system) to focus attention Link in all critical systems to daily work Make it a one stop shop and faster then all other methods of getting this information Reuse the work of others (steal with pride) Don&rsquo;t bother with graphs Below I outline the reasons for each point:</p>
+                <p><p>In the last year and a half, I set up a <a href="http://ruby.org">Ruby</a> based <a href="http://dashing.io">Dashing dashboard</a> for my team and others in our product area. Here&rsquo;s what a sample Dashing dashboard looks like:</p>
+<p><img src="../../img/16/dashing.jpg" alt="Dashing Sample Dashboard"></p>
+<p>It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):</p>
+<ul>
+<li>Don&rsquo;t do dashboards for managers, do them for teams</li>
+<li>Use big text, have the minimum information as required</li>
+<li>Use colours (preferably like the traffic light system) to focus attention</li>
+<li>Link in all critical systems to daily work</li>
+<li>Make it a one stop shop and faster then all other methods of getting this
+information</li>
+<li>Reuse the work of others (steal with pride)</li>
+<li>Don&rsquo;t bother with graphs</li>
+</ul>
+<p><em>Below I outline the reasons for each point:</em></p></p>
                 
             </div>
             <div class="post-footer">
@@ -178,8 +186,8 @@ Don&rsquo;t do dashboards for managers, do them for teams Use big text, have the
                 </a>
             </h2>
             <div>
-                <p>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces&rsquo; restaurant menu come to me!
-I decided to write it in Ruby and use push notifications, rather than email or SMS.</p>
+                <p><p>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces&rsquo; restaurant menu come to me!</p>
+<p>I decided to write it in Ruby and use push notifications, rather than email or SMS. It uses a web automation framework called <a href="http://www.seleniumhq.org/">Selenium</a>, which is available in many languages, including Javascript, Python, Java and obviously Ruby!</p></p>
                 
             </div>
             <div class="post-footer">
@@ -196,8 +204,20 @@ I decided to write it in Ruby and use push notifications, rather than email or S
                 </a>
             </h2>
             <div>
-                <p>Apologies to those visiting my site recently because:
-It hasn&rsquo;t been updated recently I have been changing hosts with it Let me explain both of these! I have been searching for a good blogging engine ever since I have started blogging. I have yet to find the perfect one :) Some have come close in completeness (WordPress) or price and ease of use (blogger), but none has been all-encompassing. I messed around with a blogging engine called Jekyll about a year and a half ago, but I never ended up deploying it.</p>
+                <p><p>Apologies to those visiting my site recently because:</p>
+<ul>
+<li>It hasn&rsquo;t been updated recently</li>
+<li>I have been changing hosts with it</li>
+</ul>
+<p>Let me explain both of these! I have been searching for a good
+blogging engine ever since I have started blogging. I have yet
+to find the perfect one :) Some have come close in completeness
+(<a href="http://wordpress.org/">WordPress</a>) or price and ease of use (blogger), but none
+has been all-encompassing. I messed around with a blogging engine
+called <a href="http://github.com/mojombo/jekyll">Jekyll</a> about a year and a half ago, but I never ended
+up deploying it. I had my website most recently on Google Sites,
+and the ease of use was pretty good, but themes-wise it was pretty
+frustrating, also they force an ugly footer on all pages, yuck.</p></p>
                 
             </div>
             <div class="post-footer">

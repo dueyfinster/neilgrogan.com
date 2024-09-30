@@ -31,13 +31,10 @@
     
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
- 
+
     
     <link rel="alternate" type="application/rss+xml" href="../../tags/terminal/index.xml" title="Neil Grogan" />
-    
-  
-
-</head>
+    </head>
 
     <body>
         
@@ -141,7 +138,7 @@
                 </a>
             </h2>
             <div>
-                <p>Do you need to run a command on SSH login? There are a lot of solutions on the web for this, but most of them are very complex. I stumbled across this easy method of using the authorized_keys file, simply add command=&quot;ls -l&quot; (replacing ls -l with something a bit more useful like tmux or screen) in front of the key fingerprint. This also means you can have different commands for different keys if you choose.</p>
+                <p><p>Do you need to run a command on SSH login? There are a lot of solutions on the web for this, but most of them are very complex. I stumbled across this easy method of using the <code>authorized_keys</code> file, simply add <code>command=&quot;ls -l&quot;</code> (replacing <code>ls -l</code> with something a bit more useful like <code>tmux</code> or <code>screen</code>) in front of the key fingerprint. This also means you can have different commands for different keys if you choose.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -158,7 +155,15 @@
                 </a>
             </h2>
             <div>
-                <p>I&rsquo;m a big fan of the shell and the productivity it brings, you can have a text editor, command to run a server and more within easy reach. I use a shell at work, at home and on the go. On the go could be using my iPad or iPhone. One of the first SSH clients on iOS was iSSH, which I used many years ago. After this, Panic released a professional class application called Prompt.</p>
+                <p><p>I&rsquo;m a big fan of the shell and the productivity it brings, you can have a text
+editor, command to run a server and more within easy reach. I use a shell at
+work, at home and on the go. On the go could be using my iPad or iPhone. One of
+the first SSH clients on iOS was iSSH, which I used many years ago. After this,
+Panic released a professional class application called <a href="https://panic.com/prompt/">Prompt</a>. Prompt is
+what I&rsquo;ve happily used for the last few years, but the 10 minute background
+process limit is a constant pain. Just a quick switch away for a few minutes,
+and you have to reconnect. That&rsquo;s fine once or twice, but when it happens many
+times it seriously slows your productivity.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -175,9 +180,11 @@
                 </a>
             </h2>
             <div>
-                <p>Worth a read for those wishing to optimise programs that process a lot of data. It proves that less really is more&hellip;
-Money quote:
-The key to making programs fast is to make them do practically nothing.</p>
+                <p><p>Worth a read for those wishing to optimise programs that process a lot of data. It proves that less really is more&hellip;</p>
+<p>Money quote:</p>
+<blockquote>
+<p>The key to making programs fast is to make them do practically nothing.</p>
+</blockquote></p>
                 
             </div>
             <div class="post-footer">
@@ -194,7 +201,7 @@ The key to making programs fast is to make them do practically nothing.</p>
                 </a>
             </h2>
             <div>
-                <p>A great guide to get up to speed with Fish shell. What is Fish? It&rsquo;s a shell written from the ground up to be more easily understandable the the traditional shells (bash, tcsh). I don&rsquo;t know yet if I&rsquo;ll switch (anything you can do in Fish can be made to work in Bash). It&rsquo;s an interesting concept and I&rsquo;ll try it for a while&hellip;</p>
+                <p><p>A great guide to get up to speed with Fish shell. What is Fish? It&rsquo;s a shell written from the ground up to be more easily understandable the the traditional shells (bash, tcsh). I don&rsquo;t know yet if I&rsquo;ll switch (anything you can do in Fish can be made to work in Bash). It&rsquo;s an interesting concept and I&rsquo;ll try it for a while&hellip;</p></p>
                 
             </div>
             <div class="post-footer">
@@ -211,9 +218,17 @@ The key to making programs fast is to make them do practically nothing.</p>
                 </a>
             </h2>
             <div>
-                <p>The article is a great tip for those who spend a good chunk of the working day on the command line. I made some adjustments to Bash completion code to get it to work on Mac OS X:
-Original:
-_completemarks() { local curw=${COMP_WORDS[COMP_CWORD]} local wordlist=$(find $MARKPATH -type l -printf &#34;%f\n&#34;) COMPREPLY=($(compgen -W &#39;${wordlist[@]}&#39; -- &#34;$curw&#34;)) return 0 } complete -F _completemarks jump unmark My modified version (tested on Mac OS X and Ubuntu):</p>
+                <p><p>The article is a great tip for those who spend a good chunk of the working day on the command line. I made some adjustments to Bash completion code to get it to work on Mac OS X:</p>
+<p>Original:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>_completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  local curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find $MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W <span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>complete -F _completemarks jump unmark</span></span></code></pre></div>
+<p>My modified version (tested on Mac OS X and Ubuntu):</p></p>
                 
             </div>
             <div class="post-footer">
@@ -230,9 +245,22 @@ _completemarks() { local curw=${COMP_WORDS[COMP_CWORD]} local wordlist=$(find $M
                 </a>
             </h2>
             <div>
-                <p>If your like me and you deal with a lot of servers for development or test and do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern matching.
-Say I&rsquo;ve got a SSH config file like this (at ~/.ssh/config ):
-host s* HostName atrcu%h.example.com User example1 Port 22 host b* HostName atrcx%h.example.com User example2 Port 22 host ??* HostName atvts%h.example.com User example5 Port 2205 The ssh man page explains this really well:</p>
+                <p><p>If your like me and you deal with a lot of servers for development or test and do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern matching.</p>
+<p>Say I&rsquo;ve got a SSH config file like this (at <code>~/.ssh/config</code> ):</p>
+<pre><code>host s*
+    HostName atrcu%h.example.com
+    User example1
+    Port 22
+host b*
+    HostName atrcx%h.example.com
+    User example2
+    Port 22
+host ??*
+    HostName atvts%h.example.com
+    User example5
+    Port 2205
+</code></pre>
+<p>The ssh man page explains this really well:</p></p>
                 
             </div>
             <div class="post-footer">
@@ -249,9 +277,12 @@ host s* HostName atrcu%h.example.com User example1 Port 22 host b* HostName atrc
                 </a>
             </h2>
             <div>
-                <p>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):
-[ngrogan@localhost:~]$ can be turned in to this:
-The thing about Bash is the colour codes to achieve this can look archaic:</p>
+                <p><p>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
+<pre><code>[ngrogan@localhost:~]$
+</code></pre>
+<p>can be turned in to this:</p>
+<img src="../../files/2013/05/ColourBashPrompt.png" alt="My Custom Colour Bash Prompt">
+<p>The thing about Bash is the colour codes to achieve this can look archaic:</p></p>
                 
             </div>
             <div class="post-footer">
@@ -268,12 +299,18 @@ The thing about Bash is the colour codes to achieve this can look archaic:</p>
                 </a>
             </h2>
             <div>
-                <p>**Note: This Guide was written for use by my Computer Science class on Linux (and Mac OS X where noted). I haven&rsquo;t used SSH on Windows; but hopefully someone can make sure this guide works also on Windows by noting differences). SSH comes with nearly all Linux distros and all Mac OS X releases.
-**
-OS Specific Colours: Linux - Mac OS X - Windows
-**
-**
-**Download SSH For Windows</p>
+                <p><h2 id="note-this-guide-was-written-for-use-by-my-computer-science-class">**Note: This Guide was written for use by my Computer Science class</h2>
+<p>on Linux (and Mac OS X where noted). I haven&rsquo;t used SSH on Windows; but
+hopefully someone can make sure this guide works also on Windows by
+noting differences). SSH comes with nearly all Linux distros and all Mac
+OS X releases.<br>
+**</p>
+<p><strong>OS Specific Colours: Linux - Mac OS X - Windows</strong><br>
+**<br>
+**<br>
+**<a href="http://downloads.sourceforge.net/sshwindows/setupssh381-20040709.zip?modtime=1089331200&amp;big_mirror=0">Download SSH For
+Windows</a><br>
+**</p></p>
                 
             </div>
             <div class="post-footer">

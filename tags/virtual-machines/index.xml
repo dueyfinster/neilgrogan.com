@@ -4,7 +4,7 @@
     <title>Virtual-Machines on Neil Grogan</title>
     <link>/tags/virtual-machines/</link>
     <description>Recent content in Virtual-Machines on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Mar 2006 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/virtual-machines/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>/virtual-ubuntu/</link>
       <pubDate>Fri, 10 Mar 2006 00:00:00 +0000</pubDate>
       <guid>/virtual-ubuntu/</guid>
-      <description>So you have heard of Ubuntu, maybe they have even shipped you a free disc or you have downloaded one? Like most users, even advanced PC users, they get nervous about installing Linux and afraid of what they might have to learn. Touted as the brighest star, Ubuntu really does outshine other Linuxes, with usability, features and great range of software. Now you can try Ubuntu on Windows.&#xA;How can I try it, is what I always get asked, without risk to my computer?</description>
+      <description>&lt;p&gt;So you have heard of Ubuntu, maybe they have even shipped you a free disc or&#xA;you have downloaded one? Like most users, even advanced PC users, they get&#xA;nervous about installing Linux and afraid of what they might have to learn.&#xA;Touted as the brighest star, Ubuntu really does outshine other Linuxes, with&#xA;usability, features and great range of software. Now you can try Ubuntu on&#xA;Windows.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.vmware.com/img/ubuntu.gif&#34; alt=&#34;Ubuntu Logo&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

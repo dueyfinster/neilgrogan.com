@@ -4,7 +4,7 @@
     <title>Email on Neil Grogan</title>
     <link>/tags/email/</link>
     <description>Recent content in Email on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Apr 2006 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/email/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>/spam-will-it-ever-stop/</link>
       <pubDate>Sat, 29 Apr 2006 00:00:00 +0000</pubDate>
       <guid>/spam-will-it-ever-stop/</guid>
-      <description>Spam has become a fact of life nowadays, but is their anything we can do to stop it? The answers boils down to no, we can’t. If we make it illegal, the spamsters move abroad or go underground, as we have seen in the United States. People have been prosecuted, but again this does not deter people. Spamhaus have a novel idea, by trusting domains on reputation, based on spam reports.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://static.flickr.com/54/136808455_58aae5f13d_t.jpg&#34; alt=&#34;CAN Spam&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Spam has become a fact of life nowadays, but is their anything we can do to&#xA;stop it? The answers boils down to no, we can’t. If we make it illegal, the&#xA;spamsters move abroad or go underground, as we have seen in the United States.&#xA;People have been prosecuted, but again this does not deter people. Spamhaus&#xA;have a novel idea, by trusting domains on reputation, based on spam reports.&#xA;But this has one fatal flaw, it involves people reporting spam.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

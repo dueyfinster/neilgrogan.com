@@ -4,7 +4,7 @@
     <title>Networking, on Neil Grogan</title>
     <link>/tags/networking/</link>
     <description>Recent content in Networking, on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/networking/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>/vagrant-ubuntu-fossa/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       <guid>/vagrant-ubuntu-fossa/</guid>
-      <description>Ubuntu have recently released the new 20.04 LTS codenamed &amp;ldquo;Focal Fossa&amp;rdquo;. I&amp;rsquo;d also recently seen a tool that piqued my interest, Hashicorp Packer. Packer builds machine images that can be deployed to a cloud or as a virtual machine, or just even a plain disk image. You can even generate many images at once, really simplfying deployment. Very handy if you wanted to create virtual machines for a cluster for example, with a similar but slightly different configuration.</description>
+      <description>&lt;p&gt;Ubuntu have recently released the new &lt;a href=&#34;http://cdimage.ubuntu.com/ubuntu/releases/focal/release/&#34;&gt;20.04 LTS codenamed &amp;ldquo;Focal Fossa&amp;rdquo;&lt;/a&gt;.&#xA;I&amp;rsquo;d also recently seen a tool that piqued my interest, Hashicorp &lt;a href=&#34;https://packer.io&#34;&gt;Packer&lt;/a&gt;. Packer&#xA;builds machine images that can be deployed to a cloud or as a virtual machine, or&#xA;just even a plain disk image. You can even generate many images at once, really&#xA;simplfying deployment. Very handy if you wanted to create virtual machines for a&#xA;cluster for example, with a similar but slightly different configuration.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubiquiti Home Network</title>
       <link>/ubnt/</link>
       <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/ubnt/</guid>
-      <description>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do business Wifi, all the way up to covering stadiums. I first heard about them from Troy Hunt and then again from Marco Arment on Accidental Tech Podcast. Ubiquiti are popular in prosumer space - for people serious about good Wifi.&#xA;So far it&amp;rsquo;s been an excellent experience and I&amp;rsquo;d highly recommend it. After setting it up (there is a few moving pieces) it has been running without any intervention from me.</description>
+      <description>&lt;p&gt;Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do business Wifi,&#xA;all the way up to covering stadiums. I first heard about them from &lt;a href=&#34;https://www.troyhunt.com/ubiquiti-all-the-things-how-i-finally-fixed-my-dodgy-wifi/&#34;&gt;Troy Hunt&lt;/a&gt; and&#xA;then again from &lt;a href=&#34;https://marco.org&#34;&gt;Marco Arment&lt;/a&gt; on &lt;a href=&#34;https://atp.fm&#34;&gt;Accidental Tech Podcast&lt;/a&gt;. Ubiquiti are popular in&#xA;prosumer space - for people serious about good &lt;a href=&#34;https://en.wikipedia.org/wiki/Wi-Fi&#34;&gt;Wifi&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So far it&amp;rsquo;s been an excellent experience and I&amp;rsquo;d highly recommend it. After setting it up (there is&#xA;a few moving pieces) it has been running without any intervention from me. Being a professional&#xA;product, it&amp;rsquo;s not just a home router (with inbuilt wifi), there is a few more pieces you need to buy:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

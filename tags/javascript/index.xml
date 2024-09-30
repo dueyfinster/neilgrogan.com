@@ -4,7 +4,7 @@
     <title>Javascript on Neil Grogan</title>
     <link>/tags/javascript/</link>
     <description>Recent content in Javascript on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
@@ -13,28 +13,28 @@
       <link>/kbc-tx-js/</link>
       <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
       <guid>/kbc-tx-js/</guid>
-      <description>In a previous post, I mentioned importing transactions using ledger/hledger and plain text accounting. As my former bank PTSB recently raised their fees, I decided to move to KBC. I was excited to see, as part of the open payments directive, they have a nice developer portal. I reached out to KBC&amp;rsquo;s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!</description>
+      <description>&lt;p&gt;In a previous post, I mentioned &lt;a href=&#34;../../bank-tx-py&#34;&gt;importing transactions&lt;/a&gt; using &lt;a href=&#34;../../ledger&#34;&gt;ledger&lt;/a&gt;/&lt;a href=&#34;https://hledger.org/&#34;&gt;hledger&lt;/a&gt; and plain text accounting. As my former bank &lt;a href=&#34;https://www.permanenttsb.ie/&#34;&gt;PTSB&lt;/a&gt; recently raised their fees, I decided to move to &lt;a href=&#34;https://www.kbc.ie/&#34;&gt;KBC&lt;/a&gt;. I was excited to see, as part of the open payments directive, they have a nice &lt;a href=&#34;https://www.kbc.ie/psd2-developer-portal/home&#34;&gt;developer portal&lt;/a&gt;. I reached out to KBC&amp;rsquo;s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automatic Newsletter Cleanup in Gmail</title>
       <link>/gmail-newsletter-filter/</link>
       <pubDate>Fri, 19 Aug 2016 00:00:00 +0000</pubDate>
       <guid>/gmail-newsletter-filter/</guid>
-      <description>If you haven&amp;rsquo;t tried Google Apps Script, I found a really nifty use for it: smart filtering for email. Wait, shouldn&amp;rsquo;t I just use Gmails&amp;rsquo; built-in filters? As it turns out you can&amp;rsquo;t - my filter needs to act on email that matched that filter in the past. So in other words: a filter can only act on email it actually &amp;ldquo;filters&amp;rdquo;, which kinda makes sense! I&amp;rsquo;m a big fan of automation (and email is ripe for automation), as you can see from my post on meetings in Outlook.</description>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t tried &lt;a href=&#34;https://developers.google.com/apps-script/&#34;&gt;Google Apps Script&lt;/a&gt;, I found a really nifty use for it: &lt;em&gt;smart filtering&lt;/em&gt; for email. Wait, shouldn&amp;rsquo;t I just use Gmails&amp;rsquo; built-in filters?  As it turns out you can&amp;rsquo;t - my filter needs to act on email that matched that filter &lt;em&gt;in the past&lt;/em&gt;. So in other words: a filter can only act on email it actually &amp;ldquo;filters&amp;rdquo;, which kinda makes sense!  I&amp;rsquo;m a big fan of automation (and email is ripe for automation), as you can see from &lt;a href=&#34;../../outlook&#34;&gt;my post on meetings in Outlook&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adventures with React</title>
       <link>/react/</link>
       <pubDate>Thu, 22 Oct 2015 00:00:00 +0000</pubDate>
       <guid>/react/</guid>
-      <description>Recently I&amp;rsquo;d seen a post on Hacker News about a course for the React JavaScript Framework. I haven&amp;rsquo;t done much with JavaScript, apart from a course in work, which was focused on the language itself and jQuery. React is a front end framework, which allows you to build reusable components (and generate them with data.)&#xA;The only real experience I have is writing an application (using Node.js) for my MSc course which was an AJAX application for interacting with Amazon SimpleDB.</description>
+      <description>&lt;p&gt;Recently I&amp;rsquo;d seen a post on &lt;a href=&#34;https://news.ycombinator.com/item?id=10499683&#34;&gt;Hacker News&lt;/a&gt; about a &lt;a href=&#34;https://reactforbeginners.com/&#34;&gt;course for the React JavaScript Framework&lt;/a&gt;. I haven&amp;rsquo;t done much with JavaScript, apart from a course in work, which was focused on the language itself and &lt;a href=&#34;http://jquery.com/&#34;&gt;jQuery&lt;/a&gt;. &lt;a href=&#34;https://facebook.github.io/react/&#34;&gt;React&lt;/a&gt; is a front end framework, which allows you to build reusable components (and generate them with data.)&lt;/p&gt;&#xA;&lt;p&gt;The only real experience I have is writing an application (using &lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt;) for &lt;a href=&#34;../../ucd&#34;&gt;my MSc course&lt;/a&gt; which was an &lt;a href=&#34;http://www.w3schools.com/ajax/default.asp&#34;&gt;AJAX&lt;/a&gt; application for interacting with &lt;a href=&#34;https://en.wikipedia.org/wiki/Amazon_SimpleDB&#34;&gt;Amazon SimpleDB&lt;/a&gt;. It was fun to write and weird that I could use the same language from the front-end to the back-end.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Full Stack Web Application with Node.js Tutorial</title>
       <link>/web-app-nodejs-tutorial/</link>
       <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
       <guid>/web-app-nodejs-tutorial/</guid>
-      <description>I&amp;rsquo;ve followed this tutorial personally, not using Mongo as the database at first. It&amp;rsquo;s clear and to the point and provides just what you need to know to get started. Highly recommended.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve followed this tutorial personally, not using Mongo as the database at first. It&amp;rsquo;s clear and to the point and provides just what you need to know to get started. Highly recommended.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

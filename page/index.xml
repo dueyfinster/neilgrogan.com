@@ -4,7 +4,7 @@
     <title>Pages on Neil Grogan</title>
     <link>/page/</link>
     <description>Recent content in Pages on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,49 +12,49 @@
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/about/</guid>
-      <description>Software Engineering Manager at Ericsson in Athlone, Ireland, managing teams in Software Development Kits (SDKs) for Encsson Intelligent Automation Platform (EIAP). Before that, I was managing JEE Platform, User Interface SDK and 5G Topology teams in Ericsson Network Manager.&#xA;I originally graduated with a first class honours degree in computer science at&#xA;Technological University, Dublin. I also graduated with a first class masters in computer science from University College Dublin. See the Colophon if you&amp;rsquo;re interested to know how I put this site together.</description>
+      <description>&lt;p&gt;Software Engineering Manager at &lt;a href=&#34;http://www.ericsson.com&#34;&gt;Ericsson&lt;/a&gt; in &lt;a href=&#34;https://en.wikipedia.org/wiki/Athlone&#34;&gt;Athlone, Ireland&lt;/a&gt;, managing teams in Software Development Kits (SDKs) for &lt;a href=&#34;https://www.ericsson.com/en/ran/intelligent-ran-automation/intelligent-automation-platform&#34;&gt;Encsson Intelligent Automation Platform&lt;/a&gt; (EIAP). Before that, I was managing JEE Platform, User Interface SDK and 5G Topology teams in &lt;a href=&#34;https://www.ericsson.com/en/portfolio/digital-services/automated-network-operations/network-management/network-manager&#34;&gt;Ericsson Network Manager&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I originally graduated with a first class honours degree in computer science at&lt;br&gt;&#xA;&lt;a href=&#34;https://www.tudublin.ie/&#34;&gt;Technological University, Dublin&lt;/a&gt;. I also&#xA;graduated with a first class masters in computer science from &lt;a href=&#34;http://csi.ucd.ie&#34;&gt;University College Dublin&lt;/a&gt;. See the &lt;a href=&#34;../about/colophon&#34;&gt;Colophon&lt;/a&gt; if you&amp;rsquo;re interested to know how I put this site together. You might like some of &lt;a href=&#34;https://huffduffer.com/dueyfinster/tags/mustlisten&#34;&gt;my favourite podcasts&lt;/a&gt; or some of &lt;a href=&#34;https://www.pinboard.in/u:dueyfinster/t:mustread/&#34;&gt;my favourite articles&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Colophon</title>
       <link>/about/colophon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/about/colophon/</guid>
-      <description>This site is made with Hugo static website generator (using Noteworthy theme), posted to Github - synced to a private Gitea instance - which kicks off a build of the site on a private Drone instance and will rsync the result to FastMail. SSL is freely provided by LetsEncrypt.&#xA;I author the site (usually) in Vim, Emacs or online in Github, using Org mode for posts and Markdown/HTML/CSS/Javascript for the rest.</description>
+      <description>&lt;p&gt;This site is made with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; static website generator (using &lt;a href=&#34;https://github.com/kimcc/hugo-theme-noteworthy&#34;&gt;Noteworthy theme&lt;/a&gt;), posted to &lt;a href=&#34;https://www.github.com&#34;&gt;Github&lt;/a&gt; - synced to a private &lt;a href=&#34;https://about.gitea.com&#34;&gt;Gitea&lt;/a&gt; instance - which kicks off a build of the site on a private &lt;a href=&#34;https://www.drone.io&#34;&gt;Drone&lt;/a&gt; instance and will rsync the result to &lt;a href=&#34;https://www.fastmail.com&#34;&gt;FastMail&lt;/a&gt;. SSL is freely provided by &lt;a href=&#34;https://letsencrypt.org&#34;&gt;LetsEncrypt&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I author the site (usually) in &lt;a href=&#34;http://www.vim.org&#34;&gt;Vim&lt;/a&gt;, &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; or online in Github, using &lt;a href=&#34;https://orgmode.org&#34;&gt;Org mode&lt;/a&gt; for posts and &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;/HTML/CSS/Javascript for the rest.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
       <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/contact/</guid>
-      <description>My preferred way of reaching out is on Mastodon/X. Alternatively you can reach me by email by using my first name at my last name dot org.&#xA;Linkedin Hackerrank </description>
+      <description>&lt;p&gt;My preferred way of reaching out is on &lt;a href=&#34;https://mastodon.ie/@dueyfinster&#34;&gt;Mastodon&lt;/a&gt;/&lt;a href=&#34;https://twitter.com/dueyfinster&#34;&gt;X&lt;/a&gt;. Alternatively you can reach me by email by using my first name at my last name dot org.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/neilgrogan&#34;&gt;Linkedin&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.hackerrank.com/dueyfinster&#34;&gt;Hackerrank&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>CV</title>
       <link>/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/cv/</guid>
-      <description>View and Download You can get a PDF copy of my resume.</description>
+      <description>&lt;h4 id=&#34;view-and-download&#34;&gt;View and Download&lt;/h4&gt;&#xA;&lt;p&gt;You can get a &lt;a href=&#34;../cv/ngrogan-CV.pdf&#34;&gt;PDF copy of my resume&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Presentations</title>
       <link>/presentations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/presentations/</guid>
-      <description>Below is some of the presentations I have given:&#xA;5G Overview - Maynooth University, October 2019 Newsfast M.Sc. Project Final (Speakerdeck Mirror) - University College Dublin, August 2015 Newsfast M.Sc. Project Midterm (Speakerdeck Mirror)- University College Dublin, June 2015 </description>
+      <description>&lt;p&gt;Below is some of the presentations I have given:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;5G Overview - &lt;a href=&#34;https://www.maynoothuniversity.ie&#34;&gt;Maynooth University&lt;/a&gt;, October 2019&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../presentations/newsfast-final.pdf&#34;&gt;Newsfast M.Sc. Project Final&lt;/a&gt; (&lt;a href=&#34;https://speakerdeck.com/dueyfinster/newsfast-msc-ucd-final-project-presentation&#34;&gt;Speakerdeck Mirror&lt;/a&gt;) - University College Dublin, August 2015&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../presentations/newsfast-midterm.pdf&#34;&gt;Newsfast M.Sc. Project Midterm&lt;/a&gt; (&lt;a href=&#34;https://speakerdeck.com/dueyfinster/newsfast-midterm-msc-project-in-ucd&#34;&gt;Speakerdeck Mirror&lt;/a&gt;)- University College Dublin, June 2015&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Projects</title>
       <link>/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/projects/</guid>
-      <description>Some projects I&amp;rsquo;ve done are listed below, hopefully you can find some of them useful.&#xA;AWS Lambda Web Scraper with Slack Notifications A function on Amazon Web Services Lambda platform to scrape useful information from a website and post the results to Slack. Can be used to get a restaurant menu, bus times, sports scores or anything you can think of in to Slack!&#xA;AWS Lambda PDF to Text A function on Amazon Web Services Lambda platform to transform a PDF file in to the text it contains.</description>
+      <description>&lt;p&gt;Some projects I&amp;rsquo;ve done are listed below, hopefully you can find some of them useful.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../img/17/lambda-scraper-logo.png&#34; alt=&#34;AWS Lambda Slack Web Scraper&#34; title=&#34;AWS Lambda Slack Web Scraper&#34;&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;aws-lambda-web-scraper-with-slack-notificationshttpsgithubcomdueyfinsterlambda-scraper&#34;&gt;&lt;a href=&#34;https://github.com/dueyfinster/lambda-scraper&#34;&gt;AWS Lambda Web Scraper with Slack Notifications&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;p&gt;A function on Amazon Web Services Lambda platform to scrape useful information from a website and post the results to Slack. Can be used to get a restaurant menu, bus times, sports scores or anything you can think of in to Slack!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Uses</title>
       <link>/uses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/uses/</guid>
-      <description>Editor + Terminal For Editor I use VS Code and Vim/Neovim. I also use Emacs for the excellent org-mode.&#xA;For shell I use ZSH with OhMyZSH installed. For terminal I use iTerm2/Terminal.app but I have also tried Alacritty/kitty on occasion.&#xA;My dotfiles are here&#xA;Desktop Apps For web browser - I usually use Safari - unless the website doesn&amp;rsquo;t work or I need better DevTools then I&amp;rsquo;ll use Firefox or Chrome.</description>
+      <description>&lt;h3 id=&#34;editor--terminal&#34;&gt;Editor + Terminal&lt;/h3&gt;&#xA;&lt;p&gt;For Editor I use &lt;a href=&#34;https://code.visualstudio.com&#34;&gt;VS Code&lt;/a&gt; and &lt;a href=&#34;https://www.vim.org&#34;&gt;Vim&lt;/a&gt;/&lt;a href=&#34;https://www.neovim.io&#34;&gt;Neovim&lt;/a&gt;. I also use &lt;a href=&#34;https://www.gnu.org/emacs&#34;&gt;Emacs&lt;/a&gt; for the excellent &lt;a href=&#34;&#34;&gt;org-mode&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For shell I use &lt;a href=&#34;https://www.zsh.org/&#34;&gt;ZSH&lt;/a&gt; with &lt;a href=&#34;https://ohmyz.sh&#34;&gt;OhMyZSH&lt;/a&gt; installed. For terminal I use &lt;a href=&#34;https://iterm2.com&#34;&gt;iTerm2&lt;/a&gt;/Terminal.app but I have also tried Alacritty/kitty on occasion.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/dueyfinster/dotfiles&#34;&gt;My dotfiles are here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;desktop-apps&#34;&gt;Desktop Apps&lt;/h3&gt;&#xA;&lt;p&gt;For web browser - I usually use Safari - unless the website doesn&amp;rsquo;t work or I need better DevTools then I&amp;rsquo;ll use Firefox or Chrome.&lt;/p&gt;&#xA;&lt;p&gt;For RSS reader I use the excellent &lt;a href=&#34;https://reederapp.com&#34;&gt;Reeder&lt;/a&gt; (mac/iOS).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

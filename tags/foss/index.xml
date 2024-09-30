@@ -4,7 +4,7 @@
     <title>Foss on Neil Grogan</title>
     <link>/tags/foss/</link>
     <description>Recent content in Foss on Neil Grogan</description>
-    <generator>Hugo 0.125.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Sep 2008 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/foss/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>/wordpress-26/</link>
       <pubDate>Wed, 10 Sep 2008 00:00:00 +0000</pubDate>
       <guid>/wordpress-26/</guid>
-      <description>Open Source star of the blogging world&amp;hellip;</description>
+      <description>&lt;p&gt;Open Source star of the blogging world&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ekiga&#39;s Vorbis</title>
       <link>/ekigas-vorbis/</link>
       <pubDate>Thu, 13 Apr 2006 00:00:00 +0000</pubDate>
       <guid>/ekigas-vorbis/</guid>
-      <description>I am all for open standards, but they face huge problems. Not least is lack of intergration between them. Take SIP used by VOIP providers, such as OpenWengo. While OpenWengo is open source, and it is SIP, they are not helpful in informing you how to use other clients, or dial other OpenWengo users from other networks.&#xA;What I am really talking about is the need for an all-in-one communications program, that is multi-platform.</description>
+      <description>&lt;p&gt;I am all for open standards, but they face huge problems. Not least is lack of&#xA;intergration between them. Take SIP used by VOIP providers, such as&#xA;&lt;a href=&#34;http://www.wengo.com/&#34;&gt;OpenWengo&lt;/a&gt;. While OpenWengo is open source, and it is SIP, they are not&#xA;helpful in informing you how to use other clients, or dial other OpenWengo&#xA;users from other networks.&lt;/p&gt;&#xA;&lt;p&gt;What I am really talking about is the need for an all-in-one communications&#xA;program, that is multi-platform. Their is already open source code for: Google&#xA;Talk (aka Jabber), MSN, AOL, ICQ, SIP, H.323, Yahoo! but why isn’t their an&#xA;all-in-one client? Surely it would be easy to reimplement some code from other&#xA;programs into Ekiga (SIP, H.323) , Kopete or Gaim (both Jabber, MSN, Yahoo,&#xA;AOL and ICQ)? I know GoogleTalk is based on SIP, so why not SIP compatability?&#xA;That is poor implementation which is fragmenting the Open Source community,&#xA;how are we going to challenge MSN’s userbase with this sort of fragmentation?&#xA;That said I like Google Talk and its way of doing things. Also it is rumoured&#xA;GoogleTalk will be interoperable with AOL at protocol level, since Google owns&#xA;5% of AOL.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
