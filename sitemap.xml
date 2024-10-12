@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/framework13/</loc>
+    <lastmod>2024-10-12T22:52:53+01:00</lastmod>
+  </url><url>
+    <loc>/tags/hardware/</loc>
+    <lastmod>2024-10-12T22:52:53+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-10-12T22:52:53+01:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2024-10-12T22:52:53+01:00</lastmod>
+  </url><url>
+    <loc>/tags/review/</loc>
+    <lastmod>2024-10-12T22:52:53+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-10-12T22:52:53+01:00</lastmod>
+  </url><url>
     <loc>/tags/automation/</loc>
     <lastmod>2024-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/ha-yellow-review/</loc>
     <lastmod>2024-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2024-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2024-04-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/python/</loc>
-    <lastmod>2024-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2024-04-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/code/</loc>
@@ -116,9 +125,6 @@
     <loc>/mosh/</loc>
     <lastmod>2016-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/review/</loc>
-    <lastmod>2016-11-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/ledger/</loc>
     <lastmod>2016-10-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -135,9 +141,6 @@
     <lastmod>2016-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/apple/</loc>
-    <lastmod>2016-07-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/hardware/</loc>
     <lastmod>2016-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/ipadpro/</loc>
