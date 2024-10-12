@@ -19,6 +19,14 @@ For work, I use Microsoft Excel, Powerpoint and Word - I never use these on a pe
 ### Backup Strategy
 I host my files on a Synology NAS and back it up to Rsync.net - with mirrors to local USB and cloud sync where needed.
 
+### Mobile setup
+- [Framework 13 AMD](https://frame.work) - runs [NixOS](https://nixos.org)
+
+On my phone (iPhone 15 Pro) I use:
+- [Working Copy](https://workingcopy.app) for Git
+- [Blink](https://blink.sh) as terminal
+- [mosh](https://mosh.org)  to keep sessions open anywhere
+
 ### Desk Setup
 I have separate work and personal desks in my office.
 
@@ -35,8 +43,8 @@ Work Desk
 - Dell Monitor
 - Dell Dock
 - Macbook Air M2
+- [Kinesis Advantage 360 Pro](https://www.zenlap.eu/kinesis-advantage-2-360) - [Keymap on Github](https://github.com/dueyfinster/Adv360-Pro-ZMK)
 - [Logitech MX Master 3](https://www.amazon.co.uk/Logitech-Ultrafast-Scrolling-Ergonomic-Customisation/dp/B07W6JG6Z7/)
-- [Logitech Laptop style keyboard (Mac edition)](https://www.amazon.co.uk/gp/product/B00B73BZJO/)
 - [Monitor and Laptop VESA mount arms](https://www.amazon.co.uk/gp/product/B08R3MBSKP/)
 - [Elgato Streamdeck](https://www.amazon.co.uk/Elgato-Stream-Deck-Controller-customizable/dp/B06W2KLM3S) (I mostly automate Microsoft Teams/HomeAssistant)
 - Unbranded Sit/Stand Desk
@@ -44,11 +52,8 @@ Work Desk
 - Dell 4K Web Cam
 - [Blue Snowball Mic](https://www.amazon.co.uk/Blue-Microphones-Snowball-iCE-Microphone/dp/B014PYGTUQ/)
 
-## On the go
-On my phone (iPhone 15 Pro) I use:
-- [Working Copy](https://workingcopy.app) for Git
-- [Blink](https://blink.sh) as terminal
-- [mosh](https://mosh.org)  to keep sessions open anywhere
+In storage:
+- [Logitech Laptop style keyboard (Mac edition)](https://www.amazon.co.uk/gp/product/B00B73BZJO/)
 
 
 ### Other Gear
