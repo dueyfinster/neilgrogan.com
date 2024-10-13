@@ -1,6 +1,7 @@
 ---
 title: 'Framework 13 AMD'
 date: 2024-10-12T22:52:53+01:00
+image: /img/24/framework-laptop.jpg
 slug: framework13
 tags:
   - hardware

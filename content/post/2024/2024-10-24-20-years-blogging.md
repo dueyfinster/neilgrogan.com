@@ -2,7 +2,6 @@
 title: "20 Years Blogging"
 slug: 20-years
 date: 2024-10-34
-image: /img/24/frameworklaptop.jpg
 draft: true # TODO: un-draft to publish this
 tags:
   - personal
