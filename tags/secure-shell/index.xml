@@ -13,7 +13,7 @@
       <link>/ssh-login-cmd/</link>
       <pubDate>Wed, 30 Nov 2016 00:00:00 +0000</pubDate>
       <guid>/ssh-login-cmd/</guid>
-      <description>&lt;p&gt;Do you need to run a command on SSH login? There are a lot of solutions on the web for this, but most of them are very complex. I stumbled across this easy method of using the &lt;code&gt;authorized_keys&lt;/code&gt; file, simply add &lt;code&gt;command=&amp;quot;ls -l&amp;quot;&lt;/code&gt; (replacing &lt;code&gt;ls -l&lt;/code&gt; with something a bit more useful like &lt;code&gt;tmux&lt;/code&gt; or &lt;code&gt;screen&lt;/code&gt;) in front of the key fingerprint. This also means you can have different commands for different keys if you choose.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Do you need to run a command on SSH login? There are a lot of solutions on the&#xA;web for this, but most of them are very complex. I stumbled across this easy&#xA;method of using the &lt;code&gt;authorized_keys&lt;/code&gt; file, simply add &lt;code&gt;command=&amp;quot;ls -l&amp;quot;&lt;/code&gt;&#xA;(replacing &lt;code&gt;ls -l&lt;/code&gt; with something a bit more useful like &lt;code&gt;tmux&lt;/code&gt; or &lt;code&gt;screen&lt;/code&gt;) in&#xA;front of the key fingerprint. This also means you can have different commands&#xA;for different keys if you choose.&lt;/p&gt;</description>
     </item>
     <item>
       <title>iOS Shells, Prompt vs. Mosh</title>
@@ -27,14 +27,14 @@
       <link>/ssh-config/</link>
       <pubDate>Thu, 20 Jun 2013 00:00:00 +0000</pubDate>
       <guid>/ssh-config/</guid>
-      <description>&lt;p&gt;If your like me and you deal with a lot of servers for development or test and do it from a Unix machine, I&amp;rsquo;ve got a really handy tip: SSH hostname pattern matching.&lt;/p&gt;&#xA;&lt;p&gt;Say I&amp;rsquo;ve got a SSH config file like this (at &lt;code&gt;~/.ssh/config&lt;/code&gt; ):&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;host s*&#xA;    HostName atrcu%h.example.com&#xA;    User example1&#xA;    Port 22&#xA;host b*&#xA;    HostName atrcx%h.example.com&#xA;    User example2&#xA;    Port 22&#xA;host ??*&#xA;    HostName atvts%h.example.com&#xA;    User example5&#xA;    Port 2205&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The ssh man page explains this really well:&lt;/p&gt;</description>
+      <description>&lt;p&gt;If your like me and you deal with a lot of servers for development or test and&#xA;do it from a Unix machine, I&amp;rsquo;ve got a really handy tip: SSH hostname pattern&#xA;matching.&lt;/p&gt;&#xA;&lt;p&gt;Say I&amp;rsquo;ve got a SSH config file like this (at &lt;code&gt;~/.ssh/config&lt;/code&gt; ):&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;host s*&#xA;    HostName atrcu%h.example.com&#xA;    User example1&#xA;    Port 22&#xA;host b*&#xA;    HostName atrcx%h.example.com&#xA;    User example2&#xA;    Port 22&#xA;host ??*&#xA;    HostName atvts%h.example.com&#xA;    User example5&#xA;    Port 2205&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The ssh man page explains this really well:&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSH Guide</title>
       <link>/ssh-guide/</link>
       <pubDate>Mon, 17 Nov 2008 00:00:00 +0000</pubDate>
       <guid>/ssh-guide/</guid>
-      <description>&lt;h2 id=&#34;note-this-guide-was-written-for-use-by-my-computer-science-class&#34;&gt;**Note: This Guide was written for use by my Computer Science class&lt;/h2&gt;&#xA;&lt;p&gt;on Linux (and Mac OS X where noted). I haven&amp;rsquo;t used SSH on Windows; but&#xA;hopefully someone can make sure this guide works also on Windows by&#xA;noting differences). SSH comes with nearly all Linux distros and all Mac&#xA;OS X releases.&lt;br&gt;&#xA;**&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;OS Specific Colours: Linux - Mac OS X - Windows&lt;/strong&gt;&lt;br&gt;&#xA;**&lt;br&gt;&#xA;**&lt;br&gt;&#xA;**&lt;a href=&#34;http://downloads.sourceforge.net/sshwindows/setupssh381-20040709.zip?modtime=1089331200&amp;amp;big_mirror=0&#34;&gt;Download SSH For&#xA;Windows&lt;/a&gt;&lt;br&gt;&#xA;**&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;note-this-guide-was-written-for-use-by-my-computer-science-class&#34;&gt;**Note: This Guide was written for use by my Computer Science class&lt;/h2&gt;&#xA;&lt;p&gt;on Linux (and Mac OS X where noted). I haven&amp;rsquo;t used SSH on Windows; but&#xA;hopefully someone can make sure this guide works also on Windows by noting&#xA;differences). SSH comes with nearly all Linux distros and all Mac OS X&#xA;releases.&lt;br&gt;&#xA;**&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;OS Specific Colours: Linux - Mac OS X - Windows&lt;/strong&gt;&lt;br&gt;&#xA;**&lt;br&gt;&#xA;**&lt;br&gt;&#xA;**&lt;a href=&#34;http://downloads.sourceforge.net/sshwindows/setupssh381-20040709.zip?modtime=1089331200&amp;amp;big_mirror=0&#34;&gt;Download SSH For Windows&lt;/a&gt;&lt;br&gt;&#xA;**&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

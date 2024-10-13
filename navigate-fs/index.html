@@ -133,27 +133,26 @@
     <div>
         
         <p>
-        <p>The article is a great tip for those who spend a good chunk of the working day on the command line. I made some adjustments to Bash completion code to get it to work on Mac OS X:</p>
+        <p>The article is a great tip for those who spend a good chunk of the working day
+on the command line. I made some adjustments to Bash completion code to get it
+to work on Mac OS X:</p>
 <p>Original:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>_completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  local curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
-</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find $MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W <span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
+</span></span><span style="display:flex;"><span>curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find
+</span></span><span style="display:flex;"><span>$MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>complete -F _completemarks jump unmark</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>complete -F <span style="color:#ae81ff">\_</span>completemarks jump unmark </span></span></code></pre></div>
 <p>My modified version (tested on Mac OS X and Ubuntu):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>_completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  local curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=(</span><span style="color:#e6db74">`</span>find $MARKPATH -type l | cut -d / -f 5<span style="color:#e6db74">`</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>local wordlist<span style="color:#f92672">=(</span><span style="color:#e6db74">`</span>find $MARKPATH -type l | cut -d / -f 5<span style="color:#e6db74">`</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W <span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W <span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>complete -F _completemarks jump unmark</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>complete -F <span style="color:#ae81ff">\_</span>completemarks jump unmark </span></span></code></pre></div>
 
         </p>
     </div>

@@ -139,7 +139,11 @@
                 </a>
             </h2>
             <div>
-                <p><p>A great guide to get up to speed with Fish shell. What is Fish? It&rsquo;s a shell written from the ground up to be more easily understandable the the traditional shells (bash, tcsh). I don&rsquo;t know yet if I&rsquo;ll switch (anything you can do in Fish can be made to work in Bash). It&rsquo;s an interesting concept and I&rsquo;ll try it for a while&hellip;</p></p>
+                <p><p>A great guide to get up to speed with Fish shell. What is Fish? It&rsquo;s a shell
+written from the ground up to be more easily understandable the the traditional
+shells (bash, tcsh). I don&rsquo;t know yet if I&rsquo;ll switch (anything you can do in
+Fish can be made to work in Bash). It&rsquo;s an interesting concept and I&rsquo;ll try it
+for a while&hellip;</p></p>
                 
             </div>
             <div class="post-footer">
@@ -164,7 +168,13 @@
                 </a>
             </h2>
             <div>
-                <p><p>I&rsquo;ve recently decided to further my education by applying for a Masters in Computer Science at <a href="http://www.ucd.ie">University College Dublin</a>. It&rsquo;s very different from a traditional masters course in that it is very much focused on industry, the term the University uses is &ldquo;<a href="http://www.csi.ucd.ie/content/msc-computer-science-negotiated-learning">Negotiated Learning</a>&rdquo;. It was a colleague of mine that introduced me to it, I was not even aware that there was what I would call &rsquo;non-strict masters&rsquo; (that is not a set-in-stone syllabus/research direction).</p></p>
+                <p><p>I&rsquo;ve recently decided to further my education by applying for a Masters in
+Computer Science at <a href="http://www.ucd.ie">University College Dublin</a>. It&rsquo;s very different from a
+traditional masters course in that it is very much focused on industry, the term
+the University uses is &ldquo;<a href="http://www.csi.ucd.ie/content/msc-computer-science-negotiated-learning">Negotiated Learning</a>&rdquo;. It was a colleague of
+mine that introduced me to it, I was not even aware that there was what I would
+call &rsquo;non-strict masters&rsquo; (that is not a set-in-stone syllabus/research
+direction).</p></p>
                 
             </div>
             <div class="post-footer">
@@ -187,16 +197,18 @@
                 </a>
             </h2>
             <div>
-                <p><p>The article is a great tip for those who spend a good chunk of the working day on the command line. I made some adjustments to Bash completion code to get it to work on Mac OS X:</p>
+                <p><p>The article is a great tip for those who spend a good chunk of the working day
+on the command line. I made some adjustments to Bash completion code to get it
+to work on Mac OS X:</p>
 <p>Original:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>_completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>  local curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
-</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find $MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W <span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
+</span></span><span style="display:flex;"><span>curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find
+</span></span><span style="display:flex;"><span>$MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>complete -F _completemarks jump unmark</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>complete -F <span style="color:#ae81ff">\_</span>completemarks jump unmark </span></span></code></pre></div>
 <p>My modified version (tested on Mac OS X and Ubuntu):</p></p>
                 
             </div>
@@ -220,8 +232,19 @@
                 </a>
             </h2>
             <div>
-                <p><p>I am currently in Switzerland on a business trip. In between work, I managed to get some time over the Swiss national holiday to visit the <acronym title="European Nuclear Research Centre">CERN</acronym>. <a href="http://home.web.cern.ch/">CERN</a> is world famous for the invention of <acronym title="World Wide Web">WWW</acronym> and of course most recently, the almost certainty that the <a href="https://en.wikipedia.org/wiki/Higgs_boson">Higgs Boson</a> (<acronym title="also known as">aka</acronym>. &ldquo;The God Particle&rdquo;) - the particle that gives energy mass - exists.</p>
-<p>The CERN tour is completely free and highly recommended. I visited the <a href="http://atlas.ch/">Atlas experiment</a> with a colleague (who just so happened to have a Phd. in Physics) and questions were encouraged at every turn. What impressed me the most was the fact that there was no stupid questions. You can be a Phd weilding Physicist or a child and each question was handled the same by the staff. The guide (an active researcher at CERN) even expressed disappointment at the Higgs:</p></p>
+                <p><p>I am currently in Switzerland on a business trip. In between work, I managed to
+get some time over the Swiss national holiday to visit the
+<acronym title="European Nuclear Research Centre">CERN</acronym>. <a href="http://home.web.cern.ch/">CERN</a> is
+world famous for the invention of <acronym title="World Wide Web">WWW</acronym>
+and of course most recently, the almost certainty that the <a href="https://en.wikipedia.org/wiki/Higgs_boson">Higgs Boson</a>
+(<acronym title="also known as">aka</acronym>. &ldquo;The God Particle&rdquo;) - the
+particle that gives energy mass - exists.</p>
+<p>The CERN tour is completely free and highly recommended. I visited the <a href="http://atlas.ch/">Atlas
+experiment</a> with a colleague (who just so happened to have a Phd. in
+Physics) and questions were encouraged at every turn. What impressed me the most
+was the fact that there was no stupid questions. You can be a Phd weilding
+Physicist or a child and each question was handled the same by the staff. The
+guide (an active researcher at CERN) even expressed disappointment at the Higgs:</p></p>
                 
             </div>
             <div class="post-footer">
@@ -246,7 +269,9 @@
                 </a>
             </h2>
             <div>
-                <p><p>If your like me and you deal with a lot of servers for development or test and do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern matching.</p>
+                <p><p>If your like me and you deal with a lot of servers for development or test and
+do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern
+matching.</p>
 <p>Say I&rsquo;ve got a SSH config file like this (at <code>~/.ssh/config</code> ):</p>
 <pre><code>host s*
     HostName atrcu%h.example.com
@@ -288,7 +313,10 @@ host ??*
                 </a>
             </h2>
             <div>
-                <p><p>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
+                <p><p>Bash, a command line shell is one of the most used pieces of software in my
+daily work. I like scripting repetitive actions to save a lot time (it brings me
+great joy!). One of the simplest and easiest customisations is to add a bit of
+colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
 <pre><code>[ngrogan@localhost:~]$
 </code></pre>
 <p>can be turned in to this:</p>
@@ -320,7 +348,13 @@ host ??*
                 </a>
             </h2>
             <div>
-                <p><p>Very good technical documentation skills are a must for any Software Engineer - to explain how a system works in detail forces you to think about the flaws present within the design. &ldquo;Bad smells&rdquo; of documentation often can be a sign of weaknesses on your product. Is this section too verbose or did we make it too complex for the customer? Should we explain ancillary parts of our system (either operating system components or other applications?)  within our documentation besides the inherent risks (out-of-date documentation)?</p></p>
+                <p><p>Very good technical documentation skills are a must for any Software Engineer -
+to explain how a system works in detail forces you to think about the flaws
+present within the design. &ldquo;Bad smells&rdquo; of documentation often can be a sign of
+weaknesses on your product. Is this section too verbose or did we make it too
+complex for the customer? Should we explain ancillary parts of our system
+(either operating system components or other applications?) within our
+documentation besides the inherent risks (out-of-date documentation)?</p></p>
                 
             </div>
             <div class="post-footer">
@@ -343,15 +377,15 @@ host ??*
                 </a>
             </h2>
             <div>
-                <p><p>If you haven&rsquo;t heard of Tor, it is alternative internet - one with
-privay in mind. I&rsquo;ve recently started to watch a lot of technical
-talks online. The two main guys behind Tor are some of the best
-speakers I&rsquo;ve seen. They describe in great detail how open source
-works and the myriad of open source projects around Tor in this talk:</p>
+                <p><p>If you haven&rsquo;t heard of Tor, it is alternative internet - one with privay in
+mind. I&rsquo;ve recently started to watch a lot of technical talks online. The two
+main guys behind Tor are some of the best speakers I&rsquo;ve seen. They describe in
+great detail how open source works and the myriad of open source projects around
+Tor in this talk:</p>
 <iframe width="560" height="315" src="http://www.youtube.com/embed/bmj2w9HPPaE" frameborder="0" allowfullscreen></iframe>
-<p>and in an older talk they describe how countries have tried to censor
-Tor and how they have combatted some censorship (interesting for the
-technical measures deployed):</p></p>
+<p>and in an older talk they describe how countries have tried to censor Tor and
+how they have combatted some censorship (interesting for the technical measures
+deployed):</p></p>
                 
             </div>
             <div class="post-footer">
@@ -376,8 +410,23 @@ technical measures deployed):</p></p>
                 </a>
             </h2>
             <div>
-                <p><p>Just a quick post about a great application I&rsquo;ve seen mentioned by <a href="http://geekbeat.tv/" rel="nofollow">Cali Lewis</a>: <a href="http://www.stitcher.com/">Stitcher</a>. If your a talk radio fan like me, you&rsquo;ll really appreciate this app! Ever since I switched from an iPhone 4 to a Galaxy S3 and stopped using Apple&rsquo;s Podcast application it has been frustrating to keep up to date with podcasts.</p>
-<p>I&rsquo;ve used BeyondPod on Android (which I&rsquo;ve praised before - excellent Google Reader integration). I then tried to search for a third party podcast application on the iPad that would synchronise with Google Reader. First there were none, then some (like Feedler and Instacast) but all have been bitterly disappointing with Google Reader integration. Instacast could import OPML (after a messy bundling of feeds in Google Reader) and Feedler could read the feeds (but not handle the video and audio contained within the feed item properly). To be honest I&rsquo;d given up hope, I said to myself I&rsquo;d chalk it up to fate and just buy a Nexus tablet when the iPad 2 was no longer serviceable. But - happily - I was wrong and had been looking in the wrong places&hellip;</p></p>
+                <p><p>Just a quick post about a great application I&rsquo;ve seen mentioned by
+<a href="http://geekbeat.tv/" rel="nofollow">Cali Lewis</a>:
+<a href="http://www.stitcher.com/">Stitcher</a>. If your a talk radio fan like
+me, you&rsquo;ll really appreciate this app! Ever since I switched from an iPhone 4 to
+a Galaxy S3 and stopped using Apple&rsquo;s Podcast application it has been
+frustrating to keep up to date with podcasts.</p>
+<p>I&rsquo;ve used BeyondPod on Android (which I&rsquo;ve praised before - excellent Google
+Reader integration). I then tried to search for a third party podcast
+application on the iPad that would synchronise with Google Reader. First there
+were none, then some (like Feedler and Instacast) but all have been
+bitterly disappointing with Google Reader integration. Instacast could
+import OPML (after a messy bundling of feeds in Google Reader) and Feedler could
+read the feeds (but not handle the video and audio contained within
+the feed item properly). To be honest I&rsquo;d given up hope, I said to myself I&rsquo;d
+chalk it up to fate and just buy a Nexus tablet when the iPad 2 was no longer
+serviceable. But - happily - I was wrong and had been looking in the wrong
+places&hellip;</p></p>
                 
             </div>
             <div class="post-footer">
@@ -402,7 +451,17 @@ technical measures deployed):</p></p>
                 </a>
             </h2>
             <div>
-                <p><p>I  recently bought a <a href="http://www.amazon.com/gp/product/B009LL9VDG/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B009LL9VDG&amp;linkCode=as2&amp;tag=duefinsblo-20">Samsung Chromebook (Wi-Fi, 11.6-Inch)</a>. I am fascinated by living tied to the web, indeed my honours computer science thesis deals with this in relation to mobile applications (and hybrid half-app/ half-website). Spurred on by the excellent reviews this Chromebook has gotten (&quot;<i>It&rsquo;s $1,000 worth of design made with $100 worth of materials</i>&quot; - <a href="http://www.theverge.com/2012/10/24/3549368/samsung-chromebook-review-series-3">The Verge</a> and &ldquo;<i>You simply won&rsquo;t find a netbook this nice for that little money.</i>&rdquo; - <a href="http://www.engadget.com/2012/11/07/samsung-chromebook-review-2012/">Engadget</a>).<br /></p></p>
+                <p><p>I  recently bought a
+<a href="http://www.amazon.com/gp/product/B009LL9VDG/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B009LL9VDG&amp;linkCode=as2&amp;tag=duefinsblo-20">Samsung
+Chromebook (Wi-Fi, 11.6-Inch)</a>. I am fascinated by living tied to the web,
+indeed my honours computer science thesis deals with this in relation to mobile
+applications (and hybrid half-app/ half-website). Spurred on by the excellent
+reviews this Chromebook has gotten (&quot;<i>It&rsquo;s $1,000 worth of design made with
+$100 worth of materials</i>&quot; -
+<a href="http://www.theverge.com/2012/10/24/3549368/samsung-chromebook-review-series-3">The
+Verge</a> and &ldquo;<i>You simply won&rsquo;t find a netbook this nice for that little
+money.</i>&rdquo; -
+<a href="http://www.engadget.com/2012/11/07/samsung-chromebook-review-2012/">Engadget</a>).<br /></p></p>
                 
             </div>
             <div class="post-footer">

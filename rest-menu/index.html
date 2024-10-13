@@ -133,13 +133,20 @@
     <div>
         
         <p>
-        <p>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces&rsquo; restaurant menu come to me!</p>
-<p>I decided to write it in Ruby and use push notifications, rather than email or SMS. It uses a web automation framework called <a href="http://www.seleniumhq.org/">Selenium</a>, which is available in many languages, including Javascript, Python, Java and obviously Ruby!</p>
+        <p>I love trying to automate the world, it just feels like magic some of the time!
+I also really enjoy information coming to me, instead of having to seek it. As
+we are still only in 2016, we have no world killing Artificial Intelligence
+(yet). So we have to start small, ease the first world problems! So I decided to
+make my workplaces&rsquo; restaurant menu come to me!</p>
+<p>I decided to write it in Ruby and use push notifications, rather than email or
+SMS. It uses a web automation framework called
+<a href="http://www.seleniumhq.org/">Selenium</a>, which is available in many languages,
+including Javascript, Python, Java and obviously Ruby!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env ruby</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#Encoding: UTF-8</span>
 </span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;nokogiri&#39;</span>
 </span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;net/http&#39;</span>
-</span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;open-uri&#39;</span> 
+</span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;open-uri&#39;</span>
 </span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;rushover&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">TOKEN</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># Fill this in, get from Pushover</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">USER</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># Fill this in, get from Pushover</span>
@@ -160,11 +167,15 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Can check response from pushover if you want to verify it&#39;s sent</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#puts resp.ok?</span>
-</span></span></code></pre></div><p>I have it set to run as a cron job on my work laptop, with an added bonus that it doesn&rsquo;t run when I&rsquo;m on holiday as the laptop is off. Here&rsquo;s an example of the cron job:</p>
+</span></span></code></pre></div><p>I have it set to run as a cron job on my work laptop, with an added bonus that
+it doesn&rsquo;t run when I&rsquo;m on holiday as the laptop is off. Here&rsquo;s an example of
+the cron job:</p>
 <pre tabindex="0"><code class="language-cron" data-lang="cron"># m h  dom mon dow   command
 45 10 * * 1,2,3,4,5 $HOME/canteen-menu.rb
-</code></pre><p>As you can see in the comments, the format for cron (on Ubuntu Linux) is: Minute, Hour, Day of Month, Month, Day of Week, Command.</p>
-<p>So the time it runs is 10:45, any day of month, any month, only run Mon-Fri (1,2,3,4,5) and run our script command, easy!</p>
+</code></pre><p>As you can see in the comments, the format for cron (on Ubuntu Linux) is:
+Minute, Hour, Day of Month, Month, Day of Week, Command.</p>
+<p>So the time it runs is 10:45, any day of month, any month, only run Mon-Fri
+(1,2,3,4,5) and run our script command, easy!</p>
 
         </p>
     </div>

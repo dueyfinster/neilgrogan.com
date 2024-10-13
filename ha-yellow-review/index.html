@@ -133,9 +133,22 @@
     <div>
         
         <p>
-        <p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart lights, plugs, sensors and anything else in your smart home. HomeAssistant is the software part and as it&rsquo;s open source you can freely install it on any computer you have. In fact many people install HomeAssistant on a Raspberry Pi.</p>
-<p>HomeAssistant Yellow is their own custom hardware with a built in chip for Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It takes a Raspberry Pi compute module 4 as its &ldquo;brains&rdquo;. This technically means it should - emphasis on <em>should</em> be upgradeable if a Raspberry Pi compute module 5 that is compatible with CM4 socket is produced.</p>
-<p>For context - I have been in the Philips Hue lights EcoSystem for years. It was easy to get started with, the app was great and it was renter friendly (just swap some light bulbs) - which suited me at the time. I&rsquo;ve also had Sonos for over a decade now and my very first use of HomeAssistant was in 2019 when I got a network attached storage device, installed Plex and then used Plex status to have &ldquo;movie lights&rdquo; with Hue. So I&rsquo;m not new to smart home tech.</p>
+        <p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not
+familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart
+lights, plugs, sensors and anything else in your smart home. HomeAssistant is
+the software part and as it&rsquo;s open source you can freely install it on any
+computer you have. In fact many people install HomeAssistant on a Raspberry Pi.</p>
+<p>HomeAssistant Yellow is their own custom hardware with a built in chip for
+Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It
+takes a Raspberry Pi compute module 4 as its &ldquo;brains&rdquo;. This technically means it
+should - emphasis on <em>should</em> be upgradeable if a Raspberry Pi compute module 5
+that is compatible with CM4 socket is produced.</p>
+<p>For context - I have been in the Philips Hue lights EcoSystem for years. It was
+easy to get started with, the app was great and it was renter friendly (just
+swap some light bulbs) - which suited me at the time. I&rsquo;ve also had Sonos for
+over a decade now and my very first use of HomeAssistant was in 2019 when I got
+a network attached storage device, installed Plex and then used Plex status to
+have &ldquo;movie lights&rdquo; with Hue. So I&rsquo;m not new to smart home tech.</p>
 <p>Firstly the good:</p>
 <ul>
 <li>The hardware seems well built</li>
@@ -146,25 +159,40 @@
 <li>Updates to HomeAssistant are frequent and add many new features</li>
 <li>The software add-ons are great and reliable in my experience</li>
 <li>Once it&rsquo;s running it&rsquo;s been super reliable</li>
-<li>The mobile app despite being a web-view is actually pretty good and 99% of screens are mobile friendly</li>
-<li>Some integrations are a pain (like Alexa) and you can subscribe to let them take that pain for you but to their credit they have a comprehensive guide so you don&rsquo;t need to subscribe</li>
+<li>The mobile app despite being a web-view is actually pretty good and 99% of
+screens are mobile friendly</li>
+<li>Some integrations are a pain (like Alexa) and you can subscribe to let them
+take that pain for you but to their credit they have a comprehensive guide so
+you don&rsquo;t need to subscribe</li>
 </ul>
 <p>Now the not-so-good:</p>
 <ul>
-<li>The dashboards are just &ldquo;meh&rdquo; and it throws everything at the wall on the default dashboard</li>
+<li>The dashboards are just &ldquo;meh&rdquo; and it throws everything at the wall on the
+default dashboard</li>
 <li>Some integrations (like Unifi) have forgotten my username/password</li>
-<li>The automation UI is confusing - they have sought to address this recently but I&rsquo;m not sure I can say it&rsquo;s genuinely improving</li>
+<li>The automation UI is confusing - they have sought to address this recently but
+I&rsquo;m not sure I can say it&rsquo;s genuinely improving</li>
 <li>Developer mode randomly failed on one upgrade but mysteriously came back</li>
-<li>Some YAML gets unwieldy like the REST API integration if you have many endpoints</li>
+<li>Some YAML gets unwieldy like the REST API integration if you have many
+endpoints</li>
 <li>Bluetooth integration has randomly failed</li>
-<li>I disabled the built-in Zigbee (ZHA) integration which was easy but I found hooking up Zigbee2MQTT not as straightforward even though it seems to be a common use case</li>
-<li>The drive I was sold with the HomeAssistant Yellow didn&rsquo;t work so I had to return it to get another - Raspberry Pi CM4 modules have a lot of issues with M.2 SSD drives</li>
+<li>I disabled the built-in Zigbee (ZHA) integration which was easy but I found
+hooking up Zigbee2MQTT not as straightforward even though it seems to be a
+common use case</li>
+<li>The drive I was sold with the HomeAssistant Yellow didn&rsquo;t work so I had to
+return it to get another - Raspberry Pi CM4 modules have a lot of issues with
+M.2 SSD drives</li>
 </ul>
-<p>Overall I would say it&rsquo;s been <em>a positive experience</em> - I have automated more things since it arrived.
-One example is opening my office door at certain times of day can now turn on and off devices.
-I would recommend getting one - just be wary of the SSD issue (make sure it&rsquo;s compatible) and make yourself aware of the rough edges of HomeAssistant (dashboards, automation creation UI and if your devices are supported).</p>
-<p><strong>Update</strong>: Since I had the post in my drafts, <a href="https://www.home-assistant.io/blog/2024/04/03/release-20244/">HomeAssistant have addressed issues around automation UI</a> - while I don&rsquo;t consider it fully solved - excellent progress has been made.
-The power of open source!</p>
+<p>Overall I would say it&rsquo;s been <em>a positive experience</em> - I have automated more
+things since it arrived. One example is opening my office door at certain times
+of day can now turn on and off devices. I would recommend getting one - just be
+wary of the SSD issue (make sure it&rsquo;s compatible) and make yourself aware of the
+rough edges of HomeAssistant (dashboards, automation creation UI and if your
+devices are supported).</p>
+<p><strong>Update</strong>: Since I had the post in my drafts,
+<a href="https://www.home-assistant.io/blog/2024/04/03/release-20244/">HomeAssistant have addressed issues around automation UI</a> -
+while I don&rsquo;t consider it fully solved - excellent progress has been made. The
+power of open source!</p>
 
         </p>
     </div>

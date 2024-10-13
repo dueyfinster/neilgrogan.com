@@ -134,8 +134,8 @@
         
         <p>
         <p>I recently started using <a href="https://pi-hole.net/">PiHole</a> to block ads on my home network. As the name
-suggests, you install it on a <a href="https://raspberrypi.org/">raspberry pi</a>. I left it in situ for about a
-month, until I decided I wanted to swap out the pi, but keep PiHole.</p>
+suggests, you install it on a <a href="https://raspberrypi.org/">raspberry pi</a>. I left it in situ for about a month,
+until I decided I wanted to swap out the pi, but keep PiHole.</p>
 <p>The natural solution to this, is to use a docker container. Rather helpfully,
 there is a publicly available <a href="https://github.com/pi-hole/docker-pi-hole">docker build of PiHole</a>. Simple,
 right? Well my home network is also IPv6, thus the <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> on the raspberrypi
@@ -151,9 +151,9 @@ file to enable IPv6, at <code>/etc/docker/daemon.json</code>:</p>
 </code></pre><p>Then you need to restart Docker daemon:</p>
 <p><code>$ sudo systemctl restart docker</code></p>
 <p>that will allow the new <code>daemon.json</code> file to take effect.</p>
-<p>After this, I had an existing setup with <a href="https://www.plex.tv/">Plex</a> and <a href="../self-host">other things</a> already
-controlled by <code>docker-compose</code>. The solution here is to kill all your
-containers and recreate the compose network by hand with IPv6 subnet:</p>
+<p>After this, I had an existing setup with <a href="https://www.plex.tv/">Plex</a> and <a href="../self-host">other things</a> already controlled
+by <code>docker-compose</code>. The solution here is to kill all your containers and recreate
+the compose network by hand with IPv6 subnet:</p>
 <pre tabindex="0"><code>$ cd &lt;my_compose_dir&gt;
 $ docker network ls # name of compose network should have directory name in it
 $ docker network inspect &lt;compose_net_name&gt; # Make note of exisiting IPv4

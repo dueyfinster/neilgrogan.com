@@ -133,14 +133,18 @@
     <div>
         
         <p>
-        <p>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
+        <p>Bash, a command line shell is one of the most used pieces of software in my
+daily work. I like scripting repetitive actions to save a lot time (it brings me
+great joy!). One of the simplest and easiest customisations is to add a bit of
+colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
 <pre><code>[ngrogan@localhost:~]$
 </code></pre>
 <p>can be turned in to this:</p>
 <img src="../files/2013/05/ColourBashPrompt.png" alt="My Custom Colour Bash Prompt">
 <p>The thing about Bash is the colour codes to achieve this can look archaic:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    export PS1<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;\[</span><span style="color:#66d9ef">$(</span>tput bold<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]\[</span><span style="color:#66d9ef">$(</span>tput setaf 4<span style="color:#66d9ef">)</span><span style="color:#e6db74">\][\[</span><span style="color:#66d9ef">$(</span>tput setaf 6<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]\u\[</span><span style="color:#66d9ef">$(</span>tput setaf 7<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]@\[</span><span style="color:#66d9ef">$(</span>tput setaf 2<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]\h\[</span><span style="color:#66d9ef">$(</span>tput setaf 7<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]:\[</span><span style="color:#66d9ef">$(</span>tput setaf 1<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]\W\[</span><span style="color:#66d9ef">$(</span>tput setaf 4<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]]\\</span>$<span style="color:#e6db74"> \[</span><span style="color:#66d9ef">$(</span>tput sgr0<span style="color:#66d9ef">)</span><span style="color:#e6db74">\]&#34;</span></span></span></code></pre></div>
-<p>To get a prompt like this easily, all you need to do is use this handy $PS1 generator. A highly recommended tool!</p>
+<p>To get a prompt like this easily, all you need to do is use this handy $PS1
+generator. A highly recommended tool!</p>
 
         </p>
     </div>

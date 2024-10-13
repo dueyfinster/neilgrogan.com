@@ -135,92 +135,80 @@
         <p>
         <h2 id="note-this-guide-was-written-for-use-by-my-computer-science-class">**Note: This Guide was written for use by my Computer Science class</h2>
 <p>on Linux (and Mac OS X where noted). I haven&rsquo;t used SSH on Windows; but
-hopefully someone can make sure this guide works also on Windows by
-noting differences). SSH comes with nearly all Linux distros and all Mac
-OS X releases.<br>
+hopefully someone can make sure this guide works also on Windows by noting
+differences). SSH comes with nearly all Linux distros and all Mac OS X
+releases.<br>
 **</p>
 <p><strong>OS Specific Colours: Linux - Mac OS X - Windows</strong><br>
 **<br>
 **<br>
-**<a href="http://downloads.sourceforge.net/sshwindows/setupssh381-20040709.zip?modtime=1089331200&amp;big_mirror=0">Download SSH For
-Windows</a><br>
+**<a href="http://downloads.sourceforge.net/sshwindows/setupssh381-20040709.zip?modtime=1089331200&amp;big_mirror=0">Download SSH For Windows</a><br>
 **</p>
-<p>***Windows: ****You need to follow README located in Start &gt; All
-Programs &gt; OpenSSH &gt; README to set up password directories and files.
-After that is done; just do Start &gt; Run; type cmd and hit enter to get
-Windows command line. All commands beginning with SSH should run
-unmodified. ****</p>
+<p>***Windows: ****You need to follow README located in Start &gt; All Programs &gt;
+OpenSSH &gt; README to set up password directories and files. After that is done;
+just do Start &gt; Run; type cmd and hit enter to get Windows command line. All
+commands beginning with SSH should run unmodified. ****</p>
 <hr>
-<p>By default it allows access to your username and password; which is okay
-but not totally secure! If you are logging on from a machine which has
-the same username as one you are trying to access you can drop
-&lsquo;myusername@&rsquo; bit. mylaptop represents the IP address of the machine you
-are trying to contact!</p>
+<p>By default it allows access to your username and password; which is okay but not
+totally secure! If you are logging on from a machine which has the same username
+as one you are trying to access you can drop &lsquo;myusername@&rsquo; bit. mylaptop
+represents the IP address of the machine you are trying to contact!</p>
 <p><strong>$</strong> ssh myusername@mylaptop</p>
 <p>To forward X server (use the flag -Y on Mac OS X) :<br>
 <strong>$</strong> ssh -X myusername@mylaptop</p>
-<p>To use a different port (where port is WXYZ) also: (use the flag -Y on
-Mac OS X):<br>
+<p>To use a different port (where port is WXYZ) also: (use the flag -Y on Mac OS
+X):<br>
 <strong>$</strong> ssh -X myusername@mylaptop -p WXYZ</p>
-<h3 id="how-to-get-it-more-secure-"><strong>How to get it more secure:</strong>* *</h3>
+<h3 id="how-to-get-it-more-secure-"><strong>How to get it more secure:*</strong> *</h3>
 <h3 id="generate-your-own-key-this-will-ask-for-a-password-can-be-left">*Generate your own key (this will ask for a password; can be left</h3>
 <p>blank but not recommended):*</p>
 <p><strong>$</strong> ssh-keygen</p>
 <p><em>Copy your key to machine you want to login to:</em><br>
 <strong>$</strong> scp ~/.ssh/id_dsa.pub mylaptop:~/.ssh/authorized_<br>
 keys2<br>
-(This command uses SCP (Secure Copy) to copy your key into a list of
-keys allowed on remote machine. You also have an authorized_keys2 on
-your computer)</p>
-<h3 id="edit-configuration-file"><em>Edit Configuration File:</em></h3>
-<p><em>Finally edit configuration to make it more secure (nano is a
-lightweight text editor - <strong>this command will be very different on
-Windows; since it won&rsquo;t have sudo command, nano editor or the SSH
-configuration file in the same place; I currently have no clue what it
-would be on Windows</strong>):</em><br>
+(This command uses SCP (Secure Copy) to copy your key into a list of keys
+allowed on remote machine. You also have an authorized_keys2 on your computer)</p>
+<h3 id="_edit-configuration-file_"><em>Edit Configuration File:</em></h3>
+<p><em>Finally edit configuration to make it more secure (nano is a lightweight text
+editor - <strong>this command will be very different on Windows; since it won&rsquo;t have
+sudo command, nano editor or the SSH configuration file in the same place; I
+currently have no clue what it would be on Windows</strong>):</em><br>
 <strong>$</strong> sudo nano /etc/sshd_config</p>
 <ul>
 <li>
-<p>Options I recommend changing (hash at the start means it is commented
-out; so remove to take effect) :*<br>
+<p>Options I recommend changing (hash at the start means it is commented out; so
+remove to take effect) :*<br>
 #Port 22 - change to whatever; recommended between 2000-65000</p>
 </li>
 <li>
 <p>Enable these three:*<br>
 #RSAAuthentication yes** **<br>
-#PubkeyAuthentication yes
-#AuthorizedKeysFile .ssh/authorized_keys</p>
+#PubkeyAuthentication yes #AuthorizedKeysFile .ssh/authorized_keys</p>
 </li>
-<li></li>
-</ul>
+<li>
 <p>Set to &lsquo;yes&rsquo; and uncomment to allow forwarding of visuals:*<br>
 #X11Forwarding no</p>
-<ul>
-<li>Set to &lsquo;yes&rsquo; and uncomment if you want to use your machine as a
-proxy:*<br>
+</li>
+<li>
+<p>Set to &lsquo;yes&rsquo; and uncomment if you want to use your machine as a proxy:*<br>
 #AllowTcpForwarding yes<br>
-#PermitTunnel no
-*Now <strong>save the file</strong> with you changes ( CTRL and X; it will ask to
-save; enter Y and enter key). These will not come in to effect until to
-stop and start the SSH server! *
-<strong>Stop/Start on Linux</strong>
-To stop SSH server, enter:<br>
+#PermitTunnel no *Now <strong>save the file</strong> with you changes ( CTRL and X; it
+will ask to save; enter Y and enter key). These will not come in to effect
+until to stop and start the SSH server! * <strong>Stop/Start on Linux</strong> To stop SSH
+server, enter:<br>
 <strong>$</strong><code> sudo /etc/init.d/ssh stop</code><br>
 To start SSH server, enter:<br>
 <strong>$</strong><code> sudo /etc/init.d/ssh start</code><br>
 To restart ssh server, enter:<br>
-<strong>$</strong><code> sudo /etc/init.d/ssh restart</code></li>
+<strong>$</strong><code> sudo /etc/init.d/ssh restart</code></p>
+</li>
 </ul>
-<p><strong>Stop/Start OS X</strong>
-To stop SSH Server, enter:
-<strong>$</strong> sudo /sbin/service ssh stop
-To Start SSH server, enter:
-<strong>$</strong> sudo /sbin/service ssh start
-**<br>
+<p><strong>Stop/Start OS X</strong> To stop SSH Server, enter: <strong>$</strong> sudo /sbin/service ssh stop
+To Start SSH server, enter: <strong>$</strong> sudo /sbin/service ssh start **<br>
 That is it!**<br>
-Most of the options you can skip based on preference. I recommend not
-allowing password only login and setting up keys. It is much harder to
-break; and there is no &lsquo;known&rsquo; way to break it&hellip;.</p>
+Most of the options you can skip based on preference. I recommend not allowing
+password only login and setting up keys. It is much harder to break; and there
+is no &lsquo;known&rsquo; way to break it&hellip;.</p>
 
         </p>
     </div>

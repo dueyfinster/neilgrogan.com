@@ -133,7 +133,8 @@
     <div>
         
         <p>
-        <p>You can follow the <a href="https://web.archive.org/web/20151016112956/http://blogs.technet.com/b/sharepoint_republic/archive/2011/12/09/outlook-rule-to-auto-accept-or-auto-decline-meeting-invites.aspx">Microsoft TechNet guide to add VisualBasic code in Outlook rules</a>.</p>
+        <p>You can follow the
+<a href="https://web.archive.org/web/20151016112956/http://blogs.technet.com/b/sharepoint_republic/archive/2011/12/09/outlook-rule-to-auto-accept-or-auto-decline-meeting-invites.aspx">Microsoft TechNet guide to add VisualBasic code in Outlook rules</a>.</p>
 <p>You can just replace the code they give with this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vb" data-lang="vb"><span style="display:flex;"><span><span style="color:#66d9ef">Sub</span> <span style="color:#a6e22e">AutoDeclineMeetings</span>(oRequest <span style="color:#f92672">As</span> MeetingItem)
 </span></span><span style="display:flex;"><span>
@@ -150,11 +151,11 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">Dim</span> oResponse
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Set</span> oResponse <span style="color:#f92672">=</span> oAppt.Respond(olMeetingDeclined, <span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>    oResponse.Send
-</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Lastly, delete the message
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>oRequest.Delete
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">End</span> <span style="color:#66d9ef">Sub</span>
-</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">Sub</span> <span style="color:#a6e22e">AutoAcceptMeetings</span>(oRequest <span style="color:#f92672">As</span> MeetingItem)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; If its not a meeting, we don&#39;t process
@@ -170,11 +171,12 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">Dim</span> oResponse
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Set</span> oResponse <span style="color:#f92672">=</span> oAppt.Respond(olMeetingAccepted, <span style="color:#66d9ef">True</span>)
 </span></span><span style="display:flex;"><span>    oResponse.Send
-</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Lastly, (optionally) delete the message
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#39;oRequest.Delete
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">End</span> <span style="color:#66d9ef">Sub</span>
-</span></span></code></pre></div><p>For anything else you may want to do with the meeting, check the <a href="https://docs.microsoft.com/en-us/previous-versions/office/dn320338(v=office.15)">Outlook Visual Basic Developer Docs</a>.</p>
+</span></span></code></pre></div><p>For anything else you may want to do with the meeting, check the
+<a href="https://docs.microsoft.com/en-us/previous-versions/office/dn320338(v=office.15)">Outlook Visual Basic Developer Docs</a>.</p>
 
         </p>
     </div>

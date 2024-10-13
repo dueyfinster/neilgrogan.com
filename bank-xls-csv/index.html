@@ -133,13 +133,26 @@
     <div>
         
         <p>
-        <p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../ledger">ledger</a> from <a href="../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../bank-tx-py">PTSB</a> bank in Python. I took different approaches to each:</p>
+        <p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../ledger">ledger</a> from
+<a href="../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../bank-tx-py">PTSB</a> bank in Python. I took different
+approaches to each:</p>
 <ul>
-<li>For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV</li>
-<li>For PTSB, the script automatted logging in, get the transaction table and save locally as CSV</li>
+<li>For KBC, you needed to log in and run Javascript which scrape the transaction
+table and download it formatted as CSV</li>
+<li>For PTSB, the script automatted logging in, get the transaction table and save
+locally as CSV</li>
 </ul>
-<p>Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code. The KBC/JavaScript approach was a bit more robust in that it would just search for rows on a website and download as CSV.</p>
-<p>With the EU payment services directive (PSD2) - banks have had to add two-factor authentication which hampers using an automated approach to log in and download. I&rsquo;ve updated my original PTSB script to handle 2FA - buit it&rsquo;s taken the magic out of it and made it feel very manual. So I&rsquo;ve decided to change the approach again - just download the Excel transaction file the provide and convert to CSV. It should be much easier to maintain - I just need to be careful of which row transactions start/end and which columns to ignore.</p>
+<p>Both approaches are valid - but suffer from the same issues: any change the bank
+makes to it website needs to be updated in the code. The KBC/JavaScript approach
+was a bit more robust in that it would just search for rows on a website and
+download as CSV.</p>
+<p>With the EU payment services directive (PSD2) - banks have had to add two-factor
+authentication which hampers using an automated approach to log in and download.
+I&rsquo;ve updated my original PTSB script to handle 2FA - buit it&rsquo;s taken the magic
+out of it and made it feel very manual. So I&rsquo;ve decided to change the approach
+again - just download the Excel transaction file the provide and convert to CSV.
+It should be much easier to maintain - I just need to be careful of which row
+transactions start/end and which columns to ignore.</p>
 <p>Here&rsquo;s my latest Python script to convert Permanent TSB Excel file to CSV:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># -*- coding: utf-8 -*-</span>

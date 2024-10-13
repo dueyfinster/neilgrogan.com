@@ -138,8 +138,16 @@
                 </a>
             </h2>
             <div>
-                <p><p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart lights, plugs, sensors and anything else in your smart home. HomeAssistant is the software part and as it&rsquo;s open source you can freely install it on any computer you have. In fact many people install HomeAssistant on a Raspberry Pi.</p>
-<p>HomeAssistant Yellow is their own custom hardware with a built in chip for Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It takes a Raspberry Pi compute module 4 as its &ldquo;brains&rdquo;. This technically means it should - emphasis on <em>should</em> be upgradeable if a Raspberry Pi compute module 5 that is compatible with CM4 socket is produced.</p></p>
+                <p><p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not
+familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart
+lights, plugs, sensors and anything else in your smart home. HomeAssistant is
+the software part and as it&rsquo;s open source you can freely install it on any
+computer you have. In fact many people install HomeAssistant on a Raspberry Pi.</p>
+<p>HomeAssistant Yellow is their own custom hardware with a built in chip for
+Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It
+takes a Raspberry Pi compute module 4 as its &ldquo;brains&rdquo;. This technically means it
+should - emphasis on <em>should</em> be upgradeable if a Raspberry Pi compute module 5
+that is compatible with CM4 socket is produced.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -156,12 +164,19 @@
                 </a>
             </h2>
             <div>
-                <p><p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../../ledger">ledger</a> from <a href="../../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../../bank-tx-py">PTSB</a> bank in Python. I took different approaches to each:</p>
+                <p><p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../../ledger">ledger</a> from
+<a href="../../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../../bank-tx-py">PTSB</a> bank in Python. I took different
+approaches to each:</p>
 <ul>
-<li>For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV</li>
-<li>For PTSB, the script automatted logging in, get the transaction table and save locally as CSV</li>
+<li>For KBC, you needed to log in and run Javascript which scrape the transaction
+table and download it formatted as CSV</li>
+<li>For PTSB, the script automatted logging in, get the transaction table and save
+locally as CSV</li>
 </ul>
-<p>Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code. The KBC/JavaScript approach was a bit more robust in that it would just search for rows on a website and download as CSV.</p></p>
+<p>Both approaches are valid - but suffer from the same issues: any change the bank
+makes to it website needs to be updated in the code. The KBC/JavaScript approach
+was a bit more robust in that it would just search for rows on a website and
+download as CSV.</p></p>
                 
             </div>
             <div class="post-footer">
@@ -196,13 +211,18 @@ In Python, <a href="https://docs.python.org/3/library/io.html#io.BytesIO">BytesI
                 </a>
             </h2>
             <div>
-                <p><p>As part of my previous posts, I talked about <a href="../../ledger">ledger</a> and plain text accounting.  The only part missing is that you need a method to import transactions from your bank. For this I have been doing this by hand, bi-weekly. I would have to do the following:</p>
+                <p><p>As part of my previous posts, I talked about <a href="../../ledger">ledger</a> and plain text
+accounting. The only part missing is that you need a method to import
+transactions from your bank. For this I have been doing this by hand, bi-weekly.
+I would have to do the following:</p>
 <ol>
 <li>Log in to online banking</li>
 <li>Go to the transactions page</li>
-<li>Select the date range for transactions I needed (double check last date of  transaction in ledger at this point)</li>
+<li>Select the date range for transactions I needed (double check last date of
+transaction in ledger at this point)</li>
 <li>Download the <a href="https://en.wikipedia.org/wiki/Microsoft_Excel">Microsoft Excel</a> format file that wasn&rsquo;t in the proper format</li>
-<li>Convert this Excel file into a CSV file that matched my import format (watch the dates, is it YYYY-MM-DD or DD/MM/YYYY?)</li>
+<li>Convert this Excel file into a CSV file that matched my import format (watch
+the dates, is it YYYY-MM-DD or DD/MM/YYYY?)</li>
 <li>Finally import the CSV file into ledger</li>
 <li>Check the balance matches between my online banking and ledger</li>
 </ol>
@@ -223,13 +243,15 @@ In Python, <a href="https://docs.python.org/3/library/io.html#io.BytesIO">BytesI
                 </a>
             </h2>
             <div>
-                <p><p>Continuing the theme of automation, one of the most repetitive tasks if you work for a big company is timesheets. So I set out to rectify this by scripting it!</p>
+                <p><p>Continuing the theme of automation, one of the most repetitive tasks if you work
+for a big company is timesheets. So I set out to rectify this by scripting it!</p>
 <p>Start with you configuration, I named mine <code>hours.ini</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
 </span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> FILL_ME_IN
-</span></span></code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy lifting, so we install it:</p>
+</span></span></code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy
+lifting, so we install it:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
 </span></span></code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p></p>
                 

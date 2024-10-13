@@ -133,20 +133,37 @@
     <div>
         
         <p>
-        <p>I&rsquo;m a huge fan of <a href="http://www.docker.com">Docker</a> ever since I started to use it, approximately a year after it was started. It&rsquo;s one of those technologies where when you start to use it, you immediately know it&rsquo;s going to be a sea change in how things are done in the industry. It&rsquo;s definitely going to be more impactful then <a href="https://en.m.wikipedia.org/wiki/Virtual_machine">Virtual Machines</a>.</p>
-<p>We&rsquo;ve used Docker to great effect where I work. We&rsquo;re building a huge system called Ericsson Network Manager, which will manage the networks of the future. As such, it&rsquo;s a hugely complex problem to compartmentalise parts of the product, to be able to just use the part that you work directly on.</p>
+        <p>I&rsquo;m a huge fan of <a href="http://www.docker.com">Docker</a> ever since I started to use
+it, approximately a year after it was started. It&rsquo;s one of those technologies
+where when you start to use it, you immediately know it&rsquo;s going to be a sea
+change in how things are done in the industry. It&rsquo;s definitely going to be more
+impactful then
+<a href="https://en.m.wikipedia.org/wiki/Virtual_machine">Virtual Machines</a>.</p>
+<p>We&rsquo;ve used Docker to great effect where I work. We&rsquo;re building a huge system
+called Ericsson Network Manager, which will manage the networks of the future.
+As such, it&rsquo;s a hugely complex problem to compartmentalise parts of the product,
+to be able to just use the part that you work directly on.</p>
 <p>There has been two approaches inside the company:</p>
 <ol>
 <li>Encapsulate the whole system</li>
 <li>Just encapsulate the product</li>
 </ol>
-<p>In my product area, we&rsquo;ve focused on number 2. We did this because we wanted to focus on two things:</p>
+<p>In my product area, we&rsquo;ve focused on number 2. We did this because we wanted to
+focus on two things:</p>
 <ol>
 <li>Automated functional testing</li>
 <li>Automated integration testing</li>
 </ol>
-<p>And again, number 2 was the main catalyst, as the existing infrastructure we had in place was very compromised. We have a central Continuous Integration service, but with over 100 teams, they can&rsquo;t suit every team and every product.</p>
-<p>So we decided to start small and just have Docker prove itself by taking over parts of our infrastructure where we ran integration tests. We have had many issues, but they have been mostly with the immaturity of Docker, for which Docker hasn&rsquo;t provided a centralised solution (like cleaning up unused images, which can fill up a whole disk and then bad things happen). Elsewhere companies like <a href="https://www.slideshare.net/mobile/rohanrsingh/docker-at-spotify">Spotify</a> and Google have written custom solutions to many of these such issues.</p>
+<p>And again, number 2 was the main catalyst, as the existing infrastructure we had
+in place was very compromised. We have a central Continuous Integration service,
+but with over 100 teams, they can&rsquo;t suit every team and every product.</p>
+<p>So we decided to start small and just have Docker prove itself by taking over
+parts of our infrastructure where we ran integration tests. We have had many
+issues, but they have been mostly with the immaturity of Docker, for which
+Docker hasn&rsquo;t provided a centralised solution (like cleaning up unused images,
+which can fill up a whole disk and then bad things happen). Elsewhere companies
+like <a href="https://www.slideshare.net/mobile/rohanrsingh/docker-at-spotify">Spotify</a>
+and Google have written custom solutions to many of these such issues.</p>
 <p>The biggest advantages we&rsquo;ve gotten have been:</p>
 <ul>
 <li>Experience with Docker</li>
@@ -160,7 +177,10 @@
 <li>More to learn (some people can be resistant to new technology!)</li>
 <li>More maintenance when things go wrong</li>
 </ul>
-<p>Overall for us as a product area I think Docker has been a worthwhile investment for sure. It&rsquo;s definitely not as stable as Virtual Machines (which at this point is very old technology), but the possibilities it brings to speed up development and deployment are really exciting to me!</p>
+<p>Overall for us as a product area I think Docker has been a worthwhile investment
+for sure. It&rsquo;s definitely not as stable as Virtual Machines (which at this point
+is very old technology), but the possibilities it brings to speed up development
+and deployment are really exciting to me!</p>
 
         </p>
     </div>

@@ -133,11 +133,24 @@
     <div>
         
         <p>
-        <p>Do you need to run a command on SSH login? There are a lot of solutions on the web for this, but most of them are very complex. I stumbled across this easy method of using the <code>authorized_keys</code> file, simply add <code>command=&quot;ls -l&quot;</code> (replacing <code>ls -l</code> with something a bit more useful like <code>tmux</code> or <code>screen</code>) in front of the key fingerprint. This also means you can have different commands for different keys if you choose.</p>
+        <p>Do you need to run a command on SSH login? There are a lot of solutions on the
+web for this, but most of them are very complex. I stumbled across this easy
+method of using the <code>authorized_keys</code> file, simply add <code>command=&quot;ls -l&quot;</code>
+(replacing <code>ls -l</code> with something a bit more useful like <code>tmux</code> or <code>screen</code>) in
+front of the key fingerprint. This also means you can have different commands
+for different keys if you choose.</p>
 <p>Example <code>authorized_keys</code> file:</p>
 <pre tabindex="0"><code>command=&#34;tmux a -t &lt;mysessionname&gt;&#34; ssh-rsa AAAAB3...
-</code></pre><p>A lot of the other solutions you&rsquo;ll find on the web recommend editing profile, bashrc, ssh_config or some other important shell files - something you should avoid unless absolutely necessary. One more word of advice, make sure the command <em>will always execute sucessfully</em>. If the command fails <em>for any reason</em> (like a Tmux session not existing) your SSH connection will close, since this is the command that will keep it open. That&rsquo;s fine if you have access to the computer and have a screen attached to fix it, but if you are remote then you will be out of luck.</p>
-<p>If you enjoyed this post, you should check out my post on <a href="../ssh-config">using patterns in SSH config file</a>.</p>
+</code></pre><p>A lot of the other solutions you&rsquo;ll find on the web recommend editing profile,
+bashrc, ssh<em>config or some other important shell files - something you should
+avoid unless absolutely necessary. One more word of advice, make sure the
+command _will always execute sucessfully</em>. If the command fails <em>for any
+reason</em> (like a Tmux session not existing) your SSH connection will close, since
+this is the command that will keep it open. That&rsquo;s fine if you have access to
+the computer and have a screen attached to fix it, but if you are remote then
+you will be out of luck.</p>
+<p>If you enjoyed this post, you should check out my post on
+<a href="../ssh-config">using patterns in SSH config file</a>.</p>
 
         </p>
     </div>

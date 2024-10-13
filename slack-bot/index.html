@@ -133,8 +133,14 @@
     <div>
         
         <p>
-        <p>In a previous post, I mentioned how I get notified of the <a href="../rest-menu">restaurant menu</a> via a Ruby script. Recently I&rsquo;ve moved to a totally different product area and the main communication channel we use is <a href="https://www.slack.com">Slack</a>. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.</p>
-<p>This also got me thinking of what other information would be handy to have. I scouted around for ideas and came up with an obvious one: reminder of the bus times to and from the office. So here&rsquo;s my bus times notification slack bot:</p>
+        <p>In a previous post, I mentioned how I get notified of the <a href="../rest-menu">restaurant
+menu</a> via a Ruby script. Recently I&rsquo;ve moved to a totally different
+product area and the main communication channel we use is <a href="https://www.slack.com">Slack</a>. Naturally
+enough, I ported the Ruby code I wrote, and it now posts the menu every day to
+our Slack channel.</p>
+<p>This also got me thinking of what other information would be handy to have. I
+scouted around for ideas and came up with an obvious one: reminder of the bus
+times to and from the office. So here&rsquo;s my bus times notification slack bot:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env ruby</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#Encoding: UTF-8</span>
 </span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;nokogiri&#39;</span>
@@ -188,9 +194,11 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>check_next_bus()
-</span></span></code></pre></div><p>I simply set this to run every 20 minutes, Monday to Friday, during working hours via cron:</p>
+</span></span></code></pre></div><p>I simply set this to run every 20 minutes, Monday to Friday, during working
+hours via cron:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*/20 07-19 * * 1,2,3,4,5 bus-times.rb &gt; /dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span>
-</span></span></code></pre></div><p>For convenience, I have the webhook set to post to a different channel so people can opt in for bus reminders.</p>
+</span></span></code></pre></div><p>For convenience, I have the webhook set to post to a different channel so people
+can opt in for bus reminders.</p>
 
         </p>
     </div>

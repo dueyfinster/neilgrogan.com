@@ -133,7 +133,9 @@
     <div>
         
         <p>
-        <p>If your like me and you deal with a lot of servers for development or test and do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern matching.</p>
+        <p>If your like me and you deal with a lot of servers for development or test and
+do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern
+matching.</p>
 <p>Say I&rsquo;ve got a SSH config file like this (at <code>~/.ssh/config</code> ):</p>
 <pre><code>host s*
     HostName atrcu%h.example.com
@@ -150,31 +152,37 @@ host ??*
 </code></pre>
 <p>The ssh man page explains this really well:</p>
 <blockquote>
-<p>A pattern consists of zero or more non-whitespace characters, &lsquo;*&rsquo; (a
-wildcard that matches zero or more characters), or &lsquo;?&rsquo; (a wildcard that
-matches exactly one character).  For example, to specify a set of decla-
-rations for any host in the .co.uk set of domains, the following pat-
-tern could be used:</p>
+<p>A pattern consists of zero or more non-whitespace characters, &lsquo;*&rsquo; (a</p>
+</blockquote>
+<pre><code> wildcard that matches zero or more characters), or '?' (a wildcard that
+ matches exactly one character).  For example, to specify a set of decla-
+ rations for any host in the .co.uk set of domains, the following pat-
+ tern could be used:
+</code></pre>
+<blockquote>
+<pre><code>Host *.co.uk
+</code></pre>
 </blockquote>
 <blockquote>
-<p>Host *.co.uk</p>
+<p>The following pattern would match any host in the 192.168.0.[0-9] network</p>
+</blockquote>
+<pre><code> range:
+</code></pre>
+<blockquote>
+<pre><code>Host 192.168.0.?
+</code></pre>
 </blockquote>
 <blockquote>
-<p>The following pattern would match any host in the 192.168.0.[0-9] network
-range:</p>
+<p>A pattern-list is a comma-separated list of patterns. Patterns within</p>
 </blockquote>
+<pre><code> pattern-lists may be negated by preceding them with an exclamation mark
+ ('!').  For example, to allow a key to be used from anywhere within an
+ organisation except from the ``dialup'' pool, the following entry (in
+ authorized_keys) could be used:
+</code></pre>
 <blockquote>
-<p>Host 192.168.0.?</p>
-</blockquote>
-<blockquote>
-<p>A pattern-list is a comma-separated list of patterns.  Patterns within
-pattern-lists may be negated by preceding them with an exclamation mark
-(&rsquo;!&rsquo;).  For example, to allow a key to be used from anywhere within an
-organisation except from the ``dialup&rsquo;&rsquo; pool, the following entry (in
-authorized_keys) could be used:</p>
-</blockquote>
-<blockquote>
-<p>from=&quot;!<em>.dialup.example.com,</em>.example.com&quot;</p>
+<pre><code>from=&quot;!*.dialup.example.com,*.example.com&quot;
+</code></pre>
 </blockquote>
 <p>So there you have it!</p>
 

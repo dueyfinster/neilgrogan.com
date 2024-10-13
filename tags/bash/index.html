@@ -138,7 +138,10 @@
                 </a>
             </h2>
             <div>
-                <p><p>Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
+                <p><p>Bash, a command line shell is one of the most used pieces of software in my
+daily work. I like scripting repetitive actions to save a lot time (it brings me
+great joy!). One of the simplest and easiest customisations is to add a bit of
+colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
 <pre><code>[ngrogan@localhost:~]$
 </code></pre>
 <p>can be turned in to this:</p>
@@ -160,27 +163,25 @@
                 </a>
             </h2>
             <div>
-                <p><p>I wrote this script recently for a friend in a job who
-needed to output a certain percentage of a log file, but
-no more and no less. This was in Linux using bash, so I
-had a go at writing a solution, which you see below. Posting
+                <p><p>I wrote this script recently for a friend in a job who needed to output a
+certain percentage of a log file, but no more and no less. This was in Linux
+using bash, so I had a go at writing a solution, which you see below. Posting
 this up in case it&rsquo;s useful to anyone else!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>	<span style="color:#75715e"># !/bin/sh</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Public Domain, by Neil Grogan 2010</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Script to output last 30% of file by lines</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#75715e"># !/bin/sh # Public Domain, by Neil Grogan 2010 # Script</span>
+</span></span><span style="display:flex;"><span>to output last 30% of file by lines
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	OLDFILE<span style="color:#f92672">=</span>&amp;quot;oldlog.txt&amp;quot;
-</span></span><span style="display:flex;"><span>	NEWFILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newlog.txt&#34;</span>
-</span></span><span style="display:flex;"><span>	PERCENT<span style="color:#f92672">=</span>0.7
+</span></span><span style="display:flex;"><span>    OLDFILE<span style="color:#f92672">=</span>&amp;quot;oldlog.txt&amp;quot;
+</span></span><span style="display:flex;"><span>    NEWFILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newlog.txt&#34;</span>
+</span></span><span style="display:flex;"><span>    PERCENT<span style="color:#f92672">=</span>0.7
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#Use wc to count lines</span>
-</span></span><span style="display:flex;"><span>	LINES<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>wc -l $OLDFILE | awk <span style="color:#e6db74">&#39;{ print $1}&#39;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#Use wc to count lines</span>
+</span></span><span style="display:flex;"><span>    LINES<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>wc -l $OLDFILE | awk <span style="color:#e6db74">&#39;{ print $1}&#39;</span><span style="color:#66d9ef">)</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#Linespercent = 2 decimal places, lines by percent, round to whole</span>
-</span></span><span style="display:flex;"><span>	LINESPERCENT<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>echo <span style="color:#e6db74">&#34;scale=2; </span>$LINES<span style="color:#e6db74">*</span>$PERCENT<span style="color:#e6db74">&#34;</span> | bc | xargs printf <span style="color:#e6db74">&#34;%1.0f&#34;</span> <span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#Linespercent = 2 decimal places, lines by percent, round to whole</span>
+</span></span><span style="display:flex;"><span>    LINESPERCENT<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>echo <span style="color:#e6db74">&#34;scale=2; </span>$LINES<span style="color:#e6db74">*</span>$PERCENT<span style="color:#e6db74">&#34;</span> | bc | xargs printf <span style="color:#e6db74">&#34;%1.0f&#34;</span> <span style="color:#66d9ef">)</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Use tail to get last 30% and output, can use tail -s with sleep time to have it run on sched.</span>
-</span></span><span style="display:flex;"><span>	tail -n $LINESPERCENT $OLDFILE &gt;&gt; $NEWFILE</span></span></code></pre></div></p>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Use tail to get last 30% and output, can use tail -s with sleep time to have it run on sched.</span>
+</span></span><span style="display:flex;"><span>    tail -n $LINESPERCENT $OLDFILE &gt;&gt; $NEWFILE</span></span></code></pre></div></p>
                 
             </div>
             <div class="post-footer">
