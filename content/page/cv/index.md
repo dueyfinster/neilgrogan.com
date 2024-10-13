@@ -4,4 +4,5 @@ title: CV
 ---
 
 #### View and Download
-You can get a [PDF copy of my resume](/cv/ngrogan-CV.pdf). 
+
+You can get a [PDF copy of my resume](/cv/ngrogan-CV.pdf).

@@ -1,4 +1,4 @@
 ---
 type: section
-layout: "search"
+layout: 'search'
 ---

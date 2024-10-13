@@ -1,8 +1,8 @@
 ---
-date: "2004-10-24T00:00:00Z"
+date: '2004-10-24T00:00:00Z'
 slug: dueyfinster
 tags:
-- google
+  - google
 title: Duey Finster
 ---
 

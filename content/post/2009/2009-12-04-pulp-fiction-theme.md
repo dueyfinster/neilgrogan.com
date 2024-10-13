@@ -1,9 +1,9 @@
 ---
-date: "2009-12-04T00:00:00Z"
+date: '2009-12-04T00:00:00Z'
 link: null
 slug: pulp-fiction-theme
 tags:
-- video
+  - video
 title: Pulp Fiction theme
 ---
 

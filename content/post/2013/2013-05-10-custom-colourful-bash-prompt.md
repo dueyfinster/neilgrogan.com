@@ -1,14 +1,17 @@
 ---
-date: "2013-05-10T00:00:00Z"
+date: '2013-05-10T00:00:00Z'
 slug: colour-bash
 tags:
-- bash
-- linux
-- terminal
+  - bash
+  - linux
+  - terminal
 title: Custom Colourful Bash Prompt
 ---
 
-Bash, a command line shell is one of the most used pieces of software in my daily work. I like scripting repetitive actions to save a lot time (it brings me great joy!). One of the simplest and easiest customisations is to add a bit of colour to your otherwise boring bash prompt (otherwise known as $PS1):
+Bash, a command line shell is one of the most used pieces of software in my
+daily work. I like scripting repetitive actions to save a lot time (it brings me
+great joy!). One of the simplest and easiest customisations is to add a bit of
+colour to your otherwise boring bash prompt (otherwise known as $PS1):
 
     [ngrogan@localhost:~]$
 
@@ -24,4 +27,5 @@ The thing about Bash is the colour codes to achieve this can look archaic:
 
 {{< / highlight >}}
 
-To get a prompt like this easily, all you need to do is use this handy $PS1 generator. A highly recommended tool!
+To get a prompt like this easily, all you need to do is use this handy $PS1
+generator. A highly recommended tool!
