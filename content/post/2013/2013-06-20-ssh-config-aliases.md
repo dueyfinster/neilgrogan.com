@@ -51,7 +51,6 @@ The ssh man page explains this really well:
      organisation except from the ``dialup'' pool, the following entry (in
      authorized_keys) could be used:
 
-
 >     from="!*.dialup.example.com,*.example.com"
 
 So there you have it!

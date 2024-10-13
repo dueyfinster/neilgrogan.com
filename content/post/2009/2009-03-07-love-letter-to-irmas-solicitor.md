@@ -12,7 +12,7 @@ title: Love letter to IRMA's Solicitor
   Internet and have forced the biggest Irish ISP: Eircom; to use the three
   strikes rule and boot people off the Internet... No Judge, no Jury, no
   evidence of a crime.. Just an IP address and a sanction which you cannot
-  contest.  
+  contest.
 
 - I have sent a poignant email to IRMA's solicitor based on their letter of
   attack on the ISP's. If you think any of the language is too harsh by me;
@@ -28,10 +28,9 @@ title: Love letter to IRMA's Solicitor
   wrongly stressed out by this. I will compile a blog post of all the FUD (Fear,
   Uncertainty and Doubt) that IRMA has spread soon; and a rebuttal of why their
   actions may even increase piracy. One thing is for sure; my analysis will be a
-  whole lot cheaper (free) and probably more accurate!
-  **Note:** I have taken out names, but the legal firm and the acting solicitor
-  can be examined in the letter above \^  
-
+  whole lot cheaper (free) and probably more accurate! **Note:** I have taken
+  out names, but the legal firm and the acting solicitor can be examined in the
+  letter above \^
 
 > Dear [Solicitor for IRMA's name],
 >

@@ -10,7 +10,7 @@ title: Dell refunds me for Windows!
 
 As many of you know I am a [Linux](http://www.ubuntu.com/) and
 [Mac](http://www.apple.com/mac)
-[aficionado](http://www.google.ie/search?q=define:aficionado&ie=utf-8&amp;oe=utf-8&=t&=com.ubuntu:en-US:official&=firefox-a).
+[aficionado](http://www.google.ie/search?q=define:aficionado&ie=utf-8&oe=utf-8&=t&=com.ubuntu:en-US:official&=firefox-a).
 For my Linux machines, all of them are [Dell](http://www.dell.com/open). I have
 been always pleased with Dells prices, how their machines work with Linux, their
 customer service and the fact they are made in Limerick, Ireland (I am from

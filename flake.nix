@@ -53,7 +53,7 @@
               '';
             }
           ];
-          packages = with pkgs; [go git];
+          packages = with pkgs; [go git nodePackages.prettier];
         };
 
         checks.versions = inputs.nix-flake-tests.lib.check {

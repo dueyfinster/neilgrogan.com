@@ -21,8 +21,7 @@ title: Profiling Firefox Extensions I have installed
   numbered! (Some people higly recommend
   [flashblock](https://addons.mozilla.org/en-US/firefox/addon/433) but I haven't
   had a need to use it with AdBlock Plus yet).  
-  [![image](/img/08/943948800.png)](/img/08/943948800.png)  
-
+  [![image](/img/08/943948800.png)](/img/08/943948800.png)
 
 [CustomizeGoogle](https://addons.mozilla.org/en-US/firefox/addon/743) adds neat
 tricks to Google services such as always using a secure connection to Gmail;

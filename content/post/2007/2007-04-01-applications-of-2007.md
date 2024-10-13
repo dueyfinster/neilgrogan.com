@@ -17,16 +17,14 @@ Apps of 2007 in descending order:
 - Always a must on spyware infested Windows XP installs I come across
   (Unfortunately all to often). It removes a lot of the bad stuff, and my most
   used feature is system startup section, as I can stop all that crud from
-  loading and slowing everything to a crawl.  
-
+  loading and slowing everything to a crawl.
 
 **9.** [_iTunes_](http://www.apple.com/itunes/ 'iTunes') (OS X Version)
 
 - Apple's Music player definitely has a nice feel to it, shame about the copy
   protection from the iTunes Store. That doesn't really impinge on my use of it
   however, I use it to manage my iPods , Podcasts etc. and occasionally l listen
-  to Internet Radio.  
-
+  to Internet Radio.
 
 **8.** [_The Gimp_](http://www.gimp.org/ 'Gimp Image Editor') - Ugly as sin, but
 useful as anything you'll ever find for free. The Gimp is the image editor of

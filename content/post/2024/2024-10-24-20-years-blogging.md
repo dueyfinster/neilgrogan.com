@@ -1,5 +1,5 @@
 ---
-title: "20 Years Blogging"
+title: '20 Years Blogging'
 slug: 20-years
 date: 2024-10-34
 draft: true # TODO: un-draft to publish this
@@ -10,4 +10,3 @@ tags:
 Today marks [20 years since I first blogged](/dueyfinster).
 
 <!--more-->
-
