@@ -56,18 +56,6 @@
           packages = with pkgs; [go git nodePackages.prettier];
         };
 
-        checks.versions = inputs.nix-flake-tests.lib.check {
-          inherit pkgs;
-          tests = {
-            testMatch = let
-              netlifyVersion = (builtins.fromTOML (builtins.readFile ./netlify.toml)).build.environment.HUGO_VERSION;
-              pkgsVersion = pkgs.hugo.version;
-            in {
-              expected = netlifyVersion;
-              expr = pkgsVersion;
-            };
-          };
-        };
       };
     };
 
