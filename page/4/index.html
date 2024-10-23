@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.135.0">
+	<meta name="generator" content="Hugo 0.136.4">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -131,6 +131,121 @@
         
         
         
+        
+        <article>
+            <h2>
+                <a href="../../dashing/">
+                    Dashing Dashboards
+                </a>
+            </h2>
+            <div>
+                <p><p>In the last year and a half, I set up a <a href="http://ruby.org">Ruby</a> based
+<a href="http://dashing.io">Dashing dashboard</a> for my team and others in our product
+area. Here&rsquo;s what a sample Dashing dashboard looks like:</p>
+<p><img src="../../img/16/dashing.jpg" alt="Dashing Sample Dashboard"></p>
+<p>It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here
+I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):</p>
+<ul>
+<li>Don&rsquo;t do dashboards for managers, do them for teams</li>
+<li>Use big text, have the minimum information as required</li>
+<li>Use colours (preferably like the traffic light system) to focus attention</li>
+<li>Link in all critical systems to daily work</li>
+<li>Make it a one stop shop and faster then all other methods of getting this
+information</li>
+<li>Reuse the work of others (steal with pride)</li>
+<li>Don&rsquo;t bother with graphs</li>
+</ul>
+<p><em>Below I outline the reasons for each point:</em></p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>February 15, 2016</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/ruby">#ruby</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../autohours/">
+                    Fill hours worked in SAP Netweaver Automatically
+                </a>
+            </h2>
+            <div>
+                <p><p>Continuing the theme of automation, one of the most repetitive tasks if you work
+for a big company is timesheets. So I set out to rectify this by scripting it!</p>
+<p>Start with you configuration, I named mine <code>hours.ini</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> FILL_ME_IN
+</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> FILL_ME_IN
+</span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> FILL_ME_IN
+</span></span></code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy
+lifting, so we install it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
+</span></span></code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>February 1, 2016</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/code">#code</a>
+                
+                    <a class="tag" href="../../tags/automation">#automation</a>
+                
+                    <a class="tag" href="../../tags/programming">#programming</a>
+                
+                    <a class="tag" href="../../tags/python">#python</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../rest-menu/">
+                    Automated &#39;Push&#39; Restaurant menu
+                </a>
+            </h2>
+            <div>
+                <p><p>I love trying to automate the world, it just feels like magic some of the time!
+I also really enjoy information coming to me, instead of having to seek it. As
+we are still only in 2016, we have no world killing Artificial Intelligence
+(yet). So we have to start small, ease the first world problems! So I decided to
+make my workplaces&rsquo; restaurant menu come to me!</p>
+<p>I decided to write it in Ruby and use push notifications, rather than email or
+SMS. It uses a web automation framework called
+<a href="http://www.seleniumhq.org/">Selenium</a>, which is available in many languages,
+including Javascript, Python, Java and obviously Ruby!</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>January 10, 2016</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/code">#code</a>
+                
+                    <a class="tag" href="../../tags/programming">#programming</a>
+                
+                    <a class="tag" href="../../tags/ruby">#ruby</a>
+                
+                    <a class="tag" href="../../tags/automation">#automation</a>
+                
+            
+            </div> 
+           
+        </article>
         
         <article>
             <h2>
@@ -402,109 +517,6 @@ services if you use it.</small></p></p>
                     <a class="tag" href="../../tags/apple">#apple</a>
                 
                     <a class="tag" href="../../tags/amazon">#amazon</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../watch-stand/">
-                    Apple Watch Stand
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="https://www.youtube.com/watch?v=-e1DiEegB_c">https://www.youtube.com/watch?v=-e1DiEegB_c</a></p>
-<p>h/t;
-<a href="https://www.reddit.com/r/apple/comments/3hygaj/i_put_together_a_really_lazy_and_nice_diy_apple/">reddit</a></p>
-<p><strong>update:</strong> I tried this myself, but I&rsquo;ve obviously no talent for these things:</p>
-<p><img src="../../public/img/15/watchclip.jpeg" alt=" Apple watch stand using clip"></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 23, 2015</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/apple">#apple</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../soulver-app/">
-                    Soulver App
-                </a>
-            </h2>
-            <div>
-                <p><p>My favourite text number crunching app on iOS bar none is <a href="http://www.acqualia.com/soulver/">Soulver</a>. What
-makes it the best?</p>
-<ul>
-<li>Fast to load</li>
-<li>Simple user interface that gets out of the way</li>
-<li>Contextual Keyboards (my favourite is the currency keyboard)</li>
-<li>Can reuse calculations from previous lines (and name calculations).</li>
-<li>iCloud sync</li>
-</ul>
-<p><a href="http://www.acqualia.com/soulver/">Soulver</a> is great for when a spreadsheet is just to heavy. I use it a lot for
-it currency conversion, makes it easy to have multiple line items in different
-currencies (say GBP &amp; USD) and get a total in one (EUR). Also for splitting the
-bills at a resturant, each line could be a food item (so if two desserts cost
-the same, you can see quickly and only add lines relevant for each participant).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 17, 2014</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/ios">#ios</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../drafts-app/">
-                    Drafts App
-                </a>
-            </h2>
-            <div>
-                <p><p>My favourite text capture app on iOS bar none is <a href="http://agiletortoise.com/drafts/">Drafts</a> by Agile Tortoise.
-What makes it the best?</p>
-<ul>
-<li>No fluff, loads fast</li>
-<li>Simple user interface that gets out of the way</li>
-<li>Extensible actions (which you can add to from their <a href="http://drafts4-actions.agiletortoise.com">directory</a>)</li>
-<li>iCloud sync</li>
-</ul>
-<p>I&rsquo;ve tried a lot of other apps like <a href="http://bywordapp.com/">Byword</a> (Not worth the money I think),
-Apples&rsquo; built-in Notes app, <a href="http://www.textasticapp.com/">Textastic</a> and so on. None felt as efficient or
-as flexible as Drafts. With Drafts, I can trust my text can be anywhere I need
-it to be.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 16, 2014</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/ios">#ios</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
                 
             
             </div> 

@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.135.0">
+	<meta name="generator" content="Hugo 0.136.4">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -131,6 +131,78 @@
         
         
         
+        
+        <article>
+            <h2>
+                <a href="./20-years/">
+                    20 Years of this Blog
+                </a>
+            </h2>
+            <div>
+                <p><p>Today marks <a href="./dueyfinster">20 years since I first blogged</a>. I wanted to give a
+little context to that post.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>October 24, 2024</time>
+
+            
+            
+                
+                    <a class="tag" href="./tags/personal">#personal</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="./mini-k8s/">
+                    Mini Kubernetes Cluster
+                </a>
+            </h2>
+            <div>
+                <p><p>TODO</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>October 20, 2024</time>
+
+            
+            
+                
+                    <a class="tag" href="./tags/networking">#networking</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="./picade/">
+                    Picade
+                </a>
+            </h2>
+            <div>
+                <p><p>TODO</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>October 20, 2024</time>
+
+            
+            
+                
+                    <a class="tag" href="./tags/hardware">#hardware</a>
+                
+                    <a class="tag" href="./tags/review">#review</a>
+                
+            
+            </div> 
+           
+        </article>
         
         <article>
             <h2>
@@ -353,104 +425,6 @@ different configuration.</p></p>
                     <a class="tag" href="./tags/networking">#networking,</a>
                 
                     <a class="tag" href="./tags/homenet">#homenet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./ubnt/">
-                    Ubiquiti Home Network
-                </a>
-            </h2>
-            <div>
-                <p><p>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do
-business Wifi, all the way up to covering stadiums. I first heard about them
-from <a href="https://www.troyhunt.com/ubiquiti-all-the-things-how-i-finally-fixed-my-dodgy-wifi/">Troy Hunt</a> and then again from <a href="https://marco.org">Marco Arment</a> on <a href="https://atp.fm">Accidental
-Tech Podcast</a>. Ubiquiti are popular in prosumer space - for people serious
-about good <a href="https://en.wikipedia.org/wiki/Wi-Fi">Wifi</a>.</p>
-<p>So far it&rsquo;s been an excellent experience and I&rsquo;d highly recommend it. After
-setting it up (there is a few moving pieces) it has been running without any
-intervention from me. Being a professional product, it&rsquo;s not just a home router
-(with inbuilt wifi), there is a few more pieces you need to buy:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 10, 2019</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/networking">#networking,</a>
-                
-                    <a class="tag" href="./tags/homenet">#homenet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./kbc-tx-js/">
-                    Scraping Transaction Data from KBC Bank
-                </a>
-            </h2>
-            <div>
-                <p><p>In a previous post, I mentioned <a href="./bank-tx-py">importing transactions</a> using
-<a href="./ledger">ledger</a>/<a href="https://hledger.org/">hledger</a> and plain text accounting. As my former bank <a href="https://www.permanenttsb.ie/">PTSB</a>
-recently raised their fees, I decided to move to <a href="https://www.kbc.ie/">KBC</a>. I was excited to see,
-as part of the open payments directive, they have a nice <a href="https://www.kbc.ie/psd2-developer-portal/home">developer
-portal</a>. I reached out to KBC&rsquo;s dev team, but alas they are only accepting
-registered companies, who meet stringent criteria. They told me they hope to
-open it up soon to end users, I live in hope!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 13, 2019</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/automation">#automation</a>
-                
-                    <a class="tag" href="./tags/javascript">#javascript</a>
-                
-                    <a class="tag" href="./tags/code">#code</a>
-                
-                    <a class="tag" href="./tags/programming">#programming</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./docker-compose-ipv6/">
-                    Using IPv6 with Docker Compose on Ubuntu Server
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently started using <a href="https://pi-hole.net/">PiHole</a> to block ads on my home network. As the name
-suggests, you install it on a <a href="https://raspberrypi.org/">raspberry pi</a>. I left it in situ for about a month,
-until I decided I wanted to swap out the pi, but keep PiHole.</p>
-<p>The natural solution to this, is to use a docker container. Rather helpfully,
-there is a publicly available <a href="https://github.com/pi-hole/docker-pi-hole">docker build of PiHole</a>. Simple,
-right? Well my home network is also IPv6, thus the <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> on the raspberrypi
-should be also. The problem is, <a href="https://docs.docker.com/v17.09/engine/userguide/networking/default_network/ipv6/">Docker has support for IPv6</a>, but it&rsquo;s
-not very straightforward with <a href="https://docs.docker.com/compose/">Docker Compose</a>.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 8, 2019</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/docker">#docker</a>
                 
             
             </div> 
