@@ -18,9 +18,9 @@ interesting for me: I heard of this mythical new service called "Gmail". Gmail
 of course from a company I already thought was cool: Google. Unfortunately for
 me - this new "Gmail" I heard about a few months before was US only.
 
-Then the rumours started to fly: Google was opening up Gmail to more users and a
-surefire way to get it? Create a Blogger account - a company that Google
-acquired. So I duly did that snd wrote the [first post](/dueyfinster). If you're
+Then the rumours started to fly: Google was opening up Gmail to more users. What
+was a surefire way to get it? Create a Blogger account - a company that Google
+acquired. So I duly did that and wrote the [first post](/dueyfinster). If you're
 curious - I'm now convinced it made exactly and precisely zero difference. What
 eventually got me that coveted gmail account was having different cousins based
 in the United States who could invite me directly. I finally got
