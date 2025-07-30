@@ -5,8 +5,7 @@ title: Uses
 ### Editor + Terminal
 
 For Editor I use [VS Code](https://code.visualstudio.com) and
-[Vim](https://www.vim.org)/[Neovim](https://www.neovim.io). I also use
-[Emacs](https://www.gnu.org/emacs) for the excellent [org-mode](https://orgmode.org/).
+[Vim](https://www.vim.org)/[Neovim](https://www.neovim.io).
 
 For shell I use [ZSH](https://www.zsh.org/) with [Starship](https://starship.rs/)
 installed. For terminal I use [WezTerm](https://wezfurlong.org/wezterm/index.html) but I
@@ -42,17 +41,28 @@ On my phone (iPhone 15 Pro) I use:
 
 I have separate work and personal desks in my home office.
 
-#### Personal Desk:
+#### Personal Desk (New)
 
-- [5K iMac Pro](https://support.apple.com/en-ie/111995)
+- AMD Ryzen 7 9800X3D
+- 32GB RAM
+- 2TB Samsung NVMe SSD
+- RTX 5080
+- ASRock B850 LiveMixer WiFi
+- Phanteks Evolv X2 Black
+- 27" PG27UCDM ROG Swift OLED Monitor (4K, 240hz)
 - [Ikea Bekant Sit/Stand Desk](https://www.ikea.com/ie/en/p/bekant-desk-sit-stand-white-stained-oak-veneer-white-s19282085/)
 - [Logitech MX Master 3](https://www.amazon.co.uk/Logitech-Ultrafast-Scrolling-Ergonomic-Customisation/dp/B07W6JG6Z7/)
-- Apple Full size keyboard in space grey
-- Apple Trackpad
 - Unbranded office chair
 - ErgoTron HX Monitor Arm
 - [Doxie Q](https://www.getdoxie.com/product/doxie-q) for receipt scanning
 - [mydpi 300v1](https://mydpi.com/products/300v1) thermal printer for labels
+
+Older items:
+- [5K iMac Pro](https://support.apple.com/en-ie/111995)
+- Apple Full size keyboard in space grey
+- Apple Trackpad
+
+ 
 
 #### Work Desk:
 
