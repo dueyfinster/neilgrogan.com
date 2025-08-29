@@ -6,8 +6,15 @@
     <description>Recent content on Neil Grogan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes and Nix Cluster</title>
+      <link>/k8s-nix-cluster/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>/k8s-nix-cluster/</guid>
+      <description>&lt;p&gt;About this time last year, I purchased 3 mini computers with the aim of making a &lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt; cluster. I followed an excellent youtube video: &lt;a href=&#34;https://youtu.be/2yplBzPCghA?si=1Fq1Fx0PSvXP8krE&#34;&gt;This homelab setup is my favorite one yet - Dreams of Autonomy&lt;/a&gt; (&lt;a href=&#34;https://github.com/dreamsofautonomy/homelab&#34;&gt;Github Repository&lt;/a&gt;) which described the machines to buy (Beelink EQ 13 Mini), how to upgrade the &lt;abbr title=&#34;Solid State Disk&#34;&gt;SSD&lt;/abbr&gt; and &lt;abbr title=&#34;Random Access Memory&#34;&gt;RAM&lt;/abbr&gt;, how to provision them with &lt;a href=&#34;https://nixos.org&#34;&gt;NixOS&lt;/a&gt;, setup &lt;a href=&#34;https://k3s.io&#34;&gt;K3S&lt;/a&gt;, and connect using &lt;a href=&#34;https://kubectl.docs.kubernetes.io/guides/&#34;&gt;kubectl&lt;/a&gt; to manage the cluster. You will also have to modify your router&amp;rsquo;s &lt;abbr title=&#34;Dynamic Host Configuration Protocol&#34;&gt;DHCP&lt;/abbr&gt; settings so you can give the cluster static &lt;abbr title=&#34;Internet Protocol&#34;&gt;IP&lt;/abbr&gt; addresses.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Picade</title>
       <link>/picade/</link>
