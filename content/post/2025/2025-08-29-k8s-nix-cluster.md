@@ -27,7 +27,7 @@ These are all in the Github repo linked above. I've since experimented with othe
 
 - [Livebook](https://livebook.dev) - for live coding, and interacting with services 
 
-- [Redis](https://redis.io) - as a data store (maybe I should have use [Valkey](https://valkey.io)? )
+- [Redis](https://redis.io) - as a data store (maybe I should have used [Valkey](https://valkey.io)? )
 
 - [Postgres](https://www.postgresql.org) - database
 
@@ -63,5 +63,5 @@ These are all in the Github repo linked above. I've since experimented with othe
 
 I'm happy I did this as it's been a great learning opportunity for me to break things and fix them again. Kubernetes can be a bit off-putting with concepts, how they are linked and how to just deploy something quickly to verify it works. There's a lot to understand before something works.
 
-I really would only recommend using Kubernetes an Enterprise context where you have more than one workload. For simpler apps, I would stick to docker, docker-compose and things like Dokku. Or of course doing it just for fun, learning and experimenting!
+I really would only recommend using Kubernetes in an enterprise context where you have more than one workload. For simpler apps, I would stick to docker, docker-compose and things like Dokku. Or of course doing it just for fun, learning and experimenting!
 
