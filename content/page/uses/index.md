@@ -4,18 +4,18 @@ title: Uses
 
 ### Editor + Terminal
 
-For Editor I use [VS Code](https://code.visualstudio.com) and
-[Vim](https://www.vim.org)/[Neovim](https://www.neovim.io).
+For Editor I use [Neovim](https://www.neovim.io) and [VS Code](https://code.visualstudio.com).
 
 For shell I use [ZSH](https://www.zsh.org/) with [Starship](https://starship.rs/)
-installed. For terminal I use [WezTerm](https://wezfurlong.org/wezterm/index.html) but I
-am also trying [Ghostty](https://ghostty.org/).
+installed. For terminal I use [Ghostty](https://ghostty.org/).
+
+For AI CLI tools, I use Codex, Kiro and Claude.
 
 [My dotfiles are here](https://github.com/dueyfinster/dotfiles)
 
 ### Desktop Apps
 
-For web browser - I usually use Safari and Firefox.
+For web browser - I usually use Firefox.
 
 For RSS reader I use the excellent [Reeder](https://reederapp.com) (mac/iOS).
 
@@ -29,7 +29,7 @@ local USB and cloud sync where needed.
 
 ### Mobile setup
 
-- [Framework 13 AMD 7040](https://frame.work) - runs [NixOS](https://nixos.org)
+- [Framework 13 AMD 7040](https://frame.work) - runs [Omarchy](https://omarchy.org)
 
 On my phone (iPhone 15 Pro) I use:
 
@@ -48,23 +48,16 @@ I have separate work and personal desks in my home office.
 - 2TB Samsung NVMe SSD
 - RTX 5080
 - ASRock B850 LiveMixer WiFi
-- Phanteks Evolv X2 Black
+- Phanteks Evolv X2 Black Case
 - 27" PG27UCDM ROG Swift OLED Monitor (4K, 240hz)
 - [Ikea Bekant Sit/Stand Desk](https://www.ikea.com/ie/en/p/bekant-desk-sit-stand-white-stained-oak-veneer-white-s19282085/)
-- [Logitech MX Master 3](https://www.amazon.co.uk/Logitech-Ultrafast-Scrolling-Ergonomic-Customisation/dp/B07W6JG6Z7/)
+- [Razer Basilisk V3](https://www.razer.com/eu-en/gaming-mice/razer-basilisk-v3)
 - Unbranded office chair
 - ErgoTron HX Monitor Arm
 - [Doxie Q](https://www.getdoxie.com/product/doxie-q) for receipt scanning
 - [mydpi 300v1](https://mydpi.com/products/300v1) thermal printer for labels
 
-Older items:
-- [5K iMac Pro](https://support.apple.com/en-ie/111995)
-- Apple Full size keyboard in space grey
-- Apple Trackpad
-
- 
-
-#### Work Desk:
+#### Work Desk
 
 - Dell Monitor
 - Dell Dock
@@ -80,16 +73,17 @@ Older items:
 - [Elgato Stream Deck](https://www.amazon.co.uk/Elgato-Stream-Deck-Controller-customizable/dp/B06W2KLM3S)
 - [Elgato Stream Deck Pedal](https://www.amazon.co.uk/dp/B09PRMCTGB)
 - [Elgato Prompter](https://www.amazon.co.uk/dp/B0CH3P9K1X) with a [Elgato FaceCam Pro](https://www.amazon.co.uk/dp/B0BJL7Q3SR)
-- [Elgato Wave XLR](https://www.amazon.co.uk/Elgato-Wave-Tap-Mute-Mac/dp/B09738CKKX) paired with a [Shure S7MB](https://www.amazon.co.uk/Shure-SM7B-Microphone/dp/B0002E4Z8M)
+- [Elgato Wave XLR](https://www.amazon.co.uk/Elgato-Wave-Tap-Mute-Mac/dp/B09738CKKX) paired with a [Shure S7MB](https://www.amazon.co.uk/Shure-SM7B-Microphone/dp/B0002E4Z8M) and [Sennheiser HD 280 PRO](https://www.sennheiser.com/en-us/catalog/products/headphones/hd-280-pro/hd-280-pro-506845)
 
-#### In storage:
+#### In storage
+
 - [Blue Snowball Mic](https://www.amazon.co.uk/Blue-Microphones-Snowball-iCE-Microphone/dp/B014PYGTUQ/)
 
-#### Packed for travel to the office:
-- [Logitech Laptop style keyboard (Mac edition)](https://www.amazon.co.uk/gp/product/B00B73BZJO/)
-- Dell mouse
+#### Packed for travel to the office
+
+- [ZSA Voyager](https://www.zsa.io/voyager) + [Navigator](https://www.zsa.io/voyager/navigator) (trackball)
 - [Roost Laptop Stand](https://www.therooststand.com/)
 
-
 #### Other Gear
+
 - Headphones I mostly use in the "office" office and they are Airpods Pro
