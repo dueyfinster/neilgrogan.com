@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.149.0">
+	<meta name="generator" content="Hugo 0.159.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
     
     
     
-    <link rel="stylesheet" href="../../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -131,6 +131,85 @@
         
         
         
+        
+        <article>
+            <h2>
+                <a href="../../ssh-config/">
+                    SSH Config Aliases
+                </a>
+            </h2>
+            <div>
+                <p><p>If your like me and you deal with a lot of servers for development or test and
+do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern
+matching.</p>
+<p>Say I&rsquo;ve got a SSH config file like this (at <code>~/.ssh/config</code> ):</p>
+<pre><code>host s*
+    HostName atrcu%h.example.com
+    User example1
+    Port 22
+host b*
+    HostName atrcx%h.example.com
+    User example2
+    Port 22
+host ??*
+    HostName atvts%h.example.com
+    User example5
+    Port 2205
+</code></pre>
+<p>The ssh man page explains this really well:</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>June 20, 2013</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/terminal">#terminal</a>
+                
+                    <a class="tag" href="../../tags/linux">#linux</a>
+                
+                    <a class="tag" href="../../tags/secure-shell">#secure-shell</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../colour-bash/">
+                    Custom Colourful Bash Prompt
+                </a>
+            </h2>
+            <div>
+                <p><p>Bash, a command line shell is one of the most used pieces of software in my
+daily work. I like scripting repetitive actions to save a lot time (it brings me
+great joy!). One of the simplest and easiest customisations is to add a bit of
+colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
+<pre><code>[ngrogan@localhost:~]$
+</code></pre>
+<p>can be turned in to this:</p>
+<img src="../../files/2013/05/ColourBashPrompt.png" alt="My Custom Colour Bash Prompt">
+<p>The thing about Bash is the colour codes to achieve this can look archaic:</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>May 10, 2013</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/bash">#bash</a>
+                
+                    <a class="tag" href="../../tags/linux">#linux</a>
+                
+                    <a class="tag" href="../../tags/terminal">#terminal</a>
+                
+            
+            </div> 
+           
+        </article>
         
         <article>
             <h2>
@@ -320,7 +399,8 @@ substance on the planet, more than heroin, more than plutonium&rdquo;. Typically
 the popcorn we eat costs less to produce than the very container it comes
 in. -
 <a href="http://www.afoodieworld.com/en/features/all-features/articles/popcorn.html">Foodie
-World</a></p></blockquote>
+World</a></p>
+</blockquote>
 <p>Further research indicates that isn&rsquo;t quite true - antimatter is the most
 expensive substance in the world. But for a common, everyday item, it&rsquo;s very
 expensive indeed. There&rsquo;s a lot less risk in production then Heroin and a lot
@@ -394,111 +474,6 @@ calls, check messages and so forth.</p></p>
             
                 
                     <a class="tag" href="../../tags/linux">#linux</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../review-of-steve-jobs-biography/">
-                    Review of Steve Jobs Biography
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently finished reading Steve Jobs, the biography by Walter Isaacson. I
-can&rsquo;t add much more then the extensive coverage that it has recieved in the
-press to date. Instead I paraphrase really badly a friend of mine, Noel Hudson:</p>
-<blockquote>
-<p>All that book thought me was dropping acid and treating people really badly
-works as a life strategy.</p></blockquote>
-<p>While that&rsquo;s not entirely true it is a humourous look at the books tone. It has
-a grain of truth, Walter Issacson really focuses on the warts and all
-representation of Steve Jobs. He defines him very much in terms of how other
-people percieved him, whether that should have been the mainstay of the book is
-up for debate. Overall it&rsquo;s a good book, what I liked most is the history
-lessons of the creation of the mac and how the Disney/Pixar relationship went
-down before the merger. I also felt Walter Issacson left it hanging at the end
-and that he knows much more that he can&rsquo;t publish due to Apple&rsquo;s corporate
-strategy being tied to Jobs so much (like the comment he made about cracking the
-UI for a TV).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 13, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-                    <a class="tag" href="../../tags/book">#book</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../whats-in-your-dock/">
-                    What&#39;s in your dock?
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently read an article that posed the question &ldquo;<a href="http://nerdgap.com/does-your-dock-reflect-your-priorities/">Does your dock reflect your
-priorities?</a>&rdquo; - which is an interesting question. Further breaking that idea down
-leads to:</p>
-<ul>
-<li>What apps do I need the most?</li>
-<li>What apps should be next (or be higher priority)?</li>
-</ul>
-<h3 id="iphone-dock">iPhone dock</h3>
-<img src="../../files/2012/07/iphone.png" alt="iPhone homescreen" />
-<ul>
-<li><em>Phone app</em>: pretty self explanatory</li>
-<li><em>Safari</em>: Still the best mobile browser I think (though if Google ever gets
-going on a proper Chrome browser for Android that may change)</li>
-<li><em>Tweetbot</em>: I like Twitter the most of the social networks and tweetbot is the
-Swiss army knife if twitter clients</li>
-<li><em>Music</em> (aka. iPod app) : I use my iPhone in my car and sometimes at work to
-listen to music</li>
-</ul>
-<h3 id="ipad-dock">iPad dock</h3>
-<img src="../../files/2012/07/ipad.png" alt="iPhone homescreen" />
-<ul>
-<li><em>Safari</em>: Safari on iPad is not as good as the iPhone version - it can be more
-full featured I think!</li>
-<li><em>Mail app</em>: E-mail on the iPad is one of the most popular uses, it&rsquo;s got just
-the right amount of screen real-estate to do it justice</li>
-<li><em>Photography folder</em>: I don&rsquo;t know why I mistook myself as being interested in
-photography, but here&rsquo;s a folder I almost never use (bar camera app)</li>
-<li><em>Music</em>: I like it uses the screen real-estate better then the iPhone version
-and it&rsquo;s much nicer to browse music on</li>
-<li><em>Tweetbot</em>: Tweetbot for iPad is the best Twitter client for iPad hands down
-(on the iPhone it&rsquo;s more contested) and sync with Tweetmarker makes it much
-easier moving between iPhone and iPad versions.</li>
-</ul>
-<h3 id="final-thoughts">Final thoughts</h3>
-<p>I guess I&rsquo;ve learned I make pretty bad use of the dock on both devices.
-<a href="http://www.evernote.com">Evernote</a> or <a href="http://www.lastpass.com">Lastpass</a> should probably be in the dock on either device -
-probably with a feed reader as a close run after that (Reeder or Mr. Reader).
-These apps feature on either home screen as you can see from the screenshots
-above. Food for thought I guess!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 23, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/apple">#apple</a>
-                
-                    <a class="tag" href="../../tags/software">#software</a>
-                
-                    <a class="tag" href="../../tags/mac">#mac</a>
                 
             
             </div> 

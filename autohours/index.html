@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -136,15 +136,15 @@
         <p>Continuing the theme of automation, one of the most repetitive tasks if you work
 for a big company is timesheets. So I set out to rectify this by scripting it!</p>
 <p>Start with you configuration, I named mine <code>hours.ini</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
 </span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span></code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy
 lifting, so we install it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
 </span></span></code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">hours.py by Neil Grogan, 2015
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">

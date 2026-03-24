@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -137,7 +137,7 @@
 on the command line. I made some adjustments to Bash completion code to get it
 to work on Mac OS X:</p>
 <p>Original:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
 </span></span><span style="display:flex;"><span>curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
 </span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find
 </span></span><span style="display:flex;"><span>$MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
@@ -146,7 +146,7 @@ to work on Mac OS X:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>complete -F <span style="color:#ae81ff">\_</span>completemarks jump unmark </span></span></code></pre></div>
 <p>My modified version (tested on Mac OS X and Ubuntu):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>local wordlist<span style="color:#f92672">=(</span><span style="color:#e6db74">`</span>find $MARKPATH -type l | cut -d / -f 5<span style="color:#e6db74">`</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>

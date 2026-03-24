@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.149.0">
+	<meta name="generator" content="Hugo 0.159.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
     
     
     
-    <link rel="stylesheet" href="../../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -134,6 +134,62 @@
         
         <article>
             <h2>
+                <a href="../../math-mta/">
+                    Math can help you outsmart the MTA
+                </a>
+            </h2>
+            <div>
+                <p><p>I heard a behavioural economist on the radio this morning, he was talking about
+rising house prices in Dublin and the tricks the industry uses to get you to
+overpay. Turns out you can mitigate these tricks with a bit of knowledge, as
+this proves:</p>
+<blockquote>
+<p>But now, with some simple math, you can fight back!</p>
+<p>First, let’s see how the MTA tricks you out of your money earlier than you
+might want to release it to them.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>September 12, 2014</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/business">#business</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../bell-curve/">
+                    Bell Curve is Wrong
+                </a>
+            </h2>
+            <div>
+                <p><p>Interesting study here: apparently performance of people in a company is never
+related to a bell curve, but is more like a ski slope. So the majority of people
+are carried by the few in terms of performance. What I really want to know is
+pay for these people like a ski slope? Cause I bet it ain&rsquo;t.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>September 11, 2014</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/work">#work</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
                 <a href="../../apple-annouces-iphone6-watch/">
                     iPhone 6 and Apple Watch
                 </a>
@@ -234,7 +290,8 @@ customisable. That was 2011 and since then I&rsquo;d pretty much forgotten about
 It proves that less really is more&hellip;</p>
 <p>Money quote:</p>
 <blockquote>
-<p>The key to making programs fast is to make them do practically nothing.</p></blockquote></p>
+<p>The key to making programs fast is to make them do practically nothing.</p>
+</blockquote></p>
                 
             </div>
             <div class="post-footer">
@@ -321,7 +378,7 @@ direction).</p></p>
 on the command line. I made some adjustments to Bash completion code to get it
 to work on Mac OS X:</p>
 <p>Original:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
 </span></span><span style="display:flex;"><span>curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
 </span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find
 </span></span><span style="display:flex;"><span>$MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
@@ -376,85 +433,6 @@ guide (an active researcher at CERN) even expressed disappointment at the Higgs:
                     <a class="tag" href="../../tags/internet">#internet</a>
                 
                     <a class="tag" href="../../tags/travel">#travel</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ssh-config/">
-                    SSH Config Aliases
-                </a>
-            </h2>
-            <div>
-                <p><p>If your like me and you deal with a lot of servers for development or test and
-do it from a Unix machine, I&rsquo;ve got a really handy tip: SSH hostname pattern
-matching.</p>
-<p>Say I&rsquo;ve got a SSH config file like this (at <code>~/.ssh/config</code> ):</p>
-<pre><code>host s*
-    HostName atrcu%h.example.com
-    User example1
-    Port 22
-host b*
-    HostName atrcx%h.example.com
-    User example2
-    Port 22
-host ??*
-    HostName atvts%h.example.com
-    User example5
-    Port 2205
-</code></pre>
-<p>The ssh man page explains this really well:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>June 20, 2013</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/terminal">#terminal</a>
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/secure-shell">#secure-shell</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../colour-bash/">
-                    Custom Colourful Bash Prompt
-                </a>
-            </h2>
-            <div>
-                <p><p>Bash, a command line shell is one of the most used pieces of software in my
-daily work. I like scripting repetitive actions to save a lot time (it brings me
-great joy!). One of the simplest and easiest customisations is to add a bit of
-colour to your otherwise boring bash prompt (otherwise known as $PS1):</p>
-<pre><code>[ngrogan@localhost:~]$
-</code></pre>
-<p>can be turned in to this:</p>
-<img src="../../files/2013/05/ColourBashPrompt.png" alt="My Custom Colour Bash Prompt">
-<p>The thing about Bash is the colour codes to achieve this can look archaic:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 10, 2013</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/bash">#bash</a>
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/terminal">#terminal</a>
                 
             
             </div> 

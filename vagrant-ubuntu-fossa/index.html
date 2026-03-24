@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -145,7 +145,7 @@ different configuration.</p>
 you&rsquo;ll need to install Virtualbox and then Vagrant on your machine. Next install
 Packer.</p>
 <p>Then create directories:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ mkdir ubuntu ubuntu/http ubuntu/output ubuntu/scripts
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ mkdir ubuntu ubuntu/http ubuntu/output ubuntu/scripts
 </span></span><span style="display:flex;"><span>$ cd ubuntu
 </span></span></code></pre></div><p><code>http</code> will hold our configuration files for Ubuntu, <code>output</code> will store our
 disk image we build and <code>scripts</code> will hold any scripts we want to run.</p>
@@ -153,7 +153,7 @@ disk image we build and <code>scripts</code> will hold any scripts we want to ru
 files) - <a href="https://wiki.ubuntu.com/FoundationsTeam/AutomatedServerInstalls">they now use a yaml file</a> (also see their handy
 <a href="https://wiki.ubuntu.com/FoundationsTeam/AutomatedServerInstalls/QuickStart">quickstart</a> on which I based the below file), so we&rsquo;ll
 need to create it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat &gt; http/user-data <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat &gt; http/user-data <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">#cloud-config
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">autoinstall:
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    version: 1
@@ -173,7 +173,7 @@ need to create it:</p>
 you would need to set up. We should now have two files - <code>http/user-data</code>
 containing our setup information and also <code>http/meta-data</code>.</p>
 <p>Next, we should set up our script(s) - we&rsquo;ll setup just one for now:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat &gt; scripts/init.sh <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat &gt; scripts/init.sh <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">sudo apt update
@@ -182,7 +182,7 @@ containing our setup information and also <code>http/meta-data</code>.</p>
 </span></span></code></pre></div><p>Finally, we should set up our Packer configuration file (<a href="https://www.packer.io/docs/builders/virtualbox-iso.html">config options for
 virtualbox explained here</a> and for <a href="https://www.packer.io/docs/builders/vagrant/">vagrant
 options</a>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">{</span>% raw %<span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">{</span>% raw %<span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>$ cat &gt; ubuntu2004.json <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;builders&#34;: [
@@ -251,11 +251,11 @@ options</a>):</p>
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>% endraw %<span style="color:#f92672">}</span>
 </span></span></code></pre></div><p>Then we can build the image:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ packer build ubuntu2004.json
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ packer build ubuntu2004.json
 </span></span></code></pre></div><p>And add it to Vagrant:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ vagrant box add --name ubuntu20.04 output/ubuntu-20.04.box
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ vagrant box add --name ubuntu20.04 output/ubuntu-20.04.box
 </span></span></code></pre></div><p>Finally, in any other directory, we can create a <code>Vagrantfile</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat &gt; Vagrantfile <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat &gt; Vagrantfile <span style="color:#e6db74">&lt;&lt; &#39;EOF&#39;
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># -*- mode: ruby -*-
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74"># vi: set ft=ruby :
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">

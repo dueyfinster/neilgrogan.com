@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -152,7 +152,8 @@ host ??*
 </code></pre>
 <p>The ssh man page explains this really well:</p>
 <blockquote>
-<p>A pattern consists of zero or more non-whitespace characters, &lsquo;*&rsquo; (a</p></blockquote>
+<p>A pattern consists of zero or more non-whitespace characters, &lsquo;*&rsquo; (a</p>
+</blockquote>
 <pre><code> wildcard that matches zero or more characters), or '?' (a wildcard that
  matches exactly one character).  For example, to specify a set of decla-
  rations for any host in the .co.uk set of domains, the following pat-
@@ -160,16 +161,20 @@ host ??*
 </code></pre>
 <blockquote>
 <pre><code>Host *.co.uk
-</code></pre></blockquote>
+</code></pre>
+</blockquote>
 <blockquote>
-<p>The following pattern would match any host in the 192.168.0.[0-9] network</p></blockquote>
+<p>The following pattern would match any host in the 192.168.0.[0-9] network</p>
+</blockquote>
 <pre><code> range:
 </code></pre>
 <blockquote>
 <pre><code>Host 192.168.0.?
-</code></pre></blockquote>
+</code></pre>
+</blockquote>
 <blockquote>
-<p>A pattern-list is a comma-separated list of patterns. Patterns within</p></blockquote>
+<p>A pattern-list is a comma-separated list of patterns. Patterns within</p>
+</blockquote>
 <pre><code> pattern-lists may be negated by preceding them with an exclamation mark
  ('!').  For example, to allow a key to be used from anywhere within an
  organisation except from the ``dialup'' pool, the following entry (in
@@ -177,7 +182,8 @@ host ??*
 </code></pre>
 <blockquote>
 <pre><code>from=&quot;!*.dialup.example.com,*.example.com&quot;
-</code></pre></blockquote>
+</code></pre>
+</blockquote>
 <p>So there you have it!</p>
 
         </p>

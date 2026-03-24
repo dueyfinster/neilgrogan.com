@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -141,7 +141,7 @@ our Slack channel.</p>
 <p>This also got me thinking of what other information would be handy to have. I
 scouted around for ideas and came up with an obvious one: reminder of the bus
 times to and from the office. So here&rsquo;s my bus times notification slack bot:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env ruby</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env ruby</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#Encoding: UTF-8</span>
 </span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;nokogiri&#39;</span>
 </span></span><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;json&#39;</span>
@@ -196,7 +196,7 @@ times to and from the office. So here&rsquo;s my bus times notification slack bo
 </span></span><span style="display:flex;"><span>check_next_bus()
 </span></span></code></pre></div><p>I simply set this to run every 20 minutes, Monday to Friday, during working
 hours via cron:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*/20 07-19 * * 1,2,3,4,5 bus-times.rb &gt; /dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>*/20 07-19 * * 1,2,3,4,5 bus-times.rb &gt; /dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span>
 </span></span></code></pre></div><p>For convenience, I have the webhook set to post to a different channel so people
 can opt in for bus reminders.</p>
 

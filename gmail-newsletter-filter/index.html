@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -146,18 +146,18 @@ using the dropdown menu on the email and selecting &ldquo;Filter mails like this
 <p><img src="../img/16/gmail-menu-filter.png" alt="Selecting a newsletter mail&rsquo;s menu to filter" title="Selecting a newsletter mail to filter"></p>
 <p>This will prefill the search with the mailing list id you need:</p>
 <p><img src="../img/16/gmail-filter-search.png" alt="Gmail Filter Search" title="Gmail Filter Search in Action"></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">processInbox</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">processInbox</span>() {
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">Logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Starting&#39;</span>)
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mailingLists</span> <span style="color:#f92672">=</span> [
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// replace the strings in this array with your own!
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#34;list:&#39;faa8eb4ef3a111cef92c4f3d4mc list &lt;faa8eb4ef3a111cef92c4f3d4.583821.list-id.mcsv.net&gt;&#39;&#34;</span>,
+</span></span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;list:&#39;faa8eb4ef3a111cef92c4f3d4mc list &lt;faa8eb4ef3a111cef92c4f3d4.583821.list-id.mcsv.net&gt;&#39;&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;list:&#39;e2e180baf855ac797ef407fc7mc list &lt;e2e180baf855ac797ef407fc7.654029.list-id.mcsv.net&gt;&#39;&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;list:&#39;9f4b80a35728f7271fe3ea6ffmc list &lt;9f4b80a35728f7271fe3ea6ff.511493.list-id.mcsv.net&gt;&#39;&#34;</span>,
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">mailingLists</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// process all threads in the Inbox
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">threads</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">searchMessages</span>(<span style="color:#a6e22e">mailingLists</span>[<span style="color:#a6e22e">i</span>])
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">threads</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">searchMessages</span>(<span style="color:#a6e22e">mailingLists</span>[<span style="color:#a6e22e">i</span>])
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">threads</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) {
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Logger</span>.<span style="color:#a6e22e">log</span>(
@@ -173,7 +173,7 @@ using the dropdown menu on the email and selecting &ldquo;Filter mails like this
 </span></span><span style="display:flex;"><span>      })
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">msgToSort</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>) <span style="color:#75715e">// Remove latest mail
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">msgToSort</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Logger</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Moving message: &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">msgToSort</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">subject</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39; to trash&#39;</span>)
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">msgToSort</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">moveToTrash</span>()
@@ -192,7 +192,7 @@ using the dropdown menu on the email and selecting &ldquo;Filter mails like this
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">msgsToSort</span> <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">threads</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// get all messages in a given thread
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">messages</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">threads</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">getMessages</span>()
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">messages</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">threads</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">getMessages</span>()
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">messages</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">j</span><span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">msgsToSort</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">processMessage</span>(<span style="color:#a6e22e">messages</span>[<span style="color:#a6e22e">j</span>]))
 </span></span><span style="display:flex;"><span>    }

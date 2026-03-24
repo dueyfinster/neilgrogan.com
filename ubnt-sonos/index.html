@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.6dbb4e69ddaa86bff9659a7608e7652e05a3015456c03b9676176ff564510fe1.css"/>
+    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
 
     
     
@@ -184,14 +184,14 @@ Then we need to set up IGMP proxy on our Ubiquiti Security Gateway (USG).
 Log in (password you can check on Cloud Key, <code>192.168.1.1</code> should be your USG&#39;s IP 
 address):</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1</span></span></code></pre></div>
 </div>
 <p>
 Then on the USG console, we&#39;ll set upstream (our network with sonos controllers 
 [for ex. iPhone, not on VLAN for me]) and downstream for the network with the Sonos hardware 
 (for me VLAN <code>20</code> Play:1, Play:3 etc. etc.).</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ configure
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ configure
 </span></span><span style="display:flex;"><span>$ edit protocols igmp-proxy
 </span></span><span style="display:flex;"><span>$ set interface eth1 role upstream
 </span></span><span style="display:flex;"><span>$ set interface eth1 threshold <span style="color:#ae81ff">1</span>
@@ -201,13 +201,13 @@ Then on the USG console, we&#39;ll set upstream (our network with sonos controll
 <p>
 The configuration can now be show with (also enter these commands on USG):</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ show</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ show</span></span></code></pre></div>
 </div>
 <p>
 and should look like this (obviously <code>20</code> VLAN should reflect which VLAN your speakers 
 are in!):</p>
 <div class="src src-js">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span> {
 </span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">role</span> <span style="color:#a6e22e">upstream</span>
 </span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">threshold</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span> }
@@ -219,7 +219,7 @@ are in!):</p>
 <p>
 If that&#39;s all OK we should save and commit (which will restart the IGMP proxy):</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ commit;save;exit</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ commit;save;exit</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -235,18 +235,18 @@ Also, there is currently no graphical options for IGMP proxy on the Cloud Key, s
 we&#39;ll need to use a custom <a href="https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json">config.gateway.json</a>. We can dump our current configuration 
 on our USG:</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ mca-ctrl -t dump-cfg &gt; config.gateway.json</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ mca-ctrl -t dump-cfg &gt; config.gateway.json</span></span></code></pre></div>
 </div>
 <p>
 then we need to edit it using vim to only contain our igmp section:</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ vim config.gateway.json
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ vim config.gateway.json
 </span></span><span style="display:flex;"><span>$ <span style="color:#75715e"># Remove all the config except our IGMP proxy</span></span></span></code></pre></div>
 </div>
 <p>
 it should look like this, after you&#39;ve finished editing it:</p>
 <div class="src src-js">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;protocols&#34;</span><span style="color:#f92672">:</span> {
 </span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;igmp-proxy&#34;</span><span style="color:#f92672">:</span> {
 </span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;interface&#34;</span><span style="color:#f92672">:</span> {
@@ -266,7 +266,7 @@ it should look like this, after you&#39;ve finished editing it:</p>
 <p>
 if unsure, use <a href="jsonlint.com"><a href="https://jsonlint.com">https://jsonlint.com</a></a> to double check syntax:</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ cat  config.gateway.json
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ cat  config.gateway.json
 </span></span><span style="display:flex;"><span>$ <span style="color:#75715e"># Copy nand paste in to JSONlint to check</span></span></span></code></pre></div>
 </div>
 <p>
@@ -274,13 +274,13 @@ Once we are happy our configuration is valid, let&#39;s copy it to our Cloud Key
 (replace <code>192.168.1.2</code> with your Cloud Key&#39;s IP address, password is your unifi 
 account password with root user, check the <a href="https://help.ui.com/hc/en-us/articles/115004872967">unifi config path</a>):</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ scp config.gateway.json root@192.168.1.2:/usr/lib/unifi/data/sites/default/config.gateway.json</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ scp config.gateway.json root@192.168.1.2:/usr/lib/unifi/data/sites/default/config.gateway.json</span></span></code></pre></div>
 </div>
 <p>
 Then run a force provision on the USG from the Cloud Key web interface and then 
 check the config remains intact (replace <code>192.168.1.1</code> with your USG&#39;s IP address):</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1
 </span></span><span style="display:flex;"><span>$ configure
 </span></span><span style="display:flex;"><span>$ edit protocols igmp-proxy
 </span></span><span style="display:flex;"><span>$ show</span></span></code></pre></div>
@@ -288,7 +288,7 @@ check the config remains intact (replace <code>192.168.1.1</code> with your USG&
 <p>
 and should again look like this:</p>
 <div class="src src-js">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">eth1</span> {
 </span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">role</span> <span style="color:#a6e22e">upstream</span>
 </span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">threshold</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span> }
@@ -316,7 +316,7 @@ If it&#39;s not working, try these steps:</p>
 </ol>
 <p>crashing frequently on some people)</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1
 </span></span><span style="display:flex;"><span>$ configure
 </span></span><span style="display:flex;"><span>$ edit protocols igmp-proxy
 </span></span><span style="display:flex;"><span>$ show</span></span></code></pre></div>
@@ -327,7 +327,7 @@ If it&#39;s not working, try these steps:</p>
 <p>to the other LAN/VLAN and turn logging on, can then check logs to see what traffic is 
 allowed or denied on the USG:</p>
 <div class="src src-shell">
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ ssh admin@192.168.1.1
 </span></span><span style="display:flex;"><span>$ cat /var/log/messages | grep LAN_IN-</span></span></code></pre></div>
 </div>
 <p>this gives an idea of what device is trying to talk to what on what port.</p>
