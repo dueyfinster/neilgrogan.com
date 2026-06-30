@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.159.0">
+	<meta name="generator" content="Hugo 0.163.3">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -131,6 +131,93 @@
         
         
         
+        
+        <article>
+            <h2>
+                <a href="../../macmini/">
+                    Mac Mini Server
+                </a>
+            </h2>
+            <div>
+                <p><p>I recently purchased a Mac Mini Server, for this site to run on. It&rsquo;s hosted on
+my home broadband connection, but it&rsquo;s just really for small time side-projects
+like this site. Also it&rsquo;s a way to play around with Docker, VirtualBox, Node.js
+and all those other fun technologies I don&rsquo;t get time for.</p>
+<p>I don&rsquo;t really plan to post links, but maybe I&rsquo;ll review things or cover things
+I&rsquo;ve bought.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>November 12, 2014</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/apple">#apple</a>
+                
+                    <a class="tag" href="../../tags/mac">#mac</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../181fm/">
+                    All Music Radio
+                </a>
+            </h2>
+            <div>
+                <p><p>On holidays in Lithuania recently I was eating in a restaurant and noticed the
+music was all in English. It&rsquo;s not the first time I&rsquo;ve noticed a non English
+speaking country playing all English songs in bars, restaurants and taxis.
+Rather what was unusual was the very few ads and the fact it was an American
+station.</p>
+<p>I&rsquo;m no fan of ads, and am a huge fan of audio in general - be it spoken word or
+music. I&rsquo;m a Spotify subscriber, but I also get bored if my own playlists fairly
+quickly. Spotify Radio isn&rsquo;t the solution and I can&rsquo;t access Pandora easily
+outside the US. 181 fm has a huge choice of stations (although I need a
+Smiths/Cure type of station) and plays few ads. It takes a little time to try
+out feeds they have, and some songs are on heavy rotation like regular music
+radio but it&rsquo;s a nice service. Give it a try</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>October 9, 2014</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/radio">#radio</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../holiday-gadgets/">
+                    Going on Holidays? Check these Gadgets
+                </a>
+            </h2>
+            <div>
+                <p><p>I&rsquo;m a big Wirecutter fan and they don&rsquo;t disappoint with this travel guide.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>September 13, 2014</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/travel">#travel</a>
+                
+            
+            </div> 
+           
+        </article>
         
         <article>
             <h2>
@@ -332,107 +419,6 @@ for a while&hellip;</p></p>
                     <a class="tag" href="../../tags/terminal">#terminal</a>
                 
                     <a class="tag" href="../../tags/linux">#linux</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ucd/">
-                    MSc in Computer Science at UCD
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;ve recently decided to further my education by applying for a Masters in
-Computer Science at <a href="http://www.ucd.ie">University College Dublin</a>. It&rsquo;s very different from a
-traditional masters course in that it is very much focused on industry, the term
-the University uses is &ldquo;<a href="http://www.csi.ucd.ie/content/msc-computer-science-negotiated-learning">Negotiated Learning</a>&rdquo;. It was a colleague of
-mine that introduced me to it, I was not even aware that there was what I would
-call &rsquo;non-strict masters&rsquo; (that is not a set-in-stone syllabus/research
-direction).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 1, 2013</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/education">#education</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../navigate-fs/">
-                    Quickly navigate your filesystem
-                </a>
-            </h2>
-            <div>
-                <p><p>The article is a great tip for those who spend a good chunk of the working day
-on the command line. I made some adjustments to Bash completion code to get it
-to work on Mac OS X:</p>
-<p>Original:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
-</span></span><span style="display:flex;"><span>curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
-</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find
-</span></span><span style="display:flex;"><span>$MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>complete -F <span style="color:#ae81ff">\_</span>completemarks jump unmark </span></span></code></pre></div>
-<p>My modified version (tested on Mac OS X and Ubuntu):</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 20, 2013</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/terminal">#terminal</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../cern/">
-                    Visit to CERN
-                </a>
-            </h2>
-            <div>
-                <p><p>I am currently in Switzerland on a business trip. In between work, I managed to
-get some time over the Swiss national holiday to visit the
-<acronym title="European Nuclear Research Centre">CERN</acronym>. <a href="http://home.web.cern.ch/">CERN</a> is
-world famous for the invention of <acronym title="World Wide Web">WWW</acronym>
-and of course most recently, the almost certainty that the <a href="https://en.wikipedia.org/wiki/Higgs_boson">Higgs Boson</a>
-(<acronym title="also known as">aka</acronym>. &ldquo;The God Particle&rdquo;) - the
-particle that gives energy mass - exists.</p>
-<p>The CERN tour is completely free and highly recommended. I visited the <a href="http://atlas.ch/">Atlas
-experiment</a> with a colleague (who just so happened to have a Phd. in
-Physics) and questions were encouraged at every turn. What impressed me the most
-was the fact that there was no stupid questions. You can be a Phd weilding
-Physicist or a child and each question was handled the same by the staff. The
-guide (an active researcher at CERN) even expressed disappointment at the Higgs:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 3, 2013</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/internet">#internet</a>
-                
-                    <a class="tag" href="../../tags/travel">#travel</a>
                 
             
             </div> 

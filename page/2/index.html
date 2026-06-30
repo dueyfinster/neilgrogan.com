@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.159.0">
+	<meta name="generator" content="Hugo 0.163.3">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -131,6 +131,119 @@
         
         
         
+        
+        <article>
+            <h2>
+                <a href="../../ha-yellow-review/">
+                    HomeAssistant Yellow Review
+                </a>
+            </h2>
+            <div>
+                <p><p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not
+familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart
+lights, plugs, sensors and anything else in your smart home. HomeAssistant is
+the software part and as it&rsquo;s open source you can freely install it on any
+computer you have. In fact many people install HomeAssistant on a Raspberry Pi.</p>
+<p>HomeAssistant Yellow is their own custom hardware with a built in chip for
+Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It
+takes a Raspberry Pi compute module 4 as its &ldquo;brains&rdquo;. This technically means it
+should - emphasis on <em>should</em> be upgradeable if a Raspberry Pi compute module 5
+that is compatible with CM4 socket is produced.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>April 21, 2024</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/automation">#automation</a>
+                
+                    <a class="tag" href="../../tags/python">#python</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../bank-xls-csv/">
+                    Convert Bank Transactions XLS to CSV in Python
+                </a>
+            </h2>
+            <div>
+                <p><p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../../ledger">ledger</a> from
+<a href="../../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../../bank-tx-py">PTSB</a> bank in Python. I took different
+approaches to each:</p>
+<ul>
+<li>For KBC, you needed to log in and run Javascript which scrape the transaction
+table and download it formatted as CSV</li>
+<li>For PTSB, the script automatted logging in, get the transaction table and save
+locally as CSV</li>
+</ul>
+<p>Both approaches are valid - but suffer from the same issues: any change the bank
+makes to it website needs to be updated in the code. The KBC/JavaScript approach
+was a bit more robust in that it would just search for rows on a website and
+download as CSV.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>November 25, 2022</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/automation">#automation</a>
+                
+                    <a class="tag" href="../../tags/python">#python</a>
+                
+                    <a class="tag" href="../../tags/code">#code</a>
+                
+                    <a class="tag" href="../../tags/programming">#programming</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../linux-freesat-saorview/">
+                    Linux, Freesat and Saorview
+                </a>
+            </h2>
+            <div>
+                <p><p>I recently replaced a rusty satellite dish and faulty LNB (it has been in use in
+the house I moved in to for 10+ years I&rsquo;d guess) and decided to try install one
+myself. Here in Ireland, the two main broadcast methods of receiving TV are
+satellite (<a href="https://www.freesat.co.uk/">Freesat</a> / <a href="https://www.sky.com/ie/">Sky</a>) and terrestrial aerial (<a href="https://www.saorview.ie/">Saorview</a>).</p>
+<p>An issue I have one larger sitting room TV and one small living room TV. I
+couldn&rsquo;t get both to be Samsung (out of stock on smallest sizes - which seem to
+be going out of fashion). So both TVs had very different methods of switching
+between satellite and aerial connections. I&rsquo;m not sure if it is a hardware
+limitation (they make switching tuners slow to hide this), a licensing issue
+(broadcasters pay to be on the <a href="https://www.freesat.co.uk/">Freesat</a> EPG for example) or a software issue
+(seems least likely). The fact multiple TV brands (in my case Phillips/Samsung)
+make it this clunky - makes me think it&rsquo;s a licensing issue. I wanted to solve
+this by using an external box and having one mental model for navigating
+broadcast TV.</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>September 1, 2022</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/linux">#linux</a>
+                
+                    <a class="tag" href="../../tags/diy">#diy</a>
+                
+            
+            </div> 
+           
+        </article>
         
         <article>
             <h2>
@@ -339,102 +452,6 @@ Since hearing about <a href="https://orgmode.org">org-mode</a> on the web many y
             
                 
                     <a class="tag" href="../../tags/emacs">#emacs</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../fave-podcasts/">
-                    Favourite Podcasts
-                </a>
-            </h2>
-            <div>
-                <p><p>Over the last while I&rsquo;ve been collecting wonderful podcast episodes from the
-hundreds of hours I&rsquo;ve listened to. I&rsquo;ve even workshopped some of my favourites
-with colleagues and friends (they all approve!). Luckily a neat service called
-<a href="https://huffduffer.com/">HuffDuffer</a> allows you to create a personalised feed
-from episodes spanning any podcast you see fit. All you need is a direct link to
-the MP3 or indeed any format audio file.</p>
-<p>So here it is, my favourite episodes spanning many podcasts. Mostly I love good
-stories, with unexpected twists. I suppose you could simplify that to &ldquo;Surprise
-and Delight&rdquo;. Be prepared to be entertained, surprised and delighted&hellip;</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 1, 2018</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/podcast">#podcast</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../py-bin-zip/">
-                    Python 3 In-Memory Zip File
-                </a>
-            </h2>
-            <div>
-                <p><p>
-In Python, <a href="https://docs.python.org/3/library/io.html#io.BytesIO">BytesIO</a> is the way to store binary data in memory. Most examples you’ll see using zip files in memory is to store string data and indeed the most common example you’ll find online from the <a href="https://docs.python.org/3/library/zipfile.html">zipfile</a> module is <code>zipfile.writestr(file_name, &#34;Text Data&#34;)</code>. But what if you want to store binary data of a PDF or Excel Spreadsheet that’s also in memory?  You could use <code>zipfile.write()</code> (designed to take binary data) but then you can’t specify a filename (since our in-memory file was never written to a location on disk). The reason for this is simple: for a web request or for a test case, you shouldn’t need to store any files on disk.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 14, 2018</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/programming">#programming</a>
-                
-                    <a class="tag" href="../../tags/code">#code</a>
-                
-                    <a class="tag" href="../../tags/python">#python</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../self-host/">
-                    The year of self hosting
-                </a>
-            </h2>
-            <div>
-                <p><p>Over the last month or so, I’ve come to embrace my home server setup and how
-powerful it can be. Here I have this small little
-<a href="https://en.wikipedia.org/wiki/Next_Unit_of_Computing">Intel NUC Server</a>, for
-which I promised myself I would do lots of cool and interesting things with.</p>
-<p>The first thing I’ve hosted is <a href="https://www.plex.tv">Plex</a>. I’ve used
-<a href="https://docs.docker.com/compose/">Docker Compose</a> to bring up a Plex Docker
-container, with:</p>
-<ul>
-<li><a href="https://www.filebot.net/">Filebot</a> (to tag video files)</li>
-<li><a href="http://beets.io/">Beets</a> (to tag audio files)</li>
-<li><a href="https://transmissionbt.com/">Transmission</a> (to download files)</li>
-<li><a href="https://hub.docker.com/r/almir/webhook/">Webhook</a> (receives incoming web
-requests)</li>
-</ul>
-<p>The way it works is this:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 3, 2018</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/security">#security</a>
                 
             
             </div> 

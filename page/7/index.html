@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.159.0">
+	<meta name="generator" content="Hugo 0.163.3">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -131,6 +131,107 @@
         
         
         
+        
+        <article>
+            <h2>
+                <a href="../../ucd/">
+                    MSc in Computer Science at UCD
+                </a>
+            </h2>
+            <div>
+                <p><p>I&rsquo;ve recently decided to further my education by applying for a Masters in
+Computer Science at <a href="http://www.ucd.ie">University College Dublin</a>. It&rsquo;s very different from a
+traditional masters course in that it is very much focused on industry, the term
+the University uses is &ldquo;<a href="http://www.csi.ucd.ie/content/msc-computer-science-negotiated-learning">Negotiated Learning</a>&rdquo;. It was a colleague of
+mine that introduced me to it, I was not even aware that there was what I would
+call &rsquo;non-strict masters&rsquo; (that is not a set-in-stone syllabus/research
+direction).</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>September 1, 2013</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/education">#education</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../navigate-fs/">
+                    Quickly navigate your filesystem
+                </a>
+            </h2>
+            <div>
+                <p><p>The article is a great tip for those who spend a good chunk of the working day
+on the command line. I made some adjustments to Bash completion code to get it
+to work on Mac OS X:</p>
+<p>Original:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#ae81ff">\_</span>completemarks<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> local
+</span></span><span style="display:flex;"><span>curw<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>COMP_WORDS[COMP_CWORD]<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>  local wordlist<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>find
+</span></span><span style="display:flex;"><span>$MARKPATH -type l -printf <span style="color:#e6db74">&#34;%f\n&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>  COMPREPLY<span style="color:#f92672">=(</span><span style="color:#66d9ef">$(</span>compgen -W
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;${wordlist[@]}&#39;</span> -- <span style="color:#e6db74">&#34;</span>$curw<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>complete -F <span style="color:#ae81ff">\_</span>completemarks jump unmark </span></span></code></pre></div>
+<p>My modified version (tested on Mac OS X and Ubuntu):</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>August 20, 2013</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/terminal">#terminal</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="../../cern/">
+                    Visit to CERN
+                </a>
+            </h2>
+            <div>
+                <p><p>I am currently in Switzerland on a business trip. In between work, I managed to
+get some time over the Swiss national holiday to visit the
+<acronym title="European Nuclear Research Centre">CERN</acronym>. <a href="http://home.web.cern.ch/">CERN</a> is
+world famous for the invention of <acronym title="World Wide Web">WWW</acronym>
+and of course most recently, the almost certainty that the <a href="https://en.wikipedia.org/wiki/Higgs_boson">Higgs Boson</a>
+(<acronym title="also known as">aka</acronym>. &ldquo;The God Particle&rdquo;) - the
+particle that gives energy mass - exists.</p>
+<p>The CERN tour is completely free and highly recommended. I visited the <a href="http://atlas.ch/">Atlas
+experiment</a> with a colleague (who just so happened to have a Phd. in
+Physics) and questions were encouraged at every turn. What impressed me the most
+was the fact that there was no stupid questions. You can be a Phd weilding
+Physicist or a child and each question was handled the same by the staff. The
+guide (an active researcher at CERN) even expressed disappointment at the Higgs:</p></p>
+                
+            </div>
+            <div class="post-footer">
+            <time>August 3, 2013</time>
+
+            
+            
+                
+                    <a class="tag" href="../../tags/internet">#internet</a>
+                
+                    <a class="tag" href="../../tags/travel">#travel</a>
+                
+            
+            </div> 
+           
+        </article>
         
         <article>
             <h2>
@@ -378,102 +479,6 @@ touch.<br /></p></p>
                     <a class="tag" href="../../tags/microsoft">#microsoft</a>
                 
                     <a class="tag" href="../../tags/google">#google</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../grab-popcorn/">
-                    Grab the Popcorn!
-                </a>
-            </h2>
-            <div>
-                <p><p>Fresh from the &ldquo;interesting but pointless facts&rdquo; desk comes this little kernel
-(I apologise!) of truth:</p>
-<blockquote>
-<p>In 2002, the British Film Institute depicted popcorn as &ldquo;the most profitable
-substance on the planet, more than heroin, more than plutonium&rdquo;. Typically,
-the popcorn we eat costs less to produce than the very container it comes
-in. -
-<a href="http://www.afoodieworld.com/en/features/all-features/articles/popcorn.html">Foodie
-World</a></p>
-</blockquote>
-<p>Further research indicates that isn&rsquo;t quite true - antimatter is the most
-expensive substance in the world. But for a common, everyday item, it&rsquo;s very
-expensive indeed. There&rsquo;s a lot less risk in production then Heroin and a lot
-bigger market the Plutonium, for instance.<br /></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 2, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/business">#business</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../tonsillectomy/">
-                    Tonsillectomy
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;ve recently undergone a tonsillectomy - the process of removing the lymph node
-tissue hanging idly at the back of your throat. I know I write mainly technology
-articles, but I thought a departure was warranted from the usual faire.</p>
-<p>My main takeaway from having it done is twofold: it&rsquo;s not as bad as you think
-and it&rsquo;s as bad as you think. They seem like contradictory statements, so I&rsquo;ll
-need to explain myself right? Okay.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 9, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/health">#health</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../the-linux-desktop-has-place/">
-                    The Linux Desktop has a place
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;ve seen an article by Miguel de Icaza, a great developer oft criticised for
-his love of Microsoft technologies on Linux. His <a href="http://tirania.org/blog/archive/2012/Aug-29.html">latest piece</a> is about his love
-for Mac OS X as a desktop and how he used to feel guilty about it (given his very
-impressive open source credentials).</p>
-<p>I used to feel the same also. Android even as a platform more closely follows my
-ideals, yet I am exclusively an avid iOS user at this point. But as I&rsquo;ve learned
-more, the importance of pragmatism is clear. I use my personal iOS devices for
-countless hours a day and I really just want them to work. I want them to work
-in the way they were designed to do: quickly check email, browse the web, make
-calls, check messages and so forth.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 30, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
                 
             
             </div> 

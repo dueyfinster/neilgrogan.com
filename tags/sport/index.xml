@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sport on Neil Grogan</title>
-    <link>/tags/sport/</link>
-    <description>Recent content in Sport on Neil Grogan</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 19 Oct 2008 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/sport/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hurling - Four in a row?</title>
-      <link>/hurling-four-in-row/</link>
-      <pubDate>Sun, 19 Oct 2008 00:00:00 +0000</pubDate>
-      <guid>/hurling-four-in-row/</guid>
-      <description>&lt;p&gt;One cannot help but be amazed at Kilkenny; true masters of the Irish Gaelic&#xA;Sport of hurling. I mean as my previous posts mention I have moved to Kilkenny;&#xA;and rural South Kilkenny at that. They live and breath Hurling down here: it&amp;rsquo;s&#xA;literally a way of life. That is why they are so good; no mystery here folks:&#xA;its is literally bred into children in schools and everyone plays it. More&#xA;people playing means even though Kilkenny is only around 100,000 people it still&#xA;has a large amount of people to pick from and they get the best training which&#xA;equals the best results.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Sport on Neil Grogan</title>
+		<link>/tags/sport/</link>
+		<description>Recent content in Sport on Neil Grogan</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 19 Oct 2008 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="/tags/sport/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Hurling - Four in a row?</title>
+				<link>/hurling-four-in-row/</link>
+				<pubDate>Sun, 19 Oct 2008 00:00:00 +0000</pubDate>
+				<guid>/hurling-four-in-row/</guid>
+				<description>&lt;p&gt;One cannot help but be amazed at Kilkenny; true masters of the Irish Gaelic&#xA;Sport of hurling. I mean as my previous posts mention I have moved to Kilkenny;&#xA;and rural South Kilkenny at that. They live and breath Hurling down here: it&amp;rsquo;s&#xA;literally a way of life. That is why they are so good; no mystery here folks:&#xA;its is literally bred into children in schools and everyone plays it. More&#xA;people playing means even though Kilkenny is only around 100,000 people it still&#xA;has a large amount of people to pick from and they get the best training which&#xA;equals the best results.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
