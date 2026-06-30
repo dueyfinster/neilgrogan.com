@@ -65,6 +65,9 @@ googleAnalytics = ""
 [outputs]
   home = ["HTML", "RSS", "SearchIndex"]
 
+[security]
+  allowContent = ['^text/html$']
+
 
 [markup.goldmark.renderer]
   unsafe = true
