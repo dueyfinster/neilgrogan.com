@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="../css/main.min.0fe6314cd78e3343c291cc217c00d2a6de414c85dabd8c9734f0c879595c1600.css"/>
+    <link rel="stylesheet" href="../css/main.min.cff01dd387ad469f1d3b01d7e41e1a0a418731795cc2dea91d15d9e656467b7a.css"/>
 
     
     
@@ -133,7 +133,6 @@
     <div>
         
         <p>
-        <p>
 In Python, <a href="https://docs.python.org/3/library/io.html#io.BytesIO">BytesIO</a> is the way to store binary data in memory. Most examples you’ll see using zip files in memory is to store string data and indeed the most common example you’ll find online from the <a href="https://docs.python.org/3/library/zipfile.html">zipfile</a> module is <code>zipfile.writestr(file_name, &#34;Text Data&#34;)</code>. But what if you want to store binary data of a PDF or Excel Spreadsheet that’s also in memory?  You could use <code>zipfile.write()</code> (designed to take binary data) but then you can’t specify a filename (since our in-memory file was never written to a location on disk). The reason for this is simple: for a web request or for a test case, you shouldn’t need to store any files on disk.</p>
 <p>
 After a bit of experimentation, I finally was able to get  in-memory binary files written to an in-memory zip file:</p>
@@ -179,7 +178,6 @@ After a bit of experimentation, I finally was able to get  in-memory binary file
 </span></span><span style="display:flex;"><span>	main()</span></span></code></pre></div>
 </div>
 
-        </p>
     </div>
     
 
