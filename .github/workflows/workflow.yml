@@ -23,16 +23,28 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy-WebDav
-        uses: bxb100/action-upload@main
-        with:
-          provider: webdav
-          provider_options: |
-            endpoint=${{secrets.WEBDAV_ADDRESS}}
-            username=${{secrets.WEBDAV_USERNAME}}
-            password=${{secrets.WEBDAV_PASSWORD}}
-            root=${{secrets.WEBDAV_PATH}}
-          include: "./public/**"
+      - name: Install rclone
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rclone
+
+      - name: Deploy Fastmail WebDAV
+        env:
+          RCLONE_CONFIG_FASTMAIL_TYPE: webdav
+          RCLONE_CONFIG_FASTMAIL_URL: ${{ secrets.WEBDAV_ADDRESS }}
+          RCLONE_CONFIG_FASTMAIL_VENDOR: fastmail
+          RCLONE_CONFIG_FASTMAIL_USER: ${{ secrets.WEBDAV_USERNAME }}
+          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
+          WEBDAV_PATH: ${{ secrets.WEBDAV_PATH }}
+        run: |
+          export RCLONE_CONFIG_FASTMAIL_PASS="$(rclone obscure "$WEBDAV_PASSWORD")"
+          rclone sync ./public "fastmail:${WEBDAV_PATH}" \
+            --checksum \
+            --fast-list \
+            --transfers=8 \
+            --checkers=16 \
+            --delete-after \
+            --stats=30s
 
   gh-pages:
     runs-on: ubuntu-latest
@@ -55,5 +67,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
 
