@@ -3,10 +3,8 @@ title: About
 ---
 
 Software Engineering Manager at [Ericsson][] in [Athlone, Ireland][Athlone],
-managing teams in our commercial [rApp Development][rApps] for [Ericsson Intelligent
-Automation Platform][EIAP] (EIAP). Before that, I was managing EIAP Developer Portal 
-and [open source rApps][FOSSrApps]. Before that again, JEE Platform, User Interface SDK and 
-5G Topology teams in [Ericsson Network Manager][ENM].
+managing teams in our commercial [O&M rApp Development][RANrApps] which work with [Ericsson Intelligent Automation Platform][EIAP] (EIAP). Before that, I was managing EIAP Developer Portal 
+and [open source rApps][FOSSrApps]. Before that again, JEE Platform, User Interface SDK and 5G Topology teams in [Ericsson Network Manager][ENM].
 
 I originally graduated with a first class honours degree in computer science
 at  
@@ -22,6 +20,7 @@ some of
 
 [Athlone]: https://en.wikipedia.org/wiki/Athlone
 [Ericsson]: http://www.ericsson.com
+[RANrApps]: https://www.ericsson.com/en/ran/intelligent-ran-automation
 [rApps]: https://www.ericsson.com/en/portfolio/cross-portfolio/rapp-directory/network-deployment/ericsson-automated-configuration-consistency-rapp
 [FOSSrApps]: https://github.com/ericsson-iap/
 [EIAP]:
