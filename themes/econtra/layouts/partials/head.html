@@ -16,9 +16,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Styles -->
-    <!-- Use Hugo Pipes to process the Sass file (convert to CSS, minify, and add a hash) -->
-    {{ $main_style := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $main_style.Permalink }}"/>
+    <!-- Use Hugo Pipes to process the Sass file with a stable output path. -->
+    {{ $main_style := resources.Get "css/main.scss" | toCSS (dict "targetPath" "css/main.css") | minify }}
+    <link rel="stylesheet" href="{{ $main_style.RelPermalink }}"/>
 
     <!-- Uncomment to add custom styles -->
     <!-- Modify the custom.scss file inside assets > css to use scss -->
