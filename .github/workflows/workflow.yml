@@ -80,14 +80,13 @@ jobs:
       - name: Deploy Fastmail staging
         env:
           RCLONE_CONFIG_FASTMAIL_TYPE: webdav
-          RCLONE_CONFIG_FASTMAIL_URL: ${{ secrets.WEBDAV_ADDRESS }}
+          RCLONE_CONFIG_FASTMAIL_URL: https://myfiles.fastmail.com
           RCLONE_CONFIG_FASTMAIL_VENDOR: fastmail
           RCLONE_CONFIG_FASTMAIL_USER: ${{ secrets.WEBDAV_USERNAME }}
           WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
-          WEBDAV_PATH: ${{ secrets.STAGING_WEBDAV_PATH || 'staging.neilgrogan.com' }}
         run: |
           export RCLONE_CONFIG_FASTMAIL_PASS="$(rclone obscure "$WEBDAV_PASSWORD")"
-          rclone sync ./public "fastmail:${WEBDAV_PATH}" \
+          rclone sync ./public "fastmail:/staging.neilgrogan.com" \
             --checksum \
             --fast-list \
             --transfers=8 \
@@ -114,14 +113,13 @@ jobs:
       - name: Deploy Fastmail production
         env:
           RCLONE_CONFIG_FASTMAIL_TYPE: webdav
-          RCLONE_CONFIG_FASTMAIL_URL: ${{ secrets.WEBDAV_ADDRESS }}
+          RCLONE_CONFIG_FASTMAIL_URL: https://myfiles.fastmail.com
           RCLONE_CONFIG_FASTMAIL_VENDOR: fastmail
           RCLONE_CONFIG_FASTMAIL_USER: ${{ secrets.WEBDAV_USERNAME }}
           WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
-          WEBDAV_PATH: ${{ secrets.WEBDAV_PATH }}
         run: |
           export RCLONE_CONFIG_FASTMAIL_PASS="$(rclone obscure "$WEBDAV_PASSWORD")"
-          rclone sync ./public "fastmail:${WEBDAV_PATH}" \
+          rclone sync ./public "fastmail:/neilgrogan.com" \
             --checksum \
             --fast-list \
             --transfers=8 \
