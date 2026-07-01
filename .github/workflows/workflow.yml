@@ -9,8 +9,35 @@ on:
       - published
 
 jobs:
-  build:
+  build-staging:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: '0'   # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 0.135.0
+          extended: true
+
+      - name: Build staging
+        run: hugo -D -E -F --minify
+
+      - name: Validate stylesheet
+        run: test -s public/css/main.min.css
+
+      - name: Upload staging site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: staging-site
+          path: public
+
+  build-production:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'published'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,20 +56,20 @@ jobs:
       - name: Validate stylesheet
         run: test -s public/css/main.min.css
 
-      - name: Upload site artifact
+      - name: Upload production site artifact
         uses: actions/upload-artifact@v4
         with:
-          name: public-site
+          name: production-site
           path: public
 
   staging:
     runs-on: ubuntu-latest
-    needs: build
+    needs: build-staging
     steps:
-      - name: Download site artifact
+      - name: Download staging site artifact
         uses: actions/download-artifact@v4
         with:
-          name: public-site
+          name: staging-site
           path: public
 
       - name: Install rclone
@@ -70,13 +97,13 @@ jobs:
 
   production:
     runs-on: ubuntu-latest
-    needs: build
+    needs: build-production
     if: github.event_name == 'release' && github.event.action == 'published'
     steps:
-      - name: Download site artifact
+      - name: Download production site artifact
         uses: actions/download-artifact@v4
         with:
-          name: public-site
+          name: production-site
           path: public
 
       - name: Install rclone
