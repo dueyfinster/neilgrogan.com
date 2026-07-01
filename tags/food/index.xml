@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Food on Neil Grogan</title>
-		<link>/tags/food/</link>
-		<description>Recent content in Food on Neil Grogan</description>
-		<generator>Hugo</generator>
-		<language>en-us</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 04 Feb 2012 00:00:00 +0000</lastBuildDate>
-		
-			<atom:link href="/tags/food/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>The Best Cookbook</title>
-				<link>/the-best-cookbook/</link>
-				<pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
-				<guid>/the-best-cookbook/</guid>
-				<description>&lt;p&gt;I&amp;rsquo;ve only recently started cooking meals from scratch and it&amp;rsquo;s a worthwhile&#xA;experience! By my side is an awesome cookbook produced by the Health Service&#xA;Executive (HSE) and Money Advice and Budgeting Service (MABS).&lt;/p&gt;&#xA;&lt;img src=&#34;../../files/2012/02/101squaremeals.png&#34; alt=&#34;101 Square Meals&#34;&gt;&#xA;&lt;p&gt;It&amp;rsquo;s generally all healthy food and every recipe indicates cost and portion&#xA;size. It even has meals for one, meals for weaning babies, desserts, you name&#xA;it! So what&amp;rsquo;s the cost of this fabulous book? I got it for free. They produce&#xA;very limited quantities however, but it&amp;rsquo;s worth contacting MABS to see if you&#xA;can get your hands on a copy.&lt;/p&gt;</description>
-			</item>
-	</channel>
+  <channel>
+    <title>Food on Neil Grogan</title>
+    <link>/tags/food/</link>
+    <description>Recent content in Food on Neil Grogan</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Feb 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/food/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Best Cookbook</title>
+      <link>/the-best-cookbook/</link>
+      <pubDate>Sat, 04 Feb 2012 00:00:00 +0000</pubDate>
+      <guid>/the-best-cookbook/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve only recently started cooking meals from scratch and it&amp;rsquo;s a worthwhile&#xA;experience! By my side is an awesome cookbook produced by the Health Service&#xA;Executive (HSE) and Money Advice and Budgeting Service (MABS).&lt;/p&gt;&#xA;&lt;img src=&#34;../../files/2012/02/101squaremeals.png&#34; alt=&#34;101 Square Meals&#34;&gt;&#xA;&lt;p&gt;It&amp;rsquo;s generally all healthy food and every recipe indicates cost and portion&#xA;size. It even has meals for one, meals for weaning babies, desserts, you name&#xA;it! So what&amp;rsquo;s the cost of this fabulous book? I got it for free. They produce&#xA;very limited quantities however, but it&amp;rsquo;s worth contacting MABS to see if you&#xA;can get your hands on a copy.&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -2,7 +2,7 @@
 
 <html lang="en-us">
     <head>
-	<meta name="generator" content="Hugo 0.163.3">
+	<meta name="generator" content="Hugo 0.135.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
     
     
     
-    <link rel="stylesheet" href="../../css/main.min.cff01dd387ad469f1d3b01d7e41e1a0a418731795cc2dea91d15d9e656467b7a.css"/>
+    <link rel="stylesheet" href="../../css/main.min.css"/>
 
     
     
@@ -405,13 +405,13 @@ information</li>
                 <p><p>Continuing the theme of automation, one of the most repetitive tasks if you work
 for a big company is timesheets. So I set out to rectify this by scripting it!</p>
 <p>Start with you configuration, I named mine <code>hours.ini</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
 </span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> FILL_ME_IN
 </span></span></code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy
 lifting, so we install it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
 </span></span></code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p></p>
                 
             </div>
