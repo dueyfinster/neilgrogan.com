@@ -925,8 +925,6 @@
   </url><url>
     <loc>/archives/</loc>
   </url><url>
-    <loc>/search/</loc>
-  </url><url>
     <loc>/about/</loc>
   </url><url>
     <loc>/categories/</loc>
@@ -942,6 +940,8 @@
     <loc>/presentations/</loc>
   </url><url>
     <loc>/projects/</loc>
+  </url><url>
+    <loc>/search/</loc>
   </url><url>
     <loc>/uses/</loc>
   </url>
