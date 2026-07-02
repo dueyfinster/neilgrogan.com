@@ -1,561 +1,366 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Politics | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../tags/politics/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../tags/politics/index.xml">
+<link rel="alternate" hreflang="en" href="../../tags/politics/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <title>Politics | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+</noscript><meta property="og:title" content="Politics" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/politics/" />
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../tags/politics/index.xml" title="Neil Grogan" />
-    </head>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Politics"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="../../">Home</a>&nbsp;»&nbsp;<a href="../../tags/">Tags</a></div>
+  <h1>
+    Politics
+    <a href="../../tags/politics/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../tags/politics/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Irish SOPA Law: An Overview
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> </p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-25 00:00:00 +0000 UTC'>January 25, 2012</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Irish SOPA Law: An Overview" href="../../irish-sopa-law-an-overview/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Nuke support in UK hits record high
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If only we had such sense here in Ireland, we can’t meet our commitments and it will hurt the economy in the long run not to go nuclear. The ESB has said “sometime in the 2030’s we will need to look at it” - why not look at it now? These projects take 10-15 years at least to implement properly.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-21 00:00:00 +0000 UTC'>January 21, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Nuke support in UK hits record high" href="../../nuke-support-in-uk-hits-record-high/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Nuclear Power Debates... why not in Ireland?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Some really informative stuff on Slashdot regarding nuclear power:
+by david.given (6740)
+France generates pretty much all of its electricity from nuclear, with reprocessing, using pressurised water reactors. Not only do they have a number of handy engineering benefits such as isolating the water loop through the reactor from the water loop through the turbines, but they also have a particularly useful safety feature in that they’re self-regulating — temperature goes up, power output goes down. France has an excellent safety record; I can find only one major incident, which was a coolant spill in 2008. They even do their own waste reprocessing into plutonium, which is then reused to generate more power. Unaccountably, terrorists don’t seem to have stolen any of it.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-11-28 00:00:00 +0000 UTC'>November 28, 2009</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Nuclear Power Debates... why not in Ireland?" href="../../nuclear-power-debates-why-not-in/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Threats to Democracy
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After reading about Tom Cruise being banned from filming at certain German military sites because of his belief in Scientology, I was a bit outraged at first, despite my abhorrence of their beliefs, which I think are crazy and nonsensical.
+Germany has barred the makers of a movie about a plot to kill Adolf Hitler from filming at German military sites because its star Tom Cruise is a Scientologist, the Defence Ministry said on Monday. Cruise, also one of the film’s producers, is a member of the Church of Scientology which the German government does not recognise as a church. Berlin says it masquerades as a religion to make money, a charge Scientology leaders reject.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-06-26 00:00:00 +0000 UTC'>June 26, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Threats to Democracy" href="../../threats-to-democracy/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Irish Elections and Creative Commons
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is the text of an email I sent to RTE. In America, CNN Television network is allowing the copying, remixing and free use of presidential debates as long as they are given credit, I believe RTE should follow its lead and extend to other programs:
+First of all, sorry this isn’t to the right department, I couldn’t find the right one. The technical department which runs the website would make likely be able to deal with and respond to this issue.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-05-06 00:00:00 +0000 UTC'>May 6, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Irish Elections and Creative Commons" href="../../irish-elections-creative-commons/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Best Bush Satire, Ever.
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This Ladies and Gents, needs no introduction, for you all know George W. “Dubya” Bush. What you may not know is the Daily Show, which is a popular news satire show in the US. If you have time I recommend you have a look on YouTube for more videos…
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-10-18 00:00:00 +0000 UTC'>October 18, 2006</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Best Bush Satire, Ever." href="../../best-bush-satire-ever/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Law and the Interweb
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I am writing this because, I regret to say, the stupidity of humanity. People nowadays define their own law on the Web and the Internet (don’t know the difference, you should), while disregarding real life. Maybe its a lack of understanding about technology or law, I don’t know. One things for sure, common sense can go a long way. Take for example this website on the Commitments, which prohibits linking from unauthorised sites! You see? I just broke the law right there, amazing dontcha think? The person who designed or put the statement up, is a total complete and utter idiot, and I don’t care if thats considered slander! Imagine if every site was to do this? Search engines would be just another litagation filled business, like so many other. With Lawyers reviewing every site to go into the database, Google would have a handful, maybe a 100 sites, instead of the usual billions it indexes.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-08-02 00:00:00 +0000 UTC'>August 2, 2006</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Law and the Interweb" href="../../law-and-interweb/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Letter to U.S. Dept of Commerce, RE: The Future of the Internet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is my letter to U.S. Dept. of Commerce, stating what I believe should happen to the Internet. Fell free to email your opinions to them directly: ** DNSTransition@ntia.doc.gov**. As a net citizen, get your voice heard on the most important public debate of our times! Dear Sir/Madam, I, as a citizen of Ireland and the EU, think with respect, the Internet should have a world governing body, fairly appointed by each country who has more than 30% of their respective populations online. For those under 30% they should get to have a sub-committee, to prioritise and promote the Internet in their countries. I think while although ICANN has generally not been a bad governing body, vast improvements can be made, such as not allowing pressure from companies to increase domain prices, when the cost of providing them has come down dramatically over the past few years. I do recognise, that the Internet was partially created with the help of U.S. government funding, but this comes from the people of America, who would want the Internet to be a force for change, like for example, the way it is helping Chinese dissidents.Also, as with all US government generated ideas, it is free from patent and copyright which applies worldwide, such as NASA images, for example. This should be true of the Internet also, as it is with GPS (which I use regularly, Thanks for that!). I am not a whole believer in the U.N. however, I think the Internet governing body should be free form all Government and International organisational pressures (but not those that seek to limit abuse, such as child pornography, obviously). I thank you for offering a public debate on this issue and I sincerely hope the outcome will be of benefit to everyone living on earth.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-07-03 00:00:00 +0000 UTC'>July 3, 2006</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to My Letter to U.S. Dept of Commerce, RE: The Future of the Internet" href="../../my-letter-to-us-dept-of-commerce-re/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Questions, Hosting and IT 2006!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently found a great documentary, about 9/11, entitled Loose Change 9/11][]. It is easily the most powerful about the event, much more so than Fahrenheit 9/11. In fact I would even argue, that if this documentary had of aired during the U.S. presedential election, I would have bet on a different result. Backed up by trusted resources such as the BBC which confirmed at least 8 of the 19 highjackers are alive and well. Filled with outrageous facts, it sets the scene for either a highly competent Bush regime that new what it was doing, or the worst domestic tragedy that happend under maladministration. Either way the American people have serious questions to ask, which I hope in time will get the aired in time. Maybe George W. is taking a leaf out of Charlie Haugheys book? That is that corruption can be a force for the good of the public, and my rich friends?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-06-23 00:00:00 +0000 UTC'>June 23, 2006</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Questions, Hosting and IT 2006!" href="../../questions-hosting-and-it-2006/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Nuclear or Nothing?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> In Ireland we, like the rest of the world, have though questions to answer. Ireland being an island economy, is especially reliant on oil, none of which we produce. I was surprised earlier this week to hear one of George W. Bush’s top aides, saying that the U.S. needs to lose dependence on foreign oil and research alternatives. I was never more shocked, to hear Bush’s change of heart, from using improved technology, to one of his aides saying they need to use less oil. Part of me was angry, as he defiantly rejected Kyoto agreement, when the United States produces 25&#43;% of all greenhouse gases.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-05-11 00:00:00 +0000 UTC'>May 11, 2006</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Nuclear or Nothing?" href="../../nuclear-or-nothing/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="../../tags/politics/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
 <footer class="footer">
-	<div class="social-icons">
-        
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-</nav>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-        <div id="content" class="content-container">
-        
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-  <h1>Tagged "politics"</h1>
-  
-  
-    
-    <article>
-            <h2>
-                <a href="../../irish-sopa-law-an-overview/">
-                    Irish SOPA Law: An Overview
-                </a>
-            </h2>
-            <div>
-                <p><p><img src="../../files/2012/01/sopa.jpg" alt="Irish SOPA Illustration"></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 25, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../nuke-support-in-uk-hits-record-high/">
-                    Nuke support in UK hits record high
-                </a>
-            </h2>
-            <div>
-                <p><p>If only we had such sense here in Ireland, we can&rsquo;t meet our commitments and it
-will hurt the economy in the long run not to go nuclear. The ESB has said
-&ldquo;sometime in the 2030&rsquo;s we will need to look at it&rdquo; - why not look at it now?
-These projects take 10-15 years at least to implement properly.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 21, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../nuclear-power-debates-why-not-in/">
-                    Nuclear Power Debates... why not in Ireland?
-                </a>
-            </h2>
-            <div>
-                <p><p>Some really informative stuff on Slashdot regarding nuclear power:</p>
-<blockquote>
-<p>by <a href="http://slashdot.org/~david.given">david.given (6740)</a><br>
-France generates pretty much all of its electricity from nuclear, with
-reprocessing, using pressurised water reactors. Not only do they have a number
-of handy engineering benefits such as isolating the water loop through the
-reactor from the water loop through the turbines, but they also have a
-particularly useful safety feature in that they&rsquo;re self-regulating &mdash;
-temperature goes up, power output goes down. France has an excellent safety
-record; I can find only one major incident, which was a coolant spill in 2008.
-They even do their own waste reprocessing into plutonium, which is then reused
-to generate more power. Unaccountably, terrorists don&rsquo;t seem to have stolen
-any of it.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 28, 2009</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../threats-to-democracy/">
-                    Threats to Democracy
-                </a>
-            </h2>
-            <div>
-                <p><p>After reading about
-<a href="http://uk.reuters.com/article/entertainmentNews/idUKL253889920070625?feedType=RSS&amp;rpc=451&amp;sp=true">Tom Cruise being banned from filming at certain German military sites because of his belief in Scientology</a>,
-I was a bit outraged at first, despite my abhorrence of their beliefs, which I
-think are crazy and nonsensical.</p>
-<p><a href="../../img/07/Image:Scientology_warning_leaflet.jpg"><img src="../../img/07/Scientology_warning_leaflet.jpg" alt="image"></a></p>
-<blockquote>
-<p>Germany has barred the makers of a movie about a plot to kill Adolf Hitler
-from filming at German military sites because its star Tom Cruise is a
-Scientologist, the Defence Ministry said on Monday. Cruise, also one of the
-film&rsquo;s producers, is a member of the Church of Scientology which the German
-government does not recognise as a church. Berlin says it masquerades as a
-religion to make money, a charge Scientology leaders reject.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>June 26, 2007</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../irish-elections-creative-commons/">
-                    Irish Elections and Creative Commons
-                </a>
-            </h2>
-            <div>
-                <p><p>This is the text of an email I sent to RTE. In America, CNN Television network
-is allowing the copying, remixing and free use of presidential debates as long
-as they are given credit, I believe RTE should follow its lead and extend to
-other programs:</p>
-<blockquote>
-<p><em>First of all, sorry this isn&rsquo;t to the right department, I couldn&rsquo;t find the
-right one. The technical department which runs the website would make likely
-be able to deal with and respond to this issue.</em></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 6, 2007</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../best-bush-satire-ever/">
-                    Best Bush Satire, Ever.
-                </a>
-            </h2>
-            <div>
-                <p><p>This Ladies and Gents, needs no introduction, for you all know George W. &ldquo;Dubya&rdquo;
-Bush. What you may not know is the Daily Show, which is a popular news satire
-show in the US. If you have time I recommend you have a look on YouTube for more
-videos&hellip;</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 18, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../law-and-interweb/">
-                    Law and the Interweb
-                </a>
-            </h2>
-            <div>
-                <p><p>I am writing this because, I regret to say, the stupidity of humanity. People
-nowadays define their own law on the Web and the Internet (don’t know the
-difference, you should), while disregarding real life. Maybe its a lack of
-understanding about technology or law, I don’t know. One things for sure, common
-sense can go a long way. <a href="http://www.thecommitments.net/" title="The Commitments Official Website">Take for example this website on the
-Commitments</a>, which prohibits linking from unauthorised sites! You
-see? I just broke the law right there, amazing dontcha think? The person who
-designed or put the statement up, is a total complete and utter idiot, and I
-don’t care if thats considered slander! Imagine if every site was to do this?
-Search engines would be just another litagation filled business, like so many
-other. With Lawyers reviewing every site to go into the database, Google would
-have a handful, maybe a 100 sites, instead of the usual billions it indexes.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 2, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../my-letter-to-us-dept-of-commerce-re/">
-                    My Letter to U.S. Dept of Commerce, RE: The Future of the Internet
-                </a>
-            </h2>
-            <div>
-                <p><p>This is my letter to U.S. Dept. of Commerce, stating what I believe should
-happen to the Internet. Fell free to email your opinions to them directly: **
-<a href="DNSTransition@ntia.doc.gov">DNSTransition@ntia.doc.gov</a>**. As a net citizen, get your voice heard on the
-most important public debate of our times! Dear Sir/Madam, I, as a citizen of
-Ireland and the EU, think with respect, the Internet should have a world
-governing body, fairly appointed by each country who has more than 30% of their
-respective populations online. For those under 30% they should get to have a
-sub-committee, to prioritise and promote the Internet in their countries. I
-think while although ICANN has generally not been a bad governing body, vast
-improvements can be made, such as not allowing pressure from companies to
-increase domain prices, when the cost of providing them has come down
-dramatically over the past few years. I do recognise, that the Internet was
-partially created with the help of U.S. government funding, but this comes from
-the people of America, who would want the Internet to be a force for change,
-like for example, the way it is helping Chinese dissidents.Also, as with all US
-government generated ideas, it is free from patent and copyright which applies
-worldwide, such as NASA images, for example. This should be true of the Internet
-also, as it is with GPS (which I use regularly, Thanks for that!). I am not a
-whole believer in the U.N. however, I think the Internet governing body should
-be free form all Government and International organisational pressures (but not
-those that seek to limit abuse, such as child pornography, obviously). I thank
-you for offering a public debate on this issue and I sincerely hope the outcome
-will be of benefit to everyone living on earth.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 3, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../questions-hosting-and-it-2006/">
-                    Questions, Hosting and IT 2006!
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently found a great documentary, about 9/11, entitled Loose Change 9/11][].
-It is easily the most powerful about the event, much more so than Fahrenheit
-9/11. In fact I would even argue, that if this documentary had of aired during
-the U.S. presedential election, I would have bet on a different result. Backed
-up by trusted resources such as the <a href="http://news.bbc.co.uk/2/hi/middle_east/1559151.stm" title="BBC which confirmed at least 8 of the 19 highjackers are alive and well">BBC which confirmed at least 8 of the 19
-highjackers are alive and well</a>. Filled with outrageous facts, it sets the
-scene for either a highly competent Bush regime that new what it was doing, or
-the worst domestic tragedy that happend under maladministration. Either way the
-American people have serious questions to ask, which I hope in time will get the
-aired in time. Maybe George W. is taking a leaf out of Charlie Haugheys book?
-That is that corruption can be a force for the good of the public, and my rich
-friends?</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>June 23, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../nuclear-or-nothing/">
-                    Nuclear or Nothing?
-                </a>
-            </h2>
-            <div>
-                <p><p><img src="http://static.flickr.com/56/138071833_708a52b884.jpg" alt="Nuclear Shelter"></p>
-<p>In Ireland we, like the rest of the world, have though questions to answer.
-Ireland being an island economy, is especially reliant on oil, none of which we
-produce. I was surprised earlier this week to hear one of George W. Bush’s top
-aides, saying that the U.S. needs to lose dependence on foreign oil and research
-alternatives. I was never more shocked, to hear Bush’s change of heart, from
-using improved technology, to one of his aides saying they need to use less oil.
-Part of me was angry, as he defiantly rejected Kyoto agreement, when the United
-States produces 25+% of all greenhouse gases.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 11, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../europes-new-voice/">
-                    Europe&#39;s New Voice
-                </a>
-            </h2>
-            <div>
-                <p><p>As tech savvy readers will be aware, dot EU is the latest domain to go into
-public use. What is a domain? A domain is the name used for internet site like
-&ldquo;dueyfinster.eu&rdquo;. It has already sold over 1.25 million names already, this
-entering the third day of the public sale. Their have been bitter critics of how
-it has dealt out, with heated arguments over some domains such as Polo.eu, which
-was claimed by no less than 3 entities: Volkswagen, Ralph Lauren and Nestle.
-Volkswagen won out eventually, all because they got their application in first.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 9, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../gallery-riots-and-policy-change/">
-                    Gallery, Riots and Policy Change
-                </a>
-            </h2>
-            <div>
-                <p><p>Well I can’t believe I only had one post in February! A lot has happened since
-then, with Danish cartoons, Dublin Riots and a few policy changes to the site.
-First of all the cartoons, I mean, whats all the fuss? Christianity is banned in
-Saudi Arabia and Muslims in the middle east just don’t get the idea of ‘free
-press’. No one should be allowed to immigrate to the western world, if they do
-not hold the core values which we hold, such as human rights, free of
-expression/press and other values. Should we worry about the middle east? Not at
-all, they’re behind the times, their loss. Why is it that movies which parody
-Christianity are so popular with Christians (like Monty Python)? We have evolved
-and can tolerate jokes and laugh at ourselves, many, but not all Muslims have
-not learned to do this, but they will, its called evolution, and sooner or
-later, it will hit the middle east. I am not defending the Cartoons, and I know
-Muslims do not produce images of Muhammad, and offense to this, I can
-understand. But they need to relax, maybe try some of the many drugs they like
-to export to us?</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>March 2, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../new-year-lets-review/">
-                    New Year, Lets Review!
-                </a>
-            </h2>
-            <div>
-                <p><p>Well another year has passed, so I thought I’d make a short recap of it, and
-tell you what I am looking forward to in 2006. The year was firmly in the hands
-of mother nature as we saw in both Pakistan, New Orleans/Gulf of Mexico and the
-Tsunami’s after effects. International consensus was reached at the G8 as London
-was being bombed - not by the IRA, but by their new enemies in the middle east.
-Iran esculated its pressure on the world by resuming its nuclear activities.
-George W. Bush took office in January, much to the distaste of the Daily Mirror
-in the UK, who scored their most famous headline, “How Could 59,054,087 People,
-Be So Dumb?”.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 6, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../eurosceptics/">
-                    Eurosceptics
-                </a>
-            </h2>
-            <div>
-                <p><p>The British Press annoys me so much, they way they constantly get it wrong
-across the board about the EU. I am a fond supporter of the EU for all its
-faults and cracks. But I love freedom of the press and like organisations who
-uphold basic journalistic standards, such as the BBC. This leads me onto the
-evil man behind it all, Rupert Murdoch owner of The Sun, BSkyB Television, The
-Times and other media outlets. It seems all he pushes is his agenda, whether it
-be the Bush Right-Christian agenda on Fox in the US or Eurosceptic view in his
-British interests.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>December 17, 2005</time>
-            </div> 
-        </article>
-    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-    
+</script>
+</body>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
-</footer>
-    </body>
 </html>

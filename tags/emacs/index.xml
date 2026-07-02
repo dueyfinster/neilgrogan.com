@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Emacs on Neil Grogan</title>
     <link>/tags/emacs/</link>
     <description>Recent content in Emacs on Neil Grogan</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,13 @@
       <link>/org-mode/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       <guid>/org-mode/</guid>
-      <description>&lt;p&gt;&#xA;Since hearing about &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; on the web many years ago, I always meant to give it a spin. I only ever found &lt;del&gt;one&lt;/del&gt; two problems:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Time - Life eh?&lt;/li&gt;&#xA;&lt;li&gt;It&amp;#39;s a mode of &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; for which I&amp;#39;d also have to learn (again time)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my &lt;a href=&#34;https://www.vim.org&#34;&gt;vim&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Muscle_memory&#34;&gt;muscle memory&lt;/a&gt; over the years. The tough part usually is finding good documentation that is both easy to read and follow.&lt;/p&gt;</description>
+      <description>&lt;p&gt;
+Since hearing about &lt;a href=&#34;https://orgmode.org&#34;&gt;org-mode&lt;/a&gt; on the web many years ago, I always meant to give it a spin. I only ever found &lt;del&gt;one&lt;/del&gt; two problems:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Time - Life eh?&lt;/li&gt;
+&lt;li&gt;It&amp;#39;s a mode of &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; for which I&amp;#39;d also have to learn (again time)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my &lt;a href=&#34;https://www.vim.org&#34;&gt;vim&lt;/a&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Muscle_memory&#34;&gt;muscle memory&lt;/a&gt; over the years. The tough part usually is finding good documentation that is both easy to read and follow.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

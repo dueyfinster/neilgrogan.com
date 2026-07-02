@@ -1,348 +1,301 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mozilla | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../tags/mozilla/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../tags/mozilla/index.xml">
+<link rel="alternate" hreflang="en" href="../../tags/mozilla/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <title>Mozilla | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+</noscript><meta property="og:title" content="Mozilla" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/mozilla/" />
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../tags/mozilla/index.xml" title="Neil Grogan" />
-    </head>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mozilla"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="../../">Home</a>&nbsp;»&nbsp;<a href="../../tags/">Tags</a></div>
+  <h1>
+    Mozilla
+    <a href="../../tags/mozilla/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../tags/mozilla/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Chrome vs. Internet Explorer Audience
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Lately both Google and Microsoft have been advertising their respective browsers on British Television (received in Ireland by the vast majority of the population). It’s interesting the different approach each company is taking.
+Chrome ad:
+To me the Chrome ad is very family oriented, stressing the utility of the web and the ease of reaching people and staying in touch. No surprise they didn’t feature Facebook, which is what the vast majority use to keep in touch.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-10-30 00:00:00 +0000 UTC'>October 30, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Chrome vs. Internet Explorer Audience" href="../../chrome-vs-internet-explorer-audience/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Firefox and Opera lead the web video way
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I downloaded Firefox 3.1 beta 2 (after trialling other development snapshots over the last few months) to see Ogg Theora video support is coming on really well. Opera, as well as Mozilla has committed to including this royalty-free video codec for web use. This is really good news; as one Opera Developer said:
+Something however is still not quite there about web video. The video solutions mentioned above are proprietary closed solutions that rely on plugins to display in a web page - what we need to make video a first-class web citizen is an easy, open solution to integrate video into web pages, and native support for video in browsers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-12-09 00:00:00 +0000 UTC'>December 9, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Firefox and Opera lead the web video way" href="../../firefox-and-opera-lead-web-video-way/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Profiling Firefox Extensions I have installed
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> My Current Firefox Extensions: A-Z*
+Adblock Plus; because ads are for people that don’t know how to avoid them! Not only do they stop your banwidth from being wasted; they make a ton of websites more usuable. It takes care of Flash Ads as well as static ones; using a filter that is constantly updated. So even if some of the webs more devious and sneaky advertisers try to circumvent it; AdBlock can have a fix to everyone online within hours. It is definately my favourite extension! I don’t block certain ads like Google, Yahoo, Microsoft (the ones with decent reputations) as that is how the people behind really good websites I frequent make a living. But for all the rest trying to do pop-ups and pop-unders; I am sorry your days are numbered! (Some people higly recommend flashblock but I haven’t had a need to use it with AdBlock Plus yet).
+CustomizeGoogle adds neat tricks to Google services such as always using a secure connection to Gmail; links to other search engines, page histories, Favicons to search and streaming results pages. Comes in handy once in a while; but I don’t use it daily.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-29 00:00:00 +0000 UTC'>November 29, 2008</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Profiling Firefox Extensions I have installed" href="../../profiling-firefox-extensions-i-have/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Internet Explorer thanks Firefox, sincerely?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Reading my favourite tech news site: Slashdot ( /.), I see the Internet Explorer team have sent the Firefox Team a nice cake:
+One comment I read said it all really:
+Seems even the IE team knows that IE is dead.
+As for the ex-lax, bugs, pubes in the cake of course none of that is true. Those things would only be possible if someone at Microsoft actually made the cake, and that’s not how MS does things. They knew they couldn’t make a good cake so they just went out and bought a cake from someone who already knew how to make one and then stuck their logo on it and called it theirs.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-10-26 00:00:00 +0000 UTC'>October 26, 2006</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Internet Explorer thanks Firefox, sincerely?" href="../../internet-explorer-thanks-firefox/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mozilla&#39;s Millions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Only now is it truly becoming clear, their is [serious money in Open Source][]/ With Mozilla reported to have made tens of millions of dollars. One blogger reported 70m was made by the corporation, with a Mozilla insider confirming thats a reasonable ballpark figure. Christopher Blizzard, board member of Mozilla, had this to say on his blog:
+Blizzard added that an earnings figure of $72m (£41m) quoted on some blogs was incorrect. “I won’t comment on the dollar amount except to say that it’s [$72m] not correct, though not off by an order of magnitude. I also won’t comment on sources of that money, except to say that some of the assertions that I’ve seen in the comments are pretty far off, both in terms of numbers and sources,
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-03-26 00:00:00 +0000 UTC'>March 26, 2006</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Mozilla&#39;s Millions" href="../../mozillas-millions/"></a>
+</article>
+    </main>
+    
 <footer class="footer">
-	<div class="social-icons">
-        
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-</nav>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-        <div id="content" class="content-container">
-        
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-  <h1>Tagged "mozilla"</h1>
-  
-  
-    
-    <article>
-            <h2>
-                <a href="../../chrome-vs-internet-explorer-audience/">
-                    Chrome vs. Internet Explorer Audience
-                </a>
-            </h2>
-            <div>
-                <p><p>Lately both Google and Microsoft have been advertising their respective browsers
-on British Television (received in Ireland by the vast majority of the
-population). It&rsquo;s interesting the different approach each company is taking.</p>
-<p>Chrome ad:</p>
-<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="http://www.youtube.com/embed/E0qDrRJT4zE" width="560"></iframe>
-<p>To me the Chrome ad is very family oriented, stressing the utility of the web
-and the ease of reaching people and staying in touch. No surprise they
-didn&rsquo;t feature Facebook, which is what the vast majority use to keep in
-touch.<br /></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 30, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../firefox-and-opera-lead-web-video-way/">
-                    Firefox and Opera lead the web video way
-                </a>
-            </h2>
-            <div>
-                <p><p>I downloaded
-<a href="http://www.mozilla.com/en-US/firefox/all-beta.html">Firefox 3.1 beta 2</a> (after
-trialling other development snapshots over the last few months) to see
-<a href="http://en.wikipedia.org/wiki/Ogg_Theora">Ogg Theora</a> video support is coming on
-really well. <a href="http://www.opera.com/">Opera</a>, as well as
-<a href="http://www.mozilla.org/">Mozilla</a> has committed to including this royalty-free
-video codec for web use. This is really good news;
-<a href="http://dev.opera.com/articles/view/a-call-for-video-on-the-web-opera-vid/">as one Opera Developer said:</a></p>
-<blockquote>
-<p>Something however is still not quite there about web video. The video
-solutions mentioned above are proprietary closed solutions that rely on
-plugins to display in a web page - what we need to make video a first-class
-web citizen is an easy, open solution to integrate video into web pages, and
-native support for video in browsers.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>December 9, 2008</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../profiling-firefox-extensions-i-have/">
-                    Profiling Firefox Extensions I have installed
-                </a>
-            </h2>
-            <div>
-                <p><ul>
-<li>My Current Firefox Extensions: A-Z*<br>
-<a href="../../img/08/74.png"><img src="../../img/08/74.png" alt="image"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/1865">Adblock Plus</a>; because
-ads are for people that don&rsquo;t know how to avoid them! Not only do they stop
-your banwidth from being wasted; they make a ton of websites more usuable. It
-takes care of Flash Ads as well as static ones; using a filter that is
-constantly updated. So even if some of the webs more devious and sneaky
-advertisers try to circumvent it; AdBlock can have a fix to everyone online
-within hours. It is definately my favourite extension! I don&rsquo;t block certain
-ads like Google, Yahoo, Microsoft (the ones with decent reputations) as that
-is how the people behind really good websites I frequent make a living. But
-for all the rest trying to do pop-ups and pop-unders; I am sorry your days are
-numbered! (Some people higly recommend
-<a href="https://addons.mozilla.org/en-US/firefox/addon/433">flashblock</a> but I haven&rsquo;t
-had a need to use it with AdBlock Plus yet).<br>
-<a href="../../img/08/943948800.png"><img src="../../img/08/943948800.png" alt="image"></a></li>
-</ul>
-<p><a href="https://addons.mozilla.org/en-US/firefox/addon/743">CustomizeGoogle</a> adds neat
-tricks to Google services such as always using a secure connection to Gmail;
-links to other search engines, page histories, Favicons to search and streaming
-results pages. Comes in handy once in a while; but I don&rsquo;t use it daily.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 29, 2008</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../internet-explorer-thanks-firefox/">
-                    Internet Explorer thanks Firefox, sincerely?
-                </a>
-            </h2>
-            <div>
-                <p><p>Reading my favourite tech news site: Slashdot ( <a href="http://slashdot.org/articles/06/10/26/1238239.shtml">/.</a>), I see the <a href="http://blogs.msdn.com/ie/">Internet
-Explorer team</a> have sent the <a href="http://getfirefox.com/">Firefox Team</a> a nice cake:</p>
-<p><img src="http://static.flickr.com/118/278562314_14716c0232.jpg" alt="MS IE Cake for Firefox
-2"></p>
-<p>One comment I read said it all really:</p>
-<blockquote>
-<p>Seems even the IE team knows that IE is dead.</p>
-<p>As for the ex-lax, bugs, pubes in the cake of course none of that is true.
-Those things would only be possible if someone at Microsoft actually made the
-cake, and that&rsquo;s not how MS does things. They knew they couldn&rsquo;t make a good
-cake so they just went out and bought a cake from someone who already knew how
-to make one and then stuck their logo on it and called it theirs.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 26, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../mozillas-millions/">
-                    Mozilla&#39;s Millions
-                </a>
-            </h2>
-            <div>
-                <p><p>Only now is it truly becoming clear, their is [serious money in Open Source][]/
-With <a href="http://www.mozilla.com/" title="Mozilla Corp">Mozilla</a> reported to have made tens of millions of dollars. One blogger
-reported 70m was made by the corporation, with a Mozilla insider confirming
-thats a reasonable ballpark figure. Christopher Blizzard, board member of
-Mozilla, had this to say on his blog:</p>
-<blockquote>
-<p>Blizzard added that an earnings figure of $72m (£41m) quoted on some blogs was
-incorrect. “I won’t comment on the dollar amount except to say that it’s
-[$72m] not correct, though not off by an order of magnitude. I also won’t
-comment on sources of that money, except to say that some of the assertions
-that I’ve seen in the comments are pretty far off, both in terms of numbers
-and sources,</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>March 26, 2006</time>
-            </div> 
-        </article>
-    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-    
+</script>
+</body>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
-</footer>
-    </body>
 </html>

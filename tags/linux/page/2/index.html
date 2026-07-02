@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Linux | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../../../tags/linux/">
+<link crossorigin="anonymous" href="../../../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../../../tags/linux/index.xml">
+<link rel="alternate" hreflang="en" href="../../../../tags/linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Linux" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/linux/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
+
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../../../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="../../../../">Home</a>&nbsp;»&nbsp;<a href="../../../../tags/">Tags</a></div>
+  <h1>
+    Linux
+    <a href="../../../../tags/linux/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ubuntu in four years
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Last year was me celebrating four years of using the best operating system out there: Linux and the best distro Ubuntu. Ubuntu was my first foray in to Linux; and I haven’t left it since; although I have tried all the other major distros. I started with the first version of Ubuntu; Warthy Warthog:
+Warthy had a text only installer and it took me quite a while to not only get used to the idea of this strange operating system; but the fear of leaving Windows-land where all that power usage knowledge would mean nothing. It meant nothing in terms of the registry and other superficial stuff; but the more I used Ubuntu and Linux the more I liked it. In fact in 2005 I ditched my XP installation altogether. I noticed there wasn’t an Irish Ubuntu users group; so I mailed one of the few people (around 5 I guess) that were around Mark Shuttleworth to set it up and get a website going. It was an ill-advised effort since I was too busy with examinations really to take it on; so I gave it up soon after. But it is still going today, people are still involved.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-01-21 00:00:00 +0000 UTC'>January 21, 2009</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Ubuntu in four years" href="../../../../ubuntu-in-four-years/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">KDE 4.2 Beta 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Recently I downloaded the Kubuntu packages of the new KDE 4.2 beta 2. For those of you who don’t know; KDE is the K Desktop Environment; which includes a window manager (KWin), common desktop applications, its own menu (Kickoff), browser (Konqueror), file manager (dolphin) etc. Basically it is the most popular desktop environment on Linux next to Gnome.
+*KDE 4.2 Beta 2 with Kickoff Menu visible
+**What is so special about KDE? **
+The philosophy of KDE is the advanced configuration it allows through its Graphical User Interface (GUI), this is versus Gnome which chooses sane defaults and leaves configuration in hard to reach places and out-of-sight. This isn’t to say KDE doesn’t choose sane defaults; it does and is very user-friendly. KDE has always been the more Windows-like of the major desktop environments and this hasn’t really changed in KDE 4.X series. KDE is available in popular distributions of Linux such as Kubuntu, Mandriva, OpenSuse. The special part about 4.X series is that for the first time for any Linux desktop environment; it is fully cross-platform, easily installs and works on Microsoft Windows and Apple Mac OS X. KDE 4.2 Panel; with KOrganizer calendar open
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-01-04 00:00:00 +0000 UTC'>January 4, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to KDE 4.2 Beta 2" href="../../../../beta-2/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Linux and Patents: Just Patently Wrong
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>So I read the news Novell and Red Hat are being sued for patent infringement. This is all about multiple workspaces that can hold various graphical user elements, a Xerox Parc patent which dates to the early 1990’s. Xerox Palo Alto Research center invented the graphical user interface in the 1980’s, only to been, licensed and used by Steve Jobs in Mac OS Classic. Now IP Innovation, a submarine patent troll, who make no products and bought the patent want their payday. The logical step is to go after the biggest infringer to set a precedent for your patent, and then make your way to all the smaller companies who infringe. Well logically of course that would be Apple or Microsoft. Apple has already paid them a reported 20 million dollars, and well no-one knows what Microsoft has done, but this fish is smelly. From the Register Article:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-10-12 00:00:00 +0000 UTC'>October 12, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Linux and Patents: Just Patently Wrong" href="../../../../linux-and-patents-just-patently-wrong/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gutsy coming along, Update to Dell Windows Refund..
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I just tried Herd 5 of Gutsy Gibbon, a beta release which will be Ubuntu 07.10 released in October. Obviously it is still early stages and a lot of things aren’t working quite as they should, but it looks very promising. Here’s some new stuff which should hit the final release:
+Compiz Fusion - Pretty Graphics that leave you in awe… Bullet Proof X - Making sure you’ll never see a terminal prompt not of your own choosing, basically the graphics server should be ‘bulletproof’ Appearance Manager - Making it easier to change yourbuntu’s look and feel Better Driver Support - More of those restricted drivers to make sure you can see your screen and use your wifi card Simplified Codecs install - It will now be painless, install ubuntu-restrictedcodecs (or kubuntu-restricted codecs) and you can see Youtube in all its glory, play a dvd, watch that porno WMV file (just kidding but I think thats all WMV is used for) and other such niceties of the propreitry world we have to put up with Firefox Codecs Plugin - Firefox will be hooked up to the package manager and prompt to install Flash/Java if you haven’t got it already, much the same way it prompts to get a codec when you throw a file at it that it cannot play in the movie player. The free software Gnash replacement for Flash will come as standard and can play Youtube Vids. Dual Screen Glory - If your like me you have a nice and small portable laptop, but that screen just won’t do all of the time, thats why I personally have a 19&#34; to plug my 13&#34; MacBook into. With Gutsy I should be able to plug and play over DVI. These are just some of the features that are being worked on for the final release. Probably not all of them on the list will get into Gutsy final, but lets hope they do! Gutsy&#43;1 (slated for release April 2008) has been announced as “Hardy Hereon” and should be a long term release (5 years server and 3 years desktop updates and patches). ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-29 00:00:00 +0000 UTC'>August 29, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Gutsy coming along, Update to Dell Windows Refund.." href="../../../../gutsy-coming-along-update-to-dell/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dell refunds me for Windows!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As many of you know I am a Linux and Mac aficionado. For my Linux machines, all of them are Dell. I have been always pleased with Dells prices, how their machines work with Linux, their customer service and the fact they are made in Limerick, Ireland (I am from Ireland). I politely emailed Dell (well got up on my high horse), heres my first mail:
+I would like a refund of Windows XP since I am installing Ubuntu Linux on the computer when I get it. When I turn on the computer I am going to decline the EULA, and I am within my rights to request this refund (as part of Irish consumer laws). This also applies in Britian, see here: ( http://news.bbc.co.uk/1/hi/technology/6144782.stm )
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-21 00:00:00 +0000 UTC'>August 21, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Dell refunds me for Windows!" href="../../../../dell-refunds-me-for-windows/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HP to Follow Dell into Open Source? and Ubuntu Home Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>HP it seems is responding to Dell’s initiative to sell Ubuntu on their computers. With the Ubuntu Dells reportedly selling very well and Dell rolling out the program worldwide, this hasn’t escaped the notice of the world’s number one computer manufacturer - HP. This is speculation from blogs that has been going on for months since Dell started to offer Ubuntu. The Direct to Dell Blog states:
+This recent post from Tom Dryer caught my eye a couple of days ago, and thought I’d comment on it here. If the rumors about HP offering Ubuntu are true, we’re glad to see other vendors join us in support of Ubuntu and open source. We welcome HP and other system vendors that want to join in this initiative.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-08 00:00:00 +0000 UTC'>July 8, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to HP to Follow Dell into Open Source? and Ubuntu Home Server" href="../../../../hp-to-follow-dell-into-open-source/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Windows Vista Security - Better than Linux?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After reading a nice article written by Jeff Jones, a security researcher for Microsoft. He says he isn’t biased, saying he worked over 75% of his career outside Microsoft, using Slackware Linux, Unix, HP Unix etc. He claims Windows Vista has less security holes than popular versions of Linux, such as Ubuntu (he also compares Red Hat, Novell, Mac OS X). First let me say why his facts are distorted, and why he knows his facts are distorted. His facts do raise an issue of slow patching of vulnerabilities across the software Industry, but Linux performs the best consistently because anyone can audit the code. Here’s why his comparisons are uneven:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-03 00:00:00 +0000 UTC'>July 3, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Windows Vista Security - Better than Linux?" href="../../../../windows-vista-security-better-than/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dell Sells Ubuntu 7.04
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Dell Computers has started selling Ubuntu Linux 7.04 on consumer machines in the United States. This can only be good news, as a supporter of Linux since late 2004/early 2005 I am fully behind this initiative to put Linux as a choice in front of people who buy computers. They are testing the market at the moment which explains why they are shipping stock drivers with the hardware, and no multimedia codecs (which is unfortunate, but understandable that this deal was done in 60 days). I think this is quite an achievement for Canonical and Mark Shuttleworth (Ubuntu Founder), as they get to do the traditional Linux business model: you pay for support, and if you don’t need it, you don’t buy it. This could confuse some people in the shorter term, but long term its a winner: Dell does what it does best (Hardware) and Software is left to Ubuntu’s parent company Canonical. This is opposed to Microsoft getting Dell to provide support for both hardware and software, sometimes a messy business in which the consumer does not know which to turn to and can often be left out in the cold. I hope Dell extends this to Europe and 6the rest of the world soon, and makes a decent stab at promoting a free software desktop. Dell list advantages in one of their videos:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-05-26 00:00:00 +0000 UTC'>May 26, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Dell Sells Ubuntu 7.04" href="../../../../dell-sells-ubuntu-704/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ultimate Games Disc
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I got inspiration over this past Easter holidays, being bored, I gave Linux Gaming a shot. I am not much of a gamer myself and most websites aren’t very helpful or have too small a focus (only shoot-em-ups, or only certain Linux distros etc.). Inspired by the fine folks at OpenSourceMac.org and OpenSourceWindows.org, I announce my own project: Ultimate Games Disc. UGD is a project I think I can make very successful. My aims are as follows:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-04-16 00:00:00 +0000 UTC'>April 16, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Ultimate Games Disc" href="../../../../ultimate-games-disc/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Vista is released; Ubuntu gets .exe!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Well as I write this it is a few days after Vista’s launch, and it has yet to set the software market alight. But this is nothing new, it happend with XP. How do you convince people the latest and greatest is worth the money? Microsoft is in a tough position due to stiff competition - old, working, fully-compatible windows machines don’t disappear into thin air. There has been a lot more FUD (Fear Uncertainty and Doubt)abput Vista already from the Free and Open Source camp. Some of the harsh critiscims will be justified, others probably not. Regardless this will not hurt Microsofts marketing whatsoever, the average user doesn’t share concerns over digital restriction/rights management - yet. Microsoft say it will be on 100m PC’s by years end. I don’t think it will be as fast as Microsoft would like, due to: 1) People wait for service packs. 2) People don’t upgrade PC’s as fast now. Most things people identify their computer with is increasingly online, a worrying trend if I were Microsoft, this creates platform independence for the average user, granted not the gamers, or other highly specialised software vendors.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-02 00:00:00 +0000 UTC'>February 2, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Vista is released; Ubuntu gets .exe!" href="../../../../vista-is-released-ubuntu-gets-exe/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="../../../../tags/linux/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="../../../../tags/linux/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="../../../../">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

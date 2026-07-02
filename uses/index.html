@@ -1,150 +1,200 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Uses | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Editor &#43; Terminal
+For Editor I use Neovim and VS Code.
+For shell I use ZSH with Starship
+installed. For terminal I use Ghostty.
+For AI CLI tools, I use Codex, Kiro and Claude.
+My dotfiles are here
+Desktop Apps
+For web browser - I usually use Firefox.
+For RSS reader I use the excellent Reeder (mac/iOS).
+For work, I use Microsoft Excel, Powerpoint and Word - I never use these on a
+personal machine (I use Apple iWork suite on rare occasion).">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../uses/">
+<link crossorigin="anonymous" href="../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="mask-icon" href="../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="../uses/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <title>Uses | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
-    <link rel="stylesheet" href="../css/main.min.css"/>
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+</noscript><meta property="og:title" content="Uses" />
+<meta property="og:description" content="Editor &#43; Terminal
+For Editor I use Neovim and VS Code.
+For shell I use ZSH with Starship
+installed. For terminal I use Ghostty.
+For AI CLI tools, I use Codex, Kiro and Claude.
+My dotfiles are here
+Desktop Apps
+For web browser - I usually use Firefox.
+For RSS reader I use the excellent Reeder (mac/iOS).
+For work, I use Microsoft Excel, Powerpoint and Word - I never use these on a
+personal machine (I use Apple iWork suite on rare occasion)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/uses/" /><meta property="article:section" content="page" />
 
-    </head>
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../">Neil Grogan</a>
-    </div>  
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Uses"/>
+<meta name="twitter:description" content="Editor &#43; Terminal
+For Editor I use Neovim and VS Code.
+For shell I use ZSH with Starship
+installed. For terminal I use Ghostty.
+For AI CLI tools, I use Codex, Kiro and Claude.
+My dotfiles are here
+Desktop Apps
+For web browser - I usually use Firefox.
+For RSS reader I use the excellent Reeder (mac/iOS).
+For work, I use Microsoft Excel, Powerpoint and Word - I never use these on a
+personal machine (I use Apple iWork suite on rare occasion)."/>
+<meta name="twitter:site" content="@dueyfinster"/>
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../uses" title="Uses">
+                    <span class="active">Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
+<main class="main">
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../about">About</a>
-  
-    <a class="color-link nav-link" href="../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="../">Home</a>&nbsp;»&nbsp;<a href="../page/">Pages</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Uses
+    </h1>
+    <div class="post-meta">2 min&nbsp;·&nbsp;Neil Grogan
 
 </div>
-
-
-
-
-	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
-</footer>
-</nav>
-
-        <div id="content" class="content-container">
-        
-
-<h1 class="post-title">Uses</h1>
-    
-
-    <div>
-        
-        <h3 id="editor--terminal">Editor + Terminal</h3>
+  </header> 
+  <div class="post-content"><h3 id="editor--terminal">Editor + Terminal<a hidden class="anchor" aria-hidden="true" href="#editor--terminal">#</a></h3>
 <p>For Editor I use <a href="https://www.neovim.io">Neovim</a> and <a href="https://code.visualstudio.com">VS Code</a>.</p>
 <p>For shell I use <a href="https://www.zsh.org/">ZSH</a> with <a href="https://starship.rs/">Starship</a>
 installed. For terminal I use <a href="https://ghostty.org/">Ghostty</a>.</p>
 <p>For AI CLI tools, I use Codex, Kiro and Claude.</p>
 <p><a href="https://github.com/dueyfinster/dotfiles">My dotfiles are here</a></p>
-<h3 id="desktop-apps">Desktop Apps</h3>
+<h3 id="desktop-apps">Desktop Apps<a hidden class="anchor" aria-hidden="true" href="#desktop-apps">#</a></h3>
 <p>For web browser - I usually use Firefox.</p>
 <p>For RSS reader I use the excellent <a href="https://reederapp.com">Reeder</a> (mac/iOS).</p>
 <p>For work, I use Microsoft Excel, Powerpoint and Word - I never use these on a
 personal machine (I use Apple iWork suite on rare occasion).</p>
-<h3 id="backup-strategy">Backup Strategy</h3>
+<h3 id="backup-strategy">Backup Strategy<a hidden class="anchor" aria-hidden="true" href="#backup-strategy">#</a></h3>
 <p>I host my files on a Synology NAS and back it up to Rsync.net - with mirrors to
 local USB and cloud sync where needed.</p>
-<h3 id="mobile-setup">Mobile setup</h3>
+<h3 id="mobile-setup">Mobile setup<a hidden class="anchor" aria-hidden="true" href="#mobile-setup">#</a></h3>
 <ul>
 <li><a href="https://frame.work">Framework 13 AMD 7040</a> - runs <a href="https://omarchy.org">Omarchy</a></li>
 </ul>
@@ -154,9 +204,9 @@ local USB and cloud sync where needed.</p>
 <li><a href="https://blink.sh">Blink</a> as terminal</li>
 <li><a href="https://mosh.org">mosh</a> to keep sessions open anywhere</li>
 </ul>
-<h3 id="desk-setup">Desk Setup</h3>
+<h3 id="desk-setup">Desk Setup<a hidden class="anchor" aria-hidden="true" href="#desk-setup">#</a></h3>
 <p>I have separate work and personal desks in my home office.</p>
-<h4 id="personal-desk-new">Personal Desk (New)</h4>
+<h4 id="personal-desk-new">Personal Desk (New)<a hidden class="anchor" aria-hidden="true" href="#personal-desk-new">#</a></h4>
 <ul>
 <li>AMD Ryzen 7 9800X3D</li>
 <li>32GB RAM</li>
@@ -172,7 +222,7 @@ local USB and cloud sync where needed.</p>
 <li><a href="https://www.getdoxie.com/product/doxie-q">Doxie Q</a> for receipt scanning</li>
 <li><a href="https://mydpi.com/products/300v1">mydpi 300v1</a> thermal printer for labels</li>
 </ul>
-<h4 id="work-desk">Work Desk</h4>
+<h4 id="work-desk">Work Desk<a hidden class="anchor" aria-hidden="true" href="#work-desk">#</a></h4>
 <ul>
 <li>Dell Monitor</li>
 <li>Dell Dock</li>
@@ -190,94 +240,147 @@ local USB and cloud sync where needed.</p>
 <li><a href="https://www.amazon.co.uk/dp/B0CH3P9K1X">Elgato Prompter</a> with a <a href="https://www.amazon.co.uk/dp/B0BJL7Q3SR">Elgato FaceCam Pro</a></li>
 <li><a href="https://www.amazon.co.uk/Elgato-Wave-Tap-Mute-Mac/dp/B09738CKKX">Elgato Wave XLR</a> paired with a <a href="https://www.amazon.co.uk/Shure-SM7B-Microphone/dp/B0002E4Z8M">Shure S7MB</a> and <a href="https://www.sennheiser.com/en-us/catalog/products/headphones/hd-280-pro/hd-280-pro-506845">Sennheiser HD 280 PRO</a></li>
 </ul>
-<h4 id="in-storage">In storage</h4>
+<h4 id="in-storage">In storage<a hidden class="anchor" aria-hidden="true" href="#in-storage">#</a></h4>
 <ul>
 <li><a href="https://www.amazon.co.uk/Blue-Microphones-Snowball-iCE-Microphone/dp/B014PYGTUQ/">Blue Snowball Mic</a></li>
 </ul>
-<h4 id="packed-for-travel-to-the-office">Packed for travel to the office</h4>
+<h4 id="packed-for-travel-to-the-office">Packed for travel to the office<a hidden class="anchor" aria-hidden="true" href="#packed-for-travel-to-the-office">#</a></h4>
 <ul>
 <li><a href="https://www.zsa.io/voyager">ZSA Voyager</a> + <a href="https://www.zsa.io/voyager/navigator">Navigator</a> (trackball)</li>
 <li><a href="https://www.therooststand.com/">Roost Laptop Stand</a></li>
 </ul>
-<h4 id="other-gear">Other Gear</h4>
+<h4 id="other-gear">Other Gear<a hidden class="anchor" aria-hidden="true" href="#other-gear">#</a></h4>
 <ul>
 <li>Headphones I mostly use in the &ldquo;office&rdquo; office and they are Airpods Pro</li>
 </ul>
 
-    </div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
     
+<footer class="footer">
+        <span>&copy; 2026 <a href="../">Neil Grogan</a></span> · 
 
-    
-
-    <div class="page-footer">
-        
-    </div>
-
-
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-    </body>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
 </html>

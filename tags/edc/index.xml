@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Edc on Neil Grogan</title>
     <link>/tags/edc/</link>
     <description>Recent content in Edc on Neil Grogan</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/edc/index.xml" rel="self" type="application/rss+xml" />
@@ -27,7 +27,14 @@
       <link>/gobag/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       <guid>/gobag/</guid>
-      <description>&lt;p&gt;I follow Casey Liss&amp;rsquo; blog and recently he had a great post about a &lt;a href=&#34;http://www.caseyliss.com/2015/8/9/go-pack&#34;&gt;technology&#xA;&amp;ldquo;go pack&amp;rdquo;&lt;/a&gt;. Lifehacker has written about &lt;a href=&#34;http://lifehacker.com/5903929/put-together-a-killer-go-bag-this-weekend&#34;&gt;this&lt;/a&gt; &lt;a href=&#34;http://lifehacker.com/the-tech-commuters-go-bag-1279587407&#34;&gt;over&lt;/a&gt;&#xA;&lt;a href=&#34;http://lifehacker.com/the-tech-essentials-daily-bag-1723128314&#34;&gt;the&lt;/a&gt; &lt;a href=&#34;http://lifehacker.com/the-geek-essentials-bag-1441875871&#34;&gt;years&lt;/a&gt;, and the Wirecutter has a great article &lt;a href=&#34;https://ngrogan.com/holiday-gadgets&#34;&gt;I shared here&#xA;on this very blog&lt;/a&gt;. Also Casey linked to a great post by &lt;a href=&#34;http://katiefloyd.com/blog/creating-a-tech-go-bag&#34;&gt;Katie&#xA;Floyd&lt;/a&gt; on Twitter:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://twitter.com/KatieFloyd/status/630707145999314946&#34;&gt;https://twitter.com/KatieFloyd/status/630707145999314946&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I finally took the hint / inspiration from all these posts, and I decided time&#xA;was right to put together my own &amp;ldquo;go bag&amp;rdquo;. Here&amp;rsquo;s a picture of my tech go bag:&lt;/p&gt;</description>
+      <description>&lt;p&gt;I follow Casey Liss&amp;rsquo; blog and recently he had a great post about a &lt;a href=&#34;http://www.caseyliss.com/2015/8/9/go-pack&#34;&gt;technology
+&amp;ldquo;go pack&amp;rdquo;&lt;/a&gt;. Lifehacker has written about &lt;a href=&#34;http://lifehacker.com/5903929/put-together-a-killer-go-bag-this-weekend&#34;&gt;this&lt;/a&gt; &lt;a href=&#34;http://lifehacker.com/the-tech-commuters-go-bag-1279587407&#34;&gt;over&lt;/a&gt;
+&lt;a href=&#34;http://lifehacker.com/the-tech-essentials-daily-bag-1723128314&#34;&gt;the&lt;/a&gt; &lt;a href=&#34;http://lifehacker.com/the-geek-essentials-bag-1441875871&#34;&gt;years&lt;/a&gt;, and the Wirecutter has a great article &lt;a href=&#34;https://ngrogan.com/holiday-gadgets&#34;&gt;I shared here
+on this very blog&lt;/a&gt;. Also Casey linked to a great post by &lt;a href=&#34;http://katiefloyd.com/blog/creating-a-tech-go-bag&#34;&gt;Katie
+Floyd&lt;/a&gt; on Twitter:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/KatieFloyd/status/630707145999314946&#34;&gt;https://twitter.com/KatieFloyd/status/630707145999314946&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I finally took the hint / inspiration from all these posts, and I decided time
+was right to put together my own &amp;ldquo;go bag&amp;rdquo;. Here&amp;rsquo;s a picture of my tech go bag:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

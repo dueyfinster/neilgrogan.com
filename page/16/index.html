@@ -1,559 +1,360 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.135.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Neil Grogan</title>
 
-    <title>Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../index.xml">
+<link rel="alternate" type="application/json" href="../../index.json">
+<link rel="alternate" hreflang="en" href="../../">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Neil Grogan" />
-    </head>
+    </style>
+</noscript><meta property="og:title" content="Neil Grogan" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Neil Grogan"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
 
+</head>
 
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
-</footer>
-</nav>
+</script>
 
-        <div id="content" class="content-container">
-        
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="../../gmail-video-chat/">
-                    Gmail Video Chat
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://3.bp.blogspot.com/_JE4qNpFW6Yk/SRkwSMYD_aI/AAAAAAAAAJ8/gsDJdA4WBgY/s1600/video_chat.png"><img src="http://3.bp.blogspot.com/_JE4qNpFW6Yk/SRkwSMYD_aI/AAAAAAAAAJ8/gsDJdA4WBgY/s200/video_chat.png" alt="image"></a>
-I am an avid <a href="http://mail.google.com/">Gmail</a> user through Google Apps. I use
-the calender, chat, code, sites, pages, docs the whole lot. One of my friends
-even jokes &ldquo;You should just work at Google Marketing&rdquo;. Yes I like most of
-Google&rsquo;s products; but I am a products guy; I use whats good, cheap and fast
-(pick two). Google has the cheap down due to ad-revenue; for the moment anyways
-in the current financial turmoil.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 13, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/google">#google</a>
-                
-                    <a class="tag" href="../../tags/video">#video</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../innovation-right-here-dept-of-education/">
-                    Innovation Right Here - Dept. of Education is Wrong
-                </a>
-            </h2>
-            <div>
-                <p><p>I usually get both of Ireland&rsquo;s daily national papers to my email inbox every
-morning. I think it&rsquo;s very important to catch up on the latest news; as I think
-you are more informed and have conversation pieces to talk to people (for those
-awkward silences where &ldquo;Ye the weather is terrible&rdquo; just won&rsquo;t do). So I was
-highly informed when I read this piece:
-<a href="http://www.independent.ie/education/latest-news/dcu-head-hits-out-at-outofdate-okeeffe-1532789.html?from=dailynews">DCU head hits out at &lsquo;out-of-date&rsquo; O&rsquo;Keeffe</a>.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 12, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/business">#business</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../domo-arigato-mr-roboto/">
-                    Domo Arigato, Mr.Roboto
-                </a>
-            </h2>
-            <div>
-                <p><p>Seriously: what an awesome song. Every Geek should love it! It&rsquo;s got the famous
-line &ldquo;My heart is human, my blood is boiling, my brain IBM&rdquo;. If this is not in
-every Geeks top ten songs; then I resign! I even listen to it as I type this!
-Anyways enough sounding like a DJ who just got his
-<a href="http://en.wikipedia.org/wiki/Payola">Payola</a> check off the
-<a href="http://en.wikipedia.org/wiki/Recording_Industry_Association_of_America">RIAA</a>;
-I&rsquo;ll just post the free video so y&rsquo;all can watch&hellip;. :</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 25, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/audio">#audio</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../hurling-four-in-row/">
-                    Hurling - Four in a row?
-                </a>
-            </h2>
-            <div>
-                <p><p>One cannot help but be amazed at Kilkenny; true masters of the Irish Gaelic
-Sport of hurling. I mean as my previous posts mention I have moved to Kilkenny;
-and rural South Kilkenny at that. They live and breath Hurling down here: it&rsquo;s
-literally a way of life. That is why they are so good; no mystery here folks:
-its is literally bred into children in schools and everyone plays it. More
-people playing means even though Kilkenny is only around 100,000 people it still
-has a large amount of people to pick from and they get the best training which
-equals the best results.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 19, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/sport">#sport</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../geek-thug-i-had-to-beat-up-girl/">
-                    Geek Thug - &#34;I Had to Beat Up a Girl&#34;
-                </a>
-            </h2>
-            <div>
-                <p><p>I just read one of the most informative and insightful blog posts of my entire
-life. Half serious a guy takes a look back at when he had to beat up a Girl.
-Weird stuff!</p>
-<blockquote>
-<p>Yes, you read that right, I had to beat up a girl … not a woman. She was
-asking for it and she deserved it.</p>
-<p><a href="http://www.geekthug.com/?p=18445">I Had to Beat Up a Girl</a></p>
-</blockquote></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 25, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/internet">#internet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../yamaha-yq-aerox-best-moped-ever/">
-                    Yamaha YQ Aerox - best moped ever?
-                </a>
-            </h2>
-            <div>
-                <p><p>Well I think so! Got one there 2 months ago and forgot to write a blog post
-about it. I got a &lsquo;01 model for a bargain price I believe; but this theory has
-yet to be tested (I&rsquo;ll wait for a year to be up). As I mentioned before in
-previous posts my parent&rsquo;s house is now in a remote location with no train/buses
-anywhere nearby. So transport was essential! At this time also there was a major
-crack down on learner drivers not being accompanied by a fully licensed driver
-(of two years). So by the time I&rsquo;d saved the money for the car; got 10 lessons
-and convinced anyone I knew with over two years full driving experience to
-accompany me; even to work - was just to much hassle - hence the moped which has
-no such onerous requirements. In fact only one it does really have is that you
-can&rsquo;t have passengers - I won&rsquo;t be carrying anyone anyways - so I am not too
-bothered. Anyhoo take a look at the photos I took when I got it. I have done it
-up since then: new tyres, resprayed exhaust, full service; new mirrors; repaired
-exhaust; flushed out radiator and put in proper coolant just to name a few. So
-it sounds allot better and drives better than ever!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 17, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../wordpress-26/">
-                    Wordpress 2.6
-                </a>
-            </h2>
-            <div>
-                <p><p>Open Source star of the blogging world&hellip;</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 10, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/foss">#foss</a>
-                
-                    <a class="tag" href="../../tags/software">#software</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../summer-one-month-on/">
-                    Summer - One Month On.....
-                </a>
-            </h2>
-            <div>
-                <p><p>Well one month in Summer 2008! Summer has been okay so far; I&rsquo;ve had nothing
-much to report hence lack of Tech posts. Sure the iPhone 3G looks good,
-Google/Yahoo/Microsoft spats interesting but after a while it become a bit
-circular and repetitive.</p>
-<p>I&rsquo;ve recently started working at the UK&rsquo;s leading retailer for touring/car/bike
-and accessories; as well as a move to the south east of Ireland; that much
-further to the capital: Dublin. It&rsquo;s Ireland&rsquo;s smallest city and home to
-Ireland&rsquo;s very first Parliament about 400 years ago: Kilkenny. It&rsquo;s steeped in
-culture and it&rsquo;s the only city in Ireland to rival Dublin&rsquo;s culture, nightlife
-and restaurants and hold it&rsquo;s own.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>June 29, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ive-decided-im-decidedly-middle-class/">
-                    I&#39;ve decided - I&#39;m decidedly middle class
-                </a>
-            </h2>
-            <div>
-                <p><p>I had a trip in to the faire capital city of Ireland today: Dublin. Okay I&rsquo;ll
-get this out of the way: I had a Frappacino in Starbucks and I&rsquo;m a student; so
-not too poor of a student ;)</p>
-<p>But I saw the inside of Brown Thomas for the first time. I don&rsquo;t shop for
-fashion at all: but what I found was the kind of vulgarity and fake-ness I&rsquo;d
-expect of London or New York; not Dublin. To paraphrase Bono: &ldquo;In America if you
-have your mansion on a hill people look up to you and think &lsquo;I want to be like
-him and afford a house like that one day&rsquo;; if you have the same mansion in
-Ireland people say &rsquo;look at the fucken eejit on the hill with that house; thinks
-he&rsquo;s god or sumthen&rsquo;&rdquo; and that to me was always an endearing part of Irish
-culture; people around you being the great leveller if you thought you were the
-bomb. Inside BT (Brown Thomas) was all the names you&rsquo;d expect; all the major
-names more at home in Paris, London or New York. I confronted my friend who was
-showing me round about my opinions (in my usual polite manner: just say it). To
-my surprise he agreed 110%. Yes he said: for the people who buy this stuff can
-tell who else is wearing it; and I think he meant that by this logic movers and
-shakers also wore all the brands to look the part. Soon after he told me he was
-also learning Golf because he knew it would be a great benefit for his future
-career: &ldquo;All important people also play golf&rdquo; he assured me.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 14, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/business">#business</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../will-google-buy-skype/">
-                    Will Google Buy Skype?
-                </a>
-            </h2>
-            <div>
-                <p><p>It&rsquo;s been all over the tech news world lately; apparently
-<a href="http://www.google.ie/">Google</a> is muling over taking Skype off of Ebay&rsquo;s hands.
-Ebay has already written down the value of
-<a href="http://en.wikipedia.org/wiki/Skype">Skype</a> as a large loss on their purchase
-price of $2.6 billion in stock and cash. But
-w<a href="http://about.skype.com/online.png"><img src="http://about.skype.com/online.png" alt="image"></a>ould
-Skype&rsquo;s G-branded future be any better?</p>
-<p>I think it would be. Skype is a strong international brand for voice calls,
-instant messaging and video calls; but of course it competes directly with
-Google Talk. Skype as a company has made a lot of mistakes; but they actually
-produces some of the best technology for p2p VOIP out there in the marketplace.
-Skype is particularly strong in redundancy, cost of network operation (since
-it&rsquo;s p2p every user carries&rsquo; each others traffic; most people have no idea of
-this fact) and routing around the most draconian network admins out their
-through their routers.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 9, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/google">#google</a>
-                
-                    <a class="tag" href="../../tags/business">#business</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 16 of 25</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="../../page/15/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="../../page/17/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                        
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
                 </a>
-            
-        </div>
-        
-    </div>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gmail Video Chat
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I am an avid Gmail user through Google Apps. I use the calender, chat, code, sites, pages, docs the whole lot. One of my friends even jokes “You should just work at Google Marketing”. Yes I like most of Google’s products; but I am a products guy; I use whats good, cheap and fast (pick two). Google has the cheap down due to ad-revenue; for the moment anyways in the current financial turmoil.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-13 00:00:00 +0000 UTC'>November 13, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Gmail Video Chat" href="../../gmail-video-chat/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Innovation Right Here - Dept. of Education is Wrong
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I usually get both of Ireland’s daily national papers to my email inbox every morning. I think it’s very important to catch up on the latest news; as I think you are more informed and have conversation pieces to talk to people (for those awkward silences where “Ye the weather is terrible” just won’t do). So I was highly informed when I read this piece: DCU head hits out at ‘out-of-date’ O’Keeffe.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-12 00:00:00 +0000 UTC'>November 12, 2008</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Innovation Right Here - Dept. of Education is Wrong" href="../../innovation-right-here-dept-of-education/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Domo Arigato, Mr.Roboto
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Seriously: what an awesome song. Every Geek should love it! It’s got the famous line “My heart is human, my blood is boiling, my brain IBM”. If this is not in every Geeks top ten songs; then I resign! I even listen to it as I type this! Anyways enough sounding like a DJ who just got his Payola check off the RIAA; I’ll just post the free video so y’all can watch…. :
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-10-25 00:00:00 +0000 UTC'>October 25, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Domo Arigato, Mr.Roboto" href="../../domo-arigato-mr-roboto/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hurling - Four in a row?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>One cannot help but be amazed at Kilkenny; true masters of the Irish Gaelic Sport of hurling. I mean as my previous posts mention I have moved to Kilkenny; and rural South Kilkenny at that. They live and breath Hurling down here: it’s literally a way of life. That is why they are so good; no mystery here folks: its is literally bred into children in schools and everyone plays it. More people playing means even though Kilkenny is only around 100,000 people it still has a large amount of people to pick from and they get the best training which equals the best results.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-10-19 00:00:00 +0000 UTC'>October 19, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Hurling - Four in a row?" href="../../hurling-four-in-row/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Geek Thug - &#34;I Had to Beat Up a Girl&#34;
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I just read one of the most informative and insightful blog posts of my entire life. Half serious a guy takes a look back at when he had to beat up a Girl. Weird stuff!
+Yes, you read that right, I had to beat up a girl … not a woman. She was asking for it and she deserved it.
+I Had to Beat Up a Girl
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-09-25 00:00:00 +0000 UTC'>September 25, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Geek Thug - &#34;I Had to Beat Up a Girl&#34;" href="../../geek-thug-i-had-to-beat-up-girl/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Yamaha YQ Aerox - best moped ever?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Well I think so! Got one there 2 months ago and forgot to write a blog post about it. I got a ‘01 model for a bargain price I believe; but this theory has yet to be tested (I’ll wait for a year to be up). As I mentioned before in previous posts my parent’s house is now in a remote location with no train/buses anywhere nearby. So transport was essential! At this time also there was a major crack down on learner drivers not being accompanied by a fully licensed driver (of two years). So by the time I’d saved the money for the car; got 10 lessons and convinced anyone I knew with over two years full driving experience to accompany me; even to work - was just to much hassle - hence the moped which has no such onerous requirements. In fact only one it does really have is that you can’t have passengers - I won’t be carrying anyone anyways - so I am not too bothered. Anyhoo take a look at the photos I took when I got it. I have done it up since then: new tyres, resprayed exhaust, full service; new mirrors; repaired exhaust; flushed out radiator and put in proper coolant just to name a few. So it sounds allot better and drives better than ever!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-09-17 00:00:00 +0000 UTC'>September 17, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Yamaha YQ Aerox - best moped ever?" href="../../yamaha-yq-aerox-best-moped-ever/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Wordpress 2.6
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Open Source star of the blogging world…
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-09-10 00:00:00 +0000 UTC'>September 10, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Wordpress 2.6" href="../../wordpress-26/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Summer - One Month On.....
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Well one month in Summer 2008! Summer has been okay so far; I’ve had nothing much to report hence lack of Tech posts. Sure the iPhone 3G looks good, Google/Yahoo/Microsoft spats interesting but after a while it become a bit circular and repetitive.
+I’ve recently started working at the UK’s leading retailer for touring/car/bike and accessories; as well as a move to the south east of Ireland; that much further to the capital: Dublin. It’s Ireland’s smallest city and home to Ireland’s very first Parliament about 400 years ago: Kilkenny. It’s steeped in culture and it’s the only city in Ireland to rival Dublin’s culture, nightlife and restaurants and hold it’s own.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-06-29 00:00:00 +0000 UTC'>June 29, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Summer - One Month On....." href="../../summer-one-month-on/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">I&#39;ve decided - I&#39;m decidedly middle class
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I had a trip in to the faire capital city of Ireland today: Dublin. Okay I’ll get this out of the way: I had a Frappacino in Starbucks and I’m a student; so not too poor of a student ;)
+But I saw the inside of Brown Thomas for the first time. I don’t shop for fashion at all: but what I found was the kind of vulgarity and fake-ness I’d expect of London or New York; not Dublin. To paraphrase Bono: “In America if you have your mansion on a hill people look up to you and think ‘I want to be like him and afford a house like that one day’; if you have the same mansion in Ireland people say ’look at the fucken eejit on the hill with that house; thinks he’s god or sumthen’” and that to me was always an endearing part of Irish culture; people around you being the great leveller if you thought you were the bomb. Inside BT (Brown Thomas) was all the names you’d expect; all the major names more at home in Paris, London or New York. I confronted my friend who was showing me round about my opinions (in my usual polite manner: just say it). To my surprise he agreed 110%. Yes he said: for the people who buy this stuff can tell who else is wearing it; and I think he meant that by this logic movers and shakers also wore all the brands to look the part. Soon after he told me he was also learning Golf because he knew it would be a great benefit for his future career: “All important people also play golf” he assured me.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-05-14 00:00:00 +0000 UTC'>May 14, 2008</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to I&#39;ve decided - I&#39;m decidedly middle class" href="../../ive-decided-im-decidedly-middle-class/"></a>
+</article>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Will Google Buy Skype?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>It’s been all over the tech news world lately; apparently Google is muling over taking Skype off of Ebay’s hands. Ebay has already written down the value of Skype as a large loss on their purchase price of $2.6 billion in stock and cash. But w ould Skype’s G-branded future be any better?
+I think it would be. Skype is a strong international brand for voice calls, instant messaging and video calls; but of course it competes directly with Google Talk. Skype as a company has made a lot of mistakes; but they actually produces some of the best technology for p2p VOIP out there in the marketplace. Skype is particularly strong in redundancy, cost of network operation (since it’s p2p every user carries’ each others traffic; most people have no idea of this fact) and routing around the most draconian network admins out their through their routers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-04-09 00:00:00 +0000 UTC'>April 9, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Will Google Buy Skype?" href="../../will-google-buy-skype/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="../../page/15/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="../../page/17/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-    </body>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

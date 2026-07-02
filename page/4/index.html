@@ -1,608 +1,368 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.135.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Neil Grogan</title>
 
-    <title>Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../index.xml">
+<link rel="alternate" type="application/json" href="../../index.json">
+<link rel="alternate" hreflang="en" href="../../">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Neil Grogan" />
-    </head>
+    </style>
+</noscript><meta property="og:title" content="Neil Grogan" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Neil Grogan"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
 
+</head>
 
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
-</footer>
-</nav>
+</script>
 
-        <div id="content" class="content-container">
-        
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="../../ipadpro/">
-                    iPad Pro Review
-                </a>
-            </h2>
-            <div>
-                <p><p>After some thought initially on a new laptop, I decided to spring for an iPad
-Pro 12.9&quot;. So far I am really glad I did, the computer comes with me everywhere.
-I bring it to work, to visit family, on trips and everywhere in between.</p>
-<p>It&rsquo;s the ultimate work computer in many ways, always with you, light enough and
-comfortable enough for real work™. The keyboard shortcuts in iOS have improved
-massively from iOS 8 to iOS 9 to the point of actually being useful and the
-split screen view is actually rather nice to use (I never &ldquo;got&rdquo; it on a Mac).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 13, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/apple">#apple</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../remote-book/">
-                    Remote: Office Not Required
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently read <a href="http://www.amazon.co.uk/Remote-Required-David-Heinemeier-Hansson/dp/0091954673">Remote: Office Not Required</a> by David Heinemeier-Hansson
-(who created Ruby on Rails) and Jason Fried (who co-founded 37 Signals with
-Heinemeier-Hansson). This book is really a case study in why the future of work
-will be remote, of which the book did convince me (but I would say, I already
-believed).</p>
-<p><img src="../../img/16/remote-book.jpg" alt=""></p>
-<p>The book is really structured to convince those who do not believe in the
-premise of the title. It talks about many successful companies who have
-transformed themselves to work remotely fully and large corporations who save
-lots of money on office space (IBM, being one example).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 1, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/book">#book</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../mech-kb/">
-                    Mechanical Keyboards
-                </a>
-            </h2>
-            <div>
-                <p><p>Early last year, I purchased two <a href="http://codekeyboards.com">Code Keyboards</a> (one for work and one for
-home). The Code Keyboards are designed by <a href="http://blog.codinghorror.com">Jeff Atwood</a> (who founded <a href="http://stackoverflow.com">Stack
-Overflow</a>). Mechanical keyboards are “old style” in that the switches are
-from an era where everything was mechanical, unlike today where everything is
-glass. So mechanical keyboards have ardent fans and people who don’t really care
-for them.</p>
-<p><img src="../../img/16/code_kb.jpg" alt=""></p>
-<p>I did a lot of research before I purchased, talking to various people in work
-who are very knowledgeable about mechanical keyboards (The best community for
-advice, discussion and group buys is <a href="https://www.reddit.com/r/mechanicalkeyboards">/r/mechanicalkeyboards</a> on reddit.).
-The variety of hardware and opinions is positively mind melting. If you are
-doing your own research, you should definitely come across <a href="http://cherryswitches.com">Cherry switches</a>
-(a very established German brand). Switches are what sit between your key that
-you see (with the letter printed on top) and the electronic board that converts
-the key press to a signal the computer can understand.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 15, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ulysses-app/">
-                    Ulysses App
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently purchased
-<a href="https://geo.itunes.apple.com/ie/app/ulysses-mobile/id950335311?mt=8&amp;uo=4&amp;at=1001l4PJ">Ulysses Mobile</a>
-after a
-<a href="https://www.macstories.net/reviews/review-ulysses-2-5-for-ipad-and-now-iphone/">recommendation from Macstories</a>.
-My first impression was how expensive it was priced and what really makes a
-<em>premium writing application</em>?</p>
-<p>Needless to say, I&rsquo;m not a huge writer. But I do have a real fondness for plain
-text (it will survive the apocalypse) and by extension,
-<a href="https://daringfireball.net/projects/markdown/">Markdown by John Gruber.</a> The
-problem for Ulysses is this: there&rsquo;s lots of really great Markdown applications
-for iOS, two of which I have written about: Editorial (my favourite) and Byword
-(not so keen on this app).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 1, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/ios">#ios</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../roost-stand/">
-                    Roost Laptop Stand
-                </a>
-            </h2>
-            <div>
-                <p><p>I backed the Roost laptop stand on <a href="http://www.kickstarter.org">Kickstarter</a>,
-which already had a successful run in their first Kickstarter campaign. I&rsquo;ve
-been delighted with the result so far, it lives up to the promises of being
-super light but yet durable and strong. Here&rsquo;s a photo of it:</p>
-<p><img src="../../img/16/roost.png" alt="Roost Laptop stand holding a macbook" title="Roost Stand"></p>
-<p>It came with a really nice case which holds the Roost underneath and has pockets
-for a portable keyboard (I use a
-<a href="http://www.logitech.com/en-us/product/illuminated-keyboard-for-mac-ipad-iphone">Logitech K811</a>)
-and mouse (I use a
-<a href="http://www.logitech.com/en-us/product/marathon-mouse-m705">Logitech Marathon M705</a>).
-It works great for a really comfortable and ergonomic desk wherever you may
-travel (or set up to work). Highly recommended!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>March 15, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../maintain-soft-book/">
-                    Maintainable Software Book
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently read O&rsquo;Reilly
-<a href="http://www.amazon.co.uk/Building-Mantainable-Software-Guidelines-Future-Proof/dp/1491953527/">Building Maintainable Software</a>
-(Java Edition). It provides good insight as to what to look for to create
-maintainability in enterpise software systems.</p>
-<h2 id="10-suggestions-the-book-provides">10 suggestions the book provides:</h2>
-<ol>
-<li>Write shorter units</li>
-<li>Write simpler units (measured in
-<a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">Cyclomatic Complexity</a>)</li>
-<li>Write code once only</li>
-<li>Keep interfaces very small</li>
-<li>Seperate code in to modules</li>
-<li>Couple modules loosely</li>
-<li>Keep modules evenly sized</li>
-<li>Keep codebase small (and look for ways to right-size)</li>
-<li>Automate development pipeline and your tests</li>
-<li>Write clean code and refactor as you go</li>
-</ol>
-<p>Overall I thought the book was very well laid out, easy to read and easy to
-understand. I&rsquo;d recommend it to anyone new to software development, but most of
-the tips contained within the book should be very familiar to the seasoned
-developer.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>March 1, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-                    <a class="tag" href="../../tags/book">#book</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../dashing/">
-                    Dashing Dashboards
-                </a>
-            </h2>
-            <div>
-                <p><p>In the last year and a half, I set up a <a href="http://ruby.org">Ruby</a> based
-<a href="http://dashing.io">Dashing dashboard</a> for my team and others in our product
-area. Here&rsquo;s what a sample Dashing dashboard looks like:</p>
-<p><img src="../../img/16/dashing.jpg" alt="Dashing Sample Dashboard"></p>
-<p>It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here
-I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):</p>
-<ul>
-<li>Don&rsquo;t do dashboards for managers, do them for teams</li>
-<li>Use big text, have the minimum information as required</li>
-<li>Use colours (preferably like the traffic light system) to focus attention</li>
-<li>Link in all critical systems to daily work</li>
-<li>Make it a one stop shop and faster then all other methods of getting this
-information</li>
-<li>Reuse the work of others (steal with pride)</li>
-<li>Don&rsquo;t bother with graphs</li>
-</ul>
-<p><em>Below I outline the reasons for each point:</em></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 15, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/ruby">#ruby</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../autohours/">
-                    Fill hours worked in SAP Netweaver Automatically
-                </a>
-            </h2>
-            <div>
-                <p><p>Continuing the theme of automation, one of the most repetitive tasks if you work
-for a big company is timesheets. So I set out to rectify this by scripting it!</p>
-<p>Start with you configuration, I named mine <code>hours.ini</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
-</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> FILL_ME_IN
-</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> FILL_ME_IN
-</span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> FILL_ME_IN
-</span></span></code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy
-lifting, so we install it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
-</span></span></code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 1, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/code">#code</a>
-                
-                    <a class="tag" href="../../tags/automation">#automation</a>
-                
-                    <a class="tag" href="../../tags/programming">#programming</a>
-                
-                    <a class="tag" href="../../tags/python">#python</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../rest-menu/">
-                    Automated &#39;Push&#39; Restaurant menu
-                </a>
-            </h2>
-            <div>
-                <p><p>I love trying to automate the world, it just feels like magic some of the time!
-I also really enjoy information coming to me, instead of having to seek it. As
-we are still only in 2016, we have no world killing Artificial Intelligence
-(yet). So we have to start small, ease the first world problems! So I decided to
-make my workplaces&rsquo; restaurant menu come to me!</p>
-<p>I decided to write it in Ruby and use push notifications, rather than email or
-SMS. It uses a web automation framework called
-<a href="http://www.seleniumhq.org/">Selenium</a>, which is available in many languages,
-including Javascript, Python, Java and obviously Ruby!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 10, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/code">#code</a>
-                
-                    <a class="tag" href="../../tags/programming">#programming</a>
-                
-                    <a class="tag" href="../../tags/ruby">#ruby</a>
-                
-                    <a class="tag" href="../../tags/automation">#automation</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../docker/">
-                    Adventures with Docker
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;m a huge fan of <a href="http://www.docker.com">Docker</a> ever since I started to use
-it, approximately a year after it was started. It&rsquo;s one of those technologies
-where when you start to use it, you immediately know it&rsquo;s going to be a sea
-change in how things are done in the industry. It&rsquo;s definitely going to be more
-impactful then
-<a href="https://en.m.wikipedia.org/wiki/Virtual_machine">Virtual Machines</a>.</p>
-<p>We&rsquo;ve used Docker to great effect where I work. We&rsquo;re building a huge system
-called Ericsson Network Manager, which will manage the networks of the future.
-As such, it&rsquo;s a hugely complex problem to compartmentalise parts of the product,
-to be able to just use the part that you work directly on.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 2, 2016</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/docker">#docker</a>
-                
-                    <a class="tag" href="../../tags/work">#work</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 4 of 25</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="../../page/3/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="../../page/5/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                        
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
                 </a>
-            
-        </div>
-        
-    </div>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">iPad Pro Review
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After some thought initially on a new laptop, I decided to spring for an iPad Pro 12.9&#34;. So far I am really glad I did, the computer comes with me everywhere. I bring it to work, to visit family, on trips and everywhere in between.
+It’s the ultimate work computer in many ways, always with you, light enough and comfortable enough for real work™. The keyboard shortcuts in iOS have improved massively from iOS 8 to iOS 9 to the point of actually being useful and the split screen view is actually rather nice to use (I never “got” it on a Mac).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-07-13 00:00:00 +0000 UTC'>July 13, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to iPad Pro Review" href="../../ipadpro/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Remote: Office Not Required
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently read Remote: Office Not Required by David Heinemeier-Hansson (who created Ruby on Rails) and Jason Fried (who co-founded 37 Signals with Heinemeier-Hansson). This book is really a case study in why the future of work will be remote, of which the book did convince me (but I would say, I already believed).
+The book is really structured to convince those who do not believe in the premise of the title. It talks about many successful companies who have transformed themselves to work remotely fully and large corporations who save lots of money on office space (IBM, being one example).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-05-01 00:00:00 +0000 UTC'>May 1, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Remote: Office Not Required" href="../../remote-book/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mechanical Keyboards
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Early last year, I purchased two Code Keyboards (one for work and one for home). The Code Keyboards are designed by Jeff Atwood (who founded Stack Overflow). Mechanical keyboards are “old style” in that the switches are from an era where everything was mechanical, unlike today where everything is glass. So mechanical keyboards have ardent fans and people who don’t really care for them.
+I did a lot of research before I purchased, talking to various people in work who are very knowledgeable about mechanical keyboards (The best community for advice, discussion and group buys is /r/mechanicalkeyboards on reddit.). The variety of hardware and opinions is positively mind melting. If you are doing your own research, you should definitely come across Cherry switches (a very established German brand). Switches are what sit between your key that you see (with the letter printed on top) and the electronic board that converts the key press to a signal the computer can understand.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-04-15 00:00:00 +0000 UTC'>April 15, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Mechanical Keyboards" href="../../mech-kb/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ulysses App
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently purchased Ulysses Mobile after a recommendation from Macstories. My first impression was how expensive it was priced and what really makes a premium writing application?
+Needless to say, I’m not a huge writer. But I do have a real fondness for plain text (it will survive the apocalypse) and by extension, Markdown by John Gruber. The problem for Ulysses is this: there’s lots of really great Markdown applications for iOS, two of which I have written about: Editorial (my favourite) and Byword (not so keen on this app).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-04-01 00:00:00 +0000 UTC'>April 1, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Ulysses App" href="../../ulysses-app/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Roost Laptop Stand
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I backed the Roost laptop stand on Kickstarter, which already had a successful run in their first Kickstarter campaign. I’ve been delighted with the result so far, it lives up to the promises of being super light but yet durable and strong. Here’s a photo of it:
+It came with a really nice case which holds the Roost underneath and has pockets for a portable keyboard (I use a Logitech K811) and mouse (I use a Logitech Marathon M705). It works great for a really comfortable and ergonomic desk wherever you may travel (or set up to work). Highly recommended!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-03-15 00:00:00 +0000 UTC'>March 15, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Roost Laptop Stand" href="../../roost-stand/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Maintainable Software Book
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently read O’Reilly Building Maintainable Software (Java Edition). It provides good insight as to what to look for to create maintainability in enterpise software systems.
+10 suggestions the book provides: Write shorter units Write simpler units (measured in Cyclomatic Complexity) Write code once only Keep interfaces very small Seperate code in to modules Couple modules loosely Keep modules evenly sized Keep codebase small (and look for ways to right-size) Automate development pipeline and your tests Write clean code and refactor as you go Overall I thought the book was very well laid out, easy to read and easy to understand. I’d recommend it to anyone new to software development, but most of the tips contained within the book should be very familiar to the seasoned developer.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-03-01 00:00:00 +0000 UTC'>March 1, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Maintainable Software Book" href="../../maintain-soft-book/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dashing Dashboards
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In the last year and a half, I set up a Ruby based Dashing dashboard for my team and others in our product area. Here’s what a sample Dashing dashboard looks like:
+It’s been a huge success, but it was tough to gain traction along the way. Here I’ll summarise what I’ve learned (in no particular order):
+Don’t do dashboards for managers, do them for teams Use big text, have the minimum information as required Use colours (preferably like the traffic light system) to focus attention Link in all critical systems to daily work Make it a one stop shop and faster then all other methods of getting this information Reuse the work of others (steal with pride) Don’t bother with graphs Below I outline the reasons for each point:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-02-15 00:00:00 +0000 UTC'>February 15, 2016</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Dashing Dashboards" href="../../dashing/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fill hours worked in SAP Netweaver Automatically
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Continuing the theme of automation, one of the most repetitive tasks if you work for a big company is timesheets. So I set out to rectify this by scripting it!
+Start with you configuration, I named mine hours.ini:
+[DEFAULT] url = FILL_ME_IN username = FILL_ME_IN password = FILL_ME_IN then we need the magic of Selenium to do the heavy lifting, so we install it:
+$ pip3 install selenium I called this script, unsurprisingly hours.py:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-02-01 00:00:00 +0000 UTC'>February 1, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Fill hours worked in SAP Netweaver Automatically" href="../../autohours/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Automated &#39;Push&#39; Restaurant menu
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces’ restaurant menu come to me!
+I decided to write it in Ruby and use push notifications, rather than email or SMS. It uses a web automation framework called Selenium, which is available in many languages, including Javascript, Python, Java and obviously Ruby!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-01-10 00:00:00 +0000 UTC'>January 10, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Automated &#39;Push&#39; Restaurant menu" href="../../rest-menu/"></a>
+</article>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Adventures with Docker
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’m a huge fan of Docker ever since I started to use it, approximately a year after it was started. It’s one of those technologies where when you start to use it, you immediately know it’s going to be a sea change in how things are done in the industry. It’s definitely going to be more impactful then Virtual Machines.
+We’ve used Docker to great effect where I work. We’re building a huge system called Ericsson Network Manager, which will manage the networks of the future. As such, it’s a hugely complex problem to compartmentalise parts of the product, to be able to just use the part that you work directly on.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-01-02 00:00:00 +0000 UTC'>January 2, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Adventures with Docker" href="../../docker/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="../../page/3/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="../../page/5/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-    </body>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

@@ -1,141 +1,211 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Dashing Dashboards | Neil Grogan</title>
+<meta name="keywords" content="ruby">
+<meta name="description" content="In the last year and a half, I set up a Ruby based
+Dashing dashboard for my team and others in our product
+area. Here&rsquo;s what a sample Dashing dashboard looks like:
 
-    <title>Dashing Dashboards | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
 
-    
-    
-    
-    <link rel="stylesheet" href="../css/main.min.css"/>
+It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here
+I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):
 
-    
-    
-    
+Don&rsquo;t do dashboards for managers, do them for teams
+Use big text, have the minimum information as required
+Use colours (preferably like the traffic light system) to focus attention
+Link in all critical systems to daily work
+Make it a one stop shop and faster then all other methods of getting this
+information
+Reuse the work of others (steal with pride)
+Don&rsquo;t bother with graphs
 
-    
-    
+Below I outline the reasons for each point:">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../dashing/">
+<link crossorigin="anonymous" href="../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="mask-icon" href="../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="../dashing/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    </head>
+            .list {
+                background: var(--theme);
+            }
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../">Neil Grogan</a>
-    </div>  
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Dashing Dashboards" />
+<meta property="og:description" content="In the last year and a half, I set up a Ruby based
+Dashing dashboard for my team and others in our product
+area. Here&rsquo;s what a sample Dashing dashboard looks like:
+
+
+It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here
+I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):
+
+Don&rsquo;t do dashboards for managers, do them for teams
+Use big text, have the minimum information as required
+Use colours (preferably like the traffic light system) to focus attention
+Link in all critical systems to daily work
+Make it a one stop shop and faster then all other methods of getting this
+information
+Reuse the work of others (steal with pride)
+Don&rsquo;t bother with graphs
+
+Below I outline the reasons for each point:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/dashing/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2016-02-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-02-15T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dashing Dashboards"/>
+<meta name="twitter:description" content="In the last year and a half, I set up a Ruby based
+Dashing dashboard for my team and others in our product
+area. Here&rsquo;s what a sample Dashing dashboard looks like:
+
+
+It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here
+I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):
+
+Don&rsquo;t do dashboards for managers, do them for teams
+Use big text, have the minimum information as required
+Use colours (preferably like the traffic light system) to focus attention
+Link in all critical systems to daily work
+Make it a one stop shop and faster then all other methods of getting this
+information
+Reuse the work of others (steal with pride)
+Don&rsquo;t bother with graphs
+
+Below I outline the reasons for each point:"/>
+<meta name="twitter:site" content="@dueyfinster"/>
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
+<main class="main">
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../about">About</a>
-  
-    <a class="color-link nav-link" href="../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="../">Home</a>&nbsp;»&nbsp;<a href="../post/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Dashing Dashboards
+    </h1>
+    <div class="post-meta"><span title='2016-02-15 00:00:00 +0000 UTC'>February 15, 2016</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Neil Grogan
 
 </div>
-
-
-
-
-	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
-</footer>
-</nav>
-
-        <div id="content" class="content-container">
-        
-
-<h1 class="post-title">Dashing Dashboards</h1>
-    
-    <time>February 15, 2016</time>
-    
-
-    <div>
-        
-        <p>In the last year and a half, I set up a <a href="http://ruby.org">Ruby</a> based
+  </header> 
+  <div class="post-content"><p>In the last year and a half, I set up a <a href="http://ruby.org">Ruby</a> based
 <a href="http://dashing.io">Dashing dashboard</a> for my team and others in our product
 area. Here&rsquo;s what a sample Dashing dashboard looks like:</p>
-<p><img src="../img/16/dashing.jpg" alt="Dashing Sample Dashboard"></p>
+<p><img loading="lazy" src="../img/16/dashing.jpg" alt="Dashing Sample Dashboard"  />
+</p>
 <p>It&rsquo;s been a huge success, but it was tough to gain traction along the way. Here
 I&rsquo;ll summarise what I&rsquo;ve learned (in no particular order):</p>
 <ul>
@@ -149,25 +219,25 @@ information</li>
 <li>Don&rsquo;t bother with graphs</li>
 </ul>
 <p><em>Below I outline the reasons for each point:</em></p>
-<h3 id="dont-do-them-for-managers">Don&rsquo;t do them for managers</h3>
+<h3 id="dont-do-them-for-managers">Don&rsquo;t do them for managers<a hidden class="anchor" aria-hidden="true" href="#dont-do-them-for-managers">#</a></h3>
 <p>Teams want statistics to help them do their job better, not as a metric to be
 hit with like a stick. You have to assure the team the goal is to help them do
 their jobs better and to focus on the important things. Metrics don&rsquo;t explain
 nuances, so the team lead/scrum master needs to take this and let the team get
 back to whats important - development.</p>
-<h3 id="use-big-text">Use BIG text</h3>
+<h3 id="use-big-text">Use BIG text<a hidden class="anchor" aria-hidden="true" href="#use-big-text">#</a></h3>
 <p>With Dashing, it&rsquo;s very easy to create widgets from scratch and pack a lot of
 information in. You have to fight this urge, use trial and error and see what
 the teams respond to. Constant tweaking is the name of the game and listen to
 the suggestions of others. While you can&rsquo;t and shouldn&rsquo;t listen to everyone, try
 see if their idea could work in a slightly altered form.</p>
-<h3 id="use-colours">Use Colours</h3>
+<h3 id="use-colours">Use Colours<a hidden class="anchor" aria-hidden="true" href="#use-colours">#</a></h3>
 <p>The best colours are the traffic light system. People don&rsquo;t need to be
 techinical to know, green=good, orange=warning, red=danger. It also helps focus
 on what I should be looking at. Red is most critical, so my attention should on
 that first and so on. Use the limits sparingly at first (ie. don&rsquo;t have
 everything red or orange, or no one will pay attention) and tweak as you go.</p>
-<h3 id="link-in-all-critical-systems">Link in all critical systems</h3>
+<h3 id="link-in-all-critical-systems">Link in all critical systems<a hidden class="anchor" aria-hidden="true" href="#link-in-all-critical-systems">#</a></h3>
 <p>Everything I need to know should be on the dashboard, and that means for us a
 lot of disparate systems. Luckily a lot of products have an
 <abbr title="Application Programming Interface">API</abbr> these days and it&rsquo;s
@@ -181,7 +251,7 @@ whether we can deliver</li>
 <li>Jira, for the number of bugs</li>
 <li>Last tested version of our software on the main track</li>
 </ul>
-<h3 id="make-it-a-one-stop-shop">Make it a one stop shop</h3>
+<h3 id="make-it-a-one-stop-shop">Make it a one stop shop<a hidden class="anchor" aria-hidden="true" href="#make-it-a-one-stop-shop">#</a></h3>
 <p>People will use tools that make their lives easier. The trouble is, when you
 start, that won&rsquo;t be evident. You&rsquo;ve got to keep on top of what people like and
 respond to. People often have ideas/tweaks after I&rsquo;ve added something new, as
@@ -189,7 +259,7 @@ they see what can be done. You should distill down to exactly what your team
 needs, no more, no less. This pure trial and error and <em>you have to be ruthless
 in cutting things that don&rsquo;t work</em>. <strong>Space is valuable</strong>, your teams attention
 is valuable, so don&rsquo;t waste either.</p>
-<h3 id="steal-with-pride">Steal with pride</h3>
+<h3 id="steal-with-pride">Steal with pride<a hidden class="anchor" aria-hidden="true" href="#steal-with-pride">#</a></h3>
 <p>The
 &ldquo;<a href="https://github.com/Shopify/dashing/wiki/Additional-Widgets">Additional Widgets</a>&rdquo;
 wiki page for dashing has lots and lots of premade widgets, use them! Often I
@@ -197,7 +267,7 @@ have to make tweaks, but the majority of the hard work is done. You can browse
 widgets by service (like Jira or Confluence, there&rsquo;s a few for each), or browse
 the list in general and see if a widget with a totally different purpose (say
 bus times) could be repurposed in to a list of the last commits by time, etc!</p>
-<h3 id="dont-bother-with-graphs">Don&rsquo;t bother with graphs</h3>
+<h3 id="dont-bother-with-graphs">Don&rsquo;t bother with graphs<a hidden class="anchor" aria-hidden="true" href="#dont-bother-with-graphs">#</a></h3>
 <p>Management love graphs, but development teams don&rsquo;t. Burndowns for example, are
 a step above where your focus should be. You need to have servers ready, bugs in
 check, maintrack to be open for deliveries, all before you have a hope of
@@ -205,85 +275,146 @@ burning down. This will different for every team, but I&rsquo;d steer clear of g
 comics, funny pictures etc, they are not conducive to work and are very hard to
 read from a distance.</p>
 
-    </div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="../tags/ruby/">Ruby</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="../maintain-soft-book/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Maintainable Software Book</span>
+  </a>
+  <a class="next" href="../autohours/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Fill hours worked in SAP Netweaver Automatically</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
     
+<footer class="footer">
+        <span>&copy; 2026 <a href="../">Neil Grogan</a></span> · 
 
-    
-
-    <div class="page-footer">
-        
-        <hr class="footer-divider">
-        
-            <a class="tag" href="../tags/ruby">#ruby</a>
-        
-      
-    </div>
-
-
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-    </body>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
 </html>

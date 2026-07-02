@@ -1,319 +1,394 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tags | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../tags/">
+<link crossorigin="anonymous" href="../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="mask-icon" href="../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../tags/index.xml">
+<link rel="alternate" hreflang="en" href="../tags/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <title>Tags | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
-    <link rel="stylesheet" href="../css/main.min.css"/>
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+</noscript><meta property="og:title" content="Tags" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/" />
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../tags/index.xml" title="Neil Grogan" />
-    </head>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tags"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../">Neil Grogan</a>
-    </div>  
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../tags/" title="Tags">
+                    <span class="active">Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+<header class="page-header">
+    <h1>Tags</h1>
 </header>
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../about">About</a>
-  
-    <a class="color-link nav-link" href="../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../tags/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../js/lunr-search.js" ></script>
-</footer>
-</nav>
-
-        <div id="content" class="content-container">
-        
-
-<h1>Tags</h1>
-<ul>
-    
-        <li><a href="../tags/amazon/">Amazon</a> 2</li>
-    
-        <li><a href="../tags/android/">Android</a> 5</li>
-    
-        <li><a href="../tags/apple/">Apple</a> 29</li>
-    
-        <li><a href="../tags/audio/">Audio</a> 10</li>
-    
-        <li><a href="../tags/automation/">Automation</a> 8</li>
-    
-        <li><a href="../tags/bash/">Bash</a> 2</li>
-    
-        <li><a href="../tags/book/">Book</a> 4</li>
-    
-        <li><a href="../tags/business/">Business</a> 13</li>
-    
-        <li><a href="../tags/code/">Code</a> 11</li>
-    
-        <li><a href="../tags/coffee/">Coffee</a> 1</li>
-    
-        <li><a href="../tags/diy/">Diy</a> 1</li>
-    
-        <li><a href="../tags/docker/">Docker</a> 2</li>
-    
-        <li><a href="../tags/edc/">Edc</a> 3</li>
-    
-        <li><a href="../tags/education/">Education</a> 13</li>
-    
-        <li><a href="../tags/emacs/">Emacs</a> 1</li>
-    
-        <li><a href="../tags/email/">Email</a> 1</li>
-    
-        <li><a href="../tags/encryption/">Encryption</a> 1</li>
-    
-        <li><a href="../tags/europe/">Europe</a> 2</li>
-    
-        <li><a href="../tags/food/">Food</a> 1</li>
-    
-        <li><a href="../tags/foss/">Foss</a> 2</li>
-    
-        <li><a href="../tags/google/">Google</a> 17</li>
-    
-        <li><a href="../tags/hardware/">Hardware</a> 45</li>
-    
-        <li><a href="../tags/health/">Health</a> 2</li>
-    
-        <li><a href="../tags/homenet/">Homenet</a> 3</li>
-    
-        <li><a href="../tags/internet/">Internet</a> 13</li>
-    
-        <li><a href="../tags/ios/">Ios</a> 10</li>
-    
-        <li><a href="../tags/java/">Java</a> 1</li>
-    
-        <li><a href="../tags/javascript/">Javascript</a> 4</li>
-    
-        <li><a href="../tags/legal/">Legal</a> 11</li>
-    
-        <li><a href="../tags/linux/">Linux</a> 28</li>
-    
-        <li><a href="../tags/mac/">Mac</a> 7</li>
-    
-        <li><a href="../tags/microsoft/">Microsoft</a> 7</li>
-    
-        <li><a href="../tags/mozilla/">Mozilla</a> 5</li>
-    
-        <li><a href="../tags/networking/">Networking</a> 6</li>
-    
-        <li><a href="../tags/networking/">Networking,</a> 2</li>
-    
-        <li><a href="../tags/personal/">Personal</a> 1</li>
-    
-        <li><a href="../tags/photo/">Photo</a> 1</li>
-    
-        <li><a href="../tags/podcast/">Podcast</a> 7</li>
-    
-        <li><a href="../tags/politics/">Politics</a> 14</li>
-    
-        <li><a href="../tags/privacy/">Privacy</a> 3</li>
-    
-        <li><a href="../tags/programming/">Programming</a> 17</li>
-    
-        <li><a href="../tags/project/">Project</a> 4</li>
-    
-        <li><a href="../tags/python/">Python</a> 5</li>
-    
-        <li><a href="../tags/radio/">Radio</a> 6</li>
-    
-        <li><a href="../tags/review/">Review</a> 50</li>
-    
-        <li><a href="../tags/ruby/">Ruby</a> 4</li>
-    
-        <li><a href="../tags/secure-shell/">Secure-Shell</a> 4</li>
-    
-        <li><a href="../tags/security/">Security</a> 7</li>
-    
-        <li><a href="../tags/social-network/">Social-Network</a> 1</li>
-    
-        <li><a href="../tags/software/">Software</a> 16</li>
-    
-        <li><a href="../tags/sport/">Sport</a> 1</li>
-    
-        <li><a href="../tags/terminal/">Terminal</a> 8</li>
-    
-        <li><a href="../tags/travel/">Travel</a> 6</li>
-    
-        <li><a href="../tags/video/">Video</a> 14</li>
-    
-        <li><a href="../tags/virtual-machines/">Virtual-Machines</a> 1</li>
-    
-        <li><a href="../tags/visual-basic/">Visual-Basic</a> 1</li>
-    
-        <li><a href="../tags/windows/">Windows</a> 9</li>
-    
-        <li><a href="../tags/work/">Work</a> 7</li>
-    
+<ul class="terms-tags">
+    <li>
+        <a href="../tags/amazon/">amazon <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/android/">android <sup><strong><sup>5</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/apple/">apple <sup><strong><sup>29</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/audio/">audio <sup><strong><sup>10</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/automation/">automation <sup><strong><sup>8</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/bash/">bash <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/book/">book <sup><strong><sup>4</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/business/">business <sup><strong><sup>13</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/code/">code <sup><strong><sup>11</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/coffee/">coffee <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/diy/">diy <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/docker/">docker <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/edc/">edc <sup><strong><sup>3</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/education/">education <sup><strong><sup>13</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/emacs/">emacs <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/email/">email <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/encryption/">encryption <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/europe/">europe <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/food/">food <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/foss/">foss <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/google/">google <sup><strong><sup>17</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/hardware/">hardware <sup><strong><sup>45</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/health/">health <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/homenet/">homenet <sup><strong><sup>3</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/internet/">internet <sup><strong><sup>13</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/ios/">ios <sup><strong><sup>10</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/java/">java <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/javascript/">javascript <sup><strong><sup>4</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/legal/">legal <sup><strong><sup>11</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/linux/">linux <sup><strong><sup>28</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/mac/">mac <sup><strong><sup>7</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/microsoft/">microsoft <sup><strong><sup>7</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/mozilla/">mozilla <sup><strong><sup>5</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/networking/">networking <sup><strong><sup>6</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/networking/">networking, <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/personal/">personal <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/photo/">photo <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/podcast/">podcast <sup><strong><sup>7</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/politics/">politics <sup><strong><sup>14</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/privacy/">privacy <sup><strong><sup>3</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/programming/">programming <sup><strong><sup>17</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/project/">project <sup><strong><sup>4</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/python/">python <sup><strong><sup>5</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/radio/">radio <sup><strong><sup>6</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/review/">review <sup><strong><sup>50</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/ruby/">ruby <sup><strong><sup>4</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/secure-shell/">secure-shell <sup><strong><sup>4</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/security/">security <sup><strong><sup>7</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/social-network/">social-network <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/software/">software <sup><strong><sup>16</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/sport/">sport <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/terminal/">terminal <sup><strong><sup>8</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/travel/">travel <sup><strong><sup>6</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/video/">video <sup><strong><sup>14</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/virtual-machines/">virtual-machines <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/visual-basic/">visual-basic <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/windows/">windows <sup><strong><sup>9</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="../tags/work/">work <sup><strong><sup>7</sup></strong></sup> </a>
+    </li>
 </ul>
-
-<div class="page-footer"></div>
-
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
-
+    </main>
     
+<footer class="footer">
+        <span>&copy; 2026 <a href="../">Neil Grogan</a></span> · 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-    </body>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

@@ -1,594 +1,362 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.135.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Neil Grogan</title>
 
-    <title>Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../index.xml">
+<link rel="alternate" type="application/json" href="../../index.json">
+<link rel="alternate" hreflang="en" href="../../">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Neil Grogan" />
-    </head>
+    </style>
+</noscript><meta property="og:title" content="Neil Grogan" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Neil Grogan"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
 
+</head>
 
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
-</footer>
-</nav>
+</script>
 
-        <div id="content" class="content-container">
-        
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="../../acr884-tech-slot-004/">
-                    The @ACR884 Tech Slot #004
-                </a>
-            </h2>
-            <div>
-                <p><p>Our fourth slot
-on <a title="Athlone Community Radio" href="http://athlonecommunityradio.ie/" target="_blank">Athlone
-Community Radio</a>. Aired the third Monday in January 2012 on ACR 88.4FM in
-Athlone, Co. Westmeath, Ireland.</p>
-<p><strong>Topics Covered:</strong></p>
-<ul>
-	<li>TuneIn Radio App</li>
-	<li>Path App</li>
-	<li>Twitter App</li>
-	<li>Facebook App</li>
-</ul>
-In this episode Patrick and Neil discuss the most popular apps on the market, across all major platforms.
-<p><strong>Subscribe:</strong>
-<a href="http://itunes.apple.com/ie/podcast//id494862406" target="_blank"><img title="iTunes Podcast Button" src="http://dueyfinster.files.wordpress.com/2012/01/itunes_podcast.gif?w=80&amp;h=15" alt="Subscribe to ACR884 Tech Slot in iTunes!" width="80" height="15" /></a>  <a href="http://feeds.feedburner.com/acr884tech" target="_blank"><img src="http://dueyfinster.files.wordpress.com/2012/01/podcast_rss_button.gif?w=627" alt="" /></a></p>
-<p><strong></strong><strong>Download Link: </strong></p>
-<p><a href="http://neil.grogan.ie/2012/02/20/acr884-tech-slot-004/21st-feb-2012-tech-slot/" rel="attachment wp-att-2174">21st
-Feb 2012 - Tech Slot</a></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 20, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/android">#android</a>
-                
-                    <a class="tag" href="../../tags/audio">#audio</a>
-                
-                    <a class="tag" href="../../tags/ios">#ios</a>
-                
-                    <a class="tag" href="../../tags/radio">#radio</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../the-best-cookbook/">
-                    The Best Cookbook
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;ve only recently started cooking meals from scratch and it&rsquo;s a worthwhile
-experience! By my side is an awesome cookbook produced by the Health Service
-Executive (HSE) and Money Advice and Budgeting Service (MABS).</p>
-<img src="../../files/2012/02/101squaremeals.png" alt="101 Square Meals">
-<p>It&rsquo;s generally all healthy food and every recipe indicates cost and portion
-size. It even has meals for one, meals for weaning babies, desserts, you name
-it! So what&rsquo;s the cost of this fabulous book? I got it for free. They produce
-very limited quantities however, but it&rsquo;s worth contacting MABS to see if you
-can get your hands on a copy.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 4, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/food">#food</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../very-simple-java-twitter-bot-twitter4j/">
-                    Very Simple Java Twitter Bot (Twitter4J)
-                </a>
-            </h2>
-            <div>
-                <p><p>Below is code for the start of a Twitter bot I am going to build in Java. It&rsquo;s
-the most basic way of getting Oauth working (with any account, not just your
-developer account) and it shows your timeline and can update your status -
-that&rsquo;s it for now. The neat thing is it uses Java&rsquo;s awesome serialisation, so
-you only should have to authorise your twitter account once!</p>
-<h3 id="what-you-will-need">What you will need:</h3>
-<ul>
-<li>Twitter4j Libraries</li>
-<li>Oauth Consumer and Secret Key off twitter</li>
-<li><strong>That is it!</strong></li>
-</ul>
-<script src="https://gist.github.com/2469810.js"> </script>
-<h3 id="what-the-code-does">What the code does:</h3>
-<ol>
-<li>
-<p><strong>Once only:</strong></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 1, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/java">#java</a>
-                
-                    <a class="tag" href="../../tags/programming">#programming</a>
-                
-                    <a class="tag" href="../../tags/code">#code</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../irish-sopa-law-an-overview/">
-                    Irish SOPA Law: An Overview
-                </a>
-            </h2>
-            <div>
-                <p><p><img src="../../files/2012/01/sopa.jpg" alt="Irish SOPA Illustration"></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 25, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/legal">#legal</a>
-                
-                    <a class="tag" href="../../tags/networking">#networking</a>
-                
-                    <a class="tag" href="../../tags/politics">#politics</a>
-                
-                    <a class="tag" href="../../tags/privacy">#privacy</a>
-                
-                    <a class="tag" href="../../tags/security">#security</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../is-4k-the-new-3d-the-networked-society-blog/">
-                    Is 4K the new 3D? - The Networked Society Blog
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;d love to own a 4K screen, the more lifelike the images the better it&rsquo;ll be
-for movies. I&rsquo;d imagine filesizes are 4x as large as HD also, which will be an
-issue that might kill off optical storage (and require better broadband). It&rsquo;s a
-shame the author tried to compare it to 3D (which objectively is still a flop)
-but he mentions the issues in that technology (namely: field of vision).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 23, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/work">#work</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../nuke-support-in-uk-hits-record-high/">
-                    Nuke support in UK hits record high
-                </a>
-            </h2>
-            <div>
-                <p><p>If only we had such sense here in Ireland, we can&rsquo;t meet our commitments and it
-will hurt the economy in the long run not to go nuclear. The ESB has said
-&ldquo;sometime in the 2030&rsquo;s we will need to look at it&rdquo; - why not look at it now?
-These projects take 10-15 years at least to implement properly.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 21, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/politics">#politics</a>
-                
-                    <a class="tag" href="../../tags/security">#security</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../air-france-447/">
-                    What Really Happened Aboard Air France 447
-                </a>
-            </h2>
-            <div>
-                <p><p>Incredibly well-written article. Just shows the power of human misunderstanding
-and lack of clear judgement.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 18, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../why-are-android-smartphones-bigger-than-the-iphone/">
-                    Why Are Android Smartphones Bigger Than the iPhone?
-                </a>
-            </h2>
-            <div>
-                <p><p><strong><em>tl;dr</em></strong> It&rsquo;s because LTE chipsets are very large and power hungry right now.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 18, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/android">#android</a>
-                
-                    <a class="tag" href="../../tags/apple">#apple</a>
-                
-                    <a class="tag" href="../../tags/google">#google</a>
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/ios">#ios</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../acr884-tech-slot-003/">
-                    @ACR884 Tech Slot #003 – eReaders
-                </a>
-            </h2>
-            <div>
-                <p><p>Our third slot on
-<a title="Athlone Community Radio" href="http://athlonecommunityradio.ie/" target="_blank">Athlone
-Community Radio</a>. Aired the third Monday in January 2012 on ACR 88.4FM in
-Athlone, Co. Westmeath, Ireland.</p>
-<h4 id="topics-covered">Topics Covered:</h4>
-<ul>
-<li>Kindle</li>
-<li>Sony eReader</li>
-</ul>
-<p>In this episode Patrick and Neil discuss the main players in the eBook market,
-as well as what eBooks are and the advanatages and disadvantages.</p>
-<p><strong>Subscribe:</strong>
-<a href="//itunes.apple.com/ie/podcast//id494862406" target="_blank"><img title="iTunes Podcast Button" src="http://dueyfinster.files.wordpress.com/2012/01/itunes_podcast.gif" alt="Subscribe to ACR884 Tech Slot in iTunes!" width="80" height="15" /></a> 
-<a href="http://feeds.feedburner.com/acr884tech" target="_blank"><img src="http://dueyfinster.files.wordpress.com/2012/01/podcast_rss_button.gif" alt="" /></a></p>
-<audio controls="controls">
-  <source src="http://dueyfinster.files.wordpress.com/2012/01/technologyslot16-01-12.mp3" type="audio/mp3" />
-  Your browser does not support the audio tag.
-</audio>
-<p><strong>Download Link:
-<a href="http://dueyfinster.files.wordpress.com/2012/01/technologyslot16-01-12.mp3">TechnologySlot16-01-12</a></strong></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 16, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/audio">#audio</a>
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-                    <a class="tag" href="../../tags/radio">#radio</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../acr884-ep001/">
-                    @ACR884 Tech Slot #001 - Phones
-                </a>
-            </h2>
-            <div>
-                <p><p>The very first slot on
-<a title="Athlone Community Radio" href="http://athlonecommunityradio.ie/" target="_blank">Athlone
-Community Radio</a>. Aired November 2011 on ACR 88.4FM in Athlone, Co.
-Westmeath, Ireland.</p>
-<p><strong>Topics Covered:</strong></p>
-<ul>
-	<li>iPhone 4S</li>
-	<li>Samsung Galaxy S</li>
-	<li>Discussion of Windows Phone 7</li>
-</ul>
-<strong>Hosts:</strong> <em>Patrick Russell &amp; Neil Grogan</em>
-<p><strong>Subscribe:</strong>
-<a href="//itunes.apple.com/ie/podcast//id494862406" target="_blank"><img class="alignnone size-full wp-image-2104" title="iTunes Podcast Button" src="http://dueyfinster.files.wordpress.com/2012/01/itunes_podcast.gif" alt="Subscribe to ACR884 Tech Slot in iTunes!" width="80" height="15" /></a> 
-<audio controls="controls"></p>
-  <source src="http://dueyfinster.files.wordpress.com/2011/11/technologyslot17-11-11.mp3" type="audio/mp3" />
-  Your browser does not support the audio tag.
-</audio>
-<p><strong>Download Link:</strong>
-<a href="http://dueyfinster.files.wordpress.com/2011/11/technologyslot17-11-11.mp3">Episode
-1 - ACR 88.4 Technology Show</a></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 12, 2012</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/radio">#radio</a>
-                
-                    <a class="tag" href="../../tags/android">#android</a>
-                
-                    <a class="tag" href="../../tags/apple">#apple</a>
-                
-                    <a class="tag" href="../../tags/audio">#audio</a>
-                
-                    <a class="tag" href="../../tags/ios">#ios</a>
-                
-                    <a class="tag" href="../../tags/windows">#windows</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 9 of 25</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="../../page/8/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="../../page/10/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                        
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
                 </a>
-            
-        </div>
-        
-    </div>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The @ACR884 Tech Slot #004
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Our fourth slot on Athlone Community Radio. Aired the third Monday in January 2012 on ACR 88.4FM in Athlone, Co. Westmeath, Ireland.
+Topics Covered:
+TuneIn Radio App Path App Twitter App Facebook App In this episode Patrick and Neil discuss the most popular apps on the market, across all major platforms. Subscribe: Download Link: 21st Feb 2012 - Tech Slot
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-02-20 00:00:00 +0000 UTC'>February 20, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to The @ACR884 Tech Slot #004" href="../../acr884-tech-slot-004/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Best Cookbook
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve only recently started cooking meals from scratch and it’s a worthwhile experience! By my side is an awesome cookbook produced by the Health Service Executive (HSE) and Money Advice and Budgeting Service (MABS).
+It’s generally all healthy food and every recipe indicates cost and portion size. It even has meals for one, meals for weaning babies, desserts, you name it! So what’s the cost of this fabulous book? I got it for free. They produce very limited quantities however, but it’s worth contacting MABS to see if you can get your hands on a copy.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-02-04 00:00:00 +0000 UTC'>February 4, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to The Best Cookbook" href="../../the-best-cookbook/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Very Simple Java Twitter Bot (Twitter4J)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Below is code for the start of a Twitter bot I am going to build in Java. It’s the most basic way of getting Oauth working (with any account, not just your developer account) and it shows your timeline and can update your status - that’s it for now. The neat thing is it uses Java’s awesome serialisation, so you only should have to authorise your twitter account once!
+What you will need: Twitter4j Libraries Oauth Consumer and Secret Key off twitter That is it! What the code does: Once only:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-02-01 00:00:00 +0000 UTC'>February 1, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Very Simple Java Twitter Bot (Twitter4J)" href="../../very-simple-java-twitter-bot-twitter4j/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Irish SOPA Law: An Overview
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> </p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-25 00:00:00 +0000 UTC'>January 25, 2012</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Irish SOPA Law: An Overview" href="../../irish-sopa-law-an-overview/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Is 4K the new 3D? - The Networked Society Blog
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’d love to own a 4K screen, the more lifelike the images the better it’ll be for movies. I’d imagine filesizes are 4x as large as HD also, which will be an issue that might kill off optical storage (and require better broadband). It’s a shame the author tried to compare it to 3D (which objectively is still a flop) but he mentions the issues in that technology (namely: field of vision).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-23 00:00:00 +0000 UTC'>January 23, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Is 4K the new 3D? - The Networked Society Blog" href="../../is-4k-the-new-3d-the-networked-society-blog/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Nuke support in UK hits record high
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If only we had such sense here in Ireland, we can’t meet our commitments and it will hurt the economy in the long run not to go nuclear. The ESB has said “sometime in the 2030’s we will need to look at it” - why not look at it now? These projects take 10-15 years at least to implement properly.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-21 00:00:00 +0000 UTC'>January 21, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Nuke support in UK hits record high" href="../../nuke-support-in-uk-hits-record-high/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">What Really Happened Aboard Air France 447
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Incredibly well-written article. Just shows the power of human misunderstanding and lack of clear judgement.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-18 00:00:00 +0000 UTC'>January 18, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to What Really Happened Aboard Air France 447" href="../../air-france-447/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Why Are Android Smartphones Bigger Than the iPhone?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>tl;dr It’s because LTE chipsets are very large and power hungry right now.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-18 00:00:00 +0000 UTC'>January 18, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Why Are Android Smartphones Bigger Than the iPhone?" href="../../why-are-android-smartphones-bigger-than-the-iphone/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">@ACR884 Tech Slot #003 – eReaders
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Our third slot on Athlone Community Radio. Aired the third Monday in January 2012 on ACR 88.4FM in Athlone, Co. Westmeath, Ireland.
+Topics Covered: Kindle Sony eReader In this episode Patrick and Neil discuss the main players in the eBook market, as well as what eBooks are and the advanatages and disadvantages.
+Subscribe: Your browser does not support the audio tag. Download Link: TechnologySlot16-01-12
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-16 00:00:00 +0000 UTC'>January 16, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to @ACR884 Tech Slot #003 – eReaders" href="../../acr884-tech-slot-003/"></a>
+</article>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">@ACR884 Tech Slot #001 - Phones
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The very first slot on Athlone Community Radio. Aired November 2011 on ACR 88.4FM in Athlone, Co. Westmeath, Ireland.
+Topics Covered:
+iPhone 4S Samsung Galaxy S Discussion of Windows Phone 7 Hosts: Patrick Russell &amp; Neil Grogan Subscribe: Your browser does not support the audio tag. Download Link: Episode 1 - ACR 88.4 Technology Show
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-12 00:00:00 +0000 UTC'>January 12, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to @ACR884 Tech Slot #001 - Phones" href="../../acr884-ep001/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="../../page/8/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="../../page/10/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-    </body>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

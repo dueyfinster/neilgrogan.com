@@ -1,637 +1,367 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Google | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../tags/google/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../tags/google/index.xml">
+<link rel="alternate" hreflang="en" href="../../tags/google/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <title>Google | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+</noscript><meta property="og:title" content="Google" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/google/" />
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../tags/google/index.xml" title="Neil Grogan" />
-    </head>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="../../">Home</a>&nbsp;»&nbsp;<a href="../../tags/">Tags</a></div>
+  <h1>
+    Google
+    <a href="../../tags/google/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../tags/google/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">First Experiences with an ARM Chromebook
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently bought a Samsung Chromebook (Wi-Fi, 11.6-Inch). I am fascinated by living tied to the web, indeed my honours computer science thesis deals with this in relation to mobile applications (and hybrid half-app/ half-website). Spurred on by the excellent reviews this Chromebook has gotten (&#34;It’s $1,000 worth of design made with $100 worth of materials&#34; - The Verge and “You simply won’t find a netbook this nice for that little money.” - Engadget).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-12-08 00:00:00 +0000 UTC'>December 8, 2012</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to First Experiences with an ARM Chromebook" href="../../first-experiences-with-arm-chromebook/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Chrome vs. Internet Explorer Audience
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Lately both Google and Microsoft have been advertising their respective browsers on British Television (received in Ireland by the vast majority of the population). It’s interesting the different approach each company is taking.
+Chrome ad:
+To me the Chrome ad is very family oriented, stressing the utility of the web and the ease of reaching people and staying in touch. No surprise they didn’t feature Facebook, which is what the vast majority use to keep in touch.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-10-30 00:00:00 +0000 UTC'>October 30, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Chrome vs. Internet Explorer Audience" href="../../chrome-vs-internet-explorer-audience/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Why Are Android Smartphones Bigger Than the iPhone?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>tl;dr It’s because LTE chipsets are very large and power hungry right now.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-18 00:00:00 +0000 UTC'>January 18, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Why Are Android Smartphones Bigger Than the iPhone?" href="../../why-are-android-smartphones-bigger-than-the-iphone/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">@ACR884 Tech Slot #002 - Tablets
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> iPad Motorola Xoom HP Slate Android tablet apps iOs tablet apps In this episode Patrick and Neil discuss the main players in the tablet market as well as Neils top Android and iOs tablet apps. Subscribe: Your browser does not support the audio tag. Download Link: Technology Slot Dec 19 11 </p>
+  </div>
+  <footer class="entry-footer"><span title='2012-01-12 00:00:00 +0000 UTC'>January 12, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to @ACR884 Tech Slot #002 - Tablets" href="../../acr884-tech-slot-002-tablets/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">All About Platforms
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If your passion is in technology, you often sigh with the marketing buzzwords used in sales. Cloud Computing doesn’t actually mean anything specific (or could mean a lot of things). It’s that a lot of things to a lot of people who makes it useful as a term, an ideology, a way of explaining why you-oh-so-need-to-do-this-now. Cloud computing for me is a platform description. I think of the myriad of hosting companies who offer a platform to build your service atop.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2011-11-26 00:00:00 +0000 UTC'>November 26, 2011</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to All About Platforms" href="../../all-about-platforms/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My Top Chrome Extensions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Below I present some very useful extensions I use while using Google Chrome, in no particular order.
+Adblock
+Blocks ads just like Firefox extension and makes the web less junky to look at. You can whitelist good ads, and an argument could be had your harming websites revenue stream, but a lot of nasty tricks such as spyware, malware have used ads as a vector to spread. Not least the dishonesty some sites use in splitting up articles in to 10 pages to pump ad revenue. KB SSL Enforcer
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-11-22 00:00:00 +0000 UTC'>November 22, 2010</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to My Top Chrome Extensions" href="../../my-top-chrome-extensions/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">WebM promises Open Web Video
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve written about my desire for open web video before, and now it looks as if it’s finally going to happen. Lead by Google’s acquisition of On2 technologies, the VP8 codec has been renamed as “WebM” and open sourced. Vorbis will be the audio. Matroska the container for the new format. An Open Source developer for x264 does a great teardown of the format vs. h.264 here. The patent minefield stateside is still not clear by any means, but with a strong backer like Google, it’s probably the best protection your going to get. Announcements, including links to nightlies, dev and beta channel browsers with WebM support are below:&lt;
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2010-05-30 00:00:00 +0000 UTC'>May 30, 2010</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to WebM promises Open Web Video" href="../../webm-promises-open-web-video/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gmail Video Chat
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I am an avid Gmail user through Google Apps. I use the calender, chat, code, sites, pages, docs the whole lot. One of my friends even jokes “You should just work at Google Marketing”. Yes I like most of Google’s products; but I am a products guy; I use whats good, cheap and fast (pick two). Google has the cheap down due to ad-revenue; for the moment anyways in the current financial turmoil.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-13 00:00:00 +0000 UTC'>November 13, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Gmail Video Chat" href="../../gmail-video-chat/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Will Google Buy Skype?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>It’s been all over the tech news world lately; apparently Google is muling over taking Skype off of Ebay’s hands. Ebay has already written down the value of Skype as a large loss on their purchase price of $2.6 billion in stock and cash. But w ould Skype’s G-branded future be any better?
+I think it would be. Skype is a strong international brand for voice calls, instant messaging and video calls; but of course it competes directly with Google Talk. Skype as a company has made a lot of mistakes; but they actually produces some of the best technology for p2p VOIP out there in the marketplace. Skype is particularly strong in redundancy, cost of network operation (since it’s p2p every user carries’ each others traffic; most people have no idea of this fact) and routing around the most draconian network admins out their through their routers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-04-09 00:00:00 +0000 UTC'>April 9, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Will Google Buy Skype?" href="../../will-google-buy-skype/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Free Domain name off AOL, too good to be true?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AOL, the longtime dialup king, who esperate to keep customers at its’ site who have switched to broadband, is offering free dot com and dot net domains. There are a few caches however, one must be in possession of a US mobile phone (cell) number. Luckily I have a cousin stateside willing to help out ;-) . I got to register NeilGrogan.com (My actual name) which I hadn’t bothered with before. AOL is the legal owner however, so has all the say legally to the name. At the minute it provides 100 2GB email accounts with the free domain, and if you visit the address online, it redirects to an AIM Pages profile of the owner (for all intents and purposes, it’s another social networking site). Its a good way to drum up interest in its online offerings, but they should be more flexible. If anyone is in any doubt, this is just an ‘alright’ kind of deal, AOL say they will give you the option to buy the name back in the future, but I won’t hold my breath.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-12-19 00:00:00 +0000 UTC'>December 19, 2006</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Free Domain name off AOL, too good to be true?" href="../../free-domain-name-off-aol-too-good-to-be/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="../../tags/google/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
 <footer class="footer">
-	<div class="social-icons">
-        
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-</nav>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-        <div id="content" class="content-container">
-        
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-  <h1>Tagged "google"</h1>
-  
-  
-    
-    <article>
-            <h2>
-                <a href="../../first-experiences-with-arm-chromebook/">
-                    First Experiences with an ARM Chromebook
-                </a>
-            </h2>
-            <div>
-                <p><p>I  recently bought a
-<a href="http://www.amazon.com/gp/product/B009LL9VDG/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B009LL9VDG&amp;linkCode=as2&amp;tag=duefinsblo-20">Samsung
-Chromebook (Wi-Fi, 11.6-Inch)</a>. I am fascinated by living tied to the web,
-indeed my honours computer science thesis deals with this in relation to mobile
-applications (and hybrid half-app/ half-website). Spurred on by the excellent
-reviews this Chromebook has gotten (&quot;<i>It&rsquo;s $1,000 worth of design made with
-$100 worth of materials</i>&quot; -
-<a href="http://www.theverge.com/2012/10/24/3549368/samsung-chromebook-review-series-3">The
-Verge</a> and &ldquo;<i>You simply won&rsquo;t find a netbook this nice for that little
-money.</i>&rdquo; -
-<a href="http://www.engadget.com/2012/11/07/samsung-chromebook-review-2012/">Engadget</a>).<br /></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>December 8, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../chrome-vs-internet-explorer-audience/">
-                    Chrome vs. Internet Explorer Audience
-                </a>
-            </h2>
-            <div>
-                <p><p>Lately both Google and Microsoft have been advertising their respective browsers
-on British Television (received in Ireland by the vast majority of the
-population). It&rsquo;s interesting the different approach each company is taking.</p>
-<p>Chrome ad:</p>
-<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="http://www.youtube.com/embed/E0qDrRJT4zE" width="560"></iframe>
-<p>To me the Chrome ad is very family oriented, stressing the utility of the web
-and the ease of reaching people and staying in touch. No surprise they
-didn&rsquo;t feature Facebook, which is what the vast majority use to keep in
-touch.<br /></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 30, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../why-are-android-smartphones-bigger-than-the-iphone/">
-                    Why Are Android Smartphones Bigger Than the iPhone?
-                </a>
-            </h2>
-            <div>
-                <p><p><strong><em>tl;dr</em></strong> It&rsquo;s because LTE chipsets are very large and power hungry right now.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 18, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../acr884-tech-slot-002-tablets/">
-                    @ACR884 Tech Slot #002 - Tablets
-                </a>
-            </h2>
-            <div>
-                <p><ul>
-	<li>iPad</li>
-	<li>Motorola Xoom</li>
-	<li>HP Slate</li>
-	<li>Android tablet apps</li>
-	<li>iOs tablet apps</li>
-</ul>
-In this episode Patrick and Neil discuss the main players in the tablet market as well as Neils top Android and iOs tablet apps.
-<p><strong>Subscribe:</strong>
-<a href="//itunes.apple.com/ie/podcast//id494862406" target="_blank"><img title="iTunes Podcast Button" src="http://dueyfinster.files.wordpress.com/2012/01/itunes_podcast.gif" alt="Subscribe to ACR884 Tech Slot in iTunes!" width="80" height="15" /></a></p>
-<audio controls="controls">
-  <source src="http://dueyfinster.files.wordpress.com/2012/01/technologydec1911.mp3" type="audio/mp3" />
-  Your browser does not support the audio tag.
-</audio>
-<p><strong></strong><strong>Download Link:
-<a href="http://dueyfinster.files.wordpress.com/2012/01/technologydec1911.mp3">Technology
-Slot Dec 19 11</a> </strong></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 12, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../all-about-platforms/">
-                    All About Platforms
-                </a>
-            </h2>
-            <div>
-                <p><p>If your passion is in technology, you often sigh with the marketing buzzwords
-used in sales. <em>Cloud Computing</em> doesn&rsquo;t actually mean anything specific
-(or could mean a lot of things). It&rsquo;s that a lot of things to a lot of people
-who makes it useful as a term, an  ideology, a way of explaining why
-<em>you-oh-so-need-to-do-this-now</em>. Cloud computing for me is a platform
-description. I think of the myriad of hosting companies who offer a platform to
-build your service atop.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 26, 2011</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../my-top-chrome-extensions/">
-                    My Top Chrome Extensions
-                </a>
-            </h2>
-            <div>
-                <p><p>Below I present some very useful extensions I use while using Google Chrome, in
-no particular order.</p>
-<p><img src="http://4.bp.blogspot.com/_Wq0iRacWX8o/TOpquOK6RLI/AAAAAAAAAlE/oGVd0x63zCc/s200/20001.png" alt="image"><strong><a href="https://chrome.google.com/extensions/detail/gighmmpiobklfepjocnamgkkbiglidom">Adblock</a></strong></p>
-<ul>
-<li>Blocks ads just like Firefox extension and makes the web less junky to look
-at. You can whitelist good ads, and an argument could be had your harming
-websites revenue stream, but a lot of nasty tricks such as spyware, malware
-have used ads as a vector to spread. Not least the dishonesty some sites use
-in splitting up articles in to 10 pages to pump ad revenue.</li>
-</ul>
-<p><a href="http://1.bp.blogspot.com/_Wq0iRacWX8o/TOpsbEDdBMI/AAAAAAAAAlI/4yyhlRHjWN0/s1600/1001.png"><img src="http://1.bp.blogspot.com/_Wq0iRacWX8o/TOpsbEDdBMI/AAAAAAAAAlI/4yyhlRHjWN0/s200/1001.png" alt="image"></a>
-<strong><a href="https://chrome.google.com/extensions/detail/flcpelgcagfhfoegekianiofphddckof">KB SSL Enforcer</a></strong></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 22, 2010</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../webm-promises-open-web-video/">
-                    WebM promises Open Web Video
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;ve written <a href="../../2008/12/firefox-and-opera-lead-web-video-way.html">about my desire for open web video before</a>, and now it
-looks as if it&rsquo;s finally going to happen. Lead by Google&rsquo;s acquisition of <a href="http://www.on2.com/">On2
-technologies</a>, the <a href="http://en.wikipedia.org/wiki/VP8">VP8</a> codec has been renamed as &ldquo;<a href="http://www.webmproject.org/">WebM</a>&rdquo; and open
-sourced. <a href="http://en.wikipedia.org/wiki/Vorbis">Vorbis</a> will be the audio. <a href="http://en.wikipedia.org/wiki/Matroska">Matroska</a> the container for the new
-format. An Open Source developer for x264 does a <a href="http://x264dev.multimedia.cx/?p=377">great teardown of the format
-vs. h.264 here</a>. The patent minefield stateside is still not clear by
-any means, but with a strong backer like Google, it&rsquo;s probably the best
-protection your going to get. Announcements, including links to nightlies, dev
-and beta channel browsers with WebM support are below:&lt;</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 30, 2010</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../gmail-video-chat/">
-                    Gmail Video Chat
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://3.bp.blogspot.com/_JE4qNpFW6Yk/SRkwSMYD_aI/AAAAAAAAAJ8/gsDJdA4WBgY/s1600/video_chat.png"><img src="http://3.bp.blogspot.com/_JE4qNpFW6Yk/SRkwSMYD_aI/AAAAAAAAAJ8/gsDJdA4WBgY/s200/video_chat.png" alt="image"></a>
-I am an avid <a href="http://mail.google.com/">Gmail</a> user through Google Apps. I use
-the calender, chat, code, sites, pages, docs the whole lot. One of my friends
-even jokes &ldquo;You should just work at Google Marketing&rdquo;. Yes I like most of
-Google&rsquo;s products; but I am a products guy; I use whats good, cheap and fast
-(pick two). Google has the cheap down due to ad-revenue; for the moment anyways
-in the current financial turmoil.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 13, 2008</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../will-google-buy-skype/">
-                    Will Google Buy Skype?
-                </a>
-            </h2>
-            <div>
-                <p><p>It&rsquo;s been all over the tech news world lately; apparently
-<a href="http://www.google.ie/">Google</a> is muling over taking Skype off of Ebay&rsquo;s hands.
-Ebay has already written down the value of
-<a href="http://en.wikipedia.org/wiki/Skype">Skype</a> as a large loss on their purchase
-price of $2.6 billion in stock and cash. But
-w<a href="http://about.skype.com/online.png"><img src="http://about.skype.com/online.png" alt="image"></a>ould
-Skype&rsquo;s G-branded future be any better?</p>
-<p>I think it would be. Skype is a strong international brand for voice calls,
-instant messaging and video calls; but of course it competes directly with
-Google Talk. Skype as a company has made a lot of mistakes; but they actually
-produces some of the best technology for p2p VOIP out there in the marketplace.
-Skype is particularly strong in redundancy, cost of network operation (since
-it&rsquo;s p2p every user carries&rsquo; each others traffic; most people have no idea of
-this fact) and routing around the most draconian network admins out their
-through their routers.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 9, 2008</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../free-domain-name-off-aol-too-good-to-be/">
-                    Free Domain name off AOL, too good to be true?
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://www.aol.com/" title="AOL">AOL</a>, the longtime dialup king, who esperate to keep customers at its&rsquo; site
-who have switched to broadband, is <a href="https://domains.aol.com/personaldomain/app/domainHomeSearch" title="AOL Free Domains">offering free dot com and dot net
-domains</a>. There are a few caches however, one must be in possession of a US mobile
-phone (cell) number. Luckily I have a cousin stateside willing to help out ;-) .
-I got to register NeilGrogan.com (My actual name) which I hadn&rsquo;t bothered with before.
-AOL is the legal owner however, so has all the say legally to the name. At the minute
-it provides 100 2GB email accounts with the free domain, and if you visit the address
-online, it redirects to an AIM Pages profile of the owner (for all intents and purposes,
-it&rsquo;s another social networking site). Its a good way to drum up interest in its online
-offerings, but they should be more flexible. If anyone is in any doubt, this is just
-an &lsquo;alright&rsquo; kind of deal, AOL say they will give you the option to buy the name
-back in the future, but I won&rsquo;t hold my breath.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>December 19, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../google-buy-youtube-gtalk-for-everyone/">
-                    Google buy YouTube, GTalk for everyone and Blogger Bliss
-                </a>
-            </h2>
-            <div>
-                <p><p>I haven&rsquo;t posted in a while :-( Ah well here it goes: Well we&rsquo;ve all seen the
-news Google has bought YouTube for a reported 1.65 Billion US dollars, the deal
-was reportedly sealed at at Dennys in California (gotta admire that style and
-sophistication). I think its way overvalued Youtube, at 24m per employee! We all
-know it serves 100m videos a day, but it has been living off measly venture
-capital and hasn&rsquo;t got a verifiable steady income stream, which I guess is where
-Google enter with Adwords&hellip;.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 10, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../new-design-ranking-gmail-hosted-os-2006/">
-                    New Design, Ranking, Gmail Hosted, OS 2006 Finale and YouOS
-                </a>
-            </h2>
-            <div>
-                <p><p>Hope you like the new look Duey Finsters. Like Google style hoo-pah, we are
-still in “Beta” mode (or is it “Alpha”? Depends on who you ask!). I would be
-extremely grateful for people to report issues, with the folloxing browsers IE
-5.5, 6 &amp; 7, Opera 9, Firefox 1.5.X , Mozilla 1.X , Safari on all platforms
-Windows, Linux and Mac (BSD if you want!). Great news also in ranking, the site
-has gone from 8.5 millionth, to just under 4 million (#3,945,836 to be exact)
-in three and a half months! I am working on releasing the design to <a href="http://www.oswd.org/">OSWD</a> and
-in Wordpress theme format, for others to extend and enjoy (If you feel like
-helping out, contact me).</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 12, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../google-will-organise-your-life/">
-                    Google will organise your life
-                </a>
-            </h2>
-            <div>
-                <p><p>Google have released a calendar, as part of their mission to “Organise the
-Worlds Information”. While it is what you expect from Google, the Calendar did
-not impress me a whole lot. It does have an intuitive interface, that is easy to
-use. It does integrate with Gmail, although the full extent has yet to be seen,
-as they fall short of mentioning it in Gmail at all, but I would expect this to
-change. I see great potential for users though, and where Google is heading.
-They will eventually integrate it with GoogleTalk and Gmail, producing a hybrid
-interface where you can organise a conference on GoogleTalk, schedule it on your
-calendar (which is syncronised with your PC and your workgroup server [therby
-informing fellow employees]), submit video of it to Google Video, write minutes with
-writely, email minutes with Gmail, that mail (with document and video) being attached
-to the meeting on the Calendar, which is in turn archived on your PC in Google Desktop
-and your Gmail Drive. While that is only one scenario, it is very possible. Google
-have already leaked information on their eagerness to hold the entire contents of
-ones&rsquo; hard drive on the internet.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 16, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../ekigas-vorbis/">
-                    Ekiga&#39;s Vorbis
-                </a>
-            </h2>
-            <div>
-                <p><p>I am all for open standards, but they face huge problems. Not least is lack of
-intergration between them. Take SIP used by VOIP providers, such as
-<a href="http://www.wengo.com/">OpenWengo</a>. While OpenWengo is open source, and it is SIP, they are not
-helpful in informing you how to use other clients, or dial other OpenWengo users
-from other networks.</p>
-<p>What I am really talking about is the need for an all-in-one communications
-program, that is multi-platform. Their is already open source code for: Google
-Talk (aka Jabber), MSN, AOL, ICQ, SIP, H.323, Yahoo! but why isn’t their an
-all-in-one client? Surely it would be easy to reimplement some code from other
-programs into Ekiga (SIP, H.323) , Kopete or Gaim (both Jabber, MSN, Yahoo, AOL
-and ICQ)? I know GoogleTalk is based on SIP, so why not SIP compatability? That
-is poor implementation which is fragmenting the Open Source community, how are
-we going to challenge MSN’s userbase with this sort of fragmentation? That said
-I like Google Talk and its way of doing things. Also it is rumoured GoogleTalk
-will be interoperable with AOL at protocol level, since Google owns 5% of AOL.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 13, 2006</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../google-video/">
-                    Google Video
-                </a>
-            </h2>
-            <div>
-                <p><p>What a fantastic service Google now offer with their Google Video platform.
-There are a couple of reasons why I like it, mainly because it is available to
-upload your videos on all platforms (Windows, Linux and Mac) and is available on
-Mozilla-based browsers (Firefox, Netscape), Opera and Internet Explorer.This is
-important in creating a better all round user experience. If only Yahoo! would
-follow Googles example and open up Launch Cast to other browsers besides an
-outdated version of Netscape and Internet Explorer.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>December 23, 2005</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../future/">
-                    The Future.....
-                </a>
-            </h2>
-            <div>
-                <p><p>While using instant messenger I had a brainwave, what will the tech landscape
-look like in the future? So here is What I think could happen: IBM will buy Sun
-MicroSystems and make a new opensource OS, it will be based on Ubuntu. Microsoft
-will purchase AOL and roll out its products on the Web, such as MS Office, it
-will have a slow start to Vista, but it will pick up through peoples eagerness
-to buy the latest hardware. Google will buy Opera, invest in Mozilla and
-consolidate Opera into Mozilla, it will also buy Adobe (for their PDF format),
-get its way to publish an online bookstore through Google Book Search. Yahoo
-will continue to buy extra companies to add to its list of a zillion services,
-such as Flickr and Del.icio.us.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>December 16, 2005</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../dueyfinster/">
-                    Duey Finster
-                </a>
-            </h2>
-            <div>
-                <p><p>Awake Mornin at nearly six am I am writing this at six am in my cousins home
-because I heard this is a good way to get a gmail invite!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 24, 2004</time>
-            </div> 
-        </article>
-    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-    
+</script>
+</body>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
-</footer>
-    </body>
 </html>

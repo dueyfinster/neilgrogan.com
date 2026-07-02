@@ -1,642 +1,371 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.135.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Neil Grogan</title>
 
-    <title>Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../index.xml">
+<link rel="alternate" type="application/json" href="../../index.json">
+<link rel="alternate" hreflang="en" href="../../">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Neil Grogan" />
-    </head>
+    </style>
+</noscript><meta property="og:title" content="Neil Grogan" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Neil Grogan"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
 
+</head>
 
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
-</footer>
-</nav>
+</script>
 
-        <div id="content" class="content-container">
-        
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="../../love-letter-to-irmas-solicitor/">
-                    Love letter to IRMA&#39;s Solicitor
-                </a>
-            </h2>
-            <div>
-                <p><ul>
-<li>
-<p>This post is a continuation on the previous one. IRMA is the Irish Music
-Rights Organisation which represents the big four record companies and their
-bottom line: never the artist. They have recently tried to regulate the
-Internet and have forced the biggest Irish ISP: Eircom; to use the three
-strikes rule and boot people off the Internet&hellip; No Judge, no Jury, no
-evidence of a crime.. Just an IP address and a sanction which you cannot
-contest.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>March 7, 2009</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/legal">#legal</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../this-post-is-censored-by-irma/">
-                    This post is censored by IRMA
-                </a>
-            </h2>
-            <div>
-                <p><p>I always hoped for better for Ireland; but it seems the thieving hand of
-&ldquo;rights&rdquo; organizations which pretend to represent the artist have struck gold.
-Being able to cajole and bribe the largest Irish Internet Service Provider
-(ISP) - Eircom; has worked only too well. Although Eircom has said it will only
-obey by having a court order - it has agreed never to oppose these - which makes
-it complicit in the act of censorship. My Letter to Our ISP, Eircom, IRMA, EFF:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>March 7, 2009</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/legal">#legal</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../linux-desktop-environments/">
-                    Linux Desktop Environments?
-                </a>
-            </h2>
-            <div>
-                <p><p>What are Desktop Environments? Wikipedia defines it as:</p>
-<blockquote>
-<p>In graphical computing, a <strong>desktop environment</strong> (<strong>DE</strong>) commonly refers to
-a style of
-<a href="http://en.wikipedia.org/wiki/Graphical_user_interface" title="Graphical user interface">graphical user interface</a>
-&hellip;&hellip; A desktop environment typically consists of
-<a href="http://en.wikipedia.org/wiki/Icon_(computing)" title="Icon (computing)">icons</a>,
-<a href="http://en.wikipedia.org/wiki/Window_(computing)" title="Window (computing)">windows</a>,
-<a href="http://en.wikipedia.org/wiki/Toolbar" title="Toolbar">toolbars</a>,
-<a href="http://en.wikipedia.org/wiki/Directory_(file_systems)" title="Directory (file systems)">folders</a>,
-<a href="http://en.wikipedia.org/wiki/Computer_wallpaper" title="Computer wallpaper">wallpapers</a>,
-and
-<a href="http://en.wikipedia.org/wiki/Widget_engine" title="Widget engine">desktop widgets</a>.
-(See
-<a href="http://en.wikipedia.org/wiki/WIMP_(computing)" title="WIMP (computing)">WIMP</a>.)</p>
-</blockquote>
-<p>I would add a <a href="http://en.wikipedia.org/wiki/File_manager">file manager</a> and
-<a href="http://en.wikipedia.org/wiki/Web_browser">browser</a> to this list also! Let&rsquo;s
-look at the two most popular consumer Operating Systems (in three variants) and
-their Desktop Environments:</p>
-<p><a href="http://draft.blogger.com/post-create.g?blogID=7231752728434532377"></a><br>
-<strong>OS Name</strong> <strong>Widgets</strong> <strong>Window Manager</strong> <strong>File Manager</strong> <strong>Browser</strong> Windows
-XP Luna Stack Window Manager Windows File Explorer Internet Explorer 6 Windows
-Vista Aero
-<a href="http://en.wikipedia.org/wiki/Desktop_Window_Manager" title="Desktop Window Manager">Desktop Window Manager</a>
-<a href="http://en.wikipedia.org/wiki/Windows_Explorer">Windows File Explorer</a>
-<a href="http://en.wikipedia.org/wiki/Internet_Explorer">Internet Explorer 7</a> Mac OS X
-Cocoa Quartz Compositor
-<a href="http://en.wikipedia.org/wiki/Finder_(software)">Finder</a>
-<a href="http://en.wikipedia.org/wiki/Safari_(web_browser)">Safari 2.X</a> Now take
-Linux; really a Kernel, but packaged means an Operating System. Which way you
-package it makes all the difference! You still use the same drivers, the boot
-process is still the same, but when your machine finishes its boot and launches
-all that graphics stuff anything can appear: <strong>anything</strong>. It&rsquo;s abstraction to
-have no real graphics in a kernel other than that which are drivers to control
-hardware. This is very strange to people who think in the Windows way (nb. I
-used to be one of these). At the end of Windows XP booting I have never seen
-anything but Luna; and most people don&rsquo;t know its called that. So it is very
-strange for people my age and slightly older who grew up over DOS and Windows
-3.1/95 line to have this fundamental shift in logic.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 26, 2009</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/software">#software</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ubuntu-in-four-years/">
-                    Ubuntu in four years
-                </a>
-            </h2>
-            <div>
-                <p><p>Last year was me celebrating four years of using the best operating system out
-there: <a href="http://kernel.org/">Linux</a> and the best distro <a href="http://www.ubuntu.com/">Ubuntu</a>. Ubuntu was my first foray in to
-Linux; and I haven&rsquo;t left it since; although I have tried all the other major
-distros. I started with the first version of Ubuntu; Warthy Warthog:</p>
-<p><img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Ubuntu-desktop-2-410-20080706.png/180px-Ubuntu-desktop-2-410-20080706.png" alt="Warthy Warthog"></p>
-<p>Warthy had a text only installer and it took me quite a while to not only get
-used to the idea of this strange operating system; but the fear of leaving
-Windows-land where all that power usage knowledge would mean nothing. It meant
-nothing in terms of the registry and other superficial stuff; but the more I
-used Ubuntu and Linux the more I liked it. In fact in 2005 I ditched my XP
-installation altogether. I noticed there wasn&rsquo;t an Irish Ubuntu users group; so
-I mailed one of the few people (around 5 I guess) that were around Mark
-Shuttleworth to set it up and get a website going. It was an ill-advised effort
-since I was too busy with examinations really to take it on; so I gave it up
-soon after. But it is still going today, people are still involved.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 21, 2009</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/software">#software</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../beta-2/">
-                    KDE 4.2 Beta 2
-                </a>
-            </h2>
-            <div>
-                <p><p>Recently I downloaded the <a href="http://www.kubuntu.org/">Kubuntu</a> packages of the new
-<a href="http://www.kde.org/">KDE</a> 4.2 beta 2. For those of you who don&rsquo;t know; KDE is
-the <a href="http://www.kde.org/">K Desktop Environment</a>; which includes a window
-manager (<a href="http://en.wikipedia.org/wiki/Kwin">KWin</a>), common desktop
-applications, its own menu
-(<a href="http://home.kde.org/~binner/kickoff/sneak_preview.html">Kickoff</a>), browser
-(<a href="http://www.konqueror.org/">Konqueror</a>), file manager
-(<a href="http://en.wikipedia.org/wiki/Dolphin_(software)">dolphin</a>) etc. Basically it
-is the most popular desktop environment on Linux next to
-<a href="http://en.wikipedia.org/wiki/GNOME">Gnome</a>.</p>
-<p><img src="http://kde.org/announcements/announce_4.2-beta1/desktop_thumb.png" alt="image">
-*KDE 4.2 Beta 2 with Kickoff Menu visible</p>
-<ul>
-<li>**What is so special about KDE? **<br>
-The philosophy of KDE is the advanced configuration it allows through its
-<a href="http://en.wikipedia.org/wiki/GUI">Graphical User Interface</a> (GUI), this is
-versus <a href="http://www.gnome.org/">Gnome</a> which chooses sane defaults and leaves
-configuration in hard to reach places and out-of-sight. This isn&rsquo;t to say KDE
-doesn&rsquo;t choose sane defaults; it does and is very user-friendly. KDE has
-always been the more Windows-like of the major desktop environments and this
-hasn&rsquo;t really changed in KDE 4.X series. KDE is available in popular
-distributions of Linux such as Kubuntu, <a href="http://www.mandriva.com/">Mandriva</a>,
-<a href="http://www.opensuse.org/en/">OpenSuse</a>. The special part about 4.X series is
-that for the first time for any Linux desktop environment; it is fully
-cross-platform, easily installs and works on Microsoft Windows and Apple Mac
-OS X.</li>
-</ul>
-<p><a href="http://kde.org/announcements/announce_4.2-beta2/panel.png"><img src="http://kde.org/announcements/announce_4.2-beta2/panel_thumb.png" alt="image"></a>
-<em>KDE 4.2 Panel; with KOrganizer calendar open</em></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 4, 2009</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/software">#software</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../firefox-and-opera-lead-web-video-way/">
-                    Firefox and Opera lead the web video way
-                </a>
-            </h2>
-            <div>
-                <p><p>I downloaded
-<a href="http://www.mozilla.com/en-US/firefox/all-beta.html">Firefox 3.1 beta 2</a> (after
-trialling other development snapshots over the last few months) to see
-<a href="http://en.wikipedia.org/wiki/Ogg_Theora">Ogg Theora</a> video support is coming on
-really well. <a href="http://www.opera.com/">Opera</a>, as well as
-<a href="http://www.mozilla.org/">Mozilla</a> has committed to including this royalty-free
-video codec for web use. This is really good news;
-<a href="http://dev.opera.com/articles/view/a-call-for-video-on-the-web-opera-vid/">as one Opera Developer said:</a></p>
-<blockquote>
-<p>Something however is still not quite there about web video. The video
-solutions mentioned above are proprietary closed solutions that rely on
-plugins to display in a web page - what we need to make video a first-class
-web citizen is an easy, open solution to integrate video into web pages, and
-native support for video in browsers.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>December 9, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/video">#video</a>
-                
-                    <a class="tag" href="../../tags/mozilla">#mozilla</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../profiling-firefox-extensions-i-have/">
-                    Profiling Firefox Extensions I have installed
-                </a>
-            </h2>
-            <div>
-                <p><ul>
-<li>My Current Firefox Extensions: A-Z*<br>
-<a href="../../img/08/74.png"><img src="../../img/08/74.png" alt="image"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/1865">Adblock Plus</a>; because
-ads are for people that don&rsquo;t know how to avoid them! Not only do they stop
-your banwidth from being wasted; they make a ton of websites more usuable. It
-takes care of Flash Ads as well as static ones; using a filter that is
-constantly updated. So even if some of the webs more devious and sneaky
-advertisers try to circumvent it; AdBlock can have a fix to everyone online
-within hours. It is definately my favourite extension! I don&rsquo;t block certain
-ads like Google, Yahoo, Microsoft (the ones with decent reputations) as that
-is how the people behind really good websites I frequent make a living. But
-for all the rest trying to do pop-ups and pop-unders; I am sorry your days are
-numbered! (Some people higly recommend
-<a href="https://addons.mozilla.org/en-US/firefox/addon/433">flashblock</a> but I haven&rsquo;t
-had a need to use it with AdBlock Plus yet).<br>
-<a href="../../img/08/943948800.png"><img src="../../img/08/943948800.png" alt="image"></a></li>
-</ul>
-<p><a href="https://addons.mozilla.org/en-US/firefox/addon/743">CustomizeGoogle</a> adds neat
-tricks to Google services such as always using a secure connection to Gmail;
-links to other search engines, page histories, Favicons to search and streaming
-results pages. Comes in handy once in a while; but I don&rsquo;t use it daily.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 29, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/mozilla">#mozilla</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../research-proves-video-games-lack-harm/">
-                    Research proves video games lack harm
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Gtalogowhite.svg/200px-Gtalogowhite.svg.png"><img src="http://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Gtalogowhite.svg/200px-Gtalogowhite.svg.png" alt="image"></a>I
-am not a big gamer; I primarily love systems and how they work. I do own a
-<a href="http://en.wikipedia.org/wiki/PlayStation_3">PS3</a>
-(<a href="http://en.wikipedia.org/wiki/PlayStation_3_hardware">amazing hardware</a> I might
-add) and I prefer <a href="http://en.wikipedia.org/wiki/First-person_shooter">FPS</a> and
-generally devious natured video games (like the
-<a href="http://en.wikipedia.org/wiki/Grand_Theft_Auto_(series)">GTA</a> franchise). Does
-that make me a bad person who wants to kill people? Of course not; nothing could
-be further from the truth. But some people stick their fingers in their ears and
-shout &ldquo;LA LA LA
-<a href="http://en.wikipedia.org/wiki/Columbine_High_School_massacre">Columbine</a> LALALA
-Terrorists LALALA Violent Video Games!&rdquo;. They say it is destructive to childrens
-young precious minds. The
-&ldquo;<a href="http://en.wikipedia.org/wiki/For_The_Children_(politics)">Think of The Children</a>&rdquo;
-argument always disgusted me; its like shouting Fire in a packed room when their
-is no danger: it is false, just to garner attention and a sickening twisted
-version of the facts. Are violent video games harmful to kids? <em>Probably</em>; I
-wouldn&rsquo;t advocate giving them access since they; just like movies are
-<a href="http://en.wikipedia.org/wiki/Pan_European_Game_Information"><strong>clearly rated for Adults</strong></a>. *</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 27, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/internet">#internet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ssh-guide/">
-                    SSH Guide
-                </a>
-            </h2>
-            <div>
-                <p><h2 id="note-this-guide-was-written-for-use-by-my-computer-science-class">**Note: This Guide was written for use by my Computer Science class</h2>
-<p>on Linux (and Mac OS X where noted). I haven&rsquo;t used SSH on Windows; but
-hopefully someone can make sure this guide works also on Windows by noting
-differences). SSH comes with nearly all Linux distros and all Mac OS X
-releases.<br>
-**</p>
-<p><strong>OS Specific Colours: Linux - Mac OS X - Windows</strong><br>
-**<br>
-**<br>
-**<a href="http://downloads.sourceforge.net/sshwindows/setupssh381-20040709.zip?modtime=1089331200&amp;big_mirror=0">Download SSH For Windows</a><br>
-**</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 17, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/secure-shell">#secure-shell</a>
-                
-                    <a class="tag" href="../../tags/terminal">#terminal</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../web-multimedia-project-1/">
-                    Web Multimedia Project 1
-                </a>
-            </h2>
-            <div>
-                <p><p>As part of Computer Science you do a couple of general modules which are general
-in nature about computing; but I think that just reflects the broad use of IT in
-every part of society today. As things go digital or are created digitally;
-understanding of this concept is vital; that is where Web Multimedia comes in.
-For my first project of this second year; I had to do a movie made of stills
-with custom sound effects. Restrictions on sources of images and sounds (very
-high percentage had to be self made). Here it is:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 16, 2008</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/education">#education</a>
-                
-                    <a class="tag" href="../../tags/project">#project</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 15 of 25</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="../../page/14/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="../../page/16/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                        
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
                 </a>
-            
-        </div>
-        
-    </div>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Love letter to IRMA&#39;s Solicitor
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> This post is a continuation on the previous one. IRMA is the Irish Music Rights Organisation which represents the big four record companies and their bottom line: never the artist. They have recently tried to regulate the Internet and have forced the biggest Irish ISP: Eircom; to use the three strikes rule and boot people off the Internet… No Judge, no Jury, no evidence of a crime.. Just an IP address and a sanction which you cannot contest.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-03-07 00:00:00 +0000 UTC'>March 7, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Love letter to IRMA&#39;s Solicitor" href="../../love-letter-to-irmas-solicitor/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">This post is censored by IRMA
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I always hoped for better for Ireland; but it seems the thieving hand of “rights” organizations which pretend to represent the artist have struck gold. Being able to cajole and bribe the largest Irish Internet Service Provider (ISP) - Eircom; has worked only too well. Although Eircom has said it will only obey by having a court order - it has agreed never to oppose these - which makes it complicit in the act of censorship. My Letter to Our ISP, Eircom, IRMA, EFF:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-03-07 00:00:00 +0000 UTC'>March 7, 2009</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to This post is censored by IRMA" href="../../this-post-is-censored-by-irma/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Linux Desktop Environments?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What are Desktop Environments? Wikipedia defines it as:
+In graphical computing, a desktop environment (DE) commonly refers to a style of graphical user interface …… A desktop environment typically consists of icons, windows, toolbars, folders, wallpapers, and desktop widgets. (See WIMP.)
+I would add a file manager and browser to this list also! Let’s look at the two most popular consumer Operating Systems (in three variants) and their Desktop Environments:
+OS Name Widgets Window Manager File Manager Browser Windows XP Luna Stack Window Manager Windows File Explorer Internet Explorer 6 Windows Vista Aero Desktop Window Manager Windows File Explorer Internet Explorer 7 Mac OS X Cocoa Quartz Compositor Finder Safari 2.X Now take Linux; really a Kernel, but packaged means an Operating System. Which way you package it makes all the difference! You still use the same drivers, the boot process is still the same, but when your machine finishes its boot and launches all that graphics stuff anything can appear: anything. It’s abstraction to have no real graphics in a kernel other than that which are drivers to control hardware. This is very strange to people who think in the Windows way (nb. I used to be one of these). At the end of Windows XP booting I have never seen anything but Luna; and most people don’t know its called that. So it is very strange for people my age and slightly older who grew up over DOS and Windows 3.1/95 line to have this fundamental shift in logic.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-01-26 00:00:00 +0000 UTC'>January 26, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Linux Desktop Environments?" href="../../linux-desktop-environments/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ubuntu in four years
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Last year was me celebrating four years of using the best operating system out there: Linux and the best distro Ubuntu. Ubuntu was my first foray in to Linux; and I haven’t left it since; although I have tried all the other major distros. I started with the first version of Ubuntu; Warthy Warthog:
+Warthy had a text only installer and it took me quite a while to not only get used to the idea of this strange operating system; but the fear of leaving Windows-land where all that power usage knowledge would mean nothing. It meant nothing in terms of the registry and other superficial stuff; but the more I used Ubuntu and Linux the more I liked it. In fact in 2005 I ditched my XP installation altogether. I noticed there wasn’t an Irish Ubuntu users group; so I mailed one of the few people (around 5 I guess) that were around Mark Shuttleworth to set it up and get a website going. It was an ill-advised effort since I was too busy with examinations really to take it on; so I gave it up soon after. But it is still going today, people are still involved.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-01-21 00:00:00 +0000 UTC'>January 21, 2009</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Ubuntu in four years" href="../../ubuntu-in-four-years/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">KDE 4.2 Beta 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Recently I downloaded the Kubuntu packages of the new KDE 4.2 beta 2. For those of you who don’t know; KDE is the K Desktop Environment; which includes a window manager (KWin), common desktop applications, its own menu (Kickoff), browser (Konqueror), file manager (dolphin) etc. Basically it is the most popular desktop environment on Linux next to Gnome.
+*KDE 4.2 Beta 2 with Kickoff Menu visible
+**What is so special about KDE? **
+The philosophy of KDE is the advanced configuration it allows through its Graphical User Interface (GUI), this is versus Gnome which chooses sane defaults and leaves configuration in hard to reach places and out-of-sight. This isn’t to say KDE doesn’t choose sane defaults; it does and is very user-friendly. KDE has always been the more Windows-like of the major desktop environments and this hasn’t really changed in KDE 4.X series. KDE is available in popular distributions of Linux such as Kubuntu, Mandriva, OpenSuse. The special part about 4.X series is that for the first time for any Linux desktop environment; it is fully cross-platform, easily installs and works on Microsoft Windows and Apple Mac OS X. KDE 4.2 Panel; with KOrganizer calendar open
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-01-04 00:00:00 +0000 UTC'>January 4, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to KDE 4.2 Beta 2" href="../../beta-2/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Firefox and Opera lead the web video way
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I downloaded Firefox 3.1 beta 2 (after trialling other development snapshots over the last few months) to see Ogg Theora video support is coming on really well. Opera, as well as Mozilla has committed to including this royalty-free video codec for web use. This is really good news; as one Opera Developer said:
+Something however is still not quite there about web video. The video solutions mentioned above are proprietary closed solutions that rely on plugins to display in a web page - what we need to make video a first-class web citizen is an easy, open solution to integrate video into web pages, and native support for video in browsers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-12-09 00:00:00 +0000 UTC'>December 9, 2008</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Firefox and Opera lead the web video way" href="../../firefox-and-opera-lead-web-video-way/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Profiling Firefox Extensions I have installed
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> My Current Firefox Extensions: A-Z*
+Adblock Plus; because ads are for people that don’t know how to avoid them! Not only do they stop your banwidth from being wasted; they make a ton of websites more usuable. It takes care of Flash Ads as well as static ones; using a filter that is constantly updated. So even if some of the webs more devious and sneaky advertisers try to circumvent it; AdBlock can have a fix to everyone online within hours. It is definately my favourite extension! I don’t block certain ads like Google, Yahoo, Microsoft (the ones with decent reputations) as that is how the people behind really good websites I frequent make a living. But for all the rest trying to do pop-ups and pop-unders; I am sorry your days are numbered! (Some people higly recommend flashblock but I haven’t had a need to use it with AdBlock Plus yet).
+CustomizeGoogle adds neat tricks to Google services such as always using a secure connection to Gmail; links to other search engines, page histories, Favicons to search and streaming results pages. Comes in handy once in a while; but I don’t use it daily.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-29 00:00:00 +0000 UTC'>November 29, 2008</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Profiling Firefox Extensions I have installed" href="../../profiling-firefox-extensions-i-have/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Research proves video games lack harm
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I am not a big gamer; I primarily love systems and how they work. I do own a PS3 (amazing hardware I might add) and I prefer FPS and generally devious natured video games (like the GTA franchise). Does that make me a bad person who wants to kill people? Of course not; nothing could be further from the truth. But some people stick their fingers in their ears and shout “LA LA LA Columbine LALALA Terrorists LALALA Violent Video Games!”. They say it is destructive to childrens young precious minds. The “Think of The Children” argument always disgusted me; its like shouting Fire in a packed room when their is no danger: it is false, just to garner attention and a sickening twisted version of the facts. Are violent video games harmful to kids? Probably; I wouldn’t advocate giving them access since they; just like movies are clearly rated for Adults. *
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-27 00:00:00 +0000 UTC'>November 27, 2008</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Research proves video games lack harm" href="../../research-proves-video-games-lack-harm/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">SSH Guide
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>**Note: This Guide was written for use by my Computer Science class on Linux (and Mac OS X where noted). I haven’t used SSH on Windows; but hopefully someone can make sure this guide works also on Windows by noting differences). SSH comes with nearly all Linux distros and all Mac OS X releases.
+**
+OS Specific Colours: Linux - Mac OS X - Windows
+**
+**
+**Download SSH For Windows
+**
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-17 00:00:00 +0000 UTC'>November 17, 2008</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to SSH Guide" href="../../ssh-guide/"></a>
+</article>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Web Multimedia Project 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As part of Computer Science you do a couple of general modules which are general in nature about computing; but I think that just reflects the broad use of IT in every part of society today. As things go digital or are created digitally; understanding of this concept is vital; that is where Web Multimedia comes in. For my first project of this second year; I had to do a movie made of stills with custom sound effects. Restrictions on sources of images and sounds (very high percentage had to be self made). Here it is:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2008-11-16 00:00:00 +0000 UTC'>November 16, 2008</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Web Multimedia Project 1" href="../../web-multimedia-project-1/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="../../page/14/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="../../page/16/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-    </body>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

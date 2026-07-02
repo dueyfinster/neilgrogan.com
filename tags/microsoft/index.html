@@ -1,387 +1,326 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Microsoft | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../tags/microsoft/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../tags/microsoft/index.xml">
+<link rel="alternate" hreflang="en" href="../../tags/microsoft/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <title>Microsoft | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+</noscript><meta property="og:title" content="Microsoft" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/microsoft/" />
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../tags/microsoft/index.xml" title="Neil Grogan" />
-    </head>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Microsoft"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="../../">Home</a>&nbsp;»&nbsp;<a href="../../tags/">Tags</a></div>
+  <h1>
+    Microsoft
+    <a href="../../tags/microsoft/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../tags/microsoft/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Chrome vs. Internet Explorer Audience
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Lately both Google and Microsoft have been advertising their respective browsers on British Television (received in Ireland by the vast majority of the population). It’s interesting the different approach each company is taking.
+Chrome ad:
+To me the Chrome ad is very family oriented, stressing the utility of the web and the ease of reaching people and staying in touch. No surprise they didn’t feature Facebook, which is what the vast majority use to keep in touch.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-10-30 00:00:00 +0000 UTC'>October 30, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Chrome vs. Internet Explorer Audience" href="../../chrome-vs-internet-explorer-audience/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Microsoft settles with Eolas over Internet Explorer
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Microsoft has settled with Eolas over a number of patents regarding browser plugins which chicago based Eolas filed patents for in 1998. A jury in Chicago then found Microsoft guilty of infringing on Eolas’ patents and was told to pay $521m US Dollars in ‘damages’. That ruling was overturned and a fresh trial ordered which was due to start very soon, but it seems Microsoft has decided to pay out:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-31 00:00:00 +0000 UTC'>August 31, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Microsoft settles with Eolas over Internet Explorer" href="../../microsoft-settles-with-eolas-over/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dell refunds me for Windows!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As many of you know I am a Linux and Mac aficionado. For my Linux machines, all of them are Dell. I have been always pleased with Dells prices, how their machines work with Linux, their customer service and the fact they are made in Limerick, Ireland (I am from Ireland). I politely emailed Dell (well got up on my high horse), heres my first mail:
+I would like a refund of Windows XP since I am installing Ubuntu Linux on the computer when I get it. When I turn on the computer I am going to decline the EULA, and I am within my rights to request this refund (as part of Irish consumer laws). This also applies in Britian, see here: ( http://news.bbc.co.uk/1/hi/technology/6144782.stm )
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-21 00:00:00 +0000 UTC'>August 21, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Dell refunds me for Windows!" href="../../dell-refunds-me-for-windows/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Seven financial reasons not to use Windows
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I recently read a very insightful article on 7 factors every company should seriously consider about Microsoft Windows, here they are summarised:
+Licensing Costs
+Everyone in the IT industry today knows that proprietary operating systems and the applications that run on them will cost you a lot of money on licensing fees. According to a recent Forrester study, U.S. companies overall are expected to spend $100 billion on software maintenance in 2007.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-06 00:00:00 +0000 UTC'>August 6, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Seven financial reasons not to use Windows" href="../../seven-financial-reasons-not-to-use/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Bill Gates lists Vista &#39;innovations&#39;
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hard to believe really, Mr.Gates lists Windows Vista ‘innovations’. Now Apple has been shipping everything he mentions since 2005, and I have tried Vista, it doesn’t even surpass Apples’ attempt at the software (which should be his aim). Some things have been around for years, but it’s how well your software can do it is the key. Personally I wouldn’t tout features that another competitor does better, but thats just me. It seems irresponsible and unbelieveable the head of a public company can say and get away with this - not knowing the competition that is. I wouldn’t trust my money to anyone who does not keep up with the latest and greatest trends in the industry.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-05-29 00:00:00 +0000 UTC'>May 29, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Bill Gates lists Vista &#39;innovations&#39;" href="../../bill-gates-lists-vista/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Get the facts, about &#34;Get the Facts&#34;
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Just a quick blurb about some things Microsoft like to say: Don’t believe it, well at least not it all anyway. On the Irish “Get the Facts” page (on Windows Server vs. Linux), they make critical errors of judgement a person reasonably well versed in computing could deconstruct. First of all, Linux isn’t a server, its a kernel, like the Windows kernel. So comparing “Windows Server 2003” to “Linux” is misleading to say the least, and stupid to say the most. You could run any server software on Linux you wished, even Windows Server 2003 if Microsoft ported it! For the sake of argument, I think they are comparing themselves to Apache, which runs 60% of worldwide servers[1].
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-01-21 00:00:00 +0000 UTC'>January 21, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Get the facts, about &#34;Get the Facts&#34;" href="../../get-facts-about-get-facts/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Internet Explorer thanks Firefox, sincerely?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Reading my favourite tech news site: Slashdot ( /.), I see the Internet Explorer team have sent the Firefox Team a nice cake:
+One comment I read said it all really:
+Seems even the IE team knows that IE is dead.
+As for the ex-lax, bugs, pubes in the cake of course none of that is true. Those things would only be possible if someone at Microsoft actually made the cake, and that’s not how MS does things. They knew they couldn’t make a good cake so they just went out and bought a cake from someone who already knew how to make one and then stuck their logo on it and called it theirs.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2006-10-26 00:00:00 +0000 UTC'>October 26, 2006</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Internet Explorer thanks Firefox, sincerely?" href="../../internet-explorer-thanks-firefox/"></a>
+</article>
+    </main>
+    
 <footer class="footer">
-	<div class="social-icons">
-        
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-</nav>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-        <div id="content" class="content-container">
-        
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-  <h1>Tagged "microsoft"</h1>
-  
-  
-    
-    <article>
-            <h2>
-                <a href="../../chrome-vs-internet-explorer-audience/">
-                    Chrome vs. Internet Explorer Audience
-                </a>
-            </h2>
-            <div>
-                <p><p>Lately both Google and Microsoft have been advertising their respective browsers
-on British Television (received in Ireland by the vast majority of the
-population). It&rsquo;s interesting the different approach each company is taking.</p>
-<p>Chrome ad:</p>
-<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="http://www.youtube.com/embed/E0qDrRJT4zE" width="560"></iframe>
-<p>To me the Chrome ad is very family oriented, stressing the utility of the web
-and the ease of reaching people and staying in touch. No surprise they
-didn&rsquo;t feature Facebook, which is what the vast majority use to keep in
-touch.<br /></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 30, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../microsoft-settles-with-eolas-over/">
-                    Microsoft settles with Eolas over Internet Explorer
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://www.cbi.cnptia.embrapa.br/xmeeting/include/img/microsoft-logo.jpg"><img src="http://www.cbi.cnptia.embrapa.br/xmeeting/include/img/microsoft-logo.jpg" alt="image"></a><br>
-<a href="http://www.siliconrepublic.com/news/news.nv?storyid=single9119">Microsoft has settled with Eolas</a>
-over a number of patents regarding browser plugins which chicago based Eolas
-filed patents for in 1998. A jury in Chicago then found Microsoft guilty of
-infringing on Eolas’ patents and was told to pay $521m US Dollars in &lsquo;damages&rsquo;.
-That ruling was overturned and a fresh trial ordered which was due to start very
-soon, but it seems Microsoft has decided to pay out:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 31, 2007</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../dell-refunds-me-for-windows/">
-                    Dell refunds me for Windows!
-                </a>
-            </h2>
-            <div>
-                <p><p>As many of you know I am a <a href="http://www.ubuntu.com/">Linux</a> and
-<a href="http://www.apple.com/mac">Mac</a>
-<a href="http://www.google.ie/search?q=define:aficionado&amp;ie=utf-8&amp;oe=utf-8&amp;=t&amp;=com.ubuntu:en-US:official&amp;=firefox-a">aficionado</a>.
-For my Linux machines, all of them are <a href="http://www.dell.com/open">Dell</a>. I have
-been always pleased with Dells prices, how their machines work with Linux, their
-customer service and the fact they are made in Limerick, Ireland (I am from
-Ireland). I politely emailed Dell (well got up on my high horse), heres my first
-mail:</p>
-<blockquote>
-<p>I would like a refund of Windows XP since I am installing Ubuntu Linux on the
-computer when I get it. When I turn on the computer I am going to decline the
-EULA, and I am within my rights to request this refund (as part of Irish
-consumer laws). This also applies in Britian, see here: (
-<a href="http://news.bbc.co.uk/1/hi/technology/6144782.stm">http://news.bbc.co.uk/1/hi/technology/6144782.stm</a>
-)</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 21, 2007</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../seven-financial-reasons-not-to-use/">
-                    Seven financial reasons not to use Windows
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://img516.imageshack.us/my.php?image=windowslogo2oy4.jpg"><img src="http://img516.imageshack.us/img516/8713/windowslogo2oy4.jpg" alt="image"></a><br>
-I
-recently read a very insightful article on 7 factors every company should
-seriously consider about Microsoft Windows, here they are summarised:</p>
-<ol>
-<li>
-<p>Licensing Costs</p>
-<blockquote>
-<p>Everyone in the IT industry today knows that proprietary operating systems
-and the applications that run on them will cost you a lot of money on
-licensing fees. According to a recent Forrester study, U.S. companies
-overall are expected to spend $100 billion on software maintenance in 2007.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 6, 2007</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../bill-gates-lists-vista/">
-                    Bill Gates lists Vista &#39;innovations&#39;
-                </a>
-            </h2>
-            <div>
-                <p><p>Hard to believe really, Mr.Gates lists Windows Vista &lsquo;innovations&rsquo;. Now Apple
-has been shipping everything he mentions since 2005, and I have tried Vista, it
-doesn&rsquo;t even surpass Apples&rsquo; attempt at the software (which should be his aim).
-Some things have been around for years, but it&rsquo;s how well your software can do
-it is the key. Personally I wouldn&rsquo;t tout features that another competitor does
-better, but thats just me. It seems irresponsible and unbelieveable the head of
-a public company can say and get away with this - not knowing the competition
-that is. I wouldn&rsquo;t trust my money to anyone who does not keep up with the
-latest and greatest trends in the industry.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 29, 2007</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../get-facts-about-get-facts/">
-                    Get the facts, about &#34;Get the Facts&#34;
-                </a>
-            </h2>
-            <div>
-                <p><p>Just a quick blurb about some things Microsoft like to say: Don&rsquo;t believe it,
-well at least not it all anyway. On the
-<a href="http://www.microsoft.com/ireland/getthefacts/default.mspx" title="Irish Get the Facts">Irish &ldquo;Get the Facts&rdquo; page</a>
-(on Windows Server vs. Linux), they make critical errors of judgement a person
-reasonably well versed in computing could deconstruct. First of all, Linux isn&rsquo;t
-a server, its a kernel, like the Windows kernel. So comparing &ldquo;Windows Server
-2003&rdquo; to &ldquo;Linux&rdquo; is misleading to say the least, and stupid to say the most. You
-could run any server software on Linux you wished, even Windows Server 2003 if
-Microsoft ported it! For the sake of argument, I think they are comparing
-themselves to Apache, which runs 60% of worldwide
-servers<a href="http://news.netcraft.com/archives/2007/01/05/january_2007_web_server_survey.html" title="Netcraft Server Marketshare">[1]</a>.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 21, 2007</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../internet-explorer-thanks-firefox/">
-                    Internet Explorer thanks Firefox, sincerely?
-                </a>
-            </h2>
-            <div>
-                <p><p>Reading my favourite tech news site: Slashdot ( <a href="http://slashdot.org/articles/06/10/26/1238239.shtml">/.</a>), I see the <a href="http://blogs.msdn.com/ie/">Internet
-Explorer team</a> have sent the <a href="http://getfirefox.com/">Firefox Team</a> a nice cake:</p>
-<p><img src="http://static.flickr.com/118/278562314_14716c0232.jpg" alt="MS IE Cake for Firefox
-2"></p>
-<p>One comment I read said it all really:</p>
-<blockquote>
-<p>Seems even the IE team knows that IE is dead.</p>
-<p>As for the ex-lax, bugs, pubes in the cake of course none of that is true.
-Those things would only be possible if someone at Microsoft actually made the
-cake, and that&rsquo;s not how MS does things. They knew they couldn&rsquo;t make a good
-cake so they just went out and bought a cake from someone who already knew how
-to make one and then stuck their logo on it and called it theirs.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 26, 2006</time>
-            </div> 
-        </article>
-    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-    
+</script>
+</body>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
-</footer>
-    </body>
 </html>

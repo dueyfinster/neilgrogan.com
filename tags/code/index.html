@@ -1,528 +1,373 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Code | Neil Grogan</title>
+<meta name="keywords" content="">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../tags/code/">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../tags/code/index.xml">
+<link rel="alternate" hreflang="en" href="../../tags/code/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    <title>Code | Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    </style>
+</noscript><meta property="og:title" content="Code" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/code/" />
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../tags/code/index.xml" title="Neil Grogan" />
-    </head>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Code"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="../../">Home</a>&nbsp;»&nbsp;<a href="../../tags/">Tags</a></div>
+  <h1>
+    Code
+    <a href="../../tags/code/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../tags/code/index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Convert Bank Transactions XLS to CSV in Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve written previously on importing transactions to hledger/ledger from KBC bank in JavaScript and PTSB bank in Python. I took different approaches to each:
+For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV For PTSB, the script automatted logging in, get the transaction table and save locally as CSV Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code. The KBC/JavaScript approach was a bit more robust in that it would just search for rows on a website and download as CSV.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-25 00:00:00 +0000 UTC'>November 25, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Convert Bank Transactions XLS to CSV in Python" href="../../bank-xls-csv/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Scraping Transaction Data from KBC Bank
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In a previous post, I mentioned importing transactions using ledger/hledger and plain text accounting. As my former bank PTSB recently raised their fees, I decided to move to KBC. I was excited to see, as part of the open payments directive, they have a nice developer portal. I reached out to KBC’s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-05-13 00:00:00 +0000 UTC'>May 13, 2019</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Scraping Transaction Data from KBC Bank" href="../../kbc-tx-js/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Python 3 In-Memory Zip File
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> In Python, BytesIO is the way to store binary data in memory. Most examples you’ll see using zip files in memory is to store string data and indeed the most common example you’ll find online from the zipfile module is zipfile.writestr(file_name, &#34;Text Data&#34;). But what if you want to store binary data of a PDF or Excel Spreadsheet that’s also in memory? You could use zipfile.write() (designed to take binary data) but then you can’t specify a filename (since our in-memory file was never written to a location on disk). The reason for this is simple: for a web request or for a test case, you shouldn’t need to store any files on disk.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-01-14 00:00:00 +0000 UTC'>January 14, 2018</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Python 3 In-Memory Zip File" href="../../py-bin-zip/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Scraping Data from your Bank in Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As part of my previous posts, I talked about ledger and plain text accounting. The only part missing is that you need a method to import transactions from your bank. For this I have been doing this by hand, bi-weekly. I would have to do the following:
+Log in to online banking Go to the transactions page Select the date range for transactions I needed (double check last date of transaction in ledger at this point) Download the Microsoft Excel format file that wasn’t in the proper format Convert this Excel file into a CSV file that matched my import format (watch the dates, is it YYYY-MM-DD or DD/MM/YYYY?) Finally import the CSV file into ledger Check the balance matches between my online banking and ledger Sounds like a lot of work right?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2017-07-12 00:00:00 +0000 UTC'>July 12, 2017</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Scraping Data from your Bank in Python" href="../../bank-tx-py/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Slack Bots for Work
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In a previous post, I mentioned how I get notified of the restaurant menu via a Ruby script. Recently I’ve moved to a totally different product area and the main communication channel we use is Slack. Naturally enough, I ported the Ruby code I wrote, and it now posts the menu every day to our Slack channel.
+This also got me thinking of what other information would be handy to have. I scouted around for ideas and came up with an obvious one: reminder of the bus times to and from the office. So here’s my bus times notification slack bot:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2017-02-16 00:00:00 +0000 UTC'>February 16, 2017</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Slack Bots for Work" href="../../slack-bot/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Automatic Newsletter Cleanup in Gmail
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>If you haven’t tried Google Apps Script, I found a really nifty use for it: smart filtering for email. Wait, shouldn’t I just use Gmails’ built-in filters? As it turns out you can’t - my filter needs to act on email that matched that filter in the past. So in other words: a filter can only act on email it actually “filters”, which kinda makes sense! I’m a big fan of automation (and email is ripe for automation), as you can see from my post on meetings in Outlook.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-08-19 00:00:00 +0000 UTC'>August 19, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Automatic Newsletter Cleanup in Gmail" href="../../gmail-newsletter-filter/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fill hours worked in SAP Netweaver Automatically
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Continuing the theme of automation, one of the most repetitive tasks if you work for a big company is timesheets. So I set out to rectify this by scripting it!
+Start with you configuration, I named mine hours.ini:
+[DEFAULT] url = FILL_ME_IN username = FILL_ME_IN password = FILL_ME_IN then we need the magic of Selenium to do the heavy lifting, so we install it:
+$ pip3 install selenium I called this script, unsurprisingly hours.py:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-02-01 00:00:00 +0000 UTC'>February 1, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Fill hours worked in SAP Netweaver Automatically" href="../../autohours/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Automated &#39;Push&#39; Restaurant menu
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I love trying to automate the world, it just feels like magic some of the time! I also really enjoy information coming to me, instead of having to seek it. As we are still only in 2016, we have no world killing Artificial Intelligence (yet). So we have to start small, ease the first world problems! So I decided to make my workplaces’ restaurant menu come to me!
+I decided to write it in Ruby and use push notifications, rather than email or SMS. It uses a web automation framework called Selenium, which is available in many languages, including Javascript, Python, Java and obviously Ruby!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2016-01-10 00:00:00 +0000 UTC'>January 10, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Automated &#39;Push&#39; Restaurant menu" href="../../rest-menu/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Automatically Decline and Delete or Accept and Delete Outlook 2010 Meetings
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>You can follow the Microsoft TechNet guide to add VisualBasic code in Outlook rules.
+You can just replace the code they give with this:
+Sub AutoDeclineMeetings(oRequest As MeetingItem) &#39; If its not a meeting, we don&#39;t process If oRequest.MessageClass &lt;&gt; &#34;IPM.Schedule.Meeting.Request&#34; Then Exit Sub End If &#39; Get the appointment in the meeting Dim oAppt As AppointmentItem Set oAppt = oRequest.GetAssociatedAppointment(True) &#39; Send a decline response Dim oResponse Set oResponse = oAppt.Respond(olMeetingDeclined, True) oResponse.Send &#39; Lastly, delete the message oRequest.Delete End Sub Sub AutoAcceptMeetings(oRequest As MeetingItem) &#39; If its not a meeting, we don&#39;t process If oRequest.MessageClass &lt;&gt; &#34;IPM.Schedule.Meeting.Request&#34; Then Exit Sub End If &#39; Get the appointment in the meeting Dim oAppt As AppointmentItem Set oAppt = oRequest.GetAssociatedAppointment(True) &#39; Send an accept response Dim oResponse Set oResponse = oAppt.Respond(olMeetingAccepted, True) oResponse.Send &#39; Lastly, (optionally) delete the message &#39;oRequest.Delete End Sub For anything else you may want to do with the meeting, check the Outlook Visual Basic Developer Docs.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2015-10-06 00:00:00 +0000 UTC'>October 6, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Automatically Decline and Delete or Accept and Delete Outlook 2010 Meetings" href="../../outlook/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Very Simple Java Twitter Bot (Twitter4J)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Below is code for the start of a Twitter bot I am going to build in Java. It’s the most basic way of getting Oauth working (with any account, not just your developer account) and it shows your timeline and can update your status - that’s it for now. The neat thing is it uses Java’s awesome serialisation, so you only should have to authorise your twitter account once!
+What you will need: Twitter4j Libraries Oauth Consumer and Secret Key off twitter That is it! What the code does: Once only:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2012-02-01 00:00:00 +0000 UTC'>February 1, 2012</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Very Simple Java Twitter Bot (Twitter4J)" href="../../very-simple-java-twitter-bot-twitter4j/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="../../tags/code/page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
 <footer class="footer">
-	<div class="social-icons">
-        
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-</nav>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
-        <div id="content" class="content-container">
-        
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
 
-  <h1>Tagged "code"</h1>
-  
-  
-    
-    <article>
-            <h2>
-                <a href="../../bank-xls-csv/">
-                    Convert Bank Transactions XLS to CSV in Python
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../../ledger">ledger</a> from
-<a href="../../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../../bank-tx-py">PTSB</a> bank in Python. I took different
-approaches to each:</p>
-<ul>
-<li>For KBC, you needed to log in and run Javascript which scrape the transaction
-table and download it formatted as CSV</li>
-<li>For PTSB, the script automatted logging in, get the transaction table and save
-locally as CSV</li>
-</ul>
-<p>Both approaches are valid - but suffer from the same issues: any change the bank
-makes to it website needs to be updated in the code. The KBC/JavaScript approach
-was a bit more robust in that it would just search for rows on a website and
-download as CSV.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 25, 2022</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../kbc-tx-js/">
-                    Scraping Transaction Data from KBC Bank
-                </a>
-            </h2>
-            <div>
-                <p><p>In a previous post, I mentioned <a href="../../bank-tx-py">importing transactions</a> using
-<a href="../../ledger">ledger</a>/<a href="https://hledger.org/">hledger</a> and plain text accounting. As my former bank <a href="https://www.permanenttsb.ie/">PTSB</a>
-recently raised their fees, I decided to move to <a href="https://www.kbc.ie/">KBC</a>. I was excited to see,
-as part of the open payments directive, they have a nice <a href="https://www.kbc.ie/psd2-developer-portal/home">developer
-portal</a>. I reached out to KBC&rsquo;s dev team, but alas they are only accepting
-registered companies, who meet stringent criteria. They told me they hope to
-open it up soon to end users, I live in hope!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 13, 2019</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../py-bin-zip/">
-                    Python 3 In-Memory Zip File
-                </a>
-            </h2>
-            <div>
-                <p><p>
-In Python, <a href="https://docs.python.org/3/library/io.html#io.BytesIO">BytesIO</a> is the way to store binary data in memory. Most examples you’ll see using zip files in memory is to store string data and indeed the most common example you’ll find online from the <a href="https://docs.python.org/3/library/zipfile.html">zipfile</a> module is <code>zipfile.writestr(file_name, &#34;Text Data&#34;)</code>. But what if you want to store binary data of a PDF or Excel Spreadsheet that’s also in memory?  You could use <code>zipfile.write()</code> (designed to take binary data) but then you can’t specify a filename (since our in-memory file was never written to a location on disk). The reason for this is simple: for a web request or for a test case, you shouldn’t need to store any files on disk.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 14, 2018</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../bank-tx-py/">
-                    Scraping Data from your Bank in Python
-                </a>
-            </h2>
-            <div>
-                <p><p>As part of my previous posts, I talked about <a href="../../ledger">ledger</a> and plain text
-accounting. The only part missing is that you need a method to import
-transactions from your bank. For this I have been doing this by hand, bi-weekly.
-I would have to do the following:</p>
-<ol>
-<li>Log in to online banking</li>
-<li>Go to the transactions page</li>
-<li>Select the date range for transactions I needed (double check last date of
-transaction in ledger at this point)</li>
-<li>Download the <a href="https://en.wikipedia.org/wiki/Microsoft_Excel">Microsoft Excel</a> format file that wasn&rsquo;t in the proper format</li>
-<li>Convert this Excel file into a CSV file that matched my import format (watch
-the dates, is it YYYY-MM-DD or DD/MM/YYYY?)</li>
-<li>Finally import the CSV file into ledger</li>
-<li>Check the balance matches between my online banking and ledger</li>
-</ol>
-<p><em>Sounds like a lot of work right?</em></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 12, 2017</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../slack-bot/">
-                    Slack Bots for Work
-                </a>
-            </h2>
-            <div>
-                <p><p>In a previous post, I mentioned how I get notified of the <a href="../../rest-menu">restaurant
-menu</a> via a Ruby script. Recently I&rsquo;ve moved to a totally different
-product area and the main communication channel we use is <a href="https://www.slack.com">Slack</a>. Naturally
-enough, I ported the Ruby code I wrote, and it now posts the menu every day to
-our Slack channel.</p>
-<p>This also got me thinking of what other information would be handy to have. I
-scouted around for ideas and came up with an obvious one: reminder of the bus
-times to and from the office. So here&rsquo;s my bus times notification slack bot:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 16, 2017</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../gmail-newsletter-filter/">
-                    Automatic Newsletter Cleanup in Gmail
-                </a>
-            </h2>
-            <div>
-                <p><p>If you haven&rsquo;t tried <a href="https://developers.google.com/apps-script/">Google Apps Script</a>, I found a really nifty use for it:
-<em>smart filtering</em> for email. Wait, shouldn&rsquo;t I just use Gmails&rsquo; built-in
-filters? As it turns out you can&rsquo;t - my filter needs to act on email that
-matched that filter <em>in the past</em>. So in other words: a filter can only act on
-email it actually &ldquo;filters&rdquo;, which kinda makes sense! I&rsquo;m a big fan of
-automation (and email is ripe for automation), as you can see from <a href="../../outlook">my post on
-meetings in Outlook</a>.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 19, 2016</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../autohours/">
-                    Fill hours worked in SAP Netweaver Automatically
-                </a>
-            </h2>
-            <div>
-                <p><p>Continuing the theme of automation, one of the most repetitive tasks if you work
-for a big company is timesheets. So I set out to rectify this by scripting it!</p>
-<p>Start with you configuration, I named mine <code>hours.ini</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[DEFAULT]
-</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> FILL_ME_IN
-</span></span><span style="display:flex;"><span>username <span style="color:#f92672">=</span> FILL_ME_IN
-</span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> FILL_ME_IN
-</span></span></code></pre></div><p>then we need the magic of <a href="http://www.seleniumhq.org/">Selenium</a> to do the heavy
-lifting, so we install it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ pip3 install selenium
-</span></span></code></pre></div><p>I called this script, unsurprisingly <code>hours.py</code>:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 1, 2016</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../rest-menu/">
-                    Automated &#39;Push&#39; Restaurant menu
-                </a>
-            </h2>
-            <div>
-                <p><p>I love trying to automate the world, it just feels like magic some of the time!
-I also really enjoy information coming to me, instead of having to seek it. As
-we are still only in 2016, we have no world killing Artificial Intelligence
-(yet). So we have to start small, ease the first world problems! So I decided to
-make my workplaces&rsquo; restaurant menu come to me!</p>
-<p>I decided to write it in Ruby and use push notifications, rather than email or
-SMS. It uses a web automation framework called
-<a href="http://www.seleniumhq.org/">Selenium</a>, which is available in many languages,
-including Javascript, Python, Java and obviously Ruby!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 10, 2016</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../outlook/">
-                    Automatically Decline and Delete or Accept and Delete Outlook 2010 Meetings
-                </a>
-            </h2>
-            <div>
-                <p><p>You can follow the
-<a href="https://web.archive.org/web/20151016112956/http://blogs.technet.com/b/sharepoint_republic/archive/2011/12/09/outlook-rule-to-auto-accept-or-auto-decline-meeting-invites.aspx">Microsoft TechNet guide to add VisualBasic code in Outlook rules</a>.</p>
-<p>You can just replace the code they give with this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-vb" data-lang="vb"><span style="display:flex;"><span><span style="color:#66d9ef">Sub</span> <span style="color:#a6e22e">AutoDeclineMeetings</span>(oRequest <span style="color:#f92672">As</span> MeetingItem)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; If its not a meeting, we don&#39;t process
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">If</span> oRequest.MessageClass <span style="color:#f92672">&lt;&gt;</span> <span style="color:#e6db74">&#34;IPM.Schedule.Meeting.Request&#34;</span> <span style="color:#66d9ef">Then</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Exit</span> <span style="color:#66d9ef">Sub</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">End</span> <span style="color:#66d9ef">If</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Get the appointment in the meeting
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">Dim</span> oAppt <span style="color:#f92672">As</span> AppointmentItem
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">Set</span> oAppt <span style="color:#f92672">=</span> oRequest.GetAssociatedAppointment(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Send a decline response
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">Dim</span> oResponse
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Set</span> oResponse <span style="color:#f92672">=</span> oAppt.Respond(olMeetingDeclined, <span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>    oResponse.Send
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Lastly, delete the message
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>oRequest.Delete
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">End</span> <span style="color:#66d9ef">Sub</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">Sub</span> <span style="color:#a6e22e">AutoAcceptMeetings</span>(oRequest <span style="color:#f92672">As</span> MeetingItem)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; If its not a meeting, we don&#39;t process
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">If</span> oRequest.MessageClass <span style="color:#f92672">&lt;&gt;</span> <span style="color:#e6db74">&#34;IPM.Schedule.Meeting.Request&#34;</span> <span style="color:#66d9ef">Then</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Exit</span> <span style="color:#66d9ef">Sub</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">End</span> <span style="color:#66d9ef">If</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Get the appointment in the meeting
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">Dim</span> oAppt <span style="color:#f92672">As</span> AppointmentItem
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">Set</span> oAppt <span style="color:#f92672">=</span> oRequest.GetAssociatedAppointment(<span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Send an accept response
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">Dim</span> oResponse
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">Set</span> oResponse <span style="color:#f92672">=</span> oAppt.Respond(olMeetingAccepted, <span style="color:#66d9ef">True</span>)
-</span></span><span style="display:flex;"><span>    oResponse.Send
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&#39; Lastly, (optionally) delete the message
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#39;oRequest.Delete
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">End</span> <span style="color:#66d9ef">Sub</span>
-</span></span></code></pre></div><p>For anything else you may want to do with the meeting, check the
-<a href="https://docs.microsoft.com/en-us/previous-versions/office/dn320338(v=office.15)">Outlook Visual Basic Developer Docs</a>.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 6, 2015</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../very-simple-java-twitter-bot-twitter4j/">
-                    Very Simple Java Twitter Bot (Twitter4J)
-                </a>
-            </h2>
-            <div>
-                <p><p>Below is code for the start of a Twitter bot I am going to build in Java. It&rsquo;s
-the most basic way of getting Oauth working (with any account, not just your
-developer account) and it shows your timeline and can update your status -
-that&rsquo;s it for now. The neat thing is it uses Java&rsquo;s awesome serialisation, so
-you only should have to authorise your twitter account once!</p>
-<h3 id="what-you-will-need">What you will need:</h3>
-<ul>
-<li>Twitter4j Libraries</li>
-<li>Oauth Consumer and Secret Key off twitter</li>
-<li><strong>That is it!</strong></li>
-</ul>
-<script src="https://gist.github.com/2469810.js"> </script>
-<h3 id="what-the-code-does">What the code does:</h3>
-<ol>
-<li>
-<p><strong>Once only:</strong></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 1, 2012</time>
-            </div> 
-        </article>
-    
-  
-    
-    <article>
-            <h2>
-                <a href="../../output-percentage-of-file-bash-code/">
-                    Output Percentage of File (Bash code)
-                </a>
-            </h2>
-            <div>
-                <p><p>I wrote this script recently for a friend in a job who needed to output a
-certain percentage of a log file, but no more and no less. This was in Linux
-using bash, so I had a go at writing a solution, which you see below. Posting
-this up in case it&rsquo;s useful to anyone else!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> <span style="color:#75715e"># !/bin/sh # Public Domain, by Neil Grogan 2010 # Script</span>
-</span></span><span style="display:flex;"><span>to output last 30% of file by lines
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    OLDFILE<span style="color:#f92672">=</span>&amp;quot;oldlog.txt&amp;quot;
-</span></span><span style="display:flex;"><span>    NEWFILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;newlog.txt&#34;</span>
-</span></span><span style="display:flex;"><span>    PERCENT<span style="color:#f92672">=</span>0.7
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#Use wc to count lines</span>
-</span></span><span style="display:flex;"><span>    LINES<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>wc -l $OLDFILE | awk <span style="color:#e6db74">&#39;{ print $1}&#39;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#Linespercent = 2 decimal places, lines by percent, round to whole</span>
-</span></span><span style="display:flex;"><span>    LINESPERCENT<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>echo <span style="color:#e6db74">&#34;scale=2; </span>$LINES<span style="color:#e6db74">*</span>$PERCENT<span style="color:#e6db74">&#34;</span> | bc | xargs printf <span style="color:#e6db74">&#34;%1.0f&#34;</span> <span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Use tail to get last 30% and output, can use tail -s with sleep time to have it run on sched.</span>
-</span></span><span style="display:flex;"><span>    tail -n $LINESPERCENT $OLDFILE &gt;&gt; $NEWFILE</span></span></code></pre></div></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 5, 2011</time>
-            </div> 
-        </article>
-    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
 
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
-    
+</script>
+</body>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
-</footer>
-    </body>
 </html>

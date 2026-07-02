@@ -1,622 +1,361 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.135.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Neil Grogan</title>
 
-    <title>Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../index.xml">
+<link rel="alternate" type="application/json" href="../../index.json">
+<link rel="alternate" hreflang="en" href="../../">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Neil Grogan" />
-    </head>
+    </style>
+</noscript><meta property="og:title" content="Neil Grogan" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Neil Grogan"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
 
+</head>
 
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
-</footer>
-</nav>
+</script>
 
-        <div id="content" class="content-container">
-        
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="../../review-of-official-ubuntu-book-second/">
-                    Review of the Official Ubuntu Book, Second Edition (2007)
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://ec1.images-amazon.com/images/I/51tftxZawYL._SS500_.jpg"><img src="http://ec1.images-amazon.com/images/I/51tftxZawYL._SS500_.jpg" alt="image"></a>The
-Ubuntu Book (2nd Edition) is a nicely put together book for dealing with the
-Linux operating system in a number of clearly laid out and well presented
-chapters. Chapters are as follows:</p>
-<ol>
-<li>Introducing Ubuntu</li>
-<li>Installing Ubuntu</li>
-<li>Using Ubuntu on the Desktop</li>
-<li>Advanced Usage and Managing Ubuntu</li>
-<li>Ubuntu Server</li>
-<li>Support / Typical Problems</li>
-<li>Using Kubuntu</li>
-<li>Ubuntu Community</li>
-<li>Ubuntu-Related Projects</li>
-<li>Using Edubuntu</li>
-</ol>
-<p>This book is a very complete introduction and contains suprising elements
-related to finding out and joining the community of users - which you will not
-find in other Ubuntu Books (such as O&rsquo;Reilly&rsquo;s Ubuntu Hacks) which make it a
-unique and worthwhile addition to any Ubuntu users personal library. It is most
-helpful to new users to Ubuntu, which sections on installing and help with
-problems that could be faced. Having said that, it falls short on the amount of
-truly unique information that it contains - most of the books contents can be
-found on the web. What you are paying for is a well-laid out, well written
-account of the Ubuntu-sphere and all that goes along with it.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 4, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/book">#book</a>
-                
-                    <a class="tag" href="../../tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../institute-of-technology-blanchardstown/">
-                    Institute of Technology, Blanchardstown
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://www.itb.ie/site/Images/newitbbanner760x95.jpg"><img src="http://www.itb.ie/site/Images/newitbbanner760x95.jpg" alt="image"></a>I
-have got a place in a 4 year
-<a href="http://www.itb.ie/site/courses/bn104.htm">Bachelor of Science (Honours) in Computing</a>,
-or more commonly known as Computer Science (or comp sci as I am lazy and like to
-abbreviate). This means I might be blogging slightly less sometimes, but it
-should be a hell of a lot more interesting and I promise to keep my posts not
-too technical as I have up to this point.</p>
-<p>I would like to thank you all for subscribing and I hope you&rsquo;ll enjoy what is to
-come in the future!!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 1, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/education">#education</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../microsoft-settles-with-eolas-over/">
-                    Microsoft settles with Eolas over Internet Explorer
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://www.cbi.cnptia.embrapa.br/xmeeting/include/img/microsoft-logo.jpg"><img src="http://www.cbi.cnptia.embrapa.br/xmeeting/include/img/microsoft-logo.jpg" alt="image"></a><br>
-<a href="http://www.siliconrepublic.com/news/news.nv?storyid=single9119">Microsoft has settled with Eolas</a>
-over a number of patents regarding browser plugins which chicago based Eolas
-filed patents for in 1998. A jury in Chicago then found Microsoft guilty of
-infringing on Eolas’ patents and was told to pay $521m US Dollars in &lsquo;damages&rsquo;.
-That ruling was overturned and a fresh trial ordered which was due to start very
-soon, but it seems Microsoft has decided to pay out:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 31, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/microsoft">#microsoft</a>
-                
-                    <a class="tag" href="../../tags/internet">#internet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../gutsy-coming-along-update-to-dell/">
-                    Gutsy coming along, Update to Dell Windows Refund..
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://www.ubuntu.com/themes/ubuntu07/images/ubuntulogo.png"><img src="http://www.ubuntu.com/themes/ubuntu07/images/ubuntulogo.png" alt="image"></a><br>
-I
-just tried Herd 5 of Gutsy Gibbon, a beta release which will be Ubuntu 07.10
-released in October. Obviously it is still early stages and a lot of things
-aren&rsquo;t working quite as they should, but it looks very promising. Here&rsquo;s some
-new stuff which should hit the final release:</p>
-<ul>
-<li>Compiz Fusion - Pretty Graphics that leave you in awe&hellip;</li>
-<li>Bullet Proof X - Making sure you&rsquo;ll never see a terminal prompt not of your
-own choosing, basically the graphics server should be &lsquo;bulletproof&rsquo;</li>
-<li>Appearance Manager - Making it easier to change yourbuntu&rsquo;s look and feel</li>
-<li>Better Driver Support - More of those restricted drivers to make sure you can
-see your screen and use your wifi card</li>
-<li>Simplified Codecs install - It will now be painless, install
-ubuntu-restrictedcodecs (or kubuntu-restricted codecs) and you can see Youtube
-in all its glory, play a dvd, watch that porno WMV file (just kidding but I
-think thats all WMV is used for) and other such niceties of the propreitry
-world we have to put up with</li>
-<li>Firefox Codecs Plugin - Firefox will be hooked up to the package manager and
-prompt to install Flash/Java if you haven&rsquo;t got it already, much the same way
-it prompts to get a codec when you throw a file at it that it cannot play in
-the movie player. The free software Gnash replacement for Flash will come as
-standard and can play Youtube Vids.</li>
-<li>Dual Screen Glory - If your like me you have a nice and small portable laptop,
-but that screen just won&rsquo;t do all of the time, thats why I personally have a
-19&quot; to plug my 13&quot; MacBook into. With Gutsy I should be able to plug and play
-over DVI.</li>
-</ul>
-<p>These are just some of the features that are being worked on for the final
-release. Probably not all of them on the list will get into Gutsy final, but
-lets hope they do! Gutsy+1 (slated for release April 2008) has been announced as
-&ldquo;Hardy Hereon&rdquo; and should be a long term release (5 years server and 3 years
-desktop updates and
-patches).<a href="http://blog.kir.com/archives/dell_logo2.jpg"><img src="http://blog.kir.com/archives/dell_logo2.jpg" alt="image"></a></p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 29, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/windows">#windows</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../dell-refunds-me-for-windows/">
-                    Dell refunds me for Windows!
-                </a>
-            </h2>
-            <div>
-                <p><p>As many of you know I am a <a href="http://www.ubuntu.com/">Linux</a> and
-<a href="http://www.apple.com/mac">Mac</a>
-<a href="http://www.google.ie/search?q=define:aficionado&amp;ie=utf-8&amp;oe=utf-8&amp;=t&amp;=com.ubuntu:en-US:official&amp;=firefox-a">aficionado</a>.
-For my Linux machines, all of them are <a href="http://www.dell.com/open">Dell</a>. I have
-been always pleased with Dells prices, how their machines work with Linux, their
-customer service and the fact they are made in Limerick, Ireland (I am from
-Ireland). I politely emailed Dell (well got up on my high horse), heres my first
-mail:</p>
-<blockquote>
-<p>I would like a refund of Windows XP since I am installing Ubuntu Linux on the
-computer when I get it. When I turn on the computer I am going to decline the
-EULA, and I am within my rights to request this refund (as part of Irish
-consumer laws). This also applies in Britian, see here: (
-<a href="http://news.bbc.co.uk/1/hi/technology/6144782.stm">http://news.bbc.co.uk/1/hi/technology/6144782.stm</a>
-)</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 21, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/windows">#windows</a>
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/microsoft">#microsoft</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../have-you-got-viruses-or-spyware-heres/">
-                    Have you got viruses or spyware? Here&#39;s my tips!
-                </a>
-            </h2>
-            <div>
-                <p><p>I come into contact everyday with people asking how to fix their machines due to
-the inevitable spyware and viruses found on a Windows machine. Lately I have
-been switching people to <a href="http://www.ubuntu.com/">Ubuntu</a>, and even getting them
-to buy machines to install it on (<a href="http://www.dell.com/open">Dell</a>). But I
-understand and have no zealotry for Linux when it comes to fixing peoples&rsquo; real
-world problems. I always mention <a href="http://www.ubuntu.com/">Ubuntu</a> as a matter of
-course, and also <a href="http://www.apple.com/mac">Macs</a>. I follow up peoples Ubuntu
-installs with friendly emails explaining the free help open to them, but also as
-common (probably moreso) are my emailed tips to people guiding them how to fix
-there Windows XP computer. So I&rsquo;ll list the steps here which are generic and
-should help anyone out their with such problems; this is not a miracle cure and
-I fix these problems on a case by case basis, so expect better perfromance, but
-not a new computer!!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 16, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/security">#security</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../seven-financial-reasons-not-to-use/">
-                    Seven financial reasons not to use Windows
-                </a>
-            </h2>
-            <div>
-                <p><p><a href="http://img516.imageshack.us/my.php?image=windowslogo2oy4.jpg"><img src="http://img516.imageshack.us/img516/8713/windowslogo2oy4.jpg" alt="image"></a><br>
-I
-recently read a very insightful article on 7 factors every company should
-seriously consider about Microsoft Windows, here they are summarised:</p>
-<ol>
-<li>
-<p>Licensing Costs</p>
-<blockquote>
-<p>Everyone in the IT industry today knows that proprietary operating systems
-and the applications that run on them will cost you a lot of money on
-licensing fees. According to a recent Forrester study, U.S. companies
-overall are expected to spend $100 billion on software maintenance in 2007.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 6, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/microsoft">#microsoft</a>
-                
-                    <a class="tag" href="../../tags/windows">#windows</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../hp-to-follow-dell-into-open-source/">
-                    HP to Follow Dell into Open Source? and Ubuntu Home Server
-                </a>
-            </h2>
-            <div>
-                <p><p>HP it seems is responding to Dell&rsquo;s initiative to sell Ubuntu on their
-computers. With the Ubuntu Dells reportedly selling very well and Dell rolling
-out the program worldwide, this hasn&rsquo;t escaped the notice of the world&rsquo;s number
-one computer manufacturer - HP. This is speculation from blogs that has been
-going on for months since Dell started to offer Ubuntu. The Direct to Dell Blog
-states:</p>
-<blockquote>
-<p>This
-<a href="http://tomdryer.com/blog/index.php/2007/07/03/is-hp-going-to-start-offering-ubuntu/">recent post from Tom Dryer</a>
-caught my eye a couple of days ago, and thought I&rsquo;d comment on it here. If the
-rumors about HP offering Ubuntu are true, we&rsquo;re glad to see other vendors join
-us in support of Ubuntu and open source. We welcome HP and other system
-vendors that want to join in this initiative.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 8, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../windows-vista-security-better-than/">
-                    Windows Vista Security - Better than Linux?
-                </a>
-            </h2>
-            <div>
-                <p><p>After reading a
-<a href="http://blogs.csoonline.com/node/218">nice article written by Jeff Jones</a>, a
-security researcher for Microsoft. He says
-<a href="http://blogs.csoonline.com/exactly_how_biased_am_i">he isn&rsquo;t biased</a>, saying he
-worked over 75% of his career outside Microsoft, using Slackware Linux, Unix, HP
-Unix etc. He claims Windows Vista has less security holes than popular versions
-of Linux, such as Ubuntu (he also compares Red Hat, Novell, Mac OS X). First let
-me say why his facts are distorted, and why he knows his facts are distorted.
-His facts do raise an issue of slow patching of vulnerabilities across the
-software Industry, but Linux performs the best consistently because anyone can
-audit the code. Here&rsquo;s why his comparisons are uneven:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 3, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/windows">#windows</a>
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../threats-to-democracy/">
-                    Threats to Democracy
-                </a>
-            </h2>
-            <div>
-                <p><p>After reading about
-<a href="http://uk.reuters.com/article/entertainmentNews/idUKL253889920070625?feedType=RSS&amp;rpc=451&amp;sp=true">Tom Cruise being banned from filming at certain German military sites because of his belief in Scientology</a>,
-I was a bit outraged at first, despite my abhorrence of their beliefs, which I
-think are crazy and nonsensical.</p>
-<p><a href="../../img/07/Image:Scientology_warning_leaflet.jpg"><img src="../../img/07/Scientology_warning_leaflet.jpg" alt="image"></a></p>
-<blockquote>
-<p>Germany has barred the makers of a movie about a plot to kill Adolf Hitler
-from filming at German military sites because its star Tom Cruise is a
-Scientologist, the Defence Ministry said on Monday. Cruise, also one of the
-film&rsquo;s producers, is a member of the Church of Scientology which the German
-government does not recognise as a church. Berlin says it masquerades as a
-religion to make money, a charge Scientology leaders reject.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>June 26, 2007</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/politics">#politics</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 18 of 25</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="../../page/17/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="../../page/19/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                        
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
                 </a>
-            
-        </div>
-        
-    </div>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Review of the Official Ubuntu Book, Second Edition (2007)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> The Ubuntu Book (2nd Edition) is a nicely put together book for dealing with the Linux operating system in a number of clearly laid out and well presented chapters. Chapters are as follows:
+Introducing Ubuntu Installing Ubuntu Using Ubuntu on the Desktop Advanced Usage and Managing Ubuntu Ubuntu Server Support / Typical Problems Using Kubuntu Ubuntu Community Ubuntu-Related Projects Using Edubuntu This book is a very complete introduction and contains suprising elements related to finding out and joining the community of users - which you will not find in other Ubuntu Books (such as O’Reilly’s Ubuntu Hacks) which make it a unique and worthwhile addition to any Ubuntu users personal library. It is most helpful to new users to Ubuntu, which sections on installing and help with problems that could be faced. Having said that, it falls short on the amount of truly unique information that it contains - most of the books contents can be found on the web. What you are paying for is a well-laid out, well written account of the Ubuntu-sphere and all that goes along with it.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-09-04 00:00:00 +0000 UTC'>September 4, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Review of the Official Ubuntu Book, Second Edition (2007)" href="../../review-of-official-ubuntu-book-second/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Institute of Technology, Blanchardstown
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I have got a place in a 4 year Bachelor of Science (Honours) in Computing, or more commonly known as Computer Science (or comp sci as I am lazy and like to abbreviate). This means I might be blogging slightly less sometimes, but it should be a hell of a lot more interesting and I promise to keep my posts not too technical as I have up to this point.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-09-01 00:00:00 +0000 UTC'>September 1, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Institute of Technology, Blanchardstown" href="../../institute-of-technology-blanchardstown/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Microsoft settles with Eolas over Internet Explorer
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Microsoft has settled with Eolas over a number of patents regarding browser plugins which chicago based Eolas filed patents for in 1998. A jury in Chicago then found Microsoft guilty of infringing on Eolas’ patents and was told to pay $521m US Dollars in ‘damages’. That ruling was overturned and a fresh trial ordered which was due to start very soon, but it seems Microsoft has decided to pay out:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-31 00:00:00 +0000 UTC'>August 31, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Microsoft settles with Eolas over Internet Explorer" href="../../microsoft-settles-with-eolas-over/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gutsy coming along, Update to Dell Windows Refund..
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I just tried Herd 5 of Gutsy Gibbon, a beta release which will be Ubuntu 07.10 released in October. Obviously it is still early stages and a lot of things aren’t working quite as they should, but it looks very promising. Here’s some new stuff which should hit the final release:
+Compiz Fusion - Pretty Graphics that leave you in awe… Bullet Proof X - Making sure you’ll never see a terminal prompt not of your own choosing, basically the graphics server should be ‘bulletproof’ Appearance Manager - Making it easier to change yourbuntu’s look and feel Better Driver Support - More of those restricted drivers to make sure you can see your screen and use your wifi card Simplified Codecs install - It will now be painless, install ubuntu-restrictedcodecs (or kubuntu-restricted codecs) and you can see Youtube in all its glory, play a dvd, watch that porno WMV file (just kidding but I think thats all WMV is used for) and other such niceties of the propreitry world we have to put up with Firefox Codecs Plugin - Firefox will be hooked up to the package manager and prompt to install Flash/Java if you haven’t got it already, much the same way it prompts to get a codec when you throw a file at it that it cannot play in the movie player. The free software Gnash replacement for Flash will come as standard and can play Youtube Vids. Dual Screen Glory - If your like me you have a nice and small portable laptop, but that screen just won’t do all of the time, thats why I personally have a 19&#34; to plug my 13&#34; MacBook into. With Gutsy I should be able to plug and play over DVI. These are just some of the features that are being worked on for the final release. Probably not all of them on the list will get into Gutsy final, but lets hope they do! Gutsy&#43;1 (slated for release April 2008) has been announced as “Hardy Hereon” and should be a long term release (5 years server and 3 years desktop updates and patches). ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-29 00:00:00 +0000 UTC'>August 29, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Gutsy coming along, Update to Dell Windows Refund.." href="../../gutsy-coming-along-update-to-dell/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dell refunds me for Windows!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>As many of you know I am a Linux and Mac aficionado. For my Linux machines, all of them are Dell. I have been always pleased with Dells prices, how their machines work with Linux, their customer service and the fact they are made in Limerick, Ireland (I am from Ireland). I politely emailed Dell (well got up on my high horse), heres my first mail:
+I would like a refund of Windows XP since I am installing Ubuntu Linux on the computer when I get it. When I turn on the computer I am going to decline the EULA, and I am within my rights to request this refund (as part of Irish consumer laws). This also applies in Britian, see here: ( http://news.bbc.co.uk/1/hi/technology/6144782.stm )
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-21 00:00:00 +0000 UTC'>August 21, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Dell refunds me for Windows!" href="../../dell-refunds-me-for-windows/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Have you got viruses or spyware? Here&#39;s my tips!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I come into contact everyday with people asking how to fix their machines due to the inevitable spyware and viruses found on a Windows machine. Lately I have been switching people to Ubuntu, and even getting them to buy machines to install it on (Dell). But I understand and have no zealotry for Linux when it comes to fixing peoples’ real world problems. I always mention Ubuntu as a matter of course, and also Macs. I follow up peoples Ubuntu installs with friendly emails explaining the free help open to them, but also as common (probably moreso) are my emailed tips to people guiding them how to fix there Windows XP computer. So I’ll list the steps here which are generic and should help anyone out their with such problems; this is not a miracle cure and I fix these problems on a case by case basis, so expect better perfromance, but not a new computer!!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-16 00:00:00 +0000 UTC'>August 16, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Have you got viruses or spyware? Here&#39;s my tips!" href="../../have-you-got-viruses-or-spyware-heres/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Seven financial reasons not to use Windows
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> I recently read a very insightful article on 7 factors every company should seriously consider about Microsoft Windows, here they are summarised:
+Licensing Costs
+Everyone in the IT industry today knows that proprietary operating systems and the applications that run on them will cost you a lot of money on licensing fees. According to a recent Forrester study, U.S. companies overall are expected to spend $100 billion on software maintenance in 2007.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-06 00:00:00 +0000 UTC'>August 6, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Seven financial reasons not to use Windows" href="../../seven-financial-reasons-not-to-use/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HP to Follow Dell into Open Source? and Ubuntu Home Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>HP it seems is responding to Dell’s initiative to sell Ubuntu on their computers. With the Ubuntu Dells reportedly selling very well and Dell rolling out the program worldwide, this hasn’t escaped the notice of the world’s number one computer manufacturer - HP. This is speculation from blogs that has been going on for months since Dell started to offer Ubuntu. The Direct to Dell Blog states:
+This recent post from Tom Dryer caught my eye a couple of days ago, and thought I’d comment on it here. If the rumors about HP offering Ubuntu are true, we’re glad to see other vendors join us in support of Ubuntu and open source. We welcome HP and other system vendors that want to join in this initiative.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-08 00:00:00 +0000 UTC'>July 8, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to HP to Follow Dell into Open Source? and Ubuntu Home Server" href="../../hp-to-follow-dell-into-open-source/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Windows Vista Security - Better than Linux?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After reading a nice article written by Jeff Jones, a security researcher for Microsoft. He says he isn’t biased, saying he worked over 75% of his career outside Microsoft, using Slackware Linux, Unix, HP Unix etc. He claims Windows Vista has less security holes than popular versions of Linux, such as Ubuntu (he also compares Red Hat, Novell, Mac OS X). First let me say why his facts are distorted, and why he knows his facts are distorted. His facts do raise an issue of slow patching of vulnerabilities across the software Industry, but Linux performs the best consistently because anyone can audit the code. Here’s why his comparisons are uneven:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-03 00:00:00 +0000 UTC'>July 3, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Windows Vista Security - Better than Linux?" href="../../windows-vista-security-better-than/"></a>
+</article>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Threats to Democracy
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After reading about Tom Cruise being banned from filming at certain German military sites because of his belief in Scientology, I was a bit outraged at first, despite my abhorrence of their beliefs, which I think are crazy and nonsensical.
+Germany has barred the makers of a movie about a plot to kill Adolf Hitler from filming at German military sites because its star Tom Cruise is a Scientologist, the Defence Ministry said on Monday. Cruise, also one of the film’s producers, is a member of the Church of Scientology which the German government does not recognise as a church. Berlin says it masquerades as a religion to make money, a charge Scientology leaders reject.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-06-26 00:00:00 +0000 UTC'>June 26, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Threats to Democracy" href="../../threats-to-democracy/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="../../page/17/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="../../page/19/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-    </body>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

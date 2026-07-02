@@ -1,561 +1,370 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.135.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Neil Grogan</title>
 
-    <title>Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../favicon-96x96.png">
-    <link rel="manifest" href="../../manifest.json">
-    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="../../">
+<link crossorigin="anonymous" href="../../assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="../../favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="../../index.xml">
+<link rel="alternate" type="application/json" href="../../index.json">
+<link rel="alternate" hreflang="en" href="../../">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-    
-    
-    <link rel="stylesheet" href="../../css/main.min.css"/>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-    <link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Neil Grogan" />
-    </head>
+    </style>
+</noscript><meta property="og:title" content="Neil Grogan" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="../../">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="../../about">About</a>
-  
-    <a class="color-link nav-link" href="../../uses">Uses</a>
-  
-    <a class="color-link nav-link" href="../../contact">Contact</a>
-  
-    <a class="color-link nav-link" href="../../archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="../../tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="../../index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Neil Grogan"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
 
+</head>
 
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="../../js/lunr-search.js" ></script>
-</footer>
-</nav>
+</script>
 
-        <div id="content" class="content-container">
-        
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="../../ha-yellow-review/">
-                    HomeAssistant Yellow Review
-                </a>
-            </h2>
-            <div>
-                <p><p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you&rsquo;re not
-familiar with HomeAssistant - it&rsquo;s a one-stop-shop to control all your smart
-lights, plugs, sensors and anything else in your smart home. HomeAssistant is
-the software part and as it&rsquo;s open source you can freely install it on any
-computer you have. In fact many people install HomeAssistant on a Raspberry Pi.</p>
-<p>HomeAssistant Yellow is their own custom hardware with a built in chip for
-Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It
-takes a Raspberry Pi compute module 4 as its &ldquo;brains&rdquo;. This technically means it
-should - emphasis on <em>should</em> be upgradeable if a Raspberry Pi compute module 5
-that is compatible with CM4 socket is produced.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>April 21, 2024</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/automation">#automation</a>
-                
-                    <a class="tag" href="../../tags/python">#python</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../bank-xls-csv/">
-                    Convert Bank Transactions XLS to CSV in Python
-                </a>
-            </h2>
-            <div>
-                <p><p>I&rsquo;ve written previously on importing transactions to hledger/<a href="../../ledger">ledger</a> from
-<a href="../../kbc-tx-js">KBC</a> bank in JavaScript and <a href="../../bank-tx-py">PTSB</a> bank in Python. I took different
-approaches to each:</p>
-<ul>
-<li>For KBC, you needed to log in and run Javascript which scrape the transaction
-table and download it formatted as CSV</li>
-<li>For PTSB, the script automatted logging in, get the transaction table and save
-locally as CSV</li>
-</ul>
-<p>Both approaches are valid - but suffer from the same issues: any change the bank
-makes to it website needs to be updated in the code. The KBC/JavaScript approach
-was a bit more robust in that it would just search for rows on a website and
-download as CSV.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 25, 2022</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/automation">#automation</a>
-                
-                    <a class="tag" href="../../tags/python">#python</a>
-                
-                    <a class="tag" href="../../tags/code">#code</a>
-                
-                    <a class="tag" href="../../tags/programming">#programming</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../linux-freesat-saorview/">
-                    Linux, Freesat and Saorview
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently replaced a rusty satellite dish and faulty LNB (it has been in use in
-the house I moved in to for 10+ years I&rsquo;d guess) and decided to try install one
-myself. Here in Ireland, the two main broadcast methods of receiving TV are
-satellite (<a href="https://www.freesat.co.uk/">Freesat</a> / <a href="https://www.sky.com/ie/">Sky</a>) and terrestrial aerial (<a href="https://www.saorview.ie/">Saorview</a>).</p>
-<p>An issue I have one larger sitting room TV and one small living room TV. I
-couldn&rsquo;t get both to be Samsung (out of stock on smallest sizes - which seem to
-be going out of fashion). So both TVs had very different methods of switching
-between satellite and aerial connections. I&rsquo;m not sure if it is a hardware
-limitation (they make switching tuners slow to hide this), a licensing issue
-(broadcasters pay to be on the <a href="https://www.freesat.co.uk/">Freesat</a> EPG for example) or a software issue
-(seems least likely). The fact multiple TV brands (in my case Phillips/Samsung)
-make it this clunky - makes me think it&rsquo;s a licensing issue. I wanted to solve
-this by using an external box and having one mental model for navigating
-broadcast TV.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 1, 2022</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/linux">#linux</a>
-                
-                    <a class="tag" href="../../tags/diy">#diy</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../synlog/">
-                    Logging from Ubuntu to Synology
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently had a bug in the <a href="https://ubuntu.com">snap</a> version of <a href="https://getdocker.com">Docker</a>.</p>
-<p>How slow is LiveReload? Not as much as you think!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 18, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/networking">#networking</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ubnt-sonos/">
-                    Ubiquiti Unifi with Sonos on a separate VLAN
-                </a>
-            </h2>
-            <div>
-                <p><p>
-<strong>Update 2023</strong>: <span style="text-decoration: underline;">these instructions are <strong>out-of-date</strong> for the latest Unifi controller software versions</span>. It&#39;s preserved here as written for those who still have older versions. This post uses a file called <code class="verbatim">gateway.config.json</code> and <a href="https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json">Unifi now say</a>:</p>
-<blockquote>
-<p>This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.</p>
-</blockquote>
-<p>
-So I take that to mean use of this file is deprecated and it should be possible to do this via the administration webpage.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 22, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/networking">#networking</a>
-                
-                    <a class="tag" href="../../tags/homenet">#homenet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../vagrant-ubuntu-fossa/">
-                    Ubuntu 20.04 Vagrant with Packer
-                </a>
-            </h2>
-            <div>
-                <p><p>Ubuntu have recently released the new <a href="http://cdimage.ubuntu.com/ubuntu/releases/focal/release/">20.04 LTS codenamed &ldquo;Focal
-Fossa&rdquo;</a>. I&rsquo;d also recently seen a tool that piqued my interest, Hashicorp
-<a href="https://packer.io">Packer</a>. Packer builds machine images that can be deployed to a cloud or as a
-virtual machine, or just even a plain disk image. You can even generate many
-images at once, really simplfying deployment. Very handy if you wanted to create
-virtual machines for a cluster for example, with a similar but slightly
-different configuration.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 2, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/networking">#networking,</a>
-                
-                    <a class="tag" href="../../tags/homenet">#homenet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../ubnt/">
-                    Ubiquiti Home Network
-                </a>
-            </h2>
-            <div>
-                <p><p>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do
-business Wifi, all the way up to covering stadiums. I first heard about them
-from <a href="https://www.troyhunt.com/ubiquiti-all-the-things-how-i-finally-fixed-my-dodgy-wifi/">Troy Hunt</a> and then again from <a href="https://marco.org">Marco Arment</a> on <a href="https://atp.fm">Accidental
-Tech Podcast</a>. Ubiquiti are popular in prosumer space - for people serious
-about good <a href="https://en.wikipedia.org/wiki/Wi-Fi">Wifi</a>.</p>
-<p>So far it&rsquo;s been an excellent experience and I&rsquo;d highly recommend it. After
-setting it up (there is a few moving pieces) it has been running without any
-intervention from me. Being a professional product, it&rsquo;s not just a home router
-(with inbuilt wifi), there is a few more pieces you need to buy:</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>November 10, 2019</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/networking">#networking,</a>
-                
-                    <a class="tag" href="../../tags/homenet">#homenet</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../kbc-tx-js/">
-                    Scraping Transaction Data from KBC Bank
-                </a>
-            </h2>
-            <div>
-                <p><p>In a previous post, I mentioned <a href="../../bank-tx-py">importing transactions</a> using
-<a href="../../ledger">ledger</a>/<a href="https://hledger.org/">hledger</a> and plain text accounting. As my former bank <a href="https://www.permanenttsb.ie/">PTSB</a>
-recently raised their fees, I decided to move to <a href="https://www.kbc.ie/">KBC</a>. I was excited to see,
-as part of the open payments directive, they have a nice <a href="https://www.kbc.ie/psd2-developer-portal/home">developer
-portal</a>. I reached out to KBC&rsquo;s dev team, but alas they are only accepting
-registered companies, who meet stringent criteria. They told me they hope to
-open it up soon to end users, I live in hope!</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 13, 2019</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/automation">#automation</a>
-                
-                    <a class="tag" href="../../tags/javascript">#javascript</a>
-                
-                    <a class="tag" href="../../tags/code">#code</a>
-                
-                    <a class="tag" href="../../tags/programming">#programming</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../docker-compose-ipv6/">
-                    Using IPv6 with Docker Compose on Ubuntu Server
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently started using <a href="https://pi-hole.net/">PiHole</a> to block ads on my home network. As the name
-suggests, you install it on a <a href="https://raspberrypi.org/">raspberry pi</a>. I left it in situ for about a month,
-until I decided I wanted to swap out the pi, but keep PiHole.</p>
-<p>The natural solution to this, is to use a docker container. Rather helpfully,
-there is a publicly available <a href="https://github.com/pi-hole/docker-pi-hole">docker build of PiHole</a>. Simple,
-right? Well my home network is also IPv6, thus the <a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> on the raspberrypi
-should be also. The problem is, <a href="https://docs.docker.com/v17.09/engine/userguide/networking/default_network/ipv6/">Docker has support for IPv6</a>, but it&rsquo;s
-not very straightforward with <a href="https://docs.docker.com/compose/">Docker Compose</a>.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>February 8, 2019</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/docker">#docker</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="../../org-mode/">
-                    Learning Org Mode
-                </a>
-            </h2>
-            <div>
-                <p><p>
-Since hearing about <a href="https://orgmode.org">org-mode</a> on the web many years ago, I always meant to give it a spin. I only ever found <del>one</del> two problems:</p>
-<ol>
-<li>Time - Life eh?</li>
-<li>It&#39;s a mode of <a href="https://www.gnu.org/software/emacs/">Emacs</a> for which I&#39;d also have to learn (again time)</li>
-</ol>
-<p>So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my <a href="https://www.vim.org">vim</a> <a href="https://en.wikipedia.org/wiki/Muscle_memory">muscle memory</a> over the years. The tough part usually is finding good documentation that is both easy to read and follow.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>May 20, 2018</time>
-
-            
-            
-                
-                    <a class="tag" href="../../tags/emacs">#emacs</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 2 of 25</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="../../">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-                <a class="color-link older" href="../../page/3/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="../../" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                        
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="../../about" title="About">
+                    <span>About</span>
                 </a>
-            
-        </div>
-        
-    </div>
+            </li>
+            <li>
+                <a href="../../uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="../../tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
 
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HomeAssistant Yellow Review
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>For Christmas as a gift to myself I bought a HomeAssistant Yellow. If you’re not familiar with HomeAssistant - it’s a one-stop-shop to control all your smart lights, plugs, sensors and anything else in your smart home. HomeAssistant is the software part and as it’s open source you can freely install it on any computer you have. In fact many people install HomeAssistant on a Raspberry Pi.
+HomeAssistant Yellow is their own custom hardware with a built in chip for Zigbee (and now Threads) protocol, along with Bluetooth, WiFi and audio out. It takes a Raspberry Pi compute module 4 as its “brains”. This technically means it should - emphasis on should be upgradeable if a Raspberry Pi compute module 5 that is compatible with CM4 socket is produced.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-21 00:00:00 +0000 UTC'>April 21, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to HomeAssistant Yellow Review" href="../../ha-yellow-review/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Convert Bank Transactions XLS to CSV in Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I’ve written previously on importing transactions to hledger/ledger from KBC bank in JavaScript and PTSB bank in Python. I took different approaches to each:
+For KBC, you needed to log in and run Javascript which scrape the transaction table and download it formatted as CSV For PTSB, the script automatted logging in, get the transaction table and save locally as CSV Both approaches are valid - but suffer from the same issues: any change the bank makes to it website needs to be updated in the code. The KBC/JavaScript approach was a bit more robust in that it would just search for rows on a website and download as CSV.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-11-25 00:00:00 +0000 UTC'>November 25, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Convert Bank Transactions XLS to CSV in Python" href="../../bank-xls-csv/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Linux, Freesat and Saorview
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently replaced a rusty satellite dish and faulty LNB (it has been in use in the house I moved in to for 10&#43; years I’d guess) and decided to try install one myself. Here in Ireland, the two main broadcast methods of receiving TV are satellite (Freesat / Sky) and terrestrial aerial (Saorview).
+An issue I have one larger sitting room TV and one small living room TV. I couldn’t get both to be Samsung (out of stock on smallest sizes - which seem to be going out of fashion). So both TVs had very different methods of switching between satellite and aerial connections. I’m not sure if it is a hardware limitation (they make switching tuners slow to hide this), a licensing issue (broadcasters pay to be on the Freesat EPG for example) or a software issue (seems least likely). The fact multiple TV brands (in my case Phillips/Samsung) make it this clunky - makes me think it’s a licensing issue. I wanted to solve this by using an external box and having one mental model for navigating broadcast TV.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-09-01 00:00:00 +0000 UTC'>September 1, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Linux, Freesat and Saorview" href="../../linux-freesat-saorview/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Logging from Ubuntu to Synology
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently had a bug in the snap version of Docker.
+How slow is LiveReload? Not as much as you think!
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-11-18 00:00:00 +0000 UTC'>November 18, 2020</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Logging from Ubuntu to Synology" href="../../synlog/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ubiquiti Unifi with Sonos on a separate VLAN
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Update 2023: these instructions are out-of-date for the latest Unifi controller software versions. It&#39;s preserved here as written for those who still have older versions. This post uses a file called gateway.config.json and Unifi now say:
+This article is not applicable to the UniFi Dream Machine models, because all configurations are already available in the UniFi Network user interface.
+So I take that to mean use of this file is deprecated and it should be possible to do this via the administration webpage.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-05-22 00:00:00 +0000 UTC'>May 22, 2020</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Ubiquiti Unifi with Sonos on a separate VLAN" href="../../ubnt-sonos/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ubuntu 20.04 Vagrant with Packer
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Ubuntu have recently released the new 20.04 LTS codenamed “Focal Fossa”. I’d also recently seen a tool that piqued my interest, Hashicorp Packer. Packer builds machine images that can be deployed to a cloud or as a virtual machine, or just even a plain disk image. You can even generate many images at once, really simplfying deployment. Very handy if you wanted to create virtual machines for a cluster for example, with a similar but slightly different configuration.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2020-05-02 00:00:00 +0000 UTC'>May 2, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Ubuntu 20.04 Vagrant with Packer" href="../../vagrant-ubuntu-fossa/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ubiquiti Home Network
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Over the summer, I upgraded my home network to Ubiquiti gear. Ubiquiti do business Wifi, all the way up to covering stadiums. I first heard about them from Troy Hunt and then again from Marco Arment on Accidental Tech Podcast. Ubiquiti are popular in prosumer space - for people serious about good Wifi.
+So far it’s been an excellent experience and I’d highly recommend it. After setting it up (there is a few moving pieces) it has been running without any intervention from me. Being a professional product, it’s not just a home router (with inbuilt wifi), there is a few more pieces you need to buy:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-11-10 00:00:00 +0000 UTC'>November 10, 2019</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Ubiquiti Home Network" href="../../ubnt/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Scraping Transaction Data from KBC Bank
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>In a previous post, I mentioned importing transactions using ledger/hledger and plain text accounting. As my former bank PTSB recently raised their fees, I decided to move to KBC. I was excited to see, as part of the open payments directive, they have a nice developer portal. I reached out to KBC’s dev team, but alas they are only accepting registered companies, who meet stringent criteria. They told me they hope to open it up soon to end users, I live in hope!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-05-13 00:00:00 +0000 UTC'>May 13, 2019</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Scraping Transaction Data from KBC Bank" href="../../kbc-tx-js/"></a>
+</article>
 
-    
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Using IPv6 with Docker Compose on Ubuntu Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently started using PiHole to block ads on my home network. As the name suggests, you install it on a raspberry pi. I left it in situ for about a month, until I decided I wanted to swap out the pi, but keep PiHole.
+The natural solution to this, is to use a docker container. Rather helpfully, there is a publicly available docker build of PiHole. Simple, right? Well my home network is also IPv6, thus the DNS on the raspberrypi should be also. The problem is, Docker has support for IPv6, but it’s not very straightforward with Docker Compose.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2019-02-08 00:00:00 +0000 UTC'>February 8, 2019</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Using IPv6 with Docker Compose on Ubuntu Server" href="../../docker-compose-ipv6/"></a>
+</article>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
-
-
-
-
-	<script src="../../js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Learning Org Mode
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Since hearing about org-mode on the web many years ago, I always meant to give it a spin. I only ever found one two problems:
+Time - Life eh? It&#39;s a mode of Emacs for which I&#39;d also have to learn (again time) So I recently set about solving both shortcomings, as painful as it was to dismiss all the effort I put in to my vim muscle memory over the years. The tough part usually is finding good documentation that is both easy to read and follow.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-05-20 00:00:00 +0000 UTC'>May 20, 2018</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Learning Org Mode" href="../../org-mode/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="../../">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="../../page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-    </body>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="../../">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

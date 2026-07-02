@@ -1,477 +1,429 @@
 <!DOCTYPE html>
+<html lang="en" dir="auto">
 
-<html lang="en-us">
-    <head>
-	<meta name="generator" content="Hugo 0.135.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta name="generator" content="Hugo 0.135.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Neil Grogan</title>
 
-    <title>Neil Grogan</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
-    <link rel="manifest" href="./manifest.json">
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#FF3DB4">
-    <link rel="me" href="https://mastodon.ie/@dueyfinster">
-    <meta name="theme-color" content="#ffffff">
+<meta name="description" content="Neil Grogan">
+<meta name="author" content="Neil Grogan">
+<link rel="canonical" href="./">
+<link crossorigin="anonymous" href="./assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="./favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="mask-icon" href="./safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="./index.xml">
+<link rel="alternate" type="application/json" href="./index.json">
+<link rel="alternate" hreflang="en" href="./">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-    
-    
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-    
-    
-    
+            .list {
+                background: var(--theme);
+            }
 
-    
-    
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-    <link rel="alternate" type="application/rss+xml" href="./index.xml" title="Neil Grogan" />
-    </head>
+    </style>
+</noscript><meta property="og:title" content="Neil Grogan" />
+<meta property="og:description" content="Neil Grogan" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
 
-    <body>
-        
-<nav>
-  <header>
-    <div class="site-title">
-        <a href="./">Neil Grogan</a>
-    </div>  
-</header>
-
-  <div class="nav-menu">
-  
-    <a class="color-link nav-link" href="./about">About</a>
-  
-    <a class="color-link nav-link" href="./uses">Uses</a>
-  
-    <a class="color-link nav-link" href="./contact">Contact</a>
-  
-    <a class="color-link nav-link" href="./archives/">Archives</a>
-  
-    <a class="color-link nav-link" href="./tags/">Tags</a>
-  
-  <a class="color-link nav-link" href="./index.xml" target="_blank" rel="noopener" type="application/rss+xml">RSS</a>
-</div>
-<footer class="footer">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-</div>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Neil Grogan"/>
+<meta name="twitter:description" content="Neil Grogan"/>
+<meta name="twitter:site" content="@dueyfinster"/>
 
 
+</head>
 
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
 
-	<script src="./js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script><script src="./js/lunr-search.js" ></script>
-</footer>
-</nav>
+</script>
 
-        <div id="content" class="content-container">
-        
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="./voyager/">
-                    ZSA Voyager Keyboard
-                </a>
-            </h2>
-            <div>
-                <p><p>Since xxx</p>
-<p>Stands:</p>
-<p><a href="https://www.amazon.ie/dp/B0CMHT5LZ5">UGREEN Magsafe Phone Stand Magnetic Desk Standby Holder</a></p>
-<h3 id="navigator">Navigator</h3>
-<p>After purchasing the</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 26, 2026</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./omarchy/">
-                    Omarchy
-                </a>
-            </h2>
-            <div>
-                <p><p>Since last year I&rsquo;ve had a <a href="./framework13">Framework 13</a> with <a href="https;//wwww.nixos.org">NixOS</a> installed initially, using Sway and Wayland. Over the summer, there&rsquo;s been a lot of publicity about Omarchy, a new spin of Arch Linux by David Heinemier Hansson, the creator of Ruby on Rails framework. With the flexibility to reinstall NixOS, I was unafraid to blow it all away and try Omarchy.</p>
-<h2 id="the-good">The good</h2>
-<p>Installing Omarchy was fairly straightforward, with more questions than a typical comparable Ubuntu install.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 25, 2026</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./25-gaming-pc/">
-                    Gaming PC
-                </a>
-            </h2>
-            <div>
-                <p><p>TODO - review gaming PC?</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>September 25, 2026</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./daybag/">
-                    Day Bag
-                </a>
-            </h2>
-            <div>
-                <p><p>Last post, I spoke about my &ldquo;<a href="./gobagv2">GoBag v2</a>&rdquo; and even before that about the original GoBag - &ldquo;<a href="./gobag">Tech Go Bag</a>&rdquo; back in 2015. This time it&rsquo;s to write about my day pack, essentials for being out and about.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>July 14, 2026</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-                    <a class="tag" href="./tags/edc">#edc</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./gobagv2/">
-                    Go Bag Pt. 2
-                </a>
-            </h2>
-            <div>
-                <p><p>I last blogged about a &ldquo;<a href="./gobag">Tech Go Bag</a>&rdquo; in 2015, 11 years ago as I write this. A lot has changed so I thought it&rsquo;s worth a re-review of my current setup.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>June 30, 2026</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-                    <a class="tag" href="./tags/edc">#edc</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./k8s-nix-cluster/">
-                    Kubernetes and Nix Cluster
-                </a>
-            </h2>
-            <div>
-                <p><p>About this time last year, I purchased 3 mini computers with the aim of making a <a href="https://kubernetes.io/">Kubernetes</a> cluster. I followed an excellent youtube video: <a href="https://youtu.be/2yplBzPCghA?si=1Fq1Fx0PSvXP8krE">This homelab setup is my favorite one yet - Dreams of Autonomy</a> (<a href="https://github.com/dreamsofautonomy/homelab">Github Repository</a>) which described the machines to buy (Beelink EQ 13 Mini), how to upgrade the <abbr title="Solid State Disk">SSD</abbr> and <abbr title="Random Access Memory">RAM</abbr>, how to provision them with <a href="https://nixos.org">NixOS</a>, setup <a href="https://k3s.io">K3S</a>, and connect using <a href="https://kubectl.docs.kubernetes.io/guides/">kubectl</a> to manage the cluster. You will also have to modify your router&rsquo;s <abbr title="Dynamic Host Configuration Protocol">DHCP</abbr> settings so you can give the cluster static <abbr title="Internet Protocol">IP</abbr> addresses.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>August 29, 2025</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./picade/">
-                    Picade
-                </a>
-            </h2>
-            <div>
-                <p><p>Picade is an arcade machine you build yourself which uses a raspberry pi as the brains. It is available from <a href="https://shop.pimoroni.com/products/picade">Pimoroni</a>.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>January 19, 2025</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./20-years/">
-                    20 Years of this Blog
-                </a>
-            </h2>
-            <div>
-                <p><p>Today marks <a href="./dueyfinster">20 years since I first blogged</a>. I wanted to give a
-little context to that post.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 24, 2024</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/personal">#personal</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./mini-k8s/">
-                    Mini Kubernetes Cluster
-                </a>
-            </h2>
-            <div>
-                <p><p>TODO</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 20, 2024</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/networking">#networking</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="./framework13/">
-                    Framework 13 AMD
-                </a>
-            </h2>
-            <div>
-                <p><p>I recently bought a <a href="https://frame.work">Framework 13</a> laptop as a personal
-machine. If you are not aware - Framework makes build-it-yourself laptops. I
-wanted to review different parts of the process and give an overview of how it&rsquo;s
-been from ordering to delivery.</p></p>
-                
-            </div>
-            <div class="post-footer">
-            <time>October 12, 2024</time>
-
-            
-            
-                
-                    <a class="tag" href="./tags/hardware">#hardware</a>
-                
-                    <a class="tag" href="./tags/review">#review</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 1 of 25</p>
-        <div class="paginator-group">
-            
-            
-                <a class="color-link older" href="./page/2/">
-                    Older
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                            <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                                <polygon points="7.6707477 1.37628835 8.3292523 0.623711653 12.7592994 4.50000282 8.32918951 8.37629079 7.67069049 7.62370921 11.2407006 4.49999718"></polygon>
-                                <polygon id="Path" points="0 5 0 4 12 4 12 5"></polygon>
-                            </g>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="./" accesskey="h" title="Neil Grogan (Alt + H)">Neil Grogan</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                        
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="./about" title="About">
+                    <span>About</span>
                 </a>
-            
-        </div>
-        
+            </li>
+            <li>
+                <a href="./uses" title="Uses">
+                    <span>Uses</span>
+                </a>
+            </li>
+            <li>
+                <a href="./contact" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="./archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="./tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>Neil Grogan</h1>
+    </header>
+    <div class="entry-content">
+        Personal blog and notes.
     </div>
-
-        
-        </div>
-        <footer class="footer-mobile">
-	<div class="social-icons">
-        
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://github.com/dueyfinster" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://www.linkedin.com/in/neil-grogan" target="_blank" rel="noopener noreferrer me"
+        title="Linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
+    <a href="https://mastodon.ie/@dueyfinster" target="_blank" rel="noopener noreferrer me"
+        title="Mastodon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.184-2.737.368-4.185.276-2.368-.092-4.237-.551-4.237-.551 0 .184.014.459.043.643.308 2.294 2.317 2.478 4.22 2.57 1.922 0 3.633-.46 3.633-.46l.079 1.653s-1.344.734-3.738.918c-1.32.091-2.96-.092-4.869-.551-4.14-1.102-4.853-5.507-4.961-10.005-.034-1.285-.013-2.57-.013-3.58 0-4.589 3-5.966 3-5.966 1.513-.734 4.11-1.01 6.808-1.01h.067c2.699 0 5.296.276 6.81 1.01 0 0 3 1.377 3 5.967 0 0 .037 3.304-.419 5.69"
+        stroke="currentColor" />
+    <path
+        d="M17.832 8.633v5h-1.978V8.78c0-1.023-.43-1.542-1.29-1.542-.95 0-1.427.616-1.427 1.834v2.655H11.17V9.072c0-1.218-.476-1.834-1.427-1.834-.86 0-1.29.52-1.29 1.542v4.852H6.475V8.633c0-1.022.26-1.834.782-2.434.538-.6 1.243-.909 2.118-.909 1.012 0 1.779.39 2.286 1.169l.492.827.493-.827c.507-.78 1.274-1.169 2.286-1.169.875 0 1.58.308 2.118.909.522.6.782 1.412.782 2.434"
+        fill="currentColor" stroke="none" />
+</svg>
+    </a>
 </div>
 
+    </footer>
+</article>
 
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ZSA Voyager Keyboard
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Since xxx
+Stands:
+UGREEN Magsafe Phone Stand Magnetic Desk Standby Holder
+Navigator After purchasing the
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-10-26 00:00:00 +0000 UTC'>October 26, 2026</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to ZSA Voyager Keyboard" href="./voyager/"></a>
+</article>
 
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Omarchy
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Since last year I’ve had a Framework 13 with NixOS installed initially, using Sway and Wayland. Over the summer, there’s been a lot of publicity about Omarchy, a new spin of Arch Linux by David Heinemier Hansson, the creator of Ruby on Rails framework. With the flexibility to reinstall NixOS, I was unafraid to blow it all away and try Omarchy.
+The good Installing Omarchy was fairly straightforward, with more questions than a typical comparable Ubuntu install.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-10-25 00:00:00 +0000 UTC'>October 25, 2026</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Omarchy" href="./omarchy/"></a>
+</article>
 
-	<script src="./js/main.min.a7205ef73b078c8daed6fe1b0826e8ba229ffabbb69d299d9446cf41f2c7d8aa.js" integrity="sha256-pyBe9zsHjI2u1v4bCCbouiKf+ru2nSmdlEbPQfLH2Ko=" crossorigin="anonymous"></script>
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gaming PC
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>TODO - review gaming PC?
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-09-25 00:00:00 +0000 UTC'>September 25, 2026</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Gaming PC" href="./25-gaming-pc/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Day Bag
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Last post, I spoke about my “GoBag v2” and even before that about the original GoBag - “Tech Go Bag” back in 2015. This time it’s to write about my day pack, essentials for being out and about.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-07-14 00:00:00 +0000 UTC'>July 14, 2026</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Day Bag" href="./daybag/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Go Bag Pt. 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I last blogged about a “Tech Go Bag” in 2015, 11 years ago as I write this. A lot has changed so I thought it’s worth a re-review of my current setup.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-06-30 00:00:00 +0000 UTC'>June 30, 2026</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Go Bag Pt. 2" href="./gobagv2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Kubernetes and Nix Cluster
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>About this time last year, I purchased 3 mini computers with the aim of making a Kubernetes cluster. I followed an excellent youtube video: This homelab setup is my favorite one yet - Dreams of Autonomy (Github Repository) which described the machines to buy (Beelink EQ 13 Mini), how to upgrade the SSD and RAM, how to provision them with NixOS, setup K3S, and connect using kubectl to manage the cluster. You will also have to modify your router’s DHCP settings so you can give the cluster static IP addresses.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-29 00:00:00 +0000 UTC'>August 29, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Kubernetes and Nix Cluster" href="./k8s-nix-cluster/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Picade
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Picade is an arcade machine you build yourself which uses a raspberry pi as the brains. It is available from Pimoroni.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-19 00:00:00 +0000 UTC'>January 19, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Picade" href="./picade/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">20 Years of this Blog
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Today marks 20 years since I first blogged. I wanted to give a little context to that post.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-24 00:00:00 +0000 UTC'>October 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to 20 Years of this Blog" href="./20-years/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Mini Kubernetes Cluster
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>TODO
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-20 00:00:00 +0000 UTC'>October 20, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Mini Kubernetes Cluster" href="./mini-k8s/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Framework 13 AMD
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I recently bought a Framework 13 laptop as a personal machine. If you are not aware - Framework makes build-it-yourself laptops. I wanted to review different parts of the process and give an overview of how it’s been from ordering to delivery.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-12 22:52:53 +0100 +0100'>October 12, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Neil Grogan</footer>
+  <a class="entry-link" aria-label="post link to Framework 13 AMD" href="./framework13/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="./page/2/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
 </footer>
-    </body>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="./">Neil Grogan</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>
