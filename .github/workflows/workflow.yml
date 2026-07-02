@@ -27,7 +27,7 @@ jobs:
         run: hugo -D -E -F --minify
 
       - name: Validate stylesheet
-        run: test -s public/css/main.min.css
+        run: test -n "$(find public/assets/css -type f -name 'stylesheet*.css' -size +0c -print -quit)"
 
       - name: Upload staging site artifact
         uses: actions/upload-artifact@v4
@@ -54,7 +54,7 @@ jobs:
         run: hugo --minify
 
       - name: Validate stylesheet
-        run: test -s public/css/main.min.css
+        run: test -n "$(find public/assets/css -type f -name 'stylesheet*.css' -size +0c -print -quit)"
 
       - name: Upload production site artifact
         uses: actions/upload-artifact@v4
