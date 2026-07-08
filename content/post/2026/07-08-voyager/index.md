@@ -5,6 +5,8 @@ image: voyager.jpg
 date: 2026-07-08
 tags:
   - review
+  - hardware
+  - keyboard
 ---
 
 I've always been a hunt-and-peck typer. I started using computers as early as was physically possible. Sadly, no one ever taught me good habits around typing (let alone ergonomics). Having some small RSI issues in my right wrist, I decided to further go down the route of mechanical keyboards, which I [previously discussed here](/mech-kb). In October 2025, I purchased a [ZSA Voyager][voyager] mechanical keyboard.
