@@ -2,7 +2,6 @@
 title: 'ZSA Voyager Keyboard'
 slug: voyager
 image: voyager.jpg
-draft: true
 date: 2026-07-08
 tags:
   - review
