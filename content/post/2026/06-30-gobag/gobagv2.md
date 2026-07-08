@@ -70,7 +70,7 @@ The shaving kit and travel router only come with me if the trip is a week or lon
 
 ![Neil's Eye Mask][eyemask]
 
-[washbag]: /img/26/washbag.jpg
-[mophiecharger]: /img/26/mophiecharger.jpg
-[shavingbag]: /img/26/shavingbag.jpg
-[eyemask]: /img/26/eyemask.jpg
+[washbag]: washbag.jpg
+[mophiecharger]: mophiecharger.jpg
+[shavingbag]: shavingbag.jpg
+[eyemask]: eyemask.jpg
