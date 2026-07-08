@@ -3,21 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/review/</loc>
-    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/voyager/</loc>
-    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/omarchy/</loc>
+    <lastmod>2026-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2026-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/review/</loc>
+    <lastmod>2026-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
     <lastmod>2026-10-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/25-gaming-pc/</loc>
@@ -31,6 +28,9 @@
   </url><url>
     <loc>/tags/edc/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/voyager/</loc>
+    <lastmod>2026-07-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/gobagv2/</loc>
     <lastmod>2026-06-30T00:00:00+00:00</lastmod>
