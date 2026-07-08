@@ -11,17 +11,15 @@ tags:
 
 I've always been a hunt-and-peck typer. I started using computers as early as was physically possible. Sadly, no one ever taught me good habits around typing (let alone ergonomics). Having some small RSI issues in my right wrist, I decided to further go down the route of mechanical keyboards, which I [previously discussed here](/mech-kb). In October 2025, I purchased a [ZSA Voyager][voyager] mechanical keyboard.
 
-<!--preview-->
-
 I should rewind a small bit - prior to the Voyager, I purchased a Kinesis Advantage 360 Pro (the wireless one), which is a great and supremely comfortable keyboard. One of the major downsides to the Advantage 360 is that it is uncomfortable for any sort of gaming. Also, there is a nice weight and robustness to the Advantage 360 which makes it unsuitable to travel in my opinion.
 
 Naturally after liking the 360, I looked at other Kinesis options. This led me to the Kinesis Freestyle RGB which I use with my gaming PC. The Freestyle I'm least happy with since it's so large and I find it hard to stop hitting caps lock over the 'a' key.
 
 I couldn't bring either to the office because of their size and weight, which began my search for a compact alternative. After a lot of research and YouTube reviews I came to find the Voyager. It's very expensive, so I did a lot of thinking on it. One of the aspects that sold it for me was that ZSA seem to be a company who just want to make good products and back it up with good support. I read a lot on their website, particularly [ZSA people][zsapeople] (I enjoy immensely learning about how people optimise their work spaces.), [ZSA loves][zsaloves] and their newsletter, [The Ergo][ergo].
 
-After a year, I think it’s excellent, but only if you’re ready to adapt to split, columnar typing and layers.
+After more than 6 months, I think it’s excellent, but only if you’re ready to adapt to split, columnar typing and layers.
 
-![ZSA Voyager, Navigator Trackpad and case][voyager-img]
+![ZSA Voyager, Navigator Trackpad and the trackpad case][voyager-img]
 
 Owning the Voyager - here are some of the benefits:
 
@@ -62,14 +60,14 @@ For the trackpad option which I purchased recently, you also need to configure t
 
 I'm still not a fast typist. But I'm more comfortable at typing and my brain has adapted thanks to [keybr][], [Monkeytype][] and ZSA's own [typ.ing][typing]. I would definitely recommend the Voyager if you are looking for a split (smaller) mechanical keyboard - but if it's your first foray into mechanical I'd try something like I did originally which will be closer to what you are (probably) currently used to. It's a transformation for how you type and adjustment time will be needed. In terms of accessories you could skip the Navigator trackpad and only get the trackball if you prefer them or like the look.
 
-[voyager]: https://www.zsa.io/voyager
-[voyager-img]: voyager.jpg
-[oryx]: https://www.zsa.io/oryx
-[zsapeople]: https://people.zsa.io/
-[zsaloves]: https://blog.zsa.io/tags/zsa-loves/
-[ergo]: https://www.zsa.io/the-ergo
-[phone-stand]: https://www.amazon.ie/dp/B0CMHT5LZ5
-[Shhhocs]: https://www.zsa.io/voyager/accessories
+[voyager]: https://www.zsa.io/voyager	""ZSA Voyager""
+[voyager-img]: voyager.jpg	""ZSA Voyager with Navigator trackpad and trackpad case""
+[oryx]: https://www.zsa.io/oryx	""ZSA's Oryx Keyboard configurator tool""
+[zsapeople]: https://people.zsa.io/	""ZSA people blog""
+[zsaloves]: https://blog.zsa.io/tags/zsa-loves/	""ZSA loves blog""
+[ergo]: https://www.zsa.io/the-ergo	""ZSA Ergo newsletter""
+[phone-stand]: https://www.amazon.ie/dp/B0CMHT5LZ5	""UGREEN Magsafe Phone stand - can be used with the voyager""
+[Shhhocs]: https://www.zsa.io/voyager/accessories	""Shhhocs are tiny rubber gaskets""
 [tripod]: https://www.zsa.io/voyager/tripod-mount
 [navigator]: https://www.zsa.io/voyager/navigator
 [pocket-tripod]: https://www.amazon.ie/dp/B00GTLFHT8
