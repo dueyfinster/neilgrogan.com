@@ -60,14 +60,14 @@ For the trackpad option which I purchased recently, you also need to configure t
 
 I'm still not a fast typist. But I'm more comfortable at typing and my brain has adapted thanks to [keybr][], [Monkeytype][] and ZSA's own [typ.ing][typing]. I would definitely recommend the Voyager if you are looking for a split (smaller) mechanical keyboard - but if it's your first foray into mechanical I'd try something like I did originally which will be closer to what you are (probably) currently used to. It's a transformation for how you type and adjustment time will be needed. In terms of accessories you could skip the Navigator trackpad and only get the trackball if you prefer them or like the look.
 
-[voyager]: https://www.zsa.io/voyager	""ZSA Voyager""
-[voyager-img]: voyager.jpg	""ZSA Voyager with Navigator trackpad and trackpad case""
-[oryx]: https://www.zsa.io/oryx	""ZSA's Oryx Keyboard configurator tool""
-[zsapeople]: https://people.zsa.io/	""ZSA people blog""
-[zsaloves]: https://blog.zsa.io/tags/zsa-loves/	""ZSA loves blog""
-[ergo]: https://www.zsa.io/the-ergo	""ZSA Ergo newsletter""
-[phone-stand]: https://www.amazon.ie/dp/B0CMHT5LZ5	""UGREEN Magsafe Phone stand - can be used with the voyager""
-[Shhhocs]: https://www.zsa.io/voyager/accessories	""Shhhocs are tiny rubber gaskets""
+[voyager]: https://www.zsa.io/voyager
+[voyager-img]: voyager.jpg
+[oryx]: https://www.zsa.io/oryx
+[zsapeople]: https://people.zsa.io/
+[zsaloves]: https://blog.zsa.io/tags/zsa-loves/
+[ergo]: https://www.zsa.io/the-ergo
+[phone-stand]: https://www.amazon.ie/dp/B0CMHT5LZ5
+[Shhhocs]: https://www.zsa.io/voyager/accessories
 [tripod]: https://www.zsa.io/voyager/tripod-mount
 [navigator]: https://www.zsa.io/voyager/navigator
 [pocket-tripod]: https://www.amazon.ie/dp/B00GTLFHT8
