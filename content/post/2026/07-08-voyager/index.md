@@ -12,9 +12,11 @@ I've always been a hunt-and-peck typer. I started using computers as early as wa
 
 <!--preview-->
 
-I should rewind a small bit - prior to the Voyager, I purchased a Kinesis Advantage 360 Pro (the wireless one), which is a great and supremely comfortable keyboard. One of the major downsides to the Advantage 360 is that it is uncomfortable for any sort of gaming. Also, there is a nice weight and robustness to the Advantage 360 which makes it unsuitable to travel in my opinion. Naturally after liking the 360, I looked at other Kinesis options. This led me to the Kinesis Freestyle RGB which I use with my gaming PC. The Freestyle I'm least happy with since it's so large and I find it hard to stop hitting caps lock over the 'a' key.
+I should rewind a small bit - prior to the Voyager, I purchased a Kinesis Advantage 360 Pro (the wireless one), which is a great and supremely comfortable keyboard. One of the major downsides to the Advantage 360 is that it is uncomfortable for any sort of gaming. Also, there is a nice weight and robustness to the Advantage 360 which makes it unsuitable to travel in my opinion.
 
-I couldn't bring either to the office due to size/weight, which began my search for a compact alternative. After a lot of research and YouTube reviews I came to find the Voyager. It's very expensive, so I did a lot of thinking on it. One of the aspects that sold it for me was that ZSA seem to be a company who just want to make good products and back it up with good support. I read a lot on their website, particularly [ZSA people][zsapeople] (I enjoy immensely learning about how people optimise their work spaces.), [ZSA loves][zsaloves] and their newsletter, [The Ergo][ergo].
+Naturally after liking the 360, I looked at other Kinesis options. This led me to the Kinesis Freestyle RGB which I use with my gaming PC. The Freestyle I'm least happy with since it's so large and I find it hard to stop hitting caps lock over the 'a' key.
+
+I couldn't bring either to the office because of their size and weight, which began my search for a compact alternative. After a lot of research and YouTube reviews I came to find the Voyager. It's very expensive, so I did a lot of thinking on it. One of the aspects that sold it for me was that ZSA seem to be a company who just want to make good products and back it up with good support. I read a lot on their website, particularly [ZSA people][zsapeople] (I enjoy immensely learning about how people optimise their work spaces.), [ZSA loves][zsaloves] and their newsletter, [The Ergo][ergo].
 
 After a year, I think it’s excellent, but only if you’re ready to adapt to split, columnar typing and layers.
 
@@ -29,7 +31,7 @@ Owning the Voyager - here are some of the benefits:
 - Excellent mounting options - can use [phone stands][phone-stand], clamps or anything that mounts magnetically
 - RGB that's useful to tell which layer you are on (not just a gimmick)
 - Great set of replaceable keycaps
-- Can hot swap out to any Kailh switch (can go more clicky sounding or more quiet)
+- Can hot-swap any Kailh switch (can go more clicky sounding or more quiet)
 - Key Configurator/remapping is the best in the business
 
 Some downsides:
@@ -53,11 +55,11 @@ I've purchased all three, so I can give some comment on them. The magnetic mount
 
 The next accessory option to mention is the Navigator. I bought the trackball when I got the Voyager. Full disclosure I never owned a trackball before this (I'm a mouse traditionalist), so my opinion may not hold water if it's your preferred option. What I can say is the mounting to the side of the Voyager is secure and the included carrying case is great. I brought mine to the office with no issues, apart from having to be really careful about not losing the ball. How it works is that it sits in between both halves of your Voyager and replaces the cable between them. So the normal setup is: Voyager left half connects to computer via USB-C and then it connects to the right half with TRRS cable (like a headphone cable). This is 'intercepted' with a Navigator, where the left half talks to the Navigator and then the Navigator to the right half. I mention this as it could be confusing if you expected more ports.
 
-For the trackpad option which I purchased recently, you also need to configure this in Oryx - if you had the trackball before you need to remove it. Like my earlier point on updating keymaps without reflashing, swapping between the two needs a reflash of your keyboard firmware. My take on both is as follows: the trackball is the better more polished option and aesthetically looks far better. The trackpad I'm not impressed with at all, I find it far too small and not the fault of ZSA but on macOS they require a helper app (blame Apple). The helper app makes the trackpad somewhat usable (apparently on Linux and Windows it works fine). But to be honest, if you've used a nice trackpad, it _will_ feel disappointing.
+For the trackpad option which I purchased recently, you also need to configure this in Oryx - if you had the trackball configured in your layout before, you need to remove it. Like my earlier point on updating keymaps without reflashing, swapping between the two needs a reflash of your keyboard firmware. My take on both is as follows: the trackball is the better more polished option and aesthetically looks far better. The trackpad I'm not impressed with at all, I find it far too small and not the fault of ZSA but on macOS they require a helper app (blame Apple). The helper app makes the trackpad somewhat usable (apparently on Linux and Windows it works fine). But to be honest, if you've used a nice trackpad (like the gold standard which is Apple's Magic Trackpad), it _will_ feel disappointing.
 
 ### Final thoughts
 
-I'm still not a fast typist. But I'm more comfortable at typing and my brain has adapted thanks to [keybr][], [Monkeytype][] and ZSA's own [typ.ing][typing]. As I said above, I would definitely recommend the Voyager if you are looking for a split (smaller) mechanical keyboard - but if it's your first foray into mechanical I'd try something like I did originally which will be closer to what you are (probably) currently used to. It's a transformation for how you type and adjustment time will be needed. In terms of accessories you could skip the Navigator trackpad and only get the trackball if you prefer them or like the look.
+I'm still not a fast typist. But I'm more comfortable at typing and my brain has adapted thanks to [keybr][], [Monkeytype][] and ZSA's own [typ.ing][typing]. I would definitely recommend the Voyager if you are looking for a split (smaller) mechanical keyboard - but if it's your first foray into mechanical I'd try something like I did originally which will be closer to what you are (probably) currently used to. It's a transformation for how you type and adjustment time will be needed. In terms of accessories you could skip the Navigator trackpad and only get the trackball if you prefer them or like the look.
 
 [voyager]: https://www.zsa.io/voyager
 [voyager-img]: voyager.jpg
