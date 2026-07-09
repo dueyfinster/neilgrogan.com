@@ -22,10 +22,23 @@
         config,
         pkgs,
         lib,
-        final,
         ...
       }: {
         formatter = pkgs.alejandra;
+
+        packages.default = pkgs.stdenv.mkDerivation {
+          name = "neilgrogan-com";
+          src = self;
+          nativeBuildInputs = [pkgs.hugo pkgs.git];
+          buildPhase = "hugo --minify";
+          installPhase = "cp -r public $out";
+        };
+
+        checks.formatting = pkgs.runCommand "check-formatting" {
+          nativeBuildInputs = [pkgs.alejandra];
+        } ''
+          alejandra -c ${self} && touch $out
+        '';
 
         devshells.default = {
           commands = [
@@ -35,7 +48,7 @@
               help = "Run the hugo server";
               command = ''
                 (sleep 1 ; open http://localhost:1313/) &
-                exec hugo server --noHTTPCache --buildDrafts --buildFuture \"$@\"
+                exec hugo server --noHTTPCache --buildDrafts --buildFuture "$@"
               '';
             }
             {
@@ -55,18 +68,18 @@
           ];
           packages = with pkgs; [go git nodePackages.prettier];
         };
-
       };
     };
 
   inputs = {
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    devshell.url = "github:numtide/devshell";
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
     };
-    nix-flake-tests.url = "github:antifuchs/nix-flake-tests";
+    devshell = {
+      url = "github:numtide/devshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }
