@@ -5,6 +5,8 @@ image: washbag.jpg
 images:
   - washbag.jpg
 date: 2026-06-30
+series:
+  - edc
 tags:
   - review
   - edc
