@@ -9,7 +9,7 @@ on:
       - published
 
 env:
-  RCLONE_VERSION: v1.74.4
+  RCLONE_INSTALL_VERSION: v1.74.4
 
 jobs:
   build-staging:
@@ -80,15 +80,15 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.local/bin/rclone
-          key: rclone-${{ runner.os }}-${{ env.RCLONE_VERSION }}
+          key: rclone-${{ runner.os }}-${{ env.RCLONE_INSTALL_VERSION }}
 
       - name: Install rclone
         if: steps.rclone-cache.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/.local/bin
-          curl -fsSL "https://downloads.rclone.org/${RCLONE_VERSION}/rclone-${RCLONE_VERSION}-linux-amd64.zip" -o /tmp/rclone.zip
+          curl -fsSL "https://downloads.rclone.org/${RCLONE_INSTALL_VERSION}/rclone-${RCLONE_INSTALL_VERSION}-linux-amd64.zip" -o /tmp/rclone.zip
           unzip -q /tmp/rclone.zip -d /tmp
-          install -m 755 "/tmp/rclone-${RCLONE_VERSION}-linux-amd64/rclone" ~/.local/bin/rclone
+          install -m 755 "/tmp/rclone-${RCLONE_INSTALL_VERSION}-linux-amd64/rclone" ~/.local/bin/rclone
 
       - name: Add rclone to PATH
         run: echo "$HOME/.local/bin" >> "$GITHUB_PATH"
@@ -129,15 +129,15 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.local/bin/rclone
-          key: rclone-${{ runner.os }}-${{ env.RCLONE_VERSION }}
+          key: rclone-${{ runner.os }}-${{ env.RCLONE_INSTALL_VERSION }}
 
       - name: Install rclone
         if: steps.rclone-cache.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/.local/bin
-          curl -fsSL "https://downloads.rclone.org/${RCLONE_VERSION}/rclone-${RCLONE_VERSION}-linux-amd64.zip" -o /tmp/rclone.zip
+          curl -fsSL "https://downloads.rclone.org/${RCLONE_INSTALL_VERSION}/rclone-${RCLONE_INSTALL_VERSION}-linux-amd64.zip" -o /tmp/rclone.zip
           unzip -q /tmp/rclone.zip -d /tmp
-          install -m 755 "/tmp/rclone-${RCLONE_VERSION}-linux-amd64/rclone" ~/.local/bin/rclone
+          install -m 755 "/tmp/rclone-${RCLONE_INSTALL_VERSION}-linux-amd64/rclone" ~/.local/bin/rclone
 
       - name: Add rclone to PATH
         run: echo "$HOME/.local/bin" >> "$GITHUB_PATH"
