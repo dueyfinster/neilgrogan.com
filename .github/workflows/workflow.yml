@@ -15,13 +15,13 @@ jobs:
   build-staging:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: '0'   # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 0.135.0
           extended: true
@@ -33,7 +33,7 @@ jobs:
         run: test -n "$(find public/assets/css -type f -name 'stylesheet*.css' -size +0c -print -quit)"
 
       - name: Upload staging site artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: staging-site
           path: public
@@ -42,13 +42,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'release' && github.event.action == 'published'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: '0'   # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 0.135.0
           extended: true
@@ -60,7 +60,7 @@ jobs:
         run: test -n "$(find public/assets/css -type f -name 'stylesheet*.css' -size +0c -print -quit)"
 
       - name: Upload production site artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: production-site
           path: public
@@ -70,14 +70,14 @@ jobs:
     needs: build-staging
     steps:
       - name: Download staging site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: staging-site
           path: public
 
       - name: Cache rclone
         id: rclone-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.local/bin/rclone
           key: rclone-${{ runner.os }}-${{ env.RCLONE_INSTALL_VERSION }}
@@ -119,14 +119,14 @@ jobs:
     if: github.event_name == 'release' && github.event.action == 'published'
     steps:
       - name: Download production site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: production-site
           path: public
 
       - name: Cache rclone
         id: rclone-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.local/bin/rclone
           key: rclone-${{ runner.os }}-${{ env.RCLONE_INSTALL_VERSION }}
