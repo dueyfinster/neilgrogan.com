@@ -2,6 +2,8 @@
 title: 'Go Bag Pt. 2'
 slug: gobagv2
 image: washbag.jpg
+images:
+  - washbag.jpg
 date: 2026-06-30
 tags:
   - review
