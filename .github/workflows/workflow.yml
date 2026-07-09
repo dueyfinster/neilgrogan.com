@@ -8,6 +8,9 @@ on:
     types:
       - published
 
+env:
+  RCLONE_VERSION: v1.74.4
+
 jobs:
   build-staging:
     runs-on: ubuntu-latest
@@ -72,10 +75,26 @@ jobs:
           name: staging-site
           path: public
 
+      - name: Cache rclone
+        id: rclone-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/bin/rclone
+          key: rclone-${{ runner.os }}-${{ env.RCLONE_VERSION }}
+
       - name: Install rclone
+        if: steps.rclone-cache.outputs.cache-hit != 'true'
         run: |
-          sudo apt-get update
-          sudo apt-get install -y rclone
+          mkdir -p ~/.local/bin
+          curl -fsSL "https://downloads.rclone.org/${RCLONE_VERSION}/rclone-${RCLONE_VERSION}-linux-amd64.zip" -o /tmp/rclone.zip
+          unzip -q /tmp/rclone.zip -d /tmp
+          install -m 755 "/tmp/rclone-${RCLONE_VERSION}-linux-amd64/rclone" ~/.local/bin/rclone
+
+      - name: Add rclone to PATH
+        run: echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Check rclone
+        run: rclone version
 
       - name: Deploy Fastmail staging
         env:
@@ -105,10 +124,26 @@ jobs:
           name: production-site
           path: public
 
+      - name: Cache rclone
+        id: rclone-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/bin/rclone
+          key: rclone-${{ runner.os }}-${{ env.RCLONE_VERSION }}
+
       - name: Install rclone
+        if: steps.rclone-cache.outputs.cache-hit != 'true'
         run: |
-          sudo apt-get update
-          sudo apt-get install -y rclone
+          mkdir -p ~/.local/bin
+          curl -fsSL "https://downloads.rclone.org/${RCLONE_VERSION}/rclone-${RCLONE_VERSION}-linux-amd64.zip" -o /tmp/rclone.zip
+          unzip -q /tmp/rclone.zip -d /tmp
+          install -m 755 "/tmp/rclone-${RCLONE_VERSION}-linux-amd64/rclone" ~/.local/bin/rclone
+
+      - name: Add rclone to PATH
+        run: echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Check rclone
+        run: rclone version
 
       - name: Deploy Fastmail production
         env:
