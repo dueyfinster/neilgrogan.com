@@ -13,7 +13,7 @@ Last year in 2025 I got married and I was recently telling a work colleague abou
 
 OK, now on to QR codes. I knew I wanted a 'techie' element to the invites and I landed on customized indindividual QR codes that would auto login the guest, know who they are and have dropdowns for each guest in the party (ie. family of 4 would have 4 RSVP fields). Next, how do you actually make that work? First, I considered the invites, and for now I'll simplify and say you need space for the QR code to go. Then I needed to think how to produce the QR codes themselves. The company I used for the invites had the ability to only add static QR codes and any dynamic element was difficult.
 
-Ultimately I found a company selling labelling software that was easy to use - [LabelLive](https://label.live) and that they also sell a printer - [myDPI 300v1][] which can work with it (LabelLive is freei to use with their printer). I found it's label designer to be the best I could find, and it would import from a comma seperated values (CSV) file so I could feed it unique data for every QR code. Next, I needed label stock and luckily with direct thermal printers there is an abundance of choice on the likes of Amazon. I went with these [round 2in silver labels][], which seemed a nice size and would fit the colour palette of the invites. Important consideration is that thermal printer I mentioned will only print black (if you want colour, you can use Avery style A4 label sheets, and LabelLive has presets for them - but you'll have to pay for a license to use LabelLive). But, the labels themselves come in a large variety of colours and finishes.
+Ultimately I found a company selling labelling software that was easy to use - [LabelLive](https://label.live) and that they also sell a printer - [myDPI 300v1][] which can work with it (LabelLive is free to use with their printer). I found it's label designer to be the best I could find, and it would import from a comma seperated values (CSV) file so I could feed it unique data for every QR code. Next, I needed label stock and luckily with direct thermal printers there is an abundance of choice on the likes of Amazon. I went with these [round 2in silver labels][], which seemed a nice size and would fit the colour palette of the invites. Important consideration is that thermal printer I mentioned will only print black (if you want colour, you can use Avery style A4 label sheets, and LabelLive has presets for them - but you'll have to pay for a license to use LabelLive). But, the labels themselves come in a large variety of colours and finishes.
 
 For the website itself, I chose to use Elixir programming language and Phoenix web framework - there is a pragmatic programmers video course which takes you through building one end-to-end. You can use any framework or programming language you want, I did most of this in 2024 before LLMs got better at generating code! I'll cover more about Elixir/Phoenix later, this post is about the labels. For the website I wanted most people to scan the QR code label and RSVP, after they RSVP'd they would see all the wedding details. In case they lost or misplaced the invite, I wanted to be able to send them the link to log in directly (over WhatsApp for example) - or they could log in manually. This meant I wanted to keep the invite code (basically login code) fairly simple and user friendly. I decided on maximum of 6 characters - with numbers and a few letters (so reasonably hard to guess) - see the code here:
 
@@ -56,7 +56,7 @@ Now, we need to finish the design of the label, and industrialise the creation. 
 
 It has:
 
-- QR code in the middle
+- QR code in the middle (generated from url: https://cloonogrogan.wedding/rsvp/`<code>`)
 - Main site url at the top
 - wedding logo to the left side
 - Party name on right side
@@ -80,5 +80,5 @@ which then gives me a final label to print. Bonus is I also added addresses to e
 
 [myDPI 300v1]: https://mydpi.com/products/300v1
 [round 2in silver labels]: https://www.amazon.co.uk/dp/B0CXPNLGCL
-[ll-design]: labellive-design.jpg
+[ll-design]: ll-design.jpg
 [ll-placeholders]: ll-placeholders.jpg
