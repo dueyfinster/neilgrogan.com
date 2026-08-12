@@ -56,7 +56,7 @@ Now, we need to finish the design of the label, and industrialise the creation. 
 
 It has:
 
-- QR code in the middle (generated from url: https://cloonogrogan.wedding/rsvp/`<code>`)
+- QR code in the middle (generated from url: https://cloonogrogan.wedding/rsvp/<code>)
 - Main site url at the top
 - wedding logo to the left side
 - Party name on right side
