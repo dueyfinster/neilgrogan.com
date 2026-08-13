@@ -1,5 +1,5 @@
 ---
-title: 'Custom QR Wedding Invites'
+title: 'Building a QR-Code RSVP System for Our Wedding'
 slug: qr-wedding-invites
 draft: true
 date: 2026-08-25
@@ -9,13 +9,55 @@ tags:
   - elixir
 ---
 
-Last year in 2025 I got married and I was recently telling a work colleague about the things I put in place myself both to save money and add a personal touch. I plan to write about a few of these aspects over time here - and hopefully someone else can draw inspiration from it!
+I got married in 2025. I was recently telling a colleague about some of the things I made myself for the wedding, both to save money and to add a personal touch. I plan to write about a few of them here, in the hope that someone else can draw inspiration from them.
 
-OK, now on to QR codes. I knew I wanted a 'techie' element to the invites and I landed on customized indindividual QR codes that would auto login the guest, know who they are and have dropdowns for each guest in the party (ie. family of 4 would have 4 RSVP fields). Next, how do you actually make that work? First, I considered the invites, and for now I'll simplify and say you need space for the QR code to go. Then I needed to think how to produce the QR codes themselves. The company I used for the invites had the ability to only add static QR codes and any dynamic element was difficult.
+First up: our wedding invitations. Each one had a personalised silver label with a unique QR code. Scanning it signed a household into an RSVP page that already knew who they were and listed every guest in their party. A family of four, for example, saw four individual RSVP fields.
 
-Ultimately I found a company selling labelling software that was easy to use - [LabelLive](https://label.live) and that they also sell a printer - [myDPI 300v1][] which can work with it (LabelLive is free to use with their printer). I found it's label designer to be the best I could find, and it would import from a comma seperated values (CSV) file so I could feed it unique data for every QR code. Next, I needed label stock and luckily with direct thermal printers there is an abundance of choice on the likes of Amazon. I went with these [round 2in silver labels][], which seemed a nice size and would fit the colour palette of the invites. Important consideration is that thermal printer I mentioned will only print black (if you want colour, you can use Avery style A4 label sheets, and LabelLive has presets for them - but you'll have to pay for a license to use LabelLive). But, the labels themselves come in a large variety of colours and finishes.
+![Circular wedding-invitation label containing a QR code, wedding URL, party name and manual invite code][ll-design]
 
-For the website itself, I chose to use Elixir programming language and Phoenix web framework - there is a pragmatic programmers video course which takes you through building one end-to-end. You can use any framework or programming language you want, I did most of this in 2024 before LLMs got better at generating code! I'll cover more about Elixir/Phoenix later, this post is about the labels. For the website I wanted most people to scan the QR code label and RSVP, after they RSVP'd they would see all the wedding details. In case they lost or misplaced the invite, I wanted to be able to send them the link to log in directly (over WhatsApp for example) - or they could log in manually. This meant I wanted to keep the invite code (basically login code) fairly simple and user friendly. I decided on maximum of 6 characters - with numbers and a few letters (so reasonably hard to guess) - see the code here:
+The party name in this screenshot and the `ABC123` invite code are placeholders.
+
+## What I needed
+
+The project had five main parts:
+
+- an invitation design with enough space for a QR-code label
+- a website that handled the invitations and RSVPs
+- a unique URL for every invited party
+- software that could turn a CSV file into a batch of labels
+- a label printer and suitable label stock
+
+The company producing our invitations could add a static QR code, but personalising every invitation was difficult. That led me to print and attach the labels myself.
+
+## Building the RSVP flow
+
+I built the site with the Elixir programming language and Phoenix web framework. [The Pragmatic Studio Phoenix course](https://pragmaticstudio.com/phoenix) walks through building a Phoenix application from end to end, but there is nothing about this approach that requires Elixir: any web framework capable of looking up an invitation and recording an RSVP would work.
+
+Most guests would scan their label and arrive already signed in. Once they had responded, the site showed them the full wedding details, which were also printed on the invitation. If someone lost the invitation, I could send the same link over WhatsApp. Guests could also type their code into the site's home page manually.
+
+I used a simple one-to-many relationship in the database:
+
+```text
+party (invite_code, rsvp_status) -> one or more guests (rsvp_status)
+```
+
+The party-level status told me whether the household had completed the RSVP form. The guest-level statuses recorded which individuals were attending.
+
+Each link followed this pattern:
+
+```text
+https://cloonogrogan.wedding/rsvp/<code>
+```
+
+For example, `https://cloonogrogan.wedding/rsvp/ABC123` represented one invited party. When someone visited the URL, Phoenix looked up the code on the party record. A valid code signed them in and loaded the associated guests; an invalid code produced an error.
+
+## Generating invite codes
+
+I originally chose six characters, using the letters A–F and the digits 1–9. Avoiding characters such as `0` and `O` made codes easier to read and type.
+
+There is an important security trade-off here. With 15 possible characters, a six-character code has `15⁶`, or 11,390,625, possible combinations. I felt that was an appropriate balance for a small, short-lived wedding site because the codes remained easy for guests to type. It is not strong authentication, however. Anyone who obtains the URL can act as that party, so the site should not expose especially sensitive information behind the link alone. Rate limiting would provide additional protection against automated guessing, but I did not implement it for this project.
+
+This is the code I used to generate them:
 
 ```elixir
 defmodule Ardeo.InviteCodeGenerator do
@@ -35,50 +77,67 @@ defmodule Ardeo.InviteCodeGenerator do
 end
 ```
 
-OK, great, I have a way to generate invite codes, next I needed to fix a URL for each QR code to use. I settled on this convention `https://cloonogrogan.wedding/rsvp/<code>` so every QR code would just have the last 6 charachters as unique, i.e. `https://cloonogrogan.wedding/rsvp/ABC123` would be unique to an invited party of guests. I had this layout in the database:
+I added a unique constraint on `invite_code` at the database level, with the application retrying generation if an insert collided with an existing code.
 
-```
-party (holds invite code, rsvp_status) -> 1..* guests
-```
+## Choosing the label software and printer
 
-then on a guest visiting the URL, I get the code and check it exists in a party, if not I throw an error and they are not logged in. If it does, they are logged in, and I can look up guests to get individual RSVP status. If they have already RSVP'd - they see all the details of the wedding (which was also on invite recieved). The RSVP is recorded at both party level and guest level (since I wanted to know if a party has completed RSVP'ing and then whichn of the individual guests are coming or not). If they know the code and visit the main page, they can enter the code manually if needed.
+I settled on [LabelLive](https://label.live), which could import a comma-separated values (CSV) file and insert unique data into every label. It also worked with the [myDPI 300v1][] direct-thermal printer. LabelLive was free to use with that printer, and its label designer was the best fit I found for this job.
 
-OK, so now we have:
+Direct-thermal printers only print in black, but compatible labels come in many colours and finishes. I chose [round two-inch silver labels][] because they suited the invitation's colour palette and left enough room for a reliably scannable QR code.
 
-- the label software
-- the label printing machine
-- a way to generate codes
-- a url the QR code can use
+If you need colour printing, another option is to use Avery-style A4 label sheets with a colour label printer. LabelLive includes presets for them, although using the software that way requires a licence.
 
-Now, we need to finish the design of the label, and industrialise the creation. This was the design I ended up on after experimentation:
+## Designing the label
 
-![Label Live designer][ll-design]
+The final design contained:
 
-It has:
+- the wedding website at the top
+- a QR code in the centre
+- our wedding logo on the left
+- the party name on the right
+- the invite code at the bottom
 
-- QR code in the middle (generated from url: https://cloonogrogan.wedding/rsvp/<code>)
-- Main site url at the top
-- wedding logo to the left side
-- Party name on right side
-- Invite code at the bottom
+Printing the site address and code meant guests could bypass the QR code and sign in manually if they did not have a suitable device or were unsure how to scan it.
 
-As you can see from this invite, it's possible to bypass the QR code completely and manually enter it also. This was for quests who may not know they need to scan or didn't have an availble device to do so. The party name was for my benefit - when you are doing 150+ of these I didn't want to mix them up, so party name was shorthand for who the invite was for - so when I attached them later I could be sure they were 100% correct. Nothing worse then the incorrect RSVP for the wrong people!
+The party name was mainly for me. With more than 150 personalised labels to attach, I needed an obvious way to match each one to the correct invitation. Mixing up two labels would have sent the wrong guests to the wrong RSVP form.
 
-Next I added a function the phoenix web app to dump a csv file from the parties tables:
+It is important to print a sample and test it with multiple phones before producing the full batch. QR codes need a clear margin around them, often called the quiet zone, and metallic stock can introduce glare. Testing at the final size is the safest way to confirm that the code, printer resolution and label finish work together.
+
+## Creating the labels in bulk
+
+I added a function to the Phoenix application that exported the parties table as a CSV file:
 
 ```csv
-row, party_name, invite_code, address_line_1, address_line_2, town, county, eircode, country
-1, Bloggs, ABC123, 1 Town Street, The Way, Athlone, Westmeath, N37 XXXX, Ireland
-2, Kellys, FED457, 2 Bachelor Walk, The Quays, Dublin, Dublin, D01 XXXX, Ireland
+row,party_name,invite_code,address_line_1,address_line_2,town,county,eircode,country
+1,Bloggs,ABC123,1 Town Street,The Way,Athlone,Westmeath,N37 XXXX,Ireland
+2,Kellys,FED457,2 Bachelor Walk,The Quays,Dublin,Dublin,D01 XXXX,Ireland
 ```
 
-I can then import this in to label live and put placeholders where it'll insert values:
+The values above are fictional examples. LabelLive used `invite_code` to construct the complete RSVP URL and populate the QR code; the other fields were available as placeholders in the design:
 
-![Label Live placeholder values][ll-placeholders]
+![LabelLive object list showing placeholders for the party name and invite code, plus the RSVP URL used by the QR code][ll-placeholders]
 
-which then gives me a final label to print. Bonus is I also added addresses to each party so I can print the address labels for the front of the envelopes also.
+After importing the CSV, I mapped `PARTY_NAME` and `INVITE_CODE` to the corresponding text objects. The QR-code object used this value:
+
+```text
+https://cloonogrogan.wedding/rsvp/{INVITE_CODE}
+```
+
+That produced a complete batch of personalised labels ready to print. Including each party's postal address in the same export also allowed me to print address labels for the envelopes.
+
+## Was it worth it?
+
+This approach involved more setup than linking every invitation to one generic RSVP form, but it made the experience much more personal. Guests did not have to find their names or re-enter information I already knew, and I could track responses at both household and individual level. Batch printing from the same data used by the website also reduced repetitive work and helped me keep more than 150 invitations organised.
+
+I also got a great deal of satisfaction from designing the whole experience. I could keep the branding consistent, work with a defined colour palette and make the invitations, labels and website feel like parts of the same design. The finished result looked professional while still being something I had created myself.
+
+The overall cost probably came to about the same as paying someone else to produce the labels. The difference is that I now own the label printer and have the software and remaining label stock to use for other projects. They have not sat idle, either: I have since used them to make labels for Christmas presents. That continuing usefulness made the investment easier to justify, even if the wedding labels alone did not save much money.
+
+If I built it again, I would keep both the six-character codes and the overall workflow: one party record, individual guest responses, a CSV export and labels generated from placeholders. I would retain the database uniqueness check, consider adding rate limiting, and test the printed QR code on several devices before committing to the full batch.
+
+The result was a small detail that tied the physical invitations to a system I had built myself—which was exactly the kind of practical, personal touch I wanted for the wedding.
 
 [myDPI 300v1]: https://mydpi.com/products/300v1
-[round 2in silver labels]: https://www.amazon.co.uk/dp/B0CXPNLGCL
+[round two-inch silver labels]: https://www.amazon.co.uk/dp/B0CXPNLGCL
 [ll-design]: ll-design.jpg
 [ll-placeholders]: ll-placeholders.jpg
